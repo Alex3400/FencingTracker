@@ -1,0 +1,163 @@
+================================================================
+ELO HISTORY FORMAT - EXAMPLES
+================================================================
+
+The elo_history.csv file shows BOTH fencers in each match with:
+- Match type (Poule or DE bracket like L1-2, L1-8, etc.)
+- Result formatted as: (W) Winner Score-Score Loser
+- Each fencer's old rating, new rating, and change
+
+================================================================
+EXAMPLE 1: Poule Match (close score, underdog wins)
+================================================================
+
+CSV Row:
+2026-04-21, Poule, (W) Fergus 5-2 Will P, Fergus, 1253.6, 1274.5, +20.9, Will P, 1420.2, 1403.4, -16.7
+
+Interpretation:
+  Date: 2026-04-21
+  Match Type: Poule
+  Result: (W) Fergus 5-2 Will P
+
+  Fergus (lower rated): 1253.6 → 1274.5 (change: +20.9) - Big gain as underdog!
+  Will P (higher rated): 1420.2 → 1403.4 (change: -16.7) - Lost to lower-rated fencer
+
+Note: Even though the score was 5-2 (not that close), Fergus gains more
+than Will P loses because Fergus has a higher K-factor (more volatile rating).
+This is an upset - the lower-rated player won, so they get rewarded heavily.
+
+================================================================
+EXAMPLE 2: Finals Match - Major Upset (L1-2)
+================================================================
+
+CSV Row:
+2026-02-17, L1-2, (W) Alejo - Sammy, Alejo, 1696.2, 1809.3, +113.0, Sammy, 1790.1, 1648.8, -141.3
+
+Interpretation:
+  Date: 2026-02-17
+  Match Type: L1-2 (Finals)
+  Result: (W) Alejo - Sammy
+
+  Alejo (lower rated):  1696.2 → 1809.3 (change: +113.0) - WON finals as underdog!
+  Sammy (higher rated): 1790.1 → 1648.8 (change: -141.3) - LOST finals as favorite!
+
+Note: Finals matches have 5.0× bracket weight multiplier, causing massive
+rating swings. This was a significant upset - Alejo (1696) beat the favorite
+Sammy (1790). Sammy loses MORE than Alejo gains because Sammy has a lower
+K-factor due to having more experience (penalty for losing as the favorite).
+
+================================================================
+EXAMPLE 3: Favorite Barely Wins (Winner Loses Rating!)
+================================================================
+
+CSV Row:
+2026-04-21, Poule, (W) Greg 5-4 Tom S, Greg, 1839.3, 1828.0, -11.3, Tom S, 1316.9, 1332.8, +15.9
+
+Interpretation:
+  Date: 2026-04-21
+  Match Type: Poule
+  Result: (W) Greg 5-4 Tom S
+
+  Greg (elite, 1839):     1839.3 → 1828.0 (change: -11.3) - WON but lost rating!
+  Tom S (lower, 1317):    1316.9 → 1332.8 (change: +15.9) - LOST but gained rating!
+
+Note: Greg is rated 522 points higher than Tom S. The ELO system expected
+Greg to dominate (win 5-0 or 5-1). Greg only won 5-4, which is terrible
+relative to expectations. As a result, Greg LOSES 11.3 rating points despite
+winning! Tom S performed better than expected, so he gains points despite losing.
+
+This demonstrates margin-adjusted scoring - the score matters, not just the win.
+
+================================================================
+EXAMPLE 4: Finals Match - Favorite Wins (Expected Result)
+================================================================
+
+CSV Row:
+2026-04-21, L1-2, (W) Greg - Alex Y, Greg, 1910.1, 1957.5, +47.4, Alex Y, 1723.8, 1676.4, -47.4
+
+Interpretation:
+  Date: 2026-04-21
+  Match Type: L1-2 (Finals)
+  Result: (W) Greg - Alex Y
+
+  Greg (elite, 1910):    1910.1 → 1957.5 (change: +47.4) - Won as expected
+  Alex Y (strong, 1724): 1723.8 → 1676.4 (change: -47.4) - Lost as expected
+
+Note: Greg is the highest-rated fencer (1910) and wins the finals against
+a strong but lower-rated opponent (1724). The rating change is moderate
+(+47/-47) because this was the expected outcome. The 5.0× finals multiplier
+is still applied, but the change is smaller than an upset would be.
+
+Compare this to Example 2 where Alejo (1696) upset Sammy (1790) and gained
+113 points - more than double what Greg gained here for an expected win.
+
+================================================================
+READING THE DATA
+================================================================
+
+Total Matches: 4,794 match records (includes 3,416 poule + 1,429 DE)
+
+Column Layout (11 columns):
+1.  Date - When the match occurred (YYYY-MM-DD)
+2.  Match Type - "Poule" or bracket (L1-2, L1-4, L1-8, etc.)
+3.  Result - Formatted as "(W) Winner Score-Score Loser"
+            For poules: shows exact score (e.g., "5-3")
+            For DEs: no score (e.g., "(W) Greg - Alejo")
+4.  Fencer 1 - First fencer's name
+5.  Fencer 1 Old Rating - Rating before match
+6.  Fencer 1 New Rating - Rating after match
+7.  Fencer 1 Change - Rating change (+ gain, - loss)
+8.  Fencer 2 - Second fencer's name
+9.  Fencer 2 Old Rating - Rating before match
+10. Fencer 2 New Rating - Rating after match
+11. Fencer 2 Change - Rating change (+ gain, - loss)
+
+The file is in chronological order, so you can track how ratings
+evolve over time across all 41 tournaments.
+
+Note: Placement bonuses (+15 for 1st, +10 for 2nd, +5 for 3rd/4th)
+are NOT shown in this file as they don't involve head-to-head matches.
+Those are applied after all matches in a tournament.
+
+================================================================
+QUICK REFERENCE
+================================================================
+
+Match Types:
+  Poule  - Round-robin poule matches (scored to 5 touches)
+  L1-2   - Finals (1st vs 2nd place)
+  L1-4   - Semifinals (top 4)
+  L1-8   - Quarterfinals (top 8)
+  L3-4   - Bronze medal match (3rd place)
+  L5-8   - 5th-8th place bracket
+  ...and so on
+
+Result Format:
+  "(W)" - Marks the winner
+  For poules: Includes score (e.g., "5-3")
+  For DEs: Just names (score not recorded in brackets)
+
+Rating Changes:
+  Positive (+) - Fencer gained rating
+  Negative (-) - Fencer lost rating
+  Larger swings in:
+    - Finals/high brackets (bracket weight multiplier)
+    - Upsets (underdog beats favorite)
+    - Dominant wins (5-0, 5-1 in poules)
+
+IMPORTANT: Winners can have NEGATIVE rating changes!
+  This happens when a highly-rated player barely beats a much
+  lower-rated opponent. The ELO system expected them to win more
+  dominantly, so a narrow victory (e.g., 5-4) results in rating loss.
+
+  Example: Vadym (1448) beats Lucas (1365) only 5-4
+  Result: Vadym -0.9, Lucas +0.9
+
+  This is correct ELO behavior - it rewards dominant performances
+  and penalizes underperformance relative to expectations.
+
+Column Layout:
+  Winner is ALWAYS in columns 4-7 (name, old, new, change)
+  Loser is ALWAYS in columns 8-11 (name, old, new, change)
+
+================================================================

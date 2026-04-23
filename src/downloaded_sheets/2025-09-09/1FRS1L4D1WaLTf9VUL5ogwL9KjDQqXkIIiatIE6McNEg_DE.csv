@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Sameer,1,Sameer,,Sameer,,Sameer,V,Sameer,V,Sameer,V,Sameer,1500,2.0,Eric L,100,15
+2,Eric L,32,_,,_,,Colin R,,Alejo,,Vivian,,Vivian,1275,5.0,Greg,85,15
+3,Vincent,17,_,,Colin R,V,Greg,,Vivian,V,Alejo,,Eric L,1125,1.0,Sameer,75,15
+4,Alejo,16,_,,Richard B,,Alejo,V,Eric L,,Eric L,V,Alejo,1005,8.0,Richard B,67,15
+5,Greg,9,Colin R,,Greg,V,Vincent,,Colin R,,Greg,,Garen ,915,6.0,Shevy,61,15
+6,Shevy,24,_,,Etienne,,Vivian,V,Greg,V,Garen ,V,Greg,825,,,55,15
+7,Garen ,25,_,,Perth,,Garen ,,Vincent,,Colin R,V,Colin R,765,9.0,Colin R,51,15
+8,Richard B,8,Richard B,,Alejo,V,Eric L,V,Garen ,V,Vincent,,Vincent,705,13.0,Perth,47,15
+9,Colin R,5,Greg,,Vincent,,_,,Richard B,V,Richard B,,Lukas,645,7.0,Garen ,43,15
+10,Lukas,28,_,,_,,Richard B,,Etienne,,Lukas,V,Richard B,600,10.0,Lukas,40,15
+11,Vivian,21,_,,Vivian,V,Etienne,V,Shevy,,Etienne,V,Etienne,555,4.0,Alejo,37,15
+12,Etienne,12,Etienne,,Shevy,,Perth,,Lukas,V,Shevy,,Shevy,510,,,34,15
+13,Perth,13,Perth,,Garen ,V,_,,_,,Perth,,Perth,465,12.0,Etienne,31,15
+14,_,20,_,,Lukas,,Shevy,,Perth,,_,,_,420,3.0,Vincent,28,15
+15,_,29,_,,_,,Lukas,,_,,_,,_,390,11.0,Vivian,26,15
+16,_,4,Alejo,,Eric L,,_,,_,,_,,_,360,,,24,15
+17,_,3,Vincent,,_,,_,,_,,_,,_,330,,,22,15
+18,_,30,_,,_,,_,,_,,_,,_,300,,,20,15
+19,_,19,_,,_,,_,,_,,_,,_,270,,,18,15
+20,_,14,_,,_,,_,,_,,_,,_,240,,,16,15
+21,_,11,Vivian,,_,,_,,_,,_,,_,210,,,14,15
+22,_,22,_,,_,,_,,_,,_,,_,180,,,12,15
+23,_,27,_,,_,,_,,_,,_,,_,150,,,10,15
+24,_,6,Shevy,,_,,_,,_,,_,,_,135,,,9,15
+25,_,7,Garen ,,_,,_,,_,,_,,_,120,,,8,15
+26,_,26,_,,_,,_,,_,,_,,_,105,,,7,15
+27,_,23,_,,_,,_,,_,,_,,_,90,,,6,15
+28,_,10,Lukas,,_,,_,,_,,_,,_,75,,,5,15
+29,_,15,_,,_,,_,,_,,_,,_,60,,,4,15
+30,_,18,_,,_,,_,,_,,_,,_,45,,,3,15
+31,_,31,_,,_,,_,,_,,_,,_,30,,,2,15
+32,_,2,Eric L,,_,,_,,_,,_,,_,15,,,1,15

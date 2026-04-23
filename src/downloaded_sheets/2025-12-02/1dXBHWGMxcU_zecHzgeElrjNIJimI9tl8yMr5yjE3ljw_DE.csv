@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Tom S,1,Tom S,,Tom S,,Vivian,,Alejo,,Greg,V,Greg,2300,9.0,Richard B,100,23
+2,Eric L,32,_,,Vivian,V,Alejo,V,Greg,V,Eric L,,Eric L,1955,19.0,Lukas,85,23
+3,Tom T,17,Vivian,V,Richard B,,Vincent,,Charlie ,,Alejo,V,Alejo,1725,13.0,Anna Z,75,23
+4,Greg,16,Joshua,,Alejo,V,Greg,V,Eric L,V,Charlie ,,Charlie ,1541,5.0,Vincent,67,23
+5,Vincent,9,Richard B,,Vincent,V,Tom T,,Vivian,V,Vivian,V,Vivian,1403,10.0,Steph,61,23
+6,Anna A,24,_,,Alix S,,Charlie ,V,Vincent,,Fassel,,Fassel,1265,4.0,Greg,55,23
+7,Fassel,25,_,,Anna Z,,Fassel,,Tom T,,Vincent,V,Vincent,1173,2.0,Eric L,51,23
+8,Alejo,8,Alejo,,Greg,V,Eric L,V,Fassel,V,Tom T,,Tom T,1081,8.0,Alejo,47,23
+9,Richard B,5,Vincent,,Tom T,V,Tom S,V,Tom S,,Anna Z,,Alex Y,989,7.0,Fassel,43,23
+10,Steph,28,_,,Alex Y,,Richard B,,Anna Z,V,Alex Y,V,Anna Z,920,1.0,Tom S,40,23
+11,Charlie ,21,Alix S,V,Charlie ,V,Alix S,,Alex Y,V,Tom S,,Steph,851,6.0,Anna A,37,23
+12,Matilda,12,Matilda,,Anna A,,Anna Z,V,Steph,,Steph,V,Tom S,782,17.0,Vivian,34,23
+13,Anna Z,13,Anna Z,V,Fassel,V,Alex Y,V,Richard B,V,Richard B,V,Richard B,713,,,31,23
+14,Alex Y,20,Marinko,,Steph,,Anna A,,Alix S,,Adrian L,,Adrian L,644,3.0,Tom T,28,23
+15,Fergus,29,_,,Adrian L,,Steph,V,Anna A,,Alix S,,Anna A,598,,,26,23
+16,Joshua,4,Greg,,Eric L,V,Adrian L,,Adrian L,V,Anna A,V,Alix S,552,20.0,Marinko,24,23
+17,Vivian,3,Tom T,,_,,Joshua,,Joshua,V,Joshua,,Lukas,506,14.0,Alex Y,22,23
+18,Adrian L,30,_,,Joshua,,_,,Marinko,,Lukas,V,Joshua,460,16.0,Joshua,20,23
+19,Lukas,19,Lukas,,_,,Matilda,,Lukas,V,Marinko,V,Marinko,414,12.0,Matilda,18,23
+20,Marinko,14,Alex Y,V,_,,Marinko,V,Fergus,,Fergus,,Fergus,368,18.0,Adrian L,16,23
+21,Alix S,11,Charlie ,,_,,Lukas,,_,,Matilda,,Matilda,322,15.0,Fergus,14,23
+22,_,22,_,,Matilda,,_,,Matilda,,_,,_,276,21.0,Alix S,12,23
+23,_,27,_,,Marinko,,_,,_,,_,,_,230,11.0,Charlie ,10,23
+24,_,6,Anna A,,_,,Fergus,,_,,_,,_,207,,,9,23
+25,_,7,Fassel,,_,,_,,_,,_,,_,184,,,8,23
+26,_,26,_,,Lukas,,_,,_,,_,,_,161,,,7,23
+27,_,23,_,,_,,_,,_,,_,,_,138,,,6,23
+28,_,10,Steph,,_,,_,,_,,_,,_,115,,,5,23
+29,_,15,Fergus,,_,,_,,_,,_,,_,92,,,4,23
+30,_,18,Adrian L,V,_,,_,,_,,_,,_,69,,,3,23
+31,_,31,_,,Fergus,,_,,_,,_,,_,46,,,2,23
+32,_,2,Eric L,,_,,_,,_,,_,,_,23,,,1,23

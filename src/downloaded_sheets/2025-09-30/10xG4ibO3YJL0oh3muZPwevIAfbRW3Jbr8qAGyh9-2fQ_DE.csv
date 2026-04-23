@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Sameer,1,Sameer,,Sameer,,Sameer,V,Sameer,V,Sameer,,Garen ,1700,1.0,Sameer,100,17
+2,Garen ,32,_,,_,,Pablo,,Roeland,,Garen ,V,Sameer,1445,3.0,Greg,85,17
+3,Greg,17,_,,Pablo,V,Alejo,,Vincent,,Roeland,V,Roeland,1275,,,75,17
+4,Roeland,16,_,,Vivian,,Roeland,V,Garen ,V,Vincent,,Vincent,1139,5.0,Alejo,67,17
+5,Alejo,9,Pablo,,Alejo,V,Greg,,Pablo,,Alejo,,Greg,1037,2.0,Garen ,61,17
+6,Vincent,24,_,,Eugene,,Vincent,V,Alejo,V,Greg,V,Alejo,935,14.0,Tom,55,17
+7,Vadym,25,_,,Marinko,,Vadym,,Greg,V,Pablo,,Vadym,867,12.0,Eugene,51,17
+8,Vivian,8,Vivian,,Roeland,V,Garen ,V,Vadym,,Vadym,V,Pablo,799,7.0,Vadym,47,17
+9,Pablo,5,Alejo,,Greg,V,_,,Vivian,,Marinko,,Richard B,731,6.0,Vincent,43,17
+10,Lukas N,28,_,,Tom,,Vivian,,Marinko,V,Richard B,V,Marinko,680,10.0,Lukas N,40,17
+11,Richard B,21,_,,Richard B,,Eugene,,Richard B,V,Vivian,V,Vivian,629,15.0,Rakan,37,17
+12,Eugene,12,Eugene,,Vincent,V,Marinko,V,Lukas N,,Lukas N,,Lukas N,578,8.0,Vivian,34,17
+13,Marinko,13,Marinko,,Vadym,V,Tom,,_,,Eugene,,Tom,527,,,31,17
+14,Tom,20,_,,Lukas N,,Richard B,V,Eugene,,Tom,V,Eugene,476,4.0,Roeland,28,17
+15,Rakan,29,_,,Rakan,,Lukas N,V,Tom,V,_,,Rakan,442,9.0,Pablo,26,17
+16,_,4,Roeland,,Garen ,V,Rakan,,Rakan,,Rakan,,_,408,13.0,Marinko,24,17
+17,_,3,Greg,,_,,_,,_,,_,,_,374,11.0,Richard B,22,17
+18,_,30,_,,_,,_,,_,,_,,_,340,,,20,17
+19,_,19,_,,_,,_,,_,,_,,_,306,,,18,17
+20,_,14,Tom,,_,,_,,_,,_,,_,272,,,16,17
+21,_,11,Richard B,,_,,_,,_,,_,,_,238,,,14,17
+22,_,22,_,,_,,_,,_,,_,,_,204,,,12,17
+23,_,27,_,,_,,_,,_,,_,,_,170,,,10,17
+24,_,6,Vincent,,_,,_,,_,,_,,_,153,,,9,17
+25,_,7,Vadym,,_,,_,,_,,_,,_,136,,,8,17
+26,_,26,_,,_,,_,,_,,_,,_,119,,,7,17
+27,_,23,_,,_,,_,,_,,_,,_,102,,,6,17
+28,_,10,Lukas N,,_,,_,,_,,_,,_,85,,,5,17
+29,_,15,Rakan,,_,,_,,_,,_,,_,68,,,4,17
+30,_,18,_,,_,,_,,_,,_,,_,51,,,3,17
+31,_,31,_,,_,,_,,_,,_,,_,34,,,2,17
+32,_,2,Garen ,,_,,_,,_,,_,,_,17,,,1,17

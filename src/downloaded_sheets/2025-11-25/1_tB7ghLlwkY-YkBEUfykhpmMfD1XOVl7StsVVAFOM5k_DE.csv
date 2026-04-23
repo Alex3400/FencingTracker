@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Eric L,1,Eric L,,Eric L,,Will P,,Tom,V,Tom,,Greg,2500,11.0,Sameer,100,25
+2,Fessal,32,_,,Will P,V,Tom,V,Alejo,,Greg,V,Tom,2125,7.0,Sammy,85,25
+3,Greg,17,Alex Y,,Vivian,,Alejo,V,Greg,V,Alejo,,Sammy,1875,5.0,Charlie ,75,25
+4,Lukas N,16,Will P,V,Tom,V,Lukas N,,Sammy,,Sammy,V,Alejo,1675,3.0,Greg,67,25
+5,Charlie ,9,Vivian,,Charlie ,,Greg,V,Will P,,Lukas N,,Fessal,1525,20.0,Rowena,61,25
+6,Vincent,24,_,,Alejo,V,Sameer,,Lukas N,V,Fessal,V,Lukas N,1375,8.0,Tom,55,25
+7,Sammy,25,_,,Nicholas,,Sammy,V,Sameer,,Will P,V,Will P,1275,1.0,Eric L,51,25
+8,Tom,8,Tom,,Lukas N,V,Fessal,,Fessal,V,Sameer,,Sameer,1175,18.0,Joshua,47,25
+9,Vivian,5,Charlie ,,Greg,V,Eric L,V,Eric L,V,Eric L,,Adrian L,1075,,,43,25
+10,Anna A,28,_,,Richard B,,Vivian,,Nicholas,,Adrian L,V,Eric L,1000,22.0,Alix S,40,25
+11,Sameer,21,Alonzo,,Sameer,V,Charlie ,,Richard B,,Nicholas,,Richard B,925,21.0,Alonzo,37,25
+12,Alejo,12,Alejo,V,Vincent,,Nicholas,V,Adrian L,V,Richard B,V,Nicholas,850,2.0,Fessal,34,25
+13,Nicholas,13,Nicholas,V,Sammy,V,Richard B,V,Vivian,V,Vivian,,Vincent,775,,,31,25
+14,Richard B,20,Rowena,,Anna A,,Vincent,,Charlie ,,Vincent,V,Vivian,700,17.0,Alex Y,28,25
+15,Adrian L,29,_,,Adrian L,,Anna A,,Vincent,V,Charlie ,,Anna A,650,4.0,Lukas N,26,25
+16,Will P,4,Lukas N,,Fessal,V,Adrian L,V,Anna A,,Anna A,V,Charlie ,600,10.0,Anna A,24,25
+17,Alex Y,3,Greg,,_,,Alex Y,,Alex Y,V,Alex Y,V,Alex Y,550,6.0,Vincent,22,25
+18,Joshua,30,_,,Alex Y,,_,,Rowena,,Eugene,,Eugene,500,15.0,Adrian L,20,25
+19,Eugene,19,Eugene,,_,,Alonzo,,Eugene,V,Rowena,,Joshua,450,14.0,Richard B,18,25
+20,Rowena,14,Richard B,V,_,,Rowena,V,Joshua,,Joshua,V,Rowena,400,16.0,Will P,16,25
+21,Alonzo,11,Sameer,V,_,,Eugene,V,_,,Alonzo,,Alix S,350,19.0,Eugene,14,25
+22,Alix S,22,Alix S,,Alonzo,,Alix S,,Alonzo,,Alix S,V,Alonzo,300,13.0,Nicholas,12,25
+23,_,27,_,,Rowena,,_,,Alix S,,_,,_,250,,,10,25
+24,_,6,Vincent,,_,,Joshua,,_,,_,,_,225,9.0,Vivian,9,25
+25,_,7,Sammy,,_,,_,,_,,_,,_,200,12.0,Alejo,8,25
+26,_,26,_,,Eugene,,_,,_,,_,,_,175,,,7,25
+27,_,23,_,,Alix S,,_,,_,,_,,_,150,,,6,25
+28,_,10,Anna A,,_,,_,,_,,_,,_,125,,,5,25
+29,_,15,Adrian L,V,_,,_,,_,,_,,_,100,,,4,25
+30,_,18,Joshua,,_,,_,,_,,_,,_,75,,,3,25
+31,_,31,_,,Joshua,,_,,_,,_,,_,50,,,2,25
+32,_,2,Fessal,,_,,_,,_,,_,,_,25,,,1,25

@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Fessal,1,Fessal,,Fessal,V,Fessal,V,Fessal,,Lukas N,,Greg,2800,21.0,Vincent,100,28
+2,Greg,32,_,,Anna Z,,Vivian,,Lukas N,V,Greg,V,Lukas N,2380,4.0,Alex Y,85,28
+3,Tom T,17,Anna Z,V,Vivian,V,Lukas N,V,Sameer,,Fessal,V,Fessal,2100,2.0,Greg,75,28
+4,Alex Y,16,Marinko,,Alejo,,Alex Y,,Greg,V,Sameer,,Sameer,1876,11.0,Richard B,67,28
+5,Lukas N,9,Vivian,V,Lukas N,V,Tom T,,Vivian,V,Vivian,V,Vivian,1708,27.0,Nat,61,28
+6,Willie,24,Isra,,Vincent,,Sameer,V,Alex Y,,Tom T,,Tom T,1540,19.0,Caden,55,28
+7,James S,25,Kirill,,Steph,,Vadym,,Tom T,V,Alex Y,V,Alex Y,1428,6.0,Willie,51,28
+8,Alejo,8,Alejo,V,Alex Y,V,Greg,V,Vadym,,Vadym,,Vadym,1316,1.0,Fessal,47,28
+9,Vivian,5,Lukas N,,Tom T,V,Anna Z,V,Anna Z,V,Anna Z,,Willie,1204,18.0,Benjamin,43,28
+10,Anna A,28,_,,Fedor,,Alejo,,Vincent,,Willie,V,Anna Z,1120,17.0,Anna Z,40,28
+11,Richard B,21,Vincent,V,Sameer,V,Vincent,V,Willie,V,Vincent,V,Vincent,1036,,,37,28
+12,Shevy,12,Shevy,,Willie,,Steph,,Anna A,,Anna A,,Anna A,952,8.0,Alejo,34,28
+13,Steph,13,Steph,V,Vadym,V,Fedor,,Alejo,,Steph,,Will P,868,9.0,Vivian,31,28
+14,Fedor,20,Andy R,,Anna A,,Willie,V,Steph,V,Will P,V,Steph,784,25.0,Kirill,28,28
+15,Will P,29,_,,Will P,,Anna A,V,Fedor,,Alejo,V,Alejo,728,5.0,Lukas N,26,28
+16,Marinko,4,Alex Y,,Greg,V,Will P,,Will P,V,Fedor,,Fedor,672,10.0,Anna A,24,28
+17,Anna Z,3,Tom T,,_,,Marinko,V,Marinko,,Andy R,,James S,616,13.0,Steph,22,28
+18,Benjamin,30,_,,Marinko,,Kirill,,Andy R,V,James S,V,Andy R,560,12.0,Shevy,20,28
+19,Caden,19,Caden,,Isra,,Shevy,,Caden,,Marinko,V,Marinko,504,20.0,Andy R,18,28
+20,Andy R,14,Fedor,V,Kirill,V,Andy R,V,James S,V,Caden,,Caden,448,7.0,James S,16,28
+21,Vincent,11,Richard B,,_,,Caden,V,Kirill,V,Kirill,,Benjamin,392,24.0,Isra,14,28
+22,Sameer,22,Sameer,V,Shevy,,Richard B,,Shevy,,Benjamin,V,Kirill,336,15.0,Will P,12,28
+23,Joshua,27,Nat,,Andy R,,James S,V,Richard B,,Shevy,,Richard B,280,14.0,Fedor,10,28
+24,Isra,6,Willie,V,_,,Benjamin,,Benjamin,V,Richard B,V,Shevy,252,22.0,Sameer,9,28
+25,Kirill,7,James S,,_,,_,,Isra,,Isra,,Nat,224,3.0,Tom T,8,28
+26,Vadym,26,Vadym,V,Caden,,Isra,,_,,Nat,V,Isra,196,23.0,Joshua,7,28
+27,Nat,23,Joshua,,Richard B,V,_,,Nat,V,_,,Joshua,168,16.0,Marinko,6,28
+28,_,10,Anna A,V,Nat,,_,,Joshua,,Joshua,,_,140,26.0,Vadym,5,28
+29,_,15,Will P,V,James S,V,_,,_,,_,,_,112,,,4,28
+30,_,18,Benjamin,,Joshua,,Nat,,_,,_,,_,84,,,3,28
+31,_,31,_,,Benjamin,,Joshua,,_,,_,,_,56,,,2,28
+32,_,2,Greg,,_,,_,,_,,_,,_,28,,,1,28

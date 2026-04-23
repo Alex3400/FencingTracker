@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Vincent,1,Vincent,,Vincent,V,Vincent,,Willie,V,Willie,V,Willie,2500,20.0,John H,100,25
+2,Vivian,32,_,,Andy R,,Willie,V,Charlie ,,Sammy,,Sammy,2125,13.0,Alex Y,85,25
+3,Greg,17,Fergus,,Steph,,Alejo,,Greg,,Charlie ,,Greg,1875,4.0,Charlie ,75,25
+4,Charlie ,16,Andy R,V,Willie,V,Charlie ,V,Sammy,V,Greg,V,Charlie ,1675,6.0,Richard B,67,25
+5,Alejo,9,Steph,V,Alejo,V,Greg,V,Vincent,,Alejo,V,Alejo,1525,2.0,Vivian,61,25
+6,Richard B,24,Kiriil,,Anna Z,,Richard B,,Alejo,V,Richard B,,Richard B,1375,11.0,Adrian L,55,25
+7,Fessal,25,_,,Alex Y,,Sammy,V,Richard B,V,Vincent,V,Vincent,1275,23.0,Miriam,51,25
+8,Willie,8,Willie,,Charlie ,V,Vivian,,Vivian,,Vivian,,Vivian,1175,15.0,Anna A,47,25
+9,Steph,5,Alejo,,Greg,V,Andy R,,Steph,V,Steph,,Fessal,1075,3.0,Greg,43,25
+10,Sammy,28,_,,Colin R,,Steph,V,Alex Y,,Fessal,V,Steph,1000,18.0,Tom S,40,25
+11,Adrian L,21,Jack B,,Caden,,Anna Z,,Caden,,Alex Y,,Caden,925,12.0,Anna Z,37,25
+12,Anna Z,12,Anna Z,V,Richard B,V,Alex Y,V,Fessal,V,Caden,V,Alex Y,850,5.0,Alejo,34,25
+13,Alex Y,13,Alex Y,V,Fessal,,Colin R,,Andy R,,Anna Z,,Colin R,775,1.0,Vincent,31,25
+14,Colin R,20,John H,,Sammy,V,Caden,V,Anna Z,V,Colin R,V,Anna Z,700,19.0,Alix S,28,25
+15,Anna A,29,_,,Tom S,,Fessal,V,Colin R,V,Andy R,V,Andy R,650,17.0,Fergus,26,25
+16,Andy R,4,Charlie ,,Vivian,V,Tom S,,Tom S,,Tom S,,Tom S,600,7.0,Fessal,24,25
+17,Fergus,3,Greg,,_,,Fergus,V,Fergus,,John H,,Miriam,550,24.0,Kiriil,22,25
+18,Tom S,30,_,,Fergus,,Kiriil,,John H,V,Miriam,V,John H,500,21.0,Jack B,20,25
+19,Alix S,19,Alix S,,Kiriil,,Jack B,,Adrian L,,Fergus,,Adrian L,450,14.0,Colin R,18,25
+20,John H,14,Colin R,V,_,,John H,V,Miriam,V,Adrian L,V,Fergus,400,,,16,25
+21,Jack B,11,Adrian L,,_,,Alix S,,Kiriil,V,Kiriil,,Alix S,350,9.0,Steph,14,25
+22,Caden,22,Caden,V,Jack B,,Adrian L,V,Jack B,,Alix S,V,Kiriil,300,8.0,Willie,12,25
+23,Miriam,27,_,,John H,,Miriam,V,Alix S,V,Jack B,,Anna A,250,10.0,Sammy,10,25
+24,Kiriil,6,Richard B,,_,,Anna A,,Anna A,,Anna A,V,Jack B,225,16.0,Andy R,9,25
+25,_,7,Fessal,,_,,_,,_,,_,,_,200,22.0,Caden,8,25
+26,_,26,_,,Alix S,,_,,_,,_,,_,175,,,7,25
+27,_,23,Miriam,,Adrian L,,_,,_,,_,,_,150,,,6,25
+28,_,10,Sammy,V,_,,_,,_,,_,,_,125,,,5,25
+29,_,15,Anna A,,_,,_,,_,,_,,_,100,,,4,25
+30,_,18,Tom S,V,Miriam,,_,,_,,_,,_,75,,,3,25
+31,_,31,_,,Anna A,,_,,_,,_,,_,50,,,2,25
+32,_,2,Vivian,,_,,_,,_,,_,,_,25,,,1,25

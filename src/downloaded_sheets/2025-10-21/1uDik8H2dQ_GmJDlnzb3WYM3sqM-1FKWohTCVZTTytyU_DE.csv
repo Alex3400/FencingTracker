@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Greg,1,Greg,,Greg,V,Greg,V,Greg,,Willie,V,Willie,2000,2.0,Eric L,100,20
+2,Eric L,32,_,,fergus,,Richard B,,Willie,V,Eric L,,Eric L,1700,9.0,Richard B,85,20
+3,Alex A,17,_,,Richard B,V,Willie,V,Roeland,,Greg,,Roeland,1500,12.0,Lukas,75,20
+4,Charlie ,16,fergus,,Colin R,,Charlie ,,Eric L,V,Roeland,V,Greg,1340,1.0,Greg,67,20
+5,Willie,9,Richard B,,Willie,V,Alex A,,Richard B,V,Richard B,V,Richard B,1220,10.0,Vivian,61,20
+6,Vincent ,24,_,,Lukas,,Roeland,V,Charlie ,,Alex A,,Alex A,1100,,,55,20
+7,Steph,25,_,,Fessal,,Vivian,,Alex A,V,Charlie ,,Vivian,1020,13.0,Fessal,51,20
+8,Colin R,8,Colin R,,Charlie ,V,Eric L,V,Vivian,,Vivian,V,Charlie ,940,,,47,20
+9,Richard B,5,Willie,,Alex A,V,fergus,,Colin R,,Fessal,,rakan,860,7.0,Steph,43,20
+10,Vivian,28,_,,Will P,,Colin R,V,Fessal,V,rakan,V,Fessal,800,3.0,Alex A,40,20
+11,Roeland,21,_,,Roeland,V,Lukas,,Vincent ,,Colin R,,Vincent ,740,8.0,Colin R,37,20
+12,Lukas,12,Lukas,,Vincent ,,Fessal,V,rakan,V,Vincent ,V,Colin R,680,16.0,fergus,34,20
+13,Fessal,13,Fessal,,Steph,,Will P,,fergus,,Lukas,,,620,15.0,rakan,31,20
+14,Will P,20,_,,Vivian,V,Vincent ,V,Lukas,V,,V,Lukas,560,11.0,Roeland,28,20
+15,rakan,29,_,,rakan,,Steph,,Will P,,fergus,V,fergus,520,14.0,Will P,26,20
+16,fergus,4,Charlie ,,Eric L,V,rakan,V,Steph,,,,,480,6.0,Vincent ,24,20
+17,_,3,Alex A,,_,,_,,_,,_,,_,440,,,22,20
+18,_,30,_,,_,,_,,_,,_,,_,400,4.0,Charlie ,20,20
+19,_,19,_,,_,,_,,_,,_,,_,360,5.0,Willie,18,20
+20,_,14,Will P,,_,,_,,_,,_,,_,320,,,16,20
+21,_,11,Roeland,,_,,_,,_,,_,,_,280,,,14,20
+22,_,22,_,,_,,_,,_,,_,,_,240,,,12,20
+23,_,27,_,,_,,_,,_,,_,,_,200,,,10,20
+24,_,6,Vincent ,,_,,_,,_,,_,,_,180,,,9,20
+25,_,7,Steph,,_,,_,,_,,_,,_,160,,,8,20
+26,_,26,_,,_,,_,,_,,_,,_,140,,,7,20
+27,_,23,_,,_,,_,,_,,_,,_,120,,,6,20
+28,_,10,Vivian,,_,,_,,_,,_,,_,100,,,5,20
+29,_,15,rakan,,_,,_,,_,,_,,_,80,,,4,20
+30,_,18,_,,_,,_,,_,,_,,_,60,,,3,20
+31,_,31,_,,_,,_,,_,,_,,_,40,,,2,20
+32,_,2,Eric L,,_,,_,,_,,_,,_,20,,,1,20

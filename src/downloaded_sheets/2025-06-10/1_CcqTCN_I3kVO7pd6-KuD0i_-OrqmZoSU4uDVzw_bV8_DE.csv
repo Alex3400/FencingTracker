@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Alejo,1,Alejo,,Alejo,V,Alejo,,Greg,V,Greg,V,Greg,2000,3.0,Eric L,100,20
+2,Alex A,32,_,,Pablo,,Greg,V,John H,,Alex A,,Alex A,1700,12.0,John H,85,20
+3,Eric L,17,Vincent,,Alex Y,,John H,V,Eric L,,John H,V,John H,1500,8.0,Greg,75,20
+4,Vadym,16,Pablo,V,Greg,V,Colin R,,Alex A,V,Eric L,,Eric L,1340,11.0,Charlie ,67,20
+5,Tom,9,Alex Y,,Tom,,Eric L,V,Alejo,V,Alejo,,Vivian,1220,6.0,Max T,61,20
+6,Max T,24,_,,John H,V,Charlie ,,Colin R,,Vivian,V,Alejo,1100,15.0,Marg,55,20
+7,Vivian,25,_,,Colin R,V,Vivian,,Charlie ,,Colin R,V,Colin R,1020,2.0,Alex A,51,20
+8,Greg,8,Greg,,Vadym,,Alex A,V,Vivian,V,Charlie ,,Charlie ,940,10.0,Maiya,47,20
+9,Alex Y,5,Tom,,Eric L,V,Pablo,,Alex Y,V,Alex Y,,Max T,860,1.0,Alejo,43,20
+10,Maiya,28,_,,,,Alex Y,V,Vadym,,Max T,V,Alex Y,800,,,40,20
+11,Charlie ,21,_,,Charlie ,V,Tom,,Max T,V,Vadym,V,Vadym,740,14.0,Lukas N,37,20
+12,John H,12,John H,,Max T,,Vadym,V,Maiya,,Maiya,,Maiya,680,5.0,Tom,34,20
+13,Colin R,13,Colin R,,Vivian,V,,,Pablo,V,Pablo,V,Pablo,620,7.0,Vivian,31,20
+14,Lukas N,20,_,,Maiya,,Max T,V,Tom,,Marg,,Marg,560,9.0,Alex Y,28,20
+15,Marg,29,_,,Marg,,Maiya,V,,,Tom,,,520,13.0,Colin R,26,20
+16,Pablo,4,Vadym,,Alex A,V,Marg,,Marg,V,,V,Tom,480,16.0,Pablo,24,20
+17,Vincent,3,Eric L,,_,,Vincent,,Vincent,,Vincent,V,Vincent,440,18.0,Flavia,22,20
+18,Flavia,30,_,,Vincent,,_,,_,,,,,400,19.0,Nat,20,20
+19,Nat,19,Nat,,_,,_,,,,_,,,360,4.0,Vadym,18,20
+20,_,14,Lukas N,,_,,_,,Flavia,,,,_,320,17.0,Vincent,16,20
+21,_,11,Charlie ,,_,,,,_,,_,,_,280,,,14,20
+22,_,22,_,,_,,_,,_,,_,,_,240,,,12,20
+23,_,27,_,,_,,_,,_,,_,,_,200,,,10,20
+24,_,6,Max T,,_,,Flavia,,_,,_,,_,180,,,9,20
+25,_,7,Vivian,,_,,_,,_,,_,,_,160,,,8,20
+26,_,26,_,,,,_,,_,,_,,_,140,,,7,20
+27,_,23,_,,_,,_,,_,,_,,_,120,,,6,20
+28,_,10,Maiya,,_,,_,,_,,_,,_,100,,,5,20
+29,_,15,Marg,V,_,,_,,_,,_,,_,80,,,4,20
+30,_,18,Flavia,,_,,_,,_,,_,,_,60,,,3,20
+31,_,31,_,,Flavia,,_,,_,,_,,_,40,,,2,20
+32,_,2,Alex A,,_,,_,,_,,_,,_,20,,,1,20

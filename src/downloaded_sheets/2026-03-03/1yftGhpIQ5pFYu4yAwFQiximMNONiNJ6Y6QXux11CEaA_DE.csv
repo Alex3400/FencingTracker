@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Vivian,1,Vivian,,Vivian,V,Vivian,V,Vivian,V,Vivian,,Alex Y,2100,2.0,Alex Y,100,21
+2,Alex Y,32,_,,Angelica,,Will P,,James S,,Alex Y,V,Vivian,1785,3.0,Greg,85,21
+3,Greg,17,Caden,,Aisling,,Anna A,,Greg,,James S,,Greg,1575,15.0,Richard B,75,21
+4,James S,16,Angelica,V,Will P,V,James S,V,Alex Y,V,Greg,V,James S,1407,,,67,21
+5,Anna A,9,Aisling,,Anna A,V,Greg,V,Will P,,Anna A,,Oleg,1281,17.0,Caden,61,21
+6,Colin R,24,_,,Joshua,,Oleg,,Anna A,V,Oleg,V,Anna A,1155,,,55,21
+7,Vincent,25,_,,Max,,Vincent,,Oleg,V,Will P,,Vincent,1071,5.0,Anna A,51,21
+8,Will P,8,Will P,,James S,V,Alex Y,V,Vincent,,Vincent,V,Will P,987,12.0,Joshua,47,21
+9,Aisling,5,Anna A,,Greg,V,Angelica,,Aisling,,Max,,Steph,903,6.0,Colin R,43,21
+10,Steph,28,_,,Kirill,,Aisling,V,Max,V,Steph,V,Max,840,10.0,Steph,40,21
+11,Oleg,21,_,,Oleg,V,Joshua,,Kirill,,Aisling,,Kirill,777,4.0,James S,37,21
+12,Joshua,12,Joshua,,Colin R,,Max,V,Steph,V,Kirill,V,Aisling,714,13.0,Max,34,21
+13,Max,13,Max,,Vincent,V,Kirill,V,Angelica,,Joshua,,Richard B,651,14.0,Kirill,31,21
+14,Kirill,20,_,,Steph,,Colin R,,Joshua,V,Richard B,V,Joshua,588,7.0,Vincent,28,21
+15,Richard B,29,_,,Richard B,,Steph,V,Colin R,,Angelica,,Colin R,546,18.0,Fergus,26,21
+16,Angelica,4,James S,,Alex Y,V,Richard B,,Richard B,V,Colin R,V,Angelica,504,19.0,Alix S,24,21
+17,Caden,3,Greg,,_,,Caden,,Caden,,Caden,V,Caden,462,,,22,21
+18,Fergus,30,_,,Caden,,_,,_,,Fergus,,Fergus,420,11.0,Oleg,20,21
+19,Alix S,19,Alix S,,_,,_,,Alix S,,_,,Alix S,378,9.0,Aisling,18,21
+20,_,14,Kirill,V,_,,_,,Fergus,V,Alix S,,_,336,16.0,Angelica,16,21
+21,_,11,Oleg,,_,,Alix S,,_,,_,,_,294,8.0,Will P,14,21
+22,_,22,_,,_,,_,,_,,_,,_,252,1.0,Vivian,12,21
+23,_,27,_,,_,,_,,_,,_,,_,210,,,10,21
+24,_,6,Colin R,,_,,Fergus,,_,,_,,_,189,,,9,21
+25,_,7,Vincent,,_,,_,,_,,_,,_,168,,,8,21
+26,_,26,_,,Alix S,,_,,_,,_,,_,147,,,7,21
+27,_,23,_,,_,,_,,_,,_,,_,126,,,6,21
+28,_,10,Steph,,_,,_,,_,,_,,_,105,,,5,21
+29,_,15,Richard B,V,_,,_,,_,,_,,_,84,,,4,21
+30,_,18,Fergus,,_,,_,,_,,_,,_,63,,,3,21
+31,_,31,_,,Fergus,,_,,_,,_,,_,42,,,2,21
+32,_,2,Alex Y,,_,,_,,_,,_,,_,21,,,1,21

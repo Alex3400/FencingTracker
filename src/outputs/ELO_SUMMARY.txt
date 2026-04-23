@@ -1,0 +1,192 @@
+================================================================
+HAVERSTOCK FENCING ELO RATING SYSTEM - SUMMARY
+================================================================
+
+Implementation Date: 2026-04-23
+Total Tournaments Processed: 41 (2025-05-06 to 2026-04-21)
+Total Rated Fencers: 132
+
+================================================================
+SYSTEM PARAMETERS (TUNED)
+================================================================
+
+Base K-Factor: 40
+Starting Rating: 1400
+Rating Range: 600 - 2200
+
+K-Factor by Experience:
+  0-19 matches:   K=50 (New players - fast convergence)
+  20-49 matches:  K=45 (Developing players)
+  50-149 matches: K=40 (Established players)
+  150+ matches:   K=32 (Veterans - stable ratings)
+
+Minimum for Established Rating: 30 matches
+  Below 30 matches = "Provisional" rating
+
+Margin Scoring (Poules): Enabled
+  Formula: Actual Score = 0.5 + (Your Score - Their Score) / 10
+  5-0 = 1.0, 5-1 = 0.9, 5-2 = 0.8, 5-3 = 0.7, 5-4 = 0.6
+
+DE Bracket Weights (multiplier on K):
+  Finals (L1-2):      5.0×
+  Semifinals (L1-4):  4.0×
+  Quarters (L1-8):    3.0×
+  Bronze (L3-4):      4.0×
+  L1-16:              2.5×
+  L1-32:              2.0×
+  Mid brackets:       1.8-2.5×
+  Lower brackets:     1.0-1.2×
+
+Field Size Scaling: sqrt(field_size / 20)
+  Adjusts for tournament size (observed range: 11-29 fencers)
+
+Placement Bonuses:
+  1st place:  +15 rating
+  2nd place:  +10 rating
+  3rd/4th:    +5 rating
+
+================================================================
+TOP 20 ESTABLISHED RATINGS (30+ matches)
+================================================================
+
+1.  Greg          1972.5  (477 matches, 82.6% winrate)
+2.  Fassel        1832.0  (96 matches, 70.3% winrate)
+3.  Fessal        1698.4  (59 matches, 76.3% winrate)
+4.  Alex Y        1686.4  (239 matches, 64.0% winrate)
+5.  Eric L        1678.5  (331 matches, 73.1% winrate)
+6.  Oleg          1672.2  (69 matches, 56.5% winrate)
+7.  Sammy         1658.8  (110 matches, 62.3% winrate)
+8.  Lukas N       1645.9  (199 matches, 45.2% winrate)
+9.  Roeland       1639.8  (83 matches, 66.3% winrate)
+10. Charlie       1633.3  (199 matches, 72.1% winrate)
+11. Tom           1614.6  (190 matches, 49.5% winrate)
+12. Anna A        1590.6  (159 matches, 56.2% winrate)
+13. Willie        1586.9  (254 matches, 62.6% winrate)
+14. Vivian        1554.6  (442 matches, 57.6% winrate)
+15. Tom T         1552.5  (118 matches, 66.9% winrate)
+16. Truuvy        1548.8  (83 matches, 64.3% winrate)
+17. James S       1532.0  (84 matches, 57.0% winrate)
+18. Alex A        1525.8  (106 matches, 68.9% winrate)
+19. Sameer        1522.9  (79 matches, 69.6% winrate)
+20. Alejo         1517.1  (376 matches, 67.2% winrate)
+
+================================================================
+TOP 10 PROVISIONAL RATINGS (<30 matches)
+================================================================
+
+1.  Fasal         1807.2  (8 matches)   *Sample size too small*
+2.  Rudi          1718.2  (27 matches)
+3.  David Roig    1661.1  (14 matches)
+4.  Garen         1655.5  (17 matches)
+5.  Fasel         1651.8  (13 matches)
+6.  Nikolas A     1622.2  (11 matches)
+7.  Fessel        1596.0  (14 matches)
+8.  Karsten       1567.7  (13 matches)
+9.  Garen         1548.2  (27 matches)
+10. Ed B          1494.3  (20 matches)
+
+Note: Provisional ratings are volatile and may not reflect true
+skill level. They will stabilize after 30+ matches.
+
+================================================================
+RATING DISTRIBUTION (Established Fencers)
+================================================================
+
+Elite (1800+):        2 fencers  (3.1%)
+Strong (1600-1800):   8 fencers  (12.3%)
+Solid (1400-1600):   30 fencers  (46.2%)
+Developing (1200-1400): 22 fencers  (33.8%)
+Beginner (<1200):     3 fencers  (4.6%)
+
+Rating Spread: ~810 points (1972 → 1158)
+Average Rating (Established): ~1450
+
+================================================================
+IMPROVEMENTS MADE DURING TUNING
+================================================================
+
+1. INCREASED bracket weights (L1-2: 4.0→5.0, L1-4: 3.0→4.0)
+   - Created better rating spread between skill levels
+   - Greg now 456 points above Alejo (was 317)
+
+2. REDUCED placement bonuses (1st: 25→15, 2nd: 15→10)
+   - Prevents single-tournament rating spikes
+   - Fasal (8 matches) no longer ranked #2 overall
+
+3. ADDED provisional rating flag
+   - Separates established (30+ matches) from provisional (<30)
+   - Users can filter by "Status" column
+
+4. INCREASED K-factors across the board
+   - Faster convergence for all experience levels
+   - Better responsiveness to performance changes
+
+5. ADDED poule match randomization
+   - Prevents systematic ordering bias
+   - Uses date-based seed for reproducibility
+
+6. INCREASED minimum for established rating (20→30 matches)
+   - More conservative threshold for reliable ratings
+
+================================================================
+OUTPUT FILES
+================================================================
+
+elo_ratings.csv       - Final ratings sorted by skill level
+                       (Established first, then Provisional)
+
+elo_history.csv       - Complete chronological match history
+                       Shows BOTH fencers per match with:
+                       - Old rating (before match)
+                       - New rating (after match)
+                       - Rating change (+ or -)
+                       - Match type and result
+                       Total: 4,794 matches tracked
+
+elo_history_example.txt - Detailed examples of how to read
+                       the history file with real match samples
+
+session_stats.csv     - Per-tournament statistics
+fencer_stats.csv      - Individual performance metrics
+head_to_head_stats.csv - Matchup records between fencers
+placement_stats.csv   - Tournament placement history
+match_history.csv     - All matches with dates and scores
+global_stats.txt      - Overall league statistics
+
+================================================================
+VALIDATION CHECKS
+================================================================
+
+✓ Top fencers reach 1800+
+  Greg at 1972, well-separated from pack
+
+✓ Rating spread reflects winrate variance
+  ~800 point spread for ~70 percentage point winrate range
+
+✓ Provisional ratings flagged
+  All fencers <30 matches clearly marked
+
+✓ Chronological processing maintained
+  elo_history.csv shows all updates in date order
+
+✓ Poule matches randomly ordered
+  Prevents systematic bias from matrix position
+
+✓ Veterans have stable ratings
+  150+ match fencers use K=32 for consistency
+
+================================================================
+NEXT STEPS (OPTIONAL)
+================================================================
+
+If ratings still seem off after more tournaments:
+
+- Adjust BASE_K (currently 40) to change volatility
+- Modify BRACKET_WEIGHTS to emphasize finals more/less
+- Change PLACEMENT_BONUSES to reward wins more/less
+- Adjust MIN_MATCHES_FOR_ESTABLISHED threshold
+- Tweak K_FACTOR_THRESHOLDS for different experience curves
+
+All parameters are in global variables at top of script.
+
+================================================================

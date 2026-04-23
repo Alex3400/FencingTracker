@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Vincent,1,Vincent,,Vincent,,Oleg,V,Oleg,V,Oleg,,Alex Y,2900,,,100,29
+2,Vivian,32,_,,Oleg,V,Anna Z,,Sameer,,Alex Y,V,Oleg,2465,1.0,Vincent,85,29
+3,Alex Y,17,Andy R,,Ed B,,Sameer,V,Alex Y,V,Sameer,,Vadym,2175,24.0,Caden,75,29
+4,Tom T,16,Oleg,V,Anna Z,V,Alejo,,Vadym,,Vadym,V,Sameer,1943,6.0,Greg,67,29
+5,Darran,9,Ed B,V,Darran,,Alex Y,V,Anna Z,,Alejo,V,Alejo,1769,20.0,Kirill,61,29
+6,Greg,24,Caden,,Sameer,V,Steph,,Alejo,V,Vivian,,Vivian,1595,9.0,Ed B,55,29
+7,James S,25,vanessa,,Alejo,V,Vadym,V,Steph,,Anna Z,,Steph,1479,18.0,Joshua,51,29
+8,Anna Z,8,Anna Z,V,Tom T,,Vivian,,Vivian,V,Steph,V,Anna Z,1363,5.0,Darran,47,29
+9,Ed B,5,Darran,,Alex Y,V,Vincent,,Ed B,V,Ed B,,Greg,1247,7.0,James S,43,29
+10,Vadym,28,_,,LUKAS,,Ed B,V,Darran,,Greg,V,Ed B,1160,22.0,Angelica,40,29
+11,Steph,21,Alix S,,Steph,V,Darran,V,Greg,V,Darran,,James S,1073,,,37,29
+12,Sameer,12,Sameer,V,Greg,,Tom T,,James S,,James S,V,Darran,986,8.0,Anna Z,34,29
+13,Alejo,13,Alejo,V,James S,,LUKAS,,Vincent,V,Vincent,V,Vincent,899,23.0,Fergus,31,29
+14,Colin R,20,Kirill,,Vadym,V,Greg,V,Tom T,,Eugene,,Eugene,812,21.0,Alix S,28,29
+15,Eugene,29,_,,Eugene,,James S,V,LUKAS,,Tom T,,LUKAS,754,11.0,Steph,26,29
+16,Oleg,4,Tom T,,Vivian,V,Eugene,,Eugene,V,LUKAS,V,Tom T,696,4.0,Tom T,24,29
+17,Andy R,3,Alex Y,,_,,Andy R,V,Andy R,V,Andy R,,Colin R,638,12.0,Sameer,22,29
+18,Joshua,30,_,,Andy R,,Caden,,Kirill,,Colin R,V,Andy R,580,15.0,Eugene,20,29
+19,LUKAS,19,LUKAS,V,Caden,V,Alix S,,Colin R,V,Kirill,,Fergus,522,19.0,LUKAS,18,29
+20,Kirill,14,Colin R,,vanessa,,Kirill,V,Fergus,,Fergus,V,Kirill,464,3.0,Alex Y,16,29
+21,Alix S,11,Steph,V,_,,Colin R,V,Caden,V,Caden,V,Caden,406,,,14,29
+22,Angelica,22,Angelica,,Alix S,,Angelica,,Alix S,,Joshua,,Joshua,348,,,12,29
+23,Fergus,27,_,,Kirill,,Fergus,V,Angelica,,Alix S,,Angelica,290,25.0,vanessa,10,29
+24,Caden,6,Greg,,_,,Joshua,,Joshua,V,Angelica,V,Alix S,261,2.0,Vivian,9,29
+25,vanessa,7,James S,,_,,_,,vanessa,,vanessa,,vanessa,232,16.0,Oleg,8,29
+26,_,26,_,,Colin R,,vanessa,,_,,_,,_,203,14.0,Colin R,7,29
+27,_,23,Fergus,,Angelica,,_,,_,,_,,_,174,10.0,Vadym,6,29
+28,_,10,Vadym,V,_,,_,,_,,_,,_,145,17.0,Andy R,5,29
+29,_,15,Eugene,V,_,,_,,_,,_,,_,116,13.0,Alejo,4,29
+30,_,18,Joshua,,Fergus,,_,,_,,_,,_,87,,,3,29
+31,_,31,_,,Joshua,,_,,_,,_,,_,58,,,2,29
+32,_,2,Vivian,,_,,_,,_,,_,,_,29,,,1,29

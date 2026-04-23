@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Greg,1,Greg,,Greg,,Greg,V,Greg,V,Greg,V,Greg,1200,1.0,Greg,100,12
+2,Alejo,32,_,,_,,Matilda,,Anna A,,Alejo,,Alejo,1020,,,85,12
+3,Vadym,17,_,,Matilda,V,Steph,,Vadym,,Anna A,,Vadym,900,10.0,Eugene,75,12
+4,Anna A,16,_,,Alix S,,Anna A,V,Alejo,V,Vadym,V,Anna A,804,5.0,Steph,67,12
+5,Steph,9,Matilda,,Steph,,Vadym,V,Matilda,,Steph,,James S,732,8.0,Alix S,61,12
+6,James S,24,_,,_,,James S,,Steph,V,James S,V,Steph,660,7.0,Kirill,55,12
+7,Kirill,25,_,,_,,Kirill,,James S,V,Matilda,,,612,4.0,Anna A,51,12
+8,Alix S,8,Alix S,,Anna A,,Alejo,V,Kirill,,Kirill,,,564,3.0,Vadym,47,12
+9,Matilda,5,Steph,,Vadym,,_,,Alix S,,Alix S,,Marinko,516,2.0,Alejo,43,12
+10,Eugene,28,_,,_,,Alix S,,_,,Marinko,V,Alix S,480,6.0,James S,40,12
+11,Marinko,21,_,,Marinko,,_,,Marinko,V,_,,Eugene,444,9.0,Matilda,37,12
+12,_,12,_,,James S,V,_,,Eugene,,Eugene,,_,408,11.0,Marinko,34,12
+13,_,13,_,,Kirill,V,_,,_,,_,,_,372,,,31,12
+14,_,20,_,,Eugene,,Marinko,,_,,_,,_,336,,,28,12
+15,_,29,_,,_,,Eugene,,_,,_,,_,312,,,26,12
+16,_,4,Anna A,,Alejo,,_,,_,,_,,_,288,,,24,12
+17,_,3,Vadym,,_,,_,,_,,_,,_,264,,,22,12
+18,_,30,_,,_,,_,,_,,_,,_,240,,,20,12
+19,_,19,_,,_,,_,,_,,_,,_,216,,,18,12
+20,_,14,_,,_,,_,,_,,_,,_,192,,,16,12
+21,_,11,Marinko,,_,,_,,_,,_,,_,168,,,14,12
+22,_,22,_,,_,,_,,_,,_,,_,144,,,12,12
+23,_,27,_,,_,,_,,_,,_,,_,120,,,10,12
+24,_,6,James S,,_,,_,,_,,_,,_,108,,,9,12
+25,_,7,Kirill,,_,,_,,_,,_,,_,96,,,8,12
+26,_,26,_,,_,,_,,_,,_,,_,84,,,7,12
+27,_,23,_,,_,,_,,_,,_,,_,72,,,6,12
+28,_,10,Eugene,,_,,_,,_,,_,,_,60,,,5,12
+29,_,15,_,,_,,_,,_,,_,,_,48,,,4,12
+30,_,18,_,,_,,_,,_,,_,,_,36,,,3,12
+31,_,31,_,,_,,_,,_,,_,,_,24,,,2,12
+32,_,2,Alejo,,_,,_,,_,,_,,_,12,,,1,12

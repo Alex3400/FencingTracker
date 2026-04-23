@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Vivian,1,Vivian,,Vivian,,James S,,Alex Y,V,Alex Y,,Greg,2700,9.0,Vincent,100,27
+2,Eric L,32,_,,James S,V,Alex Y,V,Anna A,,Greg,V,Alex Y,2295,6.0,Greg,85,27
+3,Charlie,17,Will P,,Vincent,,Shevy,,Greg,V,Anna A,V,Anna A,2025,12.0,Richard B,75,27
+4,Anna A,16,James S,V,Alex Y,V,Anna A,V,Sameer,,Sameer,,Sameer,1809,2.0,Eric L,67,27
+5,Shevy,9,Vincent,V,Shevy,V,Charlie,,James S,V,James S,,Eric L,1647,3.0,Charlie,61,27
+6,Greg,24,Lysandra,,Richard B,,Greg,V,Shevy,,Eric L,V,James S,1485,8.0,Alex Y,55,27
+7,Willie,25,Max V,,Marinko,,Sameer,V,Charlie,,Shevy,V,Shevy,1377,24.0,Lysandra,51,27
+8,Alex Y,8,Alex Y,V,Anna A,V,Eric L,,Eric L,V,Charlie,,Charlie,1269,17.0,Will P,47,27
+9,Vincent,5,Shevy,,Charlie,V,Vivian,V,Vivian,,Richard B,,Willie,1161,4.0,Anna A,43,27
+10,Sameer,28,_,,Darran,,Vincent,,Richard B,V,Willie,V,Richard B,1080,21.0,Vladimir ,40,27
+11,Anna Z,21,Vladimir ,,Anna Z,,Richard B,V,Darran,,Vivian,V,Vivian,999,11.0,Anna Z,37,27
+12,Richard B,12,Richard B,V,Greg,V,Marinko,,Willie,V,Darran,,Darran,918,5.0,Shevy,34,27
+13,Kirill,13,Kirill,,Willie,,Darran,V,Vincent,V,Vincent,,Anna Z,837,,,31,27
+14,Vadym,20,Marinko,V,Sameer,V,Anna Z,,Marinko,,Anna Z,V,Vincent,756,25.0,Max V,28,27
+15,Fergus,29,_,,Colin R,,Willie,V,Anna Z,V,Marinko,,Colin R,702,13.0,Kirill,26,27
+16,James S,4,Anna A,,Eric L,V,Colin R,,Colin R,,Colin R,V,Marinko,648,1.0,Vivian,24,27
+17,Will P,3,Charlie,,_,,Will P,,Max V,V,Max V,V,Max V,594,10.0,Sameer,22,27
+18,Colin R,30,_,,Will P,,Max V,V,Vladimir ,,Tom S,,Tom S,540,19.0,Darran,20,27
+19,Darran,19,Darran,V,Lysandra,,Vladimir ,V,Tom S,V,Vladimir ,,Fergus,486,15.0,Fergus,18,27
+20,Marinko,14,Vadym,,Max V,V,Kirill,,Fergus,,Fergus,V,Vladimir ,432,23.0,Alix S,16,27
+21,Vladimir ,11,Anna Z,V,_,,Vadym,,Will P,,Kirill,,Vadym,378,22.0,Tom S,14,27
+22,Tom S,22,Tom S,,Vladimir ,,Tom S,V,Kirill,V,Vadym,V,Kirill,324,7.0,Willie,12,27
+23,Alix S,27,_,,Kirill,,Alix S,,Vadym,V,Will P,V,Will P,270,16.0,James S,10,27
+24,Lysandra,6,Greg,,_,,Fergus,V,Alix S,,Alix S,,Alix S,243,18.0,Colin R,9,27
+25,Max V,7,Willie,,_,,_,,Lysandra,,Lysandra,,Lysandra,216,14.0,Vadym,8,27
+26,_,26,_,,Vadym,,Lysandra,,_,,_,,_,189,20.0,Marinko,7,27
+27,_,23,Alix S,,Tom S,,_,,_,,_,,_,162,,,6,27
+28,_,10,Sameer,V,_,,_,,_,,_,,_,135,,,5,27
+29,_,15,Fergus,,_,V,_,,_,,_,,_,108,,,4,27
+30,_,18,Colin R,V,Alix S,,_,,_,,_,,_,81,,,3,27
+31,_,31,_,,Fergus,,_,,_,,_,,_,54,,,2,27
+32,_,2,Eric L,,_,,_,,_,,_,,_,27,,,1,27
