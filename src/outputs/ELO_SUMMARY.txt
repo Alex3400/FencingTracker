@@ -15,9 +15,9 @@ Starting Rating: 1400
 Rating Range: 600 - 2200
 
 K-Factor by Experience:
-  0-19 matches:   K=50 (New players - fast convergence)
-  20-49 matches:  K=45 (Developing players)
-  50-149 matches: K=40 (Established players)
+  0-19 matches:   K=50 (New fencers - fast convergence)
+  20-49 matches:  K=45 (Growing experience)
+  50-149 matches: K=40 (Experienced fencers)
   150+ matches:   K=32 (Veterans - stable ratings)
 
 Minimum for Established Rating: 30 matches
@@ -88,16 +88,6 @@ TOP 10 PROVISIONAL RATINGS (<30 matches)
 Note: Provisional ratings are volatile and may not reflect true
 skill level. They will stabilize after 30+ matches.
 
-================================================================
-RATING DISTRIBUTION (Established Fencers)
-================================================================
-
-Elite (1800+):        2 fencers  (3.1%)
-Strong (1600-1800):   8 fencers  (12.3%)
-Solid (1400-1600):   30 fencers  (46.2%)
-Developing (1200-1400): 22 fencers  (33.8%)
-Beginner (<1200):     3 fencers  (4.6%)
-
 Rating Spread: ~810 points (1972 → 1158)
 Average Rating (Established): ~1450
 
@@ -152,28 +142,6 @@ head_to_head_stats.csv - Matchup records between fencers
 placement_stats.csv   - Tournament placement history
 match_history.csv     - All matches with dates and scores
 global_stats.txt      - Overall league statistics
-
-================================================================
-VALIDATION CHECKS
-================================================================
-
-✓ Top fencers reach 1800+
-  Greg at 1972, well-separated from pack
-
-✓ Rating spread reflects winrate variance
-  ~800 point spread for ~70 percentage point winrate range
-
-✓ Provisional ratings flagged
-  All fencers <30 matches clearly marked
-
-✓ Chronological processing maintained
-  elo_history.csv shows all updates in date order
-
-✓ Poule matches randomly ordered
-  Prevents systematic bias from matrix position
-
-✓ Veterans have stable ratings
-  150+ match fencers use K=32 for consistency
 
 ================================================================
 NEXT STEPS (OPTIONAL)

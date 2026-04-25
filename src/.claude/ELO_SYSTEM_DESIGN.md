@@ -27,17 +27,17 @@ Where:
 
 ### Example
 
-If you're rated 1500 and face someone rated 1700:
-- Your expected score = 1 / (1 + 10^((1700-1500)/400)) = 0.24 (24% chance to win)
-- Their expected score = 0.76 (76% chance to win)
+If Alice is rated 1500 and faces Bob rated 1700:
+- Alice's expected score = 1 / (1 + 10^((1700-1500)/400)) = 0.24 (24% chance to win)
+- Bob's expected score = 0.76 (76% chance to win)
 
-If you WIN (upset!):
-- Your rating change = K × (1 - 0.24) = K × 0.76 (big gain!)
-- Their rating change = K × (0 - 0.76) = K × -0.76 (big loss!)
+If Alice WINS (upset!):
+- Alice's rating change = K × (1 - 0.24) = K × 0.76 (big gain!)
+- Bob's rating change = K × (0 - 0.76) = K × -0.76 (significant loss)
 
-If you LOSE (as expected):
-- Your rating change = K × (0 - 0.24) = K × -0.24 (small loss)
-- Their rating change = K × (1 - 0.76) = K × 0.24 (small gain)
+If Alice LOSES (as expected):
+- Alice's rating change = K × (0 - 0.24) = K × -0.24 (small loss)
+- Bob's rating change = K × (1 - 0.76) = K × 0.24 (small gain)
 
 ## Tuning Variables
 
@@ -53,8 +53,8 @@ Controls how volatile ratings are.
 **Lower K** (e.g., 16):
 - Ratings change slowly
 - More stable over time
-- Takes longer to reflect true skill
-- Good for: Established players, large datasets
+- Takes longer to reflect current skill level
+- Good for: Experienced players, large datasets
 
 **Common approaches:**
 - Chess: K=40 for beginners, K=20 for established, K=10 for masters
@@ -147,9 +147,9 @@ L17-32:                 0.7× (less weight, more casual)
 
 **Rationale:**
 - Finals matter more: higher stakes, more effort, better indicator of skill
-- Lower brackets (L17-32) may have less engaged fencers or consolation matches
+- Lower bracket matches still valuable for rating accuracy
 - No score data in DEs, so use binary outcome but weight by importance
-- Top-bracket matches (L1-X) weighted higher than same-size lower brackets (L17-24)
+- Top-bracket matches (L1-X) weighted higher than lower brackets (L17-24)
 
 ### Alternative: Bracket-Level Weighting
 
@@ -508,7 +508,7 @@ BRACKET_WEIGHTS = {
     'L9-12': 2.0,   # (was 1.5)
     'L13-16': 1.8,  # (was 1.3)
     
-    # Lower brackets (consolation rounds)
+    # Lower brackets
     'L17-32': 1.2,  # (was 1.0)
     'L17-24': 1.2,  # (was 1.0)
     'L25-32': 1.0,  # (was 0.8)
@@ -567,11 +567,11 @@ PLACEMENT_BONUSES = {
 ### Expected Rating Distribution
 
 With these parameters, expect:
-- **Elite tier (1800-2000+)**: Greg, Garen, Eric L, Rudi (top ~5%)
-- **Strong competitors (1600-1800)**: Alejo, Sameer, Fassel, Alex Y, Charlie (~15%)
-- **Mid-tier (1400-1600)**: Solid regular competitors (~40%)
-- **Developing (1200-1400)**: Newer or inconsistent fencers (~30%)
-- **Beginners (< 1200)**: Very new or struggling fencers (~10%)
+- **Advanced tier (1800-2000+)**: Top competitors (top ~5%)
+- **Strong competitors (1600-1800)**: Experienced regular fencers (~15%)
+- **Mid-tier (1400-1600)**: Regular competitors (~40%)
+- **Developing (1200-1400)**: Growing fencers building experience (~30%)
+- **New fencers (< 1200)**: Recently joined fencers (~10%)
 
 This spread (roughly 800 rating points from bottom to top) aligns well with the observed ~70 percentage point winrate spread.
 

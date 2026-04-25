@@ -11,6 +11,15 @@ import math
 import random
 from collections import defaultdict
 from pathlib import Path
+try:
+    import matplotlib
+    matplotlib.use('Agg')  # Use non-interactive backend
+    import matplotlib.pyplot as plt
+    import matplotlib.dates as mdates
+    from datetime import datetime
+    HAS_MATPLOTLIB = True
+except ImportError:
+    HAS_MATPLOTLIB = False
 
 
 # ============================================================
@@ -18,21 +27,21 @@ from pathlib import Path
 # ============================================================
 
 # Base K-factor (how much ratings change per match)
-BASE_K = 40
+BASE_K = 30
 
 # Starting rating for new fencers
-STARTING_RATING = 1400
+STARTING_RATING = 1800
 
 # Rating bounds
 RATING_FLOOR = 600
-RATING_CEILING = 2200
+RATING_CEILING = 3000
 
 # K-factor scaling by experience (number of matches)
 K_FACTOR_THRESHOLDS = {
-    0: 50,    # New players (0-19 matches): fast convergence
-    20: 45,   # Developing (20-49 matches): still adapting
-    50: 40,   # Established (50-149 matches): moderate changes
-    150: 32   # Veterans (150+ matches): stable ratings
+    0: 40,    # New players (0-19 matches): fast convergence
+    20: 35,   # Developing (20-49 matches): still adapting
+    50: 30,   # Established (50-149 matches): moderate changes
+    150: 25   # Veterans (150+ matches): stable ratings
 }
 
 # Minimum matches required for rating to be "established"
@@ -42,28 +51,49 @@ MIN_MATCHES_FOR_ESTABLISHED = 30
 # Use margin-adjusted scoring for poules (True) or binary win/loss (False)
 USE_MARGIN_SCORING = True
 
+# Margin scoring configuration
+# You can either:
+# 1. Use formula-based scaling (set MARGIN_SCORE_MAP = None)
+# 2. Use custom mapping (define MARGIN_SCORE_MAP dictionary)
+
+# Option 1: Formula-based (used if MARGIN_SCORE_MAP is None)
+# Formula: Actual Score = 0.5 + sign * (abs(margin) ** MARGIN_EXPONENT) / MARGIN_DIVISOR
+# MARGIN_DIVISOR: Base scaling factor (default: 10)
+# MARGIN_EXPONENT: Power to raise margin to (default: 1.0 for linear)
+#   - 1.0 = linear (5-4 and 5-0 differ equally per touch)
+#   - 2.0 = quadratic (bigger margins matter much more: 5-0 >> 5-4)
+#   - 0.5 = square root (diminishing returns: 5-4 and 5-0 more similar)
+MARGIN_DIVISOR = 10
+MARGIN_EXPONENT = 1  # 1.5 makes larger margins more significant
+
+# Option 2: Custom mapping (set to None to use formula, or define explicit values)
+# Maps (winner_score, loser_score) -> actual_score for winner
+# Example: {(5,4): 0.55, (5,3): 0.65, (5,2): 0.75, (5,1): 0.85, (5,0): 0.95}
+# If a score isn't in the map, falls back to formula
+MARGIN_SCORE_MAP = None  # Set to None to use formula, or dict for custom
+
 # DE bracket importance weights (multiplier on base K)
 # Increased to create more rating spread
 BRACKET_WEIGHTS = {
     # Top brackets (fighting for podium)
-    'L1-2': 5.0,    # Increased from 4.0
-    'L1-4': 4.0,    # Increased from 3.0
-    'L1-8': 3.0,    # Increased from 2.5
-    'L1-16': 2.5,   # Increased from 2.0
-    'L1-32': 2.0,   # Increased from 1.5
+    'L1-2': 4.0,    # Increased from 4.0
+    'L1-4': 3.0,    # Increased from 3.0
+    'L1-8': 2.0,    # Increased from 2.5
+    'L1-16': 1.5,   # Increased from 2.0
+    'L1-32': 1.25,   # Increased from 1.5
 
     # Medal matches
-    'L3-4': 4.0,    # Increased from 3.0
+    'L3-4': 3.0,    # Increased from 3.0
 
     # Mid-tier brackets
-    'L5-8': 2.5,    # Increased from 2.0
-    'L9-16': 2.0,   # Increased from 1.5
-    'L9-12': 2.0,   # Increased from 1.5
-    'L13-16': 1.8,  # Increased from 1.3
+    'L5-8': 2.0,    # Increased from 2.0
+    'L9-16': 1.5,   # Increased from 1.5
+    'L9-12': 1.5,   # Increased from 1.5
+    'L13-16': 1.3,  # Increased from 1.3
 
-    # Lower brackets (consolation rounds)
-    'L17-32': 1.2,  # Increased from 1.0
-    'L17-24': 1.2,  # Increased from 1.0
+    # Lower brackets
+    'L17-32': 1.0,  # Increased from 1.0
+    'L17-24': 1.0,  # Increased from 1.0
     'L25-32': 1.0,  # Increased from 0.8
 }
 
@@ -74,14 +104,55 @@ FIELD_SIZE_SCALING_EXPONENT = 0.5  # 0.5 = sqrt scaling, 1.0 = linear
 # Placement bonuses (flat rating adjustment after tournament)
 # Scaled down to prevent single-tournament spikes
 PLACEMENT_BONUSES = {
-    1: 15,   # Winner bonus (reduced from 25)
-    2: 10,   # Runner-up bonus (reduced from 15)
-    3: 5,    # Third place bonus (reduced from 8)
+    1: 30,   # Winner bonus (reduced from 25)
+    2: 20,   # Runner-up bonus (reduced from 15)
+    3: 8,    # Third place bonus (reduced from 8)
     4: 5,    # Fourth place bonus (reduced from 8)
 }
 
 # ELO scaling factor (standard is 400)
 ELO_SCALING_FACTOR = 400
+
+# Rating decay for inactive fencers
+DECAY_AFTER_SESSIONS = 6  # Start decaying after this many consecutive missed sessions
+DECAY_RATE = 0.1  # Decay 5% per missed session towards starting rating
+# Formula: new_rating = old_rating * (1 - DECAY_RATE) + STARTING_RATING * DECAY_RATE
+
+# Name aliases - consolidate different spellings to a canonical name
+# First name in each list is the canonical name, rest are aliases
+NAME_ALIASES = [
+    ['Fassel', 'Fasel', 'Fessel', 'Fessal', 'Fasal'],
+    ['Alix S', 'Alix'],
+    ['Alonzo', 'Alonso', 'Alonzozo'],
+    ['Kirill', 'Kiriil'],
+    ['Lukas N', 'Lukas']
+
+]
+
+
+# ============================================================
+# UTILITY FUNCTIONS
+# ============================================================
+
+# Build alias mapping from configuration
+_ALIAS_MAP = {}
+for name_group in NAME_ALIASES:
+    if len(name_group) > 0:
+        canonical = name_group[0]
+        for alias in name_group:
+            _ALIAS_MAP[alias.strip().title()] = canonical.strip().title()
+
+
+def normalize_name(name):
+    """Normalize fencer name: strip whitespace, title case, and apply aliases."""
+    if not name:
+        return name
+
+    # First normalize whitespace and case
+    normalized = name.strip().title()
+
+    # Then apply alias mapping
+    return _ALIAS_MAP.get(normalized, normalized)
 
 
 # ============================================================
@@ -109,10 +180,22 @@ def calculate_poule_actual_score(your_score, their_score):
     if not USE_MARGIN_SCORING:
         return 1.0 if your_score > their_score else 0.0
 
-    # Margin-adjusted: 0.5 + (difference / 10)
-    # 5-0: 1.0, 5-1: 0.9, 5-2: 0.8, 5-3: 0.7, 5-4: 0.6
-    # 4-5: 0.4, 3-5: 0.3, etc.
-    return 0.5 + (your_score - their_score) / 10
+    # Check if custom mapping exists
+    if MARGIN_SCORE_MAP is not None:
+        key = (your_score, their_score) if your_score > their_score else (their_score, your_score)
+        if key in MARGIN_SCORE_MAP:
+            # Return mapped value (or inverse if loser)
+            if your_score > their_score:
+                return MARGIN_SCORE_MAP[key]
+            else:
+                return 1.0 - MARGIN_SCORE_MAP[key]
+
+    # Formula-based: 0.5 + sign * (|margin|^exponent / divisor)
+    margin = your_score - their_score
+    sign = 1 if margin > 0 else -1
+    adjusted_margin = (abs(margin) ** MARGIN_EXPONENT) / MARGIN_DIVISOR
+
+    return 0.5 + sign * adjusted_margin
 
 
 def get_bracket_weight(bracket_name):
@@ -158,6 +241,19 @@ class ELORatingSystem:
         # Match-based history: [(date, fencer1, old_rating1, new_rating1, change1,
         #                        fencer2, old_rating2, new_rating2, change2, match_type), ...]
         self.match_history = []
+        # Snapshots: [(date, phase, {fencer: rating}), ...]
+        # phase is either "After Poules" or "After DEs"
+        self.snapshots = []
+        # Track last session each fencer participated in
+        # {fencer_name: session_index}
+        self.last_active_session = {}
+        # Current session index (incremented for each tournament)
+        self.current_session_index = 0
+        # Track poule gains per session: {date: {fencer: (start_rating, end_rating, gain)}}
+        self.poule_gains = {}
+        # Track max ELO per fencer (all-time peak rating)
+        # {fencer_name: max_rating}
+        self.max_elo = {}
 
     def get_rating(self, fencer):
         """Get current rating for a fencer (initialize if new)."""
@@ -267,6 +363,67 @@ class ELORatingSystem:
         if place in PLACEMENT_BONUSES:
             bonus = PLACEMENT_BONUSES[place]
             self.update_rating(fencer, bonus, date, f'Placement bonus ({place}st/nd/rd/th place)')
+
+    def apply_decay_for_inactive_fencers(self, date, active_fencers):
+        """Apply rating decay for fencers who haven't participated in recent sessions.
+
+        active_fencers: set of fencers who participated in this session
+        """
+        # Mark active fencers
+        for fencer in active_fencers:
+            self.last_active_session[fencer] = self.current_session_index
+
+        # Apply decay to inactive fencers
+        for fencer in list(self.ratings.keys()):
+            if fencer not in active_fencers:
+                # Check how many sessions they've been inactive
+                last_active = self.last_active_session.get(fencer, 0)
+                sessions_inactive = self.current_session_index - last_active
+
+                if sessions_inactive >= DECAY_AFTER_SESSIONS:
+                    # Apply decay towards starting rating
+                    old_rating = self.ratings[fencer]
+                    # Decay formula: move DECAY_RATE% towards STARTING_RATING
+                    new_rating = old_rating * (1 - DECAY_RATE) + STARTING_RATING * DECAY_RATE
+                    new_rating = apply_rating_bounds(new_rating)
+
+                    if abs(new_rating - old_rating) > 0.1:  # Only record if meaningful change
+                        change = new_rating - old_rating
+                        self.ratings[fencer] = new_rating
+                        self.rating_history[fencer].append(
+                            (date, new_rating, f'Decay after {sessions_inactive} sessions inactive')
+                        )
+
+    def start_poule_tracking(self, date):
+        """Mark the start of poule phase - record starting ratings."""
+        self.poule_gains[date] = {fencer: (rating, rating, 0.0) for fencer, rating in self.ratings.items()}
+
+    def end_poule_tracking(self, date):
+        """Mark the end of poule phase - calculate gains."""
+        if date not in self.poule_gains:
+            return
+
+        for fencer, (start_rating, _, _) in self.poule_gains[date].items():
+            end_rating = self.ratings.get(fencer, start_rating)
+            gain = end_rating - start_rating
+            self.poule_gains[date][fencer] = (start_rating, end_rating, gain)
+
+    def record_avg_elo(self, date, de_participants):
+        """Update max ELO for fencers who participated in DEs (only if 25+ matches)."""
+        for fencer in de_participants:
+            if fencer in self.ratings:
+                # Only track max ELO once they have 25+ matches (ratings are more stable)
+                if self.get_match_count(fencer) >= 25:
+                    current_rating = self.ratings[fencer]
+                    if fencer not in self.max_elo or current_rating > self.max_elo[fencer]:
+                        self.max_elo[fencer] = current_rating
+
+    def take_snapshot(self, date, phase):
+        """Take a snapshot of all current ratings.
+        phase should be 'After Poules' or 'After DEs'
+        """
+        snapshot = {fencer: rating for fencer, rating in self.ratings.items()}
+        self.snapshots.append((date, phase, snapshot))
 
 
 class MatchHistory:
@@ -481,15 +638,15 @@ def parse_poule_sheet(csv_path, date):
         # Rows 2+ have the results
 
         # Get fencer names from first row (starting from column 2)
-        header_names = rows[0][2:]  # Skip first two columns (empty, Name)
+        header_names = [normalize_name(name) for name in rows[0][2:]]  # Skip first two columns (empty, Name)
 
         # Parse each fencer's row - only process upper triangle to avoid duplicates
         for i, row in enumerate(rows[2:], start=0):
             if len(row) < 2:
                 continue
 
-            fencer_name = row[1]  # Column 1 has the fencer name
-            if not fencer_name or fencer_name.strip() == '':
+            fencer_name = normalize_name(row[1])  # Column 1 has the fencer name
+            if not fencer_name:
                 continue
 
             # Only parse results for columns > current row (upper triangle)
@@ -593,13 +750,13 @@ def parse_de_sheet(csv_path, date):
 
             # Column 0 is "Place" - the seed (ranking from poules)
             seed_str = row[0].strip() if row[0] else ''
-            fencer_name = row[1].strip() if row[1] else ''
+            fencer_name = normalize_name(row[1]) if row[1] else ''
 
             if seed_str and seed_str.isdigit() and fencer_name and fencer_name != '_':
                 seedings[fencer_name] = int(seed_str)
 
             # Column 13 is "Winner" - contains the fencer who got this placement
-            winner = row[13].strip() if row[13] else ''
+            winner = normalize_name(row[13]) if row[13] else ''
 
             if winner and winner != '_':
                 # Row index + 1 = placement (rows start at 0, placements start at 1)
@@ -633,10 +790,10 @@ def parse_de_sheet(csv_path, date):
                 row2 = data_rows[row_idx + 1]
 
                 # Extract fencer names and results from this round's columns
-                fencer1 = row1[name_col].strip() if len(row1) > name_col and row1[name_col] else ''
+                fencer1 = normalize_name(row1[name_col]) if len(row1) > name_col and row1[name_col] else ''
                 result1 = row1[result_col].strip() if len(row1) > result_col and row1[result_col] else ''
 
-                fencer2 = row2[name_col].strip() if len(row2) > name_col and row2[name_col] else ''
+                fencer2 = normalize_name(row2[name_col]) if len(row2) > name_col and row2[name_col] else ''
                 result2 = row2[result_col].strip() if len(row2) > result_col and row2[result_col] else ''
 
                 # Only record if both fencers exist and neither is a bye
@@ -666,7 +823,7 @@ def parse_de_sheet(csv_path, date):
     return matches, placements, seedings
 
 
-def calculate_session_stats(date, poule_matches, de_matches, all_fencers_poule, all_fencers_de, placements):
+def calculate_session_stats(date, poule_matches, de_matches, all_fencers_poule, all_fencers_de, placements, poule_gains=None):
     """Calculate statistics for a single tournament session."""
     # Find winner (1st place finisher)
     winner = None
@@ -675,9 +832,20 @@ def calculate_session_stats(date, poule_matches, de_matches, all_fencers_poule, 
             winner = fencer
             break
 
+    # Find top poule climber
+    top_climber = None
+    top_gain = 0
+    if poule_gains:
+        for fencer, (start, end, gain) in poule_gains.items():
+            if gain > top_gain:
+                top_gain = gain
+                top_climber = fencer
+
     stats = {
         'date': date,
         'winner': winner if winner else 'Unknown',
+        'top_poule_climber': top_climber if top_climber else 'None',
+        'top_poule_gain': round(top_gain, 1) if top_gain > 0 else 0,
         'fencers_in_poules': len(all_fencers_poule),
         'fencers_in_des': len(all_fencers_de),
         'total_matches': len(poule_matches) + len(de_matches),
@@ -754,6 +922,10 @@ def process_all_sheets(base_dir='downloaded_sheets'):
         date = date_folder.name
         print(f"Processing {date}...")
 
+        # Increment session counter once per tournament (not per phase)
+        # One tournament = one session, even though we take 2 snapshots (after poules, after DEs)
+        elo_system.current_session_index += 1
+
         # Find poule and DE sheets
         poule_sheet = None
         de_sheet = None
@@ -774,12 +946,19 @@ def process_all_sheets(base_dir='downloaded_sheets'):
 
         # Parse poule sheet
         if poule_sheet:
+            # Start tracking poule gains
+            elo_system.start_poule_tracking(date)
+
             matches = parse_poule_sheet(poule_sheet, date)
             poule_matches_data = matches
             for fencer1, fencer2, date_str, match_type, winner, score in matches:
                 history.add_match(fencer1, fencer2, date_str, match_type, winner, score)
                 fencers_in_poules.add(fencer1)
                 fencers_in_poules.add(fencer2)
+
+                # Ensure both fencers are initialized in ELO system
+                elo_system.get_rating(fencer1)
+                elo_system.get_rating(fencer2)
 
                 # Process ELO for poule match
                 if score:
@@ -794,6 +973,13 @@ def process_all_sheets(base_dir='downloaded_sheets'):
                         pass
 
             print(f"  Found {len(matches)} poule matches")
+
+            # End tracking poule gains
+            elo_system.end_poule_tracking(date)
+
+        # Take snapshot after poules
+        if poule_sheet:
+            elo_system.take_snapshot(date, 'After Poules')
 
         # Parse DE sheet
         if de_sheet:
@@ -825,10 +1011,21 @@ def process_all_sheets(base_dir='downloaded_sheets'):
             print(f"  Found {len(matches)} DE matches")
             print(f"  Found {len(placements)} placements")
 
+        # Take snapshot after DEs
+        if de_sheet:
+            elo_system.take_snapshot(date, 'After DEs')
+            # Record average ELO for DE participants
+            elo_system.record_avg_elo(date, fencers_in_des)
+
+        # Apply decay to inactive fencers at the end of this session
+        active_fencers = fencers_in_poules | fencers_in_des
+        elo_system.apply_decay_for_inactive_fencers(date, active_fencers)
+
         # Calculate session stats
+        poule_gains_for_session = elo_system.poule_gains.get(date, {})
         session_stat = calculate_session_stats(
             date, poule_matches_data, de_matches_data,
-            fencers_in_poules, fencers_in_des, placements
+            fencers_in_poules, fencers_in_des, placements, poule_gains_for_session
         )
         session_stats.append(session_stat)
 
@@ -985,7 +1182,7 @@ def export_placements_to_csv(history, output_file='placement_stats.csv'):
     print(f"✓ Placement statistics exported to {output_file}")
 
 
-def export_fencer_stats(history, output_file='fencer_stats.csv'):
+def export_fencer_stats(history, elo_system=None, output_file='fencer_stats.csv'):
     """Export individual fencer statistics to CSV."""
     # Get all unique fencers
     all_fencers = set()
@@ -1006,6 +1203,7 @@ def export_fencer_stats(history, output_file='fencer_stats.csv'):
             'DE Appearances',
             'DE Matches', 'DE Wins', 'DE Losses', 'DE Winrate',
             'Avg Seeding', 'Avg Placement',
+            'Max ELO (All-Time)',
             'Win', 'L2', 'L4', 'L8', 'L16', 'L32'
         ])
 
@@ -1059,7 +1257,7 @@ def export_fencer_stats(history, output_file='fencer_stats.csv'):
 
             touch_diff = stats['touches_scored'] - stats['touches_received']
 
-            writer.writerow([
+            row = [
                 fencer,
                 total_appearances,
                 stats['total_matches'],
@@ -1080,7 +1278,16 @@ def export_fencer_stats(history, output_file='fencer_stats.csv'):
                 round(stats['de_winrate'], 3) if stats['de_matches'] > 0 else 0,
                 round(stats['average_seeding'], 2) if de_appearances > 0 else 0.0,
                 round(stats['average_placement'], 2) if de_appearances > 0 else 0.0,
-            ] + placement_cols)
+            ]
+
+            # Add max ELO (all-time peak rating, null if not tracked yet)
+            if elo_system and fencer in elo_system.max_elo:
+                row.append(round(elo_system.max_elo[fencer], 1))
+            else:
+                row.append("")  # Empty if fencer doesn't have 25+ matches yet
+
+            row.extend(placement_cols)
+            writer.writerow(row)
 
     print(f"✓ Fencer statistics exported to {output_file}")
 
@@ -1457,6 +1664,147 @@ def export_elo_history(elo_system, output_file='elo_history.csv'):
     print(f"✓ ELO history exported to {output_file}")
 
 
+def export_elo_leaderboard_timeline(elo_system, output_file='elo_leaderboard_timeline.csv'):
+    """Export leaderboard timeline where rows are rank positions and columns are sessions."""
+
+    if not elo_system.snapshots:
+        print("No snapshots available")
+        return
+
+    # Build column headers (date + phase)
+    columns = []
+    for date, phase, _ in elo_system.snapshots:
+        col_name = f"{date} {phase}"
+        columns.append(col_name)
+
+    # Determine max number of fencers across all snapshots
+    all_fencers = set()
+    for _, _, snapshot in elo_system.snapshots:
+        all_fencers.update(snapshot.keys())
+
+    max_rank = len(all_fencers)
+
+    with open(output_file, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+
+        # Write header
+        writer.writerow(['Rank'] + columns)
+
+        # Build a lookup of fencer ratings in each snapshot for easy comparison
+        # snapshot_ratings[snapshot_idx][fencer] = rating
+        snapshot_ratings = []
+        for _, _, snapshot in elo_system.snapshots:
+            snapshot_ratings.append(snapshot)
+
+        # For each rank position
+        for rank in range(1, max_rank + 1):
+            row = [rank]
+
+            # For each snapshot
+            for snapshot_idx, (date, phase, snapshot) in enumerate(elo_system.snapshots):
+                # Sort fencers by rating for this snapshot
+                sorted_fencers = sorted(snapshot.items(), key=lambda x: x[1], reverse=True)
+
+                # Get fencer at this rank (if exists)
+                if rank <= len(sorted_fencers):
+                    fencer, rating = sorted_fencers[rank - 1]
+
+                    # Calculate change from previous snapshot (for this same fencer)
+                    if snapshot_idx > 0 and fencer in snapshot_ratings[snapshot_idx - 1]:
+                        prev_rating = snapshot_ratings[snapshot_idx - 1][fencer]
+                        change = rating - prev_rating
+                        if abs(change) < 0.1:  # Skip showing change if negligible
+                            row.append(f"{fencer} ({round(rating, 1)})")
+                        else:
+                            sign = "+" if change >= 0 else ""
+                            row.append(f"{fencer} ({round(rating, 1)}) ({sign}{round(change, 1)})")
+                    else:
+                        # First appearance or didn't exist in previous snapshot
+                        row.append(f"{fencer} ({round(rating, 1)})")
+                else:
+                    row.append("")
+
+            writer.writerow(row)
+
+    print(f"✓ ELO leaderboard timeline exported to {output_file}")
+
+
+def export_elo_fencer_timeline(elo_system, output_file='elo_fencer_timeline.csv'):
+    """Export fencer timeline where rows are fencers and columns are sessions with changes and rank in parentheses."""
+
+    if not elo_system.snapshots:
+        print("No snapshots available")
+        return
+
+    # Build column headers (date + phase)
+    columns = []
+    for date, phase, _ in elo_system.snapshots:
+        col_name = f"{date} {phase}"
+        columns.append(col_name)
+
+    # Get all fencers across all snapshots
+    all_fencers = set()
+    for _, _, snapshot in elo_system.snapshots:
+        all_fencers.update(snapshot.keys())
+
+    # Sort fencers alphabetically
+    sorted_fencers = sorted(all_fencers)
+
+    # Pre-calculate rankings for each snapshot
+    snapshot_rankings = []
+    for date, phase, snapshot in elo_system.snapshots:
+        # Sort by rating descending to get ranks
+        sorted_by_rating = sorted(snapshot.items(), key=lambda x: x[1], reverse=True)
+        rank_map = {fencer: rank + 1 for rank, (fencer, _) in enumerate(sorted_by_rating)}
+        snapshot_rankings.append(rank_map)
+
+    with open(output_file, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+
+        # Write header
+        writer.writerow(['Fencer'] + columns)
+
+        # For each fencer
+        for fencer in sorted_fencers:
+            row = [fencer]
+            prev_rating = None
+
+            # For each snapshot
+            for snapshot_idx, (date, phase, snapshot) in enumerate(elo_system.snapshots):
+                if fencer in snapshot:
+                    rating = snapshot[fencer]
+                    rank = snapshot_rankings[snapshot_idx][fencer]
+
+                    # Format: rating (change, rank) or rating (rank) if no change
+                    if prev_rating is not None:
+                        change = rating - prev_rating
+                        if abs(change) < 0.1:
+                            # No change, just show rating and rank
+                            row.append(f"{round(rating, 1)} (#{rank})")
+                        else:
+                            sign = "+" if change >= 0 else ""
+                            row.append(f"{round(rating, 1)} ({sign}{round(change, 1)}, #{rank})")
+                    else:
+                        # First appearance - show change from starting rating
+                        change = rating - STARTING_RATING
+                        if abs(change) < 0.1:
+                            # Started at starting rating, no change
+                            row.append(f"{round(rating, 1)} (#{rank})")
+                        else:
+                            sign = "+" if change >= 0 else ""
+                            row.append(f"{round(rating, 1)} ({sign}{round(change, 1)}, #{rank})")
+
+                    prev_rating = rating
+                else:
+                    # Fencer didn't exist in this snapshot - don't reset prev_rating
+                    # so we can still calculate change when they reappear
+                    row.append("")
+
+            writer.writerow(row)
+
+    print(f"✓ ELO fencer timeline exported to {output_file}")
+
+
 def process_single_date(date_folder, base_dir='downloaded_sheets'):
     """Process a single date folder for debugging."""
     history = MatchHistory()
@@ -1556,7 +1904,7 @@ def main():
     # Export match history and stats
     export_to_csv(history, output_dir / 'match_history.csv')
     export_placements_to_csv(history, output_dir / 'placement_stats.csv')
-    export_fencer_stats(history, output_dir / 'fencer_stats.csv')
+    export_fencer_stats(history, elo_system, output_dir / 'fencer_stats.csv')
     export_head_to_head_stats(history, output_dir / 'head_to_head_stats.csv')
     export_session_stats(session_stats, output_dir / 'session_stats.csv')
     export_global_stats(session_stats, output_dir / 'global_stats.txt')
@@ -1564,6 +1912,8 @@ def main():
     # Export ELO ratings
     export_elo_ratings(elo_system, output_dir / 'elo_ratings.csv')
     export_elo_history(elo_system, output_dir / 'elo_history.csv')
+    export_elo_leaderboard_timeline(elo_system, output_dir / 'elo_leaderboard_timeline.csv')
+    export_elo_fencer_timeline(elo_system, output_dir / 'elo_fencer_timeline.csv')
 
 
 if __name__ == '__main__':
