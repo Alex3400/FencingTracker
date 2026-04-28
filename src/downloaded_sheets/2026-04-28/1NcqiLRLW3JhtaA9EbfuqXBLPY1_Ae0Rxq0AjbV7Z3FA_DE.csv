@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Eric L,1,Eric L,,Eric L,V,Eric L,,Willie,V,Willie,"",Greg,3000,,,100,30
+2,Greg,32,_,,Max V,,Willie,V,Tom T,,Greg,V,Willie,2550,2.0,Greg,85,30
+3,Fessal,17,Caden,,Willie,V,Alex A,,Alex Y,,Tom T,V,Tom T,2250,21.0,Fedor,75,30
+4,Tom T,16,Max V,V,Anna Z,,Tom T,V,Greg,V,Alex Y,,Alex Y,2010,1.0,Eric L,67,30
+5,Alex A,9,Willie,V,Alex A,V,Alex Y,V,Eric L,V,Eric L,V,Eric L,1830,11.0,Vincent,61,30
+6,Ali,24,Fergus,,Tom S,,Ali,,Alex A,,Ali,,Ali,1650,17.0,Caden,55,30
+7,Will P,25,Eugene,,John H,,Will P,,Ali,V,Alex A,V,Alex A,1530,14.0,Alex Y,51,30
+8,Anna Z,8,Anna Z,V,Tom T,V,Greg,V,Will P,,Will P,,Will P,1410,5.0,Alex A,47,30
+9,Willie,5,Alex A,,Fessal,,Max V,V,Max V,V,Max V,,Colin R,1290,25.0,Eugene,43,30
+10,Colin R,28,_,,Alex Y,V,Anna Z,,John H,,Colin R,V,Max V,1200,,,40,30
+11,Vincent,21,Fedor,,Vincent,,Tom S,,Vincent,,John H,,Vincent,1110,15.0,Oleg,37,30
+12,Tom S,12,Tom S,V,Ali,V,John H,V,Colin R,V,Vincent,V,John H,1020,4.0,Tom T,34,30
+13,Vivian,13,Vivian,,Will P,V,Fessal,,Anna Z,V,Anna Z,V,Anna Z,930,9.0,Willie,31,30
+14,Alex Y,20,John H,V,Colin R,,Vincent,V,Tom S,,Fessal,,Fessal,840,19.0,Kirill,28,30
+15,Oleg,29,_,,Oleg,,Colin R,V,Fessal,V,Tom S,V,Tom S,780,23.0,Alix S,26,30
+16,Max V,4,Tom T,,Greg,V,Oleg,,Oleg,,Oleg,,Oleg,720,,,24,30
+17,Caden,3,Fessal,,_,,Caden,,Fergus,,Vivian,V,Vivian,660,,,22,30
+18,Steph,30,_,,Caden,,Fergus,V,Vivian,V,Steph,,Steph,600,22.0,Lukas N,20,30
+19,Kirill,19,Kirill,,Fergus,V,Fedor,,Kirill,,Fergus,V,Fergus,540,6.0,Ali,18,30
+20,John H,14,Alex Y,V,Eugene,,Vivian,V,Steph,V,Kirill,,Kirill,480,16.0,Max V,16,30
+21,Fedor,11,Vincent,V,_,,Kirill,V,Caden,,Fedor,V,Fedor,420,,,14,30
+22,Lukas N,22,Lukas N,,Fedor,,Lukas N,,Fedor,V,Lukas N,,Lukas N,360,7.0,Will P,12,30
+23,Alix S,27,_,,Vivian,,Alix S,,Lukas N,V,Caden,V,Caden,300,24.0,Fergus,10,30
+24,Fergus,6,Ali,,_,,Steph,V,Alix S,,Alix S,,Alix S,270,13.0,Vivian,9,30
+25,Eugene,7,Will P,,_,,_,,Eugene,,Eugene,,Eugene,240,,,8,30
+26,_,26,_,,Kirill,,Eugene,,_,,_,,_,210,3.0,Fessal,7,30
+27,_,23,Alix S,,Lukas N,,_,,_,,_,,_,180,18.0,Steph,6,30
+28,_,10,Colin R,V,_,,_,,_,,_,,_,150,10.0,Colin R,5,30
+29,_,15,Oleg,V,_,,_,,_,,_,,_,120,8.0,Anna Z,4,30
+30,_,18,Steph,,Alix S,,_,,_,,_,,_,90,12.0,Tom S,3,30
+31,_,31,_,,Steph,,_,,_,,_,,_,60,20.0,John H,2,30
+32,_,2,Greg,,_,,_,,_,,_,,_,30,,,1,30

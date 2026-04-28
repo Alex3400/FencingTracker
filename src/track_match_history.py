@@ -92,7 +92,7 @@ BRACKET_WEIGHTS = {
     'L1-32': 1.25,   # Increased from 1.5
 
     # Medal matches
-    'L3-4': 3.0,    # Increased from 3.0
+    'L3-4': 2.0,    # Increased from 3.0
 
     # Mid-tier brackets
     'L5-8': 2.0,    # Increased from 2.0
