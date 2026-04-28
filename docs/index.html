@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haverstock Fencing ELO Ratings</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <header>
+        <h1>🤺 Haverstock Fencing ELO Ratings</h1>
+        <nav>
+            <a href="index.html" class="active">Leaderboard</a>
+            <a href="timeline.html">ELO Timeline</a>
+            <a href="matchups.html">Head-to-Head</a>
+            <a href="fencer.html">Fencer Stats</a>
+            <a href="sessions.html">Tournament History</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Current Rankings</h2>
+            <p>ELO ratings for all fencers based on tournament results. Ratings are updated after each session.</p>
+            <div class="legend">
+                <span class="badge established">Established</span> = 30+ matches (reliable rating)
+                <span class="badge provisional">Provisional</span> = &lt;30 matches (still converging)
+            </div>
+        </section>
+
+        <section class="filters">
+            <label>
+                <input type="radio" name="status-filter" value="all" checked> All Fencers
+            </label>
+            <label>
+                <input type="radio" name="status-filter" value="established"> Established Only
+            </label>
+        </section>
+
+        <section class="leaderboard">
+            <table id="ratings-table" class="display">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Fencer</th>
+                        <th>Rating</th>
+                        <th>Matches</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="ratings-body">
+                    <!-- Populated by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="about">
+            <h3>About the ELO System</h3>
+            <p>
+                An <strong>ELO rating system</strong> assigns each fencer a numerical score representing their skill level.
+                When two fencers compete, the system predicts who should win based on their current ratings and updates
+                both ratings after the match based on the actual result.
+            </p>
+            <p>
+                <strong>Example:</strong> If Alice (rated 1600) beats Bob (rated 1400), Alice gains only a few points
+                because she was expected to win. But if Bob beats Alice, he gains many more points because he exceeded expectations.
+            </p>
+            <p>
+                Over time, these adjustments cause ratings to stabilize and accurately reflect each fencer's true skill level.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Last updated: <span id="last-update"></span></p>
+        <p>Haverstock Fencing Club | ELO Rating System</p>
+    </footer>
+
+    <!-- jQuery (required for DataTables) -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <!-- App JS -->
+    <script src="js/app.js"></script>
+</body>
+</html>

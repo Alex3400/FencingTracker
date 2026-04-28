@@ -9,6 +9,7 @@ import os
 import csv
 import math
 import random
+import json
 from collections import defaultdict
 from pathlib import Path
 try:
@@ -33,8 +34,8 @@ BASE_K = 30
 STARTING_RATING = 1800
 
 # Rating bounds
-RATING_FLOOR = 600
-RATING_CEILING = 3000
+RATING_FLOOR = 1000
+RATING_CEILING = 2600
 
 # K-factor scaling by experience (number of matches)
 K_FACTOR_THRESHOLDS = {
@@ -68,9 +69,17 @@ MARGIN_EXPONENT = 1  # 1.5 makes larger margins more significant
 
 # Option 2: Custom mapping (set to None to use formula, or define explicit values)
 # Maps (winner_score, loser_score) -> actual_score for winner
-# Example: {(5,4): 0.55, (5,3): 0.65, (5,2): 0.75, (5,1): 0.85, (5,0): 0.95}
-# If a score isn't in the map, falls back to formula
-MARGIN_SCORE_MAP = None  # Set to None to use formula, or dict for custom
+# Tuned to reduce loser gains: losers should rarely gain points
+# 5-4 close: winner 0.65, loser 0.35 (loser can gain vs higher rated only)
+# 5-3: winner 0.75, loser 0.25 (loser unlikely to gain)
+# 5-2+: winner 0.85+, loser 0.15- (loser almost never gains)
+MARGIN_SCORE_MAP = {
+    (5, 4): 0.65,  # Close match - some credit to loser
+    (5, 3): 0.75,  # Clear win - minimal credit to loser
+    (5, 2): 0.85,  # Dominant win - loser unlikely to gain points
+    (5, 1): 0.92,  # Very dominant - loser loses substantial points
+    (5, 0): 1.00,  # Complete shutout - loser gets nothing
+}
 
 # DE bracket importance weights (multiplier on base K)
 # Increased to create more rating spread
@@ -115,8 +124,10 @@ ELO_SCALING_FACTOR = 400
 
 # Rating decay for inactive fencers
 DECAY_AFTER_SESSIONS = 6  # Start decaying after this many consecutive missed sessions
-DECAY_RATE = 0.1  # Decay 5% per missed session towards starting rating
-# Formula: new_rating = old_rating * (1 - DECAY_RATE) + STARTING_RATING * DECAY_RATE
+DECAY_RATE = 0.08  # Decay 8% per missed session towards decay target
+DECAY_TARGET = 1900  # High-rated players decay toward this floor (above starting rating)
+# Only players rated above DECAY_TARGET will decay
+# Formula: if rating > DECAY_TARGET: new_rating = old_rating * (1 - DECAY_RATE) + DECAY_TARGET * DECAY_RATE
 
 # Name aliases - consolidate different spellings to a canonical name
 # First name in each list is the canonical name, rest are aliases
@@ -381,18 +392,22 @@ class ELORatingSystem:
                 sessions_inactive = self.current_session_index - last_active
 
                 if sessions_inactive >= DECAY_AFTER_SESSIONS:
-                    # Apply decay towards starting rating
                     old_rating = self.ratings[fencer]
-                    # Decay formula: move DECAY_RATE% towards STARTING_RATING
-                    new_rating = old_rating * (1 - DECAY_RATE) + STARTING_RATING * DECAY_RATE
-                    new_rating = apply_rating_bounds(new_rating)
 
-                    if abs(new_rating - old_rating) > 0.1:  # Only record if meaningful change
-                        change = new_rating - old_rating
-                        self.ratings[fencer] = new_rating
-                        self.rating_history[fencer].append(
-                            (date, new_rating, f'Decay after {sessions_inactive} sessions inactive')
-                        )
+                    # Only decay if rating is above decay target
+                    if old_rating > DECAY_TARGET:
+                        # Decay formula: move DECAY_RATE% towards DECAY_TARGET
+                        new_rating = old_rating * (1 - DECAY_RATE) + DECAY_TARGET * DECAY_RATE
+                        # Don't decay below the target
+                        new_rating = max(DECAY_TARGET, new_rating)
+                        new_rating = apply_rating_bounds(new_rating)
+
+                        if abs(new_rating - old_rating) > 0.1:  # Only record if meaningful change
+                            change = new_rating - old_rating
+                            self.ratings[fencer] = new_rating
+                            self.rating_history[fencer].append(
+                                (date, new_rating, f'Decay after {sessions_inactive} sessions inactive')
+                            )
 
     def start_poule_tracking(self, date):
         """Mark the start of poule phase - record starting ratings."""
@@ -905,11 +920,12 @@ def process_all_sheets(base_dir='downloaded_sheets'):
     history = MatchHistory()
     elo_system = ELORatingSystem()
     session_stats = []
+    all_placements = {}  # Track placements by date
 
     base_path = Path(base_dir)
     if not base_path.exists():
         print(f"Directory {base_dir} not found")
-        return history, session_stats, elo_system
+        return history, session_stats, elo_system, all_placements
 
     # Process each date folder in chronological order
     date_folders = [f for f in base_path.iterdir() if f.is_dir()]
@@ -1029,7 +1045,10 @@ def process_all_sheets(base_dir='downloaded_sheets'):
         )
         session_stats.append(session_stat)
 
-    return history, session_stats, elo_system
+        # Store placements for this date
+        all_placements[date] = placements
+
+    return history, session_stats, elo_system, all_placements
 
 
 def print_match_history(history, min_matches=1):
@@ -1805,6 +1824,137 @@ def export_elo_fencer_timeline(elo_system, output_file='elo_fencer_timeline.csv'
     print(f"✓ ELO fencer timeline exported to {output_file}")
 
 
+def export_json_for_website(elo_system, history, session_stats, all_placements, output_dir='docs/data'):
+    """Export data as JSON files for the website."""
+    output_path = Path(output_dir)
+    output_path.mkdir(parents=True, exist_ok=True)
+
+    # 1. ELO Ratings (leaderboard)
+    ratings_data = []
+    for fencer, rating in sorted(elo_system.ratings.items(), key=lambda x: x[1], reverse=True):
+        match_count = elo_system.get_match_count(fencer)
+        status = "Established" if match_count >= MIN_MATCHES_FOR_ESTABLISHED else "Provisional"
+
+        ratings_data.append({
+            'fencer': fencer,
+            'rating': round(rating, 1),
+            'matches': match_count,
+            'status': status
+        })
+
+    with open(output_path / 'elo_ratings.json', 'w', encoding='utf-8') as f:
+        json.dump(ratings_data, f, indent=2)
+
+    # 2. ELO History Timeline (for charts)
+    timeline_data = []
+    for date, phase, snapshot in elo_system.snapshots:
+        snapshot_entry = {
+            'date': date,
+            'phase': phase,
+            'ratings': {fencer: round(rating, 1) for fencer, rating in snapshot.items()}
+        }
+        timeline_data.append(snapshot_entry)
+
+    with open(output_path / 'elo_timeline.json', 'w', encoding='utf-8') as f:
+        json.dump(timeline_data, f, indent=2)
+
+    # 3. Head-to-head stats (for matchup analyzer)
+    h2h_data = []
+    all_pairs = history.get_all_pairs()
+    for (fencer1, fencer2), matches in all_pairs.items():
+        # Skip if already added the reverse pairing
+        reverse_exists = any(
+            entry['fencer1'] == fencer2 and entry['fencer2'] == fencer1
+            for entry in h2h_data
+        )
+        if reverse_exists:
+            continue
+
+        wins = {fencer1: 0, fencer2: 0}
+        poule_wins = {fencer1: 0, fencer2: 0}
+        de_wins = {fencer1: 0, fencer2: 0}
+
+        for match in matches:
+            winner = match['winner']
+            if winner in wins:
+                wins[winner] += 1
+                if match['type'].lower() == 'poule':
+                    poule_wins[winner] += 1
+                else:
+                    de_wins[winner] += 1
+
+        h2h_data.append({
+            'fencer1': fencer1,
+            'fencer2': fencer2,
+            'total_matches': len(matches),
+            'fencer1_wins': wins[fencer1],
+            'fencer2_wins': wins[fencer2],
+            'poule_matches': sum(1 for m in matches if m['type'].lower() == 'poule'),
+            'fencer1_poule_wins': poule_wins[fencer1],
+            'fencer2_poule_wins': poule_wins[fencer2],
+            'de_matches': sum(1 for m in matches if m['type'].lower() != 'poule'),
+            'fencer1_de_wins': de_wins[fencer1],
+            'fencer2_de_wins': de_wins[fencer2]
+        })
+
+    with open(output_path / 'head_to_head.json', 'w', encoding='utf-8') as f:
+        json.dump(h2h_data, f, indent=2)
+
+    # Load Google Sheets links
+    sheets_links = {}
+    links_file = Path('downloaded_sheets/google_sheets_links.txt')
+    if links_file.exists():
+        with open(links_file, 'r', encoding='utf-8') as f:
+            for line in f:
+                parts = line.strip().split(',', 1)
+                if len(parts) == 2:
+                    # Convert date format from M/D/YY to YYYY-MM-DD
+                    date_parts = parts[0].split('/')
+                    if len(date_parts) == 3:
+                        month, day, year = date_parts
+                        # Assume 2000s for 2-digit years
+                        full_year = f"20{year}" if len(year) == 2 else year
+                        normalized_date = f"{full_year}-{month.zfill(2)}-{day.zfill(2)}"
+                        sheets_links[normalized_date] = parts[1]
+
+    # 4. Session stats (tournament history)
+    sessions_data = []
+    for stat in session_stats:
+        date = stat['date']
+
+        # Get placements for this date from all_placements dict
+        final_results = []
+        if date in all_placements:
+            sorted_placements = sorted(all_placements[date].items(), key=lambda x: x[1])
+            final_results = [{'place': place, 'fencer': fencer} for fencer, place in sorted_placements]
+
+        sessions_data.append({
+            'date': date,
+            'winner': stat['winner'],
+            'top_poule_climber': stat.get('top_poule_climber', 'None'),
+            'top_poule_gain': stat.get('top_poule_gain', 0),
+            'fencers_in_poules': stat['fencers_in_poules'],
+            'fencers_in_des': stat['fencers_in_des'],
+            'poule_matches': stat['poule_matches'],
+            'de_matches': stat['de_matches'],
+            'total_matches': stat['total_matches'],
+            'score_5_0': stat.get('score_5_0', 0),
+            'score_5_1': stat.get('score_5_1', 0),
+            'score_5_2': stat.get('score_5_2', 0),
+            'score_5_3': stat.get('score_5_3', 0),
+            'score_5_4': stat.get('score_5_4', 0),
+            'total_touches': stat.get('total_touches_scored', 0),
+            'avg_touches_per_match': stat.get('avg_touches_per_match', 0),
+            'google_sheet_link': sheets_links.get(date, ''),
+            'final_results': final_results
+        })
+
+    with open(output_path / 'sessions.json', 'w', encoding='utf-8') as f:
+        json.dump(sessions_data, f, indent=2)
+
+    print(f"✓ JSON data exported to {output_dir}/")
+
+
 def process_single_date(date_folder, base_dir='downloaded_sheets'):
     """Process a single date folder for debugging."""
     history = MatchHistory()
@@ -1885,7 +2035,7 @@ def main():
     print(f"  Field Size Baseline: {FIELD_SIZE_BASELINE}")
     print()
 
-    history, session_stats, elo_system = process_all_sheets()
+    history, session_stats, elo_system, all_placements = process_all_sheets()
 
     # Print summary
     all_pairs = history.get_all_pairs()
@@ -1901,7 +2051,7 @@ def main():
     output_dir = Path('outputs')
     output_dir.mkdir(exist_ok=True)
 
-    # Export match history and stats
+    # Export match history and stats (to outputs for backup)
     export_to_csv(history, output_dir / 'match_history.csv')
     export_placements_to_csv(history, output_dir / 'placement_stats.csv')
     export_fencer_stats(history, elo_system, output_dir / 'fencer_stats.csv')
@@ -1909,11 +2059,21 @@ def main():
     export_session_stats(session_stats, output_dir / 'session_stats.csv')
     export_global_stats(session_stats, output_dir / 'global_stats.txt')
 
-    # Export ELO ratings
+    # Export ELO ratings (to outputs for backup)
     export_elo_ratings(elo_system, output_dir / 'elo_ratings.csv')
     export_elo_history(elo_system, output_dir / 'elo_history.csv')
     export_elo_leaderboard_timeline(elo_system, output_dir / 'elo_leaderboard_timeline.csv')
     export_elo_fencer_timeline(elo_system, output_dir / 'elo_fencer_timeline.csv')
+
+    # Export to website data directory (both JSON and CSV)
+    website_data_dir = Path(__file__).parent.parent / 'docs' / 'data'
+    export_json_for_website(elo_system, history, session_stats, all_placements, str(website_data_dir))
+
+    # Also export CSV files to website data directory
+    export_elo_ratings(elo_system, website_data_dir / 'elo_ratings.csv')
+    export_elo_history(elo_system, website_data_dir / 'elo_history.csv')
+    export_fencer_stats(history, elo_system, website_data_dir / 'fencer_stats.csv')
+    export_head_to_head_stats(history, website_data_dir / 'head_to_head_stats.csv')
 
 
 if __name__ == '__main__':

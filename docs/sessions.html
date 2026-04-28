@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tournament History - Haverstock Fencing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <header>
+        <h1>🤺 Haverstock Fencing ELO Ratings</h1>
+        <nav>
+            <a href="index.html">Leaderboard</a>
+            <a href="timeline.html">ELO Timeline</a>
+            <a href="matchups.html">Head-to-Head</a>
+            <a href="fencer.html">Fencer Stats</a>
+            <a href="sessions.html" class="active">Tournament History</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Tournament History</h2>
+            <p>Browse all past tournaments and session statistics.</p>
+        </section>
+
+        <section class="sessions-list">
+            <table id="sessions-table" class="display">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Winner</th>
+                        <th>Top Poule Climber</th>
+                        <th>Participants</th>
+                        <th>Total Matches</th>
+                    </tr>
+                </thead>
+                <tbody id="sessions-body">
+                    <!-- Populated by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="session-detail" class="session-detail" style="display: none;">
+            <div class="detail-header">
+                <h3 id="detail-title"></h3>
+                <button id="close-detail-btn" class="btn btn-secondary">Back to List</button>
+            </div>
+
+            <div class="detail-content">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h4>Tournament Winner</h4>
+                        <div class="big-stat" id="detail-winner"></div>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Participants</h4>
+                        <div class="big-stat" id="detail-participants"></div>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Total Matches</h4>
+                        <div class="big-stat" id="detail-matches"></div>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Top Poule Climber</h4>
+                        <div class="big-stat" id="detail-climber"></div>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h4>Score Distribution</h4>
+                    <div id="score-distribution"></div>
+                </div>
+
+                <div class="detail-section">
+                    <h4>Final Results</h4>
+                    <div id="final-results"></div>
+                </div>
+
+                <div class="detail-section">
+                    <h4>Google Sheet</h4>
+                    <a id="google-sheet-link" href="#" target="_blank" class="btn btn-primary">View Original Sheet</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Haverstock Fencing Club | ELO Rating System</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="js/sessions.js"></script>
+</body>
+</html>

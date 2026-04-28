@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fencer Stats - Haverstock Fencing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+</head>
+<body>
+    <header>
+        <h1>🤺 Haverstock Fencing ELO Ratings</h1>
+        <nav>
+            <a href="index.html">Leaderboard</a>
+            <a href="timeline.html">ELO Timeline</a>
+            <a href="matchups.html">Head-to-Head</a>
+            <a href="fencer.html" class="active">Fencer Stats</a>
+            <a href="sessions.html">Tournament History</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Individual Fencer Statistics</h2>
+            <p>View detailed statistics and ELO progression for any fencer.</p>
+        </section>
+
+        <section class="fencer-selector-section">
+            <label for="fencer-select"><strong>Select Fencer:</strong></label>
+            <select id="fencer-select">
+                <option value="">-- Choose a fencer --</option>
+            </select>
+        </section>
+
+        <section id="fencer-stats" class="fencer-stats-display" style="display: none;">
+            <h3 id="fencer-name"></h3>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h4>Current Rating</h4>
+                    <div class="big-stat" id="current-rating">-</div>
+                    <div class="stat-subtext" id="rating-status">-</div>
+                </div>
+                <div class="stat-card">
+                    <h4>Rank</h4>
+                    <div class="big-stat" id="rank">-</div>
+                    <div class="stat-subtext">out of <span id="total-fencers">-</span></div>
+                </div>
+                <div class="stat-card">
+                    <h4>Total Matches</h4>
+                    <div class="big-stat" id="total-matches">-</div>
+                    <div class="stat-subtext"><span id="win-rate">-</span>% win rate</div>
+                </div>
+                <div class="stat-card">
+                    <h4>Max ELO (All-Time)</h4>
+                    <div class="big-stat" id="max-elo">-</div>
+                    <div class="stat-subtext" id="max-elo-note">-</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="placement-stats-section" class="placement-stats" style="display: none;">
+            <h3>Tournament Placements</h3>
+            <div class="placement-summary" id="placement-summary">
+                <!-- Summary cards populated by JavaScript -->
+            </div>
+            <div class="placement-table-wrapper">
+                <table id="placement-table" class="display">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Placement</th>
+                            <th>Bracket</th>
+                        </tr>
+                    </thead>
+                    <tbody id="placement-table-body">
+                        <!-- Populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="elo-chart-section" class="chart-section" style="display: none;">
+            <h3>ELO Rating Progression</h3>
+            <canvas id="fencer-elo-chart"></canvas>
+        </section>
+
+        <section id="day-matches-section" class="day-matches" style="display: none;">
+            <h3>Matches by Tournament</h3>
+            <div class="day-selector">
+                <label for="day-select">Select tournament date:</label>
+                <select id="day-select">
+                    <option value="">-- Select a date --</option>
+                </select>
+            </div>
+
+            <div id="day-matches-results" style="display: none;">
+                <h4 id="day-matches-title"></h4>
+                <div class="match-history-table-wrapper">
+                    <table id="day-matches-table">
+                        <thead>
+                            <tr>
+                                <th>Opponent</th>
+                                <th>Type</th>
+                                <th>Result</th>
+                                <th>Your ELO</th>
+                                <th>Opponent ELO</th>
+                            </tr>
+                        </thead>
+                        <tbody id="day-matches-body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="h2h-section" class="h2h-full" style="display: none;">
+            <h3>Head-to-Head vs Opponent</h3>
+            <div class="h2h-selector">
+                <label for="h2h-opponent-select">Select opponent:</label>
+                <select id="h2h-opponent-select">
+                    <option value="">-- Select opponent --</option>
+                </select>
+            </div>
+
+            <div id="h2h-results" class="h2h-results-section" style="display: none;">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h4>Overall Record</h4>
+                        <div id="h2h-overall-stats" class="stat-content"></div>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Current Ratings</h4>
+                        <div id="h2h-rating-stats" class="stat-content"></div>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Poule Matches</h4>
+                        <div id="h2h-poule-stats" class="stat-content"></div>
+                    </div>
+                    <div class="stat-card">
+                        <h4>DE Matches</h4>
+                        <div id="h2h-de-stats" class="stat-content"></div>
+                    </div>
+                </div>
+
+                <div class="match-history-section">
+                    <h4>Complete Match History</h4>
+                    <div class="match-history-table-wrapper">
+                        <table id="h2h-match-history-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Type</th>
+                                    <th>Result</th>
+                                    <th colspan="2">ELO Changes</th>
+                                </tr>
+                            </thead>
+                            <tbody id="h2h-match-history-body">
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div id="h2h-no-matches" class="no-data" style="display: none;">
+                <p>No matches found with this opponent.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Haverstock Fencing Club | ELO Rating System</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="js/fencer.js"></script>
+</body>
+</html>

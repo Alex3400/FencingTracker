@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELO Timeline - Haverstock Fencing</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>🤺 Haverstock Fencing ELO Ratings</h1>
+        <nav>
+            <a href="index.html">Leaderboard</a>
+            <a href="timeline.html" class="active">ELO Timeline</a>
+            <a href="matchups.html">Head-to-Head</a>
+            <a href="fencer.html">Fencer Stats</a>
+            <a href="sessions.html">Tournament History</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>ELO Rating Timeline</h2>
+            <p>Track how fencer ratings have changed over time across all tournaments.</p>
+        </section>
+
+        <section class="chart-controls">
+            <div class="control-group">
+                <label for="fencer-select">Select Fencers to Display:</label>
+                <select id="fencer-select" multiple size="8">
+                    <!-- Populated by JavaScript -->
+                </select>
+                <div class="button-group">
+                    <button id="top-5-btn" class="btn btn-secondary">Top 5</button>
+                    <button id="clear-btn" class="btn btn-secondary">Clear All</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="chart-section">
+            <canvas id="elo-chart"></canvas>
+        </section>
+
+        <section class="legend-info">
+            <p><strong>How to use:</strong> Select one or more fencers from the list above to see their ELO progression over time.
+            Use Ctrl/Cmd+Click to select multiple fencers.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Haverstock Fencing Club | ELO Rating System</p>
+    </footer>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="js/timeline.js"></script>
+</body>
+</html>

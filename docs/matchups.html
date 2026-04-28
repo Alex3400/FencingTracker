@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Head-to-Head Matchups - Haverstock Fencing</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>🤺 Haverstock Fencing ELO Ratings</h1>
+        <nav>
+            <a href="index.html">Leaderboard</a>
+            <a href="timeline.html">ELO Timeline</a>
+            <a href="matchups.html" class="active">Head-to-Head</a>
+            <a href="fencer.html">Fencer Stats</a>
+            <a href="sessions.html">Tournament History</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Head-to-Head Matchup Analyzer</h2>
+            <p>Compare any two fencers and see their complete match history.</p>
+        </section>
+
+        <section class="matchup-selector">
+            <div class="selector-row">
+                <div class="fencer-selector">
+                    <label for="fencer1-select">Fencer 1:</label>
+                    <select id="fencer1-select">
+                        <option value="">-- Select Fencer --</option>
+                    </select>
+                </div>
+                <div class="vs">VS</div>
+                <div class="fencer-selector">
+                    <label for="fencer2-select">Fencer 2:</label>
+                    <select id="fencer2-select">
+                        <option value="">-- Select Fencer --</option>
+                    </select>
+                </div>
+            </div>
+            <button id="analyze-btn" class="btn btn-primary">Analyze Matchup</button>
+        </section>
+
+        <section id="results-section" class="matchup-results" style="display: none;">
+            <h3>Matchup Results</h3>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h4>Overall Record</h4>
+                    <div id="overall-stats" class="stat-content"></div>
+                </div>
+                <div class="stat-card">
+                    <h4>Current Ratings</h4>
+                    <div id="rating-stats" class="stat-content"></div>
+                </div>
+                <div class="stat-card">
+                    <h4>Poule Matches</h4>
+                    <div id="poule-stats" class="stat-content"></div>
+                </div>
+                <div class="stat-card">
+                    <h4>DE Matches</h4>
+                    <div id="de-stats" class="stat-content"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="no-matches" class="no-data" style="display: none;">
+            <p>No matches found between these two fencers.</p>
+        </section>
+
+        <section id="match-history-section" class="match-history" style="display: none;">
+            <h3>Complete Match History</h3>
+            <div class="match-history-table-wrapper">
+                <table id="match-history-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Type</th>
+                            <th>Result</th>
+                            <th colspan="2">ELO Changes</th>
+                        </tr>
+                    </thead>
+                    <tbody id="match-history-body">
+                        <!-- Populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Haverstock Fencing Club | ELO Rating System</p>
+    </footer>
+
+    <script src="js/matchups.js"></script>
+</body>
+</html>

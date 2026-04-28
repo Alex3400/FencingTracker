@@ -1,0 +1,3711 @@
+[
+  {
+    "date": "2025-05-06",
+    "winner": "Eric L",
+    "top_poule_climber": "None",
+    "top_poule_gain": 0,
+    "fencers_in_poules": 26,
+    "fencers_in_des": 23,
+    "poule_matches": 112,
+    "de_matches": 48,
+    "total_matches": 160,
+    "score_5_0": 8,
+    "score_5_1": 11,
+    "score_5_2": 25,
+    "score_5_3": 36,
+    "score_5_4": 30,
+    "total_touches": 839,
+    "avg_touches_per_match": 7.49,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1as884Yep-mGLv5jmTHm8-LCnCCiNoIg3wa13sIgfgI4/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 2,
+        "fencer": "Greg"
+      },
+      {
+        "place": 3,
+        "fencer": "Tom"
+      },
+      {
+        "place": 4,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 5,
+        "fencer": "Sammy"
+      },
+      {
+        "place": 6,
+        "fencer": "Darran"
+      },
+      {
+        "place": 7,
+        "fencer": "Joshua"
+      },
+      {
+        "place": 8,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 9,
+        "fencer": "Pierre"
+      },
+      {
+        "place": 10,
+        "fencer": "Truuvy"
+      },
+      {
+        "place": 11,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 12,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 13,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 14,
+        "fencer": "Steph"
+      },
+      {
+        "place": 15,
+        "fencer": "Pablo"
+      },
+      {
+        "place": 16,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 17,
+        "fencer": "Roeland"
+      },
+      {
+        "place": 18,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 19,
+        "fencer": "Will P"
+      },
+      {
+        "place": 20,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 21,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 22,
+        "fencer": "Alberto"
+      },
+      {
+        "place": 23,
+        "fencer": "Lucas"
+      }
+    ]
+  },
+  {
+    "date": "2025-05-13",
+    "winner": "Greg",
+    "top_poule_climber": "Vincent",
+    "top_poule_gain": 88.9,
+    "fencers_in_poules": 23,
+    "fencers_in_des": 22,
+    "poule_matches": 113,
+    "de_matches": 45,
+    "total_matches": 158,
+    "score_5_0": 5,
+    "score_5_1": 16,
+    "score_5_2": 26,
+    "score_5_3": 32,
+    "score_5_4": 33,
+    "total_touches": 856,
+    "avg_touches_per_match": 7.58,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/19JbBtR5TGAXSqIvy2bpeGJw3AXl3eG-EldUDA4YPu-A/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Greg"
+      },
+      {
+        "place": 2,
+        "fencer": "Truuvy"
+      },
+      {
+        "place": 3,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 4,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 5,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 6,
+        "fencer": "Giles"
+      },
+      {
+        "place": 7,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 8,
+        "fencer": "Tom"
+      },
+      {
+        "place": 9,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 10,
+        "fencer": "Steph"
+      },
+      {
+        "place": 11,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 12,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 13,
+        "fencer": "Etienne"
+      },
+      {
+        "place": 14,
+        "fencer": "Shevy"
+      },
+      {
+        "place": 15,
+        "fencer": "Joshua"
+      },
+      {
+        "place": 16,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 17,
+        "fencer": "Martin H"
+      },
+      {
+        "place": 18,
+        "fencer": "Lucas"
+      },
+      {
+        "place": 19,
+        "fencer": "Enrik"
+      },
+      {
+        "place": 20,
+        "fencer": "Jonathan"
+      },
+      {
+        "place": 21,
+        "fencer": "Andy R"
+      },
+      {
+        "place": 22,
+        "fencer": "Nat"
+      }
+    ]
+  },
+  {
+    "date": "2025-05-20",
+    "winner": "Rudi",
+    "top_poule_climber": "Alex Y",
+    "top_poule_gain": 84.2,
+    "fencers_in_poules": 26,
+    "fencers_in_des": 23,
+    "poule_matches": 117,
+    "de_matches": 48,
+    "total_matches": 165,
+    "score_5_0": 9,
+    "score_5_1": 15,
+    "score_5_2": 17,
+    "score_5_3": 34,
+    "score_5_4": 39,
+    "total_touches": 877,
+    "avg_touches_per_match": 7.5,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1CxzZqpGJLqcKPA620Ql2-4lrQZ8RGr02gtDqwgqlcXI/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Rudi"
+      },
+      {
+        "place": 2,
+        "fencer": "Shevy"
+      },
+      {
+        "place": 3,
+        "fencer": "Greg"
+      },
+      {
+        "place": 4,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 5,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 6,
+        "fencer": "Pierre"
+      },
+      {
+        "place": 7,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 8,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 9,
+        "fencer": "Tom"
+      },
+      {
+        "place": 10,
+        "fencer": "Clemens"
+      },
+      {
+        "place": 11,
+        "fencer": "Amaury"
+      },
+      {
+        "place": 12,
+        "fencer": "Steph"
+      },
+      {
+        "place": 13,
+        "fencer": "Truuvy"
+      },
+      {
+        "place": 14,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 15,
+        "fencer": "Luka"
+      },
+      {
+        "place": 16,
+        "fencer": "Lucas"
+      },
+      {
+        "place": 17,
+        "fencer": "Lance"
+      },
+      {
+        "place": 18,
+        "fencer": "Enrik"
+      },
+      {
+        "place": 19,
+        "fencer": "Pablo"
+      },
+      {
+        "place": 20,
+        "fencer": "Giles"
+      },
+      {
+        "place": 21,
+        "fencer": "Andy R"
+      },
+      {
+        "place": 22,
+        "fencer": "Flavia"
+      },
+      {
+        "place": 23,
+        "fencer": "Nat"
+      }
+    ]
+  },
+  {
+    "date": "2025-05-27",
+    "winner": "Truuvy",
+    "top_poule_climber": "Charlie",
+    "top_poule_gain": 66.9,
+    "fencers_in_poules": 17,
+    "fencers_in_des": 14,
+    "poule_matches": 74,
+    "de_matches": 25,
+    "total_matches": 99,
+    "score_5_0": 4,
+    "score_5_1": 13,
+    "score_5_2": 17,
+    "score_5_3": 16,
+    "score_5_4": 24,
+    "total_touches": 561,
+    "avg_touches_per_match": 7.58,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1-aNb5s3NXac8HjtP_zqH9xF0AmQuzsNWxEe3ZooXxCs/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Truuvy"
+      },
+      {
+        "place": 2,
+        "fencer": "Clemens"
+      },
+      {
+        "place": 3,
+        "fencer": "Greg"
+      },
+      {
+        "place": 4,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 5,
+        "fencer": "Amaury"
+      },
+      {
+        "place": 6,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 7,
+        "fencer": "Lukas N"
+      },
+      {
+        "place": 8,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 9,
+        "fencer": "Joshua"
+      },
+      {
+        "place": 10,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 11,
+        "fencer": "Alberto"
+      },
+      {
+        "place": 12,
+        "fencer": "Pablo"
+      },
+      {
+        "place": 13,
+        "fencer": "Lucas H"
+      },
+      {
+        "place": 14,
+        "fencer": "Flavia"
+      }
+    ]
+  },
+  {
+    "date": "2025-06-03",
+    "winner": "Alejo",
+    "top_poule_climber": "Will P",
+    "top_poule_gain": 87.9,
+    "fencers_in_poules": 16,
+    "fencers_in_des": 14,
+    "poule_matches": 61,
+    "de_matches": 25,
+    "total_matches": 86,
+    "score_5_0": 2,
+    "score_5_1": 8,
+    "score_5_2": 8,
+    "score_5_3": 21,
+    "score_5_4": 22,
+    "total_touches": 480,
+    "avg_touches_per_match": 7.87,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/19P7CpgcizgV5tdIYU-Nd__ktghUT4m8fHg0mQTYmZm0/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 2,
+        "fencer": "Rudi"
+      },
+      {
+        "place": 3,
+        "fencer": "Truuvy"
+      },
+      {
+        "place": 4,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 5,
+        "fencer": "Greg"
+      },
+      {
+        "place": 6,
+        "fencer": "Will P"
+      },
+      {
+        "place": 7,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 8,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 9,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 10,
+        "fencer": "John H"
+      },
+      {
+        "place": 11,
+        "fencer": "Pablo"
+      },
+      {
+        "place": 12,
+        "fencer": "Martin H"
+      },
+      {
+        "place": 13,
+        "fencer": "Giulia"
+      },
+      {
+        "place": 14,
+        "fencer": "Lance"
+      }
+    ]
+  },
+  {
+    "date": "2025-06-10",
+    "winner": "Greg",
+    "top_poule_climber": "Eric L",
+    "top_poule_gain": 35.7,
+    "fencers_in_poules": 20,
+    "fencers_in_des": 19,
+    "poule_matches": 93,
+    "de_matches": 30,
+    "total_matches": 123,
+    "score_5_0": 3,
+    "score_5_1": 13,
+    "score_5_2": 18,
+    "score_5_3": 35,
+    "score_5_4": 24,
+    "total_touches": 715,
+    "avg_touches_per_match": 7.69,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1_CcqTCN_I3kVO7pd6-KuD0i_-OrqmZoSU4uDVzw_bV8/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Greg"
+      },
+      {
+        "place": 2,
+        "fencer": "Alex A"
+      },
+      {
+        "place": 3,
+        "fencer": "John H"
+      },
+      {
+        "place": 4,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 5,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 6,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 7,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 8,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 9,
+        "fencer": "Max T"
+      },
+      {
+        "place": 10,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 11,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 12,
+        "fencer": "Maiya"
+      },
+      {
+        "place": 13,
+        "fencer": "Pablo"
+      },
+      {
+        "place": 14,
+        "fencer": "Marg"
+      },
+      {
+        "place": 16,
+        "fencer": "Tom"
+      },
+      {
+        "place": 17,
+        "fencer": "Vincent"
+      }
+    ]
+  },
+  {
+    "date": "2025-06-17",
+    "winner": "Greg",
+    "top_poule_climber": "Vincent",
+    "top_poule_gain": 60.1,
+    "fencers_in_poules": 22,
+    "fencers_in_des": 20,
+    "poule_matches": 86,
+    "de_matches": 40,
+    "total_matches": 126,
+    "score_5_0": 2,
+    "score_5_1": 11,
+    "score_5_2": 18,
+    "score_5_3": 23,
+    "score_5_4": 31,
+    "total_touches": 665,
+    "avg_touches_per_match": 7.73,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/10sGLmHUOfhTU5h3Me1vIQ74ZEZIM0oQmh4CGMcnVg4c/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Greg"
+      },
+      {
+        "place": 2,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 3,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 4,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 5,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 6,
+        "fencer": "Amaury"
+      },
+      {
+        "place": 7,
+        "fencer": "Truuvy"
+      },
+      {
+        "place": 8,
+        "fencer": "Tom"
+      },
+      {
+        "place": 9,
+        "fencer": "Steph"
+      },
+      {
+        "place": 10,
+        "fencer": "Enrik"
+      },
+      {
+        "place": 11,
+        "fencer": "Clemens"
+      },
+      {
+        "place": 12,
+        "fencer": "Willie"
+      },
+      {
+        "place": 13,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 14,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 15,
+        "fencer": "Will P"
+      },
+      {
+        "place": 16,
+        "fencer": "Marinko"
+      },
+      {
+        "place": 17,
+        "fencer": "Martin H"
+      },
+      {
+        "place": 18,
+        "fencer": "Lukas N"
+      },
+      {
+        "place": 19,
+        "fencer": "Pablo"
+      },
+      {
+        "place": 20,
+        "fencer": "Perth"
+      }
+    ]
+  },
+  {
+    "date": "2025-06-24",
+    "winner": "Greg",
+    "top_poule_climber": "Lukas N",
+    "top_poule_gain": 56.0,
+    "fencers_in_poules": 14,
+    "fencers_in_des": 13,
+    "poule_matches": 54,
+    "de_matches": 22,
+    "total_matches": 76,
+    "score_5_0": 4,
+    "score_5_1": 11,
+    "score_5_2": 11,
+    "score_5_3": 13,
+    "score_5_4": 15,
+    "total_touches": 402,
+    "avg_touches_per_match": 7.44,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1Um-Y4ry7qMCR568yvvsfCeCvtmhk-7zy0_q55TeSjG8/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Greg"
+      },
+      {
+        "place": 2,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 3,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 4,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 5,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 6,
+        "fencer": "Lukas N"
+      },
+      {
+        "place": 7,
+        "fencer": "Steph"
+      },
+      {
+        "place": 8,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 9,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 10,
+        "fencer": "Etienne"
+      },
+      {
+        "place": 11,
+        "fencer": "Lance"
+      },
+      {
+        "place": 12,
+        "fencer": "Megan"
+      },
+      {
+        "place": 13,
+        "fencer": "Andy R"
+      }
+    ]
+  },
+  {
+    "date": "2025-07-01",
+    "winner": "Greg",
+    "top_poule_climber": "Roeland",
+    "top_poule_gain": 46.6,
+    "fencers_in_poules": 16,
+    "fencers_in_des": 15,
+    "poule_matches": 49,
+    "de_matches": 28,
+    "total_matches": 77,
+    "score_5_0": 2,
+    "score_5_1": 6,
+    "score_5_2": 13,
+    "score_5_3": 13,
+    "score_5_4": 15,
+    "total_touches": 376,
+    "avg_touches_per_match": 7.67,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/15cpw6caITjnJh94VQ3oP4QHqzPphMuRXaTDOd2MtKpQ/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Greg"
+      },
+      {
+        "place": 2,
+        "fencer": "Will P"
+      },
+      {
+        "place": 3,
+        "fencer": "Sammy"
+      },
+      {
+        "place": 4,
+        "fencer": "Enrik"
+      },
+      {
+        "place": 5,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 6,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 7,
+        "fencer": "Roeland"
+      },
+      {
+        "place": 8,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 9,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 10,
+        "fencer": "Alonzo"
+      },
+      {
+        "place": 11,
+        "fencer": "Lukas N"
+      },
+      {
+        "place": 12,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 13,
+        "fencer": "Steph"
+      },
+      {
+        "place": 14,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 15,
+        "fencer": "Pablo"
+      }
+    ]
+  },
+  {
+    "date": "2025-07-08",
+    "winner": "Greg",
+    "top_poule_climber": "Charlie",
+    "top_poule_gain": 43.3,
+    "fencers_in_poules": 16,
+    "fencers_in_des": 15,
+    "poule_matches": 61,
+    "de_matches": 28,
+    "total_matches": 89,
+    "score_5_0": 1,
+    "score_5_1": 4,
+    "score_5_2": 16,
+    "score_5_3": 16,
+    "score_5_4": 21,
+    "total_touches": 458,
+    "avg_touches_per_match": 7.51,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/16t7xFwcmsQwojncUNYBkUqRA9dI1w8WjAS-QZBoHnfw/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Greg"
+      },
+      {
+        "place": 2,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 3,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 4,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 5,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 6,
+        "fencer": "Sammy"
+      },
+      {
+        "place": 7,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 8,
+        "fencer": "Patrick L"
+      },
+      {
+        "place": 9,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 10,
+        "fencer": "Lukas N"
+      },
+      {
+        "place": 11,
+        "fencer": "Maiya"
+      },
+      {
+        "place": 12,
+        "fencer": "Tom"
+      },
+      {
+        "place": 13,
+        "fencer": "Steffi"
+      },
+      {
+        "place": 14,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 15,
+        "fencer": "Andy R"
+      }
+    ]
+  },
+  {
+    "date": "2025-07-15",
+    "winner": "Alex A",
+    "top_poule_climber": "Tom",
+    "top_poule_gain": 75.9,
+    "fencers_in_poules": 11,
+    "fencers_in_des": 8,
+    "poule_matches": 43,
+    "de_matches": 12,
+    "total_matches": 55,
+    "score_5_0": 3,
+    "score_5_1": 5,
+    "score_5_2": 9,
+    "score_5_3": 13,
+    "score_5_4": 13,
+    "total_touches": 329,
+    "avg_touches_per_match": 7.65,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1lcyqy1pWVWrVdlt7Mts_xPSV7lNkmxjlbM6tn8ye4a0/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Alex A"
+      },
+      {
+        "place": 2,
+        "fencer": "Greg"
+      },
+      {
+        "place": 3,
+        "fencer": "Tom"
+      },
+      {
+        "place": 4,
+        "fencer": "Will P"
+      },
+      {
+        "place": 5,
+        "fencer": "John H"
+      },
+      {
+        "place": 6,
+        "fencer": "Giles"
+      },
+      {
+        "place": 7,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 8,
+        "fencer": "Colin R"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-01",
+    "winner": "Greg",
+    "top_poule_climber": "Eric L",
+    "top_poule_gain": 79.2,
+    "fencers_in_poules": 12,
+    "fencers_in_des": 11,
+    "poule_matches": 48,
+    "de_matches": 17,
+    "total_matches": 65,
+    "score_5_0": 2,
+    "score_5_1": 6,
+    "score_5_2": 11,
+    "score_5_3": 8,
+    "score_5_4": 21,
+    "total_touches": 376,
+    "avg_touches_per_match": 7.83,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1FeojKouraadbM0EYNK39Z4HfYx5sN_JgQcMjn723WXU/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Greg"
+      },
+      {
+        "place": 2,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 3,
+        "fencer": "Karsten"
+      },
+      {
+        "place": 4,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 5,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 6,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 7,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 8,
+        "fencer": "Will P"
+      },
+      {
+        "place": 9,
+        "fencer": "Enrik"
+      },
+      {
+        "place": 10,
+        "fencer": "Lukas N"
+      },
+      {
+        "place": 11,
+        "fencer": "Andy R"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-09",
+    "winner": "Sameer",
+    "top_poule_climber": "Eric L",
+    "top_poule_gain": 30.0,
+    "fencers_in_poules": 15,
+    "fencers_in_des": 13,
+    "poule_matches": 65,
+    "de_matches": 22,
+    "total_matches": 87,
+    "score_5_0": 1,
+    "score_5_1": 13,
+    "score_5_2": 16,
+    "score_5_3": 16,
+    "score_5_4": 18,
+    "total_touches": 485,
+    "avg_touches_per_match": 7.46,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1FRS1L4D1WaLTf9VUL5ogwL9KjDQqXkIIiatIE6McNEg/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Sameer"
+      },
+      {
+        "place": 2,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 3,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 4,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 5,
+        "fencer": "Garen"
+      },
+      {
+        "place": 6,
+        "fencer": "Greg"
+      },
+      {
+        "place": 7,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 8,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 9,
+        "fencer": "Lukas N"
+      },
+      {
+        "place": 10,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 11,
+        "fencer": "Etienne"
+      },
+      {
+        "place": 12,
+        "fencer": "Shevy"
+      },
+      {
+        "place": 13,
+        "fencer": "Perth"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-16",
+    "winner": "Greg",
+    "top_poule_climber": "Eric L",
+    "top_poule_gain": 32.6,
+    "fencers_in_poules": 16,
+    "fencers_in_des": 15,
+    "poule_matches": 76,
+    "de_matches": 28,
+    "total_matches": 104,
+    "score_5_0": 4,
+    "score_5_1": 11,
+    "score_5_2": 16,
+    "score_5_3": 25,
+    "score_5_4": 18,
+    "total_touches": 560,
+    "avg_touches_per_match": 7.37,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/10DPzx1U_fIklSdmTyok6oY3IUCV2yEf6jJfqWe15Wq0/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Greg"
+      },
+      {
+        "place": 2,
+        "fencer": "Sammy"
+      },
+      {
+        "place": 3,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 4,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 5,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 6,
+        "fencer": "Alex A"
+      },
+      {
+        "place": 7,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 8,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 9,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 10,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 11,
+        "fencer": "Lukas N"
+      },
+      {
+        "place": 12,
+        "fencer": "Marinko"
+      },
+      {
+        "place": 13,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 14,
+        "fencer": "Jonathan"
+      },
+      {
+        "place": 15,
+        "fencer": "Nat"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-23",
+    "winner": "Alejo",
+    "top_poule_climber": "Willie",
+    "top_poule_gain": 87.4,
+    "fencers_in_poules": 18,
+    "fencers_in_des": 16,
+    "poule_matches": 71,
+    "de_matches": 32,
+    "total_matches": 103,
+    "score_5_0": 3,
+    "score_5_1": 8,
+    "score_5_2": 10,
+    "score_5_3": 29,
+    "score_5_4": 21,
+    "total_touches": 554,
+    "avg_touches_per_match": 7.8,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1tnpbS7cCuleEWK6Vup8NJXMZ38Z6_w_5uCjPJtUgsbU/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 2,
+        "fencer": "Greg"
+      },
+      {
+        "place": 3,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 4,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 5,
+        "fencer": "Willie"
+      },
+      {
+        "place": 6,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 7,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 8,
+        "fencer": "Alonzo"
+      },
+      {
+        "place": 9,
+        "fencer": "Darran"
+      },
+      {
+        "place": 10,
+        "fencer": "Martin H"
+      },
+      {
+        "place": 11,
+        "fencer": "Aisling"
+      },
+      {
+        "place": 12,
+        "fencer": "Giles"
+      },
+      {
+        "place": 13,
+        "fencer": "Will P"
+      },
+      {
+        "place": 14,
+        "fencer": "Marinko"
+      },
+      {
+        "place": 15,
+        "fencer": "Lukas N"
+      },
+      {
+        "place": 16,
+        "fencer": "Tom"
+      }
+    ]
+  },
+  {
+    "date": "2025-09-30",
+    "winner": "Garen",
+    "top_poule_climber": "Pablo",
+    "top_poule_gain": 47.5,
+    "fencers_in_poules": 17,
+    "fencers_in_des": 15,
+    "poule_matches": 59,
+    "de_matches": 28,
+    "total_matches": 87,
+    "score_5_0": 6,
+    "score_5_1": 4,
+    "score_5_2": 18,
+    "score_5_3": 17,
+    "score_5_4": 14,
+    "total_touches": 442,
+    "avg_touches_per_match": 7.49,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/10xG4ibO3YJL0oh3muZPwevIAfbRW3Jbr8qAGyh9-2fQ/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Garen"
+      },
+      {
+        "place": 2,
+        "fencer": "Sameer"
+      },
+      {
+        "place": 3,
+        "fencer": "Roeland"
+      },
+      {
+        "place": 4,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 5,
+        "fencer": "Greg"
+      },
+      {
+        "place": 6,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 7,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 8,
+        "fencer": "Pablo"
+      },
+      {
+        "place": 9,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 10,
+        "fencer": "Marinko"
+      },
+      {
+        "place": 11,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 12,
+        "fencer": "Lukas N"
+      },
+      {
+        "place": 13,
+        "fencer": "Tom"
+      },
+      {
+        "place": 14,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 15,
+        "fencer": "Rakan"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-07",
+    "winner": "Garen",
+    "top_poule_climber": "Marg",
+    "top_poule_gain": 55.6,
+    "fencers_in_poules": 22,
+    "fencers_in_des": 17,
+    "poule_matches": 94,
+    "de_matches": 33,
+    "total_matches": 127,
+    "score_5_0": 4,
+    "score_5_1": 13,
+    "score_5_2": 28,
+    "score_5_3": 21,
+    "score_5_4": 24,
+    "total_touches": 678,
+    "avg_touches_per_match": 7.21,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1aZfDL70m6hAQW5-63TpgD32wsge5TL0P5nGPXlpdkp4/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Garen"
+      },
+      {
+        "place": 2,
+        "fencer": "Sammy"
+      },
+      {
+        "place": 3,
+        "fencer": "Tom"
+      },
+      {
+        "place": 4,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 5,
+        "fencer": "Greg"
+      },
+      {
+        "place": 6,
+        "fencer": "Jonathan"
+      },
+      {
+        "place": 7,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 8,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 9,
+        "fencer": "Lukas N"
+      },
+      {
+        "place": 10,
+        "fencer": "Willie"
+      },
+      {
+        "place": 11,
+        "fencer": "Shevy"
+      },
+      {
+        "place": 12,
+        "fencer": "Alonzo"
+      },
+      {
+        "place": 13,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 14,
+        "fencer": "Will P"
+      },
+      {
+        "place": 15,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 16,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 17,
+        "fencer": "Steph"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-14",
+    "winner": "Charlie",
+    "top_poule_climber": "Jonathan",
+    "top_poule_gain": 39.8,
+    "fencers_in_poules": 19,
+    "fencers_in_des": 15,
+    "poule_matches": 71,
+    "de_matches": 28,
+    "total_matches": 99,
+    "score_5_0": 3,
+    "score_5_1": 7,
+    "score_5_2": 12,
+    "score_5_3": 26,
+    "score_5_4": 20,
+    "total_touches": 529,
+    "avg_touches_per_match": 7.45,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/16cqY0kpDBPmevBp0G-gUHyb4UnC2ic78cQijadxlOII/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 2,
+        "fencer": "Tom T"
+      },
+      {
+        "place": 3,
+        "fencer": "Willie"
+      },
+      {
+        "place": 4,
+        "fencer": "Greg"
+      },
+      {
+        "place": 5,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 6,
+        "fencer": "Pablo"
+      },
+      {
+        "place": 7,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 8,
+        "fencer": "Jonathan"
+      },
+      {
+        "place": 9,
+        "fencer": "Sammy"
+      },
+      {
+        "place": 10,
+        "fencer": "Lukas N"
+      },
+      {
+        "place": 11,
+        "fencer": "Julia T"
+      },
+      {
+        "place": 12,
+        "fencer": "Caden"
+      },
+      {
+        "place": 13,
+        "fencer": "Etienne"
+      },
+      {
+        "place": 14,
+        "fencer": "Alonzo"
+      },
+      {
+        "place": 15,
+        "fencer": "Fergus"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-21",
+    "winner": "Willie",
+    "top_poule_climber": "Steph",
+    "top_poule_gain": 43.2,
+    "fencers_in_poules": 20,
+    "fencers_in_des": 16,
+    "poule_matches": 91,
+    "de_matches": 29,
+    "total_matches": 120,
+    "score_5_0": 5,
+    "score_5_1": 8,
+    "score_5_2": 15,
+    "score_5_3": 25,
+    "score_5_4": 36,
+    "total_touches": 702,
+    "avg_touches_per_match": 7.71,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1uDik8H2dQ_GmJDlnzb3WYM3sqM-1FKWohTCVZTTytyU/edit?usp=sharing",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Willie"
+      },
+      {
+        "place": 2,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 3,
+        "fencer": "Roeland"
+      },
+      {
+        "place": 4,
+        "fencer": "Greg"
+      },
+      {
+        "place": 5,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 6,
+        "fencer": "Alex A"
+      },
+      {
+        "place": 7,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 8,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 9,
+        "fencer": "Rakan"
+      },
+      {
+        "place": 10,
+        "fencer": "Fassel"
+      },
+      {
+        "place": 11,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 12,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 14,
+        "fencer": "Lukas N"
+      },
+      {
+        "place": 15,
+        "fencer": "Fergus"
+      }
+    ]
+  },
+  {
+    "date": "2025-10-28",
+    "winner": "Fassel",
+    "top_poule_climber": "Steph",
+    "top_poule_gain": 40.4,
+    "fencers_in_poules": 16,
+    "fencers_in_des": 14,
+    "poule_matches": 45,
+    "de_matches": 25,
+    "total_matches": 70,
+    "score_5_0": 2,
+    "score_5_1": 9,
+    "score_5_2": 6,
+    "score_5_3": 15,
+    "score_5_4": 13,
+    "total_touches": 343,
+    "avg_touches_per_match": 7.62,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1sgwRa9tHOhV0VWVLJpwfytcM1Hf1QMRlEsBG9zbZqFE/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Fassel"
+      },
+      {
+        "place": 2,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 3,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 4,
+        "fencer": "Willie"
+      },
+      {
+        "place": 5,
+        "fencer": "Greg"
+      },
+      {
+        "place": 6,
+        "fencer": "Alessandro"
+      },
+      {
+        "place": 7,
+        "fencer": "Aisling"
+      },
+      {
+        "place": 8,
+        "fencer": "Will P"
+      },
+      {
+        "place": 9,
+        "fencer": "Adrian"
+      },
+      {
+        "place": 10,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 11,
+        "fencer": "Steph"
+      },
+      {
+        "place": 12,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 13,
+        "fencer": "Feddy"
+      },
+      {
+        "place": 14,
+        "fencer": "Caden"
+      }
+    ]
+  },
+  {
+    "date": "2025-11-04",
+    "winner": "Greg",
+    "top_poule_climber": "Will P",
+    "top_poule_gain": 43.4,
+    "fencers_in_poules": 24,
+    "fencers_in_des": 22,
+    "poule_matches": 101,
+    "de_matches": 45,
+    "total_matches": 146,
+    "score_5_0": 3,
+    "score_5_1": 14,
+    "score_5_2": 19,
+    "score_5_3": 36,
+    "score_5_4": 29,
+    "total_touches": 781,
+    "avg_touches_per_match": 7.73,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1iX5LisvPfYaaPURBS3R__gRWPVNdEnGZJWRPlEdWKIM/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Greg"
+      },
+      {
+        "place": 2,
+        "fencer": "Fassel"
+      },
+      {
+        "place": 3,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 4,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 5,
+        "fencer": "Alex A"
+      },
+      {
+        "place": 6,
+        "fencer": "Will P"
+      },
+      {
+        "place": 7,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 8,
+        "fencer": "Willie"
+      },
+      {
+        "place": 9,
+        "fencer": "Martin H"
+      },
+      {
+        "place": 10,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 11,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 12,
+        "fencer": "Jonathan"
+      },
+      {
+        "place": 13,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 14,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 15,
+        "fencer": "Steph"
+      },
+      {
+        "place": 16,
+        "fencer": "Tom"
+      },
+      {
+        "place": 17,
+        "fencer": "Miriam"
+      },
+      {
+        "place": 18,
+        "fencer": "Dan"
+      },
+      {
+        "place": 19,
+        "fencer": "Caden"
+      },
+      {
+        "place": 20,
+        "fencer": "Alonzo"
+      },
+      {
+        "place": 21,
+        "fencer": "Fergus"
+      },
+      {
+        "place": 22,
+        "fencer": "Shevy"
+      }
+    ]
+  },
+  {
+    "date": "2025-11-10",
+    "winner": "Unknown",
+    "top_poule_climber": "Aisling",
+    "top_poule_gain": 54.5,
+    "fencers_in_poules": 16,
+    "fencers_in_des": 17,
+    "poule_matches": 55,
+    "de_matches": 24,
+    "total_matches": 79,
+    "score_5_0": 1,
+    "score_5_1": 9,
+    "score_5_2": 10,
+    "score_5_3": 18,
+    "score_5_4": 17,
+    "total_touches": 426,
+    "avg_touches_per_match": 7.75,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1mppZ8EwT3NZRwf_SYtCBUoznEpN7xvknWBHI0DiRTsc/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 17,
+        "fencer": "Duncan"
+      }
+    ]
+  },
+  {
+    "date": "2025-11-18",
+    "winner": "Roeland",
+    "top_poule_climber": "Anna A",
+    "top_poule_gain": 53.0,
+    "fencers_in_poules": 21,
+    "fencers_in_des": 20,
+    "poule_matches": 87,
+    "de_matches": 40,
+    "total_matches": 127,
+    "score_5_0": 5,
+    "score_5_1": 12,
+    "score_5_2": 18,
+    "score_5_3": 27,
+    "score_5_4": 25,
+    "total_touches": 664,
+    "avg_touches_per_match": 7.63,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/197snAxy_16lSqMQ2crIaUPiIoTqLte6MbTstwQbIzgE/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Roeland"
+      },
+      {
+        "place": 2,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 3,
+        "fencer": "Lukas N"
+      },
+      {
+        "place": 4,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 5,
+        "fencer": "Steph"
+      },
+      {
+        "place": 6,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 7,
+        "fencer": "Greg"
+      },
+      {
+        "place": 8,
+        "fencer": "Jonathan"
+      },
+      {
+        "place": 9,
+        "fencer": "Will P"
+      },
+      {
+        "place": 10,
+        "fencer": "Caden"
+      },
+      {
+        "place": 11,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 12,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 13,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 14,
+        "fencer": "Shevy"
+      },
+      {
+        "place": 15,
+        "fencer": "Anna A"
+      },
+      {
+        "place": 16,
+        "fencer": "Garen"
+      },
+      {
+        "place": 17,
+        "fencer": "Adrian"
+      },
+      {
+        "place": 18,
+        "fencer": "Matilda"
+      },
+      {
+        "place": 19,
+        "fencer": "Fergus"
+      },
+      {
+        "place": 20,
+        "fencer": "Joshua"
+      }
+    ]
+  },
+  {
+    "date": "2025-11-25",
+    "winner": "Greg",
+    "top_poule_climber": "Charlie",
+    "top_poule_gain": 46.4,
+    "fencers_in_poules": 25,
+    "fencers_in_des": 22,
+    "poule_matches": 107,
+    "de_matches": 45,
+    "total_matches": 152,
+    "score_5_0": 12,
+    "score_5_1": 10,
+    "score_5_2": 25,
+    "score_5_3": 29,
+    "score_5_4": 29,
+    "total_touches": 788,
+    "avg_touches_per_match": 7.36,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1_tB7ghLlwkY-YkBEUfykhpmMfD1XOVl7StsVVAFOM5k/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Greg"
+      },
+      {
+        "place": 2,
+        "fencer": "Tom"
+      },
+      {
+        "place": 3,
+        "fencer": "Sammy"
+      },
+      {
+        "place": 4,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 5,
+        "fencer": "Fassel"
+      },
+      {
+        "place": 6,
+        "fencer": "Lukas N"
+      },
+      {
+        "place": 7,
+        "fencer": "Will P"
+      },
+      {
+        "place": 8,
+        "fencer": "Sameer"
+      },
+      {
+        "place": 9,
+        "fencer": "Adrian L"
+      },
+      {
+        "place": 10,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 11,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 12,
+        "fencer": "Nicholas"
+      },
+      {
+        "place": 13,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 14,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 15,
+        "fencer": "Anna A"
+      },
+      {
+        "place": 16,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 17,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 18,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 19,
+        "fencer": "Joshua"
+      },
+      {
+        "place": 20,
+        "fencer": "Rowena"
+      },
+      {
+        "place": 21,
+        "fencer": "Alix S"
+      },
+      {
+        "place": 22,
+        "fencer": "Alonzo"
+      }
+    ]
+  },
+  {
+    "date": "2025-12-02",
+    "winner": "Greg",
+    "top_poule_climber": "Tom T",
+    "top_poule_gain": 70.8,
+    "fencers_in_poules": 23,
+    "fencers_in_des": 21,
+    "poule_matches": 100,
+    "de_matches": 42,
+    "total_matches": 142,
+    "score_5_0": 6,
+    "score_5_1": 7,
+    "score_5_2": 28,
+    "score_5_3": 25,
+    "score_5_4": 32,
+    "total_touches": 756,
+    "avg_touches_per_match": 7.56,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1dXBHWGMxcU_zecHzgeElrjNIJimI9tl8yMr5yjE3ljw/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Greg"
+      },
+      {
+        "place": 2,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 3,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 4,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 5,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 6,
+        "fencer": "Fassel"
+      },
+      {
+        "place": 7,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 8,
+        "fencer": "Tom T"
+      },
+      {
+        "place": 9,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 10,
+        "fencer": "Anna Z"
+      },
+      {
+        "place": 11,
+        "fencer": "Steph"
+      },
+      {
+        "place": 12,
+        "fencer": "Tom S"
+      },
+      {
+        "place": 13,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 14,
+        "fencer": "Adrian L"
+      },
+      {
+        "place": 15,
+        "fencer": "Anna A"
+      },
+      {
+        "place": 16,
+        "fencer": "Alix S"
+      },
+      {
+        "place": 17,
+        "fencer": "Lukas N"
+      },
+      {
+        "place": 18,
+        "fencer": "Joshua"
+      },
+      {
+        "place": 19,
+        "fencer": "Marinko"
+      },
+      {
+        "place": 20,
+        "fencer": "Fergus"
+      },
+      {
+        "place": 21,
+        "fencer": "Matilda"
+      }
+    ]
+  },
+  {
+    "date": "2025-12-09",
+    "winner": "Greg",
+    "top_poule_climber": "Charlie",
+    "top_poule_gain": 53.5,
+    "fencers_in_poules": 26,
+    "fencers_in_des": 20,
+    "poule_matches": 106,
+    "de_matches": 39,
+    "total_matches": 145,
+    "score_5_0": 9,
+    "score_5_1": 13,
+    "score_5_2": 19,
+    "score_5_3": 36,
+    "score_5_4": 24,
+    "total_touches": 760,
+    "avg_touches_per_match": 7.17,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1khHtkQiVdLDc6v5s1kBFfPNosttzKxbF00uLaQtUnbY/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Greg"
+      },
+      {
+        "place": 2,
+        "fencer": "Tom T"
+      },
+      {
+        "place": 3,
+        "fencer": "Willie"
+      },
+      {
+        "place": 4,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 5,
+        "fencer": "Fassel"
+      },
+      {
+        "place": 6,
+        "fencer": "Roeland"
+      },
+      {
+        "place": 7,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 8,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 9,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 10,
+        "fencer": "Will W"
+      },
+      {
+        "place": 11,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 12,
+        "fencer": "Lukas N"
+      },
+      {
+        "place": 15,
+        "fencer": "Marinko"
+      },
+      {
+        "place": 16,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 17,
+        "fencer": "Adrian L"
+      },
+      {
+        "place": 18,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 19,
+        "fencer": "John H"
+      },
+      {
+        "place": 20,
+        "fencer": "Joshua"
+      }
+    ]
+  },
+  {
+    "date": "2025-12-16",
+    "winner": "Willie",
+    "top_poule_climber": "Anna A",
+    "top_poule_gain": 45.5,
+    "fencers_in_poules": 22,
+    "fencers_in_des": 16,
+    "poule_matches": 95,
+    "de_matches": 32,
+    "total_matches": 127,
+    "score_5_0": 7,
+    "score_5_1": 13,
+    "score_5_2": 10,
+    "score_5_3": 30,
+    "score_5_4": 34,
+    "total_touches": 729,
+    "avg_touches_per_match": 7.67,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1CGHQCOsdU7n5B_FLeztiFEBTA1i0S2faDwl68wvthEQ/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Willie"
+      },
+      {
+        "place": 2,
+        "fencer": "Fassel"
+      },
+      {
+        "place": 3,
+        "fencer": "Alex A"
+      },
+      {
+        "place": 4,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 5,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 6,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 7,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 8,
+        "fencer": "Will W"
+      },
+      {
+        "place": 9,
+        "fencer": "Darran"
+      },
+      {
+        "place": 10,
+        "fencer": "Caden"
+      },
+      {
+        "place": 11,
+        "fencer": "Tom T"
+      },
+      {
+        "place": 12,
+        "fencer": "Nat"
+      },
+      {
+        "place": 13,
+        "fencer": "Miriam"
+      },
+      {
+        "place": 14,
+        "fencer": "Joshua"
+      },
+      {
+        "place": 15,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 16,
+        "fencer": "Giles"
+      }
+    ]
+  },
+  {
+    "date": "2026-01-06",
+    "winner": "Greg",
+    "top_poule_climber": "John H",
+    "top_poule_gain": 29.7,
+    "fencers_in_poules": 15,
+    "fencers_in_des": 15,
+    "poule_matches": 65,
+    "de_matches": 28,
+    "total_matches": 93,
+    "score_5_0": 6,
+    "score_5_1": 6,
+    "score_5_2": 13,
+    "score_5_3": 24,
+    "score_5_4": 16,
+    "total_touches": 493,
+    "avg_touches_per_match": 7.58,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1NZVVHGNs8MgoXC7GQRZRkbLjbWkZcoDLmlKF3SVb8-g/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Greg"
+      },
+      {
+        "place": 2,
+        "fencer": "Willie"
+      },
+      {
+        "place": 3,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 4,
+        "fencer": "Alex A"
+      },
+      {
+        "place": 5,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 6,
+        "fencer": "Tom T"
+      },
+      {
+        "place": 7,
+        "fencer": "Will P"
+      },
+      {
+        "place": 8,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 9,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 10,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 11,
+        "fencer": "Caden"
+      },
+      {
+        "place": 12,
+        "fencer": "John H"
+      },
+      {
+        "place": 13,
+        "fencer": "Steph"
+      },
+      {
+        "place": 14,
+        "fencer": "Fassel"
+      },
+      {
+        "place": 15,
+        "fencer": "Marg"
+      }
+    ]
+  },
+  {
+    "date": "2026-01-13",
+    "winner": "Sameer",
+    "top_poule_climber": "John H",
+    "top_poule_gain": 36.7,
+    "fencers_in_poules": 21,
+    "fencers_in_des": 19,
+    "poule_matches": 78,
+    "de_matches": 37,
+    "total_matches": 115,
+    "score_5_0": 7,
+    "score_5_1": 11,
+    "score_5_2": 15,
+    "score_5_3": 16,
+    "score_5_4": 28,
+    "total_touches": 586,
+    "avg_touches_per_match": 7.51,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1T0B6tEYT3RbeL8sjApbIkPIgmvMLkVrUcyumRnReCPE/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Sameer"
+      },
+      {
+        "place": 2,
+        "fencer": "Greg"
+      },
+      {
+        "place": 3,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 4,
+        "fencer": "Aisling"
+      },
+      {
+        "place": 5,
+        "fencer": "Fassel"
+      },
+      {
+        "place": 6,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 7,
+        "fencer": "Lukas N"
+      },
+      {
+        "place": 8,
+        "fencer": "Willie"
+      },
+      {
+        "place": 9,
+        "fencer": "John H"
+      },
+      {
+        "place": 10,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 11,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 12,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 13,
+        "fencer": "Steph"
+      },
+      {
+        "place": 14,
+        "fencer": "Fergus"
+      },
+      {
+        "place": 15,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 16,
+        "fencer": "Shevy"
+      },
+      {
+        "place": 17,
+        "fencer": "Matilda"
+      },
+      {
+        "place": 18,
+        "fencer": "Alonzo"
+      },
+      {
+        "place": 19,
+        "fencer": "Caden"
+      }
+    ]
+  },
+  {
+    "date": "2026-01-20",
+    "winner": "Willie",
+    "top_poule_climber": "Andy R",
+    "top_poule_gain": 48.1,
+    "fencers_in_poules": 25,
+    "fencers_in_des": 24,
+    "poule_matches": 107,
+    "de_matches": 52,
+    "total_matches": 159,
+    "score_5_0": 3,
+    "score_5_1": 13,
+    "score_5_2": 21,
+    "score_5_3": 36,
+    "score_5_4": 31,
+    "total_touches": 807,
+    "avg_touches_per_match": 7.54,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1tJeF_HtdSCDjtlm_JwUhEGhNtZCzM8Y1BbxpRIYD218/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Willie"
+      },
+      {
+        "place": 2,
+        "fencer": "Sammy"
+      },
+      {
+        "place": 3,
+        "fencer": "Greg"
+      },
+      {
+        "place": 4,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 5,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 6,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 7,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 8,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 9,
+        "fencer": "Fassel"
+      },
+      {
+        "place": 10,
+        "fencer": "Steph"
+      },
+      {
+        "place": 11,
+        "fencer": "Caden"
+      },
+      {
+        "place": 12,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 13,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 14,
+        "fencer": "Anna Z"
+      },
+      {
+        "place": 15,
+        "fencer": "Andy R"
+      },
+      {
+        "place": 16,
+        "fencer": "Tom S"
+      },
+      {
+        "place": 17,
+        "fencer": "Miriam"
+      },
+      {
+        "place": 18,
+        "fencer": "John H"
+      },
+      {
+        "place": 19,
+        "fencer": "Adrian L"
+      },
+      {
+        "place": 20,
+        "fencer": "Fergus"
+      },
+      {
+        "place": 21,
+        "fencer": "Alix S"
+      },
+      {
+        "place": 22,
+        "fencer": "Kirill"
+      },
+      {
+        "place": 23,
+        "fencer": "Anna A"
+      },
+      {
+        "place": 24,
+        "fencer": "Jack B"
+      }
+    ]
+  },
+  {
+    "date": "2026-01-27",
+    "winner": "Charlie",
+    "top_poule_climber": "Lukas N",
+    "top_poule_gain": 24.2,
+    "fencers_in_poules": 18,
+    "fencers_in_des": 15,
+    "poule_matches": 72,
+    "de_matches": 28,
+    "total_matches": 100,
+    "score_5_0": 6,
+    "score_5_1": 6,
+    "score_5_2": 19,
+    "score_5_3": 20,
+    "score_5_4": 21,
+    "total_touches": 548,
+    "avg_touches_per_match": 7.61,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1ZLKqNubNAu2Zk11zzCbnxwdpfoASKwE-WA-BbkISiIM/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 2,
+        "fencer": "Greg"
+      },
+      {
+        "place": 3,
+        "fencer": "Nikolas A"
+      },
+      {
+        "place": 4,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 5,
+        "fencer": "Tom T"
+      },
+      {
+        "place": 6,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 7,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 8,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 9,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 10,
+        "fencer": "Caden"
+      },
+      {
+        "place": 11,
+        "fencer": "Lukas N"
+      },
+      {
+        "place": 12,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 13,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 14,
+        "fencer": "Alix S"
+      },
+      {
+        "place": 15,
+        "fencer": "Matilda"
+      }
+    ]
+  },
+  {
+    "date": "2026-02-03",
+    "winner": "Eric L",
+    "top_poule_climber": "Eric L",
+    "top_poule_gain": 61.4,
+    "fencers_in_poules": 22,
+    "fencers_in_des": 20,
+    "poule_matches": 83,
+    "de_matches": 40,
+    "total_matches": 123,
+    "score_5_0": 6,
+    "score_5_1": 16,
+    "score_5_2": 24,
+    "score_5_3": 25,
+    "score_5_4": 12,
+    "total_touches": 602,
+    "avg_touches_per_match": 7.25,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/14uWaAXBh3Ct586-wSSQP8wT3dmWlqTQX4bh-Q9FRK10/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 2,
+        "fencer": "Anna A"
+      },
+      {
+        "place": 3,
+        "fencer": "Willie"
+      },
+      {
+        "place": 4,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 5,
+        "fencer": "Anna Z"
+      },
+      {
+        "place": 6,
+        "fencer": "Tom T"
+      },
+      {
+        "place": 7,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 8,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 9,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 10,
+        "fencer": "Maxim"
+      },
+      {
+        "place": 11,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 12,
+        "fencer": "Matilda"
+      },
+      {
+        "place": 13,
+        "fencer": "Caden"
+      },
+      {
+        "place": 14,
+        "fencer": "Alix S"
+      },
+      {
+        "place": 15,
+        "fencer": "Joshua"
+      },
+      {
+        "place": 16,
+        "fencer": "Steph"
+      },
+      {
+        "place": 17,
+        "fencer": "Andy R"
+      },
+      {
+        "place": 18,
+        "fencer": "Fergus"
+      },
+      {
+        "place": 19,
+        "fencer": "Kirill"
+      },
+      {
+        "place": 20,
+        "fencer": "Eugene"
+      }
+    ]
+  },
+  {
+    "date": "2026-02-10",
+    "winner": "Eric L",
+    "top_poule_climber": "Kirill",
+    "top_poule_gain": 30.5,
+    "fencers_in_poules": 23,
+    "fencers_in_des": 22,
+    "poule_matches": 104,
+    "de_matches": 45,
+    "total_matches": 149,
+    "score_5_0": 6,
+    "score_5_1": 17,
+    "score_5_2": 29,
+    "score_5_3": 29,
+    "score_5_4": 23,
+    "total_touches": 774,
+    "avg_touches_per_match": 7.44,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/19q3hR7P5YUz70sPJKsDRJ8KzuyGBAhOx6jPHRDAC8x0/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 2,
+        "fencer": "David Roig"
+      },
+      {
+        "place": 3,
+        "fencer": "Greg"
+      },
+      {
+        "place": 4,
+        "fencer": "Darran"
+      },
+      {
+        "place": 5,
+        "fencer": "Sammy"
+      },
+      {
+        "place": 6,
+        "fencer": "Fassel"
+      },
+      {
+        "place": 7,
+        "fencer": "Oleg"
+      },
+      {
+        "place": 8,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 9,
+        "fencer": "Willie"
+      },
+      {
+        "place": 10,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 11,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 12,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 13,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 14,
+        "fencer": "Fergus"
+      },
+      {
+        "place": 15,
+        "fencer": "Maxim"
+      },
+      {
+        "place": 16,
+        "fencer": "Anna A"
+      },
+      {
+        "place": 17,
+        "fencer": "Joshua"
+      },
+      {
+        "place": 18,
+        "fencer": "Kirill"
+      },
+      {
+        "place": 19,
+        "fencer": "Caden"
+      },
+      {
+        "place": 20,
+        "fencer": "Alix S"
+      },
+      {
+        "place": 21,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 22,
+        "fencer": "Julia T"
+      }
+    ]
+  },
+  {
+    "date": "2026-02-17",
+    "winner": "Alejo",
+    "top_poule_climber": "Shevy",
+    "top_poule_gain": 41.5,
+    "fencers_in_poules": 25,
+    "fencers_in_des": 22,
+    "poule_matches": 112,
+    "de_matches": 45,
+    "total_matches": 157,
+    "score_5_0": 8,
+    "score_5_1": 8,
+    "score_5_2": 22,
+    "score_5_3": 31,
+    "score_5_4": 40,
+    "total_touches": 850,
+    "avg_touches_per_match": 7.59,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1uDAageR-RsGTzh_x3BIUo7w3LJ6x_Ntqztw-kiYxv7c/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 2,
+        "fencer": "Sammy"
+      },
+      {
+        "place": 3,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 4,
+        "fencer": "Oleg"
+      },
+      {
+        "place": 5,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 6,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 7,
+        "fencer": "Lukas N"
+      },
+      {
+        "place": 8,
+        "fencer": "Shevy"
+      },
+      {
+        "place": 9,
+        "fencer": "Darran"
+      },
+      {
+        "place": 10,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 11,
+        "fencer": "Perth"
+      },
+      {
+        "place": 12,
+        "fencer": "Anna Z"
+      },
+      {
+        "place": 13,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 14,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 15,
+        "fencer": "Andy R"
+      },
+      {
+        "place": 16,
+        "fencer": "Anna A"
+      },
+      {
+        "place": 17,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 18,
+        "fencer": "Kirill"
+      },
+      {
+        "place": 19,
+        "fencer": "Max"
+      },
+      {
+        "place": 20,
+        "fencer": "Joshua"
+      },
+      {
+        "place": 21,
+        "fencer": "Nicholas P"
+      },
+      {
+        "place": 22,
+        "fencer": "Will P"
+      }
+    ]
+  },
+  {
+    "date": "2026-02-24",
+    "winner": "Willie",
+    "top_poule_climber": "Eugene",
+    "top_poule_gain": 42.2,
+    "fencers_in_poules": 20,
+    "fencers_in_des": 18,
+    "poule_matches": 71,
+    "de_matches": 35,
+    "total_matches": 106,
+    "score_5_0": 1,
+    "score_5_1": 9,
+    "score_5_2": 19,
+    "score_5_3": 13,
+    "score_5_4": 29,
+    "total_touches": 557,
+    "avg_touches_per_match": 7.85,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1k7Zzf5iBQ5uTw1hbHnIZn8GNSDbu4nmjzelsgaxpkWE/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Willie"
+      },
+      {
+        "place": 2,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 3,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 4,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 5,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 6,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 7,
+        "fencer": "Steph"
+      },
+      {
+        "place": 8,
+        "fencer": "Will P"
+      },
+      {
+        "place": 9,
+        "fencer": "Anna Z"
+      },
+      {
+        "place": 10,
+        "fencer": "Lukas N"
+      },
+      {
+        "place": 11,
+        "fencer": "Oleg"
+      },
+      {
+        "place": 12,
+        "fencer": "Caden"
+      },
+      {
+        "place": 13,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 14,
+        "fencer": "Etienne"
+      },
+      {
+        "place": 15,
+        "fencer": "Max V"
+      },
+      {
+        "place": 16,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 17,
+        "fencer": "Alix S"
+      },
+      {
+        "place": 18,
+        "fencer": "Andy R"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-03",
+    "winner": "Alex Y",
+    "top_poule_climber": "Shevy",
+    "top_poule_gain": 35.1,
+    "fencers_in_poules": 21,
+    "fencers_in_des": 19,
+    "poule_matches": 87,
+    "de_matches": 37,
+    "total_matches": 124,
+    "score_5_0": 2,
+    "score_5_1": 15,
+    "score_5_2": 11,
+    "score_5_3": 28,
+    "score_5_4": 31,
+    "total_touches": 680,
+    "avg_touches_per_match": 7.82,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1yftGhpIQ5pFYu4yAwFQiximMNONiNJ6Y6QXux11CEaA/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 2,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 3,
+        "fencer": "Greg"
+      },
+      {
+        "place": 4,
+        "fencer": "James S"
+      },
+      {
+        "place": 5,
+        "fencer": "Oleg"
+      },
+      {
+        "place": 6,
+        "fencer": "Anna A"
+      },
+      {
+        "place": 7,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 8,
+        "fencer": "Will P"
+      },
+      {
+        "place": 9,
+        "fencer": "Steph"
+      },
+      {
+        "place": 10,
+        "fencer": "Max"
+      },
+      {
+        "place": 11,
+        "fencer": "Kirill"
+      },
+      {
+        "place": 12,
+        "fencer": "Aisling"
+      },
+      {
+        "place": 13,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 14,
+        "fencer": "Joshua"
+      },
+      {
+        "place": 15,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 16,
+        "fencer": "Angelica"
+      },
+      {
+        "place": 17,
+        "fencer": "Caden"
+      },
+      {
+        "place": 18,
+        "fencer": "Fergus"
+      },
+      {
+        "place": 19,
+        "fencer": "Alix S"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-10",
+    "winner": "Alex Y",
+    "top_poule_climber": "Vincent",
+    "top_poule_gain": 64.3,
+    "fencers_in_poules": 29,
+    "fencers_in_des": 25,
+    "poule_matches": 135,
+    "de_matches": 54,
+    "total_matches": 189,
+    "score_5_0": 4,
+    "score_5_1": 22,
+    "score_5_2": 23,
+    "score_5_3": 36,
+    "score_5_4": 47,
+    "total_touches": 1024,
+    "avg_touches_per_match": 7.59,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1bqQTubQLcNLfKiYwj8M7IqNMIKLPc4PCGplG4LZcZzU/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 2,
+        "fencer": "Oleg"
+      },
+      {
+        "place": 3,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 4,
+        "fencer": "Sameer"
+      },
+      {
+        "place": 5,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 6,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 7,
+        "fencer": "Steph"
+      },
+      {
+        "place": 8,
+        "fencer": "Anna Z"
+      },
+      {
+        "place": 9,
+        "fencer": "Greg"
+      },
+      {
+        "place": 10,
+        "fencer": "Ed B"
+      },
+      {
+        "place": 11,
+        "fencer": "James S"
+      },
+      {
+        "place": 12,
+        "fencer": "Darran"
+      },
+      {
+        "place": 13,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 14,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 15,
+        "fencer": "Lukas N"
+      },
+      {
+        "place": 16,
+        "fencer": "Tom T"
+      },
+      {
+        "place": 17,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 18,
+        "fencer": "Andy R"
+      },
+      {
+        "place": 19,
+        "fencer": "Fergus"
+      },
+      {
+        "place": 20,
+        "fencer": "Kirill"
+      },
+      {
+        "place": 21,
+        "fencer": "Caden"
+      },
+      {
+        "place": 22,
+        "fencer": "Joshua"
+      },
+      {
+        "place": 23,
+        "fencer": "Angelica"
+      },
+      {
+        "place": 24,
+        "fencer": "Alix S"
+      },
+      {
+        "place": 25,
+        "fencer": "Vanessa"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-17",
+    "winner": "Greg",
+    "top_poule_climber": "Alix S",
+    "top_poule_gain": 36.0,
+    "fencers_in_poules": 12,
+    "fencers_in_des": 11,
+    "poule_matches": 48,
+    "de_matches": 16,
+    "total_matches": 64,
+    "score_5_0": 1,
+    "score_5_1": 11,
+    "score_5_2": 7,
+    "score_5_3": 18,
+    "score_5_4": 10,
+    "total_touches": 354,
+    "avg_touches_per_match": 7.38,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1MU70bj7N5AcDetFkcAd00SDksM5fDohbyDfEyEn2BeY/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Greg"
+      },
+      {
+        "place": 2,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 3,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 4,
+        "fencer": "Anna A"
+      },
+      {
+        "place": 5,
+        "fencer": "James S"
+      },
+      {
+        "place": 6,
+        "fencer": "Steph"
+      },
+      {
+        "place": 9,
+        "fencer": "Marinko"
+      },
+      {
+        "place": 10,
+        "fencer": "Alix S"
+      },
+      {
+        "place": 11,
+        "fencer": "Eugene"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-24",
+    "winner": "Fassel",
+    "top_poule_climber": "Max V",
+    "top_poule_gain": 80.0,
+    "fencers_in_poules": 23,
+    "fencers_in_des": 23,
+    "poule_matches": 93,
+    "de_matches": 38,
+    "total_matches": 131,
+    "score_5_0": 6,
+    "score_5_1": 10,
+    "score_5_2": 22,
+    "score_5_3": 25,
+    "score_5_4": 29,
+    "total_touches": 705,
+    "avg_touches_per_match": 7.58,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/16QURpX-JS8icFDLlwJxc1ik41K5d-kCTX5XKO2BoViM/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Fassel"
+      },
+      {
+        "place": 2,
+        "fencer": "Greg"
+      },
+      {
+        "place": 3,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 4,
+        "fencer": "James S"
+      },
+      {
+        "place": 5,
+        "fencer": "Darran"
+      },
+      {
+        "place": 6,
+        "fencer": "Ed B"
+      },
+      {
+        "place": 8,
+        "fencer": "Adam S"
+      },
+      {
+        "place": 9,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 10,
+        "fencer": "Jamie S"
+      },
+      {
+        "place": 11,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 12,
+        "fencer": "Tom T"
+      },
+      {
+        "place": 13,
+        "fencer": "Pierre"
+      },
+      {
+        "place": 14,
+        "fencer": "Max V"
+      },
+      {
+        "place": 15,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 16,
+        "fencer": "Fergus"
+      },
+      {
+        "place": 17,
+        "fencer": "Will P"
+      },
+      {
+        "place": 19,
+        "fencer": "Kirill"
+      },
+      {
+        "place": 20,
+        "fencer": "Willie"
+      },
+      {
+        "place": 21,
+        "fencer": "Marinko"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-14",
+    "winner": "Greg",
+    "top_poule_climber": "Tom T",
+    "top_poule_gain": 86.3,
+    "fencers_in_poules": 28,
+    "fencers_in_des": 27,
+    "poule_matches": 128,
+    "de_matches": 60,
+    "total_matches": 188,
+    "score_5_0": 10,
+    "score_5_1": 12,
+    "score_5_2": 30,
+    "score_5_3": 43,
+    "score_5_4": 30,
+    "total_touches": 946,
+    "avg_touches_per_match": 7.39,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1hF413usGRIfSLB22b6lqeOvIDFOfyhYxqJhxsbxsk1g/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Greg"
+      },
+      {
+        "place": 2,
+        "fencer": "Lukas N"
+      },
+      {
+        "place": 3,
+        "fencer": "Fassel"
+      },
+      {
+        "place": 4,
+        "fencer": "Sameer"
+      },
+      {
+        "place": 5,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 6,
+        "fencer": "Tom T"
+      },
+      {
+        "place": 7,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 8,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 9,
+        "fencer": "Willie"
+      },
+      {
+        "place": 10,
+        "fencer": "Anna Z"
+      },
+      {
+        "place": 11,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 12,
+        "fencer": "Anna A"
+      },
+      {
+        "place": 13,
+        "fencer": "Will P"
+      },
+      {
+        "place": 14,
+        "fencer": "Steph"
+      },
+      {
+        "place": 15,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 16,
+        "fencer": "Fedor"
+      },
+      {
+        "place": 17,
+        "fencer": "James S"
+      },
+      {
+        "place": 18,
+        "fencer": "Andy R"
+      },
+      {
+        "place": 19,
+        "fencer": "Marinko"
+      },
+      {
+        "place": 20,
+        "fencer": "Caden"
+      },
+      {
+        "place": 21,
+        "fencer": "Benjamin"
+      },
+      {
+        "place": 22,
+        "fencer": "Kirill"
+      },
+      {
+        "place": 23,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 24,
+        "fencer": "Shevy"
+      },
+      {
+        "place": 25,
+        "fencer": "Nat"
+      },
+      {
+        "place": 26,
+        "fencer": "Isra"
+      },
+      {
+        "place": 27,
+        "fencer": "Joshua"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-21",
+    "winner": "Greg",
+    "top_poule_climber": "Shevy",
+    "top_poule_gain": 75.5,
+    "fencers_in_poules": 27,
+    "fencers_in_des": 25,
+    "poule_matches": 99,
+    "de_matches": 54,
+    "total_matches": 153,
+    "score_5_0": 5,
+    "score_5_1": 13,
+    "score_5_2": 29,
+    "score_5_3": 24,
+    "score_5_4": 24,
+    "total_touches": 714,
+    "avg_touches_per_match": 7.21,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1gQ0zKQeUwexepXEvanTQSxU-lvFeqDxU8p2rk43g3g4/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Greg"
+      },
+      {
+        "place": 2,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 3,
+        "fencer": "Anna A"
+      },
+      {
+        "place": 4,
+        "fencer": "Sameer"
+      },
+      {
+        "place": 5,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 6,
+        "fencer": "James S"
+      },
+      {
+        "place": 7,
+        "fencer": "Shevy"
+      },
+      {
+        "place": 8,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 9,
+        "fencer": "Willie"
+      },
+      {
+        "place": 10,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 11,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 12,
+        "fencer": "Darran"
+      },
+      {
+        "place": 13,
+        "fencer": "Anna Z"
+      },
+      {
+        "place": 14,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 15,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 16,
+        "fencer": "Marinko"
+      },
+      {
+        "place": 17,
+        "fencer": "Max V"
+      },
+      {
+        "place": 18,
+        "fencer": "Tom S"
+      },
+      {
+        "place": 19,
+        "fencer": "Fergus"
+      },
+      {
+        "place": 20,
+        "fencer": "Vladimir"
+      },
+      {
+        "place": 21,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 22,
+        "fencer": "Kirill"
+      },
+      {
+        "place": 23,
+        "fencer": "Will P"
+      },
+      {
+        "place": 24,
+        "fencer": "Alix S"
+      },
+      {
+        "place": 25,
+        "fencer": "Lysandra"
+      }
+    ]
+  }
+]
