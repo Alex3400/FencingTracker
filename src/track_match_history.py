@@ -136,7 +136,8 @@ NAME_ALIASES = [
     ['Alix S', 'Alix'],
     ['Alonzo', 'Alonso', 'Alonzozo'],
     ['Kirill', 'Kiriil'],
-    ['Lukas N', 'Lukas']
+    ['Lukas N', 'Lukas'],
+    ['Adam S', 'Adam']
 
 ]
 
@@ -447,6 +448,8 @@ class MatchHistory:
         self.matches = defaultdict(list)
         # Structure: {fencer_name: {placement_category: {place: count}}}
         self.placements = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
+        # Structure: {fencer_name: [(date, placement, field_size), ...]}
+        self.placement_history = defaultdict(list)
         # Structure: {fencer_name: [(date, seed), ...]}
         self.seedings = defaultdict(list)
 
@@ -479,7 +482,7 @@ class MatchHistory:
             'score': adjusted_score
         })
 
-    def add_placement(self, fencer, place):
+    def add_placement(self, fencer, place, field_size=None, date=None):
         """Add a placement result for a fencer."""
         if not fencer or fencer == '_':
             return
@@ -506,6 +509,10 @@ class MatchHistory:
         # Store both category and specific place
         self.placements[fencer][category][place] += 1
 
+        # Store detailed placement history with field size
+        if date is not None and field_size is not None:
+            self.placement_history[fencer].append((date, place, field_size))
+
     def add_seeding(self, fencer, seed, date):
         """Add a seeding result for a fencer."""
         if not fencer or fencer == '_':
@@ -527,6 +534,12 @@ class MatchHistory:
     def get_all_placements(self):
         """Get all fencer placements."""
         return dict(self.placements)
+
+    def get_placement_history(self, fencer=None):
+        """Get placement history. If fencer specified, return their history; else return all."""
+        if fencer:
+            return self.placement_history.get(fencer.strip().title(), [])
+        return dict(self.placement_history)
 
     def get_fencer_stats(self, fencer):
         """Get comprehensive statistics for a single fencer."""
@@ -1016,7 +1029,7 @@ def process_all_sheets(base_dir='downloaded_sheets'):
                 elo_system.process_de_match(fencer1, fencer2, winner, bracket_name, date_str, total_fencers)
 
             for fencer, place in placements.items():
-                history.add_placement(fencer, place)
+                history.add_placement(fencer, place, field_size=total_fencers, date=date_str)
                 # Apply placement bonus
                 elo_system.apply_placement_bonus(fencer, place, date)
 
@@ -1158,8 +1171,15 @@ def export_to_csv(history, output_file='match_history.csv'):
 
 
 def export_placements_to_csv(history, output_file='placement_stats.csv'):
-    """Export placement statistics to CSV."""
+    """Export placement statistics to CSV with field size information."""
     placements = history.get_all_placements()
+    placement_history_all = history.get_placement_history()
+
+    # Build a map of (fencer, place) -> list of field sizes
+    placement_field_sizes = defaultdict(list)
+    for fencer, hist in placement_history_all.items():
+        for date, place, field_size in hist:
+            placement_field_sizes[(fencer, place)].append(field_size)
 
     with open(output_file, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
@@ -1173,7 +1193,7 @@ def export_placements_to_csv(history, output_file='placement_stats.csv'):
 
             row = [fencer, total_appearances]
 
-            # For each category, build the cell content: "total (place:count, place:count, ...)"
+            # For each category, build the cell content with field sizes
             for category in ['Win', 'L2', 'L4', 'L8', 'L16', 'L32']:
                 if category in cats and cats[category]:
                     # Get total for this category
@@ -1183,11 +1203,19 @@ def export_placements_to_csv(history, output_file='placement_stats.csv'):
                     if category in ['Win', 'L2']:
                         cell_value = cat_total
                     else:
-                        # Build detail string: "place:count, place:count, ..."
+                        # Build detail string: "place/field_size:count, ..."
                         place_details = []
                         for place in sorted(cats[category].keys()):
                             count = cats[category][place]
-                            place_details.append(f"{place}:{count}")
+                            # Get field sizes for this placement
+                            field_sizes = placement_field_sizes.get((fencer, place), [])
+                            if field_sizes:
+                                # Show place/field_size for each occurrence
+                                place_strs = [f"{place}/{fs}" for fs in field_sizes]
+                                place_details.append(", ".join(place_strs))
+                            else:
+                                # Fallback if no field size data
+                                place_details.append(f"{place}:{count}")
 
                         detail_str = ", ".join(place_details)
                         cell_value = f"{cat_total} ({detail_str})"
@@ -1211,6 +1239,13 @@ def export_fencer_stats(history, elo_system=None, output_file='fencer_stats.csv'
 
     # Also add fencers who might only have placements
     all_fencers.update(history.get_all_placements().keys())
+
+    # Build placement field size mapping from placement_history
+    placement_history_all = history.get_placement_history()
+    placement_field_sizes = defaultdict(list)
+    for fencer, hist in placement_history_all.items():
+        for date, place, field_size in hist:
+            placement_field_sizes[(fencer, place)].append(field_size)
 
     with open(output_file, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
@@ -1253,7 +1288,7 @@ def export_fencer_stats(history, elo_system=None, output_file='fencer_stats.csv'
 
             de_appearances = len(de_appearance_dates)
 
-            # Format placement data like in placement_stats.csv
+            # Format placement data with field sizes
             placement_cols = []
             for category in ['Win', 'L2', 'L4', 'L8', 'L16', 'L32']:
                 if category in stats['placements'] and stats['placements'][category]:
@@ -1263,11 +1298,19 @@ def export_fencer_stats(history, elo_system=None, output_file='fencer_stats.csv'
                     if category in ['Win', 'L2']:
                         placement_cols.append(cat_total)
                     else:
-                        # Build detail string (must be string due to formatting)
+                        # Build detail string with field sizes: "place/field_size, ..."
                         place_details = []
                         for place in sorted(stats['placements'][category].keys()):
                             count = stats['placements'][category][place]
-                            place_details.append(f"{place}:{count}")
+                            # Get field sizes for this placement
+                            field_sizes = placement_field_sizes.get((fencer, place), [])
+                            if field_sizes:
+                                # Show place/field_size for each occurrence
+                                place_strs = [f"{place}/{fs}" for fs in field_sizes]
+                                place_details.append(", ".join(place_strs))
+                            else:
+                                # Fallback if no field size data
+                                place_details.append(f"{place}:{count}")
 
                         detail_str = ", ".join(place_details)
                         placement_cols.append(f"{cat_total} ({detail_str})")
@@ -2006,8 +2049,11 @@ def process_single_date(date_folder, base_dir='downloaded_sheets'):
             history.add_match(fencer1, fencer2, date, match_type, winner, score)
             fencers_in_des.add(fencer1)
             fencers_in_des.add(fencer2)
+        # Calculate total fencers (those in poules, or if no poule data, those in DEs)
+        total_fencers = len(fencers_in_poules) if fencers_in_poules else len(fencers_in_des)
+
         for fencer, place in placements.items():
-            history.add_placement(fencer, place)
+            history.add_placement(fencer, place, field_size=total_fencers, date=date)
         for fencer, seed in seedings.items():
             history.add_seeding(fencer, seed, date)
             fencers_in_des.add(fencer)
@@ -2074,6 +2120,7 @@ def main():
     export_elo_history(elo_system, website_data_dir / 'elo_history.csv')
     export_fencer_stats(history, elo_system, website_data_dir / 'fencer_stats.csv')
     export_head_to_head_stats(history, website_data_dir / 'head_to_head_stats.csv')
+    export_placements_to_csv(history, website_data_dir / 'placement_stats.csv')
 
 
 if __name__ == '__main__':

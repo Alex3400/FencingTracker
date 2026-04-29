@@ -1,31 +1,31 @@
 [
   {
     "fencer": "Greg",
-    "rating": 2366.4,
+    "rating": 2366.5,
     "matches": 492,
     "status": "Established"
   },
   {
     "fencer": "Eric L",
-    "rating": 2094.9,
+    "rating": 2095.1,
     "matches": 347,
     "status": "Established"
   },
   {
     "fencer": "Willie",
-    "rating": 2093.3,
+    "rating": 2093.5,
     "matches": 270,
     "status": "Established"
   },
   {
     "fencer": "Tom T",
-    "rating": 2061.1,
+    "rating": 2061.3,
     "matches": 132,
     "status": "Established"
   },
   {
     "fencer": "Alex Y",
-    "rating": 2034.4,
+    "rating": 2034.5,
     "matches": 255,
     "status": "Established"
   },
@@ -37,13 +37,13 @@
   },
   {
     "fencer": "Fassel",
-    "rating": 2025.7,
+    "rating": 2025.8,
     "matches": 205,
     "status": "Established"
   },
   {
     "fencer": "Sameer",
-    "rating": 2007.6,
+    "rating": 2007.7,
     "matches": 79,
     "status": "Established"
   },
@@ -55,7 +55,7 @@
   },
   {
     "fencer": "Charlie",
-    "rating": 1990.2,
+    "rating": 1990.3,
     "matches": 332,
     "status": "Established"
   },
@@ -67,7 +67,7 @@
   },
   {
     "fencer": "Vivian",
-    "rating": 1973.3,
+    "rating": 1973.6,
     "matches": 463,
     "status": "Established"
   },
@@ -85,7 +85,7 @@
   },
   {
     "fencer": "Darran",
-    "rating": 1943.6,
+    "rating": 1944.4,
     "matches": 95,
     "status": "Established"
   },
@@ -97,7 +97,7 @@
   },
   {
     "fencer": "Ali",
-    "rating": 1930.0,
+    "rating": 1930.1,
     "matches": 12,
     "status": "Provisional"
   },
@@ -109,19 +109,19 @@
   },
   {
     "fencer": "Anna Z",
-    "rating": 1927.5,
+    "rating": 1927.7,
     "matches": 135,
     "status": "Established"
   },
   {
     "fencer": "James S",
-    "rating": 1925.6,
+    "rating": 1925.9,
     "matches": 84,
     "status": "Established"
   },
   {
     "fencer": "Alex A",
-    "rating": 1915.6,
+    "rating": 1915.7,
     "matches": 121,
     "status": "Established"
   },
@@ -145,7 +145,7 @@
   },
   {
     "fencer": "Anna A",
-    "rating": 1901.3,
+    "rating": 1901.4,
     "matches": 167,
     "status": "Established"
   },
@@ -157,25 +157,25 @@
   },
   {
     "fencer": "Pierre",
-    "rating": 1900.2,
+    "rating": 1900.3,
     "matches": 48,
     "status": "Established"
   },
   {
     "fencer": "Colin R",
-    "rating": 1897.0,
+    "rating": 1897.1,
     "matches": 342,
     "status": "Established"
   },
   {
     "fencer": "Vincent",
-    "rating": 1894.7,
+    "rating": 1894.8,
     "matches": 350,
     "status": "Established"
   },
   {
     "fencer": "Vadym",
-    "rating": 1891.6,
+    "rating": 1891.8,
     "matches": 209,
     "status": "Established"
   },
@@ -187,7 +187,7 @@
   },
   {
     "fencer": "Max V",
-    "rating": 1876.2,
+    "rating": 1876.6,
     "matches": 44,
     "status": "Established"
   },
@@ -199,25 +199,25 @@
   },
   {
     "fencer": "Ed B",
-    "rating": 1871.3,
+    "rating": 1871.5,
     "matches": 20,
     "status": "Provisional"
   },
   {
     "fencer": "Jamie S",
-    "rating": 1867.9,
+    "rating": 1868.0,
     "matches": 5,
     "status": "Provisional"
   },
   {
     "fencer": "Lukas N",
-    "rating": 1865.5,
+    "rating": 1865.6,
     "matches": 354,
     "status": "Established"
   },
   {
     "fencer": "John H",
-    "rating": 1862.2,
+    "rating": 1862.3,
     "matches": 79,
     "status": "Established"
   },
@@ -235,7 +235,7 @@
   },
   {
     "fencer": "Richard B",
-    "rating": 1853.3,
+    "rating": 1853.4,
     "matches": 341,
     "status": "Established"
   },
@@ -247,13 +247,13 @@
   },
   {
     "fencer": "Steph",
-    "rating": 1837.0,
+    "rating": 1837.1,
     "matches": 301,
     "status": "Established"
   },
   {
     "fencer": "Benjamin",
-    "rating": 1835.3,
+    "rating": 1835.4,
     "matches": 12,
     "status": "Provisional"
   },
@@ -277,13 +277,13 @@
   },
   {
     "fencer": "Tom S",
-    "rating": 1816.0,
+    "rating": 1816.1,
     "matches": 56,
     "status": "Established"
   },
   {
     "fencer": "Will P",
-    "rating": 1815.7,
+    "rating": 1815.8,
     "matches": 275,
     "status": "Established"
   },
@@ -300,12 +300,6 @@
     "status": "Provisional"
   },
   {
-    "fencer": "Adam S",
-    "rating": 1810.0,
-    "matches": 10,
-    "status": "Provisional"
-  },
-  {
     "fencer": "Nicholas",
     "rating": 1808.3,
     "matches": 14,
@@ -313,7 +307,7 @@
   },
   {
     "fencer": "Shevy",
-    "rating": 1807.6,
+    "rating": 1807.8,
     "matches": 151,
     "status": "Established"
   },
@@ -324,10 +318,10 @@
     "status": "Established"
   },
   {
-    "fencer": "Adam",
-    "rating": 1802.9,
-    "matches": 22,
-    "status": "Provisional"
+    "fencer": "Adam S",
+    "rating": 1803.8,
+    "matches": 32,
+    "status": "Established"
   },
   {
     "fencer": "Vova",
@@ -415,7 +409,7 @@
   },
   {
     "fencer": "Fedor",
-    "rating": 1771.5,
+    "rating": 1771.6,
     "matches": 29,
     "status": "Provisional"
   },
@@ -457,7 +451,7 @@
   },
   {
     "fencer": "Fergus",
-    "rating": 1737.2,
+    "rating": 1737.5,
     "matches": 157,
     "status": "Established"
   },
@@ -481,7 +475,7 @@
   },
   {
     "fencer": "Vladimir",
-    "rating": 1732.9,
+    "rating": 1733.0,
     "matches": 11,
     "status": "Provisional"
   },
@@ -499,7 +493,7 @@
   },
   {
     "fencer": "Kirill",
-    "rating": 1726.9,
+    "rating": 1727.2,
     "matches": 129,
     "status": "Established"
   },
@@ -511,7 +505,7 @@
   },
   {
     "fencer": "Caden",
-    "rating": 1720.3,
+    "rating": 1720.4,
     "matches": 192,
     "status": "Established"
   },
@@ -541,13 +535,13 @@
   },
   {
     "fencer": "Perth",
-    "rating": 1703.3,
+    "rating": 1703.4,
     "matches": 44,
     "status": "Established"
   },
   {
     "fencer": "Lysandra",
-    "rating": 1702.7,
+    "rating": 1702.8,
     "matches": 10,
     "status": "Provisional"
   },
@@ -559,7 +553,7 @@
   },
   {
     "fencer": "Isra",
-    "rating": 1700.6,
+    "rating": 1700.7,
     "matches": 10,
     "status": "Provisional"
   },
@@ -571,7 +565,7 @@
   },
   {
     "fencer": "Marg",
-    "rating": 1692.7,
+    "rating": 1692.8,
     "matches": 251,
     "status": "Established"
   },
@@ -583,13 +577,13 @@
   },
   {
     "fencer": "Marinko",
-    "rating": 1685.6,
+    "rating": 1685.7,
     "matches": 110,
     "status": "Established"
   },
   {
     "fencer": "Eugene",
-    "rating": 1682.6,
+    "rating": 1683.0,
     "matches": 268,
     "status": "Established"
   },
@@ -655,7 +649,7 @@
   },
   {
     "fencer": "Alix S",
-    "rating": 1578.9,
+    "rating": 1579.0,
     "matches": 156,
     "status": "Established"
   }

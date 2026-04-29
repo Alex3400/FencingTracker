@@ -185,6 +185,30 @@ function displayFencerStats(fencerName, autoSelectDate = null) {
         document.getElementById('max-elo-note').textContent = 'Need 25+ matches';
     }
 
+    // Average Seeding
+    if (statsInfo && statsInfo['Avg Seeding']) {
+        const avgSeeding = parseFloat(statsInfo['Avg Seeding']);
+        if (!isNaN(avgSeeding) && avgSeeding > 0) {
+            document.getElementById('avg-seeding').textContent = avgSeeding.toFixed(1);
+        } else {
+            document.getElementById('avg-seeding').textContent = '-';
+        }
+    } else {
+        document.getElementById('avg-seeding').textContent = '-';
+    }
+
+    // Average Placement
+    if (statsInfo && statsInfo['Avg Placement']) {
+        const avgPlacement = parseFloat(statsInfo['Avg Placement']);
+        if (!isNaN(avgPlacement) && avgPlacement > 0) {
+            document.getElementById('avg-placement').textContent = avgPlacement.toFixed(1);
+        } else {
+            document.getElementById('avg-placement').textContent = '-';
+        }
+    } else {
+        document.getElementById('avg-placement').textContent = '-';
+    }
+
     // Draw ELO chart
     drawFencerChart(fencerName);
 
@@ -262,48 +286,76 @@ function displayPlacementStats(fencerName, statsInfo) {
     const tbody = document.getElementById('placement-table-body');
     tbody.innerHTML = '';
 
-    // Get all placements for this fencer from sessions data
-    const fencerPlacements = [];
-    sessionsData.forEach(session => {
-        if (session.final_results) {
-            session.final_results.forEach(result => {
-                if (result.fencer === fencerName) {
-                    const place = result.place;
-                    let bracket = '';
-                    let color = '';
-
-                    if (place === 1) {
-                        bracket = '1st';
-                        color = '#FFD700';
-                    } else if (place === 2) {
-                        bracket = '2nd';
-                        color = '#B8B8D0';
-                    } else if (place <= 4) {
-                        bracket = '3rd-4th';
-                        color = '#CD7F32';
-                    } else if (place <= 8) {
-                        bracket = '5th-8th';
-                        color = '#4a90e2';
-                    } else if (place <= 16) {
-                        bracket = '9th-16th';
-                        color = '#95a5a6';
-                    } else if (place <= 32) {
-                        bracket = '17th-32nd';
-                        color = '#bdc3c7';
-                    } else {
-                        bracket = `${place}th`;
-                        color = '#ecf0f1';
-                    }
-
-                    fencerPlacements.push({
-                        date: session.date,
-                        place: place,
-                        bracket: bracket,
-                        color: color
-                    });
-                }
-            });
+    // Get all dates where this fencer participated (from matches)
+    const participationDates = new Set();
+    matchHistoryData.forEach(match => {
+        if (match['Winner'] === fencerName || match['Loser'] === fencerName) {
+            participationDates.add(match['Date']);
         }
+    });
+
+    // Build placement data for each date
+    const fencerPlacements = [];
+    participationDates.forEach(date => {
+        // Check if they have a placement for this date
+        const session = sessionsData.find(s => s.date === date);
+        let placementData = null;
+
+        if (session && session.final_results) {
+            const result = session.final_results.find(r => r.fencer === fencerName);
+            if (result) {
+                const place = result.place;
+                const fieldSize = session.final_results.length;
+                let bracket = '';
+                let color = '';
+
+                if (place === 1) {
+                    bracket = '1st';
+                    color = '#FFD700';
+                } else if (place === 2) {
+                    bracket = '2nd';
+                    color = '#B8B8D0';
+                } else if (place <= 4) {
+                    bracket = '3rd-4th';
+                    color = '#CD7F32';
+                } else if (place <= 8) {
+                    bracket = '5th-8th';
+                    color = '#4a90e2';
+                } else if (place <= 16) {
+                    bracket = '9th-16th';
+                    color = '#95a5a6';
+                } else if (place <= 32) {
+                    bracket = '17th-32nd';
+                    color = '#bdc3c7';
+                } else {
+                    bracket = `${place}th`;
+                    color = '#ecf0f1';
+                }
+
+                placementData = {
+                    date: date,
+                    place: place,
+                    fieldSize: fieldSize,
+                    bracket: bracket,
+                    color: color,
+                    hasPlacement: true
+                };
+            }
+        }
+
+        // If no placement found, they participated in poules only
+        if (!placementData) {
+            placementData = {
+                date: date,
+                place: null,
+                fieldSize: null,
+                bracket: '-',
+                color: '#f8f9fa',
+                hasPlacement: false
+            };
+        }
+
+        fencerPlacements.push(placementData);
     });
 
     // Populate table
@@ -335,12 +387,19 @@ function displayPlacementStats(fencerName, statsInfo) {
         dateCell.appendChild(dateLink);
 
         const placeCell = document.createElement('td');
-        placeCell.textContent = placement.place;
-        placeCell.setAttribute('data-order', placement.place);
+        if (placement.hasPlacement) {
+            placeCell.textContent = `${placement.place}/${placement.fieldSize}`;
+            placeCell.setAttribute('data-order', placement.place);
+        } else {
+            placeCell.textContent = '-';
+            placeCell.setAttribute('data-order', 999); // Sort to bottom
+        }
 
         const bracketCell = document.createElement('td');
         bracketCell.textContent = placement.bracket;
-        bracketCell.style.fontWeight = '600';
+        if (placement.hasPlacement) {
+            bracketCell.style.fontWeight = '600';
+        }
 
         row.appendChild(dateCell);
         row.appendChild(placeCell);

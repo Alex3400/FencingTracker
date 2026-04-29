@@ -13,9 +13,11 @@ import csv
 import sys
 
 
-def get_matchup_data(fencer1, fencer2, elo_history_file='outputs/elo_history.csv',
-                     elo_ratings_file='outputs/elo_ratings.csv',
-                     head_to_head_file='outputs/head_to_head_stats.csv'):
+def get_matchup_data(fencer1, fencer2, elo_history_file='../docs/data/elo_history.csv',
+                     elo_ratings_file='../docs/data/elo_ratings.csv',
+                     head_to_head_file='../docs/data/head_to_head_stats.csv',
+                     fencer_stats_file='../docs/data/fencer_stats.csv',
+                     placement_stats_file='../docs/data/placement_stats.csv'):
     """
     Extract matchup data between two fencers from ELO history and head-to-head stats.
 
@@ -30,6 +32,10 @@ def get_matchup_data(fencer1, fencer2, elo_history_file='outputs/elo_history.csv
         - f1_poule_wins, f2_poule_wins, f1_de_wins, f2_de_wins
         - f1_touches_scored, f2_touches_scored, touch_differential
         - first_match_date, last_match_date
+    - Individual fencer stats from fencer_stats.csv:
+        - f1_avg_seeding, f2_avg_seeding
+        - f1_avg_placement, f2_avg_placement
+        - f1_placement_history, f2_placement_history (from placement_stats.csv)
 
     Returns None if no matches found or file not found.
     """
@@ -79,7 +85,7 @@ def get_matchup_data(fencer1, fencer2, elo_history_file='outputs/elo_history.csv
                     })
     except FileNotFoundError:
         print(f"Error: Could not find {elo_history_file}")
-        print(f"Make sure you run this from the src/ directory and have generated elo_history.csv")
+        print(f"Make sure you run this from the src/ directory and have generated the data files")
         return None
 
     if not matches:
@@ -163,6 +169,43 @@ def get_matchup_data(fencer1, fencer2, elo_history_file='outputs/elo_history.csv
     if h2h_stats:
         result.update(h2h_stats)
 
+    # Get individual fencer stats (avg seeding, avg placement)
+    try:
+        with open(fencer_stats_file, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                if row['Fencer'] == fencer1:
+                    result['f1_avg_seeding'] = float(row['Avg Seeding']) if row['Avg Seeding'] else None
+                    result['f1_avg_placement'] = float(row['Avg Placement']) if row['Avg Placement'] else None
+                if row['Fencer'] == fencer2:
+                    result['f2_avg_seeding'] = float(row['Avg Seeding']) if row['Avg Seeding'] else None
+                    result['f2_avg_placement'] = float(row['Avg Placement']) if row['Avg Placement'] else None
+    except (FileNotFoundError, ValueError, KeyError):
+        pass  # Stats not available
+
+    # Get placement history with field sizes
+    try:
+        with open(placement_stats_file, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                if row['Fencer'] == fencer1:
+                    # Parse placement history from all columns
+                    f1_placements = []
+                    for col in ['Win', 'L2', 'L4', 'L8', 'L16', 'L32']:
+                        if row[col] and row[col] != '0':
+                            f1_placements.append(f"{col}: {row[col]}")
+                    result['f1_placement_history'] = "; ".join(f1_placements) if f1_placements else "No placements"
+
+                if row['Fencer'] == fencer2:
+                    # Parse placement history from all columns
+                    f2_placements = []
+                    for col in ['Win', 'L2', 'L4', 'L8', 'L16', 'L32']:
+                        if row[col] and row[col] != '0':
+                            f2_placements.append(f"{col}: {row[col]}")
+                    result['f2_placement_history'] = "; ".join(f2_placements) if f2_placements else "No placements"
+    except (FileNotFoundError, KeyError):
+        pass  # Placement history not available
+
     return result
 
 
@@ -234,6 +277,29 @@ def print_matchup_analysis(matchup_data):
     print(f"  Rating difference: {abs(f1_latest - f2_latest):.1f} points")
     print(f"  Expected outcome: {fencer1} {f1_expected*100:.1f}% | {fencer2} {f2_expected*100:.1f}%")
 
+    # Print individual fencer stats if available
+    if 'f1_avg_seeding' in matchup_data or 'f2_avg_seeding' in matchup_data:
+        print(f"\n  Average seeding:")
+        if 'f1_avg_seeding' in matchup_data and matchup_data['f1_avg_seeding']:
+            print(f"    {fencer1}: {matchup_data['f1_avg_seeding']:.1f}")
+        if 'f2_avg_seeding' in matchup_data and matchup_data['f2_avg_seeding']:
+            print(f"    {fencer2}: {matchup_data['f2_avg_seeding']:.1f}")
+
+    if 'f1_avg_placement' in matchup_data or 'f2_avg_placement' in matchup_data:
+        print(f"  Average placement:")
+        if 'f1_avg_placement' in matchup_data and matchup_data['f1_avg_placement']:
+            print(f"    {fencer1}: {matchup_data['f1_avg_placement']:.1f}")
+        if 'f2_avg_placement' in matchup_data and matchup_data['f2_avg_placement']:
+            print(f"    {fencer2}: {matchup_data['f2_avg_placement']:.1f}")
+
+    # Print placement history if available
+    if 'f1_placement_history' in matchup_data or 'f2_placement_history' in matchup_data:
+        print(f"\n  Placement history:")
+        if 'f1_placement_history' in matchup_data:
+            print(f"    {fencer1}: {matchup_data['f1_placement_history']}")
+        if 'f2_placement_history' in matchup_data:
+            print(f"    {fencer2}: {matchup_data['f2_placement_history']}")
+
     print(f"\n{'='*100}")
     print(f"MATCH HISTORY (chronological):")
     print(f"{'='*100}")
@@ -254,15 +320,18 @@ def print_matchup_analysis(matchup_data):
     print(f"{'='*100}\n")
 
 
-def analyze_matchup(fencer1, fencer2, elo_history_file='outputs/elo_history.csv',
-                   elo_ratings_file='outputs/elo_ratings.csv',
-                   head_to_head_file='outputs/head_to_head_stats.csv'):
+def analyze_matchup(fencer1, fencer2, elo_history_file='../docs/data/elo_history.csv',
+                   elo_ratings_file='../docs/data/elo_ratings.csv',
+                   head_to_head_file='../docs/data/head_to_head_stats.csv',
+                   fencer_stats_file='../docs/data/fencer_stats.csv',
+                   placement_stats_file='../docs/data/placement_stats.csv'):
     """
     Convenience function that gets matchup data and prints the analysis.
 
     Returns the matchup data dictionary.
     """
-    matchup_data = get_matchup_data(fencer1, fencer2, elo_history_file, elo_ratings_file, head_to_head_file)
+    matchup_data = get_matchup_data(fencer1, fencer2, elo_history_file, elo_ratings_file,
+                                   head_to_head_file, fencer_stats_file, placement_stats_file)
     print_matchup_analysis(matchup_data)
     return matchup_data
 
