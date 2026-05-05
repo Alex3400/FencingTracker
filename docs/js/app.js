@@ -1,17 +1,25 @@
 // Load and display ELO ratings
 let ratingsData = [];
+let sessionsData = [];
 let dataTable = null;
 
 async function loadRatings() {
     try {
-        const response = await fetch('data/elo_ratings.json');
-        ratingsData = await response.json();
+        const [ratingsResponse, sessionsResponse] = await Promise.all([
+            fetch('data/elo_ratings.json'),
+            fetch('data/sessions.json')
+        ]);
+
+        ratingsData = await ratingsResponse.json();
+        sessionsData = await sessionsResponse.json();
+
         displayRatings(ratingsData);
+        displayLatestSession();
         updateLastUpdate();
     } catch (error) {
         console.error('Error loading ratings:', error);
         document.getElementById('ratings-body').innerHTML =
-            '<tr><td colspan="5" style="text-align: center; color: red;">Error loading data. Please try again later.</td></tr>';
+            '<tr><td colspan="4" style="text-align: center; color: red;">Error loading data. Please try again later.</td></tr>';
     }
 }
 
@@ -34,7 +42,6 @@ function displayRatings(data) {
             <td><a href="fencer.html?fencer=${encodeURIComponent(fencer.fencer)}" class="fencer-link">${fencer.fencer}</a></td>
             <td><strong>${fencer.rating}</strong></td>
             <td>${fencer.matches}</td>
-            <td><span class="badge ${fencer.status.toLowerCase()}">${fencer.status}</span></td>
         `;
         tbody.appendChild(row);
     });
@@ -56,17 +63,32 @@ function displayRatings(data) {
     });
 }
 
-function filterByStatus(status) {
-    let filtered;
+// Filter function removed - status system no longer used
 
-    if (status === 'established') {
-        filtered = ratingsData.filter(f => f.status === 'Established');
-    } else {
-        // 'all' - show everyone
-        filtered = ratingsData;
+function displayLatestSession() {
+    if (!sessionsData || sessionsData.length === 0) {
+        document.getElementById('latest-session-link').textContent = 'No sessions found';
+        return;
     }
 
-    displayRatings(filtered);
+    // Get the most recent session (last one in the array, since they're sorted oldest to newest)
+    const latestSession = sessionsData[sessionsData.length - 1];
+
+    const date = new Date(latestSession.date);
+    const formattedDate = date.toLocaleDateString('en-GB', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+
+    // Create clickable link that will open sessions page and show details for this date
+    const link = document.createElement('a');
+    link.href = `sessions.html?date=${encodeURIComponent(latestSession.date)}`;
+    link.className = 'date-link';
+    link.textContent = formattedDate;
+
+    document.getElementById('latest-session-link').innerHTML = '';
+    document.getElementById('latest-session-link').appendChild(link);
 }
 
 function updateLastUpdate() {
@@ -83,11 +105,4 @@ function updateLastUpdate() {
 // Event listeners
 document.addEventListener('DOMContentLoaded', () => {
     loadRatings();
-
-    // Filter radio buttons
-    document.querySelectorAll('input[name="status-filter"]').forEach(radio => {
-        radio.addEventListener('change', (e) => {
-            filterByStatus(e.target.value);
-        });
-    });
 });

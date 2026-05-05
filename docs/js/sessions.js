@@ -1,17 +1,47 @@
 // Tournament sessions history
 let sessionsData = [];
+let matchHistoryData = [];
 let dataTable = null;
 
 async function loadSessions() {
     try {
-        const response = await fetch('data/sessions.json');
-        sessionsData = await response.json();
+        const [sessionsResponse, matchHistoryResponse] = await Promise.all([
+            fetch('data/sessions.json'),
+            fetch('data/elo_history.csv')
+        ]);
+
+        sessionsData = await sessionsResponse.json();
+
+        // Parse match history CSV
+        const matchHistoryText = await matchHistoryResponse.text();
+        matchHistoryData = parseMatchHistoryCSV(matchHistoryText);
+
         displaySessions(sessionsData);
     } catch (error) {
         console.error('Error loading sessions:', error);
         document.getElementById('sessions-body').innerHTML =
             '<tr><td colspan="5" style="text-align: center; color: red;">Error loading data. Please try again later.</td></tr>';
     }
+}
+
+function parseMatchHistoryCSV(text) {
+    const lines = text.trim().split('\n');
+    return lines.slice(1).map(line => {
+        const values = line.split(',');
+        return {
+            'Date': values[0],
+            'Match Type': values[1],
+            'Result': values[2],
+            'Winner': values[3],
+            'Winner Old Rating': values[4],
+            'Winner New Rating': values[5],
+            'Winner Change': values[6],
+            'Loser': values[7],
+            'Loser Old Rating': values[8],
+            'Loser New Rating': values[9],
+            'Loser Change': values[10]
+        };
+    });
 }
 
 function displaySessions(data) {
@@ -119,7 +149,156 @@ function showSessionDetail(session) {
         linkEl.style.display = 'none';
     }
 
+    // Display all matches
+    displayAllMatches(session.date);
+
     window.scrollTo(0, 0);
+}
+
+function displayAllMatches(date) {
+    const matchesDiv = document.getElementById('all-matches');
+
+    // Filter matches for this date
+    const dayMatches = matchHistoryData.filter(match => match['Date'] === date);
+
+    if (dayMatches.length === 0) {
+        matchesDiv.innerHTML = '<p>No matches found for this tournament.</p>';
+        return;
+    }
+
+    // Separate poule and DE matches
+    const pouleMatches = dayMatches.filter(match => match['Match Type'] === 'Poule');
+    const deMatches = dayMatches.filter(match => match['Match Type'] !== 'Poule');
+
+    // Group DE matches by bracket
+    const deByBracket = {};
+    deMatches.forEach(match => {
+        const bracket = match['Match Type'].replace('DE-', '');
+        if (!deByBracket[bracket]) {
+            deByBracket[bracket] = [];
+        }
+        deByBracket[bracket].push(match);
+    });
+
+    // Get all bracket names and sort them chronologically
+    // Parse bracket names like "L1-2", "L9-16", etc. and sort by the upper bound descending
+    const bracketOrder = Object.keys(deByBracket).sort((a, b) => {
+        // Extract the upper bound number from bracket names like "L1-32" or "L9-16"
+        const getUpperBound = (bracket) => {
+            const match = bracket.match(/L\d+-(\d+)/);
+            return match ? parseInt(match[1]) : 0;
+        };
+
+        const aUpper = getUpperBound(a);
+        const bUpper = getUpperBound(b);
+
+        // Sort by upper bound descending (larger brackets first, e.g., L1-32 before L1-16)
+        // If same upper bound, sort by lower bound ascending (e.g., L1-8 before L5-8)
+        if (aUpper !== bUpper) {
+            return bUpper - aUpper;
+        }
+
+        const getLowerBound = (bracket) => {
+            const match = bracket.match(/L(\d+)-\d+/);
+            return match ? parseInt(match[1]) : 0;
+        };
+
+        return getLowerBound(a) - getLowerBound(b);
+    });
+
+    // Build all matches array with proper ordering
+    const allMatches = [];
+
+    // Add poule matches first
+    pouleMatches.forEach(match => {
+        allMatches.push({
+            type: 'Poule',
+            typeDisplay: 'Poule',
+            match: match
+        });
+    });
+
+    // Add DE matches in bracket order
+    bracketOrder.forEach(bracket => {
+        if (deByBracket[bracket]) {
+            deByBracket[bracket].forEach(match => {
+                allMatches.push({
+                    type: bracket,
+                    typeDisplay: `DE-${bracket}`,
+                    match: match
+                });
+            });
+        }
+    });
+
+    // Create single table with all matches
+    let html = '<div class="match-history-table-wrapper">';
+    html += '<table class="matches-table" style="width: 100%;">';
+    html += '<thead><tr>';
+    html += '<th style="width: 15%;">Type</th>';
+    html += '<th style="width: 35%;">Result</th>';
+    html += '<th style="width: 25%;">Winner ELO</th>';
+    html += '<th style="width: 25%;">Loser ELO</th>';
+    html += '</tr></thead>';
+    html += '<tbody>';
+
+    allMatches.forEach(({ typeDisplay, type, match }) => {
+        const winnerChange = parseFloat(match['Winner Change']);
+        const loserChange = parseFloat(match['Loser Change']);
+        const winnerChangeClass = winnerChange >= 0 ? 'positive' : 'negative';
+        const loserChangeClass = loserChange >= 0 ? 'positive' : 'negative';
+        const winnerSign = winnerChange >= 0 ? '+' : '';
+        const loserSign = loserChange >= 0 ? '+' : '';
+
+        const winnerOld = parseFloat(match['Winner Old Rating']);
+        const winnerNew = parseFloat(match['Winner New Rating']);
+        const loserOld = parseFloat(match['Loser Old Rating']);
+        const loserNew = parseFloat(match['Loser New Rating']);
+
+        // Extract score from result for poule matches
+        let resultText;
+        if (type === 'Poule') {
+            // Parse score from result like "Alex Y 5-3 Vivian"
+            const resultStr = match['Result'].replace(/^\(W\)\s*/, '');
+            // Find the score pattern (X-Y where X and Y are digits)
+            const scoreMatch = resultStr.match(/\s(\d-\d)\s/);
+            const score = scoreMatch ? scoreMatch[1] : '-';
+            resultText = `(W) ${match['Winner']} ${score} ${match['Loser']}`;
+        } else {
+            // DE match - just show names with dash
+            resultText = `(W) ${match['Winner']} - ${match['Loser']}`;
+        }
+
+        html += `<tr>`;
+        html += `<td>${typeDisplay}</td>`;
+        html += `<td>${resultText}</td>`;
+        html += `<td>${winnerOld.toFixed(1)} → ${winnerNew.toFixed(1)} <span class="${winnerChangeClass}">(${winnerSign}${winnerChange.toFixed(1)})</span></td>`;
+        html += `<td>${loserOld.toFixed(1)} → ${loserNew.toFixed(1)} <span class="${loserChangeClass}">(${loserSign}${loserChange.toFixed(1)})</span></td>`;
+        html += `</tr>`;
+    });
+
+    html += '</tbody></table></div>';
+
+    matchesDiv.innerHTML = html;
+}
+
+function getBracketDisplayName(bracket) {
+    const names = {
+        'L1-2': 'Final',
+        'L1-4': 'Semifinals',
+        'L3-4': 'Bronze Medal Match (3rd Place)',
+        'L1-8': 'Quarterfinals',
+        'L5-8': '5th-8th Place',
+        'L1-16': 'Round of 16',
+        'L9-16': '9th-16th Place',
+        'L9-12': '9th-12th Place',
+        'L13-16': '13th-16th Place',
+        'L17-32': '17th-32nd Place',
+        'L17-24': '17th-24th Place',
+        'L25-32': '25th-32nd Place',
+        'L1-32': 'Round of 32'
+    };
+    return names[bracket] || bracket;
 }
 
 function closeDetail() {
@@ -128,6 +307,19 @@ function closeDetail() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    loadSessions();
+    loadSessions().then(() => {
+        // Check for date parameter in URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const dateParam = urlParams.get('date');
+
+        if (dateParam && sessionsData.length > 0) {
+            // Find the session with this date
+            const session = sessionsData.find(s => s.date === dateParam);
+            if (session) {
+                showSessionDetail(session);
+            }
+        }
+    });
+
     document.getElementById('close-detail-btn').addEventListener('click', closeDetail);
 });

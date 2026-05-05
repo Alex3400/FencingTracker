@@ -149,12 +149,9 @@ function displayFencerStats(fencerName, autoSelectDate = null) {
     // Update name
     document.getElementById('fencer-name').textContent = fencerName;
 
-    // Current rating and status
+    // Current rating
     document.getElementById('current-rating').textContent = ratingInfo.rating;
-    const statusBadge = ratingInfo.status === 'Established'
-        ? '<span class="badge established">Established</span>'
-        : '<span class="badge provisional">Provisional</span>';
-    document.getElementById('rating-status').innerHTML = statusBadge;
+    document.getElementById('rating-status').textContent = '';
 
     // Rank
     const rank = ratingsData.findIndex(f => f.fencer === fencerName) + 1;
@@ -207,6 +204,65 @@ function displayFencerStats(fencerName, autoSelectDate = null) {
         }
     } else {
         document.getElementById('avg-placement').textContent = '-';
+    }
+
+    // First and Latest Appearance
+    const fencerDatesSet = new Set();
+    matchHistoryData.forEach(match => {
+        if (match['Winner'] === fencerName || match['Loser'] === fencerName) {
+            fencerDatesSet.add(match['Date']);
+        }
+    });
+
+    const fencerDates = Array.from(fencerDatesSet);
+
+    if (fencerDates.length > 0) {
+        // Sort dates
+        fencerDates.sort();
+
+        const firstDate = new Date(fencerDates[0]);
+        const latestDate = new Date(fencerDates[fencerDates.length - 1]);
+
+        const formatDate = (date) => date.toLocaleDateString('en-GB', {
+            day: 'numeric',
+            month: 'short',
+            year: 'numeric'
+        });
+
+        document.getElementById('first-appearance').textContent = formatDate(firstDate);
+        document.getElementById('latest-appearance').textContent = formatDate(latestDate);
+
+        // Calculate days/weeks/months ago for subtext
+        const now = new Date();
+        const daysSinceLatest = Math.floor((now - latestDate) / (1000 * 60 * 60 * 24));
+
+        let latestSubtext;
+        if (daysSinceLatest === 0) {
+            latestSubtext = 'today';
+        } else if (daysSinceLatest === 1) {
+            latestSubtext = 'yesterday';
+        } else if (daysSinceLatest < 7) {
+            latestSubtext = `${daysSinceLatest} days ago`;
+        } else if (daysSinceLatest < 30) {
+            const weeks = Math.floor(daysSinceLatest / 7);
+            latestSubtext = weeks === 1 ? '1 week ago' : `${weeks} weeks ago`;
+        } else if (daysSinceLatest < 365) {
+            const months = Math.floor(daysSinceLatest / 30);
+            latestSubtext = months === 1 ? '1 month ago' : `${months} months ago`;
+        } else {
+            const years = Math.floor(daysSinceLatest / 365);
+            latestSubtext = years === 1 ? '1 year ago' : `${years} years ago`;
+        }
+
+        document.getElementById('latest-appearance-subtext').textContent = latestSubtext;
+
+        // Total appearances for first appearance subtext
+        document.getElementById('first-appearance-subtext').textContent = `${fencerDates.length} total appearances`;
+    } else {
+        document.getElementById('first-appearance').textContent = '-';
+        document.getElementById('latest-appearance').textContent = '-';
+        document.getElementById('first-appearance-subtext').textContent = '-';
+        document.getElementById('latest-appearance-subtext').textContent = '-';
     }
 
     // Draw ELO chart
@@ -665,23 +721,37 @@ function setupHeadToHead(fencerName) {
     const select = document.getElementById('h2h-opponent-select');
     select.innerHTML = '<option value="">-- Select opponent --</option>';
 
-    // Get all opponents this fencer has faced
-    const opponents = new Set();
+    // Get all opponents with match counts
+    const opponentMatches = [];
     h2hData.forEach(matchup => {
+        let opponent = null;
+        let matchCount = 0;
+
         if (matchup.fencer1 === fencerName) {
-            opponents.add(matchup.fencer2);
+            opponent = matchup.fencer2;
+            matchCount = matchup.total_matches;
         } else if (matchup.fencer2 === fencerName) {
-            opponents.add(matchup.fencer1);
+            opponent = matchup.fencer1;
+            matchCount = matchup.total_matches;
+        }
+
+        if (opponent) {
+            opponentMatches.push({ name: opponent, matches: matchCount });
         }
     });
 
-    // Sort alphabetically
-    const sortedOpponents = Array.from(opponents).sort();
+    // Sort by match count descending, then alphabetically
+    opponentMatches.sort((a, b) => {
+        if (b.matches !== a.matches) {
+            return b.matches - a.matches; // Most matches first
+        }
+        return a.name.localeCompare(b.name); // Alphabetical if tied
+    });
 
-    sortedOpponents.forEach(opponent => {
+    opponentMatches.forEach(({ name, matches }) => {
         const option = document.createElement('option');
-        option.value = opponent;
-        option.textContent = opponent;
+        option.value = name;
+        option.textContent = `${name} (${matches} ${matches === 1 ? 'match' : 'matches'})`;
         select.appendChild(option);
     });
 

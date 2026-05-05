@@ -13,10 +13,10 @@
         <h1>🤺 Haverstock Fencing ELO Ratings</h1>
         <nav>
             <a href="index.html" class="active">Leaderboard</a>
-            <a href="timeline.html">ELO Timeline</a>
-            <a href="matchups.html">Head-to-Head</a>
             <a href="fencer.html">Fencer Stats</a>
             <a href="sessions.html">Tournament History</a>
+            <a href="timeline.html">ELO Timeline</a>
+            <a href="matchups.html">Head-to-Head</a>
         </nav>
     </header>
 
@@ -24,19 +24,7 @@
         <section class="intro">
             <h2>Current Rankings</h2>
             <p>ELO ratings for all fencers based on tournament results. Ratings are updated after each session.</p>
-            <div class="legend">
-                <span class="badge established">Established</span> = 30+ matches (reliable rating)
-                <span class="badge provisional">Provisional</span> = &lt;30 matches (still converging)
-            </div>
-        </section>
-
-        <section class="filters">
-            <label>
-                <input type="radio" name="status-filter" value="all" checked> All Fencers
-            </label>
-            <label>
-                <input type="radio" name="status-filter" value="established"> Established Only
-            </label>
+            <p><strong>Latest session:</strong> <span id="latest-session-link">Loading...</span></p>
         </section>
 
         <section class="leaderboard">
@@ -47,7 +35,6 @@
                         <th>Fencer</th>
                         <th>Rating</th>
                         <th>Matches</th>
-                        <th>Status</th>
                     </tr>
                 </thead>
                 <tbody id="ratings-body">

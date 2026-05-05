@@ -83,50 +83,7 @@ section {
     margin-bottom: 1rem;
 }
 
-/* Legend */
-.legend {
-    display: flex;
-    gap: 1.5rem;
-    margin-top: 1rem;
-    padding: 1rem;
-    background-color: var(--light-gray);
-    border-radius: 4px;
-}
-
-.badge {
-    padding: 0.25rem 0.75rem;
-    border-radius: 12px;
-    font-size: 0.85rem;
-    font-weight: 600;
-}
-
-.badge.established {
-    background-color: var(--success);
-    color: white;
-}
-
-.badge.provisional {
-    background-color: var(--warning);
-    color: white;
-}
-
-/* Filters */
-.filters {
-    display: flex;
-    gap: 2rem;
-    padding: 1rem;
-}
-
-.filters label {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    cursor: pointer;
-}
-
-.filters input[type="radio"] {
-    cursor: pointer;
-}
+/* Legend and filters removed - status system no longer used */
 
 /* Table styling */
 table.dataTable {

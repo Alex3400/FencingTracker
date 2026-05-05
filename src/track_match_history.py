@@ -45,17 +45,11 @@ K_FACTOR_THRESHOLDS = {
     150: 25   # Veterans (150+ matches): stable ratings
 }
 
-# Minimum matches required for rating to be "established"
-# Fencers below this threshold get a provisional flag
-MIN_MATCHES_FOR_ESTABLISHED = 30
+# Removed MIN_MATCHES_FOR_ESTABLISHED - status system no longer used
 
 # Use margin-adjusted scoring for poules (True) or binary win/loss (False)
 USE_MARGIN_SCORING = True
 
-# Margin scoring configuration
-# You can either:
-# 1. Use formula-based scaling (set MARGIN_SCORE_MAP = None)
-# 2. Use custom mapping (define MARGIN_SCORE_MAP dictionary)
 
 # Option 1: Formula-based (used if MARGIN_SCORE_MAP is None)
 # Formula: Actual Score = 0.5 + sign * (abs(margin) ** MARGIN_EXPONENT) / MARGIN_DIVISOR
@@ -1575,48 +1569,27 @@ def export_elo_ratings(elo_system, output_file='elo_ratings.csv'):
             'Fencer',
             'Final ELO Rating',
             'Total Matches',
-            'K-Factor',
-            'Status'
+            'K-Factor'
         ])
 
-        # Separate established and provisional ratings
-        established = []
-        provisional = []
+        # Collect all ratings
+        all_ratings = []
 
         for fencer, rating in elo_system.ratings.items():
             match_count = elo_system.get_match_count(fencer)
             k_factor = get_k_factor(match_count)
-            status = 'Established' if match_count >= MIN_MATCHES_FOR_ESTABLISHED else 'Provisional'
+            all_ratings.append((fencer, rating, match_count, k_factor))
 
-            entry = (fencer, rating, match_count, k_factor, status)
+        # Sort by rating (descending)
+        all_ratings.sort(key=lambda x: x[1], reverse=True)
 
-            if match_count >= MIN_MATCHES_FOR_ESTABLISHED:
-                established.append(entry)
-            else:
-                provisional.append(entry)
-
-        # Sort each group by rating (descending)
-        established.sort(key=lambda x: x[1], reverse=True)
-        provisional.sort(key=lambda x: x[1], reverse=True)
-
-        # Write established ratings first
-        for fencer, rating, match_count, k_factor, status in established:
+        # Write all ratings
+        for fencer, rating, match_count, k_factor in all_ratings:
             writer.writerow([
                 fencer,
                 round(rating, 1),
                 match_count,
-                k_factor,
-                status
-            ])
-
-        # Then provisional ratings
-        for fencer, rating, match_count, k_factor, status in provisional:
-            writer.writerow([
-                fencer,
-                round(rating, 1),
-                match_count,
-                k_factor,
-                status
+                k_factor
             ])
 
     print(f"✓ ELO ratings exported to {output_file}")
@@ -1876,13 +1849,11 @@ def export_json_for_website(elo_system, history, session_stats, all_placements, 
     ratings_data = []
     for fencer, rating in sorted(elo_system.ratings.items(), key=lambda x: x[1], reverse=True):
         match_count = elo_system.get_match_count(fencer)
-        status = "Established" if match_count >= MIN_MATCHES_FOR_ESTABLISHED else "Provisional"
 
         ratings_data.append({
             'fencer': fencer,
             'rating': round(rating, 1),
-            'matches': match_count,
-            'status': status
+            'matches': match_count
         })
 
     with open(output_path / 'elo_ratings.json', 'w', encoding='utf-8') as f:
