@@ -1,23 +1,23 @@
 [
   {
     "fencer": "Greg",
-    "rating": 2366.5,
-    "matches": 492
+    "rating": 2411.9,
+    "matches": 503
   },
   {
-    "fencer": "Eric L",
-    "rating": 2095.1,
-    "matches": 347
-  },
-  {
-    "fencer": "Willie",
-    "rating": 2093.5,
-    "matches": 270
+    "fencer": "Fassel",
+    "rating": 2109.7,
+    "matches": 219
   },
   {
     "fencer": "Tom T",
-    "rating": 2061.3,
-    "matches": 132
+    "rating": 2105.5,
+    "matches": 142
+  },
+  {
+    "fencer": "Willie",
+    "rating": 2052.8,
+    "matches": 283
   },
   {
     "fencer": "Alex Y",
@@ -26,13 +26,8 @@
   },
   {
     "fencer": "Sammy",
-    "rating": 2028.9,
+    "rating": 2018.6,
     "matches": 110
-  },
-  {
-    "fencer": "Fassel",
-    "rating": 2025.8,
-    "matches": 205
   },
   {
     "fencer": "Sameer",
@@ -40,43 +35,53 @@
     "matches": 79
   },
   {
-    "fencer": "Alejo",
-    "rating": 2002.0,
-    "matches": 376
-  },
-  {
     "fencer": "Charlie",
     "rating": 1990.3,
     "matches": 332
   },
   {
+    "fencer": "Darran",
+    "rating": 1978.5,
+    "matches": 108
+  },
+  {
     "fencer": "David Roig",
-    "rating": 1983.5,
+    "rating": 1976.8,
     "matches": 14
   },
   {
-    "fencer": "Vivian",
-    "rating": 1973.6,
-    "matches": 463
+    "fencer": "Vincent",
+    "rating": 1973.0,
+    "matches": 363
+  },
+  {
+    "fencer": "Alejo",
+    "rating": 1960.5,
+    "matches": 389
   },
   {
     "fencer": "Roeland",
-    "rating": 1961.5,
+    "rating": 1956.6,
     "matches": 83
   },
   {
+    "fencer": "Eric L",
+    "rating": 1954.9,
+    "matches": 360
+  },
+  {
+    "fencer": "Vadym",
+    "rating": 1948.4,
+    "matches": 222
+  },
+  {
     "fencer": "Garen",
-    "rating": 1949.2,
+    "rating": 1945.2,
     "matches": 44
   },
   {
-    "fencer": "Darran",
-    "rating": 1944.4,
-    "matches": 95
-  },
-  {
     "fencer": "Nikolas A",
-    "rating": 1937.6,
+    "rating": 1934.6,
     "matches": 11
   },
   {
@@ -86,13 +91,8 @@
   },
   {
     "fencer": "Tom",
-    "rating": 1928.9,
+    "rating": 1926.6,
     "matches": 190
-  },
-  {
-    "fencer": "Anna Z",
-    "rating": 1927.7,
-    "matches": 135
   },
   {
     "fencer": "James S",
@@ -100,13 +100,23 @@
     "matches": 84
   },
   {
+    "fencer": "Anna Z",
+    "rating": 1922.4,
+    "matches": 146
+  },
+  {
     "fencer": "Alex A",
     "rating": 1915.7,
     "matches": 121
   },
   {
+    "fencer": "Anna A",
+    "rating": 1912.9,
+    "matches": 173
+  },
+  {
     "fencer": "Rudi",
-    "rating": 1911.8,
+    "rating": 1910.9,
     "matches": 27
   },
   {
@@ -115,18 +125,18 @@
     "matches": 83
   },
   {
+    "fencer": "Vivian",
+    "rating": 1904.3,
+    "matches": 474
+  },
+  {
     "fencer": "Truuvy",
-    "rating": 1903.8,
+    "rating": 1903.5,
     "matches": 83
   },
   {
-    "fencer": "Anna A",
-    "rating": 1901.4,
-    "matches": 167
-  },
-  {
     "fencer": "Clemens",
-    "rating": 1901.3,
+    "rating": 1901.2,
     "matches": 32
   },
   {
@@ -140,24 +150,14 @@
     "matches": 342
   },
   {
-    "fencer": "Vincent",
-    "rating": 1894.8,
-    "matches": 350
-  },
-  {
-    "fencer": "Vadym",
+    "fencer": "Max V",
     "rating": 1891.8,
-    "matches": 209
+    "matches": 57
   },
   {
     "fencer": "Karsten",
     "rating": 1886.2,
     "matches": 13
-  },
-  {
-    "fencer": "Max V",
-    "rating": 1876.6,
-    "matches": 44
   },
   {
     "fencer": "Max T",
@@ -195,19 +195,14 @@
     "matches": 10
   },
   {
-    "fencer": "Richard B",
-    "rating": 1853.4,
-    "matches": 341
+    "fencer": "Steph",
+    "rating": 1855.2,
+    "matches": 313
   },
   {
     "fencer": "Alessandro",
     "rating": 1839.0,
     "matches": 10
-  },
-  {
-    "fencer": "Steph",
-    "rating": 1837.1,
-    "matches": 301
   },
   {
     "fencer": "Benjamin",
@@ -220,6 +215,16 @@
     "matches": 64
   },
   {
+    "fencer": "Richard B",
+    "rating": 1832.1,
+    "matches": 350
+  },
+  {
+    "fencer": "Fedor",
+    "rating": 1823.3,
+    "matches": 41
+  },
+  {
     "fencer": "Miriam",
     "rating": 1822.6,
     "matches": 42
@@ -230,24 +235,14 @@
     "matches": 25
   },
   {
-    "fencer": "Tom S",
-    "rating": 1816.1,
-    "matches": 56
-  },
-  {
-    "fencer": "Will P",
-    "rating": 1815.8,
-    "matches": 275
-  },
-  {
-    "fencer": "Mark M",
-    "rating": 1815.5,
-    "matches": 7
-  },
-  {
     "fencer": "Adrian",
     "rating": 1811.6,
     "matches": 19
+  },
+  {
+    "fencer": "Tom S",
+    "rating": 1810.0,
+    "matches": 69
   },
   {
     "fencer": "Nicholas",
@@ -285,6 +280,11 @@
     "matches": 2
   },
   {
+    "fencer": "Will P",
+    "rating": 1797.4,
+    "matches": 284
+  },
+  {
     "fencer": "Maxim",
     "rating": 1795.9,
     "matches": 26
@@ -298,6 +298,11 @@
     "fencer": "Jonathan",
     "rating": 1791.3,
     "matches": 78
+  },
+  {
+    "fencer": "Mark M",
+    "rating": 1791.3,
+    "matches": 12
   },
   {
     "fencer": "Enrik",
@@ -340,11 +345,6 @@
     "matches": 1
   },
   {
-    "fencer": "Fedor",
-    "rating": 1771.6,
-    "matches": 29
-  },
-  {
     "fencer": "Patrick L",
     "rating": 1764.1,
     "matches": 19
@@ -365,6 +365,11 @@
     "matches": 16
   },
   {
+    "fencer": "Fergus",
+    "rating": 1748.4,
+    "matches": 168
+  },
+  {
     "fencer": "Nicholas P",
     "rating": 1743.3,
     "matches": 15
@@ -373,11 +378,6 @@
     "fencer": "Alex",
     "rating": 1739.9,
     "matches": 9
-  },
-  {
-    "fencer": "Fergus",
-    "rating": 1737.5,
-    "matches": 157
   },
   {
     "fencer": "Feddy",
@@ -408,11 +408,6 @@
     "fencer": "Chrissy",
     "rating": 1728.8,
     "matches": 38
-  },
-  {
-    "fencer": "Kirill",
-    "rating": 1727.2,
-    "matches": 129
   },
   {
     "fencer": "Jana",
@@ -455,6 +450,11 @@
     "matches": 10
   },
   {
+    "fencer": "Marg",
+    "rating": 1701.1,
+    "matches": 256
+  },
+  {
     "fencer": "Rowena",
     "rating": 1700.8,
     "matches": 14
@@ -465,14 +465,14 @@
     "matches": 10
   },
   {
+    "fencer": "Kirill",
+    "rating": 1696.8,
+    "matches": 141
+  },
+  {
     "fencer": "Lucas H",
     "rating": 1694.4,
     "matches": 12
-  },
-  {
-    "fencer": "Marg",
-    "rating": 1692.8,
-    "matches": 251
   },
   {
     "fencer": "Jack B",
@@ -481,8 +481,8 @@
   },
   {
     "fencer": "Marinko",
-    "rating": 1685.7,
-    "matches": 110
+    "rating": 1686.1,
+    "matches": 120
   },
   {
     "fencer": "Eugene",
@@ -510,14 +510,19 @@
     "matches": 20
   },
   {
-    "fencer": "Matilda",
-    "rating": 1671.0,
-    "matches": 72
-  },
-  {
     "fencer": "Lucas",
     "rating": 1663.0,
     "matches": 32
+  },
+  {
+    "fencer": "Joshua",
+    "rating": 1660.5,
+    "matches": 195
+  },
+  {
+    "fencer": "Matilda",
+    "rating": 1648.9,
+    "matches": 83
   },
   {
     "fencer": "Alonzo",
@@ -525,9 +530,9 @@
     "matches": 71
   },
   {
-    "fencer": "Joshua",
-    "rating": 1642.3,
-    "matches": 188
+    "fencer": "Nat",
+    "rating": 1617.7,
+    "matches": 83
   },
   {
     "fencer": "Flavia",
@@ -535,13 +540,8 @@
     "matches": 28
   },
   {
-    "fencer": "Nat",
-    "rating": 1588.7,
-    "matches": 74
-  },
-  {
     "fencer": "Alix S",
-    "rating": 1579.0,
-    "matches": 156
+    "rating": 1569.3,
+    "matches": 167
   }
 ]

@@ -3828,5 +3828,118 @@
         "fencer": "Eugene"
       }
     ]
+  },
+  {
+    "date": "2026-05-05",
+    "winner": "Greg",
+    "top_poule_climber": "Darran",
+    "top_poule_gain": 45.5,
+    "fencers_in_poules": 27,
+    "fencers_in_des": 23,
+    "poule_matches": 101,
+    "de_matches": 48,
+    "total_matches": 149,
+    "score_5_0": 4,
+    "score_5_1": 14,
+    "score_5_2": 23,
+    "score_5_3": 28,
+    "score_5_4": 28,
+    "total_touches": 741,
+    "avg_touches_per_match": 7.34,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1Df3NvF1VBZbCsO1Z4Xk7f8Qe921ZbNhod9YY32ovGRQ/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Greg"
+      },
+      {
+        "place": 2,
+        "fencer": "Fassel"
+      },
+      {
+        "place": 3,
+        "fencer": "Tom T"
+      },
+      {
+        "place": 4,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 5,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 6,
+        "fencer": "Willie"
+      },
+      {
+        "place": 7,
+        "fencer": "Anna Z"
+      },
+      {
+        "place": 8,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 9,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 10,
+        "fencer": "Darran"
+      },
+      {
+        "place": 11,
+        "fencer": "Max V"
+      },
+      {
+        "place": 12,
+        "fencer": "Tom S"
+      },
+      {
+        "place": 13,
+        "fencer": "Steph"
+      },
+      {
+        "place": 14,
+        "fencer": "Fergus"
+      },
+      {
+        "place": 15,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 16,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 17,
+        "fencer": "Fedor"
+      },
+      {
+        "place": 18,
+        "fencer": "Will P"
+      },
+      {
+        "place": 19,
+        "fencer": "Marinko"
+      },
+      {
+        "place": 20,
+        "fencer": "Kirill"
+      },
+      {
+        "place": 21,
+        "fencer": "Nat"
+      },
+      {
+        "place": 22,
+        "fencer": "Matilda"
+      },
+      {
+        "place": 23,
+        "fencer": "Alix S"
+      }
+    ]
   }
 ]
