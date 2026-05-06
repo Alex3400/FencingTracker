@@ -68,10 +68,10 @@ MARGIN_EXPONENT = 1  # 1.5 makes larger margins more significant
 # 5-3: winner 0.75, loser 0.25 (loser unlikely to gain)
 # 5-2+: winner 0.85+, loser 0.15- (loser almost never gains)
 MARGIN_SCORE_MAP = {
-    (5, 4): 0.65,  # Close match - some credit to loser
-    (5, 3): 0.75,  # Clear win - minimal credit to loser
-    (5, 2): 0.85,  # Dominant win - loser unlikely to gain points
-    (5, 1): 0.92,  # Very dominant - loser loses substantial points
+    (5, 4): 0.72,  # Close match - some credit to loser
+    (5, 3): 0.80,  # Clear win - minimal credit to loser
+    (5, 2): 0.88,  # Dominant win - loser unlikely to gain points
+    (5, 1): 0.95,  # Very dominant - loser loses substantial points
     (5, 0): 1.00,  # Complete shutout - loser gets nothing
 }
 
@@ -82,8 +82,8 @@ BRACKET_WEIGHTS = {
     'L1-2': 4.0,   
     'L1-4': 3.0,   
     'L1-8': 2.0,    
-    'L1-16': 1.5,
-    'L1-32': 1.25,
+    'L1-16': 1.75,
+    'L1-32': 1.5,
 
     # Medal matches
     'L3-4': 2.0,
@@ -107,17 +107,17 @@ FIELD_SIZE_SCALING_EXPONENT = 0.5  # 0.5 = sqrt scaling, 1.0 = linear
 # Placement bonuses (flat rating adjustment after tournament)
 # Scaled down to prevent single-tournament spikes
 PLACEMENT_BONUSES = {
-    1: 30,   # Winner bonus (reduced from 25)
-    2: 20,   # Runner-up bonus (reduced from 15)
+    1: 25,   # Winner bonus (reduced from 25)
+    2: 15,   # Runner-up bonus (reduced from 15)
     3: 8,    # Third place bonus (reduced from 8)
     4: 5,    # Fourth place bonus (reduced from 8)
 }
 
 # Elo scaling factor (standard is 400)
-Elo_SCALING_FACTOR = 400
+ELO_SCALING_FACTOR = 400
 
 # Rating decay for inactive fencers
-DECAY_AFTER_SESSIONS = 6  # Start decaying after this many consecutive missed sessions
+DECAY_AFTER_SESSIONS = 8  # Start decaying after this many consecutive missed sessions
 DECAY_RATE = 0.08  # Decay 8% per missed session towards decay target
 DECAY_TARGET = 1900  # High-rated players decay toward this floor (above starting rating)
 # Only players rated above DECAY_TARGET will decay
@@ -175,7 +175,7 @@ def get_k_factor(num_matches):
 
 def calculate_expected_score(rating_a, rating_b):
     """Calculate expected score for player A against player B."""
-    return 1 / (1 + 10 ** ((rating_b - rating_a) / Elo_SCALING_FACTOR))
+    return 1 / (1 + 10 ** ((rating_b - rating_a) / ELO_SCALING_FACTOR))
 
 
 def calculate_poule_actual_score(your_score, their_score):

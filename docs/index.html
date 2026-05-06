@@ -3,73 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haverstock Fencing Elo Ratings</title>
+    <title>About - Haverstock Fencing Elo Ratings</title>
     <link rel="stylesheet" href="css/style.css">
-    <!-- DataTables CSS -->
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
 </head>
 <body>
-    <header>
-        <h1>🤺 Haverstock Fencing Elo Ratings</h1>
-        <nav>
-            <a href="index.html" class="active">Leaderboard</a>
-            <a href="fencer.html">Fencer Stats</a>
-            <a href="sessions.html">Tournament History</a>
-            <a href="timeline.html">Elo Timeline</a>
-            <a href="about.html">About</a>
-        </nav>
-    </header>
+<header>
+    <h1>🤺 Haverstock Fencing Elo Ratings</h1>
+    <nav>
+        <a href="index.html" class="active">About</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="fencer.html">Fencer Stats</a>
+        <a href="sessions.html">Tournament History</a>
+        <a href="timeline.html">Elo Timeline</a>
+    </nav>
+</header>
 
-    <main>
+<main>
+
+
+    <section class="about-content">
         <section class="intro">
-            <h2>Current Rankings</h2>
-            <p>Elo ratings for all fencers based on tournament results. Ratings are updated after each session.</p>
-            <p><strong>Latest session:</strong> <span id="latest-session-link">Loading...</span></p>
+            <h2>About This Project</h2>
+            <p>This is a data tool that reads the Tuesday Haverstock Fencing club sessions and assigns an Elo score from
+                the matches.
+                This tool was heavily inspired by <a href="https://fencingtracker.com/" target="_blank"
+                                                     rel="noopener noreferrer">Fencing Tracker</a> for USA fencing.</p>
         </section>
+        <div class="about-section">
+            <h3>🎯 What is an Elo Rating?</h3>
+            <p>An Elo system is a way of calculating the skill of players who compete with one another.
+                When a match is played the winner's Elo goes up and the losers goes down. The Elo changes based on the
+                existing scores of each player.
+                The player with a higher score will get fewer points for a win than the lower rated player.</p>
+            <p>For example, if Alice, rated 2000, fences Bob, rated 1800, if Alice wins she may get 5 points and Bob
+                loses 5 points.
+                However, if Bob wins he may gain 15 points while Alice loses 15. </p>
+            <p>Through this process ideally ones score should stabilize overtime, and getting wins over strong opponents
+                is rewarding and fencing weaker opponents isn't as beneficial. </p>
+            <p>You can read more about Elo <a href="https://en.wikipedia.org/wiki/Elo_rating_system" target="_blank"
+                                              rel="noopener noreferrer">here</a>.</p>
+        </div>
 
-        <section class="leaderboard">
-            <table id="ratings-table" class="display">
-                <thead>
-                    <tr>
-                        <th>Rank</th>
-                        <th>Fencer</th>
-                        <th>Rating</th>
-                        <th>Matches</th>
-                    </tr>
-                </thead>
-                <tbody id="ratings-body">
-                    <!-- Populated by JavaScript -->
-                </tbody>
-            </table>
-        </section>
+        <div class="about-section">
+            <h3>📊 How to Use This Site</h3>
+            <h4><a href="leaderboard.html" class="fencer-link" style="text-decoration: underline;">Leaderboard</a></h4>
+            <p>Contains a leaderboard based on the Elo score of each fencer. Click on each fencer's name to be taken to
+                their page</p>
 
-        <section class="about">
-            <h3>About the Elo System</h3>
-            <p>
-                An <strong>Elo rating system</strong> assigns each fencer a numerical score representing their skill level.
-                When two fencers compete, the system predicts who should win based on their current ratings and updates
-                both ratings after the match based on the actual result.
-            </p>
-            <p>
-                <strong>Example:</strong> If Alice (rated 1600) beats Bob (rated 1400), Alice gains only a few points
-                because she was expected to win. But if Bob beats Alice, he gains many more points because he exceeded expectations.
-            </p>
-            <p>
-                Over time, these adjustments cause ratings to stabilize and accurately reflect each fencer's true skill level.
-            </p>
-        </section>
-    </main>
+            <h4><a href="fencer.html" class="fencer-link" style="text-decoration: underline;">Fencer Stats</a></h4>
+            <p>Contains details about each individual fencer. This includes, overarching stats, full placement history,
+                elo history,
+                and match history both by session and by opponent </p>
 
-    <footer>
-        <p>Last updated: <span id="last-update"></span></p>
-        <p>Haverstock Fencing Club | Elo Rating System | <a href="about.html" style="color: white; text-decoration: underline;">About</a></p>
-    </footer>
+            <h4><a href="sessions.html" class="fencer-link" style="text-decoration: underline;">Tournament History</a>
+            </h4>
+            <p>Contains information about each session, including the winner and the fencer who gained the most elo
+                points in the poule stage.
+                Click on the date for a full placement table and match history for the day</p>
 
-    <!-- jQuery (required for DataTables) -->
-    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <!-- DataTables JS -->
-    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-    <!-- App JS -->
-    <script src="js/app.js"></script>
+            <h4><a href="timeline.html" class="fencer-link" style="text-decoration: underline;">Elo Timeline</a></h4>
+            <p>A timeline of the Elo and leaderboard rank of the selected fencers.</p>
+
+            <h4>Upset Indicator</h4>
+            <p>In the match history the coloured square ranges from grey to red to indicate how unexpected each result
+                is. Hover over the examples below to see the upset scores:</p>
+            <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+                <div style="text-align: center;">
+                    <div class="upset-indicator" style="background-color: rgb(224, 224, 224);"
+                         title="Upset Score: 0.000"></div>
+                    <div style="font-size: 0.8rem; margin-top: 0.25rem;">Expected</div>
+                </div>
+                <div style="text-align: center;">
+                    <div class="upset-indicator" style="background-color: rgb(229, 217, 217);"
+                         title="Upset Score: 0.100"></div>
+                    <div style="font-size: 0.8rem; margin-top: 0.25rem;">Minor</div>
+                </div>
+                <div style="text-align: center;">
+                    <div class="upset-indicator" style="background-color: rgb(236, 203, 203);"
+                         title="Upset Score: 0.250"></div>
+                    <div style="font-size: 0.8rem; margin-top: 0.25rem;">Small</div>
+                </div>
+                <div style="text-align: center;">
+                    <div class="upset-indicator" style="background-color: rgb(245, 178, 178);"
+                         title="Upset Score: 0.500"></div>
+                    <div style="font-size: 0.8rem; margin-top: 0.25rem;">Moderate</div>
+                </div>
+                <div style="text-align: center;">
+                    <div class="upset-indicator" style="background-color: rgb(252, 137, 137);"
+                         title="Upset Score: 0.750"></div>
+                    <div style="font-size: 0.8rem; margin-top: 0.25rem;">Large</div>
+                </div>
+                <div style="text-align: center;">
+                    <div class="upset-indicator" style="background-color: rgb(255, 0, 0);"
+                         title="Upset Score: 1.000"></div>
+                    <div style="font-size: 0.8rem; margin-top: 0.25rem;">Maximum</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="about-section">
+            <h3>📈 Methodology & Data</h3>
+            <h4>Data Sources</h4>
+            <p>Data is taken directly from the Google sheets page that we use for Tuesday sessions. The original sheets
+                can be found in sessions page in the tournament tab</p>
+            <p>There are some modifications to a classic Elo system for our purposes:</p>
+
+            <h4>Elo System Details</h4>
+            <ul>
+                <li><strong>K-Factor:</strong> The "K-Factor" represents how volatile the Elo score is. Fencers with
+                    fewer matches have a higher K-Factor so that they can converge on an accurate score faster
+                </li>
+                <li><strong>Margin Scoring:</strong> We use margin scoring meaning a 5-4 poule win will have a different
+                    result than a 5-0 win.
+                    This means that if there is a large rating difference between two fencers, the winner may lose
+                    points if the score is closer than the system would expect
+                </li>
+                <li><strong>Bracket Weighting:</strong> To capture that DE matches are longer and "higher stakes" there
+                    is a multiplier for DE matches, with the further up the winner bracket scaling more
+                </li>
+                <li><strong>Decay System:</strong> To combat guests and inactive fencers from cluttering the
+                    leaderboard, after 8 missed sessions fencers above 1900 Elo points will begin to decay towards 1900
+                </li>
+            </ul>
+        </div>
+
+        <div class="about-section">
+            <h3>About Me</h3>
+            <p>I'm Alex Yule (<a href="fencer.html?fencer=Alex%20Y" class="fencer-link"
+                                 style="text-decoration: underline;">Alex Y</a> on the sheet) and I wrote this tool and
+                page. </p>
+            <h4>AI disclaimer</h4>
+            <p>This code was written with the help of <a href="https://code.claude.com/docs/en/overview" target="_blank"
+                                                         rel="noopener noreferrer">Claude Code</a> which is an AI coding
+                tool.
+                However, all text that is on the page was written myself </p>
+        </div>
+
+        <div class="about-section">
+            <h3>📧 Feedback & Contact</h3>
+            <h4>Fairness</h4>
+            <p>I largely freestyled the Elo system, and while I tried to be as impartial as possible, being a competitor
+                may introduce some bias in how I decided what values to use.
+                If you have opinions about tweaks that would make the results more fair, feel free to let me know.</p>
+            <h4>Page removal</h4>
+            <p>I can appreciate that this is a lot of information to have put online on a public website.
+                As such, if anyone is uncomfortable with having their name on the website, I am happy to add an alias or
+                entirely remove the matches from anyone who asks.</p>
+            <h4>Contact Me</h4>
+            <p>You can contact me via whatsapp at +44 7578 915787 or by email at ayule801@gmail.com or during practice
+                😊.</p>
+            <p>If you would like to make your own tweaks or add features, I encourage contribution to the <a
+                    href="https://github.com/Alex3400/FencingTracker" target="_blank" rel="noopener noreferrer">GitHub
+                page</a>.</p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>Haverstock Fencing Club | Elo Rating System | <a href="index.html"
+                                                        style="color: white; text-decoration: underline;">About</a></p>
+</footer>
 </body>
 </html>

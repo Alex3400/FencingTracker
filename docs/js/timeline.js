@@ -73,7 +73,9 @@ function initializeChart() {
                 tooltip: {
                     callbacks: {
                         label: function(context) {
-                            return `${context.dataset.label}: ${context.parsed.y.toFixed(1)}`;
+                            const rating = context.parsed.y.toFixed(1);
+                            const rank = context.dataset.ranks[context.dataIndex];
+                            return `${context.dataset.label}: ${rating} (Rank #${rank})`;
                         }
                     }
                 }
@@ -121,6 +123,17 @@ function updateChart() {
             return snapshot.ratings[fencer] || null;
         });
 
+        // Calculate ranks for each snapshot
+        const ranks = timelineData.map(snapshot => {
+            if (!snapshot.ratings[fencer]) return null;
+
+            // Sort all ratings at this snapshot to find rank
+            const sortedRatings = Object.entries(snapshot.ratings)
+                .sort((a, b) => b[1] - a[1]);
+            const rank = sortedRatings.findIndex(([name, _]) => name === fencer) + 1;
+            return rank;
+        });
+
         return {
             label: fencer,
             data: data,
@@ -130,7 +143,8 @@ function updateChart() {
             pointRadius: 3,
             pointHoverRadius: 5,
             tension: 0.1,
-            spanGaps: true // Connect line even if fencer wasn't present
+            spanGaps: true, // Connect line even if fencer wasn't present
+            ranks: ranks // Store ranks for tooltip
         };
     });
 
