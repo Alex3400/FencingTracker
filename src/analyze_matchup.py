@@ -19,7 +19,7 @@ def get_matchup_data(fencer1, fencer2, elo_history_file='../docs/data/elo_histor
                      fencer_stats_file='../docs/data/fencer_stats.csv',
                      placement_stats_file='../docs/data/placement_stats.csv'):
     """
-    Extract matchup data between two fencers from ELO history and head-to-head stats.
+    Extract matchup data between two fencers from Elo history and head-to-head stats.
 
     Returns a dictionary containing:
     - fencer1, fencer2: names
@@ -41,7 +41,7 @@ def get_matchup_data(fencer1, fencer2, elo_history_file='../docs/data/elo_histor
     """
     matches = []
 
-    # Read ELO history CSV
+    # Read Elo history CSV
     try:
         with open(elo_history_file, 'r', encoding='utf-8') as f:
             reader = csv.DictReader(f)
@@ -104,9 +104,9 @@ def get_matchup_data(fencer1, fencer2, elo_history_file='../docs/data/elo_histor
             reader = csv.DictReader(f)
             for row in reader:
                 if row['Fencer'] == fencer1:
-                    f1_current = float(row['Final ELO Rating'])
+                    f1_current = float(row['Final Elo Rating'])
                 if row['Fencer'] == fencer2:
-                    f2_current = float(row['Final ELO Rating'])
+                    f2_current = float(row['Final Elo Rating'])
                 if f1_current is not None and f2_current is not None:
                     break
     except FileNotFoundError:
@@ -124,7 +124,7 @@ def get_matchup_data(fencer1, fencer2, elo_history_file='../docs/data/elo_histor
         if f2_current is None:
             f2_current = last_match['f2_new_rating']
 
-    # ELO expected score formula
+    # Elo expected score formula
     f1_expected = 1 / (1 + 10**((f2_current - f1_current) / 400))
     f2_expected = 1 - f1_expected
 
@@ -303,7 +303,7 @@ def print_matchup_analysis(matchup_data):
     print(f"\n{'='*100}")
     print(f"MATCH HISTORY (chronological):")
     print(f"{'='*100}")
-    print(f"{'Date':<12} {'Type':<12} {'Result':<40} {fencer1 + ' ELO':<25} {fencer2 + ' ELO':<25}")
+    print(f"{'Date':<12} {'Type':<12} {'Result':<40} {fencer1 + ' Elo':<25} {fencer2 + ' Elo':<25}")
     print(f"{'-'*100}")
 
     for match in matches:

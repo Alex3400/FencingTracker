@@ -1,4 +1,4 @@
-// Load and display ELO ratings
+// Load and display Elo ratings
 let ratingsData = [];
 let sessionsData = [];
 let dataTable = null;

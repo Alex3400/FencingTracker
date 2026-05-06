@@ -9,7 +9,7 @@ All 4 pages are now fully functional:
    ✓ Top 3 highlighted (gold/silver/bronze)
    ✓ Shows: Rank, Name, Rating, Match Count, Status
 
-2. ELO TIMELINE (timeline.html)
+2. Elo TIMELINE (timeline.html)
    ✓ Interactive Chart.js line charts
    ✓ Multi-select fencer comparison
    ✓ "Top 5" and "Clear" quick buttons
@@ -21,7 +21,7 @@ All 4 pages are now fully functional:
    ✓ Overall win/loss statistics
    ✓ Breakdown by Poule vs DE matches
    ✓ Current ratings and rating differential
-   ✓ Expected win probabilities (ELO formula)
+   ✓ Expected win probabilities (Elo formula)
    ✓ Handles "no matches found" case
 
 4. TOURNAMENT HISTORY (sessions.html)

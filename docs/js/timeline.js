@@ -1,4 +1,4 @@
-// Timeline chart for ELO ratings
+// Timeline chart for Elo ratings
 let timelineData = [];
 let ratingsData = [];
 let chart = null;
@@ -63,7 +63,7 @@ function initializeChart() {
             plugins: {
                 title: {
                     display: true,
-                    text: 'ELO Rating Progression',
+                    text: 'Elo Rating Progression',
                     font: { size: 18 }
                 },
                 legend: {
@@ -92,7 +92,7 @@ function initializeChart() {
                 y: {
                     title: {
                         display: true,
-                        text: 'ELO Rating'
+                        text: 'Elo Rating'
                     },
                     beginAtZero: false
                 }

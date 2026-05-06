@@ -1,4 +1,4 @@
-# ELO System Tuning Summary
+# Elo System Tuning Summary
 
 ## Issues Addressed
 

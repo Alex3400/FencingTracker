@@ -2,7 +2,7 @@
 """
 Track match history between pairs of fencers across all tournaments.
 Parses both poule sheets and DE (Direct Elimination) sheets.
-Implements ELO rating system for fencer skill tracking.
+Implements Elo rating system for fencer skill tracking.
 """
 
 import os
@@ -24,7 +24,7 @@ except ImportError:
 
 
 # ============================================================
-# ELO SYSTEM CONFIGURATION
+# Elo SYSTEM CONFIGURATION
 # ============================================================
 
 # Base K-factor (how much ratings change per match)
@@ -79,25 +79,25 @@ MARGIN_SCORE_MAP = {
 # Increased to create more rating spread
 BRACKET_WEIGHTS = {
     # Top brackets (fighting for podium)
-    'L1-2': 4.0,    # Increased from 4.0
-    'L1-4': 3.0,    # Increased from 3.0
-    'L1-8': 2.0,    # Increased from 2.5
-    'L1-16': 1.5,   # Increased from 2.0
-    'L1-32': 1.25,   # Increased from 1.5
+    'L1-2': 4.0,   
+    'L1-4': 3.0,   
+    'L1-8': 2.0,    
+    'L1-16': 1.5,
+    'L1-32': 1.25,
 
     # Medal matches
-    'L3-4': 2.0,    # Increased from 3.0
+    'L3-4': 2.0,
 
     # Mid-tier brackets
-    'L5-8': 2.0,    # Increased from 2.0
-    'L9-16': 1.5,   # Increased from 1.5
-    'L9-12': 1.5,   # Increased from 1.5
-    'L13-16': 1.3,  # Increased from 1.3
+    'L5-8': 2.0,
+    'L9-16': 1.5,
+    'L9-12': 1.5,
+    'L13-16': 1.3,
 
     # Lower brackets
-    'L17-32': 1.0,  # Increased from 1.0
-    'L17-24': 1.0,  # Increased from 1.0
-    'L25-32': 1.0,  # Increased from 0.8
+    'L17-32': 1.0,
+    'L17-24': 1.0,
+    'L25-32': 1.0,
 }
 
 # Field size scaling parameters
@@ -113,8 +113,8 @@ PLACEMENT_BONUSES = {
     4: 5,    # Fourth place bonus (reduced from 8)
 }
 
-# ELO scaling factor (standard is 400)
-ELO_SCALING_FACTOR = 400
+# Elo scaling factor (standard is 400)
+Elo_SCALING_FACTOR = 400
 
 # Rating decay for inactive fencers
 DECAY_AFTER_SESSIONS = 6  # Start decaying after this many consecutive missed sessions
@@ -162,7 +162,7 @@ def normalize_name(name):
 
 
 # ============================================================
-# ELO SYSTEM FUNCTIONS
+# Elo SYSTEM FUNCTIONS
 # ============================================================
 
 def get_k_factor(num_matches):
@@ -175,7 +175,7 @@ def get_k_factor(num_matches):
 
 def calculate_expected_score(rating_a, rating_b):
     """Calculate expected score for player A against player B."""
-    return 1 / (1 + 10 ** ((rating_b - rating_a) / ELO_SCALING_FACTOR))
+    return 1 / (1 + 10 ** ((rating_b - rating_a) / Elo_SCALING_FACTOR))
 
 
 def calculate_poule_actual_score(your_score, their_score):
@@ -234,8 +234,8 @@ def apply_rating_bounds(rating):
     return max(RATING_FLOOR, min(RATING_CEILING, rating))
 
 
-class ELORatingSystem:
-    """Manages ELO ratings for all fencers."""
+class EloRatingSystem:
+    """Manages Elo ratings for all fencers."""
 
     def __init__(self):
         # Current ratings: {fencer_name: rating}
@@ -257,7 +257,7 @@ class ELORatingSystem:
         self.current_session_index = 0
         # Track poule gains per session: {date: {fencer: (start_rating, end_rating, gain)}}
         self.poule_gains = {}
-        # Track max ELO per fencer (all-time peak rating)
+        # Track max Elo per fencer (all-time peak rating)
         # {fencer_name: max_rating}
         self.max_elo = {}
 
@@ -293,6 +293,10 @@ class ELORatingSystem:
         actual1 = calculate_poule_actual_score(score1, score2)
         actual2 = calculate_poule_actual_score(score2, score1)
 
+        # Calculate upset score (how unexpected was this result)
+        upset_score1 = abs(actual1 - expected1)
+        upset_score2 = abs(actual2 - expected2)
+
         # Get K-factors
         k1 = get_k_factor(self.get_match_count(fencer1))
         k2 = get_k_factor(self.get_match_count(fencer2))
@@ -305,12 +309,13 @@ class ELORatingSystem:
         self.update_rating(fencer1, change1, date, f'Poule vs {fencer2} ({score1}-{score2})')
         self.update_rating(fencer2, change2, date, f'Poule vs {fencer1} ({score2}-{score1})')
 
-        # Record match history
+        # Record match history (now includes upset metrics)
         new_rating1 = self.ratings[fencer1]
         new_rating2 = self.ratings[fencer2]
         self.match_history.append((
             date, fencer1, old_rating1, new_rating1, change1,
-            fencer2, old_rating2, new_rating2, change2, f'Poule {score1}-{score2}'
+            fencer2, old_rating2, new_rating2, change2, f'Poule {score1}-{score2}',
+            expected1, upset_score1
         ))
 
         # Increment match counts
@@ -329,6 +334,10 @@ class ELORatingSystem:
         # Actual scores (binary: win=1, loss=0)
         actual1 = 1.0 if winner == fencer1 else 0.0
         actual2 = 1.0 if winner == fencer2 else 0.0
+
+        # Calculate upset score (how unexpected was this result)
+        upset_score1 = abs(actual1 - expected1)
+        upset_score2 = abs(actual2 - expected2)
 
         # Get K-factors
         k1 = get_k_factor(self.get_match_count(fencer1))
@@ -351,13 +360,14 @@ class ELORatingSystem:
         self.update_rating(fencer1, change1, date, f'{bracket_name} vs {fencer2} ({result1})')
         self.update_rating(fencer2, change2, date, f'{bracket_name} vs {fencer1} ({result2})')
 
-        # Record match history
+        # Record match history (now includes upset metrics)
         new_rating1 = self.ratings[fencer1]
         new_rating2 = self.ratings[fencer2]
         match_result = f'{bracket_name} ({winner} won)'
         self.match_history.append((
             date, fencer1, old_rating1, new_rating1, change1,
-            fencer2, old_rating2, new_rating2, change2, match_result
+            fencer2, old_rating2, new_rating2, change2, match_result,
+            expected1, upset_score1
         ))
 
         # Increment match counts
@@ -419,10 +429,10 @@ class ELORatingSystem:
             self.poule_gains[date][fencer] = (start_rating, end_rating, gain)
 
     def record_avg_elo(self, date, de_participants):
-        """Update max ELO for fencers who participated in DEs (only if 25+ matches)."""
+        """Update max Elo for fencers who participated in DEs (only if 25+ matches)."""
         for fencer in de_participants:
             if fencer in self.ratings:
-                # Only track max ELO once they have 25+ matches (ratings are more stable)
+                # Only track max Elo once they have 25+ matches (ratings are more stable)
                 if self.get_match_count(fencer) >= 25:
                     current_rating = self.ratings[fencer]
                     if fencer not in self.max_elo or current_rating > self.max_elo[fencer]:
@@ -923,9 +933,9 @@ def calculate_session_stats(date, poule_matches, de_matches, all_fencers_poule, 
 
 
 def process_all_sheets(base_dir='downloaded_sheets'):
-    """Process all sheets and build match history with ELO ratings."""
+    """Process all sheets and build match history with Elo ratings."""
     history = MatchHistory()
-    elo_system = ELORatingSystem()
+    elo_system = EloRatingSystem()
     session_stats = []
     all_placements = {}  # Track placements by date
 
@@ -979,11 +989,11 @@ def process_all_sheets(base_dir='downloaded_sheets'):
                 fencers_in_poules.add(fencer1)
                 fencers_in_poules.add(fencer2)
 
-                # Ensure both fencers are initialized in ELO system
+                # Ensure both fencers are initialized in Elo system
                 elo_system.get_rating(fencer1)
                 elo_system.get_rating(fencer2)
 
-                # Process ELO for poule match
+                # Process Elo for poule match
                 if score:
                     try:
                         score_parts = score.split('-')
@@ -1017,7 +1027,7 @@ def process_all_sheets(base_dir='downloaded_sheets'):
                 fencers_in_des.add(fencer1)
                 fencers_in_des.add(fencer2)
 
-                # Process ELO for DE match
+                # Process Elo for DE match
                 # Extract bracket name from match_type (format: "DE-L1-8")
                 bracket_name = match_type.replace('DE-', '') if match_type.startswith('DE-') else 'L1-32'
                 elo_system.process_de_match(fencer1, fencer2, winner, bracket_name, date_str, total_fencers)
@@ -1037,7 +1047,7 @@ def process_all_sheets(base_dir='downloaded_sheets'):
         # Take snapshot after DEs
         if de_sheet:
             elo_system.take_snapshot(date, 'After DEs')
-            # Record average ELO for DE participants
+            # Record average Elo for DE participants
             elo_system.record_avg_elo(date, fencers_in_des)
 
         # Apply decay to inactive fencers at the end of this session
@@ -1251,7 +1261,7 @@ def export_fencer_stats(history, elo_system=None, output_file='fencer_stats.csv'
             'DE Appearances',
             'DE Matches', 'DE Wins', 'DE Losses', 'DE Winrate',
             'Avg Seeding', 'Avg Placement',
-            'Max ELO (All-Time)',
+            'Max Elo (All-Time)',
             'Win', 'L2', 'L4', 'L8', 'L16', 'L32'
         ])
 
@@ -1336,7 +1346,7 @@ def export_fencer_stats(history, elo_system=None, output_file='fencer_stats.csv'
                 round(stats['average_placement'], 2) if de_appearances > 0 else 0.0,
             ]
 
-            # Add max ELO (all-time peak rating, null if not tracked yet)
+            # Add max Elo (all-time peak rating, null if not tracked yet)
             if elo_system and fencer in elo_system.max_elo:
                 row.append(round(elo_system.max_elo[fencer], 1))
             else:
@@ -1559,7 +1569,7 @@ def export_global_stats(session_stats, output_file='global_stats.txt'):
 
 
 def export_elo_ratings(elo_system, output_file='elo_ratings.csv'):
-    """Export final ELO ratings for all fencers."""
+    """Export final Elo ratings for all fencers."""
 
     with open(output_file, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
@@ -1567,7 +1577,7 @@ def export_elo_ratings(elo_system, output_file='elo_ratings.csv'):
         # Write header
         writer.writerow([
             'Fencer',
-            'Final ELO Rating',
+            'Final Elo Rating',
             'Total Matches',
             'K-Factor'
         ])
@@ -1592,11 +1602,11 @@ def export_elo_ratings(elo_system, output_file='elo_ratings.csv'):
                 k_factor
             ])
 
-    print(f"✓ ELO ratings exported to {output_file}")
+    print(f"✓ Elo ratings exported to {output_file}")
 
 
 def export_elo_history(elo_system, output_file='elo_history.csv'):
-    """Export chronological ELO rating history showing both fencers per match.
+    """Export chronological Elo rating history showing both fencers per match.
     Winner is always in Fencer 1 position."""
 
     with open(output_file, 'w', newline='', encoding='utf-8') as f:
@@ -1614,12 +1624,17 @@ def export_elo_history(elo_system, output_file='elo_history.csv'):
             'Loser',
             'Loser Old Rating',
             'Loser New Rating',
-            'Loser Change'
+            'Loser Change',
+            'Expected (Winner)',
+            'Upset Score'
         ])
 
         # Match history is already chronologically ordered
-        for (date, fencer1, old_rating1, new_rating1, change1,
-             fencer2, old_rating2, new_rating2, change2, match_type) in elo_system.match_history:
+        for match_data in elo_system.match_history:
+            # Unpack match data (now includes expected and upset_score)
+            (date, fencer1, old_rating1, new_rating1, change1,
+             fencer2, old_rating2, new_rating2, change2, match_type,
+             expected1, upset_score1) = match_data
 
             # Parse match type to extract bracket/type and winner
             # Format: "Poule 5-3" or "L1-2 (Greg won)"
@@ -1678,10 +1693,14 @@ def export_elo_history(elo_system, output_file='elo_history.csv'):
                     fencer2,
                     round(old_rating2, 1),
                     round(new_rating2, 1),
-                    round(change2, 1)
+                    round(change2, 1),
+                    round(expected1, 3),  # Expected score for fencer1 (winner)
+                    round(upset_score1, 3)  # Upset score
                 ])
             else:
                 # Winner is fencer2, swap order
+                expected2 = 1.0 - expected1  # Expected score for fencer2
+                upset_score2 = upset_score1  # Upset score is same for both
                 writer.writerow([
                     date,
                     bracket_type,
@@ -1693,10 +1712,12 @@ def export_elo_history(elo_system, output_file='elo_history.csv'):
                     fencer1,
                     round(old_rating1, 1),
                     round(new_rating1, 1),
-                    round(change1, 1)
+                    round(change1, 1),
+                    round(expected2, 3),  # Expected score for fencer2 (winner)
+                    round(upset_score2, 3)  # Upset score
                 ])
 
-    print(f"✓ ELO history exported to {output_file}")
+    print(f"✓ Elo history exported to {output_file}")
 
 
 def export_elo_leaderboard_timeline(elo_system, output_file='elo_leaderboard_timeline.csv'):
@@ -1761,7 +1782,7 @@ def export_elo_leaderboard_timeline(elo_system, output_file='elo_leaderboard_tim
 
             writer.writerow(row)
 
-    print(f"✓ ELO leaderboard timeline exported to {output_file}")
+    print(f"✓ Elo leaderboard timeline exported to {output_file}")
 
 
 def export_elo_fencer_timeline(elo_system, output_file='elo_fencer_timeline.csv'):
@@ -1837,7 +1858,7 @@ def export_elo_fencer_timeline(elo_system, output_file='elo_fencer_timeline.csv'
 
             writer.writerow(row)
 
-    print(f"✓ ELO fencer timeline exported to {output_file}")
+    print(f"✓ Elo fencer timeline exported to {output_file}")
 
 
 def export_json_for_website(elo_system, history, session_stats, all_placements, output_dir='docs/data'):
@@ -1845,7 +1866,7 @@ def export_json_for_website(elo_system, history, session_stats, all_placements, 
     output_path = Path(output_dir)
     output_path.mkdir(parents=True, exist_ok=True)
 
-    # 1. ELO Ratings (leaderboard)
+    # 1. Elo Ratings (leaderboard)
     ratings_data = []
     for fencer, rating in sorted(elo_system.ratings.items(), key=lambda x: x[1], reverse=True):
         match_count = elo_system.get_match_count(fencer)
@@ -1859,7 +1880,7 @@ def export_json_for_website(elo_system, history, session_stats, all_placements, 
     with open(output_path / 'elo_ratings.json', 'w', encoding='utf-8') as f:
         json.dump(ratings_data, f, indent=2)
 
-    # 2. ELO History Timeline (for charts)
+    # 2. Elo History Timeline (for charts)
     timeline_data = []
     for date, phase, snapshot in elo_system.snapshots:
         snapshot_entry = {
@@ -2043,8 +2064,8 @@ def process_single_date(date_folder, base_dir='downloaded_sheets'):
 
 def main():
     # Process all dates
-    print("Processing all fencing sheets with ELO rating system...\n")
-    print(f"ELO Configuration:")
+    print("Processing all fencing sheets with Elo rating system...\n")
+    print(f"Elo Configuration:")
     print(f"  Base K-Factor: {BASE_K}")
     print(f"  Starting Rating: {STARTING_RATING}")
     print(f"  Rating Range: {RATING_FLOOR} - {RATING_CEILING}")
@@ -2076,7 +2097,7 @@ def main():
     export_session_stats(session_stats, output_dir / 'session_stats.csv')
     export_global_stats(session_stats, output_dir / 'global_stats.txt')
 
-    # Export ELO ratings (to outputs for backup)
+    # Export Elo ratings (to outputs for backup)
     export_elo_ratings(elo_system, output_dir / 'elo_ratings.csv')
     export_elo_history(elo_system, output_dir / 'elo_history.csv')
     export_elo_leaderboard_timeline(elo_system, output_dir / 'elo_leaderboard_timeline.csv')

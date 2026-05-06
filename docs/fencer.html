@@ -9,20 +9,20 @@
 </head>
 <body>
     <header>
-        <h1>🤺 Haverstock Fencing ELO Ratings</h1>
+        <h1>🤺 Haverstock Fencing Elo Ratings</h1>
         <nav>
             <a href="index.html">Leaderboard</a>
             <a href="fencer.html" class="active">Fencer Stats</a>
             <a href="sessions.html">Tournament History</a>
-            <a href="timeline.html">ELO Timeline</a>
-            <a href="matchups.html">Head-to-Head</a>
+            <a href="timeline.html">Elo Timeline</a>
+            <a href="about.html">About</a>
         </nav>
     </header>
 
     <main>
         <section class="intro">
             <h2>Individual Fencer Statistics</h2>
-            <p>View detailed statistics and ELO progression for any fencer.</p>
+            <p>View detailed statistics and Elo progression for any fencer.</p>
         </section>
 
         <section class="fencer-selector-section">
@@ -52,7 +52,7 @@
                     <div class="stat-subtext"><span id="win-rate">-</span>% win rate</div>
                 </div>
                 <div class="stat-card">
-                    <h4>Max ELO (All-Time)</h4>
+                    <h4>Max Elo (All-Time)</h4>
                     <div class="big-stat" id="max-elo">-</div>
                     <div class="stat-subtext" id="max-elo-note">-</div>
                 </div>
@@ -101,7 +101,7 @@
         </section>
 
         <section id="elo-chart-section" class="chart-section" style="display: none;">
-            <h3>ELO Rating Progression</h3>
+            <h3>Elo Rating Progression</h3>
             <canvas id="fencer-elo-chart"></canvas>
         </section>
 
@@ -123,8 +123,9 @@
                                 <th>Opponent</th>
                                 <th>Type</th>
                                 <th>Result</th>
-                                <th>Your ELO</th>
-                                <th>Opponent ELO</th>
+                                <th>Your Elo</th>
+                                <th>Opponent Elo</th>
+                                <th>🎯 Upset</th>
                             </tr>
                         </thead>
                         <tbody id="day-matches-body">
@@ -172,7 +173,8 @@
                                     <th>Date</th>
                                     <th>Type</th>
                                     <th>Result</th>
-                                    <th colspan="2">ELO Changes</th>
+                                    <th colspan="2">Elo Changes</th>
+                                    <th>🎯 Upset</th>
                                 </tr>
                             </thead>
                             <tbody id="h2h-match-history-body">
@@ -189,7 +191,7 @@
     </main>
 
     <footer>
-        <p>Haverstock Fencing Club | ELO Rating System</p>
+        <p>Haverstock Fencing Club | Elo Rating System | <a href="about.html" style="color: white; text-decoration: underline;">About</a></p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>

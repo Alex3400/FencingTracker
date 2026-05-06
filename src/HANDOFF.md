@@ -1,4 +1,4 @@
-# Fencing Tournament ELO Rating System - Complete Handoff
+# Fencing Tournament Elo Rating System - Complete Handoff
 
 **Project**: Haverstock Fencing Club Tournament Analysis  
 **Date**: 2026-04-23  
@@ -10,7 +10,7 @@
 1. [Overview](#overview)
 2. [What We Built](#what-we-built)
 3. [System Architecture](#system-architecture)
-4. [ELO Configuration Parameters](#elo-configuration-parameters)
+4. [Elo Configuration Parameters](#elo-configuration-parameters)
 5. [How the System Works](#how-the-system-works)
 6. [File Structure](#file-structure)
 7. [Running the System](#running-the-system)
@@ -24,13 +24,13 @@
 
 ## Overview
 
-This system processes fencing tournament data from Google Sheets, tracks match history, calculates comprehensive statistics, and implements a tuned ELO rating system to rank fencer skill levels.
+This system processes fencing tournament data from Google Sheets, tracks match history, calculates comprehensive statistics, and implements a tuned Elo rating system to rank fencer skill levels.
 
 **Key Features:**
 - Downloads tournament data from Google Sheets automatically
 - Parses both poule (round-robin) and DE (direct elimination) matches
 - Tracks complete match history with head-to-head records
-- Implements ELO rating system with margin-adjusted scoring
+- Implements Elo rating system with margin-adjusted scoring
 - Generates 8 output files with different views of the data
 - Processes 41 tournaments, 4,794 matches, 132 fencers
 
@@ -50,9 +50,9 @@ This system processes fencing tournament data from Google Sheets, tracks match h
    - Parses DE brackets (spatial layout, consecutive row pairs)
    - Tracks all matches between fencer pairs
    - Calculates comprehensive statistics
-   - Implements ELO rating system
+   - Implements Elo rating system
 
-3. **ELO Rating System**
+3. **Elo Rating System**
    - Dynamic K-factors based on experience
    - Margin-adjusted scoring for poules
    - Bracket importance weighting for DEs
@@ -68,8 +68,8 @@ This system processes fencing tournament data from Google Sheets, tracks match h
 fencing thing/
 ├── google_sheets_links.txt       # List of tournament URLs
 ├── download_sheets.py             # Download script
-├── track_match_history.py         # Main analysis + ELO system
-├── ELO_SYSTEM_DESIGN.md          # Complete ELO documentation
+├── track_match_history.py         # Main analysis + Elo system
+├── Elo_SYSTEM_DESIGN.md          # Complete Elo documentation
 ├── README.md                      # User-facing guide
 ├── HOW_TO_READ_THE_DATA.txt      # Explains bracket system
 ├── downloaded_sheets/             # Raw data from Google Sheets
@@ -81,7 +81,7 @@ fencing thing/
     ├── elo_ratings.csv
     ├── elo_history.csv
     ├── elo_history_example.txt
-    ├── ELO_SUMMARY.txt
+    ├── Elo_SUMMARY.txt
     ├── fencer_stats.csv
     ├── head_to_head_stats.csv
     ├── match_history.csv
@@ -92,7 +92,7 @@ fencing thing/
 
 ---
 
-## ELO Configuration Parameters
+## Elo Configuration Parameters
 
 All parameters are **global variables** at the top of `track_match_history.py` (lines 13-61).
 
@@ -102,7 +102,7 @@ BASE_K = 40                    # Base K-factor (volatility)
 STARTING_RATING = 1400         # New fencer initial rating
 RATING_FLOOR = 600             # Minimum rating
 RATING_CEILING = 2200          # Maximum rating
-ELO_SCALING_FACTOR = 400       # Standard ELO scaling (don't change)
+Elo_SCALING_FACTOR = 400       # Standard Elo scaling (don't change)
 ```
 
 ### Experience-Based K-Factors
@@ -193,7 +193,7 @@ For each tournament (in date order):
      - Randomize order (date-seeded) to prevent bias
      - Extract scores from both fencer perspectives
   
-  2. Process ELO for poule matches
+  2. Process Elo for poule matches
      - Calculate expected scores
      - Apply margin-adjusted actual scores
      - Update ratings with base K-factor
@@ -203,7 +203,7 @@ For each tournament (in date order):
      - Extract bracket levels (L1-2, L1-8, etc.)
      - Determine winners from 'V' indicators
   
-  4. Process ELO for DE matches
+  4. Process Elo for DE matches
      - Apply bracket weight multiplier
      - Apply field size multiplier
      - Update ratings
@@ -214,7 +214,7 @@ For each tournament (in date order):
   6. Calculate session statistics
 ```
 
-### 3. ELO Calculation Details
+### 3. Elo Calculation Details
 
 **Expected Score Formula:**
 ```python
@@ -244,7 +244,7 @@ new_rating = max(RATING_FLOOR, min(RATING_CEILING, old_rating + change))
 **Winners Can Lose Rating:**
 - If a highly-rated fencer barely beats a weak opponent
 - Example: Greg (1839) beats Tom S (1317) only 5-4 → Greg loses 11.3 points
-- This is correct ELO behavior with margin-adjusted scoring
+- This is correct Elo behavior with margin-adjusted scoring
 
 **Asymmetric Changes:**
 - Winners and losers can have different K-factors
@@ -296,14 +296,14 @@ Consecutive row pairs = matchups
 ### Source Code
 
 **`track_match_history.py`** (1,400+ lines)
-- Lines 13-61: ELO configuration (ALL TUNABLE PARAMETERS)
-- Lines 63-199: ELO calculation functions
-- Lines 201-278: ELORatingSystem class
+- Lines 13-61: Elo configuration (ALL TUNABLE PARAMETERS)
+- Lines 63-199: Elo calculation functions
+- Lines 201-278: EloRatingSystem class
 - Lines 280-423: MatchHistory class
 - Lines 446-554: Poule parsing
 - Lines 557-656: DE parsing
 - Lines 659-701: Session stats calculation
-- Lines 703-797: Main processing loop with ELO
+- Lines 703-797: Main processing loop with Elo
 - Lines 800-1,200: Export functions
 - Lines 1,330-1,368: Main entry point
 
@@ -331,9 +331,9 @@ python3 track_match_history.py
 
 **Output:**
 ```
-Processing all fencing sheets with ELO rating system...
+Processing all fencing sheets with Elo rating system...
 
-ELO Configuration:
+Elo Configuration:
   Base K-Factor: 40
   Starting Rating: 1400
   Rating Range: 600 - 2200
@@ -353,8 +353,8 @@ Processing 2025-05-06...
 ✓ Head-to-head statistics exported to outputs/head_to_head_stats.csv
 ✓ Session statistics exported to outputs/session_stats.csv
 ✓ Global statistics exported to outputs/global_stats.txt
-✓ ELO ratings exported to outputs/elo_ratings.csv
-✓ ELO history exported to outputs/elo_history.csv
+✓ Elo ratings exported to outputs/elo_ratings.csv
+✓ Elo history exported to outputs/elo_history.csv
 ```
 
 ---
@@ -366,7 +366,7 @@ Processing 2025-05-06...
 
 Columns:
 - Fencer name
-- Final ELO rating
+- Final Elo rating
 - Total matches played
 - Current K-factor
 - Status (Established or Provisional)
@@ -614,7 +614,7 @@ After modifying parameters:
 
 ## Results and Validation
 
-### Final ELO Distribution
+### Final Elo Distribution
 ```
 Elite (1800+):        Greg (1972), Fassel (1832)
 Strong (1600-1800):   8 fencers including Eric L, Alex Y, Fessal
@@ -654,7 +654,7 @@ Greg (1839) loses rating for narrow 5-4 win over Tom S (1317)
 **1. Winners with negative rating changes**
 - 52 instances in 4,794 matches (1.1%)
 - All are highly-rated fencers barely beating weak opponents
-- Correct ELO behavior with margin-adjusted scoring
+- Correct Elo behavior with margin-adjusted scoring
 
 **2. Asymmetric changes in upsets**
 - Winner gains more than loser loses (or vice versa)
@@ -674,7 +674,7 @@ Greg (1839) loses rating for narrow 5-4 win over Tom S (1317)
 
 1. **True Chronological Poule Order**
    - Requires timestamped match data
-   - Would improve accuracy of ELO calculations
+   - Would improve accuracy of Elo calculations
    - Currently using date-seeded randomization
 
 2. **Separate Poule/DE Ratings**
@@ -722,7 +722,7 @@ Greg (1839) loses rating for narrow 5-4 win over Tom S (1317)
 2. **Missing DE Data**
    - Some tournaments missing placement data
    - Falls back to "Unknown" winner
-   - No impact on ELO (uses match results)
+   - No impact on Elo (uses match results)
 
 3. **Inconsistent Bracket Naming**
    - Some sheets use different format
@@ -758,7 +758,7 @@ Important files to commit:
 - `track_match_history.py` (main code)
 - `download_sheets.py` (downloader)
 - `google_sheets_links.txt` (tournament list)
-- `ELO_SYSTEM_DESIGN.md` (documentation)
+- `Elo_SYSTEM_DESIGN.md` (documentation)
 - `outputs/` (generated files for analysis)
 
 Don't commit:
@@ -810,7 +810,7 @@ grep "L1-2" outputs/elo_history.csv
 ### File Locations
 
 **Configuration:** Lines 13-61 of `track_match_history.py`  
-**ELO logic:** Lines 63-199 of `track_match_history.py`  
+**Elo logic:** Lines 63-199 of `track_match_history.py`  
 **Main processing:** Lines 703-797 of `track_match_history.py`  
 **Output directory:** `outputs/`  
 **Raw data:** `downloaded_sheets/`
@@ -843,16 +843,16 @@ USE_MARGIN_SCORING = False
 
 **Documentation:**
 - This file: `HANDOFF.md`
-- ELO design: `ELO_SYSTEM_DESIGN.md`
+- Elo design: `Elo_SYSTEM_DESIGN.md`
 - User guide: `README.md`
 - Data explanation: `HOW_TO_READ_THE_DATA.txt`
 - Example guide: `outputs/elo_history_example.txt`
-- Results summary: `outputs/ELO_SUMMARY.txt`
+- Results summary: `outputs/Elo_SUMMARY.txt`
 
 **Key Conversation Topics:**
 - Initial parsing of poule/DE formats
 - Fixing duplicate match counting
-- Implementing ELO system from scratch
+- Implementing Elo system from scratch
 - Tuning parameters based on actual data
 - Handling provisional ratings
 - Creating readable output formats
@@ -862,7 +862,7 @@ USE_MARGIN_SCORING = False
 - 4,794 matches tracked
 - 132 fencers rated
 - 8 output files generated
-- ELO system validated and tuned
+- Elo system validated and tuned
 - Documentation complete
 
 ---

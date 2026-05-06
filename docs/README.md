@@ -1,6 +1,6 @@
-# Haverstock Fencing ELO Ratings Website
+# Haverstock Fencing Elo Ratings Website
 
-This is the static website that displays ELO ratings for Haverstock Fencing Club.
+This is the static website that displays Elo ratings for Haverstock Fencing Club.
 
 ## Setup
 
@@ -40,7 +40,7 @@ To update the website with new tournament data:
 ## Structure
 
 - `index.html` - Main leaderboard page
-- `timeline.html` - ELO progression charts (coming soon)
+- `timeline.html` - Elo progression charts (coming soon)
 - `matchups.html` - Head-to-head analyzer (coming soon)
 - `sessions.html` - Tournament history (coming soon)
 - `css/style.css` - Styling
@@ -52,6 +52,6 @@ To update the website with new tournament data:
 ### ✅ All Features Implemented:
 
 1. **Leaderboard** - Sortable, searchable table with status filtering
-2. **ELO Timeline** - Interactive charts showing rating progression over time
+2. **Elo Timeline** - Interactive charts showing rating progression over time
 3. **Head-to-Head Analyzer** - Compare any two fencers with detailed statistics
 4. **Tournament History** - Browse all past tournaments with winners and stats

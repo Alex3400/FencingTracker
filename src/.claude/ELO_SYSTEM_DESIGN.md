@@ -1,15 +1,15 @@
-# ELO Rating System for Fencing Tournaments
+# Elo Rating System for Fencing Tournaments
 
-## What is ELO?
+## What is Elo?
 
-ELO is a rating system that assigns each player a numerical score representing their skill level. When two players compete, the system:
+Elo is a rating system that assigns each player a numerical score representing their skill level. When two players compete, the system:
 1. Predicts who should win based on their current ratings
 2. Updates both ratings after the match based on the actual result
 3. Rewards upsets (lower-rated player winning) more than expected outcomes
 
 The key insight: **Your rating changes based on whether you performed better or worse than expected.**
 
-## How ELO Works
+## How Elo Works
 
 ### Basic Formula
 
@@ -69,7 +69,7 @@ Where new players begin (typically 1000, 1200, or 1500).
 - Low start (1000): New players must "prove themselves"
 - Average of existing players: Most fair for established system
 
-### 3. **Scaling Factor** (400 in standard ELO)
+### 3. **Scaling Factor** (400 in standard Elo)
 Controls rating difference interpretation.
 
 Standard: 400 means a 200-point difference = ~75% win probability
@@ -77,7 +77,7 @@ Standard: 400 means a 200-point difference = ~75% win probability
 **Usually don't change this** - it's standardized for comparison across systems.
 
 ### 4. **Score Margin Integration**
-Standard ELO only cares about win/loss. You can modify it to consider margin of victory.
+Standard Elo only cares about win/loss. You can modify it to consider margin of victory.
 
 **Option A: Margin Multiplier**
 ```
@@ -157,7 +157,7 @@ Instead of individual match importance, could weight by "highest bracket reached
 
 ```
 After each tournament:
-- Apply standard ELO for all matches
+- Apply standard Elo for all matches
 - Bonus adjustment based on final placement bracket:
   
   Win (1st):     +50 rating
@@ -227,8 +227,8 @@ After 6 months absence: Rating = 0.95 × Rating + 0.05 × 1500
 
 **Separate Poule/DE Ratings:**
 Could maintain two ratings:
-- Poule ELO (5-touch fencing skill)
-- DE ELO (elimination bracket performance)
+- Poule Elo (5-touch fencing skill)
+- DE Elo (elimination bracket performance)
 
 This captures that some fencers are better in round-robin vs elimination formats.
 
@@ -553,9 +553,9 @@ PLACEMENT_BONUSES = {
 
 **Winner bonus (NEW):**
 - Winning a tournament is psychologically and competitively significant
-- Provides additional reward beyond individual match ELO
+- Provides additional reward beyond individual match Elo
 - Helps differentiate consistent finalists from occasional winners
-- Applied after all match-based ELO updates for that session
+- Applied after all match-based Elo updates for that session
 
 **Dynamic K-factor (NEW):**
 - New fencers (< 20 matches): K=50 (rapid convergence)
@@ -581,10 +581,10 @@ After implementation, validate:
 
 1. **Do top fencers reach 1800+?** (Greg, Garen should be highest)
 2. **Rating stability**: Do veteran ratings stabilize after ~10 sessions?
-3. **Predictive power**: Does higher ELO predict wins ~70-80% of the time?
+3. **Predictive power**: Does higher Elo predict wins ~70-80% of the time?
 4. **New fencer convergence**: Do ratings stabilize within 5-10 tournaments?
 5. **Upset rewards**: Do lower-rated winners get significant boosts?
-6. **Final ranking correlation**: Do ELO rankings match observed placement stats?
+6. **Final ranking correlation**: Do Elo rankings match observed placement stats?
 
 If ratings seem too volatile: decrease K
 If ratings seem too compressed: increase bracket weights or K

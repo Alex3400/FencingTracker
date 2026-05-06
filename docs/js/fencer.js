@@ -14,6 +14,26 @@ const COLORS = {
     danger: '#e74c3c'
 };
 
+// Calculate color for upset indicator (grey to bright red gradient)
+function getUpsetColor(upsetScore) {
+    // Grey (224,224,224) to Bright Red (255,0,0)
+    const grey = [224, 224, 224];
+    const red = [255, 0, 0];
+
+    // Clamp upset score to 0-1 range
+    const upset = Math.min(Math.max(upsetScore, 0), 1);
+
+    // Apply non-linear scaling (power of 2.5) to emphasize surprises
+    // This keeps expected results very grey and makes true upsets pop
+    const t = Math.pow(upset, 2.5);
+
+    const r = Math.round(grey[0] + (red[0] - grey[0]) * t);
+    const g = Math.round(grey[1] + (red[1] - grey[1]) * t);
+    const b = Math.round(grey[2] + (red[2] - grey[2]) * t);
+
+    return `rgb(${r}, ${g}, ${b})`;
+}
+
 async function loadData() {
     try {
         const [ratingsResponse, timelineResponse, h2hResponse, statsResponse, historyResponse, sessionsResponse] = await Promise.all([
@@ -70,7 +90,9 @@ function parseMatchHistoryCSV(text) {
             'Loser': values[7],
             'Loser Old Rating': values[8],
             'Loser New Rating': values[9],
-            'Loser Change': values[10]
+            'Loser Change': values[10],
+            'Expected': values[11],
+            'Upset Score': values[12]
         };
     });
 }
@@ -167,9 +189,9 @@ function displayFencerStats(fencerName, autoSelectDate = null) {
         document.getElementById('win-rate').textContent = '-';
     }
 
-    // Max ELO
-    if (statsInfo && statsInfo['Max ELO (All-Time)']) {
-        const maxElo = parseFloat(statsInfo['Max ELO (All-Time)']);
+    // Max Elo
+    if (statsInfo && statsInfo['Max Elo (All-Time)']) {
+        const maxElo = parseFloat(statsInfo['Max Elo (All-Time)']);
         if (!isNaN(maxElo)) {
             document.getElementById('max-elo').textContent = maxElo.toFixed(1);
             document.getElementById('max-elo-note').textContent = 'Peak rating achieved';
@@ -265,7 +287,7 @@ function displayFencerStats(fencerName, autoSelectDate = null) {
         document.getElementById('latest-appearance-subtext').textContent = '-';
     }
 
-    // Draw ELO chart
+    // Draw Elo chart
     drawFencerChart(fencerName);
 
     // Display placement stats
@@ -603,7 +625,7 @@ function drawFencerChart(fencerName) {
                 y: {
                     title: {
                         display: true,
-                        text: 'ELO Rating'
+                        text: 'Elo Rating'
                     },
                     beginAtZero: false
                 }
@@ -663,13 +685,14 @@ function showDayMatches(fencerName, date) {
     // Show results section
     document.getElementById('day-matches-results').style.display = 'block';
 
-    // Set title
+    // Set title with link to tournament page
     const formattedDate = new Date(date).toLocaleDateString('en-GB', {
         year: 'numeric',
         month: 'long',
         day: 'numeric'
     });
-    document.getElementById('day-matches-title').textContent = `Matches on ${formattedDate}`;
+    const titleElement = document.getElementById('day-matches-title');
+    titleElement.innerHTML = `Matches on <a href="sessions.html?date=${encodeURIComponent(date)}" class="fencer-link">${formattedDate}</a>`;
 
     // Populate table
     const tbody = document.getElementById('day-matches-body');
@@ -705,6 +728,17 @@ function showDayMatches(fencerName, date) {
         const oppChangeSign = opponentChange >= 0 ? '+' : '';
         opponentEloCell.innerHTML = `${opponentOldRating.toFixed(1)} → ${opponentNewRating.toFixed(1)} <span class="${oppChangeClass}">(${oppChangeSign}${opponentChange.toFixed(1)})</span>`;
 
+        // Create upset indicator cell
+        const upsetScore = parseFloat(match['Upset Score']) || 0;
+        const upsetCell = document.createElement('td');
+        upsetCell.className = 'upset-cell';
+        upsetCell.innerHTML = `
+            <div class="upset-indicator"
+                 style="background-color: ${getUpsetColor(upsetScore)};"
+                 title="Upset Score: ${upsetScore.toFixed(3)}">
+            </div>
+        `;
+
         row.innerHTML = `
             <td><a href="fencer.html?fencer=${encodeURIComponent(opponent)}" class="fencer-link">${opponent}</a></td>
             <td>${match['Match Type']}</td>
@@ -712,6 +746,7 @@ function showDayMatches(fencerName, date) {
         `;
         row.appendChild(fencerEloCell);
         row.appendChild(opponentEloCell);
+        row.appendChild(upsetCell);
 
         tbody.appendChild(row);
     });
@@ -947,6 +982,17 @@ function displayMatchHistory(fencer1, fencer2) {
             f2Cell.innerHTML = `<strong>${fencer2}</strong><br>${winnerOldRating.toFixed(1)} → ${winnerNewRating.toFixed(1)} <span class="${f2ChangeClass}">(${f2ChangeSign}${winnerChange.toFixed(1)})</span>`;
         }
 
+        // Create upset indicator cell
+        const upsetScore = parseFloat(match['Upset Score']) || 0;
+        const upsetCell = document.createElement('td');
+        upsetCell.className = 'upset-cell';
+        upsetCell.innerHTML = `
+            <div class="upset-indicator"
+                 style="background-color: ${getUpsetColor(upsetScore)};"
+                 title="Upset Score: ${upsetScore.toFixed(3)}">
+            </div>
+        `;
+
         row.innerHTML = `
             <td>${formattedDate}</td>
             <td>${match['Match Type']}</td>
@@ -954,6 +1000,7 @@ function displayMatchHistory(fencer1, fencer2) {
         `;
         row.appendChild(f1Cell);
         row.appendChild(f2Cell);
+        row.appendChild(upsetCell);
 
         tbody.appendChild(row);
     });

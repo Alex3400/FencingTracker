@@ -29,7 +29,7 @@ To test the website on your computer before deploying:
    ```bash
    cd /Users/ayule/PycharmProjects/FencingTracker
    git add docs/
-   git commit -m "Add ELO ratings website"
+   git commit -m "Add Elo ratings website"
    git push origin main
    ```
 
@@ -77,7 +77,7 @@ That's it! The website will automatically update.
    - Filter by Established (30+ matches) or Provisional
    - Top 3 highlighted in gold/silver/bronze
 
-2. **ELO Timeline** (`timeline.html`)
+2. **Elo Timeline** (`timeline.html`)
    - Interactive line charts showing rating progression
    - Select any fencers to compare
    - "Top 5" quick button

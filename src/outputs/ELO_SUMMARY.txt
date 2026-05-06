@@ -1,5 +1,5 @@
 ================================================================
-HAVERSTOCK FENCING ELO RATING SYSTEM - SUMMARY
+HAVERSTOCK FENCING Elo RATING SYSTEM - SUMMARY
 ================================================================
 
 Implementation Date: 2026-04-23

@@ -3,6 +3,26 @@ let sessionsData = [];
 let matchHistoryData = [];
 let dataTable = null;
 
+// Calculate color for upset indicator (grey to bright red gradient)
+function getUpsetColor(upsetScore) {
+    // Grey (224,224,224) to Bright Red (255,0,0)
+    const grey = [224, 224, 224];
+    const red = [255, 0, 0];
+
+    // Clamp upset score to 0-1 range
+    const upset = Math.min(Math.max(upsetScore, 0), 1);
+
+    // Apply non-linear scaling (power of 2.5) to emphasize surprises
+    // This keeps expected results very grey and makes true upsets pop
+    const t = Math.pow(upset, 2.5);
+
+    const r = Math.round(grey[0] + (red[0] - grey[0]) * t);
+    const g = Math.round(grey[1] + (red[1] - grey[1]) * t);
+    const b = Math.round(grey[2] + (red[2] - grey[2]) * t);
+
+    return `rgb(${r}, ${g}, ${b})`;
+}
+
 async function loadSessions() {
     try {
         const [sessionsResponse, matchHistoryResponse] = await Promise.all([
@@ -39,7 +59,9 @@ function parseMatchHistoryCSV(text) {
             'Loser': values[7],
             'Loser Old Rating': values[8],
             'Loser New Rating': values[9],
-            'Loser Change': values[10]
+            'Loser Change': values[10],
+            'Expected': values[11],
+            'Upset Score': values[12]
         };
     });
 }
@@ -173,7 +195,7 @@ function displayAllMatches(date) {
     // Group DE matches by bracket
     const deByBracket = {};
     deMatches.forEach(match => {
-        const bracket = match['Match Type'].replace('DE-', '');
+        const bracket = match['Match Type'];
         if (!deByBracket[bracket]) {
             deByBracket[bracket] = [];
         }
@@ -181,9 +203,7 @@ function displayAllMatches(date) {
     });
 
     // Get all bracket names and sort them chronologically
-    // Parse bracket names like "L1-2", "L9-16", etc. and sort by the upper bound descending
     const bracketOrder = Object.keys(deByBracket).sort((a, b) => {
-        // Extract the upper bound number from bracket names like "L1-32" or "L9-16"
         const getUpperBound = (bracket) => {
             const match = bracket.match(/L\d+-(\d+)/);
             return match ? parseInt(match[1]) : 0;
@@ -192,8 +212,6 @@ function displayAllMatches(date) {
         const aUpper = getUpperBound(a);
         const bUpper = getUpperBound(b);
 
-        // Sort by upper bound descending (larger brackets first, e.g., L1-32 before L1-16)
-        // If same upper bound, sort by lower bound ascending (e.g., L1-8 before L5-8)
         if (aUpper !== bUpper) {
             return bUpper - aUpper;
         }
@@ -213,7 +231,6 @@ function displayAllMatches(date) {
     pouleMatches.forEach(match => {
         allMatches.push({
             type: 'Poule',
-            typeDisplay: 'Poule',
             match: match
         });
     });
@@ -224,25 +241,24 @@ function displayAllMatches(date) {
             deByBracket[bracket].forEach(match => {
                 allMatches.push({
                     type: bracket,
-                    typeDisplay: `DE-${bracket}`,
                     match: match
                 });
             });
         }
     });
 
-    // Create single table with all matches
+    // Create single table with all matches (similar to head-to-head style)
     let html = '<div class="match-history-table-wrapper">';
-    html += '<table class="matches-table" style="width: 100%;">';
+    html += '<table id="session-matches-table" class="matches-table" style="width: 100%;">';
     html += '<thead><tr>';
-    html += '<th style="width: 15%;">Type</th>';
-    html += '<th style="width: 35%;">Result</th>';
-    html += '<th style="width: 25%;">Winner ELO</th>';
-    html += '<th style="width: 25%;">Loser ELO</th>';
+    html += '<th>Type</th>';
+    html += '<th>Result</th>';
+    html += '<th colspan="2">Elo Changes</th>';
+    html += '<th>🎯 Upset</th>';
     html += '</tr></thead>';
     html += '<tbody>';
 
-    allMatches.forEach(({ typeDisplay, type, match }) => {
+    allMatches.forEach(({ type, match }) => {
         const winnerChange = parseFloat(match['Winner Change']);
         const loserChange = parseFloat(match['Loser Change']);
         const winnerChangeClass = winnerChange >= 0 ? 'positive' : 'negative';
@@ -255,25 +271,39 @@ function displayAllMatches(date) {
         const loserOld = parseFloat(match['Loser Old Rating']);
         const loserNew = parseFloat(match['Loser New Rating']);
 
-        // Extract score from result for poule matches
-        let resultText;
-        if (type === 'Poule') {
-            // Parse score from result like "Alex Y 5-3 Vivian"
-            const resultStr = match['Result'].replace(/^\(W\)\s*/, '');
-            // Find the score pattern (X-Y where X and Y are digits)
-            const scoreMatch = resultStr.match(/\s(\d-\d)\s/);
-            const score = scoreMatch ? scoreMatch[1] : '-';
-            resultText = `(W) ${match['Winner']} ${score} ${match['Loser']}`;
-        } else {
-            // DE match - just show names with dash
-            resultText = `(W) ${match['Winner']} - ${match['Loser']}`;
-        }
+        // Get upset score
+        const upsetScore = parseFloat(match['Upset Score']) || 0;
+        const upsetColor = getUpsetColor(upsetScore);
+
+        // Format type display
+        const typeDisplay = type === 'Poule' ? 'Poule' : type;
 
         html += `<tr>`;
         html += `<td>${typeDisplay}</td>`;
-        html += `<td>${resultText}</td>`;
-        html += `<td>${winnerOld.toFixed(1)} → ${winnerNew.toFixed(1)} <span class="${winnerChangeClass}">(${winnerSign}${winnerChange.toFixed(1)})</span></td>`;
-        html += `<td>${loserOld.toFixed(1)} → ${loserNew.toFixed(1)} <span class="${loserChangeClass}">(${loserSign}${loserChange.toFixed(1)})</span></td>`;
+        html += `<td>${match['Result']}</td>`;
+
+        // Winner Elo cell
+        html += `<td class="winner-elo">`;
+        html += `<strong><a href="fencer.html?fencer=${encodeURIComponent(match['Winner'])}" class="fencer-link">${match['Winner']}</a></strong><br>`;
+        html += `${winnerOld.toFixed(1)} → ${winnerNew.toFixed(1)} `;
+        html += `<span class="${winnerChangeClass}">(${winnerSign}${winnerChange.toFixed(1)})</span>`;
+        html += `</td>`;
+
+        // Loser Elo cell
+        html += `<td class="loser-elo">`;
+        html += `<a href="fencer.html?fencer=${encodeURIComponent(match['Loser'])}" class="fencer-link">${match['Loser']}</a><br>`;
+        html += `${loserOld.toFixed(1)} → ${loserNew.toFixed(1)} `;
+        html += `<span class="${loserChangeClass}">(${loserSign}${loserChange.toFixed(1)})</span>`;
+        html += `</td>`;
+
+        // Upset indicator cell
+        html += `<td class="upset-cell">`;
+        html += `<div class="upset-indicator" `;
+        html += `style="background-color: ${upsetColor};" `;
+        html += `title="Upset Score: ${upsetScore.toFixed(3)}">`;
+        html += `</div>`;
+        html += `</td>`;
+
         html += `</tr>`;
     });
 
