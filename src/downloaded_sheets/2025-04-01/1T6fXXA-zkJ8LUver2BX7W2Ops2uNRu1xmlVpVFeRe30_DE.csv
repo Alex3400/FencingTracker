@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Greg,1,Greg,,Greg,V,Greg,V,Greg,V,Greg,V,Greg,2500,7.0,Shevy,100,25
+2,Charlie ,32,_,,Enrik,,Pierre,,Lucas,,Willie,,Willie,2125,5.0,Eric L,85,25
+3,Willie,17,Enrik,V,Richard B,,Lucas,V,Willie,V,Lucas,,Charlie ,1875,8.0,Pierre,75,25
+4,Vadym,16,Amaury,,Pierre,V,Vadym,,Charlie ,,Charlie ,V,Lucas,1675,22.0,Maiya,67,25
+5,Eric L,9,Richard B,V,Eric L,,Willie,V,Pierre,V,Pierre,,Sammy,1525,3.0,Willie,61,25
+6,Sammy,24,Nat,,Lucas,V,Sammy,,Vadym,,Sammy,V,Pierre,1375,15.0,Joshua,55,25
+7,Shevy,25,_,,Marinko,,Shevy,,Sammy,V,Vadym,V,Vadym,1275,13.0,Marinko,51,25
+8,Pierre,8,Pierre,,Vadym,V,Charlie ,V,Shevy,,Shevy,,Shevy,1175,24.0,Nat,47,25
+9,Richard B,5,Eric L,,Willie,V,Enrik,V,Enrik,,Eric L,V,Eric L,1075,18.0,Eugene,43,25
+10,Steph,28,_,,Vladimir ,,Richard B,,Eric L,V,Vladimir ,,Vladimir ,1000,,,40,25
+11,Maxie,21,Lucas,V,Maxie,,Eric L,V,Vladimir ,V,Enrik,,Steph,925,9.0,Richard B,37,25
+12,Vincent,12,Vincent,,Sammy,V,Marinko,,Steph,,Steph,V,Enrik,850,17.0,Enrik,34,25
+13,Marinko,13,Marinko,V,Shevy,V,Vladimir ,V,Richard B,V,Richard B,,Maxie,775,2.0,Charlie ,31,25
+14,Alejo,20,Alex TE,,Steph,,Maxie,,Marinko,,Maxie,V,Richard B,700,19.0,Vladimir ,28,25
+15,Joshua,29,_,,Joshua,,Steph,V,Maxie,V,Marinko,,Joshua,650,16.0,Amaury,26,25
+16,Amaury,4,Vadym,,Charlie ,V,Joshua,,Joshua,,Joshua,V,Marinko,600,1.0,Greg,24,25
+17,Enrik,3,Willie,,_,,Amaury,V,Amaury,V,Amaury,V,Amaury,550,10.0,Steph,22,25
+18,Eugene,30,_,,Amaury,,Nat,,Vincent,,Alejo,,Alejo,500,12.0,Vincent,20,25
+19,Vladimir ,19,Vladimir ,V,Nat,,Vincent,V,Alejo,V,Vincent,V,Vincent,450,11.0,Maxie,18,25
+20,Alex TE,14,Alejo,,_,,Alex TE,,Eugene,,Eugene,,Eugene,400,4.0,Vadym,16,25
+21,Lucas,11,Maxie,V,_,,Alejo,V,Nat,,Alex TE,V,Alex TE,350,20.0,Alex TE,14,25
+22,Maiya,22,Maiya,,Vincent,,Maiya,,Alex TE,V,Maiya,,Maiya,300,21.0,Lucas,12,25
+23,Andy R,27,_,,Alex TE,,Andy R,,Maiya,V,Nat,,Andy R,250,23.0,Andy R,10,25
+24,Nat,6,Sammy,,_,,Eugene,V,Andy R,,Andy R,V,Nat,225,14.0,Alejo,9,25
+25,_,7,Shevy,,_,,_,,_,,_,,_,200,6.0,Sammy,8,25
+26,_,26,_,,Alejo,,_,,_,,_,,_,175,,,7,25
+27,_,23,Andy R,,Maiya,,_,,_,,_,,_,150,,,6,25
+28,_,10,Steph,V,_,,_,,_,,_,,_,125,,,5,25
+29,_,15,Joshua,V,_,,_,,_,,_,,_,100,,,4,25
+30,_,18,Eugene,,Andy R,,_,,_,,_,,_,75,,,3,25
+31,_,31,_,,Eugene,,_,,_,,_,,_,50,,,2,25
+32,_,2,Charlie ,,_,,_,,_,,_,,_,25,,,1,25

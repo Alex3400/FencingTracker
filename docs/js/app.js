@@ -2,6 +2,8 @@
 let ratingsData = [];
 let sessionsData = [];
 let dataTable = null;
+let currentActivityFilter = 'active'; // Default filter
+let filterListenerAttached = false; // Flag to prevent duplicate listeners
 
 async function loadRatings() {
     try {
@@ -13,17 +15,65 @@ async function loadRatings() {
         ratingsData = await ratingsResponse.json();
         sessionsData = await sessionsResponse.json();
 
-        displayRatings(ratingsData);
+        // Load saved filter preference from localStorage
+        const savedFilter = localStorage.getItem('activityFilter');
+        if (savedFilter) {
+            currentActivityFilter = savedFilter;
+            const filterSelect = document.getElementById('activity-filter');
+            if (filterSelect) {
+                filterSelect.value = savedFilter;
+            }
+        }
+
+        applyActivityFilter();
         displayLatestSession();
         updateLastUpdate();
+
+        // Attach event listener after data is loaded (only once)
+        if (!filterListenerAttached) {
+            const activityFilter = document.getElementById('activity-filter');
+            if (activityFilter) {
+                activityFilter.addEventListener('change', (e) => {
+                    currentActivityFilter = e.target.value;
+                    // Save preference to localStorage
+                    localStorage.setItem('activityFilter', currentActivityFilter);
+                    applyActivityFilter();
+                });
+                filterListenerAttached = true;
+            }
+        }
     } catch (error) {
         console.error('Error loading ratings:', error);
         document.getElementById('ratings-body').innerHTML =
-            '<tr><td colspan="4" style="text-align: center; color: red;">Error loading data. Please try again later.</td></tr>';
+            '<tr><td colspan="5" style="text-align: center; color: red;">Error loading data. Please try again later.</td></tr>';
     }
 }
 
+function applyActivityFilter() {
+    const filterValue = currentActivityFilter;
+    let filteredData = ratingsData;
+
+    if (filterValue === 'active') {
+        // Show only Active fencers
+        filteredData = ratingsData.filter(f => f.active_status === 'Active');
+    } else if (filterValue === 'semi-active') {
+        // Show Active and Semi-active fencers
+        filteredData = ratingsData.filter(f =>
+            f.active_status === 'Active' || f.active_status === 'Semi-active'
+        );
+    }
+    // 'all' shows everyone
+
+    displayRatings(filteredData);
+}
+
 function displayRatings(data) {
+    // Destroy existing DataTable first
+    if (dataTable) {
+        dataTable.destroy();
+        dataTable = null;
+    }
+
     const tbody = document.getElementById('ratings-body');
     tbody.innerHTML = '';
 
@@ -37,33 +87,42 @@ function displayRatings(data) {
         else if (rank === 2) rankClass = 'rank-2';
         else if (rank === 3) rankClass = 'rank-3';
 
+        // Status badge styling
+        let statusBadge = '';
+        if (fencer.active_status) {
+            let statusClass = 'status-inactive';
+            if (fencer.active_status === 'Active') {
+                statusClass = 'status-active';
+            } else if (fencer.active_status === 'Semi-active') {
+                statusClass = 'status-semi-active';
+            }
+            statusBadge = `<span class="status-badge ${statusClass}">${fencer.active_status}</span>`;
+        } else {
+            statusBadge = '<span style="color: #999;">N/A</span>';
+        }
+
         row.innerHTML = `
             <td class="${rankClass}">${rank}</td>
             <td><a href="fencer.html?fencer=${encodeURIComponent(fencer.fencer)}" class="fencer-link">${fencer.fencer}</a></td>
+            <td>${statusBadge}</td>
             <td><strong>${fencer.rating}</strong></td>
             <td>${fencer.matches}</td>
         `;
         tbody.appendChild(row);
     });
 
-    // Initialize or update DataTable
-    if (dataTable) {
-        dataTable.destroy();
-    }
-
+    // Initialize DataTable
     dataTable = $('#ratings-table').DataTable({
         paging: true,
         searching: true,
         ordering: true,
         pageLength: 25,
-        order: [[2, 'desc']], // Sort by rating column (descending)
+        order: [[3, 'desc']], // Sort by rating column (descending)
         columnDefs: [
             { orderable: false, targets: 0 } // Don't allow sorting by rank
         ]
     });
 }
-
-// Filter function removed - status system no longer used
 
 function displayLatestSession() {
     if (!sessionsData || sessionsData.length === 0) {

@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Eric L,1,Eric L,,Eric L,,Vadym,,Alejo,V,Alejo,,Greg,2100,3.0,Pierre,100,21
+2,Greg,32,_,,Vadym,V,Alejo,V,Shevy,,Greg,V,Alejo,1785,11.0,Richard B,85,21
+3,Pierre,17,Garen ,,Eugene,,Andy H,,Max T,,Shevy,,Max T,1575,6.0,Max T,75,21
+4,Shevy,16,Vadym,V,Alejo,V,Shevy,V,Greg,V,Max T,V,Shevy,1407,12.0,Giles,67,21
+5,Andy H,9,Eugene,,Andy H,V,Anna Z,,Vadym,,Andy H,,Anna Z,1281,1.0,Eric L,61,21
+6,Max T,24,_,,Giles,,Max T,V,Andy H,V,Anna Z,V,Andy H,1155,9.0,Eugene,55,21
+7,Tom,25,_,,Colin ,,Kamal,,Anna Z,V,Vadym,V,Vadym,1071,,,51,21
+8,Alejo,8,Alejo,,Shevy,V,Greg,V,Kamal,,Kamal,,Kamal,987,4.0,Shevy,47,21
+9,Eugene,5,Andy H,,Pierre,,Eric L,V,Eric L,,Colin ,,Charlie ,903,14.0,Anna Z,43,21
+10,Kamal,28,_,,Anna Z,V,Eugene,,Colin ,V,Charlie ,V,Colin ,840,5.0,Andy H,40,21
+11,Richard B,21,_,,Richard B,,Giles,,Richard B,,Eric L,,Richard B,777,19.0,Nat,37,21
+12,Giles,12,Giles,,Max T,V,Colin ,V,Charlie ,V,Richard B,V,Eric L,714,13.0,Colin ,34,21
+13,Colin ,13,Colin ,,Tom,,Pierre,,Eugene,V,Eugene,,Pierre,651,,,31,21
+14,Anna Z,20,_,,Kamal,V,Richard B,V,Giles,,Pierre,V,Eugene,588,10.0,Kamal,28,21
+15,Charlie ,29,_,,Charlie ,,Tom,,Pierre,V,Giles,V,Giles,546,7.0,Tom,26,21
+16,Vadym,4,Shevy,,Greg,V,Charlie ,V,Tom,,Tom,,Tom,504,2.0,Greg,24,21
+17,Garen ,3,Pierre,,_,,Garen ,,Garen ,,Garen ,V,Garen ,462,18.0,Etienne,22,21
+18,Etienne,30,_,,Garen ,,_,,_,,Etienne,,Etienne,420,16.0,Vadym,20,21
+19,Nat,19,Nat,,_,,_,,Nat,,_,,Nat,378,15.0,Charlie ,18,21
+20,_,14,Anna Z,V,_,,_,,Etienne,V,Nat,,_,336,8.0,Alejo,16,21
+21,_,11,Richard B,,_,,Nat,,_,,_,,_,294,17.0,Garen ,14,21
+22,_,22,_,,_,,_,,_,,_,,_,252,,,12,21
+23,_,27,_,,_,,_,,_,,_,,_,210,,,10,21
+24,_,6,Max T,,_,,Etienne,,_,,_,,_,189,,,9,21
+25,_,7,Tom,,_,,_,,_,,_,,_,168,,,8,21
+26,_,26,_,,Nat,,_,,_,,_,,_,147,,,7,21
+27,_,23,_,,_,,_,,_,,_,,_,126,,,6,21
+28,_,10,Kamal,,_,,_,,_,,_,,_,105,,,5,21
+29,_,15,Charlie ,V,_,,_,,_,,_,,_,84,,,4,21
+30,_,18,Etienne,,_,,_,,_,,_,,_,63,,,3,21
+31,_,31,_,,Etienne,,_,,_,,_,,_,42,,,2,21
+32,_,2,Greg,,_,,_,,_,,_,,_,21,,,1,21

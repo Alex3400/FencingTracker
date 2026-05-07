@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Anna Z,1,Anna Z,,Anna Z,,Anna Z,,Alejo,,Lionel,,,1300,9.0,Richard B,100,13
+2,Alex TR,32,_,,_,,Alejo,V,Lionel,V,Greg,,,1105,3.0,Greg,85,13
+3,Greg,17,_,,Richard B,,Alex TE,,Greg,V,Alejo,,,975,11.0,Emma,75,13
+4,Lionel,16,_,,Alejo,V,Lionel,V,Steph,,Steph,,,871,1.0,Anna Z,67,13
+5,Alex TE,9,Richard B,,Alex TE,V,Greg,V,Anna Z,V,Anna Z,,Alex TR,793,5.0,Alex TE,61,13
+6,Colin ,24,_,,Charlie ,,Colin ,,Alex TE,,Alex TR,V,Anna Z,715,4.0,Lionel,55,13
+7,Steph,25,_,,marinko,,Steph,V,Colin ,,Alex TE,V,Alex TE,663,6.0,Colin ,51,13
+8,Alejo,8,Alejo,,Lionel,V,Alex TR,,Alex TR,V,Colin ,,Colin ,611,10.0,Etienne,47,13
+9,Richard B,5,Alex TE,,Greg,,_,,Richard B,,marinko,,Etienne,559,7.0,Steph,43,13
+10,Etienne,28,_,,_,,Richard B,,marinko,V,Etienne,V,marinko,520,2.0,Alex TR,40,13
+11,Emma,21,_,,Emma,,Charlie ,,Emma,,Richard B,V,Richard B,481,8.0,Alejo,37,13
+12,Charlie ,12,Charlie ,,Colin ,V,marinko,V,Etienne,V,Emma,,Emma,442,12.0,Charlie ,34,13
+13,marinko,13,marinko,,Steph,V,_,,_,,Charlie ,,Charlie ,403,13.0,marinko,31,13
+14,_,20,_,,Etienne,,Emma,,Charlie ,,_,,_,364,,,28,13
+15,_,29,_,,_,,Etienne,,_,,_,,_,338,,,26,13
+16,_,4,Lionel,,Alex TR,,_,,_,,_,,_,312,,,24,13
+17,_,3,Greg,,_,,_,,_,,_,,_,286,,,22,13
+18,_,30,_,,_,,_,,_,,_,,_,260,,,20,13
+19,_,19,_,,_,,_,,_,,_,,_,234,,,18,13
+20,_,14,_,,_,,_,,_,,_,,_,208,,,16,13
+21,_,11,Emma,,_,,_,,_,,_,,_,182,,,14,13
+22,_,22,_,,_,,_,,_,,_,,_,156,,,12,13
+23,_,27,_,,_,,_,,_,,_,,_,130,,,10,13
+24,_,6,Colin ,,_,,_,,_,,_,,_,117,,,9,13
+25,_,7,Steph,,_,,_,,_,,_,,_,104,,,8,13
+26,_,26,_,,_,,_,,_,,_,,_,91,,,7,13
+27,_,23,_,,_,,_,,_,,_,,_,78,,,6,13
+28,_,10,Etienne,,_,,_,,_,,_,,_,65,,,5,13
+29,_,15,_,,_,,_,,_,,_,,_,52,,,4,13
+30,_,18,_,,_,,_,,_,,_,,_,39,,,3,13
+31,_,31,_,,_,,_,,_,,_,,_,26,,,2,13
+32,_,2,Alex TR,,_,,_,,_,,_,,_,13,,,1,13

@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Pierre,1,Pierre,,Pierre,,Pierre,V,Pierre,V,Pierre,,Greg,1400,2.0,Lionel,100,14
+2,Lionel,32,_,,_,,Kamal,,Charlie ,,Greg,V,Pierre,1190,12.0,Vadym,85,14
+3,Greg,17,_,,Anna Z,,Charlie ,V,Greg,V,Charlie ,,Lionel,1050,11.0,Richard,75,14
+4,Amaury,16,_,,Kamal,V,Amaury,,Lionel,,Lionel,V,Charlie ,938,10.0,Giles,67,14
+5,Charlie ,9,Anna Z,,Charlie ,V,Greg,V,Kamal,,Amaury,V,Amaury,854,4.0,Amaury,61,14
+6,Colin ,24,_,,Vadym,,Richard,,Amaury,V,Tom,,Tom,770,1.0,Pierre,55,14
+7,Tom,25,_,,Pablo,,Tom,,Richard,,Kamal,,Richard,714,13.0,Pablo,51,14
+8,Kamal,8,Kamal,,Amaury,V,Lionel,V,Tom,V,Richard,V,Kamal,658,8.0,Kamal,47,14
+9,Anna Z,5,Charlie ,,Greg,,_,,Anna Z,,Vadym,,,602,9.0,Anna Z,43,14
+10,Giles,28,_,,_,,Anna Z,,Vadym,V,Giles,,,560,3.0,Greg,40,14
+11,Richard,21,_,,Richard,V,Vadym,V,Colin ,,Anna Z,,Colin ,518,5.0,Charlie ,37,14
+12,Vadym,12,Vadym,,Colin ,,Pablo,,Giles,V,Colin ,V,Anna Z,476,7.0,Tom,34,14
+13,Pablo,13,Pablo,,Tom,V,_,,_,,Pablo,,Pablo,434,6.0,Colin ,31,14
+14,_,20,_,,Giles,,Colin ,,Pablo,,_,,_,392,,,28,14
+15,_,29,_,,_,,Giles,,_,,_,,_,364,,,26,14
+16,_,4,Amaury,,Lionel,,_,,_,,_,,_,336,,,24,14
+17,_,3,Greg,,_,,_,,_,,_,,_,308,,,22,14
+18,_,30,_,,_,,_,,_,,_,,_,280,,,20,14
+19,_,19,_,,_,,_,,_,,_,,_,252,,,18,14
+20,_,14,_,,_,,_,,_,,_,,_,224,,,16,14
+21,_,11,Richard,,_,,_,,_,,_,,_,196,,,14,14
+22,_,22,_,,_,,_,,_,,_,,_,168,,,12,14
+23,_,27,_,,_,,_,,_,,_,,_,140,,,10,14
+24,_,6,Colin ,,_,,_,,_,,_,,_,126,,,9,14
+25,_,7,Tom,,_,,_,,_,,_,,_,112,,,8,14
+26,_,26,_,,_,,_,,_,,_,,_,98,,,7,14
+27,_,23,_,,_,,_,,_,,_,,_,84,,,6,14
+28,_,10,Giles,,_,,_,,_,,_,,_,70,,,5,14
+29,_,15,_,,_,,_,,_,,_,,_,56,,,4,14
+30,_,18,_,,_,,_,,_,,_,,_,42,,,3,14
+31,_,31,_,,_,,_,,_,,_,,_,28,,,2,14
+32,_,2,Lionel,,_,,_,,_,,_,,_,14,,,1,14

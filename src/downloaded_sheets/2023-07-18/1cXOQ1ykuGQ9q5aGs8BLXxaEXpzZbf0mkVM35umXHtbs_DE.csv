@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Lionel,1,Lionel,,Lionel,,Lionel,V,Lionel,V,Lionel,V,Lionel,1500,4.0,Georgina,100,15
+2,Eric L,32,_,,_,,Phil,,Georgina,,Sameer,,Sameer,1275,13.0,Anna Z,85,15
+3,Sameer,17,_,,Phil,V,Vincent,,Sameer,V,Georgina,,Alejo,1125,14.0,Nat,75,15
+4,Georgina,16,_,,Naoki,,Georgina,V,Alejo,,Alejo,V,Georgina,1005,1.0,Lionel,67,15
+5,Vincent,9,Phil,,Vincent,V,Sameer,V,Phil,,Vincent,,Greg,915,11.0,Vadym,61,15
+6,Greg,24,_,,Edo,,Greg,,Vincent,V,Greg,V,Vincent,825,15.0,Kamal,55,15
+7,Alejo,25,_,,Anna Z,,Alejo,V,Greg,V,Phil,V,Phil,765,12.0,Edo,51,15
+8,Naoki,8,Naoki,,Georgina,V,Eric L,,Eric L,,Eric L,,Eric L,705,7.0,Alejo,47,15
+9,Phil,5,Vincent,,Sameer,V,_,,Naoki,,Edo,,Alex T,645,6.0,Greg,43,15
+10,Alex T,28,_,,Nat,,Naoki,,Edo,V,Alex T,V,Edo,600,2.0,Eric L,40,15
+11,Vadym,21,_,,Vadym,,Edo,V,Vadym,,Naoki,,,555,10.0,Alex T,37,15
+12,Edo,12,Edo,,Greg,V,Anna Z,,Alex T,V,Vadym,,,510,8.0,Naoki,34,15
+13,Anna Z,13,Anna Z,,Alejo,V,Nat,,_,,Anna Z,V,Anna Z,465,9.0,Phil,31,15
+14,Nat,20,_,,Alex T,,Vadym,V,Anna Z,,Kamal,,Kamal,420,3.0,Sameer,28,15
+15,Kamal,29,_,,Kamal,,Alex T,V,Nat,,_,,Nat,390,5.0,Vincent,26,15
+16,_,4,Georgina,,Eric L,V,Kamal,,Kamal,V,Nat,,_,360,,,24,15
+17,_,3,Sameer,,_,,_,,_,,_,,_,330,,,22,15
+18,_,30,_,,_,,_,,_,,_,,_,300,,,20,15
+19,_,19,_,,_,,_,,_,,_,,_,270,,,18,15
+20,_,14,Nat,,_,,_,,_,,_,,_,240,,,16,15
+21,_,11,Vadym,,_,,_,,_,,_,,_,210,,,14,15
+22,_,22,_,,_,,_,,_,,_,,_,180,,,12,15
+23,_,27,_,,_,,_,,_,,_,,_,150,,,10,15
+24,_,6,Greg,,_,,_,,_,,_,,_,135,,,9,15
+25,_,7,Alejo,,_,,_,,_,,_,,_,120,,,8,15
+26,_,26,_,,_,,_,,_,,_,,_,105,,,7,15
+27,_,23,_,,_,,_,,_,,_,,_,90,,,6,15
+28,_,10,Alex T,,_,,_,,_,,_,,_,75,,,5,15
+29,_,15,Kamal,,_,,_,,_,,_,,_,60,,,4,15
+30,_,18,_,,_,,_,,_,,_,,_,45,,,3,15
+31,_,31,_,,_,,_,,_,,_,,_,30,,,2,15
+32,_,2,Eric L,,_,,_,,_,,_,,_,15,,,1,15

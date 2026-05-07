@@ -83,7 +83,61 @@ section {
     margin-bottom: 1rem;
 }
 
-/* Legend and filters removed - status system no longer used */
+/* Activity filter section */
+.filters {
+    background: var(--light-gray);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.filter-group label {
+    font-weight: 600;
+    color: var(--dark-gray);
+}
+
+.filter-group select {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--border);
+    border-radius: 4px;
+    font-size: 1rem;
+    background: white;
+    cursor: pointer;
+}
+
+/* Status badges */
+.status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-active {
+    background-color: rgba(39, 174, 96, 0.15);
+    color: var(--success);
+    border: 1px solid var(--success);
+}
+
+.status-semi-active {
+    background-color: rgba(243, 156, 18, 0.15);
+    color: var(--warning);
+    border: 1px solid var(--warning);
+}
+
+.status-inactive {
+    background-color: rgba(149, 165, 166, 0.15);
+    color: #95a5a6;
+    border: 1px solid #95a5a6;
+}
 
 /* Table styling */
 table.dataTable {

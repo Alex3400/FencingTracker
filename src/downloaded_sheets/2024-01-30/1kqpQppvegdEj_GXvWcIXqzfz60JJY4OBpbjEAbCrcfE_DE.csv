@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Tom,1,Tom,,Tom,,Tom,V,Tom,,Alex TE,,Greg,1700,14.0,Adam,100,17
+2,Greg,32,_,,_,,Andy H,,Alex TE,V,Greg,V,Alex TE,1445,8.0,Chrissy,85,17
+3,Garen ,17,_,,Andy H,V,Alex TE,V,Garen ,,Tom,V,Tom,1275,2.0,Greg,75,17
+4,Anna Z,16,_,,Chrissy,,Anna Z,,Greg,V,Garen ,,Garen ,1139,15.0,Richard,67,17
+5,Alejo,9,Andy H,,Alejo,,Garen ,V,Andy H,V,Andy H,,Kamal,1037,9.0,Andy H,61,17
+6,Vadym,24,_,,Alex TE,V,Kamal,,Anna Z,,Kamal,V,Andy H,935,12.0,Alex TE,55,17
+7,Charlie ,25,_,,Edo,,Charlie ,,Kamal,V,Anna Z,V,Anna Z,867,13.0,Edo,51,17
+8,Chrissy,8,Chrissy,,Anna Z,V,Greg,V,Charlie ,,Charlie ,,Charlie ,799,,,47,17
+9,Andy H,5,Alejo,,Garen ,V,_,V,Chrissy,,Alejo,V,Alejo,731,3.0,Garen ,43,17
+10,Colin ,28,_,,Adam,,Chrissy,,Alejo,V,Richard,,Richard,680,5.0,Alejo,40,17
+11,Kamal,21,_,,Kamal,V,Alejo,V,Vadym,,Chrissy,,Vadym,629,6.0,Vadym,37,17
+12,Alex TE,12,Alex TE,,Vadym,,Edo,,Richard,V,Vadym,V,Chrissy,578,1.0,Tom,34,17
+13,Edo,13,Edo,,Charlie ,V,Adam,,_,,Edo,V,Edo,527,,,31,17
+14,Adam,20,_,,Colin ,,Vadym,V,Edo,,Colin ,,Colin ,476,4.0,Anna Z,28,17
+15,Richard,29,_,,Richard,,Colin ,,Adam,,_,V,Adam,442,10.0,Colin ,26,17
+16,_,4,Anna Z,,Greg,V,Richard,V,Colin ,V,Adam,,_,408,11.0,Kamal,24,17
+17,_,3,Garen ,,_,,_,,_,,_,,_,374,7.0,Charlie ,22,17
+18,_,30,_,,_,,_,,_,,_,,_,340,,,20,17
+19,_,19,_,,_,,_,,_,,_,,_,306,,,18,17
+20,_,14,Adam,,_,,_,,_,,_,,_,272,,,16,17
+21,_,11,Kamal,,_,,_,,_,,_,,_,238,,,14,17
+22,_,22,_,,_,,_,,_,,_,,_,204,,,12,17
+23,_,27,_,,_,,_,,_,,_,,_,170,,,10,17
+24,_,6,Vadym,,_,,_,,_,,_,,_,153,,,9,17
+25,_,7,Charlie ,,_,,_,,_,,_,,_,136,,,8,17
+26,_,26,_,,_,,_,,_,,_,,_,119,,,7,17
+27,_,23,_,,_,,_,,_,,_,,_,102,,,6,17
+28,_,10,Colin ,,_,,_,,_,,_,,_,85,,,5,17
+29,_,15,Richard,,_,,_,,_,,_,,_,68,,,4,17
+30,_,18,_,,_,,_,,_,,_,,_,51,,,3,17
+31,_,31,_,,_,,_,,_,,_,,_,34,,,2,17
+32,_,2,Greg,,_,,_,,_,,_,,_,17,,,1,17

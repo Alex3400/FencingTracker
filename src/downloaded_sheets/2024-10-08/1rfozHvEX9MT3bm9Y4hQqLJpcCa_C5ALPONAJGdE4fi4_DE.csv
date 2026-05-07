@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Pierre,1,Pierre,,Pierre,V,Pierre,V,Pierre,,Alex TE,,Alex TR,2000,1.0,Pierre,100,20
+2,Alejo,32,_,,Marinko,,Shevy,,Alex TE,V,Alex TR,V,Alex TE,1700,,,85,20
+3,Greg,17,Nat,,Shevy,V,Darran,,Greg,,Pierre,,Greg,1500,,,75,20
+4,Alex TE,16,Marinko,V,Colin ,,Alex TE,V,Alex TR,V,Greg,V,Pierre,1340,17.0,Nat,67,20
+5,Darran,9,Shevy,,Darran,V,Greg,V,Shevy,,Darran,,Anna Z,1220,15.0,Richard B,61,20
+6,Tom,24,_,,Charlie ,,Anna Z,,Darran,V,Anna Z,V,Darran,1100,3.0,Greg,55,20
+7,Steph,25,_,,Vadym,,Alex TR,V,Anna Z,V,Shevy,,Alejo,1020,11.0,Anna Z,51,20
+8,Colin ,8,Colin ,,Alex TE,V,Alejo,,Alejo,,Alejo,V,Shevy,940,9.0,Shevy,47,20
+9,Shevy,5,Darran,,Greg,V,Marinko,,Colin ,,Vadym,,Steph,860,14.0,Eugene,43,20
+10,Alex TR,28,_,,Eugene,,Colin ,V,Vadym,V,Steph,V,Vadym,800,12.0,Charlie ,40,20
+11,Anna Z,21,_,,Anna Z,V,Charlie ,,Eugene,,Colin ,,Eugene,740,2.0,Alejo,37,20
+12,Charlie ,12,Charlie ,,Tom,,Vadym,V,Steph,V,Eugene,V,Colin ,680,8.0,Colin ,34,20
+13,Vadym,13,Vadym,,Steph,,Eugene,V,Marinko,V,Marinko,V,Marinko,620,6.0,Tom,31,20
+14,Eugene,20,_,,Alex TR,V,Tom,,Charlie ,,Richard B,,Richard B,560,,,28,20
+15,Richard B,29,_,,Richard B,,Steph,V,Tom,,Charlie ,,Tom,520,7.0,Steph,26,20
+16,Marinko,4,Alex TE,,Alejo,V,Richard B,,Richard B,V,Tom,V,Charlie ,480,5.0,Darran,24,20
+17,Nat,3,Greg,,_,,Nat,,Nat,,Nat,,Nat,440,13.0,Vadym,22,20
+18,_,30,_,,Nat,,_,,_,,_,,_,400,4.0,Alex TE,20,20
+19,_,19,_,,_,,_,,_,,_,,_,360,16.0,Marinko,18,20
+20,_,14,Eugene,,_,,_,,_,,_,,_,320,10.0,Alex TR,16,20
+21,_,11,Anna Z,,_,,_,,_,,_,,_,280,,,14,20
+22,_,22,_,,_,,_,,_,,_,,_,240,,,12,20
+23,_,27,_,,_,,_,,_,,_,,_,200,,,10,20
+24,_,6,Tom,,_,,_,,_,,_,,_,180,,,9,20
+25,_,7,Steph,,_,,_,,_,,_,,_,160,,,8,20
+26,_,26,_,,_,,_,,_,,_,,_,140,,,7,20
+27,_,23,_,,_,,_,,_,,_,,_,120,,,6,20
+28,_,10,Alex TR,,_,,_,,_,,_,,_,100,,,5,20
+29,_,15,Richard B,,_,,_,,_,,_,,_,80,,,4,20
+30,_,18,_,,_,,_,,_,,_,,_,60,,,3,20
+31,_,31,_,,_,,_,,_,,_,,_,40,,,2,20
+32,_,2,Alejo,,_,,_,,_,,_,,_,20,,,1,20

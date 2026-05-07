@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Eric L,1,Eric L,,Eric L,V,Eric L,V,Eric L,,Alejo,,Tarriq,2700,1.0,Eric L,100,27
+2,Georgina,32,_,,Martin H,,Greg,,Alejo,V,Tarriq,V,Alejo,2295,9.0,Greg,85,27
+3,Tarriq,17,Martin H,V,Greg,V,Alejo,V,Tarriq,V,Eric L,,Clemens,2025,2.0,Georgina,75,27
+4,Alex TE,16,Andy R,,Will P,,Hugo,,Clemens,,Clemens,V,Eric L,1809,14.0,Richard B,67,27
+5,Alejo,9,Greg,V,Alejo,V,Tarriq,V,Greg,V,Greg,V,Greg,1647,22.0,marinko,61,27
+6,Steph,24,Charlie ,,Truuvy,,Vincent,,Hugo,,Vadym,,Vadym,1485,19.0,maiya,55,27
+7,Tom,25,Will P,V,Hugo,V,Vadym,,Vincent,,Hugo,,Vincent,1377,21.0,jonathan,51,27
+8,Lorenzo,8,Lorenzo,,Alex TE,,Clemens,V,Vadym,V,Vincent,V,Hugo,1269,13.0,Hugo,47,27
+9,Greg,5,Alejo,,Tarriq,V,Martin H,,Will P,,Alex TE,,Georgina,1161,23.0,Bowen ,43,27
+10,Vadym,28,_,,Richard B,,Will P,V,Alex TE,V,Georgina,V,Alex TE,1080,,,40,27
+11,Vincent,21,jonathan,,Vincent,V,Truuvy,,Richard B,,Will P,V,Will P,999,11.0,Vincent,37,27
+12,Truuvy,12,Truuvy,V,Steph,,Alex TE,V,Georgina,V,Richard B,,Richard B,918,6.0,Steph,34,27
+13,Hugo,13,Hugo,V,Tom,,Richard B,V,Martin H,,Truuvy,,Tom,837,7.0,Tom,31,27
+14,Richard B,20,Colin ,,Vadym,V,Steph,,Truuvy,V,Tom,V,Truuvy,756,12.0,Truuvy,28,27
+15,Clemens,29,_,,Clemens,V,Tom,,Steph,,Martin H,V,Martin H,702,25.0,Will P,26,27
+16,Andy R,4,Alex TE,,Georgina,,Georgina,V,Tom,V,Steph,,Steph,648,8.0,Lorenzo,24,27
+17,Martin H,3,Tarriq,,_,,Andy R,,Charlie ,,Colin ,,Bowen ,594,3.0,Tarriq,22,27
+18,Phil,30,_,,Andy R,,Charlie ,V,Colin ,V,Bowen ,V,Colin ,540,20.0,Colin ,20,27
+19,maiya,19,maiya,,Charlie ,V,jonathan,,maiya,,Charlie ,,maiya,486,18.0,Phil,18,27
+20,Colin ,14,Richard B,V,Lorenzo,,Colin ,V,Bowen ,V,maiya,V,Charlie ,432,5.0,Alejo,16,27
+21,jonathan,11,Vincent,V,_,,maiya,V,Andy R,V,Andy R,,,378,10.0,Vadym,14,27
+22,marinko,22,marinko,,jonathan,,marinko,,jonathan,,marinko,,,324,4.0,Alex TE,12,27
+23,Bowen ,27,_,,Colin ,,Bowen ,V,marinko,V,jonathan,,Phil,270,17.0,Martin H,10,27
+24,Charlie ,6,Steph,,_,,Phil,,Phil,,Phil,V,jonathan,243,26.0,Nat,9,27
+25,Will P,7,Tom,V,_,,_,,Lorenzo,V,Lorenzo,,Nat,216,15.0,Clemens,8,27
+26,Nat,26,Nat,,maiya,,Lorenzo,,_,,Nat,V,Lorenzo,189,24.0,Charlie ,7,27
+27,_,23,Bowen ,,marinko,,_,,_,,_,,_,162,16.0,Andy R,6,27
+28,_,10,Vadym,V,_,,_,,Nat,,_,,_,135,,,5,27
+29,_,15,Clemens,V,Nat,,_,,_,,_,,_,108,,,4,27
+30,_,18,Phil,,Bowen ,V,_,,_,,_,,_,81,,,3,27
+31,_,31,_,,Phil,,Nat,,_,,_,,_,54,,,2,27
+32,_,2,Georgina,,_,,_,,_,,_,,_,27,,,1,27

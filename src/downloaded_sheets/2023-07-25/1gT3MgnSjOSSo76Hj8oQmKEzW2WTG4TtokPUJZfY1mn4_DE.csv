@@ -1,0 +1,33 @@
+h,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Alex T,1,Alex T,,Alex T,V,Alex T,,Tom,,Greg,,Alex A,1900,8.0,Georgina,100,19
+2,Lionel,32,_,,Lindsey,,Tom,V,Greg,V,Alex A,V,Greg,1615,18.0,Nat,85,19
+3,Alex A,17,Lindsey,V,Tom,V,Pierre,,Alex A,V,Tom,,Lionel,1425,14.0,Aleks,75,19
+4,Greg,16,Andy R,,Georgina,,Greg,V,Lionel,,Lionel,V,Tom,1273,10.0,Chrissy,67,19
+5,Pierre,9,Tom,,Pierre,V,Alex A,V,Alex T,V,Alex T,V,Alex T,1159,17.0,Lindsey,61,19
+6,Vincent,24,_,,Vadym,,Vincent,,Pierre,,Alejo,,Alejo,1045,13.0,Adam,55,19
+7,Alejo,25,_,,Adam,,Alejo,,Vincent,,Pierre,,Vincent,969,7.0,Alejo,51,19
+8,Georgina,8,Georgina,,Greg,V,Lionel,V,Alejo,V,Vincent,V,Pierre,893,15.0,Naoki,47,19
+9,Tom,5,Pierre,,Alex A,V,Lindsey,,Georgina,V,Georgina,V,Georgina,817,,,43,19
+10,Chrissy,28,_,,Aleks,,Georgina,V,Vadym,,Naoki,,Naoki,760,5.0,Pierre,40,19
+11,Steph,21,_,,Steph,,Vadym,V,Aleks,,Vadym,V,Vadym,703,6.0,Vincent,37,19
+12,Vadym,12,Vadym,,Vincent,V,Adam,,Naoki,V,Aleks,,Aleks,646,16.0,Andy R,34,19
+13,Adam,13,Adam,,Alejo,V,Aleks,V,Lindsey,V,Lindsey,V,,589,11.0,Steph,31,19
+14,Aleks,20,_,,Chrissy,,Steph,,Adam,,Steph,,Steph,532,12.0,Vadym,28,19
+15,Naoki,29,_,,Naoki,,Chrissy,,Steph,V,Adam,,Chrissy,494,9.0,Tom,26,19
+16,Andy R,4,Greg,,Lionel,V,Naoki,V,Chrissy,,Chrissy,V,Adam,456,2.0,Lionel,24,19
+17,Lindsey,3,Alex A,,_,,Andy R,,Andy R,,Andy R,V,Andy R,418,1.0,Alex T,22,19
+18,Nat,30,_,,Andy R,,_,,_,,Nat,,Nat,380,3.0,Alex A,20,19
+19,_,19,_,,_,,_,,_,,_,,_,342,4.0,Greg,18,19
+20,_,14,Aleks,,_,,_,,Nat,,_,,_,304,,,16,19
+21,_,11,Steph,,_,,_,,_,,_,,_,266,,,14,19
+22,_,22,_,,_,,_,,_,,_,,_,228,,,12,19
+23,_,27,_,,_,,_,,_,,_,,_,190,,,10,19
+24,_,6,Vincent,,_,,Nat,,_,,_,,_,171,,,9,19
+25,_,7,Alejo,,_,,_,,_,,_,,_,152,,,8,19
+26,_,26,_,,_,,_,,_,,_,,_,133,,,7,19
+27,_,23,_,,_,,_,,_,,_,,_,114,,,6,19
+28,_,10,Chrissy,,_,,_,,_,,_,,_,95,,,5,19
+29,_,15,Naoki,V,_,,_,,_,,_,,_,76,,,4,19
+30,_,18,Nat,,_,,_,,_,,_,,_,57,,,3,19
+31,_,31,_,,Nat,,_,,_,,_,,_,38,,,2,19
+32,_,2,Lionel,,_,,_,,_,,_,,_,19,,,1,19

@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Greg,1,Greg,,Greg,V,Greg,V,Greg,V,Greg,V,Greg,1900,5.0,Georgina,100,19
+2,Kamal,32,_,,Garen ,,Steph,,Georgina,,Lionel,,Lionel,1615,1.0,Greg,85,19
+3,Lionel,17,Garen ,V,Steph,V,Georgina,V,Lionel,V,Georgina,V,Georgina,1425,2.0,Kamal,75,19
+4,Anna,16,Mark,,Tom,,Anna,,Pierre,,Pierre,,Pierre,1273,12.0,Vadym,67,19
+5,Georgina,9,Steph,,Georgina,V,Lionel,V,Steph,,Anna,,Edo,1159,,,61,19
+6,Matteo,24,_,,Vadym,,Matteo,,Anna,V,Edo,V,Anna,1045,,,55,19
+7,Pierre,25,_,,Zoltan,,Pierre,V,Matteo,,Steph,,Matteo,969,16.0,Mark,51,19
+8,Tom,8,Tom,,Anna,V,Edo,,Edo,V,Matteo,V,Steph,893,7.0,Pierre,47,19
+9,Steph,5,Georgina,,Lionel,V,Garen ,,Tom,V,Tom,,bryan,817,10.0,bryan,43,19
+10,bryan,28,_,,Vincent,,Tom,V,Zoltan,,bryan,V,Tom,760,13.0,Zoltan,40,19
+11,Giles,21,_,,Giles,,Vadym,,Vincent,,Zoltan,V,Zoltan,703,15.0,Edo,37,19
+12,Vadym,12,Vadym,,Matteo,V,Zoltan,V,bryan,V,Vincent,,Vincent,646,6.0,Matteo,34,19
+13,Zoltan,13,Zoltan,,Pierre,V,Vincent,V,Garen ,V,Garen ,V,Garen ,589,4.0,Anna,31,19
+14,Vincent,20,_,,bryan,,Giles,,Vadym,,Giles,,Giles,532,8.0,Tom,28,19
+15,Edo,29,_,,Edo,V,bryan,V,Giles,V,Vadym,V,Vadym,494,9.0,Steph,26,19
+16,Mark,4,Anna,,Kamal,,Kamal,,Kamal,,Kamal,,Kamal,456,3.0,Lionel,24,19
+17,Garen ,3,Lionel,,_,,Mark,,Mark,,Mark,,Mark,418,17.0,Garen ,22,19
+18,_,30,_,,Mark,,_,,_,,_,,_,380,11.0,Giles,20,19
+19,_,19,_,,_,,_,,_,,_,,_,342,14.0,Vincent,18,19
+20,_,14,Vincent,,_,,_,,_,,_,,_,304,,,16,19
+21,_,11,Giles,,_,,_,,_,,_,,_,266,,,14,19
+22,_,22,_,,_,,_,,_,,_,,_,228,,,12,19
+23,_,27,_,,_,,_,,_,,_,,_,190,,,10,19
+24,_,6,Matteo,,_,,_,,_,,_,,_,171,,,9,19
+25,_,7,Pierre,,_,,_,,_,,_,,_,152,,,8,19
+26,_,26,_,,_,,_,,_,,_,,_,133,,,7,19
+27,_,23,_,,_,,_,,_,,_,,_,114,,,6,19
+28,_,10,bryan,,_,,_,,_,,_,,_,95,,,5,19
+29,_,15,Edo,,_,,_,,_,,_,,_,76,,,4,19
+30,_,18,_,,_,,_,,_,,_,,_,57,,,3,19
+31,_,31,_,,_,,_,,_,,_,,_,38,,,2,19
+32,_,2,Kamal,,_,,_,,_,,_,,_,19,,,1,19

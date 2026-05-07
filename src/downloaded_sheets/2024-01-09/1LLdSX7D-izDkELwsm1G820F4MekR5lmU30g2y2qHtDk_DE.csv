@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Greg,1,Greg,,Greg,,Greg,V,Greg,V,Greg,V,Greg,1200,1.0,Greg,100,12
+2,Alejo,32,_,,_,,Steph,,Garen ,,Kamal,,Kamal,1020,10.0,Julia T,85,12
+3,Alex TE,17,_,,Steph,V,Richard,,Kamal,V,Garen ,V,Garen ,900,12.0,Eric H,75,12
+4,Garen ,16,_,,Colin ,,Garen ,V,Alejo,,Alejo,,Alejo,804,2.0,Alejo,67,12
+5,Richard,9,Steph,,Richard,V,Alex TE,,Steph,,Richard,,Alex TE,732,5.0,Richard,61,12
+6,Kamal,24,_,,Eric H,,Kamal,V,Richard,V,Alex TE,V,Richard,660,8.0,Colin ,55,12
+7,Charlie ,25,_,,_,,Charlie ,,Alex TE,V,Steph,,Charlie ,612,9.0,Steph,51,12
+8,Colin ,8,Colin ,,Garen ,,Alejo,V,Charlie ,,Charlie ,V,Steph,564,3.0,Alex TE,47,12
+9,Steph,5,Richard,,Alex TE,,_,,Colin ,V,Colin ,,Andy R,516,4.0,Garen ,43,12
+10,Julia T,28,_,,_,,Colin ,,Eric H,,Andy R,V,Colin ,480,11.0,Andy R,40,12
+11,Andy R,21,_,,Andy R,,Eric H,,Andy R,V,Eric H,V,Eric H,444,6.0,Kamal,37,12
+12,Eric H,12,Eric H,,Kamal,V,_,,Julia T,,Julia T,,Julia T,408,7.0,Charlie ,34,12
+13,_,13,_,,Charlie ,V,_,,_,,_,,_,372,,,31,12
+14,_,20,_,,Julia T,,Andy R,,_,,_,,_,336,,,28,12
+15,_,29,_,,_,,Julia T,,_,,_,,_,312,,,26,12
+16,_,4,Garen ,,Alejo,,_,,_,,_,,_,288,,,24,12
+17,_,3,Alex TE,,_,,_,,_,,_,,_,264,,,22,12
+18,_,30,_,,_,,_,,_,,_,,_,240,,,20,12
+19,_,19,_,,_,,_,,_,,_,,_,216,,,18,12
+20,_,14,_,,_,,_,,_,,_,,_,192,,,16,12
+21,_,11,Andy R,,_,,_,,_,,_,,_,168,,,14,12
+22,_,22,_,,_,,_,,_,,_,,_,144,,,12,12
+23,_,27,_,,_,,_,,_,,_,,_,120,,,10,12
+24,_,6,Kamal,,_,,_,,_,,_,,_,108,,,9,12
+25,_,7,Charlie ,,_,,_,,_,,_,,_,96,,,8,12
+26,_,26,_,,_,,_,,_,,_,,_,84,,,7,12
+27,_,23,_,,_,,_,,_,,_,,_,72,,,6,12
+28,_,10,Julia T,,_,,_,,_,,_,,_,60,,,5,12
+29,_,15,_,,_,,_,,_,,_,,_,48,,,4,12
+30,_,18,_,,_,,_,,_,,_,,_,36,,,3,12
+31,_,31,_,,_,,_,,_,,_,,_,24,,,2,12
+32,_,2,Alejo,,_,,_,,_,,_,,_,12,,,1,12

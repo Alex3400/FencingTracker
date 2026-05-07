@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Pierre,1,Pierre,,Pierre,,Pierre,,Garen ,V,Garen ,V,Garen ,1400,7.0,Vadym,100,14
+2,Greg,32,_,,_,,Garen ,V,Steph,,Greg,,Greg,1190,,,85,14
+3,Tom,17,_,,Pamela,,Steph,V,Tom,,Steph,,Tom,1050,12.0,Elisabeth,75,14
+4,Kamal,16,_,,Garen ,V,Kamal,,Greg,V,Tom,V,Steph,938,8.0,Garen ,67,14
+5,Steph,9,Pamela,,Steph,V,Tom,V,Pierre,,Kamal,V,Kamal,854,2.0,Greg,61,14
+6,Adam,24,_,,Elisabeth,,Adam,,Kamal,V,Vadym,,Vadym,770,13.0,Mark,55,14
+7,Vadym,25,_,,Mark,,Vadym,,Adam,,Pierre,V,Pierre,714,9.0,Pamela,51,14
+8,Garen ,8,Garen ,,Kamal,V,Greg,V,Vadym,V,Adam,,Adam,658,5.0,Steph,47,14
+9,Pamela,5,Steph,,Tom,,_,,Pamela,V,Pamela,V,Pamela,602,3.0,Tom,43,14
+10,Richard,28,_,,_,,Pamela,,Mark,,Richard,,Richard,560,6.0,Adam,40,14
+11,Nat,21,_,,Nat,,Elisabeth,,Nat,,Mark,V,Mark,518,4.0,Kamal,37,14
+12,Elisabeth,12,Elisabeth,,Adam,V,Mark,V,Richard,V,Nat,,Nat,476,1.0,Pierre,34,14
+13,Mark,13,Mark,,Vadym,V,_,,_,,Elisabeth,,Elisabeth,434,11.0,Nat,31,14
+14,_,20,_,,Richard,,Nat,,Elisabeth,,_,,_,392,10.0,Richard,28,14
+15,_,29,_,,_,,Richard,,_,,_,,_,364,,,26,14
+16,_,4,Kamal,,Greg,,_,,_,,_,,_,336,,,24,14
+17,_,3,Tom,,_,,_,,_,,_,,_,308,,,22,14
+18,_,30,_,,_,,_,,_,,_,,_,280,,,20,14
+19,_,19,_,,_,,_,,_,,_,,_,252,,,18,14
+20,_,14,_,,_,,_,,_,,_,,_,224,,,16,14
+21,_,11,Nat,,_,,_,,_,,_,,_,196,,,14,14
+22,_,22,_,,_,,_,,_,,_,,_,168,,,12,14
+23,_,27,_,,_,,_,,_,,_,,_,140,,,10,14
+24,_,6,Adam,,_,,_,,_,,_,,_,126,,,9,14
+25,_,7,Vadym,,_,,_,,_,,_,,_,112,,,8,14
+26,_,26,_,,_,,_,,_,,_,,_,98,,,7,14
+27,_,23,_,,_,,_,,_,,_,,_,84,,,6,14
+28,_,10,Richard,,_,,_,,_,,_,,_,70,,,5,14
+29,_,15,_,,_,,_,,_,,_,,_,56,,,4,14
+30,_,18,_,,_,,_,,_,,_,,_,42,,,3,14
+31,_,31,_,,_,,_,,_,,_,,_,28,,,2,14
+32,_,2,Greg,,_,,_,,_,,_,,_,14,,,1,14

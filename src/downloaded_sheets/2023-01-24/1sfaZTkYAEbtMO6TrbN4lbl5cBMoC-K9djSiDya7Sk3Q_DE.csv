@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Lionel,1,Lionel,,Lionel,V,Lionel,V,Lionel,V,Lionel,V,Lionel,2400,2.0,Georgina,100,24
+2,Georgina,32,_,,Greenie,,Steph,,Zoltan,,Greg,,Greg,2040,17.0,Emma,85,24
+3,Pierre,17,Emma,,Adam,,KJ,,Greg,V,Zoltan,,Georgina,1800,20.0,Lorenzo,75,24
+4,Zoltan,16,Greenie,V,Steph,V,Zoltan,V,Georgina,,Georgina,V,Zoltan,1608,21.0,Nat,67,24
+5,KJ,9,Adam,V,KJ,V,Pierre,,Steph,,KJ,V,KJ,1464,19.0,Garen ,61,24
+6,Greg,24,Elisabeth,,Matt,,Greg,V,KJ,V,Pierre,,Pierre,1320,24.0,Elisabeth,55,24
+7,Andy H,25,_,,Kamal,,Tom,,Pierre,V,Steph,,Tom,1224,3.0,Pierre,51,24
+8,Steph,8,Steph,V,Zoltan,V,Georgina,V,Tom,,Tom,V,Steph,1128,9.0,Adam,47,24
+9,Adam,5,KJ,,Pierre,V,Greenie,V,Greenie,,Kamal,,Kelvin ,1032,14.0,Chrissy,43,24
+10,Tom,28,_,,Chrissy,,Adam,,Kamal,V,Kelvin ,V,Kamal,960,6.0,Greg,40,24
+11,Vadym,21,Nat,,Vadym,,Matt,,Vadym,,Greenie,,Vadym,888,16.0,Greenie,37,24
+12,Matt,12,Matt,V,Greg,V,Kamal,V,Kelvin ,V,Vadym,V,Greenie,816,22.0,Etienne,34,24
+13,Kamal,13,Kamal,V,Andy H,,Chrissy,,Adam,,Matt,,Andy H,744,4.0,Zoltan,31,24
+14,Chrissy,20,Lorenzo,,Tom,V,Vadym,V,Matt,V,Andy H,V,Matt,672,11.0,Vadym,28,24
+15,Kelvin ,29,_,,Kelvin ,,Andy H,,Chrissy,,Adam,V,Adam,624,10.0,Tom,26,24
+16,Greenie,4,Zoltan,V,Georgina,V,Kelvin ,V,Andy H,V,Chrissy,,Chrissy,576,23.0,Aleks,24,24
+17,Emma,3,Pierre,,_,,Emma,V,Emma,,Lorenzo,V,Lorenzo,528,13.0,Kamal,22,24
+18,Edo,30,_,,Emma,,Elisabeth,,Lorenzo,V,Garen ,,Garen ,480,12.0,Matt,20,24
+19,Garen ,19,Garen ,,Elisabeth,,Nat,,Garen ,V,Emma,,Aleks,432,7.0,Andy H,18,24
+20,Lorenzo,14,Chrissy,V,_,,Lorenzo,V,Aleks,,Aleks,V,Emma,384,5.0,KJ,16,24
+21,Nat,11,Vadym,V,_,,Garen ,V,Elisabeth,,Nat,,Etienne,336,18.0,Edo,14,24
+22,Etienne,22,Etienne,,Nat,,Etienne,,Nat,V,Etienne,V,Nat,288,15.0,Kelvin ,12,24
+23,Aleks,27,_,,Lorenzo,,Aleks,V,Etienne,V,Elisabeth,V,Elisabeth,240,8.0,Steph,10,24
+24,Elisabeth,6,Greg,V,_,,Edo,,Edo,,Edo,,Edo,216,1.0,Lionel,9,24
+25,_,7,Andy H,V,_,,_,,_,,_,,_,192,,,8,24
+26,_,26,_,,Garen ,,_,,_,,_,,_,168,,,7,24
+27,_,23,Aleks,,Etienne,,_,,_,,_,,_,144,,,6,24
+28,_,10,Tom,V,_,,_,,_,,_,,_,120,,,5,24
+29,_,15,Kelvin ,V,_,,_,,_,,_,,_,96,,,4,24
+30,_,18,Edo,,Aleks,,_,,_,,_,,_,72,,,3,24
+31,_,31,_,,Edo,,_,,_,,_,,_,48,,,2,24
+32,_,2,Georgina,V,_,,_,,_,,_,,_,24,,,1,24

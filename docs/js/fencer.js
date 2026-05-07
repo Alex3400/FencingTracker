@@ -175,10 +175,22 @@ function displayFencerStats(fencerName, autoSelectDate = null) {
     document.getElementById('current-rating').textContent = ratingInfo.rating;
     document.getElementById('rating-status').textContent = '';
 
-    // Rank
-    const rank = ratingsData.findIndex(f => f.fencer === fencerName) + 1;
-    document.getElementById('rank').textContent = `#${rank}`;
-    document.getElementById('total-fencers').textContent = ratingsData.length;
+    // Rank (only among active/semi-active fencers)
+    const activeFencers = ratingsData.filter(f =>
+        f.active_status === 'Active' || f.active_status === 'Semi-active'
+    );
+    const rank = activeFencers.findIndex(f => f.fencer === fencerName) + 1;
+
+    if (rank > 0) {
+        // Fencer is active or semi-active
+        document.getElementById('rank').textContent = `#${rank}`;
+        document.getElementById('total-fencers').textContent = activeFencers.length;
+    } else {
+        // Fencer is inactive - show overall rank with note
+        const overallRank = ratingsData.findIndex(f => f.fencer === fencerName) + 1;
+        document.getElementById('rank').textContent = `#${overallRank}`;
+        document.getElementById('total-fencers').textContent = `${ratingsData.length} (Inactive)`;
+    }
 
     // Matches and win rate
     document.getElementById('total-matches').textContent = ratingInfo.matches;

@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Pierre,1,Pierre,,Pierre,V,Pierre,V,Pierre,,Garen ,,Lionel,2100,1.0,Pierre,100,21
+2,Lionel,32,_,,Steffi,,Alex TR,,Garen ,V,Lionel,V,Garen ,1785,9.0,Giles,85,21
+3,Maxie,17,Steffi,V,Giles,,Alex TE,,Steph,,Pierre,V,Pierre,1575,11.0,Pablo,75,21
+4,Anna Z,16,Nat,,Alex TR,V,Garen ,V,Lionel,V,Steph,,Steph,1407,17.0,Steffi,67,21
+5,Vadym,9,Giles,,Vadym,,John H,,Alex TR,,Alex TE,V,Alex TE,1281,15.0,Eugene,61,21
+6,Steph,24,_,,Alex TE,V,Steph,V,Alex TE,V,Roeland,,Roeland,1155,10.0,Kamal,55,21
+7,Roeland,25,_,,Garen ,V,Roeland,,John H,,Alex TR,,John H,1071,18.0,Richard B,51,21
+8,Alex TR,8,Alex TR,,Anna Z,,Lionel,V,Roeland,V,John H,V,Alex TR,987,7.0,Roeland,47,21
+9,Giles,5,Vadym,,Maxie,,Steffi,,Giles,,Vadym,,Maxie,903,3.0,Maxie,43,21
+10,Kamal,28,_,,John H,V,Giles,V,Vadym,V,Maxie,V,Vadym,840,12.0,Alex TE,40,21
+11,Pablo,21,_,,Pablo,,Vadym,V,Maxie,V,Giles,V,Giles,777,8.0,Alex TR,37,21
+12,Alex TE,12,Alex TE,,Steph,V,Anna Z,,Kamal,,Kamal,,Kamal,714,13.0,Garen ,34,21
+13,Garen ,13,Garen ,,Roeland,V,Maxie,V,Steffi,,Anna Z,V,Anna Z,651,2.0,Lionel,31,21
+14,John H,20,_,,Kamal,,Pablo,,Anna Z,V,Pablo,,Pablo,588,,,28,21
+15,Eugene,29,_,,Eugene,,Kamal,V,Pablo,V,Steffi,V,Steffi,546,14.0,John H,26,21
+16,Nat,4,Anna Z,,Lionel,V,Eugene,,Eugene,,Eugene,,Eugene,504,4.0,Anna Z,24,21
+17,Steffi,3,Maxie,,_,,Nat,,Nat,,Nat,,Richard B,462,,,22,21
+18,Richard B,30,_,,Nat,,_,,_,V,Richard B,V,Nat,420,6.0,Steph,20,21
+19,Vincent,19,Vincent,,_,,_,,Vincent,,_,,Vincent,378,16.0,Nat,18,21
+20,_,14,John H,V,_,,_,,Richard B,V,Vincent,,_,336,19.0,Vincent,16,21
+21,_,11,Pablo,,_,,Vincent,,_,,_,,_,294,5.0,Vadym,14,21
+22,_,22,_,,_,,_,,_,,_,,_,252,,,12,21
+23,_,27,_,,_,,_,,_,,_,,_,210,,,10,21
+24,_,6,Steph,,_,,Richard B,,_,,_,,_,189,,,9,21
+25,_,7,Roeland,,_,,_,,_,,_,,_,168,,,8,21
+26,_,26,_,,Vincent,,_,,_,,_,,_,147,,,7,21
+27,_,23,_,,_,,_,,_,,_,,_,126,,,6,21
+28,_,10,Kamal,,_,,_,,_,,_,,_,105,,,5,21
+29,_,15,Eugene,V,_,,_,,_,,_,,_,84,,,4,21
+30,_,18,Richard B,,_,,_,,_,,_,,_,63,,,3,21
+31,_,31,_,,Richard B,,_,,_,,_,,_,42,,,2,21
+32,_,2,Lionel,,_,,_,,_,,_,,_,21,,,1,21

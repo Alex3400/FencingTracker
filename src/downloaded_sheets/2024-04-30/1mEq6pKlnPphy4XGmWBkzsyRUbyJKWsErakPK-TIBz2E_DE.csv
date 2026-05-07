@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Lionel,1,Lionel,,Lionel,V,Lionel,,Alex A,,Garen ,V,Garen ,2000,1.0,Lionel,100,20
+2,Pierre,32,_,,Julia T,,Alex A,V,Garen ,V,Greg,,Greg,1700,14.0,Vadym,85,20
+3,Alex TE,17,Eric H,,Alex A,V,Garen ,V,Greg,V,Alex A,V,Alex A,1500,18.0,Nat,75,20
+4,Alejo,16,Julia T,V,Richard,,Alejo,,Anna Z,,Anna Z,,Anna Z,1340,8.0,Richard,67,20
+5,Darran,9,Alex A,,Darran,,Alex TE,,Lionel,V,Lionel,V,Lionel,1220,2.0,Pierre,61,20
+6,Tom,24,_,,Garen ,V,Greg,V,Alejo,,Alex TE,,Alex TE,1100,9.0,Alex A,55,20
+7,Anna Z,25,_,,Steph,,Anna Z,V,Alex TE,V,Alejo,V,Alejo,1020,17.0,Eric H,51,20
+8,Richard,8,Richard,,Alejo,V,Pierre,,Pierre,,Pierre,,Pierre,940,16.0,Julia T,47,20
+9,Alex A,5,Darran,,Alex TE,V,Julia T,V,Julia T,,Darran,V,Darran,860,,,43,20
+10,Colin ,28,_,,Vadym,,Richard,,Darran,V,Edo,,Edo,800,,,40,20
+11,Greg,21,_,,Greg,V,Darran,V,Tom,,Julia T,,Tom,740,7.0,Anna Z,37,20
+12,Garen ,12,Garen ,,Tom,,Steph,,Edo,V,Tom,V,Julia T,680,12.0,Garen ,34,20
+13,Steph,13,Steph,,Anna Z,V,Vadym,,Richard,V,Richard,,Vadym,620,3.0,Alex TE,31,20
+14,Vadym,20,_,,Colin ,,Tom,V,Steph,,Vadym,V,Richard,560,5.0,Darran,28,20
+15,Edo,29,_,,Edo,,Colin ,,Vadym,V,Steph,V,Steph,520,11.0,Greg,26,20
+16,Julia T,4,Alejo,,Pierre,V,Edo,V,Colin ,,Colin ,,Colin ,480,10.0,Colin ,24,20
+17,Eric H,3,Alex TE,,_,,Eric H,,Eric H,,Eric H,,Nat,440,13.0,Steph,22,20
+18,Nat,30,_,,Eric H,,_,,_,,Nat,V,Eric H,400,4.0,Alejo,20,20
+19,_,19,_,,_,,_,,_,,_,,_,360,15.0,Edo,18,20
+20,_,14,Vadym,,_,,_,,Nat,,_,,_,320,6.0,Tom,16,20
+21,_,11,Greg,,_,,_,,_,,_,,_,280,,,14,20
+22,_,22,_,,_,,_,,_,,_,,_,240,,,12,20
+23,_,27,_,,_,,_,,_,,_,,_,200,,,10,20
+24,_,6,Tom,,_,,Nat,,_,,_,,_,180,,,9,20
+25,_,7,Anna Z,,_,,_,,_,,_,,_,160,,,8,20
+26,_,26,_,,_,,_,,_,,_,,_,140,,,7,20
+27,_,23,_,,_,,_,,_,,_,,_,120,,,6,20
+28,_,10,Colin ,,_,,_,,_,,_,,_,100,,,5,20
+29,_,15,Edo,V,_,,_,,_,,_,,_,80,,,4,20
+30,_,18,Nat,,_,,_,,_,,_,,_,60,,,3,20
+31,_,31,_,,Nat,,_,,_,,_,,_,40,,,2,20
+32,_,2,Pierre,,_,,_,,_,,_,,_,20,,,1,20

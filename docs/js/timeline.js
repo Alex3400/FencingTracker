@@ -123,15 +123,22 @@ function updateChart() {
             return snapshot.ratings[fencer] || null;
         });
 
-        // Calculate ranks for each snapshot
+        // Calculate ranks for each snapshot (only among active/semi-active fencers)
         const ranks = timelineData.map(snapshot => {
             if (!snapshot.ratings[fencer]) return null;
 
-            // Sort all ratings at this snapshot to find rank
-            const sortedRatings = Object.entries(snapshot.ratings)
-                .sort((a, b) => b[1] - a[1]);
+            // Filter to only active/semi-active fencers at this snapshot
+            const activeFencers = Object.entries(snapshot.ratings).filter(([name, rating]) => {
+                const status = snapshot.active_status?.[name];
+                return status === 'Active' || status === 'Semi-active';
+            });
+
+            // Sort active fencers by rating to find rank
+            const sortedRatings = activeFencers.sort((a, b) => b[1] - a[1]);
             const rank = sortedRatings.findIndex(([name, _]) => name === fencer) + 1;
-            return rank;
+
+            // If rank is 0, fencer was inactive at this point
+            return rank > 0 ? rank : null;
         });
 
         return {

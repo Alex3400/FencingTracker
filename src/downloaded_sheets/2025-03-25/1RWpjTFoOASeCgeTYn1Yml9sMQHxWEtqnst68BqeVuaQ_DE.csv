@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Pierre,1,Pierre,,Pierre,V,Pierre,V,Pierre,V,Pierre,,Colin W,2600,1.0,Pierre,100,26
+2,Eric L,32,_,,Lance,,Vadym,,Clemens,,Colin W,V,Pierre,2210,,,85,26
+3,Alex TE,17,Jacob P,,Vadym,V,Clemens,V,Colin W,V,Clemens,V,Clemens,1950,2.0,Eric L,75,26
+4,Vincent,16,Lance,V,Maxie ,,Charlie ,,Eric L,,Eric L,,Eric L,1742,21.0,Nat,67,26
+5,Clemens,9,Vadym,V,Clemens,V,Willy,,Vadym,,Charlie ,V,Charlie ,1586,15.0,Richard B,61,26
+6,Greg,24,Andy R,,Bowen,,Colin W,V,Charlie ,V,Willy,,Willy,1430,6.0,Greg,55,26
+7,Enrik,25,_,,Charlie ,V,Enrik,,Willy,V,Vadym,V,Vadym,1326,18.0,Joshua,51,26
+8,Maxie ,8,Maxie ,,Vincent,,Eric L,V,Enrik,,Enrik,,Enrik,1222,13.0,Lucas,47,26
+9,Vadym,5,Clemens,,Alex TE,,Lance,,Maxie ,,Vincent,,Greg,1118,5.0,Clemens,43,26
+10,Tom,28,_,,Willy,V,Maxie ,V,Vincent,V,Greg,V,Vincent,1040,,,40,26
+11,Colin W,21,Nat,,Colin W,V,Bowen,,Greg,V,Maxie ,V,Maxie ,962,19.0,Flavia,37,26
+12,Bowen,12,Bowen,V,Greg,,Vincent,V,Richard B,,Richard B,,Richard B,884,20.0,Charlie ,34,26
+13,Lucas,13,Lucas,,Enrik,V,Alex TE,,Lance,V,Lance,,Alex TE,806,22.0,Marinko,31,26
+14,Willy,20,Charlie ,V,Tom,,Greg,V,Bowen,,Alex TE,V,Lance,728,3.0,Alex TE,28,26
+15,Richard B,29,_,,Richard B,,Tom,,Alex TE,V,Bowen,,Tom,676,7.0,Enrik,26,26
+16,Lance,4,Vincent,,Eric L,V,Richard B,V,Tom,,Tom,V,Bowen,624,10.0,Tom,24,26
+17,Jacob P,3,Alex TE,,_,,Jacob P,,Andy R,,Lucas,,Marinko,572,8.0,Maxie ,22,26
+18,Joshua,30,_,,Jacob P,,Andy R,V,Lucas,V,Marinko,V,Lucas,520,17.0,Jacob P,20,26
+19,Flavia,19,Flavia,,Andy R,,Nat,,Marinko,V,Andy R,,Etienne,468,11.0,Colin W,18,26
+20,Charlie ,14,Willy,V,_,,Lucas,V,Etienne,,Etienne,V,Andy R,416,12.0,Bowen,16,26
+21,Nat,11,Colin W,V,_,,Flavia,,Jacob P,V,Jacob P,,Joshua,364,9.0,Vadym,14,26
+22,Marinko,22,Marinko,,Nat,,Marinko,V,Nat,,Joshua,V,Jacob P,312,14.0,Willy,12,26
+23,Etienne,27,_,,Lucas,,Etienne,V,Flavia,,Nat,V,Nat,260,16.0,Lance,10,26
+24,Andy R,6,Greg,,_,,Joshua,,Joshua,V,Flavia,,Flavia,234,4.0,Vincent,9,26
+25,_,7,Enrik,,_,,_,,_,,_,,_,208,24.0,Andy R,8,26
+26,_,26,_,,Flavia,,_,,_,,_,,_,182,23.0,Etienne,7,26
+27,_,23,Etienne,,Marinko,,_,,_,,_,,_,156,,,6,26
+28,_,10,Tom,V,_,,_,,_,,_,,_,130,,,5,26
+29,_,15,Richard B,V,_,,_,,_,,_,,_,104,,,4,26
+30,_,18,Joshua,,Etienne,,_,,_,,_,,_,78,,,3,26
+31,_,31,_,,Joshua,,_,,_,,_,,_,52,,,2,26
+32,_,2,Eric L,,_,,_,,_,,_,,_,26,,,1,26

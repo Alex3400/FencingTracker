@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Lionel,1,Lionel,,Lionel,V,Lionel,V,Lionel,,Alex TE,,Greg,1800,1.0,Lionel,100,18
+2,Greg,32,_,,Marinko,,Tom,,Alex TE,V,Greg,V,Alex TE,1530,15.0,Lorenzo,85,18
+3,Garen ,17,Richard,,Tom,V,Alex A,,Garen ,,Lionel,,Garen ,1350,17.0,Richard,75,18
+4,Alex TE,16,Marinko,V,Steph,,Alex TE,V,Greg,V,Garen ,V,Lionel,1206,12.0,Giles,67,18
+5,Alex A,9,Tom,,Alex A,V,Garen ,V,Tom,,Alex A,V,Alex A,1098,7.0,Amaury,61,18
+6,Anna Z,24,_,,Giles,,Anna Z,,Alex A,V,Anna Z,,Anna Z,990,4.0,Alex TE,55,18
+7,Amaury,25,_,,Colin ,,Amaury,,Anna Z,V,Tom,,,918,11.0,Kamal,51,18
+8,Steph,8,Steph,,Alex TE,V,Greg,V,Amaury,,Amaury,,,846,5.0,Alex A,47,18
+9,Tom,5,Alex A,,Garen ,V,Marinko,,Steph,V,Steph,,,774,6.0,Anna Z,43,18
+10,Charlie ,28,_,,Darran,,Steph,V,Giles,,Darran,,,720,16.0,Marinko,40,18
+11,Kamal,21,_,,Kamal,,Giles,V,Darran,V,Giles,,,666,2.0,Greg,37,18
+12,Giles,12,Giles,,Anna Z,V,Colin ,,Lorenzo,,Lorenzo,,,612,13.0,Colin ,34,18
+13,Colin ,13,Colin ,,Amaury,V,Darran,V,Marinko,V,Marinko,,,558,3.0,Garen ,31,18
+14,Darran,20,_,,Charlie ,,Kamal,,Colin ,,Charlie ,,,504,10.0,Charlie ,28,18
+15,Lorenzo,29,_,,Lorenzo,,Charlie ,,Kamal,,Colin ,V,Colin ,468,9.0,Tom,26,18
+16,Marinko,4,Alex TE,,Greg,V,Lorenzo,V,Charlie ,V,Kamal,,Kamal,432,8.0,Steph,24,18
+17,Richard,3,Garen ,,_,,Richard,,Richard,,Richard,,,396,18.0,Eric H,22,18
+18,Eric H,30,_,,Richard,,_,,_,,Eric H,,,360,14.0,Darran,20,18
+19,_,19,_,,_,,_,,_,,_,,_,324,,,18,18
+20,_,14,Darran,,_,,_,,Eric H,,_,,_,288,,,16,18
+21,_,11,Kamal,,_,,_,,_,,_,,_,252,,,14,18
+22,_,22,_,,_,,_,,_,,_,,_,216,,,12,18
+23,_,27,_,,_,,_,,_,,_,,_,180,,,10,18
+24,_,6,Anna Z,,_,,Eric H,,_,,_,,_,162,,,9,18
+25,_,7,Amaury,,_,,_,,_,,_,,_,144,,,8,18
+26,_,26,_,,_,,_,,_,,_,,_,126,,,7,18
+27,_,23,_,,_,,_,,_,,_,,_,108,,,6,18
+28,_,10,Charlie ,,_,,_,,_,,_,,_,90,,,5,18
+29,_,15,Lorenzo,V,_,,_,,_,,_,,_,72,,,4,18
+30,_,18,Eric H,,_,,_,,_,,_,,_,54,,,3,18
+31,_,31,_,,Eric H,,_,,_,,_,,_,36,,,2,18
+32,_,2,Greg,,_,,_,,_,,_,,_,18,,,1,18

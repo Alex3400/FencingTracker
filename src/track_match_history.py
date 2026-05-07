@@ -3,6 +3,12 @@
 Track match history between pairs of fencers across all tournaments.
 Parses both poule sheets and DE (Direct Elimination) sheets.
 Implements Elo rating system for fencer skill tracking.
+
+Blacklist Feature:
+  - Add fencer names to the BLACKLIST list to completely exclude them from all data
+  - Blacklisted fencers are removed from match history, placements, and Elo calculations
+  - Any matches involving blacklisted fencers will not affect other fencers' Elo ratings
+  - Supports aliases: blacklisting a canonical name also blacklists all its aliases
 """
 
 import os
@@ -127,12 +133,21 @@ DECAY_TARGET = 1900  # High-rated players decay toward this floor (above startin
 # First name in each list is the canonical name, rest are aliases
 NAME_ALIASES = [
     ['Fassel', 'Fasel', 'Fessel', 'Fessal', 'Fasal'],
-    ['Alix S', 'Alix'],
+    ['Alix S', 'Alix', 'Alex'],
     ['Alonzo', 'Alonso', 'Alonzozo'],
     ['Kirill', 'Kiriil'],
     ['Lukas N', 'Lukas'],
-    ['Adam S', 'Adam']
+    ['Adam S', 'Adam'],
+    ['Tom S', 'Tom'],
+    ['Willie', 'Willie K', 'Willy']
 
+]
+
+# Blacklist - fencers to completely exclude from all data and Elo calculations
+# Add names (including aliases) that should be removed from the database
+# Any fencer in this list will be removed, and their matches will not affect Elo ratings
+BLACKLIST = [
+    '#Error!', '#Ref!', '2'
 ]
 
 
@@ -148,17 +163,42 @@ for name_group in NAME_ALIASES:
         for alias in name_group:
             _ALIAS_MAP[alias.strip().title()] = canonical.strip().title()
 
+# Build blacklist set (normalized names and all their aliases)
+_BLACKLIST_SET = set()
+for name in BLACKLIST:
+    normalized = name.strip().title()
+    _BLACKLIST_SET.add(normalized)
+    # Also check if this name has aliases and add them
+    for name_group in NAME_ALIASES:
+        canonical = name_group[0].strip().title()
+        if normalized == canonical or normalized in [alias.strip().title() for alias in name_group]:
+            # Add all aliases of this name to blacklist
+            for alias in name_group:
+                _BLACKLIST_SET.add(alias.strip().title())
+            break
+
 
 def normalize_name(name):
-    """Normalize fencer name: strip whitespace, title case, and apply aliases."""
+    """Normalize fencer name: strip whitespace, title case, and apply aliases.
+    Returns None if the fencer is blacklisted."""
     if not name:
         return name
 
     # First normalize whitespace and case
     normalized = name.strip().title()
 
-    # Then apply alias mapping
-    return _ALIAS_MAP.get(normalized, normalized)
+    # Check blacklist before applying aliases
+    if normalized in _BLACKLIST_SET:
+        return None
+
+    # Apply alias mapping
+    canonical = _ALIAS_MAP.get(normalized, normalized)
+
+    # Check if canonical name is blacklisted
+    if canonical in _BLACKLIST_SET:
+        return None
+
+    return canonical
 
 
 # ============================================================
@@ -443,7 +483,8 @@ class EloRatingSystem:
         phase should be 'After Poules' or 'After DEs'
         """
         snapshot = {fencer: rating for fencer, rating in self.ratings.items()}
-        self.snapshots.append((date, phase, snapshot))
+        # Include session index with snapshot for later activity status calculation
+        self.snapshots.append((date, phase, snapshot, self.current_session_index))
 
 
 class MatchHistory:
@@ -458,14 +499,19 @@ class MatchHistory:
         self.seedings = defaultdict(list)
 
     def add_match(self, fencer1, fencer2, date, match_type, winner, score=None):
-        """Add a match to the history. Always store in alphabetical order."""
+        """Add a match to the history. Always store in alphabetical order.
+        Skips matches involving blacklisted fencers."""
         if not fencer1 or not fencer2 or fencer1 == '_' or fencer2 == '_':
             return
 
-        # Normalize names (strip and title case for consistency)
-        fencer1 = fencer1.strip().title()
-        fencer2 = fencer2.strip().title()
-        winner_normalized = winner.strip().title() if winner else None
+        # Normalize names (returns None for blacklisted fencers)
+        fencer1 = normalize_name(fencer1)
+        fencer2 = normalize_name(fencer2)
+        winner_normalized = normalize_name(winner) if winner else None
+
+        # Skip if either fencer is blacklisted
+        if not fencer1 or not fencer2:
+            return
 
         # Sort pair alphabetically
         pair = tuple(sorted([fencer1, fencer2]))
@@ -487,12 +533,14 @@ class MatchHistory:
         })
 
     def add_placement(self, fencer, place, field_size=None, date=None):
-        """Add a placement result for a fencer."""
+        """Add a placement result for a fencer. Skips blacklisted fencers."""
         if not fencer or fencer == '_':
             return
 
-        # Normalize name (strip and title case)
-        fencer = fencer.strip().title()
+        # Normalize name (returns None for blacklisted fencers)
+        fencer = normalize_name(fencer)
+        if not fencer:
+            return
 
         # Categorize placement into power-of-2 groups
         if place == 1:
@@ -518,12 +566,15 @@ class MatchHistory:
             self.placement_history[fencer].append((date, place, field_size))
 
     def add_seeding(self, fencer, seed, date):
-        """Add a seeding result for a fencer."""
+        """Add a seeding result for a fencer. Skips blacklisted fencers."""
         if not fencer or fencer == '_':
             return
 
-        # Normalize name (strip and title case)
-        fencer = fencer.strip().title()
+        # Normalize name (returns None for blacklisted fencers)
+        fencer = normalize_name(fencer)
+        if not fencer:
+            return
+
         self.seedings[fencer].append((date, seed))
 
     def get_history(self, fencer1, fencer2):
@@ -985,13 +1036,23 @@ def process_all_sheets(base_dir='downloaded_sheets'):
             matches = parse_poule_sheet(poule_sheet, date)
             poule_matches_data = matches
             for fencer1, fencer2, date_str, match_type, winner, score in matches:
+                # Skip if either fencer is blacklisted (add_match will handle this check)
                 history.add_match(fencer1, fencer2, date_str, match_type, winner, score)
-                fencers_in_poules.add(fencer1)
-                fencers_in_poules.add(fencer2)
+
+                # Normalize and check for blacklisted fencers before adding to sets and Elo
+                fencer1_norm = normalize_name(fencer1)
+                fencer2_norm = normalize_name(fencer2)
+
+                # Skip this match if either fencer is blacklisted
+                if not fencer1_norm or not fencer2_norm:
+                    continue
+
+                fencers_in_poules.add(fencer1_norm)
+                fencers_in_poules.add(fencer2_norm)
 
                 # Ensure both fencers are initialized in Elo system
-                elo_system.get_rating(fencer1)
-                elo_system.get_rating(fencer2)
+                elo_system.get_rating(fencer1_norm)
+                elo_system.get_rating(fencer2_norm)
 
                 # Process Elo for poule match
                 if score:
@@ -1001,7 +1062,7 @@ def process_all_sheets(base_dir='downloaded_sheets'):
                             score1 = int(score_parts[0]) if score_parts[0] != '?' else None
                             score2 = int(score_parts[1]) if score_parts[1] != '?' else None
                             if score1 is not None and score2 is not None:
-                                elo_system.process_poule_match(fencer1, fencer2, score1, score2, date_str)
+                                elo_system.process_poule_match(fencer1_norm, fencer2_norm, score1, score2, date_str)
                     except (ValueError, IndexError):
                         pass
 
@@ -1023,23 +1084,44 @@ def process_all_sheets(base_dir='downloaded_sheets'):
             total_fencers = len(fencers_in_poules) if fencers_in_poules else len(placements)
 
             for fencer1, fencer2, date_str, match_type, winner, score in matches:
+                # Skip if either fencer is blacklisted (add_match will handle this check)
                 history.add_match(fencer1, fencer2, date_str, match_type, winner, score)
-                fencers_in_des.add(fencer1)
-                fencers_in_des.add(fencer2)
+
+                # Normalize and check for blacklisted fencers
+                fencer1_norm = normalize_name(fencer1)
+                fencer2_norm = normalize_name(fencer2)
+                winner_norm = normalize_name(winner)
+
+                # Skip this match if either fencer is blacklisted
+                if not fencer1_norm or not fencer2_norm or not winner_norm:
+                    continue
+
+                fencers_in_des.add(fencer1_norm)
+                fencers_in_des.add(fencer2_norm)
 
                 # Process Elo for DE match
                 # Extract bracket name from match_type (format: "DE-L1-8")
                 bracket_name = match_type.replace('DE-', '') if match_type.startswith('DE-') else 'L1-32'
-                elo_system.process_de_match(fencer1, fencer2, winner, bracket_name, date_str, total_fencers)
+                elo_system.process_de_match(fencer1_norm, fencer2_norm, winner_norm, bracket_name, date_str, total_fencers)
 
             for fencer, place in placements.items():
+                # Normalize and check for blacklisted fencers
+                fencer_norm = normalize_name(fencer)
+                if not fencer_norm:
+                    continue
+
                 history.add_placement(fencer, place, field_size=total_fencers, date=date_str)
                 # Apply placement bonus
-                elo_system.apply_placement_bonus(fencer, place, date)
+                elo_system.apply_placement_bonus(fencer_norm, place, date)
 
             for fencer, seed in seedings.items():
+                # Normalize and check for blacklisted fencers
+                fencer_norm = normalize_name(fencer)
+                if not fencer_norm:
+                    continue
+
                 history.add_seeding(fencer, seed, date)
-                fencers_in_des.add(fencer)
+                fencers_in_des.add(fencer_norm)
 
             print(f"  Found {len(matches)} DE matches")
             print(f"  Found {len(placements)} placements")
@@ -1251,10 +1333,13 @@ def export_fencer_stats(history, elo_system=None, output_file='fencer_stats.csv'
         for date, place, field_size in hist:
             placement_field_sizes[(fencer, place)].append(field_size)
 
+    # Get current session index for active status calculation
+    current_session = elo_system.current_session_index if elo_system else 0
+
     with open(output_file, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
         writer.writerow([
-            'Fencer', 'Total Appearances',
+            'Fencer', 'Active Status', 'Total Appearances',
             'Total Matches', 'Wins', 'Losses', 'Winrate',
             'Poule Matches', 'Poule Wins', 'Poule Losses', 'Poule Winrate',
             'Touches Scored', 'Touches Received', 'Touch Differential',
@@ -1292,6 +1377,19 @@ def export_fencer_stats(history, elo_system=None, output_file='fencer_stats.csv'
 
             de_appearances = len(de_appearance_dates)
 
+            # Calculate active status based on last participation
+            active_status = 'Inactive'
+            if elo_system and fencer in elo_system.last_active_session:
+                last_active = elo_system.last_active_session[fencer]
+                sessions_inactive = current_session - last_active
+
+                if sessions_inactive <= 20:
+                    active_status = 'Active'
+                elif sessions_inactive <= 40:
+                    active_status = 'Semi-active'
+                else:
+                    active_status = 'Inactive'
+
             # Format placement data with field sizes
             placement_cols = []
             for category in ['Win', 'L2', 'L4', 'L8', 'L16', 'L32']:
@@ -1325,6 +1423,7 @@ def export_fencer_stats(history, elo_system=None, output_file='fencer_stats.csv'
 
             row = [
                 fencer,
+                active_status,
                 total_appearances,
                 stats['total_matches'],
                 stats['wins'],
@@ -1729,13 +1828,21 @@ def export_elo_leaderboard_timeline(elo_system, output_file='elo_leaderboard_tim
 
     # Build column headers (date + phase)
     columns = []
-    for date, phase, _ in elo_system.snapshots:
+    for snapshot_data in elo_system.snapshots:
+        if len(snapshot_data) == 4:
+            date, phase, _, _ = snapshot_data
+        else:
+            date, phase, _ = snapshot_data
         col_name = f"{date} {phase}"
         columns.append(col_name)
 
     # Determine max number of fencers across all snapshots
     all_fencers = set()
-    for _, _, snapshot in elo_system.snapshots:
+    for snapshot_data in elo_system.snapshots:
+        if len(snapshot_data) == 4:
+            _, _, snapshot, _ = snapshot_data
+        else:
+            _, _, snapshot = snapshot_data
         all_fencers.update(snapshot.keys())
 
     max_rank = len(all_fencers)
@@ -1749,7 +1856,11 @@ def export_elo_leaderboard_timeline(elo_system, output_file='elo_leaderboard_tim
         # Build a lookup of fencer ratings in each snapshot for easy comparison
         # snapshot_ratings[snapshot_idx][fencer] = rating
         snapshot_ratings = []
-        for _, _, snapshot in elo_system.snapshots:
+        for snapshot_data in elo_system.snapshots:
+            if len(snapshot_data) == 4:
+                _, _, snapshot, _ = snapshot_data
+            else:
+                _, _, snapshot = snapshot_data
             snapshot_ratings.append(snapshot)
 
         # For each rank position
@@ -1757,7 +1868,11 @@ def export_elo_leaderboard_timeline(elo_system, output_file='elo_leaderboard_tim
             row = [rank]
 
             # For each snapshot
-            for snapshot_idx, (date, phase, snapshot) in enumerate(elo_system.snapshots):
+            for snapshot_idx, snapshot_data in enumerate(elo_system.snapshots):
+                if len(snapshot_data) == 4:
+                    date, phase, snapshot, _ = snapshot_data
+                else:
+                    date, phase, snapshot = snapshot_data
                 # Sort fencers by rating for this snapshot
                 sorted_fencers = sorted(snapshot.items(), key=lambda x: x[1], reverse=True)
 
@@ -1794,13 +1909,21 @@ def export_elo_fencer_timeline(elo_system, output_file='elo_fencer_timeline.csv'
 
     # Build column headers (date + phase)
     columns = []
-    for date, phase, _ in elo_system.snapshots:
+    for snapshot_data in elo_system.snapshots:
+        if len(snapshot_data) == 4:
+            date, phase, _, _ = snapshot_data
+        else:
+            date, phase, _ = snapshot_data
         col_name = f"{date} {phase}"
         columns.append(col_name)
 
     # Get all fencers across all snapshots
     all_fencers = set()
-    for _, _, snapshot in elo_system.snapshots:
+    for snapshot_data in elo_system.snapshots:
+        if len(snapshot_data) == 4:
+            _, _, snapshot, _ = snapshot_data
+        else:
+            _, _, snapshot = snapshot_data
         all_fencers.update(snapshot.keys())
 
     # Sort fencers alphabetically
@@ -1808,7 +1931,11 @@ def export_elo_fencer_timeline(elo_system, output_file='elo_fencer_timeline.csv'
 
     # Pre-calculate rankings for each snapshot
     snapshot_rankings = []
-    for date, phase, snapshot in elo_system.snapshots:
+    for snapshot_data in elo_system.snapshots:
+        if len(snapshot_data) == 4:
+            date, phase, snapshot, _ = snapshot_data
+        else:
+            date, phase, snapshot = snapshot_data
         # Sort by rating descending to get ranks
         sorted_by_rating = sorted(snapshot.items(), key=lambda x: x[1], reverse=True)
         rank_map = {fencer: rank + 1 for rank, (fencer, _) in enumerate(sorted_by_rating)}
@@ -1826,7 +1953,11 @@ def export_elo_fencer_timeline(elo_system, output_file='elo_fencer_timeline.csv'
             prev_rating = None
 
             # For each snapshot
-            for snapshot_idx, (date, phase, snapshot) in enumerate(elo_system.snapshots):
+            for snapshot_idx, snapshot_data in enumerate(elo_system.snapshots):
+                if len(snapshot_data) == 4:
+                    date, phase, snapshot, _ = snapshot_data
+                else:
+                    date, phase, snapshot = snapshot_data
                 if fencer in snapshot:
                     rating = snapshot[fencer]
                     rank = snapshot_rankings[snapshot_idx][fencer]
@@ -1867,14 +1998,28 @@ def export_json_for_website(elo_system, history, session_stats, all_placements, 
     output_path.mkdir(parents=True, exist_ok=True)
 
     # 1. Elo Ratings (leaderboard)
+    current_session = elo_system.current_session_index
     ratings_data = []
     for fencer, rating in sorted(elo_system.ratings.items(), key=lambda x: x[1], reverse=True):
         match_count = elo_system.get_match_count(fencer)
 
+        # Calculate active status
+        active_status = 'Inactive'
+        if fencer in elo_system.last_active_session:
+            last_active = elo_system.last_active_session[fencer]
+            sessions_inactive = current_session - last_active
+
+            if sessions_inactive <= 20:
+                active_status = 'Active'
+            elif sessions_inactive <= 40:
+                active_status = 'Semi-active'
+
         ratings_data.append({
             'fencer': fencer,
             'rating': round(rating, 1),
-            'matches': match_count
+            'matches': match_count,
+            'active_status': active_status,
+            'sessions_since_last_active': current_session - elo_system.last_active_session.get(fencer, 0)
         })
 
     with open(output_path / 'elo_ratings.json', 'w', encoding='utf-8') as f:
@@ -1882,11 +2027,32 @@ def export_json_for_website(elo_system, history, session_stats, all_placements, 
 
     # 2. Elo History Timeline (for charts)
     timeline_data = []
-    for date, phase, snapshot in elo_system.snapshots:
+    for date, phase, snapshot, snapshot_session_idx in elo_system.snapshots:
+        # Calculate activity status for each fencer at this point in time
+        fencer_statuses = {}
+        for fencer, rating in snapshot.items():
+            # Calculate how many sessions inactive at this snapshot point
+            if fencer in elo_system.last_active_session:
+                last_active = elo_system.last_active_session[fencer]
+                sessions_inactive = snapshot_session_idx - last_active
+
+                if sessions_inactive <= 20:
+                    status = 'Active'
+                elif sessions_inactive <= 40:
+                    status = 'Semi-active'
+                else:
+                    status = 'Inactive'
+            else:
+                # Fencer hasn't appeared yet, mark as Inactive
+                status = 'Inactive'
+
+            fencer_statuses[fencer] = status
+
         snapshot_entry = {
             'date': date,
             'phase': phase,
-            'ratings': {fencer: round(rating, 1) for fencer, rating in snapshot.items()}
+            'ratings': {fencer: round(rating, 1) for fencer, rating in snapshot.items()},
+            'active_status': fencer_statuses
         }
         timeline_data.append(snapshot_entry)
 

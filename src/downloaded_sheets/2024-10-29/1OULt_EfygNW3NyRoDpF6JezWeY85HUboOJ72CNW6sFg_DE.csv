@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Greg,1,Greg,,Greg,V,Greg,V,Greg,V,Greg,V,Greg,2200,5.0,Pierre,100,22
+2,Giles,32,_,,Etienne,,Kamal,,Vadym,,Giles,,Giles,1870,8.0,Richard B,85,22
+3,Alejo,17,John H,,Kamal,V,Pierre,,Alejo,,Vadym,V,Vadym,1650,20.0,Vadym,75,22
+4,Adam,16,Etienne,V,Richard B,,Vadym,V,Giles,V,Alejo,,Alejo,1474,10.0,Charlie ,67,22
+5,Pierre,9,Kamal,,Pierre,V,Alejo,V,Kamal,,Pierre,V,Pierre,1342,19.0,Eugene,61,22
+6,Alex A,24,_,,Chrissy,,Alex A,,Pierre,V,Charlie ,,Charlie ,1210,2.0,Giles,55,22
+7,Patrick L,25,_,,Vadym,V,Charlie ,,Alex A,,Kamal,V,Kamal,1122,1.0,Greg,51,22
+8,Richard B,8,Richard B,,Adam,,Giles,V,Charlie ,V,Alex A,,Alex A,1034,6.0,Alex A,47,22
+9,Kamal,5,Pierre,,Alejo,V,Etienne,,Richard B,V,Richard B,,Alex TE,946,4.0,Adam,43,22
+10,Charlie ,28,_,,Eugene,,Richard B,V,Chrissy,,Alex TE,V,Richard B,880,22.0,Nat,40,22
+11,Martin H,21,Colin ,,Martin H,,Chrissy,V,Eugene,,Chrissy,,Eugene,814,14.0,Giles,37,22
+12,Chrissy,12,Chrissy,V,Alex A,V,Adam,,Alex TE,V,Eugene,V,Chrissy,748,11.0,Martin H,34,22
+13,Vincent,13,Vincent,,Patrick L,,Eugene,V,Etienne,V,Etienne,V,Etienne,682,9.0,Kamal,31,22
+14,Giles,20,Vadym,V,Charlie ,V,Martin H,,Adam,,Patrick L,,Patrick L,616,13.0,Vincent,28,22
+15,Alex TE,29,_,,Alex TE,,Patrick L,,Martin H,,Adam,,Martin H,572,21.0,Colin ,26,22
+16,Etienne,4,Adam,,Giles,V,Alex TE,V,Patrick L,V,Martin H,V,Adam,528,7.0,Patrick L,24,22
+17,John H,3,Alejo,,_,,John H,,John H,,Vincent,V,Vincent,484,12.0,Chrissy,22,22
+18,Anna Z,30,_,,John H,,_,,Vincent,V,Anna Z,,Anna Z,440,17.0,John H,20,22
+19,Eugene,19,Eugene,V,_,,Colin ,,Nat,,John H,,Nat,396,18.0,Anna Z,18,22
+20,Vadym,14,Giles,,_,,Vincent,V,Anna Z,V,Nat,V,John H,352,16.0,Etienne,16,22
+21,Colin ,11,Martin H,V,_,,Giles,,_,,Colin ,V,Colin ,308,15.0,Alex TE,14,22
+22,Nat,22,Nat,,Colin ,,Nat,V,Colin ,,Giles,,Giles,264,3.0,Alejo,12,22
+23,_,27,_,,Vincent,,_,,Giles,,_,,_,220,,,10,22
+24,_,6,Alex A,,_,,Anna Z,,_,,_,,_,198,,,9,22
+25,_,7,Patrick L,,_,,_,,_,,_,,_,176,,,8,22
+26,_,26,_,,Giles,,_,,_,,_,,_,154,,,7,22
+27,_,23,_,,Nat,,_,,_,,_,,_,132,,,6,22
+28,_,10,Charlie ,,_,,_,,_,,_,,_,110,,,5,22
+29,_,15,Alex TE,V,_,,_,,_,,_,,_,88,,,4,22
+30,_,18,Anna Z,,_,,_,,_,,_,,_,66,,,3,22
+31,_,31,_,,Anna Z,,_,,_,,_,,_,44,,,2,22
+32,_,2,Giles,,_,,_,,_,,_,,_,22,,,1,22

@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Greg,1,Greg,,Greg,V,Greg,V,Greg,,Alejo,,Pierre,1900,3.0,Pierre,100,19
+2,Richard,32,_,,Eugene,,Martin H,,Alejo,V,Pierre,V,Alejo,1615,2.0,Richard,85,19
+3,Pierre,17,Eugene,V,Steph,,Vadym,,Pierre,V,Greg,V,Greg,1425,7.0,Amaury,75,19
+4,Alejo,16,Eric H,,Martin H,V,Alejo,V,Amaury,,Amaury,,Amaury,1273,17.0,Eugene,67,19
+5,Kamal,9,Steph,,Kamal,,Pierre,V,Martin H,V,Martin H,,Alex TE,1159,,,61,19
+6,Alex TE,24,_,,Vadym,V,Alex TE,,Vadym,,Alex TE,V,Martin H,1045,15.0,Giles,55,19
+7,Amaury,25,_,,Thea,,Amaury,V,Alex TE,V,Vadym,V,Vadym,969,9.0,Steph,51,19
+8,Martin H,8,Martin H,,Alejo,V,Giles,,Giles,,Giles,,Giles,893,5.0,Kamal,47,19
+9,Steph,5,Kamal,,Pierre,V,Eugene,V,Eugene,V,Eugene,,Edo,817,16.0,Eric H,43,19
+10,Colin ,28,_,,Edo,,Steph,,Thea,,Edo,V,Eugene,760,1.0,Greg,40,19
+11,Anna Z,21,_,,Anna Z,,Kamal,,Edo,V,Thea,,Richard,703,6.0,Alex TE,37,19
+12,Vadym,12,Vadym,,Alex TE,V,Thea,V,Richard,,Richard,V,Thea,646,10.0,Colin ,34,19
+13,Thea,13,Thea,,Amaury,V,Edo,V,Steph,V,Steph,,#ERROR!,589,12.0,Vadym,31,19
+14,Edo,20,_,,Colin ,,Anna Z,,Kamal,))),#ERROR!,,#ERROR!,532,11.0,Anna Z,28,19
+15,Giles,29,_,,Giles,V,Colin ,,#ERROR!,V))),Kamal,,#ERROR!,494,18.0,Nat,26,19
+16,Eric H,4,Alejo,,Richard,,Richard,V,#ERROR!,,#ERROR!,V,#ERROR!,456,14.0,Edo,24,19
+17,Eugene,3,Pierre,,_,,Eric H,,#ERROR!,,#ERROR!,V,#ERROR!,418,8.0,Martin H,22,19
+18,Nat,30,_,,Eric H,,_,,_,,Nat,,#ERROR!,380,13.0,Thea,20,19
+19,_,19,_,,_,,_,,_,,#ERROR!,,#ERROR!,342,4.0,Alejo,18,19
+20,_,14,Edo,,_,,_,,Nat,,_,,#ERROR!,304,,,16,19
+21,_,11,Anna Z,,_,,_,,_,,_,,_,266,,,14,19
+22,_,22,_,,_,,_,,_,,_,,_,228,,,12,19
+23,_,27,_,,_,,_,,_,,_,,_,190,,,10,19
+24,_,6,Alex TE,,_,,Nat,,_,,_,,_,171,,,9,19
+25,_,7,Amaury,,_,,_,,_,,_,,_,152,,,8,19
+26,_,26,_,,_,,_,,_,,_,,_,133,,,7,19
+27,_,23,_,,_,,_,,_,,_,,_,114,,,6,19
+28,_,10,Colin ,,_,,_,,_,,_,,_,95,,,5,19
+29,_,15,Giles,V,_,,_,,_,,_,,_,76,,,4,19
+30,_,18,Nat,,_,,_,,_,,_,,_,57,,,3,19
+31,_,31,_,,Nat,,_,,_,,_,,_,38,,,2,19
+32,_,2,Richard,,_,,_,,_,,_,,_,19,,,1,19
