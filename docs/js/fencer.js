@@ -135,8 +135,8 @@ function parseCSVLine(line) {
 function populateFencerSelect() {
     const select = document.getElementById('fencer-select');
 
-    // Sort by rating descending
-    const sortedFencers = [...ratingsData].sort((a, b) => b.rating - a.rating);
+    // Sort alphabetically by name
+    const sortedFencers = [...ratingsData].sort((a, b) => a.fencer.localeCompare(b.fencer));
 
     sortedFencers.forEach(fencer => {
         const option = document.createElement('option');
@@ -574,11 +574,15 @@ function drawFencerChart(fencerName) {
             labels.push(`${snapshot.date} ${snapshot.phase}`);
             data.push(snapshot.ratings[fencerName]);
 
-            // Calculate rank at this snapshot
-            const sortedRatings = Object.entries(snapshot.ratings)
-                .sort((a, b) => b[1] - a[1]);
+            // Calculate rank at this snapshot (only among active/semi-active fencers)
+            const activeFencers = Object.entries(snapshot.ratings).filter(([name, rating]) => {
+                const status = snapshot.active_status?.[name];
+                return status === 'Active' || status === 'Semi-active';
+            });
+
+            const sortedRatings = activeFencers.sort((a, b) => b[1] - a[1]);
             const rank = sortedRatings.findIndex(([name, _]) => name === fencerName) + 1;
-            ranks.push(rank);
+            ranks.push(rank > 0 ? rank : null);
         }
     });
 
