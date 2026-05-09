@@ -11,7 +11,7 @@ Total Touches Scored: 81259
 
 --- AVERAGES ---
 Avg Fencers per Session (Poules): 18.51
-Avg Fencers per Session (DEs): 16.87
+Avg Fencers per Session (DEs): 16.86
 Avg Matches per Session: 110.99
 Avg Poule Matches per Session: 79.04
 Avg DE Matches per Session: 31.95
