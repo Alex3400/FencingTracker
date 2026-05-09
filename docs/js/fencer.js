@@ -173,7 +173,19 @@ function displayFencerStats(fencerName, autoSelectDate = null) {
 
     // Current rating
     document.getElementById('current-rating').textContent = ratingInfo.rating;
-    document.getElementById('rating-status').textContent = '';
+
+    // Display status badge
+    let statusText = '';
+    if (ratingInfo.active_status) {
+        let statusClass = 'status-inactive';
+        if (ratingInfo.active_status === 'Active') {
+            statusClass = 'status-active';
+        } else if (ratingInfo.active_status === 'Semi-active') {
+            statusClass = 'status-semi-active';
+        }
+        statusText = `<span class="status-badge ${statusClass}">${ratingInfo.active_status}</span>`;
+    }
+    document.getElementById('rating-status').innerHTML = statusText;
 
     // Rank (only among active/semi-active fencers)
     const activeFencers = ratingsData.filter(f =>

@@ -28,7 +28,7 @@
 10/10/23,https://docs.google.com/spreadsheets/d/1OrdfWa4L4VvwaIrja-qEBXknxeWdZwpp5eZUQye3Ie0/edit?usp=drivesdk
 10/17/23,https://docs.google.com/spreadsheets/d/1n_uWZHP8A7a4lwiSsl2i0lxAhHuYQX5Q126U22qswXk/edit?usp=drivesdk
 10/24/23,https://docs.google.com/spreadsheets/d/1bbF6UVloq2zHvSpMEjaLYYBEjCBklUMqlmNu_EHFoko/edit?usp=drivesdk
-10/27/23,https://docs.google.com/spreadsheets/d/1kL5QcxYC0FTACl-Jin2gUiHZb43UJQciU4KiCZXNJTk/edit?usp=drivesdk
+10/31/23,https://docs.google.com/spreadsheets/d/1kL5QcxYC0FTACl-Jin2gUiHZb43UJQciU4KiCZXNJTk/edit?usp=drivesdk
 11/7/23,https://docs.google.com/spreadsheets/d/1eSI7B8R8J7F_iH1jr6jX2COh4nN1xU6Av7la0iB7tpA/edit?usp=sharing
 11/14/23,https://docs.google.com/spreadsheets/d/1HzA1rKsc_vuStuWPZUi8EoKM8DfiFf-2wka9-luTL78/edit?usp=sharing
 11/21/23,https://docs.google.com/spreadsheets/d/1LJ7v9je6jZmYZTbOygOVnjP0Q4k0SSpvuASf60v3ZZI/edit?usp=drive_link
@@ -39,7 +39,6 @@
 1/16/24,https://docs.google.com/spreadsheets/d/1n7Fdbj2BzzTKuxwrch8_DiPuVXNOWZEltWKBbP6lvdI/edit?usp=drivesdk
 1/23/24,https://docs.google.com/spreadsheets/d/1Q8dy-zh1WANTvyNRJUB8jJYXyci3BSyNKYqxLzvtEQA/edit?usp=sharing
 1/30/24,https://docs.google.com/spreadsheets/d/1kqpQppvegdEj_GXvWcIXqzfz60JJY4OBpbjEAbCrcfE/edit?usp=drivesdk
-2/1/24,https://docs.google.com/spreadsheets/d/1juCxduYIVZv0XqpWW6kMl1X-X3DcZ2Fj6mn8rxPhXgE/edit?usp=drivesdk
 2/6/24,https://docs.google.com/spreadsheets/d/1HNuCJU1thCbxwy4UOu6O6vdKiFxJt6E4NR8I6KBzAQE/edit?usp=drive_link
 2/13/24,https://docs.google.com/spreadsheets/d/1vIIKjvDR7QrEsD6CJaErA5oIzIDMVEMgqqRv_P5BAYw/edit?usp=drivesdk
 2/20/24,https://docs.google.com/spreadsheets/d/1zHhHjmhVDp1qvI2Xm0HDPiJTzukXjs4BC6uxvhvTpFE/edit?usp=sharing
@@ -47,8 +46,6 @@
 3/5/24,https://docs.google.com/spreadsheets/d/1vCGNu1SBthFljzuStwF2i5cKah1_AgTzjrBCnX4FCmw/edit?usp=drive_link
 3/12/24,https://docs.google.com/spreadsheets/d/1sgmGUJicBC6XB5MuY92WfyZSFwbtFfkUzYcuD8YnHAU/edit?usp=drive_link
 3/19/24,https://docs.google.com/spreadsheets/d/1ZllpRLcOK5mUGYrJahMNnbnXXlMbR3im6jQFeYJzdw8/edit?usp=drivesdk
-3/26/24,https://docs.google.com/spreadsheets/d/1TpKUlwERrUM9cK3l7yI1mJpo0iYGMlWrAz5tpcxKa9o/edit?usp=drivesdk
-3/26/24,https://docs.google.com/spreadsheets/d/1zHnPtniKcT6eJXNfgSaG9jMKY193t-zQ0fQaRzUxMN8/edit?usp=drivesdk
 4/16/24,https://docs.google.com/spreadsheets/d/1F_diYzJV69HKswd8GTbA27i3tV2MuIy92mKrr4m5EeY/edit?usp=drivesdk
 4/23/24,https://docs.google.com/spreadsheets/d/1Rkm-OIawdytfspkk25BRbXqWEtjvA8iTO7IcVymPYdM/edit?usp=sharing
 4/30/24,https://docs.google.com/spreadsheets/d/1mEq6pKlnPphy4XGmWBkzsyRUbyJKWsErakPK-TIBz2E/edit?usp=drivesdk
@@ -105,7 +102,7 @@
 7/1/25,https://docs.google.com/spreadsheets/d/15cpw6caITjnJh94VQ3oP4QHqzPphMuRXaTDOd2MtKpQ/edit?usp=drivesdk
 7/8/25,https://docs.google.com/spreadsheets/d/16t7xFwcmsQwojncUNYBkUqRA9dI1w8WjAS-QZBoHnfw/edit?usp=drivesdk
 7/15/25,https://docs.google.com/spreadsheets/d/1lcyqy1pWVWrVdlt7Mts_xPSV7lNkmxjlbM6tn8ye4a0/edit?usp=drivesdk
-9/1/25,https://docs.google.com/spreadsheets/d/1FeojKouraadbM0EYNK39Z4HfYx5sN_JgQcMjn723WXU/edit?usp=drivesdk
+9/2/25,https://docs.google.com/spreadsheets/d/1FeojKouraadbM0EYNK39Z4HfYx5sN_JgQcMjn723WXU/edit?usp=drivesdk
 9/9/25,https://docs.google.com/spreadsheets/d/1FRS1L4D1WaLTf9VUL5ogwL9KjDQqXkIIiatIE6McNEg/edit?usp=drivesdk
 9/16/25,https://docs.google.com/spreadsheets/d/10DPzx1U_fIklSdmTyok6oY3IUCV2yEf6jJfqWe15Wq0/edit?usp=drivesdk
 9/23/25,https://docs.google.com/spreadsheets/d/1tnpbS7cCuleEWK6Vup8NJXMZ38Z6_w_5uCjPJtUgsbU/edit?usp=drivesdk
@@ -115,7 +112,7 @@
 10/21/25,https://docs.google.com/spreadsheets/d/1uDik8H2dQ_GmJDlnzb3WYM3sqM-1FKWohTCVZTTytyU/edit?usp=sharing
 10/28/25,https://docs.google.com/spreadsheets/d/1sgwRa9tHOhV0VWVLJpwfytcM1Hf1QMRlEsBG9zbZqFE/edit?usp=drivesdk
 11/4/25,https://docs.google.com/spreadsheets/d/1iX5LisvPfYaaPURBS3R__gRWPVNdEnGZJWRPlEdWKIM/edit?usp=drivesdk
-11/10/25,https://docs.google.com/spreadsheets/d/1mppZ8EwT3NZRwf_SYtCBUoznEpN7xvknWBHI0DiRTsc/edit?usp=drivesdk
+11/11/25,https://docs.google.com/spreadsheets/d/1mppZ8EwT3NZRwf_SYtCBUoznEpN7xvknWBHI0DiRTsc/edit?usp=drivesdk
 11/18/25,https://docs.google.com/spreadsheets/d/197snAxy_16lSqMQ2crIaUPiIoTqLte6MbTstwQbIzgE/edit?usp=drivesdk
 11/25/25,https://docs.google.com/spreadsheets/d/1_tB7ghLlwkY-YkBEUfykhpmMfD1XOVl7StsVVAFOM5k/edit?usp=drivesdk
 12/2/25,https://docs.google.com/spreadsheets/d/1dXBHWGMxcU_zecHzgeElrjNIJimI9tl8yMr5yjE3ljw/edit?usp=drivesdk

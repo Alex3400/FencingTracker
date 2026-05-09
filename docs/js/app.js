@@ -1,19 +1,25 @@
 // Load and display Elo ratings
 let ratingsData = [];
 let sessionsData = [];
+let fencerStatsData = [];
 let dataTable = null;
 let currentActivityFilter = 'active'; // Default filter
 let filterListenerAttached = false; // Flag to prevent duplicate listeners
 
 async function loadRatings() {
     try {
-        const [ratingsResponse, sessionsResponse] = await Promise.all([
+        const [ratingsResponse, sessionsResponse, statsResponse] = await Promise.all([
             fetch('data/elo_ratings.json'),
-            fetch('data/sessions.json')
+            fetch('data/sessions.json'),
+            fetch('data/fencer_stats.csv')
         ]);
 
         ratingsData = await ratingsResponse.json();
         sessionsData = await sessionsResponse.json();
+
+        // Parse fencer stats CSV
+        const statsText = await statsResponse.text();
+        fencerStatsData = parseStatsCSV(statsText);
 
         // Load saved filter preference from localStorage
         const savedFilter = localStorage.getItem('activityFilter');
@@ -45,8 +51,43 @@ async function loadRatings() {
     } catch (error) {
         console.error('Error loading ratings:', error);
         document.getElementById('ratings-body').innerHTML =
-            '<tr><td colspan="5" style="text-align: center; color: red;">Error loading data. Please try again later.</td></tr>';
+            '<tr><td colspan="6" style="text-align: center; color: red;">Error loading data. Please try again later.</td></tr>';
     }
+}
+
+function parseStatsCSV(text) {
+    const lines = text.trim().split('\n');
+    const headers = parseCSVLine(lines[0]);
+
+    return lines.slice(1).map(line => {
+        const values = parseCSVLine(line);
+        const row = {};
+        headers.forEach((header, i) => {
+            row[header] = values[i] || '';
+        });
+        return row;
+    });
+}
+
+function parseCSVLine(line) {
+    const values = [];
+    let current = '';
+    let inQuotes = false;
+
+    for (let i = 0; i < line.length; i++) {
+        const char = line[i];
+
+        if (char === '"') {
+            inQuotes = !inQuotes;
+        } else if (char === ',' && !inQuotes) {
+            values.push(current.trim());
+            current = '';
+        } else {
+            current += char;
+        }
+    }
+    values.push(current.trim());
+    return values;
 }
 
 function applyActivityFilter() {
@@ -101,11 +142,22 @@ function displayRatings(data) {
             statusBadge = '<span style="color: #999;">N/A</span>';
         }
 
+        // Get max elo from stats data
+        const statsInfo = fencerStatsData.find(f => f.Fencer === fencer.fencer);
+        let maxElo = '-';
+        if (statsInfo && statsInfo['Max Elo (All-Time)']) {
+            const maxEloValue = parseFloat(statsInfo['Max Elo (All-Time)']);
+            if (!isNaN(maxEloValue)) {
+                maxElo = maxEloValue.toFixed(1);
+            }
+        }
+
         row.innerHTML = `
             <td class="${rankClass}">${rank}</td>
             <td><a href="fencer.html?fencer=${encodeURIComponent(fencer.fencer)}" class="fencer-link">${fencer.fencer}</a></td>
             <td>${statusBadge}</td>
             <td><strong>${fencer.rating}</strong></td>
+            <td>${maxElo}</td>
             <td>${fencer.matches}</td>
         `;
         tbody.appendChild(row);
@@ -117,7 +169,7 @@ function displayRatings(data) {
         searching: true,
         ordering: true,
         pageLength: 25,
-        order: [[3, 'desc']], // Sort by rating column (descending)
+        order: [[3, 'desc']], // Sort by current rating column (descending) by default
         columnDefs: [
             { orderable: false, targets: 0 } // Don't allow sorting by rank
         ]

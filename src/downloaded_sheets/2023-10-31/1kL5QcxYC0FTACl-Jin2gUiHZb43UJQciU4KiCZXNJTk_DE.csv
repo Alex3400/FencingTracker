@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Greg,1,Greg,,Greg,,Greg,V,Greg,V,Greg,V,Greg,1400,2.0,Pierre,100,14
+2,Pierre,32,_,,_,,Tom,,Steph,,Pierre,,Pierre,1190,1.0,Greg,85,14
+3,Georgina,17,_,,Tom,V,Alex TE,,Georgina,,Steph,,,1050,3.0,Georgina,75,14
+4,Steph,16,_,,Richard,,Steph,V,Pierre,V,Georgina,,,938,6.0,Kamal,67,14
+5,Alex TE,9,Tom,,Alex TE,V,Georgina,V,Tom,,Alex TE,,,854,12.0,Vadym,61,14
+6,Kamal,24,_,,Vadym,,Kamal,,Alex TE,V,Kamal,,,770,4.0,Steph,55,14
+7,Alejo,25,_,,Nat,,Alejo,,Kamal,V,Tom,,,714,5.0,Alex TE,51,14
+8,Richard,8,Richard,,Steph,V,Pierre,V,Alejo,,Alejo,,,658,8.0,Richard,47,14
+9,Tom,5,Alex TE,,Georgina,,_,,Richard,V,Richard,,,602,7.0,Alejo,43,14
+10,Andy R,28,_,,_,,Richard,,Nat,,Marinko,,,560,,,40,14
+11,Marinko,21,_,,Marinko,,Vadym,,Marinko,V,Nat,,,518,10.0,Andy R,37,14
+12,Vadym,12,Vadym,,Kamal,V,Nat,V,Andy R,,Andy R,,,476,11.0,Marinko,34,14
+13,Nat,13,Nat,,Alejo,V,_,,_,,Vadym,,Vadym,434,9.0,Tom,31,14
+14,_,20,_,,Andy R,,Marinko,,Vadym,,_,,_,392,13.0,Nat,28,14
+15,_,29,_,,_,,Andy R,,_,,_,,_,364,,,26,14
+16,_,4,Steph,,Pierre,,_,,_,,_,,_,336,,,24,14
+17,_,3,Georgina,,_,,_,,_,,_,,_,308,,,22,14
+18,_,30,_,,_,,_,,_,,_,,_,280,,,20,14
+19,_,19,_,,_,,_,,_,,_,,_,252,,,18,14
+20,_,14,_,,_,,_,,_,,_,,_,224,,,16,14
+21,_,11,Marinko,,_,,_,,_,,_,,_,196,,,14,14
+22,_,22,_,,_,,_,,_,,_,,_,168,,,12,14
+23,_,27,_,,_,,_,,_,,_,,_,140,,,10,14
+24,_,6,Kamal,,_,,_,,_,,_,,_,126,,,9,14
+25,_,7,Alejo,,_,,_,,_,,_,,_,112,,,8,14
+26,_,26,_,,_,,_,,_,,_,,_,98,,,7,14
+27,_,23,_,,_,,_,,_,,_,,_,84,,,6,14
+28,_,10,Andy R,,_,,_,,_,,_,,_,70,,,5,14
+29,_,15,_,,_,,_,,_,,_,,_,56,,,4,14
+30,_,18,_,,_,,_,,_,,_,,_,42,,,3,14
+31,_,31,_,,_,,_,,_,,_,,_,28,,,2,14
+32,_,2,Pierre,,_,,_,,_,,_,,_,14,,,1,14
