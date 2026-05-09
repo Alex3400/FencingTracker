@@ -2,6 +2,8 @@
 
 A data analysis tool that processes fencing tournament results and calculates Elo ratings for club members. The system reads CSV tournament sheets (both poule and direct elimination brackets) and generates a static website with leaderboards, fencer statistics, match history, and interactive visualizations.
 
+Visit https://alex3400.github.io/FencingTracker/ to view the page online
+
 ## Overview
 
 This project implements a customized Elo rating system for weekly fencing tournaments. It parses tournament data from CSV files, calculates ratings with margin-based scoring for poule matches and bracket-weighted scoring for DEs, then exports the results as both CSV files and JSON data that powers an interactive website.
