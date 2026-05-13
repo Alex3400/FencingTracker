@@ -122,6 +122,11 @@ function showSessionDetail(session) {
     document.querySelector('.sessions-list').style.display = 'none';
     document.getElementById('session-detail').style.display = 'block';
 
+    // Update URL with the session date
+    const newUrl = new URL(window.location);
+    newUrl.searchParams.set('date', session.date);
+    window.history.pushState({ sessionDate: session.date }, '', newUrl);
+
     const date = new Date(session.date);
     const formattedDate = date.toLocaleDateString('en-GB', {
         year: 'numeric',
@@ -334,6 +339,11 @@ function getBracketDisplayName(bracket) {
 function closeDetail() {
     document.querySelector('.sessions-list').style.display = 'block';
     document.getElementById('session-detail').style.display = 'none';
+
+    // Remove date parameter from URL
+    const newUrl = new URL(window.location);
+    newUrl.searchParams.delete('date');
+    window.history.pushState({}, '', newUrl);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -352,4 +362,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.getElementById('close-detail-btn').addEventListener('click', closeDetail);
+
+    // Handle browser back/forward buttons
+    window.addEventListener('popstate', (event) => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const dateParam = urlParams.get('date');
+
+        if (dateParam && sessionsData.length > 0) {
+            const session = sessionsData.find(s => s.date === dateParam);
+            if (session) {
+                showSessionDetail(session);
+            }
+        } else {
+            closeDetail();
+        }
+    });
 });
