@@ -11916,5 +11916,106 @@
         "fencer": "Nat"
       }
     ]
+  },
+  {
+    "date": "2026-05-19",
+    "winner": "Greg",
+    "top_poule_climber": "Alix S",
+    "top_poule_gain": 45.1,
+    "fencers_in_poules": 21,
+    "fencers_in_des": 20,
+    "poule_matches": 78,
+    "de_matches": 40,
+    "total_matches": 118,
+    "score_5_0": 4,
+    "score_5_1": 5,
+    "score_5_2": 17,
+    "score_5_3": 25,
+    "score_5_4": 25,
+    "total_touches": 594,
+    "avg_touches_per_match": 7.62,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1LzooSFd-kk_1hyiJVMrLu4wcDn-rd79HwWLluO1VOaU/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Greg"
+      },
+      {
+        "place": 2,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 3,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 4,
+        "fencer": "Willie"
+      },
+      {
+        "place": 5,
+        "fencer": "Tom T"
+      },
+      {
+        "place": 6,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 7,
+        "fencer": "Oleg"
+      },
+      {
+        "place": 8,
+        "fencer": "Kirill Iv"
+      },
+      {
+        "place": 9,
+        "fencer": "Tom S"
+      },
+      {
+        "place": 10,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 11,
+        "fencer": "Kiril Ia"
+      },
+      {
+        "place": 12,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 13,
+        "fencer": "Max V"
+      },
+      {
+        "place": 14,
+        "fencer": "Fedor"
+      },
+      {
+        "place": 15,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 16,
+        "fencer": "Andy R"
+      },
+      {
+        "place": 17,
+        "fencer": "Joshua"
+      },
+      {
+        "place": 18,
+        "fencer": "Alix S"
+      },
+      {
+        "place": 19,
+        "fencer": "Marinko"
+      },
+      {
+        "place": 20,
+        "fencer": "Adam S"
+      }
+    ]
   }
 ]
