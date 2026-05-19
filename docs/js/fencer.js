@@ -14,26 +14,6 @@ const COLORS = {
     danger: '#e74c3c'
 };
 
-// Calculate color for upset indicator (grey to bright red gradient)
-function getUpsetColor(upsetScore) {
-    // Grey (224,224,224) to Bright Red (255,0,0)
-    const grey = [224, 224, 224];
-    const red = [255, 0, 0];
-
-    // Clamp upset score to 0-1 range
-    const upset = Math.min(Math.max(upsetScore, 0), 1);
-
-    // Apply non-linear scaling (power of 2.5) to emphasize surprises
-    // This keeps expected results very grey and makes true upsets pop
-    const t = Math.pow(upset, 2.5);
-
-    const r = Math.round(grey[0] + (red[0] - grey[0]) * t);
-    const g = Math.round(grey[1] + (red[1] - grey[1]) * t);
-    const b = Math.round(grey[2] + (red[2] - grey[2]) * t);
-
-    return `rgb(${r}, ${g}, ${b})`;
-}
-
 async function loadData() {
     try {
         const [ratingsResponse, timelineResponse, h2hResponse, statsResponse, historyResponse, sessionsResponse] = await Promise.all([
@@ -91,8 +71,7 @@ function parseMatchHistoryCSV(text) {
             'Loser Old Rating': values[8],
             'Loser New Rating': values[9],
             'Loser Change': values[10],
-            'Expected': values[11],
-            'Upset Score': values[12]
+            'Expected': values[11]
         };
     });
 }
@@ -174,7 +153,7 @@ function displayFencerStats(fencerName, autoSelectDate = null) {
     // Current rating
     document.getElementById('current-rating').textContent = ratingInfo.rating;
 
-    // Display status badge
+    // Display status badge with participation count
     let statusText = '';
     if (ratingInfo.active_status) {
         let statusClass = 'status-inactive';
@@ -183,7 +162,8 @@ function displayFencerStats(fencerName, autoSelectDate = null) {
         } else if (ratingInfo.active_status === 'Semi-active') {
             statusClass = 'status-semi-active';
         }
-        statusText = `<span class="status-badge ${statusClass}">${ratingInfo.active_status}</span>`;
+        const participation = ratingInfo.recent_participation || 0;
+        statusText = `<span class="status-badge ${statusClass}" title="${participation} out of last 40 sessions">${ratingInfo.active_status} (${participation}/40)</span>`;
     }
     document.getElementById('rating-status').innerHTML = statusText;
 
@@ -576,13 +556,16 @@ function displayDetailedStats(statsInfo) {
 function drawFencerChart(fencerName) {
     const ctx = document.getElementById('fencer-elo-chart').getContext('2d');
 
-    // Extract this fencer's timeline with ranks
+    // Extract this fencer's timeline with ranks (only for sessions they participated in)
     const labels = [];
     const data = [];
     const ranks = []; // Store rank at each point
 
     timelineData.forEach(snapshot => {
-        if (snapshot.ratings[fencerName]) {
+        // Only include this point if the fencer participated in this session
+        const participated = snapshot.participants && snapshot.participants.includes(fencerName);
+
+        if (snapshot.ratings[fencerName] && participated) {
             labels.push(`${snapshot.date} ${snapshot.phase}`);
             data.push(snapshot.ratings[fencerName]);
 
@@ -756,17 +739,6 @@ function showDayMatches(fencerName, date) {
         const oppChangeSign = opponentChange >= 0 ? '+' : '';
         opponentEloCell.innerHTML = `${opponentOldRating.toFixed(1)} → ${opponentNewRating.toFixed(1)} <span class="${oppChangeClass}">(${oppChangeSign}${opponentChange.toFixed(1)})</span>`;
 
-        // Create upset indicator cell
-        const upsetScore = parseFloat(match['Upset Score']) || 0;
-        const upsetCell = document.createElement('td');
-        upsetCell.className = 'upset-cell';
-        upsetCell.innerHTML = `
-            <div class="upset-indicator"
-                 style="background-color: ${getUpsetColor(upsetScore)};"
-                 title="Upset Score: ${upsetScore.toFixed(3)}">
-            </div>
-        `;
-
         row.innerHTML = `
             <td><a href="fencer.html?fencer=${encodeURIComponent(opponent)}" class="fencer-link">${opponent}</a></td>
             <td>${match['Match Type']}</td>
@@ -774,7 +746,6 @@ function showDayMatches(fencerName, date) {
         `;
         row.appendChild(fencerEloCell);
         row.appendChild(opponentEloCell);
-        row.appendChild(upsetCell);
 
         tbody.appendChild(row);
     });
@@ -1010,17 +981,6 @@ function displayMatchHistory(fencer1, fencer2) {
             f2Cell.innerHTML = `<strong>${fencer2}</strong><br>${winnerOldRating.toFixed(1)} → ${winnerNewRating.toFixed(1)} <span class="${f2ChangeClass}">(${f2ChangeSign}${winnerChange.toFixed(1)})</span>`;
         }
 
-        // Create upset indicator cell
-        const upsetScore = parseFloat(match['Upset Score']) || 0;
-        const upsetCell = document.createElement('td');
-        upsetCell.className = 'upset-cell';
-        upsetCell.innerHTML = `
-            <div class="upset-indicator"
-                 style="background-color: ${getUpsetColor(upsetScore)};"
-                 title="Upset Score: ${upsetScore.toFixed(3)}">
-            </div>
-        `;
-
         row.innerHTML = `
             <td>${formattedDate}</td>
             <td>${match['Match Type']}</td>
@@ -1028,7 +988,6 @@ function displayMatchHistory(fencer1, fencer2) {
         `;
         row.appendChild(f1Cell);
         row.appendChild(f2Cell);
-        row.appendChild(upsetCell);
 
         tbody.appendChild(row);
     });

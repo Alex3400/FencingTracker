@@ -92,13 +92,13 @@ BRACKET_WEIGHTS = {
     'L1-32': 1.5,
 
     # Medal matches
-    'L3-4': 2.0,
+    'L3-4': 2.5,
 
     # Mid-tier brackets
-    'L5-8': 2.0,
-    'L9-16': 1.5,
-    'L9-12': 1.5,
-    'L13-16': 1.3,
+    'L5-8': 1.75,
+    'L9-16': 1.3,
+    'L9-12': 1.25,
+    'L13-16': 1.2,
 
     # Lower brackets
     'L17-32': 1.0,
@@ -313,9 +313,9 @@ class EloRatingSystem:
         # Snapshots: [(date, phase, {fencer: rating}), ...]
         # phase is either "After Poules" or "After DEs"
         self.snapshots = []
-        # Track last session each fencer participated in
-        # {fencer_name: session_index}
-        self.last_active_session = {}
+        # Track participation history for each fencer
+        # {fencer_name: [session_index1, session_index2, ...]}
+        self.participation_history = defaultdict(list)
         # Current session index (incremented for each tournament)
         self.current_session_index = 0
         # Track poule gains per session: {date: {fencer: (start_rating, end_rating, gain)}}
@@ -356,10 +356,6 @@ class EloRatingSystem:
         actual1 = calculate_poule_actual_score(score1, score2)
         actual2 = calculate_poule_actual_score(score2, score1)
 
-        # Calculate upset score (how unexpected was this result)
-        upset_score1 = abs(actual1 - expected1)
-        upset_score2 = abs(actual2 - expected2)
-
         # Get K-factors
         k1 = get_k_factor(self.get_match_count(fencer1))
         k2 = get_k_factor(self.get_match_count(fencer2))
@@ -372,13 +368,13 @@ class EloRatingSystem:
         self.update_rating(fencer1, change1, date, f'Poule vs {fencer2} ({score1}-{score2})')
         self.update_rating(fencer2, change2, date, f'Poule vs {fencer1} ({score2}-{score1})')
 
-        # Record match history (now includes upset metrics)
+        # Record match history
         new_rating1 = self.ratings[fencer1]
         new_rating2 = self.ratings[fencer2]
         self.match_history.append((
             date, fencer1, old_rating1, new_rating1, change1,
             fencer2, old_rating2, new_rating2, change2, f'Poule {score1}-{score2}',
-            expected1, upset_score1
+            expected1
         ))
 
         # Increment match counts
@@ -397,10 +393,6 @@ class EloRatingSystem:
         # Actual scores (binary: win=1, loss=0)
         actual1 = 1.0 if winner == fencer1 else 0.0
         actual2 = 1.0 if winner == fencer2 else 0.0
-
-        # Calculate upset score (how unexpected was this result)
-        upset_score1 = abs(actual1 - expected1)
-        upset_score2 = abs(actual2 - expected2)
 
         # Get K-factors
         k1 = get_k_factor(self.get_match_count(fencer1))
@@ -423,14 +415,14 @@ class EloRatingSystem:
         self.update_rating(fencer1, change1, date, f'{bracket_name} vs {fencer2} ({result1})')
         self.update_rating(fencer2, change2, date, f'{bracket_name} vs {fencer1} ({result2})')
 
-        # Record match history (now includes upset metrics)
+        # Record match history
         new_rating1 = self.ratings[fencer1]
         new_rating2 = self.ratings[fencer2]
         match_result = f'{bracket_name} ({winner} won)'
         self.match_history.append((
             date, fencer1, old_rating1, new_rating1, change1,
             fencer2, old_rating2, new_rating2, change2, match_result,
-            expected1, upset_score1
+            expected1
         ))
 
         # Increment match counts
@@ -448,15 +440,19 @@ class EloRatingSystem:
 
         active_fencers: set of fencers who participated in this session
         """
-        # Mark active fencers
+        # Mark active fencers - add current session to their participation history
         for fencer in active_fencers:
-            self.last_active_session[fencer] = self.current_session_index
+            self.participation_history[fencer].append(self.current_session_index)
 
         # Apply decay to inactive fencers
         for fencer in list(self.ratings.keys()):
             if fencer not in active_fencers:
                 # Check how many sessions they've been inactive
-                last_active = self.last_active_session.get(fencer, 0)
+                # Get their last session if they have any participation history
+                if fencer in self.participation_history and self.participation_history[fencer]:
+                    last_active = self.participation_history[fencer][-1]
+                else:
+                    last_active = 0
                 sessions_inactive = self.current_session_index - last_active
 
                 if sessions_inactive >= DECAY_AFTER_SESSIONS:
@@ -501,13 +497,47 @@ class EloRatingSystem:
                     if fencer not in self.max_elo or current_rating > self.max_elo[fencer]:
                         self.max_elo[fencer] = current_rating
 
-    def take_snapshot(self, date, phase):
+    def take_snapshot(self, date, phase, participants=None):
         """Take a snapshot of all current ratings.
         phase should be 'After Poules' or 'After DEs'
+        participants: set of fencers who participated in this session
         """
         snapshot = {fencer: rating for fencer, rating in self.ratings.items()}
+        # Capture match counts at this point in time
+        match_counts = {fencer: count for fencer, count in self.match_counts.items()}
+        # Capture max elo at this point in time
+        max_elos = {fencer: max_elo for fencer, max_elo in self.max_elo.items()}
+        # Capture participants
+        participants_set = participants if participants else set()
         # Include session index with snapshot for later activity status calculation
-        self.snapshots.append((date, phase, snapshot, self.current_session_index))
+        self.snapshots.append((date, phase, snapshot, self.current_session_index, match_counts, max_elos, participants_set))
+
+    def get_active_status(self, fencer, current_session):
+        """Calculate active status based on participation in last 40 sessions.
+
+        Active: 5+ participations out of last 40 sessions
+        Semi-active: 1-4 participations out of last 40 sessions
+        Inactive: 0 participations out of last 40 sessions
+
+        Returns: (status, participation_count)
+        """
+        if fencer not in self.participation_history:
+            return 'Inactive', 0
+
+        # Get sessions in the last 40 (inclusive of current)
+        sessions_in_range = [s for s in self.participation_history[fencer]
+                            if s > current_session - 40 and s <= current_session]
+
+        participation_count = len(sessions_in_range)
+
+        if participation_count >= 5:
+            status = 'Active'
+        elif participation_count >= 1:
+            status = 'Semi-active'
+        else:
+            status = 'Inactive'
+
+        return status, participation_count
 
 
 class MatchHistory:
@@ -1096,7 +1126,7 @@ def process_all_sheets(base_dir='downloaded_sheets'):
 
         # Take snapshot after poules
         if poule_sheet:
-            elo_system.take_snapshot(date, 'After Poules')
+            elo_system.take_snapshot(date, 'After Poules', fencers_in_poules)
 
         # Parse DE sheet
         if de_sheet:
@@ -1135,7 +1165,7 @@ def process_all_sheets(base_dir='downloaded_sheets'):
 
                 history.add_placement(fencer, place, field_size=total_fencers, date=date_str)
                 # Apply placement bonus
-                elo_system.apply_placement_bonus(fencer_norm, place, date)
+                # elo_system.apply_placement_bonus(fencer_norm, place, date)
 
             for fencer, seed in seedings.items():
                 # Normalize and check for blacklisted fencers
@@ -1149,14 +1179,17 @@ def process_all_sheets(base_dir='downloaded_sheets'):
             print(f"  Found {len(matches)} DE matches")
             print(f"  Found {len(placements)} placements")
 
-        # Take snapshot after DEs
+        # Record average Elo for DE participants (before snapshot so max_elo is current)
+        # Combine all participants for the snapshot
+        all_participants = fencers_in_poules | fencers_in_des
+
         if de_sheet:
-            elo_system.take_snapshot(date, 'After DEs')
-            # Record average Elo for DE participants
             elo_system.record_avg_elo(date, fencers_in_des)
+            # Take snapshot after DEs
+            elo_system.take_snapshot(date, 'After DEs', all_participants)
 
         # Apply decay to inactive fencers at the end of this session
-        active_fencers = fencers_in_poules | fencers_in_des
+        active_fencers = all_participants
         elo_system.apply_decay_for_inactive_fencers(date, active_fencers)
 
         # Calculate session stats
@@ -1362,7 +1395,7 @@ def export_fencer_stats(history, elo_system=None, output_file='fencer_stats.csv'
     with open(output_file, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
         writer.writerow([
-            'Fencer', 'Active Status', 'Total Appearances',
+            'Fencer', 'Active Status', 'Recent Participation (Last 40)', 'Total Appearances',
             'Total Matches', 'Wins', 'Losses', 'Winrate',
             'Poule Matches', 'Poule Wins', 'Poule Losses', 'Poule Winrate',
             'Touches Scored', 'Touches Received', 'Touch Differential',
@@ -1400,18 +1433,11 @@ def export_fencer_stats(history, elo_system=None, output_file='fencer_stats.csv'
 
             de_appearances = len(de_appearance_dates)
 
-            # Calculate active status based on last participation
+            # Calculate active status based on participation in last 40 sessions
             active_status = 'Inactive'
-            if elo_system and fencer in elo_system.last_active_session:
-                last_active = elo_system.last_active_session[fencer]
-                sessions_inactive = current_session - last_active
-
-                if sessions_inactive <= 20:
-                    active_status = 'Active'
-                elif sessions_inactive <= 40:
-                    active_status = 'Semi-active'
-                else:
-                    active_status = 'Inactive'
+            recent_participation = 0
+            if elo_system:
+                active_status, recent_participation = elo_system.get_active_status(fencer, current_session)
 
             # Format placement data with field sizes
             placement_cols = []
@@ -1447,6 +1473,7 @@ def export_fencer_stats(history, elo_system=None, output_file='fencer_stats.csv'
             row = [
                 fencer,
                 active_status,
+                recent_participation,
                 total_appearances,
                 stats['total_matches'],
                 stats['wins'],
@@ -1747,16 +1774,15 @@ def export_elo_history(elo_system, output_file='elo_history.csv'):
             'Loser Old Rating',
             'Loser New Rating',
             'Loser Change',
-            'Expected (Winner)',
-            'Upset Score'
+            'Expected (Winner)'
         ])
 
         # Match history is already chronologically ordered
         for match_data in elo_system.match_history:
-            # Unpack match data (now includes expected and upset_score)
+            # Unpack match data
             (date, fencer1, old_rating1, new_rating1, change1,
              fencer2, old_rating2, new_rating2, change2, match_type,
-             expected1, upset_score1) = match_data
+             expected1) = match_data
 
             # Parse match type to extract bracket/type and winner
             # Format: "Poule 5-3" or "L1-2 (Greg won)"
@@ -1816,13 +1842,11 @@ def export_elo_history(elo_system, output_file='elo_history.csv'):
                     round(old_rating2, 1),
                     round(new_rating2, 1),
                     round(change2, 1),
-                    round(expected1, 3),  # Expected score for fencer1 (winner)
-                    round(upset_score1, 3)  # Upset score
+                    round(expected1, 3)  # Expected score for fencer1 (winner)
                 ])
             else:
                 # Winner is fencer2, swap order
                 expected2 = 1.0 - expected1  # Expected score for fencer2
-                upset_score2 = upset_score1  # Upset score is same for both
                 writer.writerow([
                     date,
                     bracket_type,
@@ -1835,8 +1859,7 @@ def export_elo_history(elo_system, output_file='elo_history.csv'):
                     round(old_rating1, 1),
                     round(new_rating1, 1),
                     round(change1, 1),
-                    round(expected2, 3),  # Expected score for fencer2 (winner)
-                    round(upset_score2, 3)  # Upset score
+                    round(expected2, 3)  # Expected score for fencer2 (winner)
                 ])
 
     print(f"✓ Elo history exported to {output_file}")
@@ -1852,8 +1875,8 @@ def export_elo_leaderboard_timeline(elo_system, output_file='elo_leaderboard_tim
     # Build column headers (date + phase)
     columns = []
     for snapshot_data in elo_system.snapshots:
-        if len(snapshot_data) == 4:
-            date, phase, _, _ = snapshot_data
+        if len(snapshot_data) >= 4:
+            date, phase = snapshot_data[0], snapshot_data[1]
         else:
             date, phase, _ = snapshot_data
         col_name = f"{date} {phase}"
@@ -1862,8 +1885,8 @@ def export_elo_leaderboard_timeline(elo_system, output_file='elo_leaderboard_tim
     # Determine max number of fencers across all snapshots
     all_fencers = set()
     for snapshot_data in elo_system.snapshots:
-        if len(snapshot_data) == 4:
-            _, _, snapshot, _ = snapshot_data
+        if len(snapshot_data) >= 4:
+            snapshot = snapshot_data[2]
         else:
             _, _, snapshot = snapshot_data
         all_fencers.update(snapshot.keys())
@@ -1880,8 +1903,8 @@ def export_elo_leaderboard_timeline(elo_system, output_file='elo_leaderboard_tim
         # snapshot_ratings[snapshot_idx][fencer] = rating
         snapshot_ratings = []
         for snapshot_data in elo_system.snapshots:
-            if len(snapshot_data) == 4:
-                _, _, snapshot, _ = snapshot_data
+            if len(snapshot_data) >= 4:
+                snapshot = snapshot_data[2]
             else:
                 _, _, snapshot = snapshot_data
             snapshot_ratings.append(snapshot)
@@ -1892,8 +1915,8 @@ def export_elo_leaderboard_timeline(elo_system, output_file='elo_leaderboard_tim
 
             # For each snapshot
             for snapshot_idx, snapshot_data in enumerate(elo_system.snapshots):
-                if len(snapshot_data) == 4:
-                    date, phase, snapshot, _ = snapshot_data
+                if len(snapshot_data) >= 4:
+                    date, phase, snapshot = snapshot_data[0], snapshot_data[1], snapshot_data[2]
                 else:
                     date, phase, snapshot = snapshot_data
                 # Sort fencers by rating for this snapshot
@@ -1933,8 +1956,8 @@ def export_elo_fencer_timeline(elo_system, output_file='elo_fencer_timeline.csv'
     # Build column headers (date + phase)
     columns = []
     for snapshot_data in elo_system.snapshots:
-        if len(snapshot_data) == 4:
-            date, phase, _, _ = snapshot_data
+        if len(snapshot_data) >= 4:
+            date, phase = snapshot_data[0], snapshot_data[1]
         else:
             date, phase, _ = snapshot_data
         col_name = f"{date} {phase}"
@@ -1943,8 +1966,8 @@ def export_elo_fencer_timeline(elo_system, output_file='elo_fencer_timeline.csv'
     # Get all fencers across all snapshots
     all_fencers = set()
     for snapshot_data in elo_system.snapshots:
-        if len(snapshot_data) == 4:
-            _, _, snapshot, _ = snapshot_data
+        if len(snapshot_data) >= 4:
+            snapshot = snapshot_data[2]
         else:
             _, _, snapshot = snapshot_data
         all_fencers.update(snapshot.keys())
@@ -1955,8 +1978,8 @@ def export_elo_fencer_timeline(elo_system, output_file='elo_fencer_timeline.csv'
     # Pre-calculate rankings for each snapshot
     snapshot_rankings = []
     for snapshot_data in elo_system.snapshots:
-        if len(snapshot_data) == 4:
-            date, phase, snapshot, _ = snapshot_data
+        if len(snapshot_data) >= 4:
+            date, phase, snapshot = snapshot_data[0], snapshot_data[1], snapshot_data[2]
         else:
             date, phase, snapshot = snapshot_data
         # Sort by rating descending to get ranks
@@ -1977,8 +2000,8 @@ def export_elo_fencer_timeline(elo_system, output_file='elo_fencer_timeline.csv'
 
             # For each snapshot
             for snapshot_idx, snapshot_data in enumerate(elo_system.snapshots):
-                if len(snapshot_data) == 4:
-                    date, phase, snapshot, _ = snapshot_data
+                if len(snapshot_data) >= 4:
+                    date, phase, snapshot = snapshot_data[0], snapshot_data[1], snapshot_data[2]
                 else:
                     date, phase, snapshot = snapshot_data
                 if fencer in snapshot:
@@ -2026,23 +2049,23 @@ def export_json_for_website(elo_system, history, session_stats, all_placements, 
     for fencer, rating in sorted(elo_system.ratings.items(), key=lambda x: x[1], reverse=True):
         match_count = elo_system.get_match_count(fencer)
 
-        # Calculate active status
-        active_status = 'Inactive'
-        if fencer in elo_system.last_active_session:
-            last_active = elo_system.last_active_session[fencer]
-            sessions_inactive = current_session - last_active
+        # Calculate active status and recent participation
+        active_status, recent_participation = elo_system.get_active_status(fencer, current_session)
 
-            if sessions_inactive <= 20:
-                active_status = 'Active'
-            elif sessions_inactive <= 40:
-                active_status = 'Semi-active'
+        # Calculate sessions since last active for display
+        if fencer in elo_system.participation_history and elo_system.participation_history[fencer]:
+            last_active = elo_system.participation_history[fencer][-1]
+            sessions_since_last_active = current_session - last_active
+        else:
+            sessions_since_last_active = current_session
 
         ratings_data.append({
             'fencer': fencer,
             'rating': round(rating, 1),
             'matches': match_count,
             'active_status': active_status,
-            'sessions_since_last_active': current_session - elo_system.last_active_session.get(fencer, 0)
+            'recent_participation': recent_participation,
+            'sessions_since_last_active': sessions_since_last_active
         })
 
     with open(output_path / 'elo_ratings.json', 'w', encoding='utf-8') as f:
@@ -2050,32 +2073,40 @@ def export_json_for_website(elo_system, history, session_stats, all_placements, 
 
     # 2. Elo History Timeline (for charts)
     timeline_data = []
-    for date, phase, snapshot, snapshot_session_idx in elo_system.snapshots:
+    for snapshot_data in elo_system.snapshots:
+        # Unpack snapshot data (handle different formats)
+        if len(snapshot_data) == 4:
+            # Old format without match_counts and max_elos
+            date, phase, snapshot, snapshot_session_idx = snapshot_data
+            match_counts = {}
+            max_elos = {}
+            participants = set()
+        elif len(snapshot_data) == 6:
+            # Format with match_counts and max_elos but no participants
+            date, phase, snapshot, snapshot_session_idx, match_counts, max_elos = snapshot_data
+            participants = set()
+        else:
+            # New format with participants
+            date, phase, snapshot, snapshot_session_idx, match_counts, max_elos, participants = snapshot_data
+
         # Calculate activity status for each fencer at this point in time
         fencer_statuses = {}
+        fencer_participation = {}
         for fencer, rating in snapshot.items():
-            # Calculate how many sessions inactive at this snapshot point
-            if fencer in elo_system.last_active_session:
-                last_active = elo_system.last_active_session[fencer]
-                sessions_inactive = snapshot_session_idx - last_active
-
-                if sessions_inactive <= 20:
-                    status = 'Active'
-                elif sessions_inactive <= 40:
-                    status = 'Semi-active'
-                else:
-                    status = 'Inactive'
-            else:
-                # Fencer hasn't appeared yet, mark as Inactive
-                status = 'Inactive'
-
+            # Calculate active status based on participation at this snapshot point
+            status, participation = elo_system.get_active_status(fencer, snapshot_session_idx)
             fencer_statuses[fencer] = status
+            fencer_participation[fencer] = participation
 
         snapshot_entry = {
             'date': date,
             'phase': phase,
             'ratings': {fencer: round(rating, 1) for fencer, rating in snapshot.items()},
-            'active_status': fencer_statuses
+            'active_status': fencer_statuses,
+            'recent_participation': fencer_participation,
+            'match_counts': match_counts,
+            'max_elos': {fencer: round(max_elo, 1) for fencer, max_elo in max_elos.items()},
+            'participants': list(participants)  # List of fencers who participated in this session
         }
         timeline_data.append(snapshot_entry)
 
@@ -2177,6 +2208,149 @@ def export_json_for_website(elo_system, history, session_stats, all_placements, 
         json.dump(sessions_data, f, indent=2)
 
     print(f"✓ JSON data exported to {output_dir}/")
+
+
+def export_monthly_improvements(elo_system, session_stats, output_dir='docs/data'):
+    """Export monthly improvement data showing Elo changes per month."""
+    from datetime import datetime
+    from collections import defaultdict
+
+    output_path = Path(output_dir)
+    output_path.mkdir(parents=True, exist_ok=True)
+
+    # Group sessions by month
+    monthly_sessions = defaultdict(list)
+    for stat in session_stats:
+        date = datetime.strptime(stat['date'], '%Y-%m-%d')
+        month_key = date.strftime('%Y-%m')  # e.g., "2024-01"
+        monthly_sessions[month_key].append(stat)
+
+    # For each month, calculate Elo changes per fencer
+    monthly_data = []
+    sorted_months = sorted(monthly_sessions.keys())
+
+    for month_idx, month_key in enumerate(sorted_months):
+        sessions = monthly_sessions[month_key]
+        dates = [s['date'] for s in sessions]
+
+        # Get snapshots for this month
+        month_snapshots = []
+        for snapshot_data in elo_system.snapshots:
+            if len(snapshot_data) >= 4:
+                date = snapshot_data[0]
+            else:
+                date = snapshot_data[0]
+
+            if date in dates:
+                month_snapshots.append(snapshot_data)
+
+        if not month_snapshots:
+            continue
+
+        # Collect all fencers who participated in any session this month
+        # and count how many unique sessions (dates) each attended
+        month_participants = set()
+        fencer_session_dates = defaultdict(set)  # Track unique dates per fencer
+        for snapshot_data in month_snapshots:
+            # Extract participants from snapshot
+            if len(snapshot_data) == 7:
+                date = snapshot_data[0]
+                participants = snapshot_data[6]  # participants is at index 6
+                month_participants.update(participants)
+                # Add this date for each participant (set prevents double-counting)
+                for fencer in participants:
+                    fencer_session_dates[fencer].add(date)
+            elif len(snapshot_data) >= 4:
+                # Old format without participants - fall back to all fencers with rating changes
+                pass
+
+        # Convert sets to counts
+        fencer_session_counts = {fencer: len(dates) for fencer, dates in fencer_session_dates.items()}
+
+        # Get starting ratings: use the PREVIOUS month's last snapshot
+        # (or use first snapshot if this is the first month)
+        if month_idx > 0:
+            # Get previous month's dates
+            prev_month_key = sorted_months[month_idx - 1]
+            prev_sessions = monthly_sessions[prev_month_key]
+            prev_dates = [s['date'] for s in prev_sessions]
+
+            # Find the last snapshot from previous month
+            prev_month_snapshots = []
+            for snapshot_data in elo_system.snapshots:
+                date = snapshot_data[0]
+                if date in prev_dates:
+                    prev_month_snapshots.append(snapshot_data)
+
+            if prev_month_snapshots:
+                # Use the last snapshot from previous month as starting point
+                start_snapshot = prev_month_snapshots[-1]
+                first_ratings = start_snapshot[2]
+            else:
+                # Fallback: use first snapshot of current month
+                first_ratings = month_snapshots[0][2]
+        else:
+            # First month ever: use the first snapshot of this month
+            first_ratings = month_snapshots[0][2]
+
+        # Get ending ratings from last snapshot of the month
+        last_snapshot = month_snapshots[-1]
+        if len(last_snapshot) >= 4:
+            last_ratings = last_snapshot[2]
+        else:
+            last_ratings = last_snapshot[2]
+
+        # Calculate changes for fencers who actually participated
+        fencer_changes = []
+        for fencer in last_ratings.keys():
+            # Only include if they participated in at least one session this month
+            if month_participants and fencer not in month_participants:
+                continue
+
+            if fencer in first_ratings:
+                start_rating = first_ratings[fencer]
+                end_rating = last_ratings[fencer]
+                change = end_rating - start_rating
+
+                # Exclude new fencers (starting at exactly 1800)
+                if abs(start_rating - 1800.0) < 0.1:
+                    continue
+
+                # Include all participants (even 0 change is possible if they attended)
+                sessions_attended = fencer_session_counts.get(fencer, 0)
+                fencer_changes.append({
+                    'fencer': fencer,
+                    'start_rating': round(start_rating, 1),
+                    'end_rating': round(end_rating, 1),
+                    'change': round(change, 1),
+                    'sessions_attended': sessions_attended
+                })
+            else:
+                # New fencer this month - skip them
+                continue
+
+        # Sort by change (descending)
+        fencer_changes.sort(key=lambda x: x['change'], reverse=True)
+
+        # Parse month for display
+        date_obj = datetime.strptime(month_key, '%Y-%m')
+        month_name = date_obj.strftime('%B %Y')
+
+        monthly_data.append({
+            'month': month_key,
+            'month_name': month_name,
+            'session_dates': dates,
+            'session_count': len(dates),
+            'fencer_changes': fencer_changes
+        })
+
+    # Reverse so most recent month is first
+    monthly_data.reverse()
+
+    with open(output_path / 'monthly_improvements.json', 'w', encoding='utf-8') as f:
+        json.dump(monthly_data, f, indent=2)
+
+    print(f"✓ Monthly improvements exported to {output_dir}/monthly_improvements.json")
 
 
 def process_single_date(date_folder, base_dir='downloaded_sheets'):
@@ -2295,6 +2469,7 @@ def main():
     # Export to website data directory (both JSON and CSV)
     website_data_dir = Path(__file__).parent.parent / 'docs' / 'data'
     export_json_for_website(elo_system, history, session_stats, all_placements, str(website_data_dir))
+    export_monthly_improvements(elo_system, session_stats, str(website_data_dir))
 
     # Also export CSV files to website data directory
     export_elo_ratings(elo_system, website_data_dir / 'elo_ratings.csv')

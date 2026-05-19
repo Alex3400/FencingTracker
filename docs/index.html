@@ -14,7 +14,7 @@
         <a href="leaderboard.html">Leaderboard</a>
         <a href="fencer.html">Fencer Stats</a>
         <a href="sessions.html">Tournament History</a>
-        <a href="timeline.html">Elo Timeline</a>
+        <a href="timeline.html">Monthly Tracker</a>
     </nav>
 </header>
 
@@ -26,7 +26,7 @@
             <h2>About This Project</h2>
             <p>This is a data tool that reads the Tuesday Haverstock Fencing club sessions and assigns an Elo score from
                 the matches.
-                This tool was heavily inspired by <a href="https://fencingtracker.com/" target="_blank"
+                This tool was inspired by <a href="https://fencingtracker.com/" target="_blank"
                                                      rel="noopener noreferrer">Fencing Tracker</a> for USA fencing.</p>
         </section>
         <div class="about-section">
@@ -61,44 +61,8 @@
                 points in the poule stage.
                 Click on the date for a full placement table and match history for the day</p>
 
-            <h4><a href="timeline.html" class="fencer-link" style="text-decoration: underline;">Elo Timeline</a></h4>
-            <p>A timeline of the Elo and leaderboard rank of the selected fencers.</p>
-
-            <h4>Upset Indicator</h4>
-            <p>In the match history the coloured square ranges from grey to red to indicate how unexpected each result
-                is. Hover over the examples below to see the upset scores:</p>
-            <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
-                <div style="text-align: center;">
-                    <div class="upset-indicator" style="background-color: rgb(224, 224, 224);"
-                         title="Upset Score: 0.000"></div>
-                    <div style="font-size: 0.8rem; margin-top: 0.25rem;">Expected</div>
-                </div>
-                <div style="text-align: center;">
-                    <div class="upset-indicator" style="background-color: rgb(229, 217, 217);"
-                         title="Upset Score: 0.100"></div>
-                    <div style="font-size: 0.8rem; margin-top: 0.25rem;">Minor</div>
-                </div>
-                <div style="text-align: center;">
-                    <div class="upset-indicator" style="background-color: rgb(236, 203, 203);"
-                         title="Upset Score: 0.250"></div>
-                    <div style="font-size: 0.8rem; margin-top: 0.25rem;">Small</div>
-                </div>
-                <div style="text-align: center;">
-                    <div class="upset-indicator" style="background-color: rgb(245, 178, 178);"
-                         title="Upset Score: 0.500"></div>
-                    <div style="font-size: 0.8rem; margin-top: 0.25rem;">Moderate</div>
-                </div>
-                <div style="text-align: center;">
-                    <div class="upset-indicator" style="background-color: rgb(252, 137, 137);"
-                         title="Upset Score: 0.750"></div>
-                    <div style="font-size: 0.8rem; margin-top: 0.25rem;">Large</div>
-                </div>
-                <div style="text-align: center;">
-                    <div class="upset-indicator" style="background-color: rgb(255, 0, 0);"
-                         title="Upset Score: 1.000"></div>
-                    <div style="font-size: 0.8rem; margin-top: 0.25rem;">Maximum</div>
-                </div>
-            </div>
+            <h4><a href="timeline.html" class="fencer-link" style="text-decoration: underline;">Monthly Tracker</a></h4>
+            <p>See information about the elo change of each fencer for each month's sessions.</p>
         </div>
 
 
@@ -129,6 +93,31 @@
         </div>
 
         <div class="about-section">
+            <h3>❓ Frequently Asked Questions</h3>
+
+            <h4>What is the default rating?</h4>
+            <p>All fencers begin at 1800 Elo points.</p>
+
+            <h4>Which fencers are considered Active/Semi-Active/Inactive?</h4>
+            <p>Fencers are:
+                <ul>
+                   <li>"Active" if they have participated in at least 5 of the last 40 sessions.</li>
+                   <li>"Semi-Active" if they have participated in any of the last 40 sessions.</li>
+                   <li>"Inactive" Otherwise.</li>
+                </ul>
+            </p>
+
+            <h4>Why is there a big swing for some matches but smaller for others?</h4>
+            <p>There is a weighting added to different DE brackets depending on how far into the tournament they are, with "medal matches" being weighed the most</p>
+
+            <h4>Why is Max Elo empty for some fencers?</h4>
+            <p>Fencers are only assigned a max Elo after 25 matches (normally 2-3 sessions) to avoid everyone having a max of 1800.</p>
+
+            <h4>Why did I lose points for a win / gain points for a loss in the poule?</h4>
+            <p>We use margin scoring meaning that if a match between two fencers with a large rating difference is close the gain for a win may be very small or even negative.</p>
+        </div>
+
+        <div class="about-section">
             <h3>About Me</h3>
             <p>I'm Alex Yule (<a href="fencer.html?fencer=Alex%20Y" class="fencer-link"
                                  style="text-decoration: underline;">Alex Y</a> on the sheet) and I wrote this tool and
@@ -151,7 +140,7 @@
                 As such, if anyone is uncomfortable with having their name on the website, I am happy to add an alias or
                 entirely remove the matches from anyone who asks.</p>
             <h4>Contact Me</h4>
-            <p>You can contact me via whatsapp at +44 7578 915787 or by email at ayule801@gmail.com or during practice
+            <p>You can contact me via WhatsApp at +44 7578 915787 or by email at ayule801@gmail.com or during practice
                 😊.</p>
             <p>If you would like to make your own tweaks or add features, I encourage contribution to the <a
                     href="https://github.com/Alex3400/FencingTracker" target="_blank" rel="noopener noreferrer">GitHub

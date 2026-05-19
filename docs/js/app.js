@@ -2,20 +2,24 @@
 let ratingsData = [];
 let sessionsData = [];
 let fencerStatsData = [];
+let timelineData = [];
 let dataTable = null;
 let currentActivityFilter = 'active'; // Default filter
 let filterListenerAttached = false; // Flag to prevent duplicate listeners
+let currentSnapshot = null; // null means current/live data
 
 async function loadRatings() {
     try {
-        const [ratingsResponse, sessionsResponse, statsResponse] = await Promise.all([
+        const [ratingsResponse, sessionsResponse, statsResponse, timelineResponse] = await Promise.all([
             fetch('data/elo_ratings.json'),
             fetch('data/sessions.json'),
-            fetch('data/fencer_stats.csv')
+            fetch('data/fencer_stats.csv'),
+            fetch('data/elo_timeline.json')
         ]);
 
         ratingsData = await ratingsResponse.json();
         sessionsData = await sessionsResponse.json();
+        timelineData = await timelineResponse.json();
 
         // Parse fencer stats CSV
         const statsText = await statsResponse.text();
@@ -31,6 +35,7 @@ async function loadRatings() {
             }
         }
 
+        populateSnapshotSelector();
         applyActivityFilter();
         displayLatestSession();
         updateLastUpdate();
@@ -45,8 +50,18 @@ async function loadRatings() {
                     localStorage.setItem('activityFilter', currentActivityFilter);
                     applyActivityFilter();
                 });
-                filterListenerAttached = true;
             }
+
+            const snapshotFilter = document.getElementById('snapshot-filter');
+            if (snapshotFilter) {
+                snapshotFilter.addEventListener('change', (e) => {
+                    const value = e.target.value;
+                    currentSnapshot = value === 'current' ? null : parseInt(value);
+                    applyActivityFilter();
+                });
+            }
+
+            filterListenerAttached = true;
         }
     } catch (error) {
         console.error('Error loading ratings:', error);
@@ -90,28 +105,97 @@ function parseCSVLine(line) {
     return values;
 }
 
+function populateSnapshotSelector() {
+    const select = document.getElementById('snapshot-filter');
+    if (!select) return;
+
+    select.innerHTML = '<option value="current">Current Rankings</option>';
+
+    // Add snapshots in reverse chronological order (most recent first after Current)
+    // Filter to only "After DEs" snapshots for cleaner list
+    const deSnapshots = timelineData.filter(s => s.phase === 'After DEs');
+
+    // Store for later use
+    window.deSnapshotsCache = deSnapshots;
+
+    for (let i = deSnapshots.length - 1; i >= 0; i--) {
+        const snapshot = deSnapshots[i];
+        const date = new Date(snapshot.date);
+        const formattedDate = date.toLocaleDateString('en-GB', {
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric'
+        });
+
+        const option = document.createElement('option');
+        option.value = i; // This is the actual index in deSnapshots array
+        option.textContent = formattedDate;
+        select.appendChild(option);
+    }
+}
+
 function applyActivityFilter() {
     const filterValue = currentActivityFilter;
-    let filteredData = ratingsData;
+    let sourceData;
+    const isSnapshot = currentSnapshot !== null;
+
+    // Determine source data: current ratings or snapshot
+    if (currentSnapshot === null) {
+        sourceData = ratingsData;
+        // Update title for current view
+        document.getElementById('rankings-title').textContent = 'Current Rankings';
+        document.getElementById('rankings-description').textContent = 'Elo ratings for all fencers based on tournament results. Ratings are updated after each session.';
+    } else {
+        // Get snapshot data from cached array
+        const deSnapshots = window.deSnapshotsCache || timelineData.filter(s => s.phase === 'After DEs');
+        const snapshot = deSnapshots[currentSnapshot];
+
+        if (snapshot) {
+            sourceData = Object.entries(snapshot.ratings).map(([fencer, rating]) => ({
+                fencer: fencer,
+                rating: rating,
+                matches: snapshot.match_counts ? (snapshot.match_counts[fencer] || 0) : 0,
+                max_elo: snapshot.max_elos ? (snapshot.max_elos[fencer] || 0) : 0,
+                active_status: snapshot.active_status[fencer] || 'Inactive',
+                recent_participation: snapshot.recent_participation ? (snapshot.recent_participation[fencer] || 0) : 0
+            }));
+            // Sort by rating descending
+            sourceData.sort((a, b) => b.rating - a.rating);
+
+            // Update title for snapshot view
+            const date = new Date(snapshot.date);
+            const formattedDate = date.toLocaleDateString('en-GB', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+            document.getElementById('rankings-title').textContent = `Historical Snapshot - ${formattedDate}`;
+            document.getElementById('rankings-description').textContent = 'Rankings as they appeared after this tournament session.';
+        } else {
+            sourceData = ratingsData;
+        }
+    }
+
+    let filteredData = sourceData;
 
     if (filterValue === 'active') {
         // Show only Active fencers
-        filteredData = ratingsData.filter(f => f.active_status === 'Active');
+        filteredData = sourceData.filter(f => f.active_status === 'Active');
     } else if (filterValue === 'semi-active') {
         // Show Active and Semi-active fencers
-        filteredData = ratingsData.filter(f =>
+        filteredData = sourceData.filter(f =>
             f.active_status === 'Active' || f.active_status === 'Semi-active'
         );
     }
     // 'all' shows everyone
 
-    displayRatings(filteredData);
+    displayRatings(filteredData, isSnapshot);
 }
 
-function displayRatings(data) {
+function displayRatings(data, isSnapshot = false) {
     // Destroy existing DataTable first
-    if (dataTable) {
-        dataTable.destroy();
+    if ($.fn.DataTable.isDataTable('#ratings-table')) {
+        $('#ratings-table').DataTable().destroy();
         dataTable = null;
     }
 
@@ -128,7 +212,7 @@ function displayRatings(data) {
         else if (rank === 2) rankClass = 'rank-2';
         else if (rank === 3) rankClass = 'rank-3';
 
-        // Status badge styling
+        // Status badge styling with participation count
         let statusBadge = '';
         if (fencer.active_status) {
             let statusClass = 'status-inactive';
@@ -137,28 +221,38 @@ function displayRatings(data) {
             } else if (fencer.active_status === 'Semi-active') {
                 statusClass = 'status-semi-active';
             }
-            statusBadge = `<span class="status-badge ${statusClass}">${fencer.active_status}</span>`;
+            const participation = fencer.recent_participation || 0;
+            statusBadge = `<span class="status-badge ${statusClass}" title="${participation} out of last 40 sessions">${fencer.active_status} (${participation}/40)</span>`;
         } else {
             statusBadge = '<span style="color: #999;">N/A</span>';
         }
 
-        // Get max elo from stats data
-        const statsInfo = fencerStatsData.find(f => f.Fencer === fencer.fencer);
+        // Get max elo - from snapshot data if available, otherwise from stats
         let maxElo = '-';
-        if (statsInfo && statsInfo['Max Elo (All-Time)']) {
-            const maxEloValue = parseFloat(statsInfo['Max Elo (All-Time)']);
-            if (!isNaN(maxEloValue)) {
-                maxElo = maxEloValue.toFixed(1);
+        if (isSnapshot && fencer.max_elo && fencer.max_elo > 0) {
+            // Use max elo from snapshot
+            maxElo = fencer.max_elo.toFixed(1);
+        } else if (!isSnapshot) {
+            // Use current all-time max from stats
+            const statsInfo = fencerStatsData.find(f => f.Fencer === fencer.fencer);
+            if (statsInfo && statsInfo['Max Elo (All-Time)']) {
+                const maxEloValue = parseFloat(statsInfo['Max Elo (All-Time)']);
+                if (!isNaN(maxEloValue)) {
+                    maxElo = maxEloValue.toFixed(1);
+                }
             }
         }
+
+        const participation = fencer.recent_participation || 0;
+        const matchesDisplay = fencer.matches > 0 ? fencer.matches : '-';
 
         row.innerHTML = `
             <td class="${rankClass}">${rank}</td>
             <td><a href="fencer.html?fencer=${encodeURIComponent(fencer.fencer)}" class="fencer-link">${fencer.fencer}</a></td>
-            <td>${statusBadge}</td>
+            <td data-order="${participation}">${statusBadge}</td>
             <td><strong>${fencer.rating}</strong></td>
             <td>${maxElo}</td>
-            <td>${fencer.matches}</td>
+            <td>${matchesDisplay}</td>
         `;
         tbody.appendChild(row);
     });

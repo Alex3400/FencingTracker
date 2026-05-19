@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elo Timeline - Haverstock Fencing</title>
+    <title>Monthly Improvement Tracker - Haverstock Fencing</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
 </head>
 <body>
     <header>
@@ -14,37 +16,18 @@
             <a href="leaderboard.html">Leaderboard</a>
             <a href="fencer.html">Fencer Stats</a>
             <a href="sessions.html">Tournament History</a>
-            <a href="timeline.html" class="active">Elo Timeline</a>
+            <a href="timeline.html" class="active">Monthly Tracker</a>
         </nav>
     </header>
 
     <main>
         <section class="intro">
-            <h2>Elo Rating Timeline</h2>
-            <p>Track how fencer ratings have changed over time across all tournaments.</p>
+            <h2>📈 Monthly Improvement Tracker</h2>
+            <p>See how fencer ratings have changed month by month. Only shows fencers who actually participated in each month.</p>
         </section>
 
-        <section class="chart-controls">
-            <div class="control-group">
-                <label for="fencer-select">Select Fencers to Display:</label>
-                <select id="fencer-select" multiple size="8">
-                    <!-- Populated by JavaScript -->
-                </select>
-                <div class="button-group">
-                    <button id="top-5-btn" class="btn btn-secondary">Top 5</button>
-                    <button id="clear-btn" class="btn btn-secondary">Clear All</button>
-                </div>
-            </div>
-        </section>
-
-        <section class="chart-section">
-            <p class="chart-note">Note: Rankings shown in tooltips are relative to active and semi-active fencers only (those who participated in the last 40 sessions at each point in time).</p>
-            <canvas id="elo-chart"></canvas>
-        </section>
-
-        <section class="legend-info">
-            <p><strong>How to use:</strong> Select one or more fencers from the list above to see their Elo progression over time.
-            Use Ctrl/Cmd+Click to select multiple fencers.</p>
+        <section id="monthly-improvements">
+            <!-- Populated by JavaScript -->
         </section>
     </main>
 
@@ -52,8 +35,11 @@
         <p>Haverstock Fencing Club | Elo Rating System | <a href="index.html" style="color: white; text-decoration: underline;">About</a></p>
     </footer>
 
-    <!-- Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <!-- jQuery (required for DataTables) -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <!-- App JS -->
     <script src="js/timeline.js"></script>
 </body>
 </html>

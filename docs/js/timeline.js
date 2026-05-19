@@ -1,194 +1,109 @@
-// Timeline chart for Elo ratings
-let timelineData = [];
-let ratingsData = [];
-let chart = null;
+// Monthly Improvement Tracker
+let monthlyData = [];
 
-// Color palette for different fencers
-const COLORS = [
-    '#2c5aa0', '#e74c3c', '#27ae60', '#f39c12', '#9b59b6',
-    '#1abc9c', '#e67e22', '#34495e', '#16a085', '#c0392b',
-    '#d35400', '#8e44ad', '#2980b9', '#27ae60', '#f1c40f'
-];
-
-async function loadData() {
+async function loadMonthlyData() {
     try {
-        const [timelineResponse, ratingsResponse] = await Promise.all([
-            fetch('data/elo_timeline.json'),
-            fetch('data/elo_ratings.json')
-        ]);
-
-        timelineData = await timelineResponse.json();
-        ratingsData = await ratingsResponse.json();
-
-        populateFencerSelect();
-        initializeChart();
+        const response = await fetch('data/monthly_improvements.json');
+        monthlyData = await response.json();
+        displayMonthlyImprovements();
     } catch (error) {
-        console.error('Error loading data:', error);
-        alert('Error loading timeline data. Please try again later.');
+        console.error('Error loading monthly data:', error);
+        document.getElementById('monthly-improvements').innerHTML =
+            '<p style="text-align: center; color: red;">Error loading data. Please try again later.</p>';
     }
 }
 
-function populateFencerSelect() {
-    const select = document.getElementById('fencer-select');
-    select.innerHTML = '';
+function displayMonthlyImprovements() {
+    const container = document.getElementById('monthly-improvements');
+    container.innerHTML = '';
 
-    // Sort fencers by current rating
-    const sortedFencers = [...ratingsData].sort((a, b) => b.rating - a.rating);
+    monthlyData.forEach(month => {
+        const monthSection = document.createElement('div');
+        monthSection.className = 'month-section';
 
-    sortedFencers.forEach(fencer => {
-        const option = document.createElement('option');
-        option.value = fencer.fencer;
-        option.textContent = `${fencer.fencer} (${fencer.rating})`;
-        select.appendChild(option);
-    });
-}
+        // Month header
+        const header = document.createElement('div');
+        header.className = 'month-header';
+        header.innerHTML = `
+            <h3>${month.month_name}</h3>
+            <p>${month.session_count} session${month.session_count > 1 ? 's' : ''} -
+            ${month.fencer_changes.length} fencer${month.fencer_changes.length > 1 ? 's' : ''}</p>
+        `;
+        monthSection.appendChild(header);
 
-function initializeChart() {
-    const ctx = document.getElementById('elo-chart').getContext('2d');
+        // Sessions list
+        const sessionsList = document.createElement('div');
+        sessionsList.className = 'sessions-list';
+        sessionsList.innerHTML = '<p><strong>Sessions:</strong> ' +
+            month.session_dates.map(date => {
+                const d = new Date(date);
+                const formatted = d.toLocaleDateString('en-GB', {
+                    month: 'short',
+                    day: 'numeric'
+                });
+                return `<a href="sessions.html?date=${encodeURIComponent(date)}" class="date-link">${formatted}</a>`;
+            }).join(', ') + '</p>';
+        monthSection.appendChild(sessionsList);
 
-    chart = new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: [],
-            datasets: []
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: true,
-            aspectRatio: 2,
-            interaction: {
-                mode: 'index',
-                intersect: false,
-            },
-            plugins: {
-                title: {
-                    display: true,
-                    text: 'Elo Rating Progression',
-                    font: { size: 18 }
-                },
-                legend: {
-                    display: true,
-                    position: 'top'
-                },
-                tooltip: {
-                    callbacks: {
-                        label: function(context) {
-                            const rating = context.parsed.y.toFixed(1);
-                            const rank = context.dataset.ranks[context.dataIndex];
-                            return `${context.dataset.label}: ${rating} (Rank #${rank})`;
-                        }
-                    }
-                }
-            },
-            scales: {
-                x: {
-                    title: {
-                        display: true,
-                        text: 'Tournament Sessions'
-                    },
-                    ticks: {
-                        maxRotation: 45,
-                        minRotation: 45
-                    }
-                },
-                y: {
-                    title: {
-                        display: true,
-                        text: 'Elo Rating'
-                    },
-                    beginAtZero: false
-                }
+        // Fencers table
+        const tableWrapper = document.createElement('div');
+        tableWrapper.className = 'month-table-wrapper';
+
+        const table = document.createElement('table');
+        table.className = 'month-table';
+        table.innerHTML = `
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Fencer</th>
+                    <th>Sessions</th>
+                    <th>Start Elo</th>
+                    <th>End Elo</th>
+                    <th>Change</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        `;
+
+        const tbody = table.querySelector('tbody');
+        month.fencer_changes.forEach((fencer, index) => {
+            const row = document.createElement('tr');
+
+            // Determine change class and icon
+            let changeClass = '';
+            let changeIcon = '';
+            if (fencer.change > 0) {
+                changeClass = 'positive';
+                changeIcon = '▲';
+            } else if (fencer.change < 0) {
+                changeClass = 'negative';
+                changeIcon = '▼';
+            } else {
+                changeClass = '';
+                changeIcon = '━';
             }
-        }
+
+            const changeSign = fencer.change > 0 ? '+' : '';
+            const sessionsText = `${fencer.sessions_attended || 0}/${month.session_count}`;
+
+            row.innerHTML = `
+                <td>${index + 1}</td>
+                <td><a href="fencer.html?fencer=${encodeURIComponent(fencer.fencer)}" class="fencer-link">${fencer.fencer}</a></td>
+                <td>${sessionsText}</td>
+                <td>${fencer.start_rating}</td>
+                <td><strong>${fencer.end_rating}</strong></td>
+                <td class="${changeClass}">${changeIcon} ${changeSign}${fencer.change}</td>
+            `;
+            tbody.appendChild(row);
+        });
+
+        tableWrapper.appendChild(table);
+        monthSection.appendChild(tableWrapper);
+
+        container.appendChild(monthSection);
     });
 }
 
-function updateChart() {
-    const select = document.getElementById('fencer-select');
-    const selectedFencers = Array.from(select.selectedOptions).map(opt => opt.value);
-
-    if (selectedFencers.length === 0) {
-        chart.data.labels = [];
-        chart.data.datasets = [];
-        chart.update();
-        return;
-    }
-
-    // Build labels (dates + phases)
-    const labels = timelineData.map(snapshot => `${snapshot.date} ${snapshot.phase}`);
-
-    // Build datasets for each selected fencer
-    const datasets = selectedFencers.map((fencer, index) => {
-        const data = timelineData.map(snapshot => {
-            return snapshot.ratings[fencer] || null;
-        });
-
-        // Calculate ranks for each snapshot (only among active/semi-active fencers)
-        const ranks = timelineData.map(snapshot => {
-            if (!snapshot.ratings[fencer]) return null;
-
-            // Filter to only active/semi-active fencers at this snapshot
-            const activeFencers = Object.entries(snapshot.ratings).filter(([name, rating]) => {
-                const status = snapshot.active_status?.[name];
-                return status === 'Active' || status === 'Semi-active';
-            });
-
-            // Sort active fencers by rating to find rank
-            const sortedRatings = activeFencers.sort((a, b) => b[1] - a[1]);
-            const rank = sortedRatings.findIndex(([name, _]) => name === fencer) + 1;
-
-            // If rank is 0, fencer was inactive at this point
-            return rank > 0 ? rank : null;
-        });
-
-        return {
-            label: fencer,
-            data: data,
-            borderColor: COLORS[index % COLORS.length],
-            backgroundColor: COLORS[index % COLORS.length] + '33',
-            borderWidth: 2,
-            pointRadius: 3,
-            pointHoverRadius: 5,
-            tension: 0.1,
-            spanGaps: true, // Connect line even if fencer wasn't present
-            ranks: ranks // Store ranks for tooltip
-        };
-    });
-
-    chart.data.labels = labels;
-    chart.data.datasets = datasets;
-    chart.update();
-}
-
-function selectTop5() {
-    const select = document.getElementById('fencer-select');
-
-    // Clear current selection
-    for (let option of select.options) {
-        option.selected = false;
-    }
-
-    // Select top 5
-    for (let i = 0; i < Math.min(5, select.options.length); i++) {
-        select.options[i].selected = true;
-    }
-
-    updateChart();
-}
-
-function clearSelection() {
-    const select = document.getElementById('fencer-select');
-    for (let option of select.options) {
-        option.selected = false;
-    }
-    updateChart();
-}
-
-// Event listeners
 document.addEventListener('DOMContentLoaded', () => {
-    loadData();
-
-    document.getElementById('fencer-select').addEventListener('change', updateChart);
-    document.getElementById('top-5-btn').addEventListener('click', selectTop5);
-    document.getElementById('clear-btn').addEventListener('click', clearSelection);
+    loadMonthlyData();
 });

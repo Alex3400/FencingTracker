@@ -3,26 +3,6 @@ let sessionsData = [];
 let matchHistoryData = [];
 let dataTable = null;
 
-// Calculate color for upset indicator (grey to bright red gradient)
-function getUpsetColor(upsetScore) {
-    // Grey (224,224,224) to Bright Red (255,0,0)
-    const grey = [224, 224, 224];
-    const red = [255, 0, 0];
-
-    // Clamp upset score to 0-1 range
-    const upset = Math.min(Math.max(upsetScore, 0), 1);
-
-    // Apply non-linear scaling (power of 2.5) to emphasize surprises
-    // This keeps expected results very grey and makes true upsets pop
-    const t = Math.pow(upset, 2.5);
-
-    const r = Math.round(grey[0] + (red[0] - grey[0]) * t);
-    const g = Math.round(grey[1] + (red[1] - grey[1]) * t);
-    const b = Math.round(grey[2] + (red[2] - grey[2]) * t);
-
-    return `rgb(${r}, ${g}, ${b})`;
-}
-
 async function loadSessions() {
     try {
         const [sessionsResponse, matchHistoryResponse] = await Promise.all([
@@ -60,8 +40,7 @@ function parseMatchHistoryCSV(text) {
             'Loser Old Rating': values[8],
             'Loser New Rating': values[9],
             'Loser Change': values[10],
-            'Expected': values[11],
-            'Upset Score': values[12]
+            'Expected': values[11]
         };
     });
 }
@@ -259,7 +238,6 @@ function displayAllMatches(date) {
     html += '<th>Type</th>';
     html += '<th>Result</th>';
     html += '<th colspan="2">Elo Changes</th>';
-    html += '<th>🎯 Upset</th>';
     html += '</tr></thead>';
     html += '<tbody>';
 
@@ -275,10 +253,6 @@ function displayAllMatches(date) {
         const winnerNew = parseFloat(match['Winner New Rating']);
         const loserOld = parseFloat(match['Loser Old Rating']);
         const loserNew = parseFloat(match['Loser New Rating']);
-
-        // Get upset score
-        const upsetScore = parseFloat(match['Upset Score']) || 0;
-        const upsetColor = getUpsetColor(upsetScore);
 
         // Format type display
         const typeDisplay = type === 'Poule' ? 'Poule' : type;
@@ -299,14 +273,6 @@ function displayAllMatches(date) {
         html += `<a href="fencer.html?fencer=${encodeURIComponent(match['Loser'])}" class="fencer-link">${match['Loser']}</a><br>`;
         html += `${loserOld.toFixed(1)} → ${loserNew.toFixed(1)} `;
         html += `<span class="${loserChangeClass}">(${loserSign}${loserChange.toFixed(1)})</span>`;
-        html += `</td>`;
-
-        // Upset indicator cell
-        html += `<td class="upset-cell">`;
-        html += `<div class="upset-indicator" `;
-        html += `style="background-color: ${upsetColor};" `;
-        html += `title="Upset Score: ${upsetScore.toFixed(3)}">`;
-        html += `</div>`;
         html += `</td>`;
 
         html += `</tr>`;

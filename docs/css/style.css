@@ -921,25 +921,73 @@ footer p {
     }
 }
 
-/* Upset Indicator Styles */
-.upset-cell {
-    text-align: center;
-    padding: 8px;
+/* Monthly Improvement Tracker Styles */
+.month-section {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.upset-indicator {
-    width: 40px;
-    height: 40px;
+.month-header {
+    border-bottom: 2px solid var(--primary);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.month-header h3 {
+    color: var(--primary);
+    margin: 0 0 0.5rem 0;
+}
+
+.month-header p {
+    color: var(--dark-gray);
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.sessions-list {
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background-color: #f8f9fa;
     border-radius: 4px;
-    cursor: help;
-    display: inline-block;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
 }
 
-.upset-indicator:hover {
-    transform: scale(1.1);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+.sessions-list p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.month-table-wrapper {
+    overflow-x: auto;
+}
+
+.month-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.month-table th {
+    background-color: var(--primary);
+    color: white;
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.month-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.month-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.month-table td:first-child {
+    font-weight: 600;
+    color: var(--dark-gray);
 }
 
 /* About Page Styles */

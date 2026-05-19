@@ -16,24 +16,30 @@
             <a href="leaderboard.html" class="active">Leaderboard</a>
             <a href="fencer.html">Fencer Stats</a>
             <a href="sessions.html">Tournament History</a>
-            <a href="timeline.html">Elo Timeline</a>
+            <a href="timeline.html">Monthly Tracker</a>
         </nav>
     </header>
 
     <main>
         <section class="intro">
-            <h2>Current Rankings</h2>
-            <p>Elo ratings for all fencers based on tournament results. Ratings are updated after each session.</p>
+            <h2 id="rankings-title">Current Rankings</h2>
+            <p id="rankings-description">Elo ratings for all fencers based on tournament results. Ratings are updated after each session.</p>
             <p><strong>Latest session:</strong> <span id="latest-session-link">Loading...</span></p>
         </section>
 
         <section class="filters">
             <div class="filter-group">
+                <label for="snapshot-filter">View snapshot:</label>
+                <select id="snapshot-filter">
+                    <option value="current">Current Rankings</option>
+                </select>
+            </div>
+            <div class="filter-group">
                 <label for="activity-filter">Show fencers:</label>
                 <select id="activity-filter">
                     <option value="all">All fencers</option>
-                    <option value="active" selected>Active only (last 20 sessions)</option>
-                    <option value="semi-active">Active + Semi-active (last 40 sessions)</option>
+                    <option value="active" selected>Active only (5+ in last 40 sessions)</option>
+                    <option value="semi-active">Active + Semi-active (1+ in last 40 sessions)</option>
                 </select>
             </div>
         </section>
