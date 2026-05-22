@@ -34,10 +34,10 @@ except ImportError:
 # ============================================================
 
 # Base K-factor (how much ratings change per match)
-BASE_K = 30
+BASE_K = 24
 
 # Starting rating for new fencers
-STARTING_RATING = 1800
+STARTING_RATING = 1500
 
 # Rating bounds
 RATING_FLOOR = 1000
@@ -45,10 +45,10 @@ RATING_CEILING = 2600
 
 # K-factor scaling by experience (number of matches)
 K_FACTOR_THRESHOLDS = {
-    0: 40,    # New players (0-19 matches): fast convergence
-    20: 35,   # Developing (20-49 matches): still adapting
-    50: 30,   # Established (50-149 matches): moderate changes
-    150: 25   # Veterans (150+ matches): stable ratings
+    0: 32,    # New players (0-19 matches): fast convergence
+    20: 25,   # Developing (20-49 matches): still adapting
+    50: 20,   # Established (50-149 matches): moderate changes
+    150: 18   # Veterans (150+ matches): stable ratings
 }
 
 # Removed MIN_MATCHES_FOR_ESTABLISHED - status system no longer used
@@ -82,33 +82,32 @@ MARGIN_SCORE_MAP = {
 }
 
 # DE bracket importance weights (multiplier on base K)
-# Increased to create more rating spread
+# Floor of 1.8x reflects that all DEs are higher-signal than poules
+# (to 10, timed, elimination = more effort). Bracket curve on top is flatter.
 BRACKET_WEIGHTS = {
     # Top brackets (fighting for podium)
-    'L1-2': 4.0,   
-    'L1-4': 3.0,   
-    'L1-8': 2.0,    
-    'L1-16': 1.75,
-    'L1-32': 1.5,
+    'L1-2': 2.8,
+    'L1-4': 2.5,
+    'L1-8': 2.2,
+    'L1-16': 2.0,
+    'L1-32': 1.9,
 
     # Medal matches
-    'L3-4': 2.5,
+    'L3-4': 2.4,
 
     # Mid-tier brackets
-    'L5-8': 1.75,
-    'L9-16': 1.3,
-    'L9-12': 1.25,
-    'L13-16': 1.2,
+    'L5-8': 2.0,
+    'L9-16': 1.9,
+    'L9-12': 1.85,
+    'L13-16': 1.8,
 
     # Lower brackets
-    'L17-32': 1.0,
-    'L17-24': 1.0,
-    'L25-32': 1.0,
+    'L17-32': 1.8,
 }
 
 # Field size scaling parameters
 FIELD_SIZE_BASELINE = 20  # Average tournament size for normalization
-FIELD_SIZE_SCALING_EXPONENT = 0.5  # 0.5 = sqrt scaling, 1.0 = linear
+FIELD_SIZE_SCALING_EXPONENT = 0.3  # 0.3 = gentle scaling, caps large-field amplification
 
 # Placement bonuses (flat rating adjustment after tournament)
 # Scaled down to prevent single-tournament spikes
@@ -124,8 +123,8 @@ ELO_SCALING_FACTOR = 400
 
 # Rating decay for inactive fencers
 DECAY_AFTER_SESSIONS = 8  # Start decaying after this many consecutive missed sessions
-DECAY_RATE = 0.08  # Decay 8% per missed session towards decay target
-DECAY_TARGET = 1900  # High-rated players decay toward this floor (above starting rating)
+DECAY_RATE = 0.05  # Decay 5% per missed session towards decay target
+DECAY_TARGET = 1600  # High-rated players decay toward this floor (above starting rating)
 # Only players rated above DECAY_TARGET will decay
 # Formula: if rating > DECAY_TARGET: new_rating = old_rating * (1 - DECAY_RATE) + DECAY_TARGET * DECAY_RATE
 
