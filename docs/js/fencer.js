@@ -722,18 +722,31 @@ function showDayMatches(fencerName, date) {
         const opponentNewRating = isWinner ? parseFloat(match['Loser New Rating']) : parseFloat(match['Winner New Rating']);
         const opponentChange = isWinner ? parseFloat(match['Loser Change']) : parseFloat(match['Winner Change']);
 
+        // Check if this is a walkover (both changes are 0.0 and it's a DE match)
+        // DE matches have Match Type like "L3-4", "L1-8", etc. (not "Poule")
+        const isWalkover = fencerChange === 0.0 && opponentChange === 0.0 && match['Match Type'] !== 'Poule';
+
         // Remove (W) or (L) prefix since we're already showing Won/Lost
         const cleanResult = match['Result'].replace(/^\(W\)\s*|\(L\)\s*/g, '');
-        const resultText = isWinner ? `Won, ${cleanResult}` : `Lost, ${cleanResult}`;
+        let resultText = isWinner ? `Won, ${cleanResult}` : `Lost, ${cleanResult}`;
+        if (isWalkover) {
+            resultText += ' <span class="walkover-badge">Walkover</span>';
+        }
         const resultClass = isWinner ? 'winner-elo' : 'loser-elo';
 
+        // Add walkover class to row if applicable
+        if (isWalkover) {
+            row.classList.add('walkover-row');
+        }
+
         const fencerEloCell = document.createElement('td');
-        fencerEloCell.className = resultClass;
+        fencerEloCell.className = resultClass + (isWalkover ? ' walkover-elo' : '');
         const changeClass = fencerChange >= 0 ? 'positive' : 'negative';
         const changeSign = fencerChange >= 0 ? '+' : '';
         fencerEloCell.innerHTML = `${fencerOldRating.toFixed(1)} → ${fencerNewRating.toFixed(1)} <span class="${changeClass}">(${changeSign}${fencerChange.toFixed(1)})</span>`;
 
         const opponentEloCell = document.createElement('td');
+        opponentEloCell.className = isWalkover ? 'walkover-elo' : '';
         const oppChangeClass = opponentChange >= 0 ? 'positive' : 'negative';
         const oppChangeSign = opponentChange >= 0 ? '+' : '';
         opponentEloCell.innerHTML = `${opponentOldRating.toFixed(1)} → ${opponentNewRating.toFixed(1)} <span class="${oppChangeClass}">(${oppChangeSign}${opponentChange.toFixed(1)})</span>`;
@@ -942,6 +955,10 @@ function displayMatchHistory(fencer1, fencer2) {
         const loserNewRating = parseFloat(match['Loser New Rating']);
         const loserChange = parseFloat(match['Loser Change']);
 
+        // Check if this is a walkover (both changes are 0.0 and it's a DE match)
+        // DE matches have Match Type like "L3-4", "L1-8", etc. (not "Poule")
+        const isWalkover = winnerChange === 0.0 && loserChange === 0.0 && match['Match Type'] !== 'Poule';
+
         const date = new Date(match['Date']);
         const formattedDate = date.toLocaleDateString('en-GB', {
             year: 'numeric',
@@ -951,7 +968,15 @@ function displayMatchHistory(fencer1, fencer2) {
 
         // Remove (W) or (L) prefix and add Won/Lost from fencer1's perspective
         const cleanResult = match['Result'].replace(/^\(W\)\s*|\(L\)\s*/g, '');
-        const resultText = f1IsWinner ? `Won, ${cleanResult}` : `Lost, ${cleanResult}`;
+        let resultText = f1IsWinner ? `Won, ${cleanResult}` : `Lost, ${cleanResult}`;
+        if (isWalkover) {
+            resultText += ' <span class="walkover-badge">Walkover</span>';
+        }
+
+        // Add walkover class to row if applicable
+        if (isWalkover) {
+            row.classList.add('walkover-row');
+        }
 
         const f1Cell = document.createElement('td');
         const f2Cell = document.createElement('td');
@@ -963,8 +988,8 @@ function displayMatchHistory(fencer1, fencer2) {
             const f2ChangeClass = loserChange >= 0 ? 'positive' : 'negative';
             const f2ChangeSign = loserChange >= 0 ? '+' : '';
 
-            f1Cell.className = 'winner-elo';
-            f2Cell.className = 'loser-elo';
+            f1Cell.className = 'winner-elo' + (isWalkover ? ' walkover-elo' : '');
+            f2Cell.className = 'loser-elo' + (isWalkover ? ' walkover-elo' : '');
             f1Cell.innerHTML = `<strong>${fencer1}</strong><br>${winnerOldRating.toFixed(1)} → ${winnerNewRating.toFixed(1)} <span class="${f1ChangeClass}">(${f1ChangeSign}${winnerChange.toFixed(1)})</span>`;
             f2Cell.innerHTML = `${fencer2}<br>${loserOldRating.toFixed(1)} → ${loserNewRating.toFixed(1)} <span class="${f2ChangeClass}">(${f2ChangeSign}${loserChange.toFixed(1)})</span>`;
         } else {
@@ -974,8 +999,8 @@ function displayMatchHistory(fencer1, fencer2) {
             const f2ChangeClass = winnerChange >= 0 ? 'positive' : 'negative';
             const f2ChangeSign = winnerChange >= 0 ? '+' : '';
 
-            f1Cell.className = 'loser-elo';
-            f2Cell.className = 'winner-elo';
+            f1Cell.className = 'loser-elo' + (isWalkover ? ' walkover-elo' : '');
+            f2Cell.className = 'winner-elo' + (isWalkover ? ' walkover-elo' : '');
             f1Cell.innerHTML = `${fencer1}<br>${loserOldRating.toFixed(1)} → ${loserNewRating.toFixed(1)} <span class="${f1ChangeClass}">(${f1ChangeSign}${loserChange.toFixed(1)})</span>`;
             f2Cell.innerHTML = `<strong>${fencer2}</strong><br>${winnerOldRating.toFixed(1)} → ${winnerNewRating.toFixed(1)} <span class="${f2ChangeClass}">(${f2ChangeSign}${winnerChange.toFixed(1)})</span>`;
         }

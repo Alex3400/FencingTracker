@@ -587,6 +587,30 @@ footer p {
     margin-left: 0.25rem;
 }
 
+/* Walkover badge and styling */
+.walkover-badge {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    background-color: rgba(149, 165, 166, 0.2);
+    color: #7f8c8d;
+    border: 1px solid #95a5a6;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-left: 0.35rem;
+}
+
+.walkover-row {
+    background-color: rgba(149, 165, 166, 0.05) !important;
+}
+
+.walkover-elo {
+    font-style: italic;
+    opacity: 0.85;
+}
+
 /* H2H Quick section */
 .h2h-quick {
     background: var(--light-gray);

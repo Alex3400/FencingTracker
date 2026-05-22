@@ -254,22 +254,25 @@ function displayAllMatches(date) {
         const loserOld = parseFloat(match['Loser Old Rating']);
         const loserNew = parseFloat(match['Loser New Rating']);
 
+        // Check if this is a walkover (both changes are 0.0 and it's a DE match)
+        const isWalkover = winnerChange === 0.0 && loserChange === 0.0 && type !== 'Poule';
+
         // Format type display
         const typeDisplay = type === 'Poule' ? 'Poule' : type;
 
-        html += `<tr>`;
+        html += `<tr${isWalkover ? ' class="walkover-row"' : ''}>`;
         html += `<td>${typeDisplay}</td>`;
-        html += `<td>${match['Result']}</td>`;
+        html += `<td>${match['Result']}${isWalkover ? ' <span class="walkover-badge">Walkover</span>' : ''}</td>`;
 
         // Winner Elo cell
-        html += `<td class="winner-elo">`;
+        html += `<td class="winner-elo${isWalkover ? ' walkover-elo' : ''}">`;
         html += `<strong><a href="fencer.html?fencer=${encodeURIComponent(match['Winner'])}" class="fencer-link">${match['Winner']}</a></strong><br>`;
         html += `${winnerOld.toFixed(1)} → ${winnerNew.toFixed(1)} `;
         html += `<span class="${winnerChangeClass}">(${winnerSign}${winnerChange.toFixed(1)})</span>`;
         html += `</td>`;
 
         // Loser Elo cell
-        html += `<td class="loser-elo">`;
+        html += `<td class="loser-elo${isWalkover ? ' walkover-elo' : ''}">`;
         html += `<a href="fencer.html?fencer=${encodeURIComponent(match['Loser'])}" class="fencer-link">${match['Loser']}</a><br>`;
         html += `${loserOld.toFixed(1)} → ${loserNew.toFixed(1)} `;
         html += `<span class="${loserChangeClass}">(${loserSign}${loserChange.toFixed(1)})</span>`;

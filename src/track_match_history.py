@@ -381,8 +381,17 @@ class EloRatingSystem:
         self.match_counts[fencer1] = self.match_counts.get(fencer1, 0) + 1
         self.match_counts[fencer2] = self.match_counts.get(fencer2, 0) + 1
 
-    def process_de_match(self, fencer1, fencer2, winner, bracket_name, date, total_fencers):
-        """Process a DE match and update ratings."""
+    def process_de_match(self, fencer1, fencer2, winner, bracket_name, date, total_fencers, is_walkover=False):
+        """Process a DE match and update ratings.
+
+        Args:
+            fencer1, fencer2: Names of the fencers
+            winner: Name of the winner
+            bracket_name: DE bracket name (e.g., 'L1-8')
+            date: Date of the match
+            total_fencers: Total number of fencers in the tournament
+            is_walkover: If True, this is a walkover/forfeit and doesn't affect Elo
+        """
         old_rating1 = self.get_rating(fencer1)
         old_rating2 = self.get_rating(fencer2)
 
@@ -390,42 +399,56 @@ class EloRatingSystem:
         expected1 = calculate_expected_score(old_rating1, old_rating2)
         expected2 = calculate_expected_score(old_rating2, old_rating1)
 
-        # Actual scores (binary: win=1, loss=0)
-        actual1 = 1.0 if winner == fencer1 else 0.0
-        actual2 = 1.0 if winner == fencer2 else 0.0
+        if is_walkover:
+            # Walkover: no Elo changes, but still record the match
+            change1 = 0.0
+            change2 = 0.0
+            new_rating1 = old_rating1
+            new_rating2 = old_rating2
 
-        # Get K-factors
-        k1 = get_k_factor(self.get_match_count(fencer1))
-        k2 = get_k_factor(self.get_match_count(fencer2))
+            # Add walkover note to match result
+            result1 = "won (walkover)" if winner == fencer1 else "lost (walkover)"
+            result2 = "won (walkover)" if winner == fencer2 else "lost (walkover)"
+            match_result = f'{bracket_name} ({winner} won, walkover)'
+        else:
+            # Normal match: calculate Elo changes
+            # Actual scores (binary: win=1, loss=0)
+            actual1 = 1.0 if winner == fencer1 else 0.0
+            actual2 = 1.0 if winner == fencer2 else 0.0
 
-        # Apply bracket weight and field size multiplier
-        bracket_weight = get_bracket_weight(bracket_name)
-        field_multiplier = get_field_size_multiplier(total_fencers)
+            # Get K-factors
+            k1 = get_k_factor(self.get_match_count(fencer1))
+            k2 = get_k_factor(self.get_match_count(fencer2))
 
-        effective_k1 = k1 * bracket_weight * field_multiplier
-        effective_k2 = k2 * bracket_weight * field_multiplier
+            # Apply bracket weight and field size multiplier
+            bracket_weight = get_bracket_weight(bracket_name)
+            field_multiplier = get_field_size_multiplier(total_fencers)
 
-        # Calculate rating changes
-        change1 = effective_k1 * (actual1 - expected1)
-        change2 = effective_k2 * (actual2 - expected2)
+            effective_k1 = k1 * bracket_weight * field_multiplier
+            effective_k2 = k2 * bracket_weight * field_multiplier
 
-        # Update ratings
-        result1 = "won" if winner == fencer1 else "lost"
-        result2 = "won" if winner == fencer2 else "lost"
-        self.update_rating(fencer1, change1, date, f'{bracket_name} vs {fencer2} ({result1})')
-        self.update_rating(fencer2, change2, date, f'{bracket_name} vs {fencer1} ({result2})')
+            # Calculate rating changes
+            change1 = effective_k1 * (actual1 - expected1)
+            change2 = effective_k2 * (actual2 - expected2)
 
-        # Record match history
-        new_rating1 = self.ratings[fencer1]
-        new_rating2 = self.ratings[fencer2]
-        match_result = f'{bracket_name} ({winner} won)'
+            # Update ratings
+            result1 = "won" if winner == fencer1 else "lost"
+            result2 = "won" if winner == fencer2 else "lost"
+            self.update_rating(fencer1, change1, date, f'{bracket_name} vs {fencer2} ({result1})')
+            self.update_rating(fencer2, change2, date, f'{bracket_name} vs {fencer1} ({result2})')
+
+            new_rating1 = self.ratings[fencer1]
+            new_rating2 = self.ratings[fencer2]
+            match_result = f'{bracket_name} ({winner} won)'
+
+        # Record match history (always, even for walkovers)
         self.match_history.append((
             date, fencer1, old_rating1, new_rating1, change1,
             fencer2, old_rating2, new_rating2, change2, match_result,
             expected1
         ))
 
-        # Increment match counts
+        # Increment match counts (always, even for walkovers)
         self.match_counts[fencer1] = self.match_counts.get(fencer1, 0) + 1
         self.match_counts[fencer2] = self.match_counts.get(fencer2, 0) + 1
 
@@ -940,15 +963,28 @@ def parse_de_sheet(csv_path, date):
                     bracket_end = (bracket_num + 1) * bracket_size
                     bracket_name = f'L{bracket_start}-{bracket_end}'
 
-                    # Determine winner
+                    # Determine winner and check for walkover
                     winner = None
-                    if result1 == 'V' and result2 != 'V':
-                        winner = fencer1
-                    elif result2 == 'V' and result1 != 'V':
-                        winner = fencer2
+                    is_walkover = False
+
+                    # Check if this is a walkover (one fencer has X)
+                    if result1 == 'X' or result2 == 'X':
+                        is_walkover = True
+                        # The fencer with V (or without X if neither has V) wins
+                        if result1 == 'V':
+                            winner = fencer1
+                        elif result2 == 'V':
+                            winner = fencer2
+                    else:
+                        # Normal match - V indicates winner
+                        if result1 == 'V' and result2 != 'V':
+                            winner = fencer1
+                        elif result2 == 'V' and result1 != 'V':
+                            winner = fencer2
 
                     if winner:
-                        matches.append((fencer1, fencer2, date, f'DE-{bracket_name}', winner, None))
+                        # Append match with walkover flag (7th element in tuple)
+                        matches.append((fencer1, fencer2, date, f'DE-{bracket_name}', winner, None, is_walkover))
 
                 # Move to next pair
                 row_idx += 2
@@ -1136,7 +1172,14 @@ def process_all_sheets(base_dir='downloaded_sheets'):
             # Count total fencers for field size scaling
             total_fencers = len(fencers_in_poules) if fencers_in_poules else len(placements)
 
-            for fencer1, fencer2, date_str, match_type, winner, score in matches:
+            for match_data in matches:
+                # Unpack match data - handle both old (6 elements) and new (7 elements with walkover) format
+                if len(match_data) == 7:
+                    fencer1, fencer2, date_str, match_type, winner, score, is_walkover = match_data
+                else:
+                    fencer1, fencer2, date_str, match_type, winner, score = match_data
+                    is_walkover = False
+
                 # Skip if either fencer is blacklisted (add_match will handle this check)
                 history.add_match(fencer1, fencer2, date_str, match_type, winner, score)
 
@@ -1155,7 +1198,7 @@ def process_all_sheets(base_dir='downloaded_sheets'):
                 # Process Elo for DE match
                 # Extract bracket name from match_type (format: "DE-L1-8")
                 bracket_name = match_type.replace('DE-', '') if match_type.startswith('DE-') else 'L1-32'
-                elo_system.process_de_match(fencer1_norm, fencer2_norm, winner_norm, bracket_name, date_str, total_fencers)
+                elo_system.process_de_match(fencer1_norm, fencer2_norm, winner_norm, bracket_name, date_str, total_fencers, is_walkover)
 
             for fencer, place in placements.items():
                 # Normalize and check for blacklisted fencers
@@ -1812,11 +1855,15 @@ def export_elo_history(elo_system, output_file='elo_history.csv'):
                     bracket_type = "Poule"
             else:
                 # DE match: extract bracket and winner
-                # Format: "L1-2 (Greg won)"
+                # Format: "L1-2 (Greg won)" or "L3-4 (Tom T won, walkover)"
                 if '(' in match_type:
                     bracket = match_type.split('(')[0].strip()
                     winner_text = match_type.split('(')[1].rstrip(')')
-                    winner_name = winner_text.replace(' won', '')
+                    # Extract winner name - handle both "Name won" and "Name won, walkover"
+                    if ' won' in winner_text:
+                        winner_name = winner_text.split(' won')[0].strip()
+                    else:
+                        winner_name = winner_text
 
                     if winner_name == fencer1:
                         result = f"(W) {fencer1} - {fencer2}"
