@@ -573,6 +573,20 @@ footer p {
     font-size: 0.9rem;
 }
 
+.active-only-badge {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    background-color: rgba(44, 90, 160, 0.1);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 3px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-left: 0.25rem;
+}
+
 /* H2H Quick section */
 .h2h-quick {
     background: var(--light-gray);

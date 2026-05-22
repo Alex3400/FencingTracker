@@ -167,21 +167,20 @@ function displayFencerStats(fencerName, autoSelectDate = null) {
     }
     document.getElementById('rating-status').innerHTML = statusText;
 
-    // Rank (only among active/semi-active fencers)
+    // Rank (only among active fencers, not semi-active)
     const activeFencers = ratingsData.filter(f =>
-        f.active_status === 'Active' || f.active_status === 'Semi-active'
+        f.active_status === 'Active'
     );
     const rank = activeFencers.findIndex(f => f.fencer === fencerName) + 1;
 
     if (rank > 0) {
-        // Fencer is active or semi-active
+        // Fencer is active - show rank among active fencers
         document.getElementById('rank').textContent = `#${rank}`;
         document.getElementById('total-fencers').textContent = activeFencers.length;
     } else {
-        // Fencer is inactive - show overall rank with note
-        const overallRank = ratingsData.findIndex(f => f.fencer === fencerName) + 1;
-        document.getElementById('rank').textContent = `#${overallRank}`;
-        document.getElementById('total-fencers').textContent = `${ratingsData.length} (Inactive)`;
+        // Fencer is not active - show N/A
+        document.getElementById('rank').textContent = 'N/A';
+        document.getElementById('total-fencers').textContent = `${activeFencers.length} (Not Active)`;
     }
 
     // Matches and win rate
@@ -569,10 +568,10 @@ function drawFencerChart(fencerName) {
             labels.push(`${snapshot.date} ${snapshot.phase}`);
             data.push(snapshot.ratings[fencerName]);
 
-            // Calculate rank at this snapshot (only among active/semi-active fencers)
+            // Calculate rank at this snapshot (only among active fencers, not semi-active)
             const activeFencers = Object.entries(snapshot.ratings).filter(([name, rating]) => {
                 const status = snapshot.active_status?.[name];
-                return status === 'Active' || status === 'Semi-active';
+                return status === 'Active';
             });
 
             const sortedRatings = activeFencers.sort((a, b) => b[1] - a[1]);

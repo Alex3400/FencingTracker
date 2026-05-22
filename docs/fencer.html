@@ -44,7 +44,7 @@
                 <div class="stat-card">
                     <h4>Rank</h4>
                     <div class="big-stat" id="rank">-</div>
-                    <div class="stat-subtext">out of <span id="total-fencers">-</span></div>
+                    <div class="stat-subtext">out of <span id="total-fencers">-</span> <span class="active-only-badge">active fencers</span></div>
                 </div>
                 <div class="stat-card">
                     <h4>Total Matches</h4>
@@ -102,7 +102,7 @@
 
         <section id="elo-chart-section" class="chart-section" style="display: none;">
             <h3>Elo Rating Progression</h3>
-            <p class="chart-note">Note: Rankings shown are relative to active and semi-active fencers only (those who participated in the last 40 sessions at each point in time).</p>
+            <p class="chart-note">Note: Rankings shown in chart tooltips are calculated relative to active fencers only (those who participated in 5m+ of the last 40 sessions at each point in time).</p>
             <canvas id="fencer-elo-chart"></canvas>
         </section>
 
