@@ -303,7 +303,8 @@ class EloRatingSystem:
         # Track poule gains per session: {date: {fencer: (start_rating, end_rating, gain)}}
         self.poule_gains = {}
         # Track max Elo per fencer (all-time peak rating)
-        # {fencer_name: max_rating}
+        # {fencer_name: {'rating': float, 'date': str, 'rank': int, 'total_active': int}}
+        # rank/total_active are among Active fencers at the moment the peak was set.
         self.max_elo = {}
 
     def get_rating(self, fencer):
@@ -486,16 +487,6 @@ class EloRatingSystem:
             gain = end_rating - start_rating
             self.poule_gains[date][fencer] = (start_rating, end_rating, gain)
 
-    def record_avg_elo(self, date, de_participants):
-        """Update max Elo for fencers who participated in DEs (only if 25+ matches)."""
-        for fencer in de_participants:
-            if fencer in self.ratings:
-                # Only track max Elo once they have 25+ matches (ratings are more stable)
-                if self.get_match_count(fencer) >= 25:
-                    current_rating = self.ratings[fencer]
-                    if fencer not in self.max_elo or current_rating > self.max_elo[fencer]:
-                        self.max_elo[fencer] = current_rating
-
     def take_snapshot(self, date, phase, participants=None):
         """Take a snapshot of all current ratings.
         phase should be 'After Poules' or 'After DEs'
@@ -504,12 +495,12 @@ class EloRatingSystem:
         snapshot = {fencer: rating for fencer, rating in self.ratings.items()}
         # Capture match counts at this point in time
         match_counts = {fencer: count for fencer, count in self.match_counts.items()}
-        # Capture max elo at this point in time
-        max_elos = {fencer: max_elo for fencer, max_elo in self.max_elo.items()}
         # Capture participants
         participants_set = participants if participants else set()
-        # Include session index with snapshot for later activity status calculation
-        self.snapshots.append((date, phase, snapshot, self.current_session_index, match_counts, max_elos, participants_set))
+        # max_elos slot is kept empty here — peaks are computed post-hoc from
+        # the full snapshot history in compute_peaks_from_snapshots() and the
+        # running-max for the timeline JSON is recomputed during export.
+        self.snapshots.append((date, phase, snapshot, self.current_session_index, match_counts, {}, participants_set))
 
     def get_active_status(self, fencer, current_session):
         """Calculate active status based on participation in last 40 sessions.
@@ -537,6 +528,90 @@ class EloRatingSystem:
             status = 'Inactive'
 
         return status, participation_count
+
+
+# Minimum matches before a fencer's rating is stable enough to count as a "peak"
+PEAK_MIN_MATCHES = 25
+
+
+def compute_peaks_from_snapshots(elo_system):
+    """Walk every snapshot in chronological order and find each fencer's
+    all-time-high rating, plus the rank they held at that moment.
+
+    For the rank, we try three increasingly permissive pools:
+      1. 'active'           — Active fencers (5+ of last 40), matches the live leaderboard
+      2. 'recently_active'  — anyone with 1+ participations in last 40
+      3. 'none'             — neither pool contains the peak-setter; rank omitted
+
+    Returns: {fencer: {'rating', 'date', 'rank', 'total', 'pool'}}
+        — 'pool' is one of 'active' | 'recently_active' | 'none'
+    """
+    # Step 1: find each fencer's peak rating + when (which snapshot) it occurred.
+    best = {}  # fencer -> (rating, date, snapshot_index_in_snapshots_list)
+    for snap_idx, snapshot_data in enumerate(elo_system.snapshots):
+        if len(snapshot_data) >= 5:
+            date = snapshot_data[0]
+            ratings_at_snap = snapshot_data[2]
+            match_counts_at_snap = snapshot_data[4]
+        else:
+            continue
+
+        for fencer, rating in ratings_at_snap.items():
+            if match_counts_at_snap.get(fencer, 0) < PEAK_MIN_MATCHES:
+                continue
+            existing = best.get(fencer)
+            if existing is None or rating > existing[0]:
+                best[fencer] = (rating, date, snap_idx)
+
+    # Step 2: for each peak, compute rank using the snapshot where the peak occurred.
+    peaks = {}
+    for fencer, (rating, date, snap_idx) in best.items():
+        snapshot_data = elo_system.snapshots[snap_idx]
+        ratings_at_snap = snapshot_data[2]
+        snap_session_idx = snapshot_data[3]
+
+        # Try the strict 'Active' pool first
+        active_pool = {
+            f for f in ratings_at_snap
+            if elo_system.get_active_status(f, snap_session_idx)[0] == 'Active'
+        }
+        if fencer in active_pool:
+            ranking_pool = active_pool
+            pool_label = 'active'
+        else:
+            # Fall back to 'recently_active' (Active + Semi-active)
+            recent_pool = {
+                f for f in ratings_at_snap
+                if elo_system.get_active_status(f, snap_session_idx)[0] in ('Active', 'Semi-active')
+            }
+            if fencer in recent_pool:
+                ranking_pool = recent_pool
+                pool_label = 'recently_active'
+            else:
+                ranking_pool = None
+                pool_label = 'none'
+
+        if ranking_pool:
+            ranked = sorted(
+                ((f, ratings_at_snap[f]) for f in ranking_pool),
+                key=lambda x: x[1],
+                reverse=True,
+            )
+            rank = next(i + 1 for i, (f, _) in enumerate(ranked) if f == fencer)
+            total = len(ranked)
+        else:
+            rank = None
+            total = None
+
+        peaks[fencer] = {
+            'rating': rating,
+            'date': date,
+            'rank': rank,
+            'total': total,
+            'pool': pool_label,
+        }
+
+    return peaks
 
 
 class MatchHistory:
@@ -1196,12 +1271,10 @@ def process_all_sheets(base_dir='downloaded_sheets'):
             print(f"  Found {len(matches)} DE matches")
             print(f"  Found {len(placements)} placements")
 
-        # Record average Elo for DE participants (before snapshot so max_elo is current)
         # Combine all participants for the snapshot
         all_participants = fencers_in_poules | fencers_in_des
 
         if de_sheet:
-            elo_system.record_avg_elo(date, fencers_in_des)
             # Take snapshot after DEs
             elo_system.take_snapshot(date, 'After DEs', all_participants)
 
@@ -1419,7 +1492,7 @@ def export_fencer_stats(history, elo_system=None, output_file='fencer_stats.csv'
             'DE Appearances',
             'DE Matches', 'DE Wins', 'DE Losses', 'DE Winrate',
             'Avg Seeding', 'Avg Placement',
-            'Max Elo (All-Time)',
+            'Max Elo (All-Time)', 'Max Elo Date', 'Max Elo Rank', 'Max Elo Total', 'Max Elo Pool',
             'Win', 'L2', 'L4', 'L8', 'L16', 'L32'
         ])
 
@@ -1512,11 +1585,18 @@ def export_fencer_stats(history, elo_system=None, output_file='fencer_stats.csv'
                 round(stats['average_placement'], 2) if de_appearances > 0 else 0.0,
             ]
 
-            # Add max Elo (all-time peak rating, null if not tracked yet)
+            # Add max Elo (all-time peak rating + when/where it happened)
             if elo_system and fencer in elo_system.max_elo:
-                row.append(round(elo_system.max_elo[fencer], 1))
+                peak = elo_system.max_elo[fencer]
+                row.extend([
+                    round(peak['rating'], 1),
+                    peak.get('date', ''),
+                    peak['rank'] if peak.get('rank') is not None else '',
+                    peak['total'] if peak.get('total') is not None else '',
+                    peak.get('pool', ''),
+                ])
             else:
-                row.append("")  # Empty if fencer doesn't have 25+ matches yet
+                row.extend(["", "", "", "", ""])  # Empty if fencer doesn't have 25+ matches yet
 
             row.extend(placement_cols)
             writer.writerow(row)
@@ -2093,28 +2173,31 @@ def export_json_for_website(elo_system, history, session_stats, all_placements, 
         json.dump(ratings_data, f, indent=2)
 
     # 2. Elo History Timeline (for charts)
+    # Compute a running per-snapshot max Elo (gated by 25+ matches at that point).
     timeline_data = []
+    running_max = {}
     for snapshot_data in elo_system.snapshots:
         # Unpack snapshot data (handle different formats)
         if len(snapshot_data) == 4:
-            # Old format without match_counts and max_elos
             date, phase, snapshot, snapshot_session_idx = snapshot_data
             match_counts = {}
-            max_elos = {}
             participants = set()
         elif len(snapshot_data) == 6:
-            # Format with match_counts and max_elos but no participants
-            date, phase, snapshot, snapshot_session_idx, match_counts, max_elos = snapshot_data
+            date, phase, snapshot, snapshot_session_idx, match_counts, _ = snapshot_data
             participants = set()
         else:
-            # New format with participants
-            date, phase, snapshot, snapshot_session_idx, match_counts, max_elos, participants = snapshot_data
+            date, phase, snapshot, snapshot_session_idx, match_counts, _, participants = snapshot_data
+
+        # Update running max for fencers eligible at this snapshot
+        for fencer, rating in snapshot.items():
+            if match_counts.get(fencer, 0) >= PEAK_MIN_MATCHES:
+                if fencer not in running_max or rating > running_max[fencer]:
+                    running_max[fencer] = rating
 
         # Calculate activity status for each fencer at this point in time
         fencer_statuses = {}
         fencer_participation = {}
         for fencer, rating in snapshot.items():
-            # Calculate active status based on participation at this snapshot point
             status, participation = elo_system.get_active_status(fencer, snapshot_session_idx)
             fencer_statuses[fencer] = status
             fencer_participation[fencer] = participation
@@ -2126,8 +2209,8 @@ def export_json_for_website(elo_system, history, session_stats, all_placements, 
             'active_status': fencer_statuses,
             'recent_participation': fencer_participation,
             'match_counts': match_counts,
-            'max_elos': {fencer: round(max_elo, 1) for fencer, max_elo in max_elos.items()},
-            'participants': list(participants)  # List of fencers who participated in this session
+            'max_elos': {fencer: round(rating, 1) for fencer, rating in running_max.items()},
+            'participants': list(participants),
         }
         timeline_data.append(snapshot_entry)
 
@@ -2468,6 +2551,10 @@ def main():
     print(f"Total sessions: {len(session_stats)}")
     print(f"Total rated fencers: {len(elo_system.ratings)}")
     print(f"{'='*80}")
+
+    # Compute peak Elo + rank-at-time for each fencer from the full snapshot history.
+    elo_system.max_elo = compute_peaks_from_snapshots(elo_system)
+    print(f"Computed peak Elo for {len(elo_system.max_elo)} fencers")
 
     # Create outputs directory
     output_dir = Path('outputs')

@@ -111,6 +111,28 @@ function parseCSVLine(line) {
     return values;
 }
 
+function formatPeakNote(statsInfo) {
+    const dateStr = statsInfo['Max Elo Date'];
+    const rank = parseInt(statsInfo['Max Elo Rank'], 10);
+    const total = parseInt(statsInfo['Max Elo Total'], 10);
+    const pool = statsInfo['Max Elo Pool'];
+
+    const parts = [];
+    if (Number.isFinite(rank) && Number.isFinite(total)) {
+        const suffix = pool === 'recently_active' ? ' recently active' : '';
+        parts.push(`#${rank} of ${total}${suffix}`);
+    }
+    if (dateStr) {
+        const d = new Date(dateStr);
+        if (!isNaN(d.getTime())) {
+            parts.push('on ' + d.toLocaleDateString('en-GB', {
+                day: 'numeric', month: 'short', year: 'numeric'
+            }));
+        }
+    }
+    return parts.length ? parts.join('<br>') : 'Peak rating achieved';
+}
+
 function populateFencerSelect() {
     const select = document.getElementById('fencer-select');
 
@@ -197,7 +219,7 @@ function displayFencerStats(fencerName, autoSelectDate = null) {
         const maxElo = parseFloat(statsInfo['Max Elo (All-Time)']);
         if (!isNaN(maxElo)) {
             document.getElementById('max-elo').textContent = maxElo.toFixed(1);
-            document.getElementById('max-elo-note').textContent = 'Peak rating achieved';
+            document.getElementById('max-elo-note').innerHTML = formatPeakNote(statsInfo);
         } else {
             document.getElementById('max-elo').textContent = '-';
             document.getElementById('max-elo-note').textContent = 'Need 25+ matches';
