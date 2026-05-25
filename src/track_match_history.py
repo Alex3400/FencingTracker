@@ -44,11 +44,12 @@ RATING_FLOOR = 1000
 RATING_CEILING = 2600
 
 # K-factor scaling by experience (number of matches)
+# Three tiers with no further decay after 50 matches —
+# established fencers all swing at the same rate regardless of tenure.
 K_FACTOR_THRESHOLDS = {
-    0: 32,    # New players (0-19 matches): fast convergence
-    20: 25,   # Developing (20-49 matches): still adapting
-    50: 20,   # Established (50-149 matches): moderate changes
-    150: 18   # Veterans (150+ matches): stable ratings
+    0: 32,    # Provisional (0-19 matches): fast convergence
+    20: 25,   # Settling (20-49 matches): converging toward established K
+    50: 20,   # Established (50+ matches): stable for life
 }
 
 # Removed MIN_MATCHES_FOR_ESTABLISHED - status system no longer used
@@ -108,15 +109,6 @@ BRACKET_WEIGHTS = {
 # Field size scaling parameters
 FIELD_SIZE_BASELINE = 20  # Average tournament size for normalization
 FIELD_SIZE_SCALING_EXPONENT = 0.3  # 0.3 = gentle scaling, caps large-field amplification
-
-# Placement bonuses (flat rating adjustment after tournament)
-# Scaled down to prevent single-tournament spikes
-PLACEMENT_BONUSES = {
-    1: 25,   # Winner bonus (reduced from 25)
-    2: 15,   # Runner-up bonus (reduced from 15)
-    3: 8,    # Third place bonus (reduced from 8)
-    4: 5,    # Fourth place bonus (reduced from 8)
-}
 
 # Elo scaling factor (standard is 400)
 ELO_SCALING_FACTOR = 400
@@ -267,23 +259,14 @@ def calculate_poule_actual_score(your_score, their_score):
 
 
 def get_bracket_weight(bracket_name):
-    """Get importance weight for a DE bracket."""
-    # Try exact match first
+    """Get importance weight for a DE bracket.
+
+    Falls back to the DE floor weight for any bracket not in the table —
+    every DE is higher-signal than a poule, so no DE should weigh less than 1.8x.
+    """
     if bracket_name in BRACKET_WEIGHTS:
         return BRACKET_WEIGHTS[bracket_name]
-
-    # Extract bracket range and try to match patterns
-    # E.g., "L17-24" should match "L17-24" or fall back to "L17-32"
-    if bracket_name.startswith('L'):
-        # Try to match by starting position
-        for pattern, weight in BRACKET_WEIGHTS.items():
-            if pattern.startswith('L1-'):
-                bracket_size = int(pattern.split('-')[1])
-                if bracket_name.startswith('L1-') and int(bracket_name.split('-')[1]) <= bracket_size:
-                    return weight
-
-    # Default weight
-    return 1.0
+    return 1.8
 
 
 def get_field_size_multiplier(total_fencers):
@@ -450,12 +433,6 @@ class EloRatingSystem:
         # Increment match counts (always, even for walkovers)
         self.match_counts[fencer1] = self.match_counts.get(fencer1, 0) + 1
         self.match_counts[fencer2] = self.match_counts.get(fencer2, 0) + 1
-
-    def apply_placement_bonus(self, fencer, place, date):
-        """Apply placement bonus for tournament finish."""
-        if place in PLACEMENT_BONUSES:
-            bonus = PLACEMENT_BONUSES[place]
-            self.update_rating(fencer, bonus, date, f'Placement bonus ({place}st/nd/rd/th place)')
 
     def apply_decay_for_inactive_fencers(self, date, active_fencers):
         """Apply rating decay for fencers who haven't participated in recent sessions.
@@ -1206,8 +1183,6 @@ def process_all_sheets(base_dir='downloaded_sheets'):
                     continue
 
                 history.add_placement(fencer, place, field_size=total_fencers, date=date_str)
-                # Apply placement bonus
-                # elo_system.apply_placement_bonus(fencer_norm, place, date)
 
             for fencer, seed in seedings.items():
                 # Normalize and check for blacklisted fencers
