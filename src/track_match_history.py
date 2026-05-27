@@ -48,8 +48,8 @@ RATING_CEILING = 2600
 # established fencers all swing at the same rate regardless of tenure.
 K_FACTOR_THRESHOLDS = {
     0: 32,    # Provisional (0-19 matches): fast convergence
-    20: 25,   # Settling (20-49 matches): converging toward established K
-    50: 20,   # Established (50+ matches): stable for life
+    20: 28,   # Settling (20-49 matches): converging toward established K
+    50: 25,   # Established (50+ matches): stable for life
 }
 
 # Removed MIN_MATCHES_FOR_ESTABLISHED - status system no longer used

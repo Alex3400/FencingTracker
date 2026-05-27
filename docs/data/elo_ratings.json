@@ -1,179 +1,195 @@
 [
   {
     "fencer": "Greg",
-    "rating": 1966.2,
-    "matches": 1664,
+    "rating": 1932.0,
+    "matches": 1676,
     "active_status": "Active",
     "recent_participation": 35,
     "sessions_since_last_active": 0
   },
   {
-    "fencer": "Fassel",
-    "rating": 1732.1,
-    "matches": 219,
+    "fencer": "Alejo",
+    "rating": 1778.9,
+    "matches": 1110,
     "active_status": "Active",
-    "recent_participation": 16,
-    "sessions_since_last_active": 2
-  },
-  {
-    "fencer": "Sammy",
-    "rating": 1712.5,
-    "matches": 190,
-    "active_status": "Active",
-    "recent_participation": 9,
-    "sessions_since_last_active": 11
-  },
-  {
-    "fencer": "Tom T",
-    "rating": 1700.1,
-    "matches": 167,
-    "active_status": "Active",
-    "recent_participation": 14,
+    "recent_participation": 28,
     "sessions_since_last_active": 0
   },
   {
+    "fencer": "Fassel",
+    "rating": 1747.2,
+    "matches": 219,
+    "active_status": "Active",
+    "recent_participation": 16,
+    "sessions_since_last_active": 3
+  },
+  {
+    "fencer": "Sammy",
+    "rating": 1716.8,
+    "matches": 190,
+    "active_status": "Active",
+    "recent_participation": 9,
+    "sessions_since_last_active": 12
+  },
+  {
+    "fencer": "Tom T",
+    "rating": 1712.4,
+    "matches": 167,
+    "active_status": "Active",
+    "recent_participation": 14,
+    "sessions_since_last_active": 1
+  },
+  {
     "fencer": "Willie",
-    "rating": 1691.5,
-    "matches": 359,
+    "rating": 1695.5,
+    "matches": 371,
     "active_status": "Active",
     "recent_participation": 24,
     "sessions_since_last_active": 0
   },
   {
     "fencer": "Alex Y",
-    "rating": 1683.2,
+    "rating": 1691.4,
     "matches": 274,
     "active_status": "Active",
-    "recent_participation": 16,
-    "sessions_since_last_active": 3
-  },
-  {
-    "fencer": "Sameer",
-    "rating": 1680.3,
-    "matches": 119,
-    "active_status": "Active",
-    "recent_participation": 7,
+    "recent_participation": 15,
     "sessions_since_last_active": 4
   },
   {
-    "fencer": "Alejo",
-    "rating": 1679.8,
-    "matches": 1100,
+    "fencer": "Sameer",
+    "rating": 1685.8,
+    "matches": 119,
     "active_status": "Active",
-    "recent_participation": 28,
+    "recent_participation": 7,
+    "sessions_since_last_active": 5
+  },
+  {
+    "fencer": "Eric L",
+    "rating": 1668.4,
+    "matches": 691,
+    "active_status": "Active",
+    "recent_participation": 25,
+    "sessions_since_last_active": 1
+  },
+  {
+    "fencer": "Vadym",
+    "rating": 1663.4,
+    "matches": 1208,
+    "active_status": "Active",
+    "recent_participation": 16,
     "sessions_since_last_active": 0
   },
   {
     "fencer": "Anna Z",
-    "rating": 1672.0,
-    "matches": 867,
+    "rating": 1661.0,
+    "matches": 879,
     "active_status": "Active",
-    "recent_participation": 13,
-    "sessions_since_last_active": 1
-  },
-  {
-    "fencer": "Eric L",
-    "rating": 1657.9,
-    "matches": 691,
-    "active_status": "Active",
-    "recent_participation": 25,
+    "recent_participation": 14,
     "sessions_since_last_active": 0
-  },
-  {
-    "fencer": "Charlie",
-    "rating": 1653.6,
-    "matches": 735,
-    "active_status": "Active",
-    "recent_participation": 23,
-    "sessions_since_last_active": 4
   },
   {
     "fencer": "Roeland",
-    "rating": 1649.9,
+    "rating": 1652.5,
     "matches": 224,
     "active_status": "Active",
     "recent_participation": 6,
-    "sessions_since_last_active": 19
+    "sessions_since_last_active": 20
+  },
+  {
+    "fencer": "Charlie",
+    "rating": 1651.2,
+    "matches": 735,
+    "active_status": "Active",
+    "recent_participation": 23,
+    "sessions_since_last_active": 5
   },
   {
     "fencer": "David Roig",
-    "rating": 1644.3,
+    "rating": 1648.4,
     "matches": 14,
     "active_status": "Semi-active",
     "recent_participation": 1,
-    "sessions_since_last_active": 12
-  },
-  {
-    "fencer": "Garen",
-    "rating": 1639.4,
-    "matches": 483,
-    "active_status": "Semi-active",
-    "recent_participation": 4,
-    "sessions_since_last_active": 22
+    "sessions_since_last_active": 13
   },
   {
     "fencer": "Nikolas A",
-    "rating": 1634.0,
+    "rating": 1635.2,
     "matches": 11,
     "active_status": "Semi-active",
     "recent_participation": 1,
-    "sessions_since_last_active": 14
+    "sessions_since_last_active": 15
   },
   {
-    "fencer": "Rudi",
-    "rating": 1627.1,
-    "matches": 70,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 41
+    "fencer": "Garen",
+    "rating": 1634.5,
+    "matches": 483,
+    "active_status": "Semi-active",
+    "recent_participation": 4,
+    "sessions_since_last_active": 23
   },
   {
     "fencer": "Darran",
-    "rating": 1625.3,
+    "rating": 1632.3,
     "matches": 402,
     "active_status": "Active",
     "recent_participation": 9,
-    "sessions_since_last_active": 1
+    "sessions_since_last_active": 2
+  },
+  {
+    "fencer": "Rudi",
+    "rating": 1628.3,
+    "matches": 70,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 42
   },
   {
     "fencer": "Colin W",
-    "rating": 1620.7,
+    "rating": 1621.1,
     "matches": 22,
     "active_status": "Inactive",
     "recent_participation": 0,
-    "sessions_since_last_active": 50
-  },
-  {
-    "fencer": "Tariq",
-    "rating": 1617.3,
-    "matches": 37,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 52
-  },
-  {
-    "fencer": "Lionel",
-    "rating": 1617.0,
-    "matches": 577,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 55
+    "sessions_since_last_active": 51
   },
   {
     "fencer": "Alex A",
-    "rating": 1614.0,
+    "rating": 1618.8,
     "matches": 331,
     "active_status": "Active",
     "recent_participation": 7,
-    "sessions_since_last_active": 3
+    "sessions_since_last_active": 4
   },
   {
-    "fencer": "Vadym",
-    "rating": 1613.5,
-    "matches": 1198,
+    "fencer": "James S",
+    "rating": 1618.8,
+    "matches": 89,
     "active_status": "Active",
-    "recent_participation": 16,
-    "sessions_since_last_active": 0
+    "recent_participation": 6,
+    "sessions_since_last_active": 5
+  },
+  {
+    "fencer": "Tariq",
+    "rating": 1618.5,
+    "matches": 37,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 53
+  },
+  {
+    "fencer": "Lionel",
+    "rating": 1617.6,
+    "matches": 577,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 56
+  },
+  {
+    "fencer": "Pierre",
+    "rating": 1613.2,
+    "matches": 619,
+    "active_status": "Semi-active",
+    "recent_participation": 1,
+    "sessions_since_last_active": 7
   },
   {
     "fencer": "Leo",
@@ -181,71 +197,71 @@
     "matches": 10,
     "active_status": "Inactive",
     "recent_participation": 0,
-    "sessions_since_last_active": 53
-  },
-  {
-    "fencer": "James S",
-    "rating": 1610.6,
-    "matches": 89,
-    "active_status": "Active",
-    "recent_participation": 6,
-    "sessions_since_last_active": 4
+    "sessions_since_last_active": 54
   },
   {
     "fencer": "Truuvy",
-    "rating": 1610.5,
+    "rating": 1610.6,
     "matches": 245,
-    "active_status": "Semi-active",
-    "recent_participation": 1,
-    "sessions_since_last_active": 39
-  },
-  {
-    "fencer": "Pierre",
-    "rating": 1609.5,
-    "matches": 619,
-    "active_status": "Semi-active",
-    "recent_participation": 1,
-    "sessions_since_last_active": 6
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 40
   },
   {
     "fencer": "Alex N",
-    "rating": 1608.4,
+    "rating": 1608.3,
     "matches": 11,
     "active_status": "Inactive",
     "recent_participation": 0,
-    "sessions_since_last_active": 61
+    "sessions_since_last_active": 62
   },
   {
     "fencer": "Hugo",
-    "rating": 1608.0,
+    "rating": 1608.2,
     "matches": 112,
     "active_status": "Inactive",
     "recent_participation": 0,
-    "sessions_since_last_active": 51
+    "sessions_since_last_active": 52
   },
   {
     "fencer": "Clemens",
-    "rating": 1606.5,
+    "rating": 1606.7,
     "matches": 87,
-    "active_status": "Semi-active",
-    "recent_participation": 1,
-    "sessions_since_last_active": 39
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 40
   },
   {
     "fencer": "Alex T",
-    "rating": 1605.4,
+    "rating": 1606.0,
     "matches": 122,
     "active_status": "Inactive",
     "recent_participation": 0,
-    "sessions_since_last_active": 65
+    "sessions_since_last_active": 66
   },
   {
     "fencer": "Val",
-    "rating": 1604.1,
+    "rating": 1604.4,
     "matches": 53,
     "active_status": "Inactive",
     "recent_participation": 0,
-    "sessions_since_last_active": 56
+    "sessions_since_last_active": 57
+  },
+  {
+    "fencer": "Karsten",
+    "rating": 1602.2,
+    "matches": 26,
+    "active_status": "Semi-active",
+    "recent_participation": 2,
+    "sessions_since_last_active": 34
+  },
+  {
+    "fencer": "Edo",
+    "rating": 1602.0,
+    "matches": 274,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 79
   },
   {
     "fencer": "Ben Mcl",
@@ -253,535 +269,519 @@
     "matches": 14,
     "active_status": "Inactive",
     "recent_participation": 0,
-    "sessions_since_last_active": 60
-  },
-  {
-    "fencer": "Alex S",
-    "rating": 1602.0,
-    "matches": 16,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 120
-  },
-  {
-    "fencer": "Georgina",
-    "rating": 1602.0,
-    "matches": 365,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 52
-  },
-  {
-    "fencer": "Zoltan",
-    "rating": 1602.0,
-    "matches": 143,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 125
+    "sessions_since_last_active": 61
   },
   {
     "fencer": "Kj",
-    "rating": 1601.9,
+    "rating": 1602.0,
     "matches": 126,
     "active_status": "Inactive",
     "recent_participation": 0,
-    "sessions_since_last_active": 122
+    "sessions_since_last_active": 123
   },
   {
-    "fencer": "Edo",
+    "fencer": "Georgina",
     "rating": 1601.9,
-    "matches": 274,
+    "matches": 365,
     "active_status": "Inactive",
     "recent_participation": 0,
-    "sessions_since_last_active": 78
+    "sessions_since_last_active": 53
   },
   {
-    "fencer": "Karsten",
-    "rating": 1600.5,
-    "matches": 26,
+    "fencer": "Alex S",
+    "rating": 1601.9,
+    "matches": 16,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 121
+  },
+  {
+    "fencer": "Zoltan",
+    "rating": 1601.9,
+    "matches": 143,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 126
+  },
+  {
+    "fencer": "Ali",
+    "rating": 1591.4,
+    "matches": 32,
     "active_status": "Semi-active",
     "recent_participation": 2,
-    "sessions_since_last_active": 33
+    "sessions_since_last_active": 4
   },
   {
     "fencer": "Jack",
-    "rating": 1585.4,
+    "rating": 1590.3,
     "matches": 11,
     "active_status": "Semi-active",
     "recent_participation": 1,
+    "sessions_since_last_active": 2
+  },
+  {
+    "fencer": "Colin R",
+    "rating": 1586.5,
+    "matches": 1006,
+    "active_status": "Active",
+    "recent_participation": 21,
     "sessions_since_last_active": 1
   },
   {
     "fencer": "James O",
-    "rating": 1580.2,
+    "rating": 1583.8,
     "matches": 16,
     "active_status": "Inactive",
     "recent_participation": 0,
-    "sessions_since_last_active": 78
+    "sessions_since_last_active": 79
   },
   {
-    "fencer": "Jp",
-    "rating": 1579.4,
-    "matches": 15,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 53
-  },
-  {
-    "fencer": "Ali",
-    "rating": 1579.2,
-    "matches": 32,
-    "active_status": "Semi-active",
-    "recent_participation": 2,
+    "fencer": "Anna A",
+    "rating": 1582.5,
+    "matches": 199,
+    "active_status": "Active",
+    "recent_participation": 17,
     "sessions_since_last_active": 3
   },
   {
     "fencer": "Michael G",
-    "rating": 1576.5,
+    "rating": 1581.6,
     "matches": 27,
     "active_status": "Inactive",
     "recent_participation": 0,
-    "sessions_since_last_active": 128
+    "sessions_since_last_active": 129
   },
   {
-    "fencer": "Colin R",
-    "rating": 1573.8,
-    "matches": 1006,
-    "active_status": "Active",
-    "recent_participation": 21,
-    "sessions_since_last_active": 0
+    "fencer": "Jp",
+    "rating": 1580.7,
+    "matches": 15,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 54
   },
   {
     "fencer": "Bryan",
-    "rating": 1570.0,
+    "rating": 1574.5,
     "matches": 23,
     "active_status": "Inactive",
     "recent_participation": 0,
-    "sessions_since_last_active": 57
-  },
-  {
-    "fencer": "Oleg",
-    "rating": 1569.9,
-    "matches": 93,
-    "active_status": "Active",
-    "recent_participation": 8,
-    "sessions_since_last_active": 0
-  },
-  {
-    "fencer": "Kelvin",
-    "rating": 1567.7,
-    "matches": 21,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 127
-  },
-  {
-    "fencer": "Anna A",
-    "rating": 1565.7,
-    "matches": 199,
-    "active_status": "Active",
-    "recent_participation": 17,
-    "sessions_since_last_active": 2
+    "sessions_since_last_active": 58
   },
   {
     "fencer": "Amaury",
-    "rating": 1564.7,
+    "rating": 1570.7,
     "matches": 251,
-    "active_status": "Semi-active",
-    "recent_participation": 1,
-    "sessions_since_last_active": 39
-  },
-  {
-    "fencer": "Ed B",
-    "rating": 1552.6,
-    "matches": 20,
-    "active_status": "Semi-active",
-    "recent_participation": 2,
-    "sessions_since_last_active": 6
-  },
-  {
-    "fencer": "Beston",
-    "rating": 1551.6,
-    "matches": 16,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 130
-  },
-  {
-    "fencer": "Andy H",
-    "rating": 1546.4,
-    "matches": 259,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 53
-  },
-  {
-    "fencer": "Kamal",
-    "rating": 1543.3,
-    "matches": 773,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 51
-  },
-  {
-    "fencer": "Jon H",
-    "rating": 1543.2,
-    "matches": 10,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 87
-  },
-  {
-    "fencer": "Tom S",
-    "rating": 1535.1,
-    "matches": 1176,
-    "active_status": "Active",
-    "recent_participation": 17,
-    "sessions_since_last_active": 0
-  },
-  {
-    "fencer": "Richard R",
-    "rating": 1535.0,
-    "matches": 14,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 78
-  },
-  {
-    "fencer": "Vaidas",
-    "rating": 1534.6,
-    "matches": 11,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 55
-  },
-  {
-    "fencer": "John H",
-    "rating": 1528.6,
-    "matches": 141,
-    "active_status": "Active",
-    "recent_participation": 6,
-    "sessions_since_last_active": 3
-  },
-  {
-    "fencer": "Vincent",
-    "rating": 1527.4,
-    "matches": 666,
-    "active_status": "Active",
-    "recent_participation": 30,
-    "sessions_since_last_active": 0
-  },
-  {
-    "fencer": "Vivian",
-    "rating": 1525.0,
-    "matches": 1124,
-    "active_status": "Active",
-    "recent_participation": 35,
-    "sessions_since_last_active": 0
-  },
-  {
-    "fencer": "Miriam",
-    "rating": 1520.1,
-    "matches": 42,
-    "active_status": "Active",
-    "recent_participation": 6,
-    "sessions_since_last_active": 15
-  },
-  {
-    "fencer": "Lorenzo",
-    "rating": 1518.7,
-    "matches": 92,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 48
-  },
-  {
-    "fencer": "Benjamin",
-    "rating": 1517.4,
-    "matches": 12,
-    "active_status": "Semi-active",
-    "recent_participation": 1,
-    "sessions_since_last_active": 5
-  },
-  {
-    "fencer": "Steph",
-    "rating": 1517.1,
-    "matches": 1183,
-    "active_status": "Active",
-    "recent_participation": 24,
-    "sessions_since_last_active": 2
-  },
-  {
-    "fencer": "Max T",
-    "rating": 1516.6,
-    "matches": 95,
     "active_status": "Inactive",
     "recent_participation": 0,
     "sessions_since_last_active": 40
   },
   {
-    "fencer": "Alessandro",
-    "rating": 1513.1,
-    "matches": 22,
-    "active_status": "Semi-active",
-    "recent_participation": 1,
-    "sessions_since_last_active": 25
+    "fencer": "Steph",
+    "rating": 1569.1,
+    "matches": 1195,
+    "active_status": "Active",
+    "recent_participation": 24,
+    "sessions_since_last_active": 0
   },
   {
-    "fencer": "Adrian S",
-    "rating": 1510.7,
-    "matches": 19,
+    "fencer": "Kelvin",
+    "rating": 1566.2,
+    "matches": 21,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 128
+  },
+  {
+    "fencer": "Ed B",
+    "rating": 1558.3,
+    "matches": 20,
     "active_status": "Semi-active",
     "recent_participation": 2,
-    "sessions_since_last_active": 22
+    "sessions_since_last_active": 7
+  },
+  {
+    "fencer": "Kamal",
+    "rating": 1556.5,
+    "matches": 773,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 52
+  },
+  {
+    "fencer": "Andy H",
+    "rating": 1555.2,
+    "matches": 259,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 54
+  },
+  {
+    "fencer": "Beston",
+    "rating": 1555.1,
+    "matches": 16,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 131
+  },
+  {
+    "fencer": "Tom S",
+    "rating": 1550.2,
+    "matches": 1176,
+    "active_status": "Active",
+    "recent_participation": 16,
+    "sessions_since_last_active": 1
+  },
+  {
+    "fencer": "Jon H",
+    "rating": 1543.9,
+    "matches": 10,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 88
+  },
+  {
+    "fencer": "Vaidas",
+    "rating": 1538.9,
+    "matches": 11,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 56
+  },
+  {
+    "fencer": "Vincent",
+    "rating": 1538.3,
+    "matches": 679,
+    "active_status": "Active",
+    "recent_participation": 30,
+    "sessions_since_last_active": 0
+  },
+  {
+    "fencer": "Richard R",
+    "rating": 1537.4,
+    "matches": 14,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 79
+  },
+  {
+    "fencer": "John H",
+    "rating": 1532.0,
+    "matches": 141,
+    "active_status": "Active",
+    "recent_participation": 6,
+    "sessions_since_last_active": 4
+  },
+  {
+    "fencer": "Miriam",
+    "rating": 1530.0,
+    "matches": 42,
+    "active_status": "Active",
+    "recent_participation": 6,
+    "sessions_since_last_active": 16
+  },
+  {
+    "fencer": "Max T",
+    "rating": 1520.4,
+    "matches": 95,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 41
+  },
+  {
+    "fencer": "Benjamin",
+    "rating": 1519.6,
+    "matches": 12,
+    "active_status": "Semi-active",
+    "recent_participation": 1,
+    "sessions_since_last_active": 6
   },
   {
     "fencer": "Maxie",
-    "rating": 1510.3,
+    "rating": 1519.0,
     "matches": 143,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 50
+  },
+  {
+    "fencer": "Vivian",
+    "rating": 1516.7,
+    "matches": 1124,
+    "active_status": "Active",
+    "recent_participation": 34,
+    "sessions_since_last_active": 1
+  },
+  {
+    "fencer": "Alessandro",
+    "rating": 1515.1,
+    "matches": 22,
+    "active_status": "Semi-active",
+    "recent_participation": 1,
+    "sessions_since_last_active": 26
+  },
+  {
+    "fencer": "Lorenzo",
+    "rating": 1514.7,
+    "matches": 92,
     "active_status": "Inactive",
     "recent_participation": 0,
     "sessions_since_last_active": 49
   },
   {
     "fencer": "Naoki",
-    "rating": 1504.8,
+    "rating": 1513.3,
     "matches": 59,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 117
-  },
-  {
-    "fencer": "Will W",
-    "rating": 1503.8,
-    "matches": 25,
-    "active_status": "Semi-active",
-    "recent_participation": 2,
-    "sessions_since_last_active": 18
-  },
-  {
-    "fencer": "Vova",
-    "rating": 1495.8,
-    "matches": 2,
-    "active_status": "Semi-active",
-    "recent_participation": 1,
-    "sessions_since_last_active": 4
-  },
-  {
-    "fencer": "Mrt",
-    "rating": 1495.0,
-    "matches": 14,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 68
-  },
-  {
-    "fencer": "Kiril Ia",
-    "rating": 1494.3,
-    "matches": 11,
-    "active_status": "Semi-active",
-    "recent_participation": 1,
-    "sessions_since_last_active": 0
-  },
-  {
-    "fencer": "Lukas N",
-    "rating": 1494.2,
-    "matches": 481,
-    "active_status": "Active",
-    "recent_participation": 26,
-    "sessions_since_last_active": 3
-  },
-  {
-    "fencer": "Richard B",
-    "rating": 1493.2,
-    "matches": 1021,
-    "active_status": "Active",
-    "recent_participation": 26,
-    "sessions_since_last_active": 2
-  },
-  {
-    "fencer": "Nick",
-    "rating": 1489.3,
-    "matches": 2,
-    "active_status": "Semi-active",
-    "recent_participation": 1,
-    "sessions_since_last_active": 21
-  },
-  {
-    "fencer": "Adrian L",
-    "rating": 1488.8,
-    "matches": 45,
-    "active_status": "Semi-active",
-    "recent_participation": 4,
-    "sessions_since_last_active": 15
-  },
-  {
-    "fencer": "Nicholas",
-    "rating": 1488.3,
-    "matches": 14,
-    "active_status": "Semi-active",
-    "recent_participation": 1,
-    "sessions_since_last_active": 21
-  },
-  {
-    "fencer": "Fred",
-    "rating": 1488.3,
-    "matches": 9,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 123
-  },
-  {
-    "fencer": "Will P",
-    "rating": 1482.4,
-    "matches": 339,
-    "active_status": "Active",
-    "recent_participation": 24,
-    "sessions_since_last_active": 1
-  },
-  {
-    "fencer": "Luka",
-    "rating": 1482.2,
-    "matches": 16,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 43
-  },
-  {
-    "fencer": "Max V",
-    "rating": 1480.8,
-    "matches": 125,
-    "active_status": "Active",
-    "recent_participation": 9,
-    "sessions_since_last_active": 0
-  },
-  {
-    "fencer": "Martin H",
-    "rating": 1480.7,
-    "matches": 337,
-    "active_status": "Semi-active",
-    "recent_participation": 3,
-    "sessions_since_last_active": 24
-  },
-  {
-    "fencer": "Mark M",
-    "rating": 1480.5,
-    "matches": 12,
-    "active_status": "Semi-active",
-    "recent_participation": 2,
-    "sessions_since_last_active": 2
-  },
-  {
-    "fencer": "Pickford",
-    "rating": 1479.1,
-    "matches": 11,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 53
-  },
-  {
-    "fencer": "Patrick L",
-    "rating": 1478.8,
-    "matches": 92,
-    "active_status": "Semi-active",
-    "recent_participation": 3,
-    "sessions_since_last_active": 23
-  },
-  {
-    "fencer": "Lindsey",
-    "rating": 1478.1,
-    "matches": 15,
     "active_status": "Inactive",
     "recent_participation": 0,
     "sessions_since_last_active": 118
   },
   {
-    "fencer": "Bowen",
-    "rating": 1478.0,
-    "matches": 66,
+    "fencer": "Adrian S",
+    "rating": 1509.4,
+    "matches": 19,
     "active_status": "Semi-active",
-    "recent_participation": 1,
+    "recent_participation": 2,
     "sessions_since_last_active": 23
   },
   {
-    "fencer": "Imogen",
-    "rating": 1477.7,
-    "matches": 2,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 117
-  },
-  {
-    "fencer": "Maxim",
-    "rating": 1477.6,
-    "matches": 26,
+    "fencer": "Will W",
+    "rating": 1503.7,
+    "matches": 25,
     "active_status": "Semi-active",
     "recent_participation": 2,
-    "sessions_since_last_active": 12
+    "sessions_since_last_active": 19
+  },
+  {
+    "fencer": "Mrt",
+    "rating": 1498.2,
+    "matches": 14,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 69
+  },
+  {
+    "fencer": "Martin H",
+    "rating": 1497.9,
+    "matches": 337,
+    "active_status": "Semi-active",
+    "recent_participation": 2,
+    "sessions_since_last_active": 25
+  },
+  {
+    "fencer": "Max V",
+    "rating": 1497.1,
+    "matches": 136,
+    "active_status": "Active",
+    "recent_participation": 10,
+    "sessions_since_last_active": 0
+  },
+  {
+    "fencer": "Richard B",
+    "rating": 1497.1,
+    "matches": 1021,
+    "active_status": "Active",
+    "recent_participation": 25,
+    "sessions_since_last_active": 3
+  },
+  {
+    "fencer": "Vova",
+    "rating": 1496.6,
+    "matches": 2,
+    "active_status": "Semi-active",
+    "recent_participation": 1,
+    "sessions_since_last_active": 5
+  },
+  {
+    "fencer": "Lukas N",
+    "rating": 1494.5,
+    "matches": 494,
+    "active_status": "Active",
+    "recent_participation": 26,
+    "sessions_since_last_active": 0
+  },
+  {
+    "fencer": "Kiril Ia",
+    "rating": 1494.4,
+    "matches": 11,
+    "active_status": "Semi-active",
+    "recent_participation": 1,
+    "sessions_since_last_active": 1
+  },
+  {
+    "fencer": "Will P",
+    "rating": 1491.9,
+    "matches": 339,
+    "active_status": "Active",
+    "recent_participation": 23,
+    "sessions_since_last_active": 2
+  },
+  {
+    "fencer": "Patrick L",
+    "rating": 1491.1,
+    "matches": 92,
+    "active_status": "Semi-active",
+    "recent_participation": 3,
+    "sessions_since_last_active": 24
+  },
+  {
+    "fencer": "Nicholas",
+    "rating": 1490.2,
+    "matches": 14,
+    "active_status": "Semi-active",
+    "recent_participation": 1,
+    "sessions_since_last_active": 22
+  },
+  {
+    "fencer": "Fred",
+    "rating": 1489.3,
+    "matches": 9,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 124
+  },
+  {
+    "fencer": "Nick",
+    "rating": 1489.2,
+    "matches": 2,
+    "active_status": "Semi-active",
+    "recent_participation": 1,
+    "sessions_since_last_active": 22
+  },
+  {
+    "fencer": "Oleg",
+    "rating": 1488.4,
+    "matches": 103,
+    "active_status": "Active",
+    "recent_participation": 9,
+    "sessions_since_last_active": 0
   },
   {
     "fencer": "Enrik",
-    "rating": 1477.6,
+    "rating": 1486.9,
     "matches": 93,
     "active_status": "Semi-active",
+    "recent_participation": 3,
+    "sessions_since_last_active": 34
+  },
+  {
+    "fencer": "Adrian L",
+    "rating": 1485.7,
+    "matches": 45,
+    "active_status": "Semi-active",
     "recent_participation": 4,
-    "sessions_since_last_active": 33
+    "sessions_since_last_active": 16
   },
   {
-    "fencer": "Rita",
-    "rating": 1476.7,
-    "matches": 8,
+    "fencer": "Luka",
+    "rating": 1483.8,
+    "matches": 16,
     "active_status": "Inactive",
     "recent_participation": 0,
-    "sessions_since_last_active": 53
+    "sessions_since_last_active": 44
   },
   {
-    "fencer": "Matteo",
-    "rating": 1473.7,
-    "matches": 35,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 135
-  },
-  {
-    "fencer": "Stephen M",
-    "rating": 1470.5,
-    "matches": 17,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 130
-  },
-  {
-    "fencer": "Rakan",
-    "rating": 1469.0,
-    "matches": 21,
+    "fencer": "Mark M",
+    "rating": 1481.9,
+    "matches": 12,
     "active_status": "Semi-active",
     "recent_participation": 2,
-    "sessions_since_last_active": 26
+    "sessions_since_last_active": 3
+  },
+  {
+    "fencer": "Pickford",
+    "rating": 1481.5,
+    "matches": 11,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 54
   },
   {
     "fencer": "Shevy",
-    "rating": 1468.7,
+    "rating": 1479.8,
     "matches": 402,
     "active_status": "Active",
-    "recent_participation": 10,
-    "sessions_since_last_active": 4
+    "recent_participation": 9,
+    "sessions_since_last_active": 5
   },
   {
-    "fencer": "Aisling",
-    "rating": 1465.4,
-    "matches": 63,
+    "fencer": "Maxim",
+    "rating": 1478.6,
+    "matches": 26,
+    "active_status": "Semi-active",
+    "recent_participation": 2,
+    "sessions_since_last_active": 13
+  },
+  {
+    "fencer": "Rita",
+    "rating": 1478.5,
+    "matches": 8,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 54
+  },
+  {
+    "fencer": "Imogen",
+    "rating": 1477.9,
+    "matches": 2,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 118
+  },
+  {
+    "fencer": "Lindsey",
+    "rating": 1476.9,
+    "matches": 15,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 119
+  },
+  {
+    "fencer": "Matteo",
+    "rating": 1475.3,
+    "matches": 35,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 136
+  },
+  {
+    "fencer": "Rakan",
+    "rating": 1472.5,
+    "matches": 21,
+    "active_status": "Semi-active",
+    "recent_participation": 2,
+    "sessions_since_last_active": 27
+  },
+  {
+    "fencer": "Stephen M",
+    "rating": 1471.9,
+    "matches": 17,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 131
+  },
+  {
+    "fencer": "Caden",
+    "rating": 1468.3,
+    "matches": 203,
     "active_status": "Active",
-    "recent_participation": 6,
-    "sessions_since_last_active": 9
+    "recent_participation": 19,
+    "sessions_since_last_active": 2
   },
   {
     "fencer": "Ernesto",
-    "rating": 1465.1,
+    "rating": 1465.2,
     "matches": 12,
     "active_status": "Inactive",
     "recent_participation": 0,
-    "sessions_since_last_active": 61
+    "sessions_since_last_active": 62
+  },
+  {
+    "fencer": "Pablo",
+    "rating": 1465.1,
+    "matches": 354,
+    "active_status": "Semi-active",
+    "recent_participation": 3,
+    "sessions_since_last_active": 28
   },
   {
     "fencer": "Duncan",
@@ -789,606 +789,606 @@
     "matches": 1,
     "active_status": "Semi-active",
     "recent_participation": 1,
-    "sessions_since_last_active": 23
-  },
-  {
-    "fencer": "Pamela",
-    "rating": 1461.1,
-    "matches": 20,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 132
-  },
-  {
-    "fencer": "Fedor",
-    "rating": 1460.9,
-    "matches": 66,
-    "active_status": "Active",
-    "recent_participation": 5,
-    "sessions_since_last_active": 0
-  },
-  {
-    "fencer": "Sriya",
-    "rating": 1456.8,
-    "matches": 5,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 112
-  },
-  {
-    "fencer": "Etienne",
-    "rating": 1455.9,
-    "matches": 201,
-    "active_status": "Semi-active",
-    "recent_participation": 4,
-    "sessions_since_last_active": 10
-  },
-  {
-    "fencer": "Pablo",
-    "rating": 1454.8,
-    "matches": 354,
-    "active_status": "Semi-active",
-    "recent_participation": 4,
-    "sessions_since_last_active": 27
-  },
-  {
-    "fencer": "Caden",
-    "rating": 1453.0,
-    "matches": 203,
-    "active_status": "Active",
-    "recent_participation": 19,
-    "sessions_since_last_active": 1
-  },
-  {
-    "fencer": "Dominic",
-    "rating": 1447.2,
-    "matches": 10,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 61
-  },
-  {
-    "fencer": "Dan",
-    "rating": 1447.1,
-    "matches": 5,
-    "active_status": "Semi-active",
-    "recent_participation": 1,
     "sessions_since_last_active": 24
   },
   {
-    "fencer": "Sara",
-    "rating": 1445.5,
-    "matches": 13,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 105
-  },
-  {
-    "fencer": "Ben",
-    "rating": 1444.1,
-    "matches": 10,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 129
-  },
-  {
-    "fencer": "Stirling",
-    "rating": 1442.3,
-    "matches": 15,
+    "fencer": "Pamela",
+    "rating": 1461.2,
+    "matches": 20,
     "active_status": "Inactive",
     "recent_participation": 0,
     "sessions_since_last_active": 133
   },
   {
-    "fencer": "Jonathan",
-    "rating": 1439.0,
-    "matches": 156,
+    "fencer": "Bowen",
+    "rating": 1458.3,
+    "matches": 66,
+    "active_status": "Semi-active",
+    "recent_participation": 1,
+    "sessions_since_last_active": 24
+  },
+  {
+    "fencer": "Fedor",
+    "rating": 1457.4,
+    "matches": 76,
     "active_status": "Active",
     "recent_participation": 6,
-    "sessions_since_last_active": 22
+    "sessions_since_last_active": 0
   },
   {
-    "fencer": "Greenie",
-    "rating": 1436.3,
-    "matches": 142,
+    "fencer": "Aisling",
+    "rating": 1457.0,
+    "matches": 63,
+    "active_status": "Active",
+    "recent_participation": 6,
+    "sessions_since_last_active": 10
+  },
+  {
+    "fencer": "Sriya",
+    "rating": 1455.9,
+    "matches": 5,
     "active_status": "Inactive",
     "recent_participation": 0,
-    "sessions_since_last_active": 121
+    "sessions_since_last_active": 113
   },
   {
-    "fencer": "Simon B",
-    "rating": 1427.6,
-    "matches": 11,
+    "fencer": "Dominic",
+    "rating": 1448.4,
+    "matches": 10,
     "active_status": "Inactive",
     "recent_participation": 0,
-    "sessions_since_last_active": 73
+    "sessions_since_last_active": 62
   },
   {
-    "fencer": "Steffi",
-    "rating": 1427.4,
-    "matches": 22,
+    "fencer": "Etienne",
+    "rating": 1447.9,
+    "matches": 201,
     "active_status": "Semi-active",
-    "recent_participation": 1,
-    "sessions_since_last_active": 36
-  },
-  {
-    "fencer": "Jana",
-    "rating": 1426.7,
-    "matches": 6,
-    "active_status": "Semi-active",
-    "recent_participation": 1,
-    "sessions_since_last_active": 29
-  },
-  {
-    "fencer": "Jenna",
-    "rating": 1423.0,
-    "matches": 7,
-    "active_status": "Semi-active",
-    "recent_participation": 1,
-    "sessions_since_last_active": 27
-  },
-  {
-    "fencer": "Phil",
-    "rating": 1421.4,
-    "matches": 62,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 52
-  },
-  {
-    "fencer": "Nicholas P",
-    "rating": 1419.8,
-    "matches": 15,
-    "active_status": "Semi-active",
-    "recent_participation": 1,
+    "recent_participation": 4,
     "sessions_since_last_active": 11
   },
   {
-    "fencer": "Agnese",
-    "rating": 1415.9,
-    "matches": 17,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 78
-  },
-  {
-    "fencer": "Dalal",
-    "rating": 1411.8,
-    "matches": 6,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 66
-  },
-  {
-    "fencer": "Stephen Me",
-    "rating": 1411.7,
+    "fencer": "Sara",
+    "rating": 1447.9,
     "matches": 13,
     "active_status": "Inactive",
     "recent_participation": 0,
-    "sessions_since_last_active": 131
+    "sessions_since_last_active": 106
   },
   {
-    "fencer": "Fergus",
-    "rating": 1409.5,
-    "matches": 168,
-    "active_status": "Active",
-    "recent_participation": 17,
-    "sessions_since_last_active": 2
-  },
-  {
-    "fencer": "Vladimir",
-    "rating": 1406.9,
-    "matches": 31,
-    "active_status": "Semi-active",
-    "recent_participation": 1,
-    "sessions_since_last_active": 4
-  },
-  {
-    "fencer": "Haya",
-    "rating": 1404.1,
-    "matches": 14,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 105
-  },
-  {
-    "fencer": "Matt",
-    "rating": 1403.2,
-    "matches": 66,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 131
-  },
-  {
-    "fencer": "Morag",
-    "rating": 1402.1,
-    "matches": 10,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 123
-  },
-  {
-    "fencer": "Ffion",
-    "rating": 1401.5,
-    "matches": 12,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 81
-  },
-  {
-    "fencer": "Rocio",
-    "rating": 1395.5,
-    "matches": 27,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 126
-  },
-  {
-    "fencer": "Lucas H",
-    "rating": 1388.9,
-    "matches": 12,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 42
-  },
-  {
-    "fencer": "Megan",
-    "rating": 1388.5,
-    "matches": 12,
-    "active_status": "Semi-active",
-    "recent_participation": 1,
-    "sessions_since_last_active": 38
-  },
-  {
-    "fencer": "Rob",
-    "rating": 1385.2,
-    "matches": 45,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 111
-  },
-  {
-    "fencer": "Lysandra",
-    "rating": 1384.1,
-    "matches": 10,
-    "active_status": "Semi-active",
-    "recent_participation": 1,
-    "sessions_since_last_active": 4
-  },
-  {
-    "fencer": "Aleks",
-    "rating": 1382.9,
-    "matches": 130,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 74
-  },
-  {
-    "fencer": "Rowena",
-    "rating": 1379.9,
-    "matches": 14,
-    "active_status": "Semi-active",
-    "recent_participation": 1,
-    "sessions_since_last_active": 21
-  },
-  {
-    "fencer": "Helen",
-    "rating": 1378.8,
-    "matches": 10,
-    "active_status": "Semi-active",
-    "recent_participation": 1,
-    "sessions_since_last_active": 1
-  },
-  {
-    "fencer": "Alberto",
-    "rating": 1376.5,
-    "matches": 56,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 42
-  },
-  {
-    "fencer": "Feddy",
-    "rating": 1376.4,
-    "matches": 30,
+    "fencer": "Dan",
+    "rating": 1446.6,
+    "matches": 5,
     "active_status": "Semi-active",
     "recent_participation": 1,
     "sessions_since_last_active": 25
   },
   {
-    "fencer": "Anabelle",
-    "rating": 1376.2,
-    "matches": 8,
+    "fencer": "Greenie",
+    "rating": 1446.1,
+    "matches": 142,
     "active_status": "Inactive",
     "recent_participation": 0,
-    "sessions_since_last_active": 117
+    "sessions_since_last_active": 122
   },
   {
-    "fencer": "Chrissy",
-    "rating": 1376.0,
-    "matches": 428,
+    "fencer": "Ben",
+    "rating": 1444.9,
+    "matches": 10,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 130
+  },
+  {
+    "fencer": "Stirling",
+    "rating": 1442.5,
+    "matches": 15,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 134
+  },
+  {
+    "fencer": "Jonathan",
+    "rating": 1442.5,
+    "matches": 156,
+    "active_status": "Active",
+    "recent_participation": 6,
+    "sessions_since_last_active": 23
+  },
+  {
+    "fencer": "Steffi",
+    "rating": 1431.6,
+    "matches": 22,
     "active_status": "Semi-active",
     "recent_participation": 1,
-    "sessions_since_last_active": 18
+    "sessions_since_last_active": 37
   },
   {
-    "fencer": "Martin W",
-    "rating": 1374.3,
-    "matches": 32,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 102
-  },
-  {
-    "fencer": "Perth",
-    "rating": 1370.9,
-    "matches": 62,
-    "active_status": "Active",
-    "recent_participation": 5,
-    "sessions_since_last_active": 1
-  },
-  {
-    "fencer": "Jacob P",
-    "rating": 1370.2,
+    "fencer": "Simon B",
+    "rating": 1427.9,
     "matches": 11,
     "active_status": "Inactive",
     "recent_participation": 0,
-    "sessions_since_last_active": 50
+    "sessions_since_last_active": 74
   },
   {
-    "fencer": "Kieran",
-    "rating": 1367.0,
+    "fencer": "Jana",
+    "rating": 1426.2,
+    "matches": 6,
+    "active_status": "Semi-active",
+    "recent_participation": 1,
+    "sessions_since_last_active": 30
+  },
+  {
+    "fencer": "Jenna",
+    "rating": 1422.6,
+    "matches": 7,
+    "active_status": "Semi-active",
+    "recent_participation": 1,
+    "sessions_since_last_active": 28
+  },
+  {
+    "fencer": "Nicholas P",
+    "rating": 1420.8,
+    "matches": 15,
+    "active_status": "Semi-active",
+    "recent_participation": 1,
+    "sessions_since_last_active": 12
+  },
+  {
+    "fencer": "Fergus",
+    "rating": 1419.5,
+    "matches": 168,
+    "active_status": "Active",
+    "recent_participation": 17,
+    "sessions_since_last_active": 3
+  },
+  {
+    "fencer": "Agnese",
+    "rating": 1417.0,
+    "matches": 17,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 79
+  },
+  {
+    "fencer": "Stephen Me",
+    "rating": 1412.8,
+    "matches": 13,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 132
+  },
+  {
+    "fencer": "Dalal",
+    "rating": 1412.7,
+    "matches": 6,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 67
+  },
+  {
+    "fencer": "Phil",
+    "rating": 1410.4,
+    "matches": 62,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 53
+  },
+  {
+    "fencer": "Haya",
+    "rating": 1404.5,
     "matches": 14,
     "active_status": "Inactive",
     "recent_participation": 0,
-    "sessions_since_last_active": 60
+    "sessions_since_last_active": 106
   },
   {
-    "fencer": "Andy R",
-    "rating": 1366.2,
-    "matches": 513,
-    "active_status": "Active",
-    "recent_participation": 11,
-    "sessions_since_last_active": 0
-  },
-  {
-    "fencer": "Emma",
-    "rating": 1360.3,
-    "matches": 58,
+    "fencer": "Ffion",
+    "rating": 1401.1,
+    "matches": 12,
     "active_status": "Inactive",
     "recent_participation": 0,
-    "sessions_since_last_active": 65
+    "sessions_since_last_active": 82
   },
   {
-    "fencer": "Kirill",
-    "rating": 1359.5,
-    "matches": 161,
-    "active_status": "Active",
-    "recent_participation": 14,
-    "sessions_since_last_active": 0
+    "fencer": "Morag",
+    "rating": 1401.0,
+    "matches": 10,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 124
   },
   {
-    "fencer": "Vanessa",
-    "rating": 1358.6,
-    "matches": 11,
+    "fencer": "Vladimir",
+    "rating": 1400.9,
+    "matches": 31,
     "active_status": "Semi-active",
     "recent_participation": 1,
-    "sessions_since_last_active": 8
+    "sessions_since_last_active": 5
   },
   {
-    "fencer": "Maiya",
-    "rating": 1356.7,
-    "matches": 75,
+    "fencer": "Rocio",
+    "rating": 1392.6,
+    "matches": 27,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 127
+  },
+  {
+    "fencer": "Matt",
+    "rating": 1390.2,
+    "matches": 66,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 132
+  },
+  {
+    "fencer": "Megan",
+    "rating": 1389.5,
+    "matches": 12,
     "active_status": "Semi-active",
     "recent_participation": 1,
-    "sessions_since_last_active": 36
+    "sessions_since_last_active": 39
   },
   {
-    "fencer": "Isra",
-    "rating": 1354.9,
+    "fencer": "Lucas H",
+    "rating": 1388.3,
+    "matches": 12,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 43
+  },
+  {
+    "fencer": "Lysandra",
+    "rating": 1384.7,
     "matches": 10,
     "active_status": "Semi-active",
     "recent_participation": 1,
     "sessions_since_last_active": 5
   },
   {
-    "fencer": "Jack B",
-    "rating": 1353.6,
-    "matches": 12,
-    "active_status": "Semi-active",
-    "recent_participation": 1,
-    "sessions_since_last_active": 15
+    "fencer": "Rob",
+    "rating": 1383.3,
+    "matches": 45,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 112
   },
   {
-    "fencer": "Joshua",
-    "rating": 1348.2,
-    "matches": 290,
+    "fencer": "Kirill",
+    "rating": 1383.0,
+    "matches": 171,
     "active_status": "Active",
-    "recent_participation": 16,
+    "recent_participation": 15,
     "sessions_since_last_active": 0
   },
   {
-    "fencer": "Gautam",
-    "rating": 1347.1,
-    "matches": 37,
-    "active_status": "Semi-active",
-    "recent_participation": 1,
-    "sessions_since_last_active": 0
+    "fencer": "Aleks",
+    "rating": 1381.8,
+    "matches": 130,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 75
   },
   {
-    "fencer": "Marg",
-    "rating": 1347.1,
-    "matches": 373,
-    "active_status": "Active",
-    "recent_participation": 35,
+    "fencer": "Chrissy",
+    "rating": 1381.0,
+    "matches": 428,
+    "active_status": "Semi-active",
+    "recent_participation": 1,
+    "sessions_since_last_active": 19
+  },
+  {
+    "fencer": "Helen",
+    "rating": 1378.9,
+    "matches": 10,
+    "active_status": "Semi-active",
+    "recent_participation": 1,
     "sessions_since_last_active": 2
   },
   {
-    "fencer": "Lance",
-    "rating": 1346.6,
-    "matches": 67,
+    "fencer": "Feddy",
+    "rating": 1377.8,
+    "matches": 30,
     "active_status": "Semi-active",
     "recent_participation": 1,
-    "sessions_since_last_active": 38
+    "sessions_since_last_active": 26
   },
   {
-    "fencer": "Natalia",
-    "rating": 1342.5,
-    "matches": 7,
+    "fencer": "Rowena",
+    "rating": 1377.5,
+    "matches": 14,
+    "active_status": "Semi-active",
+    "recent_participation": 1,
+    "sessions_since_last_active": 22
+  },
+  {
+    "fencer": "Anabelle",
+    "rating": 1375.8,
+    "matches": 8,
     "active_status": "Inactive",
     "recent_participation": 0,
-    "sessions_since_last_active": 62
+    "sessions_since_last_active": 118
   },
   {
-    "fencer": "Adam S",
-    "rating": 1341.3,
-    "matches": 383,
+    "fencer": "Alberto",
+    "rating": 1373.7,
+    "matches": 56,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 43
+  },
+  {
+    "fencer": "Perth",
+    "rating": 1371.9,
+    "matches": 62,
+    "active_status": "Semi-active",
+    "recent_participation": 4,
+    "sessions_since_last_active": 2
+  },
+  {
+    "fencer": "Jacob P",
+    "rating": 1369.3,
+    "matches": 11,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 51
+  },
+  {
+    "fencer": "Kieran",
+    "rating": 1368.1,
+    "matches": 14,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 61
+  },
+  {
+    "fencer": "Joshua",
+    "rating": 1366.8,
+    "matches": 299,
     "active_status": "Active",
-    "recent_participation": 7,
+    "recent_participation": 17,
     "sessions_since_last_active": 0
   },
   {
-    "fencer": "Giles",
-    "rating": 1337.7,
-    "matches": 346,
-    "active_status": "Semi-active",
-    "recent_participation": 3,
-    "sessions_since_last_active": 18
-  },
-  {
-    "fencer": "Denis D",
-    "rating": 1329.5,
-    "matches": 27,
+    "fencer": "Martin W",
+    "rating": 1364.0,
+    "matches": 32,
     "active_status": "Inactive",
     "recent_participation": 0,
-    "sessions_since_last_active": 79
+    "sessions_since_last_active": 103
   },
   {
-    "fencer": "Angelica",
-    "rating": 1329.0,
-    "matches": 20,
+    "fencer": "Vanessa",
+    "rating": 1358.9,
+    "matches": 11,
     "active_status": "Semi-active",
-    "recent_participation": 2,
-    "sessions_since_last_active": 8
+    "recent_participation": 1,
+    "sessions_since_last_active": 9
   },
   {
-    "fencer": "Marinko",
-    "rating": 1327.7,
-    "matches": 535,
+    "fencer": "Isra",
+    "rating": 1357.6,
+    "matches": 10,
+    "active_status": "Semi-active",
+    "recent_participation": 1,
+    "sessions_since_last_active": 6
+  },
+  {
+    "fencer": "Maiya",
+    "rating": 1356.1,
+    "matches": 75,
+    "active_status": "Semi-active",
+    "recent_participation": 1,
+    "sessions_since_last_active": 37
+  },
+  {
+    "fencer": "Jack B",
+    "rating": 1353.8,
+    "matches": 12,
+    "active_status": "Semi-active",
+    "recent_participation": 1,
+    "sessions_since_last_active": 16
+  },
+  {
+    "fencer": "Emma",
+    "rating": 1349.1,
+    "matches": 58,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 66
+  },
+  {
+    "fencer": "Marg",
+    "rating": 1346.3,
+    "matches": 373,
+    "active_status": "Active",
+    "recent_participation": 34,
+    "sessions_since_last_active": 3
+  },
+  {
+    "fencer": "Natalia",
+    "rating": 1342.9,
+    "matches": 7,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 63
+  },
+  {
+    "fencer": "Lance",
+    "rating": 1342.7,
+    "matches": 67,
+    "active_status": "Semi-active",
+    "recent_participation": 1,
+    "sessions_since_last_active": 39
+  },
+  {
+    "fencer": "Andy R",
+    "rating": 1342.4,
+    "matches": 525,
     "active_status": "Active",
     "recent_participation": 12,
     "sessions_since_last_active": 0
   },
   {
-    "fencer": "Annabel",
-    "rating": 1325.4,
-    "matches": 46,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 56
-  },
-  {
-    "fencer": "Julia T",
-    "rating": 1324.3,
-    "matches": 138,
-    "active_status": "Active",
-    "recent_participation": 5,
-    "sessions_since_last_active": 11
-  },
-  {
-    "fencer": "Mark S",
-    "rating": 1324.1,
-    "matches": 53,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 102
-  },
-  {
-    "fencer": "Eugene",
-    "rating": 1312.1,
-    "matches": 605,
-    "active_status": "Active",
-    "recent_participation": 20,
-    "sessions_since_last_active": 1
-  },
-  {
-    "fencer": "Kevin",
-    "rating": 1309.0,
-    "matches": 17,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 78
-  },
-  {
-    "fencer": "Giulia",
-    "rating": 1306.3,
-    "matches": 36,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 41
-  },
-  {
-    "fencer": "Alonzo",
-    "rating": 1296.1,
-    "matches": 71,
-    "active_status": "Active",
-    "recent_participation": 7,
-    "sessions_since_last_active": 16
-  },
-  {
-    "fencer": "Matilda",
-    "rating": 1295.7,
-    "matches": 83,
-    "active_status": "Active",
-    "recent_participation": 8,
-    "sessions_since_last_active": 2
-  },
-  {
-    "fencer": "Thea",
-    "rating": 1291.4,
-    "matches": 44,
+    "fencer": "Denis D",
+    "rating": 1334.2,
+    "matches": 27,
     "active_status": "Inactive",
     "recent_participation": 0,
     "sessions_since_last_active": 80
   },
   {
-    "fencer": "Elisabeth",
-    "rating": 1256.2,
-    "matches": 90,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 122
-  },
-  {
-    "fencer": "Alix S",
-    "rating": 1208.3,
-    "matches": 198,
-    "active_status": "Active",
-    "recent_participation": 19,
-    "sessions_since_last_active": 0
-  },
-  {
-    "fencer": "Flavia",
-    "rating": 1192.6,
-    "matches": 73,
-    "active_status": "Inactive",
-    "recent_participation": 0,
-    "sessions_since_last_active": 40
-  },
-  {
-    "fencer": "Nat",
-    "rating": 1180.4,
-    "matches": 579,
+    "fencer": "Adam S",
+    "rating": 1331.2,
+    "matches": 383,
     "active_status": "Active",
     "recent_participation": 7,
     "sessions_since_last_active": 1
   },
   {
+    "fencer": "Angelica",
+    "rating": 1326.6,
+    "matches": 20,
+    "active_status": "Semi-active",
+    "recent_participation": 2,
+    "sessions_since_last_active": 9
+  },
+  {
+    "fencer": "Gautam",
+    "rating": 1326.6,
+    "matches": 45,
+    "active_status": "Semi-active",
+    "recent_participation": 2,
+    "sessions_since_last_active": 0
+  },
+  {
+    "fencer": "Marinko",
+    "rating": 1325.3,
+    "matches": 535,
+    "active_status": "Active",
+    "recent_participation": 11,
+    "sessions_since_last_active": 1
+  },
+  {
+    "fencer": "Annabel",
+    "rating": 1323.6,
+    "matches": 46,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 57
+  },
+  {
+    "fencer": "Mark S",
+    "rating": 1321.8,
+    "matches": 53,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 103
+  },
+  {
+    "fencer": "Julia T",
+    "rating": 1320.1,
+    "matches": 138,
+    "active_status": "Active",
+    "recent_participation": 5,
+    "sessions_since_last_active": 12
+  },
+  {
+    "fencer": "Giles",
+    "rating": 1316.5,
+    "matches": 346,
+    "active_status": "Semi-active",
+    "recent_participation": 3,
+    "sessions_since_last_active": 19
+  },
+  {
+    "fencer": "Eugene",
+    "rating": 1310.6,
+    "matches": 605,
+    "active_status": "Active",
+    "recent_participation": 20,
+    "sessions_since_last_active": 2
+  },
+  {
+    "fencer": "Giulia",
+    "rating": 1310.3,
+    "matches": 36,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 42
+  },
+  {
+    "fencer": "Kevin",
+    "rating": 1309.8,
+    "matches": 17,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 79
+  },
+  {
+    "fencer": "Thea",
+    "rating": 1285.7,
+    "matches": 44,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 81
+  },
+  {
+    "fencer": "Matilda",
+    "rating": 1285.0,
+    "matches": 83,
+    "active_status": "Active",
+    "recent_participation": 8,
+    "sessions_since_last_active": 3
+  },
+  {
+    "fencer": "Alonzo",
+    "rating": 1277.4,
+    "matches": 71,
+    "active_status": "Active",
+    "recent_participation": 7,
+    "sessions_since_last_active": 17
+  },
+  {
+    "fencer": "Elisabeth",
+    "rating": 1250.7,
+    "matches": 90,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 123
+  },
+  {
+    "fencer": "Alix S",
+    "rating": 1208.4,
+    "matches": 198,
+    "active_status": "Active",
+    "recent_participation": 19,
+    "sessions_since_last_active": 1
+  },
+  {
+    "fencer": "Nat",
+    "rating": 1180.6,
+    "matches": 579,
+    "active_status": "Active",
+    "recent_participation": 7,
+    "sessions_since_last_active": 2
+  },
+  {
+    "fencer": "Flavia",
+    "rating": 1177.2,
+    "matches": 73,
+    "active_status": "Inactive",
+    "recent_participation": 0,
+    "sessions_since_last_active": 41
+  },
+  {
     "fencer": "Eric H",
-    "rating": 1161.4,
+    "rating": 1156.9,
     "matches": 397,
     "active_status": "Inactive",
     "recent_participation": 0,
-    "sessions_since_last_active": 73
+    "sessions_since_last_active": 74
   }
 ]
