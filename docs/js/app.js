@@ -247,10 +247,10 @@ function displayRatings(data, isSnapshot = false) {
         const matchesDisplay = fencer.matches > 0 ? fencer.matches : '-';
 
         row.innerHTML = `
-            <td class="${rankClass}">${rank}</td>
+            <td class="${rankClass}" data-order="${rank}">${rank}</td>
             <td><a href="fencer.html?fencer=${encodeURIComponent(fencer.fencer)}" class="fencer-link">${fencer.fencer}</a></td>
             <td data-order="${participation}">${statusBadge}</td>
-            <td><strong>${fencer.rating}</strong></td>
+            <td data-order="${fencer.rating}"><strong>${fencer.rating}</strong></td>
             <td>${maxElo}</td>
             <td>${matchesDisplay}</td>
         `;
@@ -263,10 +263,7 @@ function displayRatings(data, isSnapshot = false) {
         searching: true,
         ordering: true,
         pageLength: 25,
-        order: [[3, 'desc']], // Sort by current rating column (descending) by default
-        columnDefs: [
-            { orderable: false, targets: 0 } // Don't allow sorting by rank
-        ]
+        order: [[0, 'asc']] // Sort by rank (ascending) by default
     });
 }
 
