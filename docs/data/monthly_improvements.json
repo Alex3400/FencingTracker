@@ -1,5 +1,155 @@
 [
   {
+    "month": "2026-06",
+    "month_name": "June 2026",
+    "session_dates": [
+      "2026-06-02"
+    ],
+    "session_count": 1,
+    "fencer_changes": [
+      {
+        "fencer": "Roeland",
+        "start_rating": 1655.2,
+        "end_rating": 1768.5,
+        "change": 113.2,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Eric L",
+        "start_rating": 1668.4,
+        "end_rating": 1732.0,
+        "change": 63.6,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Eugene",
+        "start_rating": 1310.6,
+        "end_rating": 1367.4,
+        "change": 56.8,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Marg",
+        "start_rating": 1346.3,
+        "end_rating": 1387.1,
+        "change": 40.8,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Vivian",
+        "start_rating": 1516.7,
+        "end_rating": 1552.5,
+        "change": 35.8,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Tom S",
+        "start_rating": 1550.2,
+        "end_rating": 1576.6,
+        "change": 26.4,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Tom T",
+        "start_rating": 1712.4,
+        "end_rating": 1730.4,
+        "change": 18.0,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Joshua",
+        "start_rating": 1366.8,
+        "end_rating": 1377.7,
+        "change": 10.8,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Vincent",
+        "start_rating": 1538.3,
+        "end_rating": 1542.2,
+        "change": 3.9,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Vadym",
+        "start_rating": 1663.4,
+        "end_rating": 1661.5,
+        "change": -1.9,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Richard B",
+        "start_rating": 1497.1,
+        "end_rating": 1485.1,
+        "change": -12.0,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Adam S",
+        "start_rating": 1331.2,
+        "end_rating": 1310.4,
+        "change": -20.8,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Colin R",
+        "start_rating": 1586.5,
+        "end_rating": 1559.9,
+        "change": -26.6,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Kirill",
+        "start_rating": 1383.0,
+        "end_rating": 1348.6,
+        "change": -34.4,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Max V",
+        "start_rating": 1497.1,
+        "end_rating": 1458.9,
+        "change": -38.2,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Darran",
+        "start_rating": 1632.3,
+        "end_rating": 1592.8,
+        "change": -39.5,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Alex Y",
+        "start_rating": 1691.4,
+        "end_rating": 1648.5,
+        "change": -42.8,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Greg",
+        "start_rating": 1932.0,
+        "end_rating": 1887.3,
+        "change": -44.7,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Will P",
+        "start_rating": 1491.9,
+        "end_rating": 1443.7,
+        "change": -48.2,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Andy R",
+        "start_rating": 1342.4,
+        "end_rating": 1279.6,
+        "change": -62.8,
+        "sessions_attended": 1
+      }
+    ]
+  },
+  {
     "month": "2026-05",
     "month_name": "May 2026",
     "session_dates": [

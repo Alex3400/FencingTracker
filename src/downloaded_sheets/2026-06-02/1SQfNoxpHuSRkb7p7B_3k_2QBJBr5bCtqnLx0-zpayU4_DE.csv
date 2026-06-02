@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Tom T,1,Tom T,,Tom T,V,Tom T,,Alex Y,,Roeland,V,Roeland,2000,3.0,Eric L,100,20
+2,Greg,32,_,,Will P,,Alex Y,V,Roeland,V,Eric L,,Eric L,1700,8.0,Vincent,85,20
+3,Eric L,17,Richard B,,Alex Y,V,Roeland,V,Eric L,V,Alex Y,,Greg,1500,2.0,Greg,75,20
+4,Tom S,16,Will P,V,Vincent,,Tom S,,Greg,,Greg,V,Alex Y,1340,9.0,Alex Y,67,20
+5,Roeland,9,Alex Y,,Roeland,V,Eric L,V,Tom T,V,Tom T,V,Tom T,1220,17.0,Richard B,61,20
+6,Darran,24,_,,Joshua,,Darran,,Tom S,,Vivian,,Vivian,1100,13.0,Max V,55,20
+7,Vivian,25,_,,Max V,,Vivian,,Darran,,Tom S,V,Tom S,1020,16.0,Will P,51,20
+8,Vincent,8,Vincent,,Tom S,V,Greg,V,Vivian,V,Darran,,Darran,940,4.0,Tom S,47,20
+9,Alex Y,5,Roeland,,Eric L,V,Will P,,Vincent,V,Vincent,,Vadym,860,1.0,Tom T,43,20
+10,Eugene,28,_,,Colin R,,Vincent,V,Max V,,Vadym,V,Vincent,800,19.0,Kirill IV,40,20
+11,Vadym,21,_,,Vadym,,Joshua,,Vadym,V,Max V,,Eugene,740,12.0,Joshua,37,20
+12,Joshua,12,Joshua,,Darran,V,Max V,V,Eugene,,Eugene,V,Max V,680,6.0,Darran,34,20
+13,Max V,13,Max V,V,Vivian,V,Colin R,,Will P,,Joshua,,Colin R,620,15.0,Marg,31,20
+14,Colin R,20,Andy R,,Eugene,,Vadym,V,Joshua,V,Colin R,V,Joshua,560,10.0,Eugene,28,20
+15,Marg,29,_,,Marg,,Eugene,V,Colin R,V,Will P,V,Will P,520,20.0,Andy R,26,20
+16,Will P,4,Tom S,,Greg,V,Marg,X,Marg,X,Marg,X,Marg,480,14.0,Colin R,24,20
+17,Richard B,3,Eric L,,_,,Richard B,,Richard B,V,Richard B,V,Richard B,440,11.0,Vadym,22,20
+18,Adam S,30,_,,Richard B,,_,,Andy R,,Kirill IV,,Kirill IV,400,5.0,Roeland,20,20
+19,Kirill IV,19,Kirill IV,,_,,_,,Kirill IV,V,Andy R,V,Andy R,360,18.0,Adam S,18,20
+20,Andy R,14,Colin R,V,_,,Andy R,,Adam S,X,Adam S,X,Adam S,320,7.0,Vivian,16,20
+21,_,11,Vadym,,_,,Kirill IV,,_,,_,,_,280,,,14,20
+22,_,22,_,,_,,_,,_,,_,,_,240,,,12,20
+23,_,27,_,,Andy R,,_,,_,,_,,_,200,,,10,20
+24,_,6,Darran,,_,,Adam S,X,_,,_,,_,180,,,9,20
+25,_,7,Vivian,,_,,_,,_,,_,,_,160,,,8,20
+26,_,26,_,,Kirill IV,,_,,_,,_,,_,140,,,7,20
+27,_,23,_,,_,,_,,_,,_,,_,120,,,6,20
+28,_,10,Eugene,,_,,_,,_,,_,,_,100,,,5,20
+29,_,15,Marg,V,_,,_,,_,,_,,_,80,,,4,20
+30,_,18,Adam S,,_,,_,,_,,_,,_,60,,,3,20
+31,_,31,_,,Adam S,X,_,,_,,_,,_,40,,,2,20
+32,_,2,Greg,,_,,_,,_,,_,,_,20,,,1,20

@@ -12098,5 +12098,106 @@
         "fencer": "Oleg"
       }
     ]
+  },
+  {
+    "date": "2026-06-02",
+    "winner": "Roeland",
+    "top_poule_climber": "Eugene",
+    "top_poule_gain": 45.8,
+    "fencers_in_poules": 20,
+    "fencers_in_des": 20,
+    "poule_matches": 72,
+    "de_matches": 40,
+    "total_matches": 112,
+    "score_5_0": 4,
+    "score_5_1": 13,
+    "score_5_2": 16,
+    "score_5_3": 24,
+    "score_5_4": 15,
+    "total_touches": 537,
+    "avg_touches_per_match": 7.46,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1SQfNoxpHuSRkb7p7B_3k_2QBJBr5bCtqnLx0-zpayU4/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Roeland"
+      },
+      {
+        "place": 2,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 3,
+        "fencer": "Greg"
+      },
+      {
+        "place": 4,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 5,
+        "fencer": "Tom T"
+      },
+      {
+        "place": 6,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 7,
+        "fencer": "Tom S"
+      },
+      {
+        "place": 8,
+        "fencer": "Darran"
+      },
+      {
+        "place": 9,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 10,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 11,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 12,
+        "fencer": "Max V"
+      },
+      {
+        "place": 13,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 14,
+        "fencer": "Joshua"
+      },
+      {
+        "place": 15,
+        "fencer": "Will P"
+      },
+      {
+        "place": 16,
+        "fencer": "Marg"
+      },
+      {
+        "place": 17,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 18,
+        "fencer": "Kirill"
+      },
+      {
+        "place": 19,
+        "fencer": "Andy R"
+      },
+      {
+        "place": 20,
+        "fencer": "Adam S"
+      }
+    ]
   }
 ]
