@@ -8764,75 +8764,10 @@
     ]
   },
   {
-    "date": "2025-09-01",
-    "winner": "Greg",
-    "top_poule_climber": "Eric L",
-    "top_poule_gain": 61.8,
-    "fencers_in_poules": 12,
-    "fencers_in_des": 11,
-    "poule_matches": 48,
-    "de_matches": 17,
-    "total_matches": 65,
-    "score_5_0": 2,
-    "score_5_1": 6,
-    "score_5_2": 11,
-    "score_5_3": 8,
-    "score_5_4": 21,
-    "total_touches": 376,
-    "avg_touches_per_match": 7.83,
-    "google_sheet_link": "",
-    "final_results": [
-      {
-        "place": 1,
-        "fencer": "Greg"
-      },
-      {
-        "place": 2,
-        "fencer": "Vivian"
-      },
-      {
-        "place": 3,
-        "fencer": "Karsten"
-      },
-      {
-        "place": 4,
-        "fencer": "Vincent"
-      },
-      {
-        "place": 5,
-        "fencer": "Alejo"
-      },
-      {
-        "place": 6,
-        "fencer": "Vadym"
-      },
-      {
-        "place": 7,
-        "fencer": "Eric L"
-      },
-      {
-        "place": 8,
-        "fencer": "Will P"
-      },
-      {
-        "place": 9,
-        "fencer": "Enrik"
-      },
-      {
-        "place": 10,
-        "fencer": "Lukas N"
-      },
-      {
-        "place": 11,
-        "fencer": "Andy R"
-      }
-    ]
-  },
-  {
     "date": "2025-09-02",
     "winner": "Greg",
     "top_poule_climber": "Eric L",
-    "top_poule_gain": 57.8,
+    "top_poule_gain": 64.6,
     "fencers_in_poules": 12,
     "fencers_in_des": 11,
     "poule_matches": 48,
@@ -8897,7 +8832,7 @@
     "date": "2025-09-09",
     "winner": "Sameer",
     "top_poule_climber": "Sameer",
-    "top_poule_gain": 57.0,
+    "top_poule_gain": 56.6,
     "fencers_in_poules": 15,
     "fencers_in_des": 13,
     "poule_matches": 65,
@@ -8970,7 +8905,7 @@
     "date": "2025-09-16",
     "winner": "Greg",
     "top_poule_climber": "Charlie",
-    "top_poule_gain": 28.5,
+    "top_poule_gain": 28.3,
     "fencers_in_poules": 16,
     "fencers_in_des": 15,
     "poule_matches": 76,
@@ -9051,7 +8986,7 @@
     "date": "2025-09-23",
     "winner": "Alejo",
     "top_poule_climber": "Richard B",
-    "top_poule_gain": 61.5,
+    "top_poule_gain": 61.8,
     "fencers_in_poules": 18,
     "fencers_in_des": 16,
     "poule_matches": 71,
@@ -9136,7 +9071,7 @@
     "date": "2025-09-30",
     "winner": "Garen",
     "top_poule_climber": "Pablo",
-    "top_poule_gain": 42.9,
+    "top_poule_gain": 43.2,
     "fencers_in_poules": 17,
     "fencers_in_des": 15,
     "poule_matches": 59,
@@ -9217,7 +9152,7 @@
     "date": "2025-10-07",
     "winner": "Garen",
     "top_poule_climber": "Jonathan",
-    "top_poule_gain": 53.5,
+    "top_poule_gain": 53.4,
     "fencers_in_poules": 22,
     "fencers_in_des": 17,
     "poule_matches": 94,
@@ -9387,7 +9322,7 @@
     "date": "2025-10-21",
     "winner": "Willie",
     "top_poule_climber": "Colin R",
-    "top_poule_gain": 43.5,
+    "top_poule_gain": 43.8,
     "fencers_in_poules": 20,
     "fencers_in_des": 16,
     "poule_matches": 91,
@@ -9464,7 +9399,7 @@
     "date": "2025-10-28",
     "winner": "Fassel",
     "top_poule_climber": "Alessandro",
-    "top_poule_gain": 43.5,
+    "top_poule_gain": 43.9,
     "fencers_in_poules": 16,
     "fencers_in_des": 14,
     "poule_matches": 45,
@@ -9650,7 +9585,7 @@
     "date": "2025-11-11",
     "winner": "Unknown",
     "top_poule_climber": "Patrick L",
-    "top_poule_gain": 41.3,
+    "top_poule_gain": 41.4,
     "fencers_in_poules": 16,
     "fencers_in_des": 17,
     "poule_matches": 55,
@@ -9776,7 +9711,7 @@
     "date": "2025-11-25",
     "winner": "Greg",
     "top_poule_climber": "Adam S",
-    "top_poule_gain": 48.8,
+    "top_poule_gain": 48.9,
     "fencers_in_poules": 25,
     "fencers_in_des": 22,
     "poule_matches": 107,
@@ -9885,7 +9820,7 @@
     "date": "2025-12-02",
     "winner": "Greg",
     "top_poule_climber": "Tom T",
-    "top_poule_gain": 71.7,
+    "top_poule_gain": 71.8,
     "fencers_in_poules": 23,
     "fencers_in_des": 21,
     "poule_matches": 100,
@@ -9990,7 +9925,7 @@
     "date": "2025-12-09",
     "winner": "Greg",
     "top_poule_climber": "Julia T",
-    "top_poule_gain": 62.3,
+    "top_poule_gain": 62.4,
     "fencers_in_poules": 26,
     "fencers_in_des": 20,
     "poule_matches": 106,
@@ -10346,7 +10281,7 @@
     "date": "2026-01-20",
     "winner": "Willie",
     "top_poule_climber": "Marg",
-    "top_poule_gain": 51.2,
+    "top_poule_gain": 51.1,
     "fencers_in_poules": 25,
     "fencers_in_des": 24,
     "poule_matches": 107,
@@ -10863,7 +10798,7 @@
     "date": "2026-02-24",
     "winner": "Willie",
     "top_poule_climber": "Eugene",
-    "top_poule_gain": 48.2,
+    "top_poule_gain": 48.1,
     "fencers_in_poules": 20,
     "fencers_in_des": 18,
     "poule_matches": 71,
