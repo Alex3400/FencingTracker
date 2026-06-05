@@ -131,7 +131,7 @@ NAME_ALIASES = [
     ['Adam S', 'Adam'],
     ['Tom S', 'Tom'],
     ['Willie', 'Willie K', 'Willy'],
-    ['Steph', 'Stephan M', 'Stef'],
+    ['Steph', 'Stephan M', 'Stef','	Stephen M'],
     ['Tariq', 'Tarriq'],
     ['Richard B', 'Richard'],
     ['Perth', 'Purse'],
@@ -155,6 +155,8 @@ NAME_ALIASES = [
     ['Vivian', 'Alex Te'],
     ['Alex T', 'Alex Tr'],
     ['Adrian S', 'Adrian'],
+    ['John H', 'Jon H'],
+    ['Truuvy', 'Alex T']
 ]
 
 # Blacklist - fencers to completely exclude from all data and Elo calculations
