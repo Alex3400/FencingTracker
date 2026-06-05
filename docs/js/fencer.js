@@ -697,6 +697,76 @@ function populateDaySelector(fencerName) {
     document.getElementById('day-matches-results').style.display = 'none';
 }
 
+function renderDaySummary(fencerName, date, matches) {
+    const summaryDiv = document.getElementById('day-summary');
+
+    let totalSwing = 0;
+    let deSwing = 0;
+    let pouleSwing = 0;
+    let wins = 0;
+    let losses = 0;
+
+    matches.forEach(match => {
+        const isWinner = match['Winner'] === fencerName;
+        const change = isWinner ? parseFloat(match['Winner Change']) : parseFloat(match['Loser Change']);
+        const isPoule = match['Match Type'] === 'Poule';
+
+        if (!isNaN(change)) {
+            totalSwing += change;
+            if (isPoule) {
+                pouleSwing += change;
+            } else {
+                deSwing += change;
+            }
+        }
+
+        if (isWinner) {
+            wins++;
+        } else {
+            losses++;
+        }
+    });
+
+    // Placement for the day (from the session's final results)
+    let placementText = '-';
+    const session = sessionsData.find(s => s.date === date);
+    if (session && session.final_results) {
+        const result = session.final_results.find(r => r.fencer === fencerName);
+        if (result) {
+            placementText = `${result.place} / ${session.final_results.length}`;
+        }
+    }
+
+    const fmtSwing = (val) => {
+        const cls = val >= 0 ? 'positive' : 'negative';
+        const sign = val >= 0 ? '+' : '';
+        return `<span class="${cls}">${sign}${val.toFixed(1)}</span>`;
+    };
+
+    summaryDiv.innerHTML = `
+        <div class="day-summary-item">
+            <span class="day-summary-label">Placement</span>
+            <span class="day-summary-value">${placementText}</span>
+        </div>
+        <div class="day-summary-item">
+            <span class="day-summary-label">Record</span>
+            <span class="day-summary-value">${wins}–${losses}</span>
+        </div>
+        <div class="day-summary-item">
+            <span class="day-summary-label">Total Elo Swing</span>
+            <span class="day-summary-value">${fmtSwing(totalSwing)}</span>
+        </div>
+        <div class="day-summary-item">
+            <span class="day-summary-label">Poule Elo Swing</span>
+            <span class="day-summary-value">${fmtSwing(pouleSwing)}</span>
+        </div>
+        <div class="day-summary-item">
+            <span class="day-summary-label">DE Elo Swing</span>
+            <span class="day-summary-value">${fmtSwing(deSwing)}</span>
+        </div>
+    `;
+}
+
 function showDayMatches(fencerName, date) {
     if (!date) {
         document.getElementById('day-matches-results').style.display = 'none';
@@ -725,6 +795,9 @@ function showDayMatches(fencerName, date) {
     });
     const titleElement = document.getElementById('day-matches-title');
     titleElement.innerHTML = `Matches on <a href="sessions.html?date=${encodeURIComponent(date)}" class="fencer-link">${formattedDate}</a>`;
+
+    // Build the day summary (placement, Elo swings, win-loss record)
+    renderDaySummary(fencerName, date, matches);
 
     // Populate table
     const tbody = document.getElementById('day-matches-body');

@@ -467,6 +467,58 @@ footer p {
     font-weight: 600;
 }
 
+/* Leaderboard rank-change indicator */
+.rank-change {
+    font-size: 0.75em;
+    font-weight: 600;
+    margin-left: 4px;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.rank-change.rank-same {
+    color: #999;
+}
+
+.rank-change.rank-new {
+    color: var(--success);
+    font-size: 0.65em;
+    letter-spacing: 0.5px;
+}
+
+/* Day matches summary (fencer page) */
+.day-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 12px 0 18px;
+}
+
+.day-summary-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 110px;
+    flex: 1;
+    padding: 10px 14px;
+    background: var(--card-bg, #f8f9fa);
+    border: 1px solid var(--border, #e0e0e0);
+    border-radius: 8px;
+}
+
+.day-summary-label {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #777;
+    margin-bottom: 4px;
+}
+
+.day-summary-value {
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
 /* Sessions page */
 .sessions-list {
     /* Uses existing table styles */

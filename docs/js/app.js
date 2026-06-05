@@ -118,7 +118,8 @@ function populateSnapshotSelector() {
     // Store for later use
     window.deSnapshotsCache = deSnapshots;
 
-    for (let i = deSnapshots.length - 1; i >= 0; i--) {
+    // Skip the most recent session — it's identical to "Current Rankings" above.
+    for (let i = deSnapshots.length - 2; i >= 0; i--) {
         const snapshot = deSnapshots[i];
         const date = new Date(snapshot.date);
         const formattedDate = date.toLocaleDateString('en-GB', {
@@ -192,7 +193,75 @@ function applyActivityFilter() {
     displayRatings(filteredData, isSnapshot);
 }
 
+// Filter a list of fencers by the current activity filter (same rules as applyActivityFilter)
+function filterByActivity(list, filterValue) {
+    if (filterValue === 'active') {
+        return list.filter(f => f.active_status === 'Active');
+    } else if (filterValue === 'semi-active') {
+        return list.filter(f =>
+            f.active_status === 'Active' || f.active_status === 'Semi-active'
+        );
+    }
+    return list;
+}
+
+// Build a map of fencer -> rank from the session immediately before the one being shown,
+// filtered by the same activity filter so the rank comparison is apples-to-apples.
+// Returns null when there is no previous session to compare against.
+function getPreviousRankMap(filterValue) {
+    // Only show rank-change in "active only" mode. In semi-active/all views the fencer
+    // set shifts as people cross activity thresholds, which makes the deltas misleading.
+    if (filterValue !== 'active') return null;
+
+    const deSnapshots = window.deSnapshotsCache || timelineData.filter(s => s.phase === 'After DEs');
+    if (!deSnapshots || deSnapshots.length === 0) return null;
+
+    // Current view mirrors the most recent "After DEs" snapshot, so its comparison is the
+    // second-to-last snapshot. A historical snapshot at index i compares to index i - 1.
+    const compareIndex = currentSnapshot === null
+        ? deSnapshots.length - 2
+        : currentSnapshot - 1;
+
+    if (compareIndex < 0) return null;
+
+    const snapshot = deSnapshots[compareIndex];
+    if (!snapshot || !snapshot.ratings) return null;
+
+    let list = Object.entries(snapshot.ratings).map(([fencer, rating]) => ({
+        fencer,
+        rating,
+        active_status: snapshot.active_status ? (snapshot.active_status[fencer] || 'Inactive') : 'Inactive'
+    }));
+
+    list = filterByActivity(list, filterValue);
+    list.sort((a, b) => b.rating - a.rating);
+
+    const rankMap = new Map();
+    list.forEach((f, i) => rankMap.set(f.fencer, i + 1));
+    return rankMap;
+}
+
+// Build the small rank-change indicator shown next to the rank.
+function rankChangeHTML(fencer, currentRank, previousRankMap) {
+    if (!previousRankMap) return '';
+
+    const prevRank = previousRankMap.get(fencer);
+    if (prevRank === undefined) {
+        return ' <span class="rank-change rank-new" title="New to this ranking">NEW</span>';
+    }
+
+    const change = prevRank - currentRank; // positive => moved up
+    if (change > 0) {
+        return ` <span class="rank-change positive" title="Up ${change} from last session">▲${change}</span>`;
+    } else if (change < 0) {
+        return ` <span class="rank-change negative" title="Down ${-change} from last session">▼${-change}</span>`;
+    }
+    return ' <span class="rank-change rank-same" title="No change from last session">–</span>';
+}
+
 function displayRatings(data, isSnapshot = false) {
+    const previousRankMap = getPreviousRankMap(currentActivityFilter);
+
     // Destroy existing DataTable first
     if ($.fn.DataTable.isDataTable('#ratings-table')) {
         $('#ratings-table').DataTable().destroy();
@@ -246,8 +315,10 @@ function displayRatings(data, isSnapshot = false) {
         const participation = fencer.recent_participation || 0;
         const matchesDisplay = fencer.matches > 0 ? fencer.matches : '-';
 
+        const changeIndicator = rankChangeHTML(fencer.fencer, rank, previousRankMap);
+
         row.innerHTML = `
-            <td class="${rankClass}" data-order="${rank}">${rank}</td>
+            <td class="${rankClass}" data-order="${rank}">${rank}${changeIndicator}</td>
             <td><a href="fencer.html?fencer=${encodeURIComponent(fencer.fencer)}" class="fencer-link">${fencer.fencer}</a></td>
             <td data-order="${participation}">${statusBadge}</td>
             <td data-order="${fencer.rating}"><strong>${fencer.rating}</strong></td>
