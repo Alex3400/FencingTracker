@@ -25,14 +25,20 @@ async function loadRatings() {
         const statsText = await statsResponse.text();
         fencerStatsData = parseStatsCSV(statsText);
 
-        // Load saved filter preference from localStorage
+        // Load saved filter preference from localStorage.
+        // Inactive fencers are never listed on the leaderboard, so the only valid
+        // views are 'active' and 'semi-active'. Reject anything else (e.g. a stale
+        // 'all' saved by a returning visitor from before that option was removed).
         const savedFilter = localStorage.getItem('activityFilter');
-        if (savedFilter) {
+        if (savedFilter === 'active' || savedFilter === 'semi-active') {
             currentActivityFilter = savedFilter;
             const filterSelect = document.getElementById('activity-filter');
             if (filterSelect) {
                 filterSelect.value = savedFilter;
             }
+        } else if (savedFilter) {
+            // Clear the stale preference so it doesn't linger.
+            localStorage.removeItem('activityFilter');
         }
 
         populateSnapshotSelector();
@@ -177,18 +183,18 @@ function applyActivityFilter() {
         }
     }
 
-    let filteredData = sourceData;
+    let filteredData;
 
     if (filterValue === 'active') {
         // Show only Active fencers
         filteredData = sourceData.filter(f => f.active_status === 'Active');
-    } else if (filterValue === 'semi-active') {
-        // Show Active and Semi-active fencers
+    } else {
+        // 'semi-active' (or any other value): Active + Semi-active.
+        // Inactive fencers are never listed on the leaderboard.
         filteredData = sourceData.filter(f =>
             f.active_status === 'Active' || f.active_status === 'Semi-active'
         );
     }
-    // 'all' shows everyone
 
     displayRatings(filteredData, isSnapshot);
 }
@@ -197,12 +203,12 @@ function applyActivityFilter() {
 function filterByActivity(list, filterValue) {
     if (filterValue === 'active') {
         return list.filter(f => f.active_status === 'Active');
-    } else if (filterValue === 'semi-active') {
-        return list.filter(f =>
-            f.active_status === 'Active' || f.active_status === 'Semi-active'
-        );
     }
-    return list;
+    // 'semi-active' (or any other value): Active + Semi-active.
+    // Inactive fencers are never listed on the leaderboard.
+    return list.filter(f =>
+        f.active_status === 'Active' || f.active_status === 'Semi-active'
+    );
 }
 
 // Build a map of fencer -> rank from the session immediately before the one being shown,
