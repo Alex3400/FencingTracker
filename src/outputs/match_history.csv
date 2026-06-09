@@ -19,10 +19,8 @@ Adam S,Alex A,2023-10-03,poule,Alex A,3-5
 Alex A,Adam S,2023-10-03,poule,Alex A,3-5
 Adam S,Alex A,2024-04-30,poule,Alex A,4-5
 Alex A,Adam S,2024-04-30,poule,Alex A,4-5
-Adam S,Alex T,2023-07-25,poule,Alex T,4-5
-Alex T,Adam S,2023-07-25,poule,Alex T,4-5
-Adam S,Alex T,2024-10-08,poule,Alex T,4-5
-Alex T,Adam S,2024-10-08,poule,Alex T,4-5
+Adam S,Alex A,2026-06-09,poule,Alex A,3-5
+Alex A,Adam S,2026-06-09,poule,Alex A,3-5
 Adam S,Alex Y,2026-03-10,poule,Alex Y,2-5
 Alex Y,Adam S,2026-03-10,poule,Alex Y,2-5
 Adam S,Ali,2023-07-04,poule,Ali,2-5
@@ -73,8 +71,14 @@ Adam S,Andy R,2026-05-19,DE-L1-32,Andy R,
 Andy R,Adam S,2026-05-19,DE-L1-32,Andy R,
 Adam S,Andy R,2026-06-02,DE-L19-20,Andy R,
 Andy R,Adam S,2026-06-02,DE-L19-20,Andy R,
+Adam S,Andy R,2026-06-09,DE-L23-24,Andy R,
+Andy R,Adam S,2026-06-09,DE-L23-24,Andy R,
+Adam S,Angelica,2026-06-09,DE-L21-24,Angelica,
+Angelica,Adam S,2026-06-09,DE-L21-24,Angelica,
 Adam S,Anna A,2025-11-25,poule,Anna A,2-5
 Anna A,Adam S,2025-11-25,poule,Anna A,2-5
+Adam S,Anna A,2026-06-09,poule,Adam S,5-4
+Anna A,Adam S,2026-06-09,poule,Adam S,5-4
 Adam S,Anna Z,2023-05-02,poule,Adam S,5-3
 Anna Z,Adam S,2023-05-02,poule,Adam S,5-3
 Adam S,Anna Z,2023-09-12,poule,Anna Z,3-5
@@ -113,6 +117,8 @@ Adam S,Anna Z,2024-10-15,poule,Anna Z,1-5
 Anna Z,Adam S,2024-10-15,poule,Anna Z,1-5
 Adam S,Anna Z,2024-11-19,poule,Anna Z,4-5
 Anna Z,Adam S,2024-11-19,poule,Anna Z,4-5
+Adam S,Anna Z,2026-06-09,poule,Anna Z,2-5
+Anna Z,Adam S,2026-06-09,poule,Anna Z,2-5
 Adam S,Annabel,2023-04-18,DE-L13-14,Annabel,
 Annabel,Adam S,2023-04-18,DE-L13-14,Annabel,
 Adam S,Beston,2023-03-14,poule,Beston,4-5
@@ -283,6 +289,8 @@ Adam S,Eric L,2026-03-24,poule,Adam S,5-2
 Eric L,Adam S,2026-03-24,poule,Adam S,5-2
 Adam S,Eric L,2026-04-28,poule,Eric L,2-5
 Eric L,Adam S,2026-04-28,poule,Eric L,2-5
+Adam S,Eric L,2026-06-09,poule,Eric L,2-5
+Eric L,Adam S,2026-06-09,poule,Eric L,2-5
 Adam S,Etienne,2023-10-17,poule,Etienne,4-5
 Etienne,Adam S,2023-10-17,poule,Etienne,4-5
 Adam S,Etienne,2024-10-29,DE-L13-16,Etienne,
@@ -303,6 +311,8 @@ Adam S,Eugene,2026-04-28,poule,Adam S,5-4
 Eugene,Adam S,2026-04-28,poule,Adam S,5-4
 Adam S,Fedor,2026-05-19,poule,Fedor,4-5
 Fedor,Adam S,2026-05-19,poule,Fedor,4-5
+Adam S,Fedor,2026-06-09,poule,Adam S,5-2
+Fedor,Adam S,2026-06-09,poule,Adam S,5-2
 Adam S,Fergus,2026-03-24,poule,Adam S,5-4
 Fergus,Adam S,2026-03-24,poule,Adam S,5-4
 Adam S,Flavia,2024-11-19,poule,Adam S,5-2
@@ -377,6 +387,8 @@ Adam S,Greg,2024-11-12,poule,Greg,4-5
 Greg,Adam S,2024-11-12,poule,Greg,4-5
 Adam S,Greg,2025-11-25,poule,Greg,2-5
 Greg,Adam S,2025-11-25,poule,Greg,2-5
+Adam S,Greg,2026-06-09,poule,Adam S,5-1
+Greg,Adam S,2026-06-09,poule,Adam S,5-1
 Adam S,Haya,2023-11-21,poule,Adam S,5-4
 Haya,Adam S,2023-11-21,poule,Adam S,5-4
 Adam S,Hugo,2025-02-25,poule,Hugo,0-5
@@ -391,6 +403,8 @@ Adam S,Joshua,2026-05-19,poule,Joshua,3-5
 Joshua,Adam S,2026-05-19,poule,Joshua,3-5
 Adam S,Joshua,2026-06-02,poule,Adam S,5-3
 Joshua,Adam S,2026-06-02,poule,Adam S,5-3
+Adam S,Joshua,2026-06-09,poule,Joshua,3-5
+Joshua,Adam S,2026-06-09,poule,Joshua,3-5
 Adam S,Julia T,2024-01-16,poule,Adam S,5-3
 Julia T,Adam S,2024-01-16,poule,Adam S,5-3
 Adam S,Julia T,2024-04-30,poule,Adam S,5-1
@@ -479,6 +493,10 @@ Adam S,Lorenzo,2024-02-13,poule,Adam S,5-2
 Lorenzo,Adam S,2024-02-13,poule,Adam S,5-2
 Adam S,Marg,2026-06-02,DE-L1-32,Marg,
 Marg,Adam S,2026-06-02,DE-L1-32,Marg,
+Adam S,Marg,2026-06-09,poule,Adam S,5-4
+Marg,Adam S,2026-06-09,poule,Adam S,5-4
+Adam S,Marg,2026-06-09,DE-L17-24,Marg,
+Marg,Adam S,2026-06-09,DE-L17-24,Marg,
 Adam S,Marinko,2023-04-18,poule,Adam S,5-0
 Marinko,Adam S,2023-04-18,poule,Adam S,5-0
 Adam S,Marinko,2023-04-18,DE-L9-16,Marinko,
@@ -719,10 +737,20 @@ Adam S,Tom S,2026-05-19,poule,Tom S,2-5
 Tom S,Adam S,2026-05-19,poule,Tom S,2-5
 Adam S,Tom S,2026-06-02,poule,Tom S,3-5
 Tom S,Adam S,2026-06-02,poule,Tom S,3-5
+Adam S,Tom S,2026-06-09,poule,Tom S,2-5
+Tom S,Adam S,2026-06-09,poule,Tom S,2-5
 Adam S,Tom T,2025-12-16,poule,Adam S,5-4
 Tom T,Adam S,2025-12-16,poule,Adam S,5-4
 Adam S,Tom T,2026-03-24,poule,Tom T,3-5
 Tom T,Adam S,2026-03-24,poule,Tom T,3-5
+Adam S,Tom T,2026-06-09,poule,Tom T,1-5
+Tom T,Adam S,2026-06-09,poule,Tom T,1-5
+Adam S,Tony,2026-06-09,DE-L1-32,Tony,
+Tony,Adam S,2026-06-09,DE-L1-32,Tony,
+Adam S,Truuvy,2023-07-25,poule,Truuvy,4-5
+Truuvy,Adam S,2023-07-25,poule,Truuvy,4-5
+Adam S,Truuvy,2024-10-08,poule,Truuvy,4-5
+Truuvy,Adam S,2024-10-08,poule,Truuvy,4-5
 Adam S,Vadym,2023-02-28,DE-L5-8,Vadym,
 Vadym,Adam S,2023-02-28,DE-L5-8,Vadym,
 Adam S,Vadym,2023-03-07,poule,Adam S,5-3
@@ -1229,18 +1257,6 @@ Alejo,Alex A,2026-01-06,poule,Alex A,4-5
 Alex A,Alejo,2026-01-06,poule,Alex A,4-5
 Alejo,Alex S,2023-07-11,poule,Alejo,5-2
 Alex S,Alejo,2023-07-11,poule,Alejo,5-2
-Alejo,Alex T,2023-07-11,poule,Alejo,5-3
-Alex T,Alejo,2023-07-11,poule,Alejo,5-3
-Alejo,Alex T,2023-07-18,DE-L1-16,Alejo,
-Alex T,Alejo,2023-07-18,DE-L1-16,Alejo,
-Alejo,Alex T,2023-07-25,poule,Alex T,4-5
-Alex T,Alejo,2023-07-25,poule,Alex T,4-5
-Alejo,Alex T,2023-07-25,DE-L5-6,Alex T,
-Alex T,Alejo,2023-07-25,DE-L5-6,Alex T,
-Alejo,Alex T,2024-10-08,DE-L1-8,Alex T,
-Alex T,Alejo,2024-10-08,DE-L1-8,Alex T,
-Alejo,Alex T,2024-11-26,poule,Alex T,4-5
-Alex T,Alejo,2024-11-26,poule,Alex T,4-5
 Alejo,Alex Y,2025-05-20,poule,Alejo,5-3
 Alex Y,Alejo,2025-05-20,poule,Alejo,5-3
 Alejo,Alex Y,2025-06-03,poule,Alejo,5-2
@@ -2195,6 +2211,8 @@ Alejo,James S,2026-03-17,poule,Alejo,5-3
 James S,Alejo,2026-03-17,poule,Alejo,5-3
 Alejo,James S,2026-04-14,poule,James S,3-5
 James S,Alejo,2026-04-14,poule,James S,3-5
+Alejo,John H,2024-05-07,poule,John H,3-5
+John H,Alejo,2024-05-07,poule,John H,3-5
 Alejo,John H,2024-06-18,DE-L1-4,Alejo,
 John H,Alejo,2024-06-18,DE-L1-4,Alejo,
 Alejo,John H,2024-10-22,poule,John H,3-5
@@ -2213,8 +2231,6 @@ Alejo,John H,2026-01-06,DE-L1-16,Alejo,
 John H,Alejo,2026-01-06,DE-L1-16,Alejo,
 Alejo,John H,2026-01-20,poule,Alejo,5-3
 John H,Alejo,2026-01-20,poule,Alejo,5-3
-Alejo,Jon H,2024-05-07,poule,Jon H,3-5
-Jon H,Alejo,2024-05-07,poule,Jon H,3-5
 Alejo,Jonathan,2025-01-21,poule,Alejo,5-2
 Jonathan,Alejo,2025-01-21,poule,Alejo,5-2
 Alejo,Jonathan,2025-01-28,poule,Jonathan,1-5
@@ -2901,6 +2917,8 @@ Alejo,Shevy,2026-04-14,poule,Alejo,5-3
 Shevy,Alejo,2026-04-14,poule,Alejo,5-3
 Alejo,Steffi,2025-07-08,poule,Alejo,5-2
 Steffi,Alejo,2025-07-08,poule,Alejo,5-2
+Alejo,Steph,2023-03-14,DE-L1-16,Alejo,
+Steph,Alejo,2023-03-14,DE-L1-16,Alejo,
 Alejo,Steph,2023-07-25,poule,Steph,3-5
 Steph,Alejo,2023-07-25,poule,Steph,3-5
 Alejo,Steph,2023-09-05,poule,Steph,3-5
@@ -2985,8 +3003,6 @@ Alejo,Steph,2026-04-14,DE-L13-16,Steph,
 Steph,Alejo,2026-04-14,DE-L13-16,Steph,
 Alejo,Steph,2026-05-26,DE-L1-8,Alejo,
 Steph,Alejo,2026-05-26,DE-L1-8,Alejo,
-Alejo,Stephen M,2023-03-14,DE-L1-16,Alejo,
-Stephen M,Alejo,2023-03-14,DE-L1-16,Alejo,
 Alejo,Tariq,2025-03-11,DE-L1-2,Tariq,
 Tariq,Alejo,2025-03-11,DE-L1-2,Tariq,
 Alejo,Thea,2024-06-25,DE-L1-16,Alejo,
@@ -3095,6 +3111,18 @@ Alejo,Tom T,2026-05-12,poule,Tom T,2-5
 Tom T,Alejo,2026-05-12,poule,Tom T,2-5
 Alejo,Tom T,2026-05-19,poule,Tom T,4-5
 Tom T,Alejo,2026-05-19,poule,Tom T,4-5
+Alejo,Truuvy,2023-07-11,poule,Alejo,5-3
+Truuvy,Alejo,2023-07-11,poule,Alejo,5-3
+Alejo,Truuvy,2023-07-18,DE-L1-16,Alejo,
+Truuvy,Alejo,2023-07-18,DE-L1-16,Alejo,
+Alejo,Truuvy,2023-07-25,poule,Truuvy,4-5
+Truuvy,Alejo,2023-07-25,poule,Truuvy,4-5
+Alejo,Truuvy,2023-07-25,DE-L5-6,Truuvy,
+Truuvy,Alejo,2023-07-25,DE-L5-6,Truuvy,
+Alejo,Truuvy,2024-10-08,DE-L1-8,Truuvy,
+Truuvy,Alejo,2024-10-08,DE-L1-8,Truuvy,
+Alejo,Truuvy,2024-11-26,poule,Truuvy,4-5
+Truuvy,Alejo,2024-11-26,poule,Truuvy,4-5
 Alejo,Truuvy,2024-12-17,poule,Alejo,5-3
 Truuvy,Alejo,2024-12-17,poule,Alejo,5-3
 Alejo,Truuvy,2025-01-07,DE-L9-12,Alejo,
@@ -3397,8 +3425,6 @@ Aleks,Alex A,2023-07-25,poule,Alex A,?-5
 Alex A,Aleks,2023-07-25,poule,Alex A,?-5
 Aleks,Alex A,2023-07-25,DE-L1-16,Alex A,
 Alex A,Aleks,2023-07-25,DE-L1-16,Alex A,
-Aleks,Alex T,2023-07-25,poule,Alex T,2-5
-Alex T,Aleks,2023-07-25,poule,Alex T,2-5
 Aleks,Andy H,2023-01-24,poule,Andy H,4-5
 Andy H,Aleks,2023-01-24,poule,Andy H,4-5
 Aleks,Andy H,2024-09-17,DE-L9-12,Andy H,
@@ -3617,6 +3643,8 @@ Aleks,Steph,2023-01-24,poule,Steph,?-5
 Steph,Aleks,2023-01-24,poule,Steph,?-5
 Aleks,Steph,2023-01-31,poule,Steph,2-5
 Steph,Aleks,2023-01-31,poule,Steph,2-5
+Aleks,Steph,2023-03-14,poule,Aleks,5-3
+Steph,Aleks,2023-03-14,poule,Aleks,5-3
 Aleks,Steph,2023-03-14,poule,Steph,4-5
 Steph,Aleks,2023-03-14,poule,Steph,4-5
 Aleks,Steph,2023-04-11,poule,Steph,3-5
@@ -3627,8 +3655,6 @@ Aleks,Steph,2023-04-25,poule,Steph,2-5
 Steph,Aleks,2023-04-25,poule,Steph,2-5
 Aleks,Steph,2023-07-25,DE-L9-16,Aleks,
 Steph,Aleks,2023-07-25,DE-L9-16,Aleks,
-Aleks,Stephen M,2023-03-14,poule,Aleks,5-3
-Stephen M,Aleks,2023-03-14,poule,Aleks,5-3
 Aleks,Tom S,2023-01-24,poule,Tom S,1-5
 Tom S,Aleks,2023-01-24,poule,Tom S,1-5
 Aleks,Tom S,2023-01-24,DE-L1-32,Tom S,
@@ -3641,6 +3667,8 @@ Aleks,Tom S,2023-04-25,DE-L1-16,Tom S,
 Tom S,Aleks,2023-04-25,DE-L1-16,Tom S,
 Aleks,Tom S,2024-09-17,DE-L1-16,Tom S,
 Tom S,Aleks,2024-09-17,DE-L1-16,Tom S,
+Aleks,Truuvy,2023-07-25,poule,Truuvy,2-5
+Truuvy,Aleks,2023-07-25,poule,Truuvy,2-5
 Aleks,Vadym,2023-01-10,poule,Vadym,2-5
 Vadym,Aleks,2023-01-10,poule,Vadym,2-5
 Aleks,Vadym,2023-01-17,poule,Vadym,2-5
@@ -3709,16 +3737,14 @@ Alex A,Alex S,2023-07-11,poule,Alex S,4-5
 Alex S,Alex A,2023-07-11,poule,Alex S,4-5
 Alex A,Alex S,2023-07-11,DE-L1-4,Alex S,
 Alex S,Alex A,2023-07-11,DE-L1-4,Alex S,
-Alex A,Alex T,2023-07-11,poule,Alex T,4-5
-Alex T,Alex A,2023-07-11,poule,Alex T,4-5
-Alex A,Alex T,2023-07-25,poule,Alex T,3-5
-Alex T,Alex A,2023-07-25,poule,Alex T,3-5
 Alex A,Alex Y,2025-06-10,poule,Alex Y,3-5
 Alex Y,Alex A,2025-06-10,poule,Alex Y,3-5
 Alex A,Alex Y,2026-01-06,poule,Alex A,5-4
 Alex Y,Alex A,2026-01-06,poule,Alex A,5-4
 Alex A,Alex Y,2026-04-28,poule,Alex Y,2-5
 Alex Y,Alex A,2026-04-28,poule,Alex Y,2-5
+Alex A,Alex Y,2026-06-09,poule,Alex Y,4-5
+Alex Y,Alex A,2026-06-09,poule,Alex Y,4-5
 Alex A,Amaury,2023-10-03,poule,Alex A,5-3
 Amaury,Alex A,2023-10-03,poule,Alex A,5-3
 Alex A,Amaury,2023-12-05,poule,Alex A,5-3
@@ -3733,12 +3759,16 @@ Alex A,Andy H,2023-10-03,poule,Alex A,5-4
 Andy H,Alex A,2023-10-03,poule,Alex A,5-4
 Alex A,Andy R,2023-07-11,poule,Alex A,5-4
 Andy R,Alex A,2023-07-11,poule,Alex A,5-4
+Alex A,Angelica,2026-06-09,poule,Alex A,5-3
+Angelica,Alex A,2026-06-09,poule,Alex A,5-3
 Alex A,Anna A,2025-10-21,poule,Alex A,5-3
 Anna A,Alex A,2025-10-21,poule,Alex A,5-3
 Alex A,Anna A,2025-12-16,poule,Anna A,3-5
 Anna A,Alex A,2025-12-16,poule,Anna A,3-5
 Alex A,Anna A,2026-04-28,poule,Alex A,5-4
 Anna A,Alex A,2026-04-28,poule,Alex A,5-4
+Alex A,Anna A,2026-06-09,poule,Alex A,5-3
+Anna A,Alex A,2026-06-09,poule,Alex A,5-3
 Alex A,Anna Z,2023-06-27,poule,Alex A,5-3
 Anna Z,Alex A,2023-06-27,poule,Alex A,5-3
 Alex A,Anna Z,2023-07-11,poule,Alex A,5-4
@@ -3769,6 +3799,8 @@ Alex A,Anna Z,2025-12-16,poule,Alex A,5-4
 Anna Z,Alex A,2025-12-16,poule,Alex A,5-4
 Alex A,Anna Z,2026-04-28,poule,Anna Z,3-5
 Anna Z,Alex A,2026-04-28,poule,Anna Z,3-5
+Alex A,Anna Z,2026-06-09,poule,Alex A,5-2
+Anna Z,Alex A,2026-06-09,poule,Alex A,5-2
 Alex A,Caden,2025-11-04,poule,Alex A,5-4
 Caden,Alex A,2025-11-04,poule,Alex A,5-4
 Alex A,Caden,2025-12-16,poule,Alex A,5-4
@@ -3885,6 +3917,8 @@ Alex A,Eric L,2026-04-28,poule,Eric L,2-5
 Eric L,Alex A,2026-04-28,poule,Eric L,2-5
 Alex A,Eric L,2026-04-28,DE-L5-8,Eric L,
 Eric L,Alex A,2026-04-28,DE-L5-8,Eric L,
+Alex A,Eric L,2026-06-09,DE-L3-4,Eric L,
+Eric L,Alex A,2026-06-09,DE-L3-4,Eric L,
 Alex A,Etienne,2024-10-29,poule,Alex A,5-2
 Etienne,Alex A,2024-10-29,poule,Alex A,5-2
 Alex A,Eugene,2024-12-17,poule,Alex A,5-3
@@ -3907,6 +3941,8 @@ Alex A,Fassel,2025-12-16,poule,Alex A,5-3
 Fassel,Alex A,2025-12-16,poule,Alex A,5-3
 Alex A,Fassel,2026-01-06,poule,Alex A,5-3
 Fassel,Alex A,2026-01-06,poule,Alex A,5-3
+Alex A,Fedor,2026-06-09,poule,Alex A,5-4
+Fedor,Alex A,2026-06-09,poule,Alex A,5-4
 Alex A,Garen,2023-04-11,poule,Garen,2-5
 Garen,Alex A,2023-04-11,poule,Garen,2-5
 Alex A,Garen,2023-07-11,poule,Alex A,5-4
@@ -3977,6 +4013,8 @@ Alex A,Greg,2025-11-04,DE-L1-8,Greg,
 Greg,Alex A,2025-11-04,DE-L1-8,Greg,
 Alex A,Hugo,2023-04-11,poule,Alex A,5-3
 Hugo,Alex A,2023-04-11,poule,Alex A,5-3
+Alex A,Jack,2026-06-09,poule,Jack,2-5
+Jack,Alex A,2026-06-09,poule,Jack,2-5
 Alex A,John H,2024-10-29,poule,Alex A,5-4
 John H,Alex A,2024-10-29,poule,Alex A,5-4
 Alex A,John H,2025-07-15,poule,Alex A,5-4
@@ -4007,6 +4045,8 @@ Alex A,Kamal,2024-02-06,poule,Alex A,5-3
 Kamal,Alex A,2024-02-06,poule,Alex A,5-3
 Alex A,Kamal,2024-10-29,DE-L7-8,Kamal,
 Kamal,Alex A,2024-10-29,DE-L7-8,Kamal,
+Alex A,Kirill,2026-06-09,poule,Alex A,5-3
+Kirill,Alex A,2026-06-09,poule,Alex A,5-3
 Alex A,Kj,2023-03-07,poule,Alex A,5-2
 Kj,Alex A,2023-03-07,poule,Alex A,5-2
 Alex A,Kj,2023-06-27,poule,Alex A,5-3
@@ -4137,6 +4177,8 @@ Alex A,Richard B,2025-10-21,DE-L5-6,Richard B,
 Richard B,Alex A,2025-10-21,DE-L5-6,Richard B,
 Alex A,Richard B,2025-11-04,poule,Richard B,4-5
 Richard B,Alex A,2025-11-04,poule,Richard B,4-5
+Alex A,Richard B,2026-06-09,poule,Richard B,4-5
+Richard B,Alex A,2026-06-09,poule,Richard B,4-5
 Alex A,Roeland,2024-07-16,poule,Alex A,5-0
 Roeland,Alex A,2024-07-16,poule,Alex A,5-0
 Alex A,Roeland,2025-10-21,poule,Alex A,5-3
@@ -4173,6 +4215,8 @@ Alex A,Steph,2026-01-06,poule,Alex A,5-4
 Steph,Alex A,2026-01-06,poule,Alex A,5-4
 Alex A,Steph,2026-04-28,poule,Alex A,5-4
 Steph,Alex A,2026-04-28,poule,Alex A,5-4
+Alex A,Steph,2026-06-09,poule,Alex A,5-3
+Steph,Alex A,2026-06-09,poule,Alex A,5-3
 Alex A,Stephen Me,2023-03-07,poule,Alex A,5-4
 Stephen Me,Alex A,2023-03-07,poule,Alex A,5-4
 Alex A,Stephen Me,2023-03-07,DE-L7-8,Alex A,
@@ -4209,6 +4253,10 @@ Alex A,Tom S,2025-11-04,poule,Tom S,2-5
 Tom S,Alex A,2025-11-04,poule,Tom S,2-5
 Alex A,Tom S,2026-04-28,DE-L1-16,Alex A,
 Tom S,Alex A,2026-04-28,DE-L1-16,Alex A,
+Alex A,Tom S,2026-06-09,poule,Alex A,5-4
+Tom S,Alex A,2026-06-09,poule,Alex A,5-4
+Alex A,Tom S,2026-06-09,DE-L1-8,Alex A,
+Tom S,Alex A,2026-06-09,DE-L1-8,Alex A,
 Alex A,Tom T,2025-12-16,poule,Tom T,4-5
 Tom T,Alex A,2025-12-16,poule,Tom T,4-5
 Alex A,Tom T,2026-01-06,poule,Tom T,3-5
@@ -4217,6 +4265,16 @@ Alex A,Tom T,2026-01-06,DE-L1-8,Alex A,
 Tom T,Alex A,2026-01-06,DE-L1-8,Alex A,
 Alex A,Tom T,2026-04-28,DE-L1-8,Tom T,
 Tom T,Alex A,2026-04-28,DE-L1-8,Tom T,
+Alex A,Tom T,2026-06-09,DE-L1-4,Tom T,
+Tom T,Alex A,2026-06-09,DE-L1-4,Tom T,
+Alex A,Tony,2026-06-09,poule,Alex A,5-3
+Tony,Alex A,2026-06-09,poule,Alex A,5-3
+Alex A,Tony,2026-06-09,DE-L1-16,Alex A,
+Tony,Alex A,2026-06-09,DE-L1-16,Alex A,
+Alex A,Truuvy,2023-07-11,poule,Truuvy,4-5
+Truuvy,Alex A,2023-07-11,poule,Truuvy,4-5
+Alex A,Truuvy,2023-07-25,poule,Truuvy,3-5
+Truuvy,Alex A,2023-07-25,poule,Truuvy,3-5
 Alex A,Truuvy,2024-12-17,poule,Truuvy,2-5
 Truuvy,Alex A,2024-12-17,poule,Truuvy,2-5
 Alex A,Truuvy,2025-04-29,poule,Truuvy,4-5
@@ -4245,6 +4303,8 @@ Alex A,Vadym,2025-06-10,poule,Alex A,5-3
 Vadym,Alex A,2025-06-10,poule,Alex A,5-3
 Alex A,Vadym,2026-01-06,poule,Alex A,5-3
 Vadym,Alex A,2026-01-06,poule,Alex A,5-3
+Alex A,Vadym,2026-06-09,poule,Alex A,5-2
+Vadym,Alex A,2026-06-09,poule,Alex A,5-2
 Alex A,Vincent,2023-06-27,poule,Alex A,5-3
 Vincent,Alex A,2023-06-27,poule,Alex A,5-3
 Alex A,Vincent,2023-06-27,DE-L5-8,Alex A,
@@ -4311,6 +4371,8 @@ Alex A,Will P,2025-11-04,DE-L5-6,Alex A,
 Will P,Alex A,2025-11-04,DE-L5-6,Alex A,
 Alex A,Will P,2026-04-28,DE-L7-8,Alex A,
 Will P,Alex A,2026-04-28,DE-L7-8,Alex A,
+Alex A,Will P,2026-06-09,poule,Alex A,5-4
+Will P,Alex A,2026-06-09,poule,Alex A,5-4
 Alex A,Will W,2025-12-16,poule,Will W,3-5
 Will W,Alex A,2025-12-16,poule,Will W,3-5
 Alex A,Willie,2025-10-21,poule,Willie,4-5
@@ -4349,8 +4411,6 @@ Alex N,Truuvy,2025-01-07,poule,Alex N,5-1
 Truuvy,Alex N,2025-01-07,poule,Alex N,5-1
 Alex N,Vivian,2025-01-07,poule,Alex N,5-4
 Vivian,Alex N,2025-01-07,poule,Alex N,5-4
-Alex S,Alex T,2023-07-11,poule,Alex S,5-3
-Alex T,Alex S,2023-07-11,poule,Alex S,5-3
 Alex S,Andy R,2023-07-11,poule,Alex S,5-1
 Andy R,Alex S,2023-07-11,poule,Alex S,5-1
 Alex S,Eric L,2023-07-11,poule,Eric L,4-5
@@ -4371,234 +4431,12 @@ Alex S,Nat,2023-07-11,DE-L1-16,Alex S,
 Nat,Alex S,2023-07-11,DE-L1-16,Alex S,
 Alex S,Tom S,2023-07-11,poule,Alex S,5-4
 Tom S,Alex S,2023-07-11,poule,Alex S,5-4
+Alex S,Truuvy,2023-07-11,poule,Alex S,5-3
+Truuvy,Alex S,2023-07-11,poule,Alex S,5-3
 Alex S,Vadym,2023-07-11,poule,Alex S,5-2
 Vadym,Alex S,2023-07-11,poule,Alex S,5-2
 Alex S,Vincent,2023-07-11,poule,Vincent,2-5
 Vincent,Alex S,2023-07-11,poule,Vincent,2-5
-Alex T,Amaury,2024-10-22,poule,Alex T,5-4
-Amaury,Alex T,2024-10-22,poule,Alex T,5-4
-Alex T,Andy R,2023-07-11,poule,Alex T,5-4
-Andy R,Alex T,2023-07-11,poule,Alex T,5-4
-Alex T,Andy R,2023-07-11,DE-L1-16,Alex T,
-Andy R,Alex T,2023-07-11,DE-L1-16,Alex T,
-Alex T,Anna Z,2024-10-08,poule,Anna Z,1-5
-Anna Z,Alex T,2024-10-08,poule,Anna Z,1-5
-Alex T,Anna Z,2024-10-22,poule,Alex T,5-4
-Anna Z,Alex T,2024-10-22,poule,Alex T,5-4
-Alex T,Anna Z,2024-11-12,poule,Alex T,5-4
-Anna Z,Alex T,2024-11-12,poule,Alex T,5-4
-Alex T,Anna Z,2024-11-12,DE-L1-8,Alex T,
-Anna Z,Alex T,2024-11-12,DE-L1-8,Alex T,
-Alex T,Anna Z,2024-11-26,poule,Alex T,5-4
-Anna Z,Alex T,2024-11-26,poule,Alex T,5-4
-Alex T,Anna Z,2024-11-26,DE-L5-6,Alex T,
-Anna Z,Alex T,2024-11-26,DE-L5-6,Alex T,
-Alex T,Charlie,2024-10-08,poule,Charlie,4-5
-Charlie,Alex T,2024-10-08,poule,Charlie,4-5
-Alex T,Charlie,2024-10-22,poule,Charlie,?-5
-Charlie,Alex T,2024-10-22,poule,Charlie,?-5
-Alex T,Charlie,2024-11-19,poule,Charlie,3-5
-Charlie,Alex T,2024-11-19,poule,Charlie,3-5
-Alex T,Charlie,2024-11-19,DE-L1-4,Alex T,
-Charlie,Alex T,2024-11-19,DE-L1-4,Alex T,
-Alex T,Chrissy,2024-11-19,poule,Alex T,5-2
-Chrissy,Alex T,2024-11-19,poule,Alex T,5-2
-Alex T,Colin R,2024-10-08,poule,Colin R,4-5
-Colin R,Alex T,2024-10-08,poule,Colin R,4-5
-Alex T,Colin R,2024-11-12,poule,Alex T,5-2
-Colin R,Alex T,2024-11-12,poule,Alex T,5-2
-Alex T,Colin R,2024-11-19,poule,Alex T,5-4
-Colin R,Alex T,2024-11-19,poule,Alex T,5-4
-Alex T,Colin R,2024-11-19,DE-L1-8,Alex T,
-Colin R,Alex T,2024-11-19,DE-L1-8,Alex T,
-Alex T,Colin R,2024-11-26,poule,Alex T,5-4
-Colin R,Alex T,2024-11-26,poule,Alex T,5-4
-Alex T,Colin R,2024-11-26,DE-L5-8,Alex T,
-Colin R,Alex T,2024-11-26,DE-L5-8,Alex T,
-Alex T,Dalal,2024-11-19,DE-L1-16,Alex T,
-Dalal,Alex T,2024-11-19,DE-L1-16,Alex T,
-Alex T,Darran,2024-10-08,poule,Darran,3-5
-Darran,Alex T,2024-10-08,poule,Darran,3-5
-Alex T,Darran,2024-11-12,poule,Alex T,5-4
-Darran,Alex T,2024-11-12,poule,Alex T,5-4
-Alex T,Edo,2023-07-18,poule,Alex T,5-4
-Edo,Alex T,2023-07-18,poule,Alex T,5-4
-Alex T,Edo,2023-07-18,DE-L9-10,Alex T,
-Edo,Alex T,2023-07-18,DE-L9-10,Alex T,
-Alex T,Emma,2024-11-26,poule,Alex T,5-1
-Emma,Alex T,2024-11-26,poule,Alex T,5-1
-Alex T,Eric L,2023-07-11,poule,Alex T,5-2
-Eric L,Alex T,2023-07-11,poule,Alex T,5-2
-Alex T,Eric L,2023-07-11,DE-L5-6,Alex T,
-Eric L,Alex T,2023-07-11,DE-L5-6,Alex T,
-Alex T,Eric L,2023-07-18,poule,Alex T,5-4
-Eric L,Alex T,2023-07-18,poule,Alex T,5-4
-Alex T,Etienne,2024-11-26,poule,Alex T,5-2
-Etienne,Alex T,2024-11-26,poule,Alex T,5-2
-Alex T,Eugene,2024-10-08,poule,Alex T,5-1
-Eugene,Alex T,2024-10-08,poule,Alex T,5-1
-Alex T,Eugene,2024-10-15,poule,Alex T,5-3
-Eugene,Alex T,2024-10-15,poule,Alex T,5-3
-Alex T,Eugene,2024-11-12,DE-L1-16,Alex T,
-Eugene,Alex T,2024-11-12,DE-L1-16,Alex T,
-Alex T,Flavia,2024-11-19,poule,Alex T,5-3
-Flavia,Alex T,2024-11-19,poule,Alex T,5-3
-Alex T,Garen,2024-10-15,poule,Garen,3-5
-Garen,Alex T,2024-10-15,poule,Garen,3-5
-Alex T,Garen,2024-11-12,poule,Garen,3-5
-Garen,Alex T,2024-11-12,poule,Garen,3-5
-Alex T,Garen,2024-11-19,poule,Alex T,5-3
-Garen,Alex T,2024-11-19,poule,Alex T,5-3
-Alex T,Georgina,2023-07-18,poule,Georgina,2-5
-Georgina,Alex T,2023-07-18,poule,Georgina,2-5
-Alex T,Giles,2024-10-15,DE-L1-16,Alex T,
-Giles,Alex T,2024-10-15,DE-L1-16,Alex T,
-Alex T,Greg,2023-07-25,poule,Greg,4-5
-Greg,Alex T,2023-07-25,poule,Greg,4-5
-Alex T,Greg,2024-10-08,DE-L1-4,Alex T,
-Greg,Alex T,2024-10-08,DE-L1-4,Alex T,
-Alex T,Greg,2024-10-22,poule,Greg,1-5
-Greg,Alex T,2024-10-22,poule,Greg,1-5
-Alex T,Greg,2024-11-12,DE-L1-2,Greg,
-Greg,Alex T,2024-11-12,DE-L1-2,Greg,
-Alex T,Greg,2024-11-19,poule,Greg,1-5
-Greg,Alex T,2024-11-19,poule,Greg,1-5
-Alex T,Greg,2024-11-19,DE-L1-2,Greg,
-Greg,Alex T,2024-11-19,DE-L1-2,Greg,
-Alex T,Greg,2024-11-26,poule,Alex T,5-3
-Greg,Alex T,2024-11-26,poule,Alex T,5-3
-Alex T,Hugo,2023-07-11,poule,Alex T,5-4
-Hugo,Alex T,2023-07-11,poule,Alex T,5-4
-Alex T,Hugo,2023-07-11,DE-L1-8,Hugo,
-Hugo,Alex T,2023-07-11,DE-L1-8,Hugo,
-Alex T,John H,2024-10-15,poule,Alex T,5-2
-John H,Alex T,2024-10-15,poule,Alex T,5-2
-Alex T,John H,2024-10-15,DE-L7-8,John H,
-John H,Alex T,2024-10-15,DE-L7-8,John H,
-Alex T,John H,2024-10-22,poule,Alex T,5-3
-John H,Alex T,2024-10-22,poule,Alex T,5-3
-Alex T,Kamal,2023-07-11,poule,Alex T,5-4
-Kamal,Alex T,2023-07-11,poule,Alex T,5-4
-Alex T,Kamal,2023-07-18,poule,Kamal,3-5
-Kamal,Alex T,2023-07-18,poule,Kamal,3-5
-Alex T,Kamal,2023-07-18,DE-L9-16,Alex T,
-Kamal,Alex T,2023-07-18,DE-L9-16,Alex T,
-Alex T,Kamal,2024-10-08,poule,Alex T,5-3
-Kamal,Alex T,2024-10-08,poule,Alex T,5-3
-Alex T,Kamal,2024-10-22,poule,Alex T,5-3
-Kamal,Alex T,2024-10-22,poule,Alex T,5-3
-Alex T,Kamal,2024-10-22,DE-L7-8,Alex T,
-Kamal,Alex T,2024-10-22,DE-L7-8,Alex T,
-Alex T,Kamal,2024-11-12,poule,Alex T,5-2
-Kamal,Alex T,2024-11-12,poule,Alex T,5-2
-Alex T,Lindsey,2023-07-25,poule,Alex T,5-1
-Lindsey,Alex T,2023-07-25,poule,Alex T,5-1
-Alex T,Lindsey,2023-07-25,DE-L1-16,Alex T,
-Lindsey,Alex T,2023-07-25,DE-L1-16,Alex T,
-Alex T,Lionel,2023-07-18,poule,Lionel,3-5
-Lionel,Alex T,2023-07-18,poule,Lionel,3-5
-Alex T,Lionel,2024-11-26,poule,Lionel,2-5
-Lionel,Alex T,2024-11-26,poule,Lionel,2-5
-Alex T,Maxie,2024-10-15,poule,Alex T,5-4
-Maxie,Alex T,2024-10-15,poule,Alex T,5-4
-Alex T,Maxie,2024-11-12,poule,Alex T,5-4
-Maxie,Alex T,2024-11-12,poule,Alex T,5-4
-Alex T,Naoki,2023-07-11,poule,Alex T,5-3
-Naoki,Alex T,2023-07-11,poule,Alex T,5-3
-Alex T,Naoki,2023-07-11,DE-L5-8,Alex T,
-Naoki,Alex T,2023-07-11,DE-L5-8,Alex T,
-Alex T,Naoki,2023-07-25,poule,Alex T,5-3
-Naoki,Alex T,2023-07-25,poule,Alex T,5-3
-Alex T,Nat,2023-07-25,poule,Alex T,5-1
-Nat,Alex T,2023-07-25,poule,Alex T,5-1
-Alex T,Pablo,2024-10-15,poule,Alex T,5-4
-Pablo,Alex T,2024-10-15,poule,Alex T,5-4
-Alex T,Pierre,2023-07-25,poule,Alex T,5-1
-Pierre,Alex T,2023-07-25,poule,Alex T,5-1
-Alex T,Pierre,2023-07-25,DE-L5-8,Alex T,
-Pierre,Alex T,2023-07-25,DE-L5-8,Alex T,
-Alex T,Pierre,2024-10-08,poule,Pierre,4-5
-Pierre,Alex T,2024-10-08,poule,Pierre,4-5
-Alex T,Pierre,2024-10-15,poule,Pierre,3-5
-Pierre,Alex T,2024-10-15,poule,Pierre,3-5
-Alex T,Pierre,2024-10-15,DE-L1-8,Pierre,
-Pierre,Alex T,2024-10-15,DE-L1-8,Pierre,
-Alex T,Pierre,2024-10-22,poule,Pierre,?-5
-Pierre,Alex T,2024-10-22,poule,Pierre,?-5
-Alex T,Pierre,2024-10-22,DE-L1-8,Pierre,
-Pierre,Alex T,2024-10-22,DE-L1-8,Pierre,
-Alex T,Pierre,2024-11-12,poule,Alex T,5-3
-Pierre,Alex T,2024-11-12,poule,Alex T,5-3
-Alex T,Pierre,2024-11-19,poule,Pierre,2-5
-Pierre,Alex T,2024-11-19,poule,Pierre,2-5
-Alex T,Richard B,2024-10-08,poule,Alex T,5-3
-Richard B,Alex T,2024-10-08,poule,Alex T,5-3
-Alex T,Richard B,2024-11-12,poule,Alex T,5-1
-Richard B,Alex T,2024-11-12,poule,Alex T,5-1
-Alex T,Richard B,2024-11-19,poule,Alex T,5-2
-Richard B,Alex T,2024-11-19,poule,Alex T,5-2
-Alex T,Richard B,2024-11-26,poule,Alex T,5-4
-Richard B,Alex T,2024-11-26,poule,Alex T,5-4
-Alex T,Roeland,2024-10-15,poule,Alex T,5-4
-Roeland,Alex T,2024-10-15,poule,Alex T,5-4
-Alex T,Roeland,2024-10-22,DE-L5-8,Roeland,
-Roeland,Alex T,2024-10-22,DE-L5-8,Roeland,
-Alex T,Sameer,2023-07-18,poule,Sameer,4-5
-Sameer,Alex T,2023-07-18,poule,Sameer,4-5
-Alex T,Steph,2024-10-08,DE-L1-16,Alex T,
-Steph,Alex T,2024-10-08,DE-L1-16,Alex T,
-Alex T,Steph,2024-11-12,poule,Alex T,5-4
-Steph,Alex T,2024-11-12,poule,Alex T,5-4
-Alex T,Steph,2024-11-19,poule,Alex T,5-2
-Steph,Alex T,2024-11-19,poule,Alex T,5-2
-Alex T,Steph,2024-11-26,poule,Alex T,5-2
-Steph,Alex T,2024-11-26,poule,Alex T,5-2
-Alex T,Steph,2024-11-26,DE-L1-8,Steph,
-Steph,Alex T,2024-11-26,DE-L1-8,Steph,
-Alex T,Tom S,2023-07-25,poule,Alex T,5-0
-Tom S,Alex T,2023-07-25,poule,Alex T,5-0
-Alex T,Tom S,2023-07-25,DE-L1-8,Tom S,
-Tom S,Alex T,2023-07-25,DE-L1-8,Tom S,
-Alex T,Vadym,2023-07-11,poule,Alex T,5-4
-Vadym,Alex T,2023-07-11,poule,Alex T,5-4
-Alex T,Vadym,2023-07-18,poule,Alex T,5-2
-Vadym,Alex T,2023-07-18,poule,Alex T,5-2
-Alex T,Vadym,2023-07-18,DE-L9-12,Alex T,
-Vadym,Alex T,2023-07-18,DE-L9-12,Alex T,
-Alex T,Vadym,2023-07-25,poule,Alex T,5-4
-Vadym,Alex T,2023-07-25,poule,Alex T,5-4
-Alex T,Vadym,2024-10-08,poule,Alex T,5-4
-Vadym,Alex T,2024-10-08,poule,Alex T,5-4
-Alex T,Vadym,2024-10-22,poule,Vadym,4-5
-Vadym,Alex T,2024-10-22,poule,Vadym,4-5
-Alex T,Vadym,2024-11-12,poule,Alex T,5-2
-Vadym,Alex T,2024-11-12,poule,Alex T,5-2
-Alex T,Vadym,2024-11-12,DE-L1-4,Alex T,
-Vadym,Alex T,2024-11-12,DE-L1-4,Alex T,
-Alex T,Vadym,2024-11-19,poule,Alex T,5-4
-Vadym,Alex T,2024-11-19,poule,Alex T,5-4
-Alex T,Vincent,2023-07-11,poule,Alex T,5-3
-Vincent,Alex T,2023-07-11,poule,Alex T,5-3
-Alex T,Vincent,2023-07-18,poule,Vincent,3-5
-Vincent,Alex T,2023-07-18,poule,Vincent,3-5
-Alex T,Vincent,2023-07-25,poule,Alex T,5-3
-Vincent,Alex T,2023-07-25,poule,Alex T,5-3
-Alex T,Vivian,2024-10-08,poule,Vivian,4-5
-Vivian,Alex T,2024-10-08,poule,Vivian,4-5
-Alex T,Vivian,2024-10-08,DE-L1-2,Alex T,
-Vivian,Alex T,2024-10-08,DE-L1-2,Alex T,
-Alex T,Vivian,2024-10-15,poule,Alex T,5-3
-Vivian,Alex T,2024-10-15,poule,Alex T,5-3
-Alex T,Vivian,2024-10-15,DE-L5-8,Vivian,
-Vivian,Alex T,2024-10-15,DE-L5-8,Vivian,
-Alex T,Vivian,2024-10-22,poule,Alex T,5-3
-Vivian,Alex T,2024-10-22,poule,Alex T,5-3
-Alex T,Vivian,2024-10-22,DE-L1-16,Alex T,
-Vivian,Alex T,2024-10-22,DE-L1-16,Alex T,
-Alex T,Vivian,2024-11-12,poule,Alex T,5-3
-Vivian,Alex T,2024-11-12,poule,Alex T,5-3
-Alex T,Vivian,2024-11-26,poule,Alex T,5-3
-Vivian,Alex T,2024-11-26,poule,Alex T,5-3
 Alex Y,Ali,2026-04-28,DE-L1-8,Alex Y,
 Ali,Alex Y,2026-04-28,DE-L1-8,Alex Y,
 Alex Y,Alix S,2026-01-27,poule,Alex Y,5-3
@@ -4627,8 +4465,12 @@ Alex Y,Andy R,2026-02-03,poule,Alex Y,5-1
 Andy R,Alex Y,2026-02-03,poule,Alex Y,5-1
 Alex Y,Andy R,2026-04-14,poule,Alex Y,5-3
 Andy R,Alex Y,2026-04-14,poule,Alex Y,5-3
+Alex Y,Andy R,2026-06-09,poule,Alex Y,5-2
+Andy R,Alex Y,2026-06-09,poule,Alex Y,5-2
 Alex Y,Angelica,2026-03-10,poule,Alex Y,5-1
 Angelica,Alex Y,2026-03-10,poule,Alex Y,5-1
+Alex Y,Angelica,2026-06-09,poule,Alex Y,5-1
+Angelica,Alex Y,2026-06-09,poule,Alex Y,5-1
 Alex Y,Anna A,2025-12-02,poule,Alex Y,5-3
 Anna A,Alex Y,2025-12-02,poule,Alex Y,5-3
 Alex Y,Anna A,2025-12-02,DE-L9-16,Alex Y,
@@ -4659,6 +4501,10 @@ Alex Y,Anna Z,2026-04-21,poule,Alex Y,5-0
 Anna Z,Alex Y,2026-04-21,poule,Alex Y,5-0
 Alex Y,Anna Z,2026-04-28,poule,Anna Z,4-5
 Anna Z,Alex Y,2026-04-28,poule,Anna Z,4-5
+Alex Y,Anna Z,2026-06-09,poule,Anna Z,3-5
+Anna Z,Alex Y,2026-06-09,poule,Anna Z,3-5
+Alex Y,Anna Z,2026-06-09,DE-L5-8,Anna Z,
+Anna Z,Alex Y,2026-06-09,DE-L5-8,Anna Z,
 Alex Y,Benjamin,2026-04-14,poule,Alex Y,5-4
 Benjamin,Alex Y,2026-04-14,poule,Alex Y,5-4
 Alex Y,Caden,2026-01-06,poule,Alex Y,5-2
@@ -4771,8 +4617,14 @@ Alex Y,Fassel,2026-04-28,poule,Fassel,1-5
 Fassel,Alex Y,2026-04-28,poule,Fassel,1-5
 Alex Y,Fassel,2026-04-28,DE-L1-16,Alex Y,
 Fassel,Alex Y,2026-04-28,DE-L1-16,Alex Y,
+Alex Y,Fassel,2026-06-09,poule,Alex Y,5-1
+Fassel,Alex Y,2026-06-09,poule,Alex Y,5-1
+Alex Y,Fassel,2026-06-09,DE-L7-8,Alex Y,
+Fassel,Alex Y,2026-06-09,DE-L7-8,Alex Y,
 Alex Y,Fedor,2026-04-14,poule,Alex Y,5-2
 Fedor,Alex Y,2026-04-14,poule,Alex Y,5-2
+Alex Y,Fedor,2026-06-09,DE-L1-16,Alex Y,
+Fedor,Alex Y,2026-06-09,DE-L1-16,Alex Y,
 Alex Y,Fergus,2026-01-27,poule,Alex Y,5-2
 Fergus,Alex Y,2026-01-27,poule,Alex Y,5-2
 Alex Y,Fergus,2026-02-03,poule,Alex Y,5-1
@@ -4803,6 +4655,12 @@ Alex Y,Greg,2026-06-02,poule,Greg,3-5
 Greg,Alex Y,2026-06-02,poule,Greg,3-5
 Alex Y,Greg,2026-06-02,DE-L3-4,Greg,
 Greg,Alex Y,2026-06-02,DE-L3-4,Greg,
+Alex Y,Greg,2026-06-09,poule,Alex Y,5-3
+Greg,Alex Y,2026-06-09,poule,Alex Y,5-3
+Alex Y,Greg,2026-06-09,DE-L1-8,Greg,
+Greg,Alex Y,2026-06-09,DE-L1-8,Greg,
+Alex Y,Helen,2026-06-09,poule,Alex Y,5-1
+Helen,Alex Y,2026-06-09,poule,Alex Y,5-1
 Alex Y,Jack B,2026-01-20,poule,Jack B,3-5
 Jack B,Alex Y,2026-01-20,poule,Jack B,3-5
 Alex Y,James S,2026-03-03,poule,James S,4-5
@@ -4937,6 +4795,8 @@ Alex Y,Richard B,2026-03-03,DE-L1-16,Alex Y,
 Richard B,Alex Y,2026-03-03,DE-L1-16,Alex Y,
 Alex Y,Richard B,2026-04-21,poule,Richard B,3-5
 Richard B,Alex Y,2026-04-21,poule,Richard B,3-5
+Alex Y,Richard B,2026-06-09,poule,Alex Y,5-3
+Richard B,Alex Y,2026-06-09,poule,Alex Y,5-3
 Alex Y,Rita,2025-03-04,DE-L25-26,Rita,
 Rita,Alex Y,2025-03-04,DE-L25-26,Rita,
 Alex Y,Roeland,2025-05-06,DE-L1-32,Alex Y,
@@ -4959,6 +4819,8 @@ Alex Y,Shevy,2026-02-17,poule,Alex Y,5-3
 Shevy,Alex Y,2026-02-17,poule,Alex Y,5-3
 Alex Y,Shevy,2026-02-17,DE-L5-8,Alex Y,
 Shevy,Alex Y,2026-02-17,DE-L5-8,Alex Y,
+Alex Y,Shevy,2026-06-09,poule,Alex Y,5-4
+Shevy,Alex Y,2026-06-09,poule,Alex Y,5-4
 Alex Y,Steffi,2025-07-08,poule,Alex Y,5-3
 Steffi,Alex Y,2025-07-08,poule,Alex Y,5-3
 Alex Y,Steffi,2025-07-08,DE-L1-16,Alex Y,
@@ -5017,6 +4879,8 @@ Alex Y,Tom T,2026-06-02,poule,Tom T,1-5
 Tom T,Alex Y,2026-06-02,poule,Tom T,1-5
 Alex Y,Tom T,2026-06-02,DE-L1-8,Alex Y,
 Tom T,Alex Y,2026-06-02,DE-L1-8,Alex Y,
+Alex Y,Tom T,2026-06-09,poule,Tom T,3-5
+Tom T,Alex Y,2026-06-09,poule,Tom T,3-5
 Alex Y,Truuvy,2025-05-06,poule,Truuvy,3-5
 Truuvy,Alex Y,2025-05-06,poule,Truuvy,3-5
 Alex Y,Truuvy,2025-05-20,poule,Alex Y,5-2
@@ -5039,6 +4903,8 @@ Alex Y,Vadym,2026-03-10,DE-L1-4,Alex Y,
 Vadym,Alex Y,2026-03-10,DE-L1-4,Alex Y,
 Alex Y,Vadym,2026-04-14,DE-L7-8,Alex Y,
 Vadym,Alex Y,2026-04-14,DE-L7-8,Alex Y,
+Alex Y,Vadym,2026-06-09,poule,Alex Y,5-2
+Vadym,Alex Y,2026-06-09,poule,Alex Y,5-2
 Alex Y,Vincent,2025-12-02,poule,Vincent,4-5
 Vincent,Alex Y,2025-12-02,poule,Vincent,4-5
 Alex Y,Vincent,2026-01-20,poule,Alex Y,5-4
@@ -5099,6 +4965,8 @@ Alex Y,Vivian,2026-04-14,DE-L5-8,Vivian,
 Vivian,Alex Y,2026-04-14,DE-L5-8,Vivian,
 Alex Y,Vivian,2026-06-02,poule,Alex Y,5-2
 Vivian,Alex Y,2026-06-02,poule,Alex Y,5-2
+Alex Y,Vivian,2026-06-09,poule,Vivian,0-5
+Vivian,Alex Y,2026-06-09,poule,Vivian,0-5
 Alex Y,Vladimir,2026-04-21,poule,Alex Y,5-2
 Vladimir,Alex Y,2026-04-21,poule,Alex Y,5-2
 Alex Y,Will P,2025-05-06,poule,Alex Y,5-3
@@ -6101,6 +5969,8 @@ Amaury,Tom S,2025-06-17,poule,Amaury,5-2
 Tom S,Amaury,2025-06-17,poule,Amaury,5-2
 Amaury,Tom S,2025-06-17,DE-L5-8,Amaury,
 Tom S,Amaury,2025-06-17,DE-L5-8,Amaury,
+Amaury,Truuvy,2024-10-22,poule,Truuvy,4-5
+Truuvy,Amaury,2024-10-22,poule,Truuvy,4-5
 Amaury,Truuvy,2025-04-22,poule,Truuvy,2-5
 Truuvy,Amaury,2025-04-22,poule,Truuvy,2-5
 Amaury,Truuvy,2025-05-20,poule,Truuvy,?-5
@@ -6659,6 +6529,10 @@ Andy R,Anna Z,2026-02-24,poule,Anna Z,2-5
 Anna Z,Andy R,2026-02-24,poule,Anna Z,2-5
 Andy R,Anna Z,2026-05-26,poule,Anna Z,2-5
 Anna Z,Andy R,2026-05-26,poule,Anna Z,2-5
+Andy R,Anna Z,2026-06-09,poule,Anna Z,1-5
+Anna Z,Andy R,2026-06-09,poule,Anna Z,1-5
+Andy R,Anna Z,2026-06-09,DE-L1-32,Anna Z,
+Anna Z,Andy R,2026-06-09,DE-L1-32,Anna Z,
 Andy R,Annabel,2023-04-18,poule,Andy R,5-3
 Annabel,Andy R,2023-04-18,poule,Andy R,5-3
 Andy R,Annabel,2025-02-11,poule,Annabel,4-5
@@ -6855,6 +6729,8 @@ Andy R,Eugene,2026-02-03,poule,Eugene,4-5
 Eugene,Andy R,2026-02-03,poule,Eugene,4-5
 Andy R,Eugene,2026-06-02,poule,Eugene,1-5
 Eugene,Andy R,2026-06-02,poule,Eugene,1-5
+Andy R,Eugene,2026-06-09,poule,Eugene,1-5
+Eugene,Andy R,2026-06-09,poule,Eugene,1-5
 Andy R,Feddy,2024-12-03,poule,Feddy,3-5
 Feddy,Andy R,2024-12-03,poule,Feddy,3-5
 Andy R,Fedor,2026-05-26,DE-L9-16,Fedor,
@@ -6955,6 +6831,8 @@ Andy R,Greg,2026-04-14,poule,Greg,0-5
 Greg,Andy R,2026-04-14,poule,Greg,0-5
 Andy R,Greg,2026-05-19,DE-L1-16,Greg,
 Greg,Andy R,2026-05-19,DE-L1-16,Greg,
+Andy R,Helen,2026-06-09,DE-L21-24,Helen,
+Helen,Andy R,2026-06-09,DE-L21-24,Helen,
 Andy R,Hugo,2023-04-11,poule,Hugo,0-5
 Hugo,Andy R,2023-04-11,poule,Hugo,0-5
 Andy R,Hugo,2023-07-11,poule,Hugo,4-5
@@ -7041,6 +6919,8 @@ Andy R,Kirill,2026-05-19,poule,Kirill,4-5
 Kirill,Andy R,2026-05-19,poule,Kirill,4-5
 Andy R,Kirill,2026-05-26,poule,Andy R,5-2
 Kirill,Andy R,2026-05-26,poule,Andy R,5-2
+Andy R,Kirill,2026-06-09,DE-L17-32,Andy R,
+Kirill,Andy R,2026-06-09,DE-L17-32,Andy R,
 Andy R,Lance,2025-06-24,DE-L9-16,Lance,
 Lance,Andy R,2025-06-24,DE-L9-16,Lance,
 Andy R,Lindsey,2023-07-25,DE-L1-32,Lindsey,
@@ -7441,6 +7321,8 @@ Andy R,Steph,2026-04-14,DE-L1-32,Steph,
 Steph,Andy R,2026-04-14,DE-L1-32,Steph,
 Andy R,Steph,2026-05-26,poule,Steph,3-5
 Steph,Andy R,2026-05-26,poule,Steph,3-5
+Andy R,Steph,2026-06-09,poule,Steph,1-5
+Steph,Andy R,2026-06-09,poule,Steph,1-5
 Andy R,Thea,2023-11-14,DE-L11-12,Andy R,
 Thea,Andy R,2023-11-14,DE-L11-12,Andy R,
 Andy R,Thea,2023-12-12,DE-L13-14,Andy R,
@@ -7485,6 +7367,12 @@ Andy R,Tom T,2026-03-10,poule,Tom T,3-5
 Tom T,Andy R,2026-03-10,poule,Tom T,3-5
 Andy R,Tom T,2026-06-02,poule,Tom T,1-5
 Tom T,Andy R,2026-06-02,poule,Tom T,1-5
+Andy R,Tony,2026-06-09,poule,Tony,4-5
+Tony,Andy R,2026-06-09,poule,Tony,4-5
+Andy R,Truuvy,2023-07-11,poule,Truuvy,4-5
+Truuvy,Andy R,2023-07-11,poule,Truuvy,4-5
+Andy R,Truuvy,2023-07-11,DE-L1-16,Truuvy,
+Truuvy,Andy R,2023-07-11,DE-L1-16,Truuvy,
 Andy R,Truuvy,2024-12-10,poule,Truuvy,3-5
 Truuvy,Andy R,2024-12-10,poule,Truuvy,3-5
 Andy R,Truuvy,2024-12-17,poule,Truuvy,1-5
@@ -7551,6 +7439,10 @@ Andy R,Vadym,2025-05-13,poule,Vadym,2-5
 Vadym,Andy R,2025-05-13,poule,Vadym,2-5
 Andy R,Vadym,2026-05-26,poule,Vadym,2-5
 Vadym,Andy R,2026-05-26,poule,Vadym,2-5
+Andy R,Vadym,2026-06-09,poule,Vadym,2-5
+Vadym,Andy R,2026-06-09,poule,Vadym,2-5
+Andy R,Vadym,2026-06-09,DE-L17-24,Vadym,
+Vadym,Andy R,2026-06-09,DE-L17-24,Vadym,
 Andy R,Val,2025-02-11,poule,Val,1-5
 Val,Andy R,2025-02-11,poule,Val,1-5
 Andy R,Vanessa,2026-03-10,poule,Andy R,5-3
@@ -7621,6 +7513,8 @@ Angelica,Anna A,2026-03-03,poule,Anna A,3-5
 Anna A,Angelica,2026-03-03,poule,Anna A,3-5
 Angelica,Anna Z,2026-03-10,poule,Anna Z,2-5
 Anna Z,Angelica,2026-03-10,poule,Anna Z,2-5
+Angelica,Benjamin,2026-06-09,DE-L17-24,Benjamin,
+Benjamin,Angelica,2026-06-09,DE-L17-24,Benjamin,
 Angelica,Caden,2026-03-03,DE-L1-32,Angelica,
 Caden,Angelica,2026-03-03,DE-L1-32,Angelica,
 Angelica,Colin R,2026-03-03,poule,Colin R,3-5
@@ -7631,6 +7525,12 @@ Angelica,Colin R,2026-03-10,DE-L17-24,Colin R,
 Colin R,Angelica,2026-03-10,DE-L17-24,Colin R,
 Angelica,Eric L,2026-03-10,poule,Eric L,3-5
 Eric L,Angelica,2026-03-10,poule,Eric L,3-5
+Angelica,Eugene,2026-06-09,poule,Eugene,2-5
+Eugene,Angelica,2026-06-09,poule,Eugene,2-5
+Angelica,Fedor,2026-06-09,poule,Fedor,2-5
+Fedor,Angelica,2026-06-09,poule,Fedor,2-5
+Angelica,Helen,2026-06-09,DE-L21-22,Helen,
+Helen,Angelica,2026-06-09,DE-L21-22,Helen,
 Angelica,James S,2026-03-03,poule,James S,1-5
 James S,Angelica,2026-03-03,poule,James S,1-5
 Angelica,Joshua,2026-03-03,DE-L13-16,Joshua,
@@ -7641,16 +7541,22 @@ Angelica,Marg,2026-03-03,poule,Angelica,5-2
 Marg,Angelica,2026-03-03,poule,Angelica,5-2
 Angelica,Max V,2026-03-03,poule,Angelica,5-4
 Max V,Angelica,2026-03-03,poule,Angelica,5-4
+Angelica,Richard B,2026-06-09,DE-L1-32,Richard B,
+Richard B,Angelica,2026-06-09,DE-L1-32,Richard B,
 Angelica,Steph,2026-03-03,poule,Steph,3-5
 Steph,Angelica,2026-03-03,poule,Steph,3-5
 Angelica,Steph,2026-03-10,poule,Steph,3-5
 Steph,Angelica,2026-03-10,poule,Steph,3-5
 Angelica,Steph,2026-03-10,DE-L1-32,Steph,
 Steph,Angelica,2026-03-10,DE-L1-32,Steph,
+Angelica,Steph,2026-06-09,poule,Steph,2-5
+Steph,Angelica,2026-06-09,poule,Steph,2-5
 Angelica,Tom T,2026-03-10,poule,Angelica,5-4
 Tom T,Angelica,2026-03-10,poule,Angelica,5-4
 Angelica,Vivian,2026-03-03,DE-L1-16,Vivian,
 Vivian,Angelica,2026-03-03,DE-L1-16,Vivian,
+Angelica,Vivian,2026-06-09,poule,Vivian,4-5
+Vivian,Angelica,2026-06-09,poule,Vivian,4-5
 Anna A,Anna Z,2023-06-13,poule,Anna Z,0-5
 Anna Z,Anna A,2023-06-13,poule,Anna Z,0-5
 Anna A,Anna Z,2023-06-13,DE-L1-8,Anna Z,
@@ -7677,6 +7583,8 @@ Anna A,Anna Z,2026-04-28,poule,Anna Z,3-5
 Anna Z,Anna A,2026-04-28,poule,Anna Z,3-5
 Anna A,Anna Z,2026-05-05,poule,Anna A,5-3
 Anna Z,Anna A,2026-05-05,poule,Anna A,5-3
+Anna A,Anna Z,2026-06-09,poule,Anna A,5-3
+Anna Z,Anna A,2026-06-09,poule,Anna A,5-3
 Anna A,Caden,2026-04-14,poule,Anna A,5-3
 Caden,Anna A,2026-04-14,poule,Anna A,5-3
 Anna A,Caden,2026-04-28,poule,Caden,2-5
@@ -7737,6 +7645,8 @@ Anna A,Fedor,2026-04-14,poule,Anna A,5-3
 Fedor,Anna A,2026-04-14,poule,Anna A,5-3
 Anna A,Fedor,2026-05-05,poule,Anna A,5-3
 Fedor,Anna A,2026-05-05,poule,Anna A,5-3
+Anna A,Fedor,2026-06-09,poule,Anna A,5-3
+Fedor,Anna A,2026-06-09,poule,Anna A,5-3
 Anna A,Fergus,2026-02-10,DE-L13-16,Fergus,
 Fergus,Anna A,2026-02-10,DE-L13-16,Fergus,
 Anna A,Garen,2023-06-13,poule,Garen,2-5
@@ -7811,6 +7721,8 @@ Anna A,Kirill,2026-03-17,poule,Anna A,5-3
 Kirill,Anna A,2026-03-17,poule,Anna A,5-3
 Anna A,Kirill,2026-04-21,poule,Anna A,5-4
 Kirill,Anna A,2026-04-21,poule,Anna A,5-4
+Anna A,Kirill,2026-06-09,poule,Anna A,5-4
+Kirill,Anna A,2026-06-09,poule,Anna A,5-4
 Anna A,Lance,2025-01-28,poule,Anna A,5-1
 Lance,Anna A,2025-01-28,poule,Anna A,5-1
 Anna A,Lionel,2024-02-20,poule,Anna A,5-2
@@ -7859,6 +7771,8 @@ Anna A,Marg,2026-04-28,poule,Anna A,5-2
 Marg,Anna A,2026-04-28,poule,Anna A,5-2
 Anna A,Marg,2026-05-05,poule,Anna A,5-1
 Marg,Anna A,2026-05-05,poule,Anna A,5-1
+Anna A,Marg,2026-06-09,poule,Anna A,5-2
+Marg,Anna A,2026-06-09,poule,Anna A,5-2
 Anna A,Marinko,2025-12-02,poule,Anna A,5-4
 Marinko,Anna A,2025-12-02,poule,Anna A,5-4
 Anna A,Marinko,2026-04-21,DE-L1-16,Anna A,
@@ -7927,6 +7841,8 @@ Anna A,Tom S,2025-10-07,poule,Anna A,5-4
 Tom S,Anna A,2025-10-07,poule,Anna A,5-4
 Anna A,Tom S,2026-01-20,DE-L1-32,Tom S,
 Tom S,Anna A,2026-01-20,DE-L1-32,Tom S,
+Anna A,Tom S,2026-06-09,poule,Anna A,5-2
+Tom S,Anna A,2026-06-09,poule,Anna A,5-2
 Anna A,Vadym,2023-06-13,poule,Anna A,5-4
 Vadym,Anna A,2023-06-13,poule,Anna A,5-4
 Anna A,Vadym,2026-03-17,DE-L3-4,Vadym,
@@ -8247,6 +8163,8 @@ Anna Z,Eric L,2026-02-17,DE-L1-16,Eric L,
 Eric L,Anna Z,2026-02-17,DE-L1-16,Eric L,
 Anna Z,Eric L,2026-04-21,poule,Eric L,2-5
 Eric L,Anna Z,2026-04-21,poule,Eric L,2-5
+Anna Z,Eric L,2026-06-09,DE-L1-8,Eric L,
+Eric L,Anna Z,2026-06-09,DE-L1-8,Eric L,
 Anna Z,Etienne,2023-10-17,DE-L11-12,Anna Z,
 Etienne,Anna Z,2023-10-17,DE-L11-12,Anna Z,
 Anna Z,Etienne,2024-09-24,DE-L1-16,Anna Z,
@@ -8275,6 +8193,8 @@ Anna Z,Fassel,2026-04-14,DE-L1-16,Fassel,
 Fassel,Anna Z,2026-04-14,DE-L1-16,Fassel,
 Anna Z,Fassel,2026-04-28,DE-L13-14,Anna Z,
 Fassel,Anna Z,2026-04-28,DE-L13-14,Anna Z,
+Anna Z,Fassel,2026-06-09,poule,Fassel,4-5
+Fassel,Anna Z,2026-06-09,poule,Fassel,4-5
 Anna Z,Feddy,2024-12-03,poule,Anna Z,5-1
 Feddy,Anna Z,2024-12-03,poule,Anna Z,5-1
 Anna Z,Fedor,2026-05-12,poule,Anna Z,5-3
@@ -8495,6 +8415,8 @@ Anna Z,Greg,2026-05-26,poule,Greg,0-5
 Greg,Anna Z,2026-05-26,poule,Greg,0-5
 Anna Z,Greg,2026-05-26,DE-L5-8,Greg,
 Greg,Anna Z,2026-05-26,DE-L5-8,Greg,
+Anna Z,Greg,2026-06-09,poule,Anna Z,5-4
+Greg,Anna Z,2026-06-09,poule,Anna Z,5-4
 Anna Z,Haya,2023-11-21,poule,Anna Z,5-2
 Haya,Anna Z,2023-11-21,poule,Anna Z,5-2
 Anna Z,Helen,2026-05-12,poule,Anna Z,5-0
@@ -8513,12 +8435,12 @@ Anna Z,Jack B,2026-01-20,DE-L1-32,Anna Z,
 Jack B,Anna Z,2026-01-20,DE-L1-32,Anna Z,
 Anna Z,James O,2024-07-09,DE-L1-8,James O,
 James O,Anna Z,2024-07-09,DE-L1-8,James O,
+Anna Z,John H,2024-05-07,poule,John H,4-5
+John H,Anna Z,2024-05-07,poule,John H,4-5
 Anna Z,John H,2024-06-18,DE-L1-8,John H,
 John H,Anna Z,2024-06-18,DE-L1-8,John H,
 Anna Z,John H,2024-11-05,poule,Anna Z,5-3
 John H,Anna Z,2024-11-05,poule,Anna Z,5-3
-Anna Z,Jon H,2024-05-07,poule,Jon H,4-5
-Jon H,Anna Z,2024-05-07,poule,Jon H,4-5
 Anna Z,Joshua,2025-12-09,poule,Anna Z,5-2
 Joshua,Anna Z,2025-12-09,poule,Anna Z,5-2
 Anna Z,Joshua,2026-02-17,poule,Anna Z,5-0
@@ -8733,6 +8655,8 @@ Anna Z,Marg,2026-04-28,poule,Anna Z,5-1
 Marg,Anna Z,2026-04-28,poule,Anna Z,5-1
 Anna Z,Marg,2026-05-05,poule,Anna Z,5-1
 Marg,Anna Z,2026-05-05,poule,Anna Z,5-1
+Anna Z,Marg,2026-06-09,poule,Anna Z,5-0
+Marg,Anna Z,2026-06-09,poule,Anna Z,5-0
 Anna Z,Marinko,2023-06-06,poule,Anna Z,5-1
 Marinko,Anna Z,2023-06-06,poule,Anna Z,5-1
 Anna Z,Marinko,2023-11-07,poule,Marinko,4-5
@@ -9163,6 +9087,8 @@ Anna Z,Steph,2026-02-03,DE-L1-16,Anna Z,
 Steph,Anna Z,2026-02-03,DE-L1-16,Anna Z,
 Anna Z,Steph,2026-03-10,DE-L7-8,Steph,
 Steph,Anna Z,2026-03-10,DE-L7-8,Steph,
+Anna Z,Steph,2026-06-09,DE-L1-16,Anna Z,
+Steph,Anna Z,2026-06-09,DE-L1-16,Anna Z,
 Anna Z,Thea,2023-10-10,poule,Anna Z,5-2
 Thea,Anna Z,2023-10-10,poule,Anna Z,5-2
 Anna Z,Thea,2023-11-14,poule,Anna Z,5-1
@@ -9253,6 +9179,10 @@ Anna Z,Tom S,2026-05-05,DE-L1-16,Anna Z,
 Tom S,Anna Z,2026-05-05,DE-L1-16,Anna Z,
 Anna Z,Tom S,2026-05-12,poule,Anna Z,5-3
 Tom S,Anna Z,2026-05-12,poule,Anna Z,5-3
+Anna Z,Tom S,2026-06-09,poule,Tom S,3-5
+Tom S,Anna Z,2026-06-09,poule,Tom S,3-5
+Anna Z,Tom S,2026-06-09,DE-L5-6,Anna Z,
+Tom S,Anna Z,2026-06-09,DE-L5-6,Anna Z,
 Anna Z,Tom T,2025-12-09,poule,Tom T,3-5
 Tom T,Anna Z,2025-12-09,poule,Tom T,3-5
 Anna Z,Tom T,2026-02-03,DE-L5-6,Anna Z,
@@ -9263,6 +9193,20 @@ Anna Z,Tom T,2026-04-14,poule,Tom T,2-5
 Tom T,Anna Z,2026-04-14,poule,Tom T,2-5
 Anna Z,Tom T,2026-05-12,DE-L1-8,Anna Z,
 Tom T,Anna Z,2026-05-12,DE-L1-8,Anna Z,
+Anna Z,Tony,2026-06-09,poule,Anna Z,5-2
+Tony,Anna Z,2026-06-09,poule,Anna Z,5-2
+Anna Z,Truuvy,2024-10-08,poule,Anna Z,5-1
+Truuvy,Anna Z,2024-10-08,poule,Anna Z,5-1
+Anna Z,Truuvy,2024-10-22,poule,Truuvy,4-5
+Truuvy,Anna Z,2024-10-22,poule,Truuvy,4-5
+Anna Z,Truuvy,2024-11-12,poule,Truuvy,4-5
+Truuvy,Anna Z,2024-11-12,poule,Truuvy,4-5
+Anna Z,Truuvy,2024-11-12,DE-L1-8,Truuvy,
+Truuvy,Anna Z,2024-11-12,DE-L1-8,Truuvy,
+Anna Z,Truuvy,2024-11-26,poule,Truuvy,4-5
+Truuvy,Anna Z,2024-11-26,poule,Truuvy,4-5
+Anna Z,Truuvy,2024-11-26,DE-L5-6,Truuvy,
+Truuvy,Anna Z,2024-11-26,DE-L5-6,Truuvy,
 Anna Z,Vadym,2023-01-31,poule,Anna Z,5-3
 Vadym,Anna Z,2023-01-31,poule,Anna Z,5-3
 Anna Z,Vadym,2023-01-31,DE-L1-16,Anna Z,
@@ -9567,8 +9511,16 @@ Ben Mcl,Vivian,2025-01-14,poule,Vivian,3-5
 Vivian,Ben Mcl,2025-01-14,poule,Vivian,3-5
 Ben Mcl,Vivian,2025-01-14,DE-L5-6,Ben Mcl,
 Vivian,Ben Mcl,2025-01-14,DE-L5-6,Ben Mcl,
+Benjamin,Eric L,2026-06-09,poule,Eric L,3-5
+Eric L,Benjamin,2026-06-09,poule,Eric L,3-5
+Benjamin,Eugene,2026-06-09,DE-L1-32,Eugene,
+Eugene,Benjamin,2026-06-09,DE-L1-32,Eugene,
 Benjamin,Fassel,2026-04-14,poule,Fassel,1-5
 Fassel,Benjamin,2026-04-14,poule,Fassel,1-5
+Benjamin,Fassel,2026-06-09,poule,Fassel,2-5
+Fassel,Benjamin,2026-06-09,poule,Fassel,2-5
+Benjamin,Fedor,2026-06-09,poule,Benjamin,5-2
+Fedor,Benjamin,2026-06-09,poule,Benjamin,5-2
 Benjamin,Greg,2026-04-14,poule,Greg,0-5
 Greg,Benjamin,2026-04-14,poule,Greg,0-5
 Benjamin,James S,2026-04-14,DE-L17-24,James S,
@@ -9577,12 +9529,24 @@ Benjamin,Kirill,2026-04-14,DE-L21-22,Benjamin,
 Kirill,Benjamin,2026-04-14,DE-L21-22,Benjamin,
 Benjamin,Marg,2026-04-14,poule,Benjamin,5-1
 Marg,Benjamin,2026-04-14,poule,Benjamin,5-1
+Benjamin,Marg,2026-06-09,DE-L17-20,Benjamin,
+Marg,Benjamin,2026-06-09,DE-L17-20,Benjamin,
+Benjamin,Max V,2026-06-09,poule,Max V,3-5
+Max V,Benjamin,2026-06-09,poule,Max V,3-5
 Benjamin,Richard B,2026-04-14,DE-L21-24,Benjamin,
 Richard B,Benjamin,2026-04-14,DE-L21-24,Benjamin,
 Benjamin,Sameer,2026-04-14,poule,Sameer,4-5
 Sameer,Benjamin,2026-04-14,poule,Sameer,4-5
+Benjamin,Shevy,2026-06-09,poule,Shevy,3-5
+Shevy,Benjamin,2026-06-09,poule,Shevy,3-5
+Benjamin,Steph,2026-06-09,poule,Steph,4-5
+Steph,Benjamin,2026-06-09,poule,Steph,4-5
 Benjamin,Tom T,2026-04-14,poule,Tom T,2-5
 Tom T,Benjamin,2026-04-14,poule,Tom T,2-5
+Benjamin,Tom T,2026-06-09,poule,Tom T,2-5
+Tom T,Benjamin,2026-06-09,poule,Tom T,2-5
+Benjamin,Vadym,2026-06-09,DE-L17-18,Vadym,
+Vadym,Benjamin,2026-06-09,DE-L17-18,Vadym,
 Benjamin,Vincent,2026-04-14,poule,Benjamin,5-2
 Vincent,Benjamin,2026-04-14,poule,Benjamin,5-2
 Benjamin,Vivian,2026-04-14,poule,Benjamin,5-4
@@ -11049,6 +11013,14 @@ Charlie,Tom T,2025-12-16,poule,Charlie,5-1
 Tom T,Charlie,2025-12-16,poule,Charlie,5-1
 Charlie,Tom T,2026-02-03,DE-L1-8,Charlie,
 Tom T,Charlie,2026-02-03,DE-L1-8,Charlie,
+Charlie,Truuvy,2024-10-08,poule,Charlie,5-4
+Truuvy,Charlie,2024-10-08,poule,Charlie,5-4
+Charlie,Truuvy,2024-10-22,poule,Charlie,5-?
+Truuvy,Charlie,2024-10-22,poule,Charlie,5-?
+Charlie,Truuvy,2024-11-19,poule,Charlie,5-3
+Truuvy,Charlie,2024-11-19,poule,Charlie,5-3
+Charlie,Truuvy,2024-11-19,DE-L1-4,Truuvy,
+Truuvy,Charlie,2024-11-19,DE-L1-4,Truuvy,
 Charlie,Truuvy,2025-01-14,poule,Truuvy,4-5
 Truuvy,Charlie,2025-01-14,poule,Truuvy,4-5
 Charlie,Truuvy,2025-01-21,poule,Charlie,5-3
@@ -11555,12 +11527,12 @@ Chrissy,Greg,2024-11-05,DE-L1-16,Greg,
 Greg,Chrissy,2024-11-05,DE-L1-16,Greg,
 Chrissy,Greg,2025-06-10,poule,Greg,1-5
 Greg,Chrissy,2025-06-10,poule,Greg,1-5
+Chrissy,John H,2024-05-07,poule,Chrissy,5-4
+John H,Chrissy,2024-05-07,poule,Chrissy,5-4
 Chrissy,John H,2024-10-29,poule,Chrissy,5-4
 John H,Chrissy,2024-10-29,poule,Chrissy,5-4
 Chrissy,John H,2024-11-05,DE-L9-12,John H,
 John H,Chrissy,2024-11-05,DE-L9-12,John H,
-Chrissy,Jon H,2024-05-07,poule,Chrissy,5-4
-Jon H,Chrissy,2024-05-07,poule,Chrissy,5-4
 Chrissy,Julia T,2024-01-16,poule,Julia T,4-5
 Julia T,Chrissy,2024-01-16,poule,Julia T,4-5
 Chrissy,Julia T,2024-01-30,poule,Julia T,4-5
@@ -11839,6 +11811,8 @@ Chrissy,Steph,2023-02-28,poule,Steph,2-5
 Steph,Chrissy,2023-02-28,poule,Steph,2-5
 Chrissy,Steph,2023-03-07,poule,Chrissy,5-3
 Steph,Chrissy,2023-03-07,poule,Chrissy,5-3
+Chrissy,Steph,2023-03-14,poule,Steph,3-5
+Steph,Chrissy,2023-03-14,poule,Steph,3-5
 Chrissy,Steph,2023-05-02,poule,Chrissy,5-4
 Steph,Chrissy,2023-05-02,poule,Chrissy,5-4
 Chrissy,Steph,2023-06-06,poule,Steph,4-5
@@ -11867,8 +11841,6 @@ Chrissy,Steph,2024-12-17,poule,Chrissy,5-3
 Steph,Chrissy,2024-12-17,poule,Chrissy,5-3
 Chrissy,Steph,2025-05-06,poule,Steph,3-5
 Steph,Chrissy,2025-05-06,poule,Steph,3-5
-Chrissy,Stephen M,2023-03-14,poule,Stephen M,3-5
-Stephen M,Chrissy,2023-03-14,poule,Stephen M,3-5
 Chrissy,Thea,2023-10-24,poule,Chrissy,5-4
 Thea,Chrissy,2023-10-24,poule,Chrissy,5-4
 Chrissy,Thea,2023-12-12,poule,Chrissy,5-2
@@ -11923,6 +11895,8 @@ Chrissy,Tom S,2025-05-20,poule,Tom S,1-5
 Tom S,Chrissy,2025-05-20,poule,Tom S,1-5
 Chrissy,Tom S,2025-06-10,poule,Tom S,3-5
 Tom S,Chrissy,2025-06-10,poule,Tom S,3-5
+Chrissy,Truuvy,2024-11-19,poule,Truuvy,2-5
+Truuvy,Chrissy,2024-11-19,poule,Truuvy,2-5
 Chrissy,Truuvy,2025-05-20,poule,Truuvy,2-5
 Truuvy,Chrissy,2025-05-20,poule,Truuvy,2-5
 Chrissy,Vadym,2023-01-17,poule,Vadym,4-5
@@ -13465,6 +13439,18 @@ Colin R,Tom T,2026-05-19,DE-L1-16,Tom T,
 Tom T,Colin R,2026-05-19,DE-L1-16,Tom T,
 Colin R,Tom T,2026-06-02,poule,Tom T,2-5
 Tom T,Colin R,2026-06-02,poule,Tom T,2-5
+Colin R,Truuvy,2024-10-08,poule,Colin R,5-4
+Truuvy,Colin R,2024-10-08,poule,Colin R,5-4
+Colin R,Truuvy,2024-11-12,poule,Truuvy,2-5
+Truuvy,Colin R,2024-11-12,poule,Truuvy,2-5
+Colin R,Truuvy,2024-11-19,poule,Truuvy,4-5
+Truuvy,Colin R,2024-11-19,poule,Truuvy,4-5
+Colin R,Truuvy,2024-11-19,DE-L1-8,Truuvy,
+Truuvy,Colin R,2024-11-19,DE-L1-8,Truuvy,
+Colin R,Truuvy,2024-11-26,poule,Truuvy,4-5
+Truuvy,Colin R,2024-11-26,poule,Truuvy,4-5
+Colin R,Truuvy,2024-11-26,DE-L5-8,Truuvy,
+Truuvy,Colin R,2024-11-26,DE-L5-8,Truuvy,
 Colin R,Truuvy,2024-12-10,poule,Truuvy,3-5
 Truuvy,Colin R,2024-12-10,poule,Truuvy,3-5
 Colin R,Truuvy,2025-03-04,poule,Truuvy,4-5
@@ -13771,6 +13757,8 @@ Dalal,Flavia,2024-11-19,DE-L13-16,Flavia,
 Flavia,Dalal,2024-11-19,DE-L13-16,Flavia,
 Dalal,Greg,2024-11-19,poule,Greg,0-5
 Greg,Dalal,2024-11-19,poule,Greg,0-5
+Dalal,Truuvy,2024-11-19,DE-L1-16,Truuvy,
+Truuvy,Dalal,2024-11-19,DE-L1-16,Truuvy,
 Dalal,Vadym,2024-11-19,DE-L9-16,Vadym,
 Vadym,Dalal,2024-11-19,DE-L9-16,Vadym,
 Dalal,Vivian,2024-11-19,poule,Vivian,2-5
@@ -14273,6 +14261,10 @@ Darran,Tom T,2026-05-12,poule,Tom T,4-5
 Tom T,Darran,2026-05-12,poule,Tom T,4-5
 Darran,Tom T,2026-05-12,DE-L1-16,Tom T,
 Tom T,Darran,2026-05-12,DE-L1-16,Tom T,
+Darran,Truuvy,2024-10-08,poule,Darran,5-3
+Truuvy,Darran,2024-10-08,poule,Darran,5-3
+Darran,Truuvy,2024-11-12,poule,Truuvy,4-5
+Truuvy,Darran,2024-11-12,poule,Truuvy,4-5
 Darran,Truuvy,2025-02-04,poule,Darran,5-4
 Truuvy,Darran,2025-02-04,poule,Darran,5-4
 Darran,Truuvy,2025-04-29,poule,Truuvy,4-5
@@ -14867,6 +14859,10 @@ Edo,Tom S,2024-06-18,poule,Edo,5-3
 Tom S,Edo,2024-06-18,poule,Edo,5-3
 Edo,Tom S,2024-07-02,DE-L1-8,Edo,
 Tom S,Edo,2024-07-02,DE-L1-8,Edo,
+Edo,Truuvy,2023-07-18,poule,Truuvy,4-5
+Truuvy,Edo,2023-07-18,poule,Truuvy,4-5
+Edo,Truuvy,2023-07-18,DE-L9-10,Truuvy,
+Truuvy,Edo,2023-07-18,DE-L9-10,Truuvy,
 Edo,Vadym,2023-01-10,poule,Edo,5-2
 Vadym,Edo,2023-01-10,poule,Edo,5-2
 Edo,Vadym,2023-02-07,poule,Edo,5-0
@@ -15039,6 +15035,8 @@ Elisabeth,Steph,2023-02-28,poule,Steph,2-5
 Steph,Elisabeth,2023-02-28,poule,Steph,2-5
 Elisabeth,Steph,2023-02-28,DE-L1-16,Steph,
 Steph,Elisabeth,2023-02-28,DE-L1-16,Steph,
+Elisabeth,Steph,2023-03-14,poule,Steph,2-5
+Steph,Elisabeth,2023-03-14,poule,Steph,2-5
 Elisabeth,Steph,2023-03-14,poule,Elisabeth,5-?
 Steph,Elisabeth,2023-03-14,poule,Elisabeth,5-?
 Elisabeth,Steph,2023-03-21,poule,Steph,3-5
@@ -15047,8 +15045,6 @@ Elisabeth,Steph,2023-06-13,poule,Steph,3-5
 Steph,Elisabeth,2023-06-13,poule,Steph,3-5
 Elisabeth,Steph,2023-06-27,poule,Steph,2-5
 Steph,Elisabeth,2023-06-27,poule,Steph,2-5
-Elisabeth,Stephen M,2023-03-14,poule,Stephen M,2-5
-Stephen M,Elisabeth,2023-03-14,poule,Stephen M,2-5
 Elisabeth,Stirling,2023-02-21,poule,Elisabeth,5-4
 Stirling,Elisabeth,2023-02-21,poule,Elisabeth,5-4
 Elisabeth,Stirling,2023-02-21,DE-L9-16,Stirling,
@@ -15155,6 +15151,8 @@ Emma,Tom S,2023-01-24,poule,Emma,5-1
 Tom S,Emma,2023-01-24,poule,Emma,5-1
 Emma,Tom S,2023-02-07,poule,Emma,5-3
 Tom S,Emma,2023-02-07,poule,Emma,5-3
+Emma,Truuvy,2024-11-26,poule,Truuvy,1-5
+Truuvy,Emma,2024-11-26,poule,Truuvy,1-5
 Emma,Vadym,2023-01-10,DE-L7-8,Vadym,
 Vadym,Emma,2023-01-10,DE-L7-8,Vadym,
 Emma,Vadym,2023-01-24,poule,Vadym,3-5
@@ -15913,6 +15911,8 @@ Eric L,Eugene,2026-05-12,poule,Eric L,5-1
 Eugene,Eric L,2026-05-12,poule,Eric L,5-1
 Eric L,Eugene,2026-06-02,poule,Eric L,5-3
 Eugene,Eric L,2026-06-02,poule,Eric L,5-3
+Eric L,Eugene,2026-06-09,poule,Eric L,5-0
+Eugene,Eric L,2026-06-09,poule,Eric L,5-0
 Eric L,Fassel,2025-11-04,poule,Fassel,1-5
 Fassel,Eric L,2025-11-04,poule,Fassel,1-5
 Eric L,Fassel,2025-12-02,DE-L1-8,Eric L,
@@ -15937,6 +15937,8 @@ Eric L,Fedor,2026-05-19,poule,Eric L,5-3
 Fedor,Eric L,2026-05-19,poule,Eric L,5-3
 Eric L,Fedor,2026-05-19,DE-L1-16,Eric L,
 Fedor,Eric L,2026-05-19,DE-L1-16,Eric L,
+Eric L,Fedor,2026-06-09,poule,Eric L,5-4
+Fedor,Eric L,2026-06-09,poule,Eric L,5-4
 Eric L,Fergus,2025-11-04,poule,Eric L,5-2
 Fergus,Eric L,2025-11-04,poule,Eric L,5-2
 Eric L,Fergus,2026-01-27,poule,Eric L,5-3
@@ -16065,6 +16067,10 @@ Eric L,Greg,2026-05-19,DE-L1-2,Greg,
 Greg,Eric L,2026-05-19,DE-L1-2,Greg,
 Eric L,Greg,2026-06-02,DE-L1-4,Eric L,
 Greg,Eric L,2026-06-02,DE-L1-4,Eric L,
+Eric L,Greg,2026-06-09,DE-L1-4,Greg,
+Greg,Eric L,2026-06-09,DE-L1-4,Greg,
+Eric L,Helen,2026-06-09,poule,Eric L,5-0
+Helen,Eric L,2026-06-09,poule,Eric L,5-0
 Eric L,Hugo,2025-01-07,poule,Eric L,5-1
 Hugo,Eric L,2025-01-07,poule,Eric L,5-1
 Eric L,Hugo,2025-03-04,DE-L3-4,Hugo,
@@ -16125,6 +16131,8 @@ Eric L,Joshua,2026-05-19,poule,Eric L,5-3
 Joshua,Eric L,2026-05-19,poule,Eric L,5-3
 Eric L,Joshua,2026-06-02,poule,Eric L,5-2
 Joshua,Eric L,2026-06-02,poule,Eric L,5-2
+Eric L,Joshua,2026-06-09,poule,Eric L,5-3
+Joshua,Eric L,2026-06-09,poule,Eric L,5-3
 Eric L,Julia T,2024-02-13,poule,Eric L,5-2
 Julia T,Eric L,2024-02-13,poule,Eric L,5-2
 Eric L,Julia T,2026-02-03,poule,Eric L,5-1
@@ -16163,6 +16171,8 @@ Eric L,Kirill,2026-05-12,poule,Eric L,5-1
 Kirill,Eric L,2026-05-12,poule,Eric L,5-1
 Eric L,Kirill,2026-06-02,poule,Eric L,5-1
 Kirill,Eric L,2026-06-02,poule,Eric L,5-1
+Eric L,Kirill,2026-06-09,poule,Eric L,5-0
+Kirill,Eric L,2026-06-09,poule,Eric L,5-0
 Eric L,Lance,2025-01-28,poule,Eric L,5-0
 Lance,Eric L,2025-01-28,poule,Eric L,5-0
 Eric L,Lance,2025-01-28,DE-L1-16,Eric L,
@@ -16261,6 +16271,8 @@ Eric L,Marg,2026-01-13,poule,Eric L,5-0
 Marg,Eric L,2026-01-13,poule,Eric L,5-0
 Eric L,Marg,2026-03-24,poule,Eric L,5-2
 Marg,Eric L,2026-03-24,poule,Eric L,5-2
+Eric L,Marg,2026-06-09,poule,Eric L,5-1
+Marg,Eric L,2026-06-09,poule,Eric L,5-1
 Eric L,Marinko,2025-03-04,poule,Eric L,5-1
 Marinko,Eric L,2025-03-04,poule,Eric L,5-1
 Eric L,Marinko,2025-03-25,poule,Eric L,5-0
@@ -16299,6 +16311,8 @@ Eric L,Max V,2026-03-24,poule,Eric L,5-3
 Max V,Eric L,2026-03-24,poule,Eric L,5-3
 Eric L,Max V,2026-04-28,DE-L1-16,Eric L,
 Max V,Eric L,2026-04-28,DE-L1-16,Eric L,
+Eric L,Max V,2026-06-09,DE-L1-16,Eric L,
+Max V,Eric L,2026-06-09,DE-L1-16,Eric L,
 Eric L,Maxie,2025-02-04,poule,Eric L,5-1
 Maxie,Eric L,2025-02-04,poule,Eric L,5-1
 Eric L,Maxie,2025-02-11,poule,Eric L,5-1
@@ -16425,6 +16439,8 @@ Eric L,Richard B,2026-01-27,poule,Eric L,5-4
 Richard B,Eric L,2026-01-27,poule,Eric L,5-4
 Eric L,Richard B,2026-02-10,DE-L1-16,Eric L,
 Richard B,Eric L,2026-02-10,DE-L1-16,Eric L,
+Eric L,Richard B,2026-06-09,poule,Eric L,5-0
+Richard B,Eric L,2026-06-09,poule,Eric L,5-0
 Eric L,Rita,2025-03-04,poule,Eric L,5-0
 Rita,Eric L,2025-03-04,poule,Eric L,5-0
 Eric L,Rob,2023-07-04,poule,Eric L,5-2
@@ -16489,6 +16505,8 @@ Eric L,Shevy,2025-10-07,poule,Eric L,5-3
 Shevy,Eric L,2025-10-07,poule,Eric L,5-3
 Eric L,Shevy,2026-04-21,poule,Eric L,5-1
 Shevy,Eric L,2026-04-21,poule,Eric L,5-1
+Eric L,Shevy,2026-06-09,poule,Eric L,5-3
+Shevy,Eric L,2026-06-09,poule,Eric L,5-3
 Eric L,Steph,2023-02-14,poule,Eric L,5-2
 Steph,Eric L,2023-02-14,poule,Eric L,5-2
 Eric L,Steph,2023-07-04,poule,Eric L,5-2
@@ -16595,6 +16613,8 @@ Eric L,Tom S,2026-05-12,poule,Eric L,5-3
 Tom S,Eric L,2026-05-12,poule,Eric L,5-3
 Eric L,Tom S,2026-06-02,poule,Eric L,5-3
 Tom S,Eric L,2026-06-02,poule,Eric L,5-3
+Eric L,Tom S,2026-06-09,poule,Tom S,3-5
+Tom S,Eric L,2026-06-09,poule,Tom S,3-5
 Eric L,Tom T,2025-12-16,poule,Eric L,5-3
 Tom T,Eric L,2025-12-16,poule,Eric L,5-3
 Eric L,Tom T,2026-01-06,poule,Eric L,5-2
@@ -16615,6 +16635,14 @@ Eric L,Tom T,2026-05-12,DE-L7-8,Tom T,
 Tom T,Eric L,2026-05-12,DE-L7-8,Tom T,
 Eric L,Tom T,2026-05-19,DE-L1-8,Eric L,
 Tom T,Eric L,2026-05-19,DE-L1-8,Eric L,
+Eric L,Tony,2026-06-09,poule,Eric L,5-3
+Tony,Eric L,2026-06-09,poule,Eric L,5-3
+Eric L,Truuvy,2023-07-11,poule,Truuvy,2-5
+Truuvy,Eric L,2023-07-11,poule,Truuvy,2-5
+Eric L,Truuvy,2023-07-11,DE-L5-6,Truuvy,
+Truuvy,Eric L,2023-07-11,DE-L5-6,Truuvy,
+Eric L,Truuvy,2023-07-18,poule,Truuvy,4-5
+Truuvy,Eric L,2023-07-18,poule,Truuvy,4-5
 Eric L,Truuvy,2025-01-14,poule,Truuvy,4-5
 Truuvy,Eric L,2025-01-14,poule,Truuvy,4-5
 Eric L,Truuvy,2025-01-21,poule,Truuvy,4-5
@@ -16807,6 +16835,8 @@ Eric L,Will P,2026-05-12,poule,Eric L,5-3
 Will P,Eric L,2026-05-12,poule,Eric L,5-3
 Eric L,Will P,2026-05-12,DE-L1-16,Eric L,
 Will P,Eric L,2026-05-12,DE-L1-16,Eric L,
+Eric L,Will P,2026-06-09,poule,Eric L,5-4
+Will P,Eric L,2026-06-09,poule,Eric L,5-4
 Eric L,Will W,2025-12-16,DE-L1-8,Eric L,
 Will W,Eric L,2025-12-16,DE-L1-8,Eric L,
 Eric L,Willie,2025-09-23,poule,Eric L,5-4
@@ -16917,10 +16947,10 @@ Etienne,Hugo,2025-02-25,DE-L7-8,Etienne,
 Hugo,Etienne,2025-02-25,DE-L7-8,Etienne,
 Etienne,Jenna,2025-10-14,poule,Etienne,5-?
 Jenna,Etienne,2025-10-14,poule,Etienne,5-?
+Etienne,John H,2024-05-07,poule,Etienne,5-3
+John H,Etienne,2024-05-07,poule,Etienne,5-3
 Etienne,John H,2024-10-29,DE-L1-32,Etienne,
 John H,Etienne,2024-10-29,DE-L1-32,Etienne,
-Etienne,Jon H,2024-05-07,poule,Etienne,5-3
-Jon H,Etienne,2024-05-07,poule,Etienne,5-3
 Etienne,Joshua,2025-03-25,DE-L17-24,Etienne,
 Joshua,Etienne,2025-03-25,DE-L17-24,Etienne,
 Etienne,Joshua,2025-05-13,DE-L13-16,Etienne,
@@ -17113,6 +17143,8 @@ Etienne,Tom S,2025-03-25,DE-L1-32,Tom S,
 Tom S,Etienne,2025-03-25,DE-L1-32,Tom S,
 Etienne,Tom S,2025-05-13,poule,Tom S,1-5
 Tom S,Etienne,2025-05-13,poule,Tom S,1-5
+Etienne,Truuvy,2024-11-26,poule,Truuvy,2-5
+Truuvy,Etienne,2024-11-26,poule,Truuvy,2-5
 Etienne,Truuvy,2025-02-25,poule,Truuvy,2-5
 Truuvy,Etienne,2025-02-25,poule,Truuvy,2-5
 Etienne,Truuvy,2025-05-13,poule,Etienne,5-3
@@ -17189,6 +17221,8 @@ Eugene,Fedor,2026-04-28,poule,Fedor,3-5
 Fedor,Eugene,2026-04-28,poule,Fedor,3-5
 Eugene,Fedor,2026-05-12,DE-L17-18,Fedor,
 Fedor,Eugene,2026-05-12,DE-L17-18,Fedor,
+Eugene,Fedor,2026-06-09,poule,Eugene,5-3
+Fedor,Eugene,2026-06-09,poule,Eugene,5-3
 Eugene,Fergus,2025-10-14,poule,Fergus,2-5
 Fergus,Eugene,2025-10-14,poule,Fergus,2-5
 Eugene,Fergus,2026-02-03,DE-L17-20,Fergus,
@@ -17369,6 +17403,8 @@ Eugene,Joshua,2026-05-12,poule,Eugene,5-1
 Joshua,Eugene,2026-05-12,poule,Eugene,5-1
 Eugene,Joshua,2026-05-12,DE-L17-20,Eugene,
 Joshua,Eugene,2026-05-12,DE-L17-20,Eugene,
+Eugene,Joshua,2026-06-09,poule,Joshua,3-5
+Joshua,Eugene,2026-06-09,poule,Joshua,3-5
 Eugene,Julia T,2026-02-10,DE-L21-22,Eugene,
 Julia T,Eugene,2026-02-10,DE-L21-22,Eugene,
 Eugene,Kamal,2024-06-11,poule,Eugene,5-4
@@ -17539,6 +17575,8 @@ Eugene,Max V,2026-02-24,DE-L15-16,Max V,
 Max V,Eugene,2026-02-24,DE-L15-16,Max V,
 Eugene,Max V,2026-06-02,DE-L11-12,Eugene,
 Max V,Eugene,2026-06-02,DE-L11-12,Eugene,
+Eugene,Max V,2026-06-09,poule,Max V,1-5
+Max V,Eugene,2026-06-09,poule,Max V,1-5
 Eugene,Maxie,2024-07-02,poule,Eugene,5-3
 Maxie,Eugene,2024-07-02,poule,Eugene,5-3
 Eugene,Maxie,2024-07-02,DE-L1-16,Maxie,
@@ -17733,6 +17771,8 @@ Eugene,Richard B,2026-02-24,poule,Richard B,4-5
 Richard B,Eugene,2026-02-24,poule,Richard B,4-5
 Eugene,Richard B,2026-02-24,DE-L13-16,Richard B,
 Richard B,Eugene,2026-02-24,DE-L13-16,Richard B,
+Eugene,Richard B,2026-06-09,DE-L9-16,Richard B,
+Richard B,Eugene,2026-06-09,DE-L9-16,Richard B,
 Eugene,Roeland,2024-09-03,poule,Roeland,3-5
 Roeland,Eugene,2024-09-03,poule,Roeland,3-5
 Eugene,Roeland,2024-09-03,DE-L13-14,Roeland,
@@ -17823,6 +17863,8 @@ Eugene,Steph,2026-02-03,poule,Steph,4-5
 Steph,Eugene,2026-02-03,poule,Steph,4-5
 Eugene,Steph,2026-03-17,poule,Steph,2-5
 Steph,Eugene,2026-03-17,poule,Steph,2-5
+Eugene,Steph,2026-06-09,poule,Steph,3-5
+Steph,Eugene,2026-06-09,poule,Steph,3-5
 Eugene,Thea,2024-06-25,DE-L9-12,Eugene,
 Thea,Eugene,2024-06-25,DE-L9-12,Eugene,
 Eugene,Tom S,2024-06-18,poule,Tom S,1-5
@@ -17869,6 +17911,16 @@ Eugene,Tom T,2026-04-28,poule,Tom T,3-5
 Tom T,Eugene,2026-04-28,poule,Tom T,3-5
 Eugene,Tom T,2026-05-12,poule,Tom T,0-5
 Tom T,Eugene,2026-05-12,poule,Tom T,0-5
+Eugene,Tom T,2026-06-09,DE-L1-16,Tom T,
+Tom T,Eugene,2026-06-09,DE-L1-16,Tom T,
+Eugene,Tony,2026-06-09,DE-L13-16,Eugene,
+Tony,Eugene,2026-06-09,DE-L13-16,Eugene,
+Eugene,Truuvy,2024-10-08,poule,Truuvy,1-5
+Truuvy,Eugene,2024-10-08,poule,Truuvy,1-5
+Eugene,Truuvy,2024-10-15,poule,Truuvy,3-5
+Truuvy,Eugene,2024-10-15,poule,Truuvy,3-5
+Eugene,Truuvy,2024-11-12,DE-L1-16,Truuvy,
+Truuvy,Eugene,2024-11-12,DE-L1-16,Truuvy,
 Eugene,Truuvy,2024-12-10,poule,Truuvy,0-5
 Truuvy,Eugene,2024-12-10,poule,Truuvy,0-5
 Eugene,Truuvy,2024-12-10,DE-L1-8,Truuvy,
@@ -17927,6 +17979,8 @@ Eugene,Vadym,2026-06-02,poule,Eugene,5-2
 Vadym,Eugene,2026-06-02,poule,Eugene,5-2
 Eugene,Vadym,2026-06-02,DE-L9-12,Vadym,
 Vadym,Eugene,2026-06-02,DE-L9-12,Vadym,
+Eugene,Vadym,2026-06-09,poule,Vadym,2-5
+Vadym,Eugene,2026-06-09,poule,Vadym,2-5
 Eugene,Vaidas,2025-02-18,poule,Vaidas,4-5
 Vaidas,Eugene,2025-02-18,poule,Vaidas,4-5
 Eugene,Vaidas,2025-02-18,DE-L1-16,Vaidas,
@@ -18051,6 +18105,10 @@ Eugene,Will P,2026-05-12,DE-L1-32,Will P,
 Will P,Eugene,2026-05-12,DE-L1-32,Will P,
 Eugene,Will P,2026-06-02,poule,Eugene,5-4
 Will P,Eugene,2026-06-02,poule,Eugene,5-4
+Eugene,Will P,2026-06-09,poule,Eugene,5-4
+Will P,Eugene,2026-06-09,poule,Eugene,5-4
+Eugene,Will P,2026-06-09,DE-L13-14,Will P,
+Will P,Eugene,2026-06-09,DE-L13-14,Will P,
 Eugene,Will W,2025-12-09,DE-L9-16,Will W,
 Will W,Eugene,2025-12-09,DE-L9-16,Will W,
 Eugene,Will W,2025-12-16,poule,Will W,3-5
@@ -18069,6 +18127,8 @@ Eugene,Willie,2026-02-24,poule,Willie,2-5
 Willie,Eugene,2026-02-24,poule,Willie,2-5
 Fassel,Fedor,2026-04-28,poule,Fassel,5-?
 Fedor,Fassel,2026-04-28,poule,Fassel,5-?
+Fassel,Fedor,2026-06-09,poule,Fassel,5-4
+Fedor,Fassel,2026-06-09,poule,Fassel,5-4
 Fassel,Fergus,2025-11-11,poule,Fassel,5-2
 Fergus,Fassel,2025-11-11,poule,Fassel,5-2
 Fassel,Fergus,2026-01-20,poule,Fassel,5-3
@@ -18113,6 +18173,8 @@ Fassel,Joshua,2026-04-14,poule,Fassel,5-2
 Joshua,Fassel,2026-04-14,poule,Fassel,5-2
 Fassel,Joshua,2026-04-28,poule,Fassel,5-2
 Joshua,Fassel,2026-04-28,poule,Fassel,5-2
+Fassel,Joshua,2026-06-09,poule,Joshua,4-5
+Joshua,Fassel,2026-06-09,poule,Joshua,4-5
 Fassel,Julia T,2026-02-10,poule,Fassel,5-2
 Julia T,Fassel,2026-02-10,poule,Fassel,5-2
 Fassel,Kirill,2026-01-20,poule,Fassel,5-4
@@ -18125,6 +18187,8 @@ Fassel,Kirill,2026-04-14,poule,Fassel,5-3
 Kirill,Fassel,2026-04-14,poule,Fassel,5-3
 Fassel,Kirill,2026-05-05,poule,Fassel,5-3
 Kirill,Fassel,2026-05-05,poule,Fassel,5-3
+Fassel,Kirill,2026-06-09,poule,Fassel,5-2
+Kirill,Fassel,2026-06-09,poule,Fassel,5-2
 Fassel,Lukas N,2025-10-21,poule,Lukas N,3-5
 Lukas N,Fassel,2025-10-21,poule,Lukas N,3-5
 Fassel,Lukas N,2025-10-21,DE-L9-16,Fassel,
@@ -18171,6 +18235,8 @@ Fassel,Max V,2026-04-28,poule,Fassel,5-3
 Max V,Fassel,2026-04-28,poule,Fassel,5-3
 Fassel,Max V,2026-05-05,DE-L1-16,Fassel,
 Max V,Fassel,2026-05-05,DE-L1-16,Fassel,
+Fassel,Max V,2026-06-09,poule,Fassel,5-4
+Max V,Fassel,2026-06-09,poule,Fassel,5-4
 Fassel,Nat,2025-12-16,DE-L1-16,Fassel,
 Nat,Fassel,2025-12-16,DE-L1-16,Fassel,
 Fassel,Nicholas,2025-11-25,poule,Fassel,5-3
@@ -18207,6 +18273,10 @@ Fassel,Richard B,2026-01-13,poule,Fassel,5-2
 Richard B,Fassel,2026-01-13,poule,Fassel,5-2
 Fassel,Richard B,2026-01-20,poule,Fassel,5-1
 Richard B,Fassel,2026-01-20,poule,Fassel,5-1
+Fassel,Richard B,2026-06-09,poule,Richard B,4-5
+Richard B,Fassel,2026-06-09,poule,Richard B,4-5
+Fassel,Richard B,2026-06-09,DE-L1-16,Fassel,
+Richard B,Fassel,2026-06-09,DE-L1-16,Fassel,
 Fassel,Roeland,2025-10-21,poule,Roeland,4-5
 Roeland,Fassel,2025-10-21,poule,Roeland,4-5
 Fassel,Roeland,2025-12-09,DE-L5-6,Fassel,
@@ -18233,6 +18303,8 @@ Fassel,Shevy,2025-11-04,poule,Fassel,5-3
 Shevy,Fassel,2025-11-04,poule,Fassel,5-3
 Fassel,Shevy,2026-01-13,DE-L1-16,Fassel,
 Shevy,Fassel,2026-01-13,DE-L1-16,Fassel,
+Fassel,Shevy,2026-06-09,poule,Fassel,5-3
+Shevy,Fassel,2026-06-09,poule,Fassel,5-3
 Fassel,Steph,2025-10-21,poule,Steph,4-5
 Steph,Fassel,2025-10-21,poule,Steph,4-5
 Fassel,Steph,2025-11-04,DE-L1-16,Fassel,
@@ -18261,10 +18333,18 @@ Fassel,Tom S,2026-01-20,DE-L9-16,Fassel,
 Tom S,Fassel,2026-01-20,DE-L9-16,Fassel,
 Fassel,Tom S,2026-05-05,poule,Tom S,3-5
 Tom S,Fassel,2026-05-05,poule,Tom S,3-5
+Fassel,Tom S,2026-06-09,poule,Fassel,5-2
+Tom S,Fassel,2026-06-09,poule,Fassel,5-2
+Fassel,Tom S,2026-06-09,DE-L5-8,Tom S,
+Tom S,Fassel,2026-06-09,DE-L5-8,Tom S,
 Fassel,Tom T,2025-12-02,DE-L5-8,Fassel,
 Tom T,Fassel,2025-12-02,DE-L5-8,Fassel,
 Fassel,Tom T,2026-01-06,poule,Tom T,3-5
 Tom T,Fassel,2026-01-06,poule,Tom T,3-5
+Fassel,Tom T,2026-06-09,DE-L1-8,Tom T,
+Tom T,Fassel,2026-06-09,DE-L1-8,Tom T,
+Fassel,Tony,2026-06-09,poule,Fassel,5-0
+Tony,Fassel,2026-06-09,poule,Fassel,5-0
 Fassel,Vadym,2026-01-06,poule,Vadym,3-5
 Vadym,Fassel,2026-01-06,poule,Vadym,3-5
 Fassel,Vincent,2025-10-28,DE-L1-16,Fassel,
@@ -18315,6 +18395,8 @@ Fassel,Vivian,2026-04-28,poule,Vivian,4-5
 Vivian,Fassel,2026-04-28,poule,Vivian,4-5
 Fassel,Vivian,2026-05-05,poule,Fassel,5-1
 Vivian,Fassel,2026-05-05,poule,Fassel,5-1
+Fassel,Vivian,2026-06-09,poule,Vivian,4-5
+Vivian,Fassel,2026-06-09,poule,Vivian,4-5
 Fassel,Will P,2025-10-21,poule,Will P,3-5
 Will P,Fassel,2025-10-21,poule,Will P,3-5
 Fassel,Will P,2025-11-04,DE-L1-8,Fassel,
@@ -18425,6 +18507,8 @@ Fedor,Joshua,2026-05-05,poule,Joshua,2-5
 Joshua,Fedor,2026-05-05,poule,Joshua,2-5
 Fedor,Joshua,2026-05-26,poule,Fedor,5-3
 Joshua,Fedor,2026-05-26,poule,Fedor,5-3
+Fedor,Joshua,2026-06-09,DE-L1-32,Fedor,
+Joshua,Fedor,2026-06-09,DE-L1-32,Fedor,
 Fedor,Kiril Ia,2026-05-19,poule,Fedor,5-2
 Kiril Ia,Fedor,2026-05-19,poule,Fedor,5-2
 Fedor,Kirill,2026-04-14,poule,Fedor,5-2
@@ -18463,12 +18547,18 @@ Fedor,Nat,2026-05-05,DE-L17-24,Fedor,
 Nat,Fedor,2026-05-05,DE-L17-24,Fedor,
 Fedor,Nat,2026-05-12,poule,Fedor,5-1
 Nat,Fedor,2026-05-12,poule,Fedor,5-1
+Fedor,Richard B,2026-06-09,DE-L11-12,Fedor,
+Richard B,Fedor,2026-06-09,DE-L11-12,Fedor,
 Fedor,Sameer,2026-04-14,poule,Fedor,5-3
 Sameer,Fedor,2026-04-14,poule,Fedor,5-3
+Fedor,Shevy,2026-06-09,poule,Shevy,2-5
+Shevy,Fedor,2026-06-09,poule,Shevy,2-5
 Fedor,Steph,2026-04-28,poule,Steph,3-5
 Steph,Fedor,2026-04-28,poule,Steph,3-5
 Fedor,Steph,2026-05-26,poule,Steph,1-5
 Steph,Fedor,2026-05-26,poule,Steph,1-5
+Fedor,Steph,2026-06-09,DE-L9-12,Steph,
+Steph,Fedor,2026-06-09,DE-L9-12,Steph,
 Fedor,Tom S,2026-04-28,DE-L1-32,Tom S,
 Tom S,Fedor,2026-04-28,DE-L1-32,Tom S,
 Fedor,Tom S,2026-05-12,poule,Tom S,4-5
@@ -18481,6 +18571,8 @@ Fedor,Tom T,2026-04-14,DE-L1-16,Tom T,
 Tom T,Fedor,2026-04-14,DE-L1-16,Tom T,
 Fedor,Tom T,2026-05-19,poule,Tom T,2-5
 Tom T,Fedor,2026-05-19,poule,Tom T,2-5
+Fedor,Tom T,2026-06-09,poule,Tom T,0-5
+Tom T,Fedor,2026-06-09,poule,Tom T,0-5
 Fedor,Vadym,2026-04-14,poule,Vadym,3-5
 Vadym,Fedor,2026-04-14,poule,Vadym,3-5
 Fedor,Vincent,2026-04-28,poule,Vincent,4-5
@@ -18501,6 +18593,8 @@ Fedor,Will P,2026-04-14,DE-L13-16,Will P,
 Will P,Fedor,2026-04-14,DE-L13-16,Will P,
 Fedor,Will P,2026-05-05,DE-L17-18,Fedor,
 Will P,Fedor,2026-05-05,DE-L17-18,Fedor,
+Fedor,Will P,2026-06-09,DE-L9-16,Fedor,
+Will P,Fedor,2026-06-09,DE-L9-16,Fedor,
 Fedor,Willie,2026-04-14,DE-L9-16,Willie,
 Willie,Fedor,2026-04-14,DE-L9-16,Willie,
 Fedor,Willie,2026-04-28,poule,Fedor,5-2
@@ -18823,6 +18917,8 @@ Flavia,Tom S,2025-05-20,DE-L1-32,Tom S,
 Tom S,Flavia,2025-05-20,DE-L1-32,Tom S,
 Flavia,Tom S,2025-06-10,poule,Tom S,0-5
 Tom S,Flavia,2025-06-10,poule,Tom S,0-5
+Flavia,Truuvy,2024-11-19,poule,Truuvy,3-5
+Truuvy,Flavia,2024-11-19,poule,Truuvy,3-5
 Flavia,Truuvy,2025-02-25,poule,Truuvy,3-5
 Truuvy,Flavia,2025-02-25,poule,Truuvy,3-5
 Flavia,Truuvy,2025-04-29,poule,Truuvy,2-5
@@ -19309,6 +19405,10 @@ Garen,Steph,2023-02-28,poule,Garen,5-2
 Steph,Garen,2023-02-28,poule,Garen,5-2
 Garen,Steph,2023-02-28,DE-L1-4,Garen,
 Steph,Garen,2023-02-28,DE-L1-4,Garen,
+Garen,Steph,2023-03-14,poule,Garen,5-2
+Steph,Garen,2023-03-14,poule,Garen,5-2
+Garen,Steph,2023-03-14,DE-L9-10,Garen,
+Steph,Garen,2023-03-14,DE-L9-10,Garen,
 Garen,Steph,2023-04-11,poule,Steph,3-5
 Steph,Garen,2023-04-11,poule,Steph,3-5
 Garen,Steph,2023-04-11,DE-L9-12,Garen,
@@ -19339,10 +19439,6 @@ Garen,Steph,2024-07-09,DE-L1-16,Garen,
 Steph,Garen,2024-07-09,DE-L1-16,Garen,
 Garen,Steph,2025-02-04,DE-L9-16,Garen,
 Steph,Garen,2025-02-04,DE-L9-16,Garen,
-Garen,Stephen M,2023-03-14,poule,Garen,5-2
-Stephen M,Garen,2023-03-14,poule,Garen,5-2
-Garen,Stephen M,2023-03-14,DE-L9-10,Garen,
-Stephen M,Garen,2023-03-14,DE-L9-10,Garen,
 Garen,Stirling,2023-02-21,poule,Garen,5-3
 Stirling,Garen,2023-02-21,poule,Garen,5-3
 Garen,Thea,2024-01-23,poule,Garen,5-?
@@ -19387,6 +19483,12 @@ Garen,Tom S,2025-10-07,poule,Garen,5-3
 Tom S,Garen,2025-10-07,poule,Garen,5-3
 Garen,Tom S,2025-10-07,DE-L1-4,Garen,
 Tom S,Garen,2025-10-07,DE-L1-4,Garen,
+Garen,Truuvy,2024-10-15,poule,Garen,5-3
+Truuvy,Garen,2024-10-15,poule,Garen,5-3
+Garen,Truuvy,2024-11-12,poule,Garen,5-3
+Truuvy,Garen,2024-11-12,poule,Garen,5-3
+Garen,Truuvy,2024-11-19,poule,Truuvy,3-5
+Truuvy,Garen,2024-11-19,poule,Truuvy,3-5
 Garen,Truuvy,2025-02-04,poule,Garen,5-4
 Truuvy,Garen,2025-02-04,poule,Garen,5-4
 Garen,Vadym,2023-02-07,DE-L13-16,Garen,
@@ -19955,6 +20057,8 @@ Georgina,Tom S,2025-03-11,poule,Georgina,5-4
 Tom S,Georgina,2025-03-11,poule,Georgina,5-4
 Georgina,Tom S,2025-03-11,DE-L9-16,Georgina,
 Tom S,Georgina,2025-03-11,DE-L9-16,Georgina,
+Georgina,Truuvy,2023-07-18,poule,Georgina,5-2
+Truuvy,Georgina,2023-07-18,poule,Georgina,5-2
 Georgina,Truuvy,2025-01-21,poule,Georgina,5-4
 Truuvy,Georgina,2025-01-21,poule,Georgina,5-4
 Georgina,Truuvy,2025-02-04,poule,Truuvy,3-5
@@ -20375,6 +20479,8 @@ Giles,Tom S,2025-07-15,poule,Tom S,3-5
 Tom S,Giles,2025-07-15,poule,Tom S,3-5
 Giles,Tom S,2025-09-23,DE-L9-16,Giles,
 Tom S,Giles,2025-09-23,DE-L9-16,Giles,
+Giles,Truuvy,2024-10-15,DE-L1-16,Truuvy,
+Truuvy,Giles,2024-10-15,DE-L1-16,Truuvy,
 Giles,Truuvy,2025-01-21,DE-L13-16,Truuvy,
 Truuvy,Giles,2025-01-21,DE-L13-16,Truuvy,
 Giles,Truuvy,2025-05-13,DE-L1-8,Truuvy,
@@ -20611,6 +20717,8 @@ Greenie,Steph,2023-01-24,poule,Greenie,5-4
 Steph,Greenie,2023-01-24,poule,Greenie,5-4
 Greenie,Steph,2023-03-07,poule,Greenie,5-3
 Steph,Greenie,2023-03-07,poule,Greenie,5-3
+Greenie,Steph,2023-03-14,poule,Greenie,5-3
+Steph,Greenie,2023-03-14,poule,Greenie,5-3
 Greenie,Steph,2023-03-21,poule,Steph,3-5
 Steph,Greenie,2023-03-21,poule,Steph,3-5
 Greenie,Steph,2023-04-25,poule,Steph,1-5
@@ -20619,8 +20727,6 @@ Greenie,Steph,2023-04-25,DE-L1-16,Steph,
 Steph,Greenie,2023-04-25,DE-L1-16,Steph,
 Greenie,Steph,2023-06-13,DE-L1-8,Steph,
 Steph,Greenie,2023-06-13,DE-L1-8,Steph,
-Greenie,Stephen M,2023-03-14,poule,Greenie,5-3
-Stephen M,Greenie,2023-03-14,poule,Greenie,5-3
 Greenie,Stirling,2023-02-21,poule,Greenie,5-2
 Stirling,Greenie,2023-02-21,poule,Greenie,5-2
 Greenie,Stirling,2023-02-21,DE-L11-12,Stirling,
@@ -20765,6 +20871,8 @@ Greg,Joshua,2026-04-28,poule,Greg,5-0
 Joshua,Greg,2026-04-28,poule,Greg,5-0
 Greg,Joshua,2026-05-26,poule,Greg,5-1
 Joshua,Greg,2026-05-26,poule,Greg,5-1
+Greg,Joshua,2026-06-09,poule,Greg,5-3
+Joshua,Greg,2026-06-09,poule,Greg,5-3
 Greg,Jp,2025-03-04,poule,Greg,5-3
 Jp,Greg,2025-03-04,poule,Greg,5-3
 Greg,Jp,2025-03-04,DE-L9-12,Greg,
@@ -20873,6 +20981,8 @@ Greg,Kirill,2026-05-19,poule,Greg,5-2
 Kirill,Greg,2026-05-19,poule,Greg,5-2
 Greg,Kirill,2026-05-26,poule,Greg,5-1
 Kirill,Greg,2026-05-26,poule,Greg,5-1
+Greg,Kirill,2026-06-09,poule,Greg,5-1
+Kirill,Greg,2026-06-09,poule,Greg,5-1
 Greg,Kj,2023-01-17,poule,Greg,5-3
 Kj,Greg,2023-01-17,poule,Greg,5-3
 Greg,Kj,2023-01-24,poule,Greg,5-?
@@ -21085,6 +21195,8 @@ Greg,Marg,2026-06-02,poule,Greg,5-3
 Marg,Greg,2026-06-02,poule,Greg,5-3
 Greg,Marg,2026-06-02,DE-L1-16,Greg,
 Marg,Greg,2026-06-02,DE-L1-16,Greg,
+Greg,Marg,2026-06-09,poule,Greg,5-1
+Marg,Greg,2026-06-09,poule,Greg,5-1
 Greg,Marinko,2023-03-21,poule,Greg,5-1
 Marinko,Greg,2023-03-21,poule,Greg,5-1
 Greg,Marinko,2023-06-06,poule,Greg,5-3
@@ -21221,6 +21333,8 @@ Greg,Max V,2026-05-12,poule,Greg,5-2
 Max V,Greg,2026-05-12,poule,Greg,5-2
 Greg,Max V,2026-06-02,poule,Greg,5-0
 Max V,Greg,2026-06-02,poule,Greg,5-0
+Greg,Max V,2026-06-09,poule,Greg,5-3
+Max V,Greg,2026-06-09,poule,Greg,5-3
 Greg,Maxie,2024-07-02,DE-L1-8,Greg,
 Maxie,Greg,2024-07-02,DE-L1-8,Greg,
 Greg,Maxie,2024-07-09,poule,Greg,5-0
@@ -21557,6 +21671,8 @@ Greg,Richard B,2026-04-21,poule,Greg,5-2
 Richard B,Greg,2026-04-21,poule,Greg,5-2
 Greg,Richard B,2026-06-02,poule,Greg,5-2
 Richard B,Greg,2026-06-02,poule,Greg,5-2
+Greg,Richard B,2026-06-09,poule,Greg,5-3
+Richard B,Greg,2026-06-09,poule,Greg,5-3
 Greg,Richard R,2024-07-09,poule,Greg,5-3
 Richard R,Greg,2024-07-09,poule,Greg,5-3
 Greg,Rob,2023-10-17,poule,Greg,5-2
@@ -21747,6 +21863,8 @@ Greg,Steph,2023-02-28,poule,Greg,5-2
 Steph,Greg,2023-02-28,poule,Greg,5-2
 Greg,Steph,2023-03-07,poule,Greg,5-2
 Steph,Greg,2023-03-07,poule,Greg,5-2
+Greg,Steph,2023-03-14,poule,Greg,5-1
+Steph,Greg,2023-03-14,poule,Greg,5-1
 Greg,Steph,2023-03-21,poule,Steph,4-5
 Steph,Greg,2023-03-21,poule,Steph,4-5
 Greg,Steph,2023-04-11,poule,Greg,5-3
@@ -21869,8 +21987,6 @@ Greg,Steph,2026-05-26,poule,Steph,4-5
 Steph,Greg,2026-05-26,poule,Steph,4-5
 Greg,Steph,2026-05-26,DE-L5-6,Greg,
 Steph,Greg,2026-05-26,DE-L5-6,Greg,
-Greg,Stephen M,2023-03-14,poule,Greg,5-1
-Stephen M,Greg,2023-03-14,poule,Greg,5-1
 Greg,Stephen Me,2023-03-07,poule,Greg,5-1
 Stephen Me,Greg,2023-03-07,poule,Greg,5-1
 Greg,Stirling,2023-02-21,poule,Greg,5-1
@@ -22053,6 +22169,8 @@ Greg,Tom S,2026-05-05,poule,Greg,5-2
 Tom S,Greg,2026-05-05,poule,Greg,5-2
 Greg,Tom S,2026-06-02,poule,Greg,5-1
 Tom S,Greg,2026-06-02,poule,Greg,5-1
+Greg,Tom S,2026-06-09,poule,Greg,5-4
+Tom S,Greg,2026-06-09,poule,Greg,5-4
 Greg,Tom T,2025-12-02,poule,Tom T,3-5
 Tom T,Greg,2025-12-02,poule,Tom T,3-5
 Greg,Tom T,2025-12-09,DE-L1-2,Greg,
@@ -22067,6 +22185,24 @@ Greg,Tom T,2026-05-05,DE-L1-4,Greg,
 Tom T,Greg,2026-05-05,DE-L1-4,Greg,
 Greg,Tom T,2026-05-12,poule,Greg,5-4
 Tom T,Greg,2026-05-12,poule,Greg,5-4
+Greg,Tom T,2026-06-09,poule,Tom T,2-5
+Tom T,Greg,2026-06-09,poule,Tom T,2-5
+Greg,Tom T,2026-06-09,DE-L1-2,Tom T,
+Tom T,Greg,2026-06-09,DE-L1-2,Tom T,
+Greg,Truuvy,2023-07-25,poule,Greg,5-4
+Truuvy,Greg,2023-07-25,poule,Greg,5-4
+Greg,Truuvy,2024-10-08,DE-L1-4,Truuvy,
+Truuvy,Greg,2024-10-08,DE-L1-4,Truuvy,
+Greg,Truuvy,2024-10-22,poule,Greg,5-1
+Truuvy,Greg,2024-10-22,poule,Greg,5-1
+Greg,Truuvy,2024-11-12,DE-L1-2,Greg,
+Truuvy,Greg,2024-11-12,DE-L1-2,Greg,
+Greg,Truuvy,2024-11-19,poule,Greg,5-1
+Truuvy,Greg,2024-11-19,poule,Greg,5-1
+Greg,Truuvy,2024-11-19,DE-L1-2,Greg,
+Truuvy,Greg,2024-11-19,DE-L1-2,Greg,
+Greg,Truuvy,2024-11-26,poule,Truuvy,3-5
+Truuvy,Greg,2024-11-26,poule,Truuvy,3-5
 Greg,Truuvy,2024-12-10,poule,Truuvy,2-5
 Truuvy,Greg,2024-12-10,poule,Truuvy,2-5
 Greg,Truuvy,2024-12-17,poule,Greg,5-4
@@ -22251,6 +22387,8 @@ Greg,Vadym,2026-05-19,poule,Greg,5-4
 Vadym,Greg,2026-05-19,poule,Greg,5-4
 Greg,Vadym,2026-05-26,DE-L1-8,Vadym,
 Vadym,Greg,2026-05-26,DE-L1-8,Vadym,
+Greg,Vadym,2026-06-09,poule,Greg,5-2
+Vadym,Greg,2026-06-09,poule,Greg,5-2
 Greg,Vaidas,2025-02-18,poule,Vaidas,4-5
 Vaidas,Greg,2025-02-18,poule,Vaidas,4-5
 Greg,Val,2025-02-11,DE-L3-4,Greg,
@@ -22461,6 +22599,8 @@ Greg,Vivian,2026-05-19,poule,Greg,5-3
 Vivian,Greg,2026-05-19,poule,Greg,5-3
 Greg,Vivian,2026-06-02,DE-L1-8,Greg,
 Vivian,Greg,2026-06-02,DE-L1-8,Greg,
+Greg,Vivian,2026-06-09,poule,Greg,5-3
+Vivian,Greg,2026-06-09,poule,Greg,5-3
 Greg,Vladimir,2025-04-01,poule,Vladimir,4-5
 Vladimir,Greg,2025-04-01,poule,Vladimir,4-5
 Greg,Will P,2025-03-11,poule,Greg,5-2
@@ -22507,6 +22647,10 @@ Greg,Will P,2026-05-12,poule,Greg,5-4
 Will P,Greg,2026-05-12,poule,Greg,5-4
 Greg,Will P,2026-06-02,poule,Greg,5-3
 Will P,Greg,2026-06-02,poule,Greg,5-3
+Greg,Will P,2026-06-09,poule,Greg,5-1
+Will P,Greg,2026-06-09,poule,Greg,5-1
+Greg,Will P,2026-06-09,DE-L1-16,Greg,
+Will P,Greg,2026-06-09,DE-L1-16,Greg,
 Greg,Willie,2025-03-25,poule,Greg,5-2
 Willie,Greg,2025-03-25,poule,Greg,5-2
 Greg,Willie,2025-04-01,poule,Willie,2-5
@@ -22589,16 +22733,28 @@ Helen,Joshua,2026-05-12,poule,Joshua,3-5
 Joshua,Helen,2026-05-12,poule,Joshua,3-5
 Helen,Joshua,2026-05-12,DE-L19-20,Joshua,
 Joshua,Helen,2026-05-12,DE-L19-20,Joshua,
+Helen,Joshua,2026-06-09,poule,Joshua,1-5
+Joshua,Helen,2026-06-09,poule,Joshua,1-5
+Helen,Joshua,2026-06-09,DE-L17-24,Joshua,
+Joshua,Helen,2026-06-09,DE-L17-24,Joshua,
+Helen,Marg,2026-06-09,poule,Helen,5-4
+Marg,Helen,2026-06-09,poule,Helen,5-4
+Helen,Max V,2026-06-09,poule,Max V,1-5
+Max V,Helen,2026-06-09,poule,Max V,1-5
 Helen,Nat,2026-05-12,poule,Helen,5-3
 Nat,Helen,2026-05-12,poule,Helen,5-3
 Helen,Nat,2026-05-12,DE-L17-24,Helen,
 Nat,Helen,2026-05-12,DE-L17-24,Helen,
+Helen,Tom S,2026-06-09,poule,Tom S,3-5
+Tom S,Helen,2026-06-09,poule,Tom S,3-5
 Helen,Vincent,2026-05-12,poule,Vincent,2-5
 Vincent,Helen,2026-05-12,poule,Vincent,2-5
 Helen,Vivian,2026-05-12,poule,Helen,5-4
 Vivian,Helen,2026-05-12,poule,Helen,5-4
 Helen,Vivian,2026-05-12,DE-L1-32,Vivian,
 Vivian,Helen,2026-05-12,DE-L1-32,Vivian,
+Helen,Will P,2026-06-09,DE-L1-32,Will P,
+Will P,Helen,2026-06-09,DE-L1-32,Will P,
 Hugo,Joshua,2025-03-04,poule,Hugo,5-1
 Joshua,Hugo,2025-03-04,poule,Hugo,5-1
 Hugo,Joshua,2025-03-18,poule,Hugo,5-1
@@ -22663,6 +22819,10 @@ Hugo,Tom S,2024-09-03,DE-L1-4,Hugo,
 Tom S,Hugo,2024-09-03,DE-L1-4,Hugo,
 Hugo,Tom S,2025-02-25,poule,Hugo,5-2
 Tom S,Hugo,2025-02-25,poule,Hugo,5-2
+Hugo,Truuvy,2023-07-11,poule,Truuvy,4-5
+Truuvy,Hugo,2023-07-11,poule,Truuvy,4-5
+Hugo,Truuvy,2023-07-11,DE-L1-8,Hugo,
+Truuvy,Hugo,2023-07-11,DE-L1-8,Hugo,
 Hugo,Truuvy,2025-02-25,poule,Hugo,5-0
 Truuvy,Hugo,2025-02-25,poule,Hugo,5-0
 Hugo,Truuvy,2025-03-04,DE-L1-8,Hugo,
@@ -22725,8 +22885,12 @@ Jack,Max V,2026-05-12,DE-L1-16,Jack,
 Max V,Jack,2026-05-12,DE-L1-16,Jack,
 Jack,Perth,2026-05-12,poule,Jack,5-3
 Perth,Jack,2026-05-12,poule,Jack,5-3
+Jack,Steph,2026-06-09,poule,Steph,4-5
+Steph,Jack,2026-06-09,poule,Steph,4-5
 Jack,Tom T,2026-05-12,poule,Tom T,2-5
 Tom T,Jack,2026-05-12,poule,Tom T,2-5
+Jack,Tom T,2026-06-09,poule,Tom T,2-5
+Tom T,Jack,2026-06-09,poule,Tom T,2-5
 Jack,Vivian,2026-05-12,poule,Jack,5-2
 Vivian,Jack,2026-05-12,poule,Jack,5-2
 Jack,Willie,2026-05-12,poule,Jack,5-3
@@ -22921,8 +23085,14 @@ John H,Miriam,2026-01-20,DE-L17-18,Miriam,
 Miriam,John H,2026-01-20,DE-L17-18,Miriam,
 John H,Mrt,2024-11-05,poule,Mrt,3-5
 Mrt,John H,2024-11-05,poule,Mrt,3-5
+John H,Nat,2024-05-07,poule,John H,5-3
+Nat,John H,2024-05-07,poule,John H,5-3
+John H,Nat,2024-05-07,DE-L1-8,John H,
+Nat,John H,2024-05-07,DE-L1-8,John H,
 John H,Nat,2024-10-29,DE-L19-20,Nat,
 Nat,John H,2024-10-29,DE-L19-20,Nat,
+John H,Pablo,2024-05-07,poule,John H,5-4
+Pablo,John H,2024-05-07,poule,John H,5-4
 John H,Pablo,2024-06-18,poule,John H,5-3
 Pablo,John H,2024-06-18,poule,John H,5-3
 John H,Pablo,2024-10-15,poule,Pablo,2-5
@@ -22937,6 +23107,10 @@ John H,Patrick L,2024-10-29,poule,Patrick L,4-5
 Patrick L,John H,2024-10-29,poule,Patrick L,4-5
 John H,Patrick L,2025-07-15,poule,John H,5-1
 Patrick L,John H,2025-07-15,poule,John H,5-1
+John H,Pierre,2024-05-07,poule,John H,5-2
+Pierre,John H,2024-05-07,poule,John H,5-2
+John H,Pierre,2024-05-07,DE-L1-4,Pierre,
+Pierre,John H,2024-05-07,DE-L1-4,Pierre,
 John H,Pierre,2024-10-22,DE-L3-4,Pierre,
 Pierre,John H,2024-10-22,DE-L3-4,Pierre,
 John H,Pierre,2024-10-29,poule,Pierre,2-5
@@ -22957,6 +23131,8 @@ John H,Sameer,2026-01-13,poule,John H,5-4
 Sameer,John H,2026-01-13,poule,John H,5-4
 John H,Sammy,2026-01-20,poule,Sammy,2-5
 Sammy,John H,2026-01-20,poule,Sammy,2-5
+John H,Steph,2024-05-07,DE-L3-4,John H,
+Steph,John H,2024-05-07,DE-L3-4,John H,
 John H,Steph,2024-10-15,DE-L1-8,Steph,
 Steph,John H,2024-10-15,DE-L1-8,Steph,
 John H,Steph,2024-11-05,DE-L9-10,John H,
@@ -22975,6 +23151,12 @@ John H,Tom T,2026-04-28,poule,Tom T,3-5
 Tom T,John H,2026-04-28,poule,Tom T,3-5
 John H,Tom T,2026-04-28,DE-L1-16,Tom T,
 Tom T,John H,2026-04-28,DE-L1-16,Tom T,
+John H,Truuvy,2024-10-15,poule,Truuvy,2-5
+Truuvy,John H,2024-10-15,poule,Truuvy,2-5
+John H,Truuvy,2024-10-15,DE-L7-8,John H,
+Truuvy,John H,2024-10-15,DE-L7-8,John H,
+John H,Truuvy,2024-10-22,poule,Truuvy,3-5
+Truuvy,John H,2024-10-22,poule,Truuvy,3-5
 John H,Truuvy,2025-06-03,poule,Truuvy,3-5
 Truuvy,John H,2025-06-03,poule,Truuvy,3-5
 John H,Truuvy,2025-06-03,DE-L1-16,Truuvy,
@@ -23037,18 +23219,6 @@ John H,Willie,2026-01-13,poule,John H,5-4
 Willie,John H,2026-01-13,poule,John H,5-4
 John H,Willie,2026-01-13,DE-L1-16,Willie,
 Willie,John H,2026-01-13,DE-L1-16,Willie,
-Jon H,Nat,2024-05-07,poule,Jon H,5-3
-Nat,Jon H,2024-05-07,poule,Jon H,5-3
-Jon H,Nat,2024-05-07,DE-L1-8,Jon H,
-Nat,Jon H,2024-05-07,DE-L1-8,Jon H,
-Jon H,Pablo,2024-05-07,poule,Jon H,5-4
-Pablo,Jon H,2024-05-07,poule,Jon H,5-4
-Jon H,Pierre,2024-05-07,poule,Jon H,5-2
-Pierre,Jon H,2024-05-07,poule,Jon H,5-2
-Jon H,Pierre,2024-05-07,DE-L1-4,Pierre,
-Pierre,Jon H,2024-05-07,DE-L1-4,Pierre,
-Jon H,Steph,2024-05-07,DE-L3-4,Jon H,
-Steph,Jon H,2024-05-07,DE-L3-4,Jon H,
 Jonathan,Joshua,2025-03-04,poule,Jonathan,5-3
 Joshua,Jonathan,2025-03-04,poule,Jonathan,5-3
 Jonathan,Joshua,2025-03-04,DE-L17-24,Joshua,
@@ -23267,6 +23437,8 @@ Joshua,Maiya,2025-04-01,poule,Joshua,5-2
 Maiya,Joshua,2025-04-01,poule,Joshua,5-2
 Joshua,Marg,2025-05-27,poule,Joshua,5-3
 Marg,Joshua,2025-05-27,poule,Joshua,5-3
+Joshua,Marg,2026-06-09,DE-L19-20,Joshua,
+Marg,Joshua,2026-06-09,DE-L19-20,Joshua,
 Joshua,Marinko,2025-03-04,poule,Joshua,5-2
 Marinko,Joshua,2025-03-04,poule,Joshua,5-2
 Joshua,Marinko,2025-03-25,poule,Joshua,5-3
@@ -23407,6 +23579,8 @@ Joshua,Shevy,2026-02-17,poule,Shevy,4-5
 Shevy,Joshua,2026-02-17,poule,Shevy,4-5
 Joshua,Shevy,2026-03-03,poule,Joshua,5-4
 Shevy,Joshua,2026-03-03,poule,Joshua,5-4
+Joshua,Shevy,2026-06-09,poule,Shevy,4-5
+Shevy,Joshua,2026-06-09,poule,Shevy,4-5
 Joshua,Steph,2025-04-01,poule,Steph,4-5
 Steph,Joshua,2025-04-01,poule,Steph,4-5
 Joshua,Steph,2025-04-01,DE-L9-16,Steph,
@@ -23459,6 +23633,10 @@ Joshua,Tom T,2025-12-16,DE-L9-16,Tom T,
 Tom T,Joshua,2025-12-16,DE-L9-16,Tom T,
 Joshua,Tom T,2026-01-27,poule,Tom T,3-5
 Tom T,Joshua,2026-01-27,poule,Tom T,3-5
+Joshua,Tom T,2026-06-09,poule,Tom T,4-5
+Tom T,Joshua,2026-06-09,poule,Tom T,4-5
+Joshua,Tony,2026-06-09,poule,Tony,3-5
+Tony,Joshua,2026-06-09,poule,Tony,3-5
 Joshua,Truuvy,2025-05-13,poule,Truuvy,1-5
 Truuvy,Joshua,2025-05-13,poule,Truuvy,1-5
 Joshua,Truuvy,2025-05-27,poule,Joshua,5-4
@@ -23469,6 +23647,10 @@ Joshua,Vadym,2025-05-13,DE-L1-16,Vadym,
 Vadym,Joshua,2025-05-13,DE-L1-16,Vadym,
 Joshua,Vadym,2025-05-27,poule,Vadym,4-5
 Vadym,Joshua,2025-05-27,poule,Vadym,4-5
+Joshua,Vadym,2026-06-09,poule,Vadym,3-5
+Vadym,Joshua,2026-06-09,poule,Vadym,3-5
+Joshua,Vadym,2026-06-09,DE-L17-20,Vadym,
+Vadym,Joshua,2026-06-09,DE-L17-20,Vadym,
 Joshua,Vincent,2025-05-13,poule,Vincent,3-5
 Vincent,Joshua,2025-05-13,poule,Vincent,3-5
 Joshua,Vincent,2025-12-09,poule,Vincent,3-5
@@ -23527,6 +23709,8 @@ Joshua,Will P,2026-06-02,poule,Joshua,5-3
 Will P,Joshua,2026-06-02,poule,Joshua,5-3
 Joshua,Will P,2026-06-02,DE-L13-16,Joshua,
 Will P,Joshua,2026-06-02,DE-L13-16,Joshua,
+Joshua,Will P,2026-06-09,poule,Will P,2-5
+Will P,Joshua,2026-06-09,poule,Will P,2-5
 Joshua,Will W,2025-12-16,poule,Will W,3-5
 Will W,Joshua,2025-12-16,poule,Will W,3-5
 Joshua,Willie,2025-03-25,poule,Willie,4-5
@@ -24103,6 +24287,8 @@ Kamal,Steph,2023-02-28,DE-L1-8,Steph,
 Steph,Kamal,2023-02-28,DE-L1-8,Steph,
 Kamal,Steph,2023-03-14,poule,Kamal,5-2
 Steph,Kamal,2023-03-14,poule,Kamal,5-2
+Kamal,Steph,2023-03-14,poule,Kamal,5-2
+Steph,Kamal,2023-03-14,poule,Kamal,5-2
 Kamal,Steph,2023-03-21,poule,Kamal,5-4
 Steph,Kamal,2023-03-21,poule,Kamal,5-4
 Kamal,Steph,2023-04-11,poule,Kamal,5-3
@@ -24163,8 +24349,6 @@ Kamal,Steph,2024-12-17,DE-L11-12,Steph,
 Steph,Kamal,2024-12-17,DE-L11-12,Steph,
 Kamal,Steph,2025-01-21,poule,Steph,4-5
 Steph,Kamal,2025-01-21,poule,Steph,4-5
-Kamal,Stephen M,2023-03-14,poule,Kamal,5-2
-Stephen M,Kamal,2023-03-14,poule,Kamal,5-2
 Kamal,Thea,2023-10-10,poule,Kamal,5-0
 Thea,Kamal,2023-10-10,poule,Kamal,5-0
 Kamal,Thea,2023-10-10,DE-L1-16,Kamal,
@@ -24251,6 +24435,20 @@ Kamal,Tom S,2025-01-21,poule,Kamal,5-3
 Tom S,Kamal,2025-01-21,poule,Kamal,5-3
 Kamal,Tom S,2025-03-18,poule,Tom S,4-5
 Tom S,Kamal,2025-03-18,poule,Tom S,4-5
+Kamal,Truuvy,2023-07-11,poule,Truuvy,4-5
+Truuvy,Kamal,2023-07-11,poule,Truuvy,4-5
+Kamal,Truuvy,2023-07-18,poule,Kamal,5-3
+Truuvy,Kamal,2023-07-18,poule,Kamal,5-3
+Kamal,Truuvy,2023-07-18,DE-L9-16,Truuvy,
+Truuvy,Kamal,2023-07-18,DE-L9-16,Truuvy,
+Kamal,Truuvy,2024-10-08,poule,Truuvy,3-5
+Truuvy,Kamal,2024-10-08,poule,Truuvy,3-5
+Kamal,Truuvy,2024-10-22,poule,Truuvy,3-5
+Truuvy,Kamal,2024-10-22,poule,Truuvy,3-5
+Kamal,Truuvy,2024-10-22,DE-L7-8,Truuvy,
+Truuvy,Kamal,2024-10-22,DE-L7-8,Truuvy,
+Kamal,Truuvy,2024-11-12,poule,Truuvy,2-5
+Truuvy,Kamal,2024-11-12,poule,Truuvy,2-5
 Kamal,Truuvy,2024-12-10,poule,Kamal,5-4
 Truuvy,Kamal,2024-12-10,poule,Kamal,5-4
 Kamal,Truuvy,2024-12-17,poule,Truuvy,2-5
@@ -24589,6 +24787,8 @@ Kirill,Richard B,2026-04-21,poule,Richard B,4-5
 Richard B,Kirill,2026-04-21,poule,Richard B,4-5
 Kirill,Richard B,2026-06-02,DE-L17-18,Richard B,
 Richard B,Kirill,2026-06-02,DE-L17-18,Richard B,
+Kirill,Richard B,2026-06-09,poule,Richard B,2-5
+Richard B,Kirill,2026-06-09,poule,Richard B,2-5
 Kirill,Sameer,2026-03-10,poule,Kirill,5-4
 Sameer,Kirill,2026-03-10,poule,Kirill,5-4
 Kirill,Sammy,2026-02-10,poule,Sammy,3-5
@@ -24609,12 +24809,16 @@ Kirill,Steph,2026-04-28,DE-L17-20,Steph,
 Steph,Kirill,2026-04-28,DE-L17-20,Steph,
 Kirill,Steph,2026-05-05,poule,Kirill,5-4
 Steph,Kirill,2026-05-05,poule,Kirill,5-4
+Kirill,Steph,2026-06-09,DE-L1-32,Steph,
+Steph,Kirill,2026-06-09,DE-L1-32,Steph,
 Kirill,Tom S,2026-05-05,poule,Tom S,2-5
 Tom S,Kirill,2026-05-05,poule,Tom S,2-5
 Kirill,Tom S,2026-05-12,poule,Tom S,2-5
 Tom S,Kirill,2026-05-12,poule,Tom S,2-5
 Kirill,Tom S,2026-06-02,poule,Tom S,1-5
 Tom S,Kirill,2026-06-02,poule,Tom S,1-5
+Kirill,Tom S,2026-06-09,poule,Tom S,0-5
+Tom S,Kirill,2026-06-09,poule,Tom S,0-5
 Kirill,Tom T,2026-05-19,DE-L5-8,Tom T,
 Tom T,Kirill,2026-05-19,DE-L5-8,Tom T,
 Kirill,Tom T,2026-06-02,poule,Tom T,1-5
@@ -24671,6 +24875,8 @@ Kirill,Will P,2026-05-05,DE-L17-20,Will P,
 Will P,Kirill,2026-05-05,DE-L17-20,Will P,
 Kirill,Will P,2026-05-12,poule,Will P,3-5
 Will P,Kirill,2026-05-12,poule,Will P,3-5
+Kirill,Will P,2026-06-09,poule,Will P,3-5
+Will P,Kirill,2026-06-09,poule,Will P,3-5
 Kirill,Willie,2026-01-20,poule,Willie,3-5
 Willie,Kirill,2026-01-20,poule,Willie,3-5
 Kirill,Willie,2026-02-10,poule,Willie,4-5
@@ -24755,14 +24961,14 @@ Kj,Steph,2023-03-07,DE-L5-6,Steph,
 Steph,Kj,2023-03-07,DE-L5-6,Steph,
 Kj,Steph,2023-03-14,poule,Kj,5-3
 Steph,Kj,2023-03-14,poule,Kj,5-3
+Kj,Steph,2023-03-14,poule,Kj,5-3
+Steph,Kj,2023-03-14,poule,Kj,5-3
 Kj,Steph,2023-04-25,poule,Kj,5-3
 Steph,Kj,2023-04-25,poule,Kj,5-3
 Kj,Steph,2023-06-27,poule,Kj,5-1
 Steph,Kj,2023-06-27,poule,Kj,5-1
 Kj,Steph,2023-06-27,DE-L1-8,Kj,
 Steph,Kj,2023-06-27,DE-L1-8,Kj,
-Kj,Stephen M,2023-03-14,poule,Kj,5-3
-Stephen M,Kj,2023-03-14,poule,Kj,5-3
 Kj,Stephen Me,2023-03-07,poule,Kj,5-3
 Stephen Me,Kj,2023-03-07,poule,Kj,5-3
 Kj,Stephen Me,2023-03-07,DE-L5-8,Kj,
@@ -24899,6 +25105,10 @@ Lindsey,Steph,2023-07-25,DE-L13-14,Lindsey,
 Steph,Lindsey,2023-07-25,DE-L13-14,Lindsey,
 Lindsey,Tom S,2023-07-25,poule,Tom S,4-5
 Tom S,Lindsey,2023-07-25,poule,Tom S,4-5
+Lindsey,Truuvy,2023-07-25,poule,Truuvy,1-5
+Truuvy,Lindsey,2023-07-25,poule,Truuvy,1-5
+Lindsey,Truuvy,2023-07-25,DE-L1-16,Truuvy,
+Truuvy,Lindsey,2023-07-25,DE-L1-16,Truuvy,
 Lindsey,Vincent,2023-07-25,poule,Vincent,1-5
 Vincent,Lindsey,2023-07-25,poule,Vincent,1-5
 Lionel,Lorenzo,2023-01-10,poule,Lionel,5-4
@@ -25271,6 +25481,10 @@ Lionel,Tom S,2024-09-24,DE-L1-4,Lionel,
 Tom S,Lionel,2024-09-24,DE-L1-4,Lionel,
 Lionel,Tom S,2025-02-18,poule,Lionel,5-2
 Tom S,Lionel,2025-02-18,poule,Lionel,5-2
+Lionel,Truuvy,2023-07-18,poule,Lionel,5-3
+Truuvy,Lionel,2023-07-18,poule,Lionel,5-3
+Lionel,Truuvy,2024-11-26,poule,Lionel,5-2
+Truuvy,Lionel,2024-11-26,poule,Lionel,5-2
 Lionel,Vadym,2023-01-10,poule,Lionel,5-3
 Vadym,Lionel,2023-01-10,poule,Lionel,5-3
 Lionel,Vadym,2023-01-31,poule,Lionel,5-2
@@ -26399,6 +26613,8 @@ Marg,Vivian,2026-04-28,poule,Vivian,2-5
 Vivian,Marg,2026-04-28,poule,Vivian,2-5
 Marg,Vivian,2026-06-02,poule,Marg,5-4
 Vivian,Marg,2026-06-02,poule,Marg,5-4
+Marg,Vivian,2026-06-09,DE-L1-32,Vivian,
+Vivian,Marg,2026-06-09,DE-L1-32,Vivian,
 Marg,Will P,2026-06-02,DE-L15-16,Will P,
 Will P,Marg,2026-06-02,DE-L15-16,Will P,
 Marg,Willie,2025-03-18,poule,Willie,3-5
@@ -27427,6 +27643,8 @@ Max V,Steph,2026-05-05,poule,Steph,4-5
 Steph,Max V,2026-05-05,poule,Steph,4-5
 Max V,Steph,2026-05-26,poule,Steph,2-5
 Steph,Max V,2026-05-26,poule,Steph,2-5
+Max V,Steph,2026-06-09,DE-L9-16,Steph,
+Steph,Max V,2026-06-09,DE-L9-16,Steph,
 Max V,Tom S,2026-04-21,DE-L17-18,Max V,
 Tom S,Max V,2026-04-21,DE-L17-18,Max V,
 Max V,Tom S,2026-04-28,poule,Tom S,2-5
@@ -27443,8 +27661,14 @@ Max V,Tom S,2026-06-02,poule,Tom S,2-5
 Tom S,Max V,2026-06-02,poule,Tom S,2-5
 Max V,Tom S,2026-06-02,DE-L1-16,Tom S,
 Tom S,Max V,2026-06-02,DE-L1-16,Tom S,
+Max V,Tom S,2026-06-09,poule,Tom S,4-5
+Tom S,Max V,2026-06-09,poule,Tom S,4-5
 Max V,Tom T,2026-05-05,poule,Tom T,4-5
 Tom T,Max V,2026-05-05,poule,Tom T,4-5
+Max V,Tom T,2026-06-09,poule,Tom T,2-5
+Tom T,Max V,2026-06-09,poule,Tom T,2-5
+Max V,Tony,2026-06-09,DE-L15-16,Max V,
+Tony,Max V,2026-06-09,DE-L15-16,Max V,
 Max V,Vadym,2026-04-21,poule,Vadym,2-5
 Vadym,Max V,2026-04-21,poule,Vadym,2-5
 Max V,Vadym,2026-05-19,DE-L1-16,Vadym,
@@ -27453,6 +27677,8 @@ Max V,Vadym,2026-05-26,poule,Vadym,3-5
 Vadym,Max V,2026-05-26,poule,Vadym,3-5
 Max V,Vadym,2026-05-26,DE-L1-16,Vadym,
 Vadym,Max V,2026-05-26,DE-L1-16,Vadym,
+Max V,Vadym,2026-06-09,DE-L1-32,Max V,
+Vadym,Max V,2026-06-09,DE-L1-32,Max V,
 Max V,Vincent,2026-02-17,poule,Vincent,0-5
 Vincent,Max V,2026-02-17,poule,Vincent,0-5
 Max V,Vincent,2026-02-17,DE-L1-32,Vincent,
@@ -27479,6 +27705,8 @@ Max V,Vivian,2026-05-05,DE-L9-16,Max V,
 Vivian,Max V,2026-05-05,DE-L9-16,Max V,
 Max V,Vivian,2026-05-19,poule,Vivian,4-5
 Vivian,Max V,2026-05-19,poule,Vivian,4-5
+Max V,Vivian,2026-06-09,poule,Vivian,3-5
+Vivian,Max V,2026-06-09,poule,Vivian,3-5
 Max V,Vladimir,2026-04-21,DE-L17-20,Max V,
 Vladimir,Max V,2026-04-21,DE-L17-20,Max V,
 Max V,Will P,2026-02-17,poule,Max V,5-4
@@ -27489,6 +27717,8 @@ Max V,Will P,2026-05-12,DE-L9-16,Will P,
 Will P,Max V,2026-05-12,DE-L9-16,Will P,
 Max V,Will P,2026-06-02,poule,Max V,5-3
 Will P,Max V,2026-06-02,poule,Max V,5-3
+Max V,Will P,2026-06-09,DE-L13-16,Will P,
+Will P,Max V,2026-06-09,DE-L13-16,Will P,
 Max V,Willie,2026-04-28,poule,Max V,5-4
 Willie,Max V,2026-04-28,poule,Max V,5-4
 Max V,Willie,2026-05-12,poule,Willie,2-5
@@ -27569,6 +27799,10 @@ Maxie,Tom S,2025-03-18,DE-L15-16,Maxie,
 Tom S,Maxie,2025-03-18,DE-L15-16,Maxie,
 Maxie,Tom S,2025-03-25,poule,Maxie,5-1
 Tom S,Maxie,2025-03-25,poule,Maxie,5-1
+Maxie,Truuvy,2024-10-15,poule,Truuvy,4-5
+Truuvy,Maxie,2024-10-15,poule,Truuvy,4-5
+Maxie,Truuvy,2024-11-12,poule,Truuvy,4-5
+Truuvy,Maxie,2024-11-12,poule,Truuvy,4-5
 Maxie,Truuvy,2025-02-04,poule,Maxie,5-4
 Truuvy,Maxie,2025-02-04,poule,Maxie,5-4
 Maxie,Truuvy,2025-03-18,poule,Maxie,5-3
@@ -27747,6 +27981,12 @@ Naoki,Tom S,2023-07-11,poule,Naoki,5-4
 Tom S,Naoki,2023-07-11,poule,Naoki,5-4
 Naoki,Tom S,2023-09-05,poule,Naoki,5-3
 Tom S,Naoki,2023-09-05,poule,Naoki,5-3
+Naoki,Truuvy,2023-07-11,poule,Truuvy,3-5
+Truuvy,Naoki,2023-07-11,poule,Truuvy,3-5
+Naoki,Truuvy,2023-07-11,DE-L5-8,Truuvy,
+Truuvy,Naoki,2023-07-11,DE-L5-8,Truuvy,
+Naoki,Truuvy,2023-07-25,poule,Truuvy,3-5
+Truuvy,Naoki,2023-07-25,poule,Truuvy,3-5
 Naoki,Vadym,2023-07-18,poule,Vadym,4-5
 Vadym,Naoki,2023-07-18,poule,Vadym,4-5
 Naoki,Vadym,2023-07-25,poule,Naoki,5-3
@@ -27909,6 +28149,8 @@ Nat,Steph,2023-02-21,poule,Steph,1-5
 Steph,Nat,2023-02-21,poule,Steph,1-5
 Nat,Steph,2023-02-28,poule,Steph,3-5
 Steph,Nat,2023-02-28,poule,Steph,3-5
+Nat,Steph,2023-03-14,DE-L1-32,Steph,
+Steph,Nat,2023-03-14,DE-L1-32,Steph,
 Nat,Steph,2023-04-11,DE-L9-16,Steph,
 Steph,Nat,2023-04-11,DE-L9-16,Steph,
 Nat,Steph,2023-06-27,poule,Steph,3-5
@@ -27957,8 +28199,6 @@ Nat,Steph,2025-05-20,poule,Steph,4-5
 Steph,Nat,2025-05-20,poule,Steph,4-5
 Nat,Steph,2026-04-14,poule,Steph,1-5
 Steph,Nat,2026-04-14,poule,Steph,1-5
-Nat,Stephen M,2023-03-14,DE-L1-32,Stephen M,
-Stephen M,Nat,2023-03-14,DE-L1-32,Stephen M,
 Nat,Stirling,2023-02-21,poule,Stirling,2-5
 Stirling,Nat,2023-02-21,poule,Stirling,2-5
 Nat,Tariq,2025-01-14,poule,Tariq,3-5
@@ -28033,6 +28273,8 @@ Nat,Tom T,2026-04-14,poule,Tom T,0-5
 Tom T,Nat,2026-04-14,poule,Tom T,0-5
 Nat,Tom T,2026-05-05,DE-L1-32,Tom T,
 Tom T,Nat,2026-05-05,DE-L1-32,Tom T,
+Nat,Truuvy,2023-07-25,poule,Truuvy,1-5
+Truuvy,Nat,2023-07-25,poule,Truuvy,1-5
 Nat,Truuvy,2025-05-13,poule,Truuvy,1-5
 Truuvy,Nat,2025-05-13,poule,Truuvy,1-5
 Nat,Vadym,2023-01-24,poule,Vadym,?-5
@@ -28363,6 +28605,8 @@ Pablo,Tom S,2025-06-17,poule,Tom S,2-5
 Tom S,Pablo,2025-06-17,poule,Tom S,2-5
 Pablo,Tom S,2025-09-30,poule,Pablo,5-2
 Tom S,Pablo,2025-09-30,poule,Pablo,5-2
+Pablo,Truuvy,2024-10-15,poule,Truuvy,4-5
+Truuvy,Pablo,2024-10-15,poule,Truuvy,4-5
 Pablo,Truuvy,2024-12-10,poule,Truuvy,1-5
 Truuvy,Pablo,2024-12-10,poule,Truuvy,1-5
 Pablo,Truuvy,2025-03-04,poule,Truuvy,0-5
@@ -28725,6 +28969,8 @@ Pierre,Steph,2023-03-07,poule,Steph,3-5
 Steph,Pierre,2023-03-07,poule,Steph,3-5
 Pierre,Steph,2023-03-07,DE-L1-8,Pierre,
 Steph,Pierre,2023-03-07,DE-L1-8,Pierre,
+Pierre,Steph,2023-03-14,poule,Pierre,5-4
+Steph,Pierre,2023-03-14,poule,Pierre,5-4
 Pierre,Steph,2023-07-25,poule,Pierre,5-4
 Steph,Pierre,2023-07-25,poule,Pierre,5-4
 Pierre,Steph,2024-05-07,poule,Pierre,5-4
@@ -28761,8 +29007,6 @@ Pierre,Steph,2025-04-01,poule,Steph,4-5
 Steph,Pierre,2025-04-01,poule,Steph,4-5
 Pierre,Steph,2025-05-20,poule,Pierre,5-3
 Steph,Pierre,2025-05-20,poule,Pierre,5-3
-Pierre,Stephen M,2023-03-14,poule,Pierre,5-4
-Stephen M,Pierre,2023-03-14,poule,Pierre,5-4
 Pierre,Stephen Me,2023-03-07,poule,Pierre,5-1
 Stephen Me,Pierre,2023-03-07,poule,Pierre,5-1
 Pierre,Thea,2024-06-25,poule,Pierre,5-4
@@ -28827,6 +29071,24 @@ Pierre,Tom S,2025-05-06,poule,Tom S,3-5
 Tom S,Pierre,2025-05-06,poule,Tom S,3-5
 Pierre,Tom S,2025-05-06,DE-L1-16,Tom S,
 Tom S,Pierre,2025-05-06,DE-L1-16,Tom S,
+Pierre,Truuvy,2023-07-25,poule,Truuvy,1-5
+Truuvy,Pierre,2023-07-25,poule,Truuvy,1-5
+Pierre,Truuvy,2023-07-25,DE-L5-8,Truuvy,
+Truuvy,Pierre,2023-07-25,DE-L5-8,Truuvy,
+Pierre,Truuvy,2024-10-08,poule,Pierre,5-4
+Truuvy,Pierre,2024-10-08,poule,Pierre,5-4
+Pierre,Truuvy,2024-10-15,poule,Pierre,5-3
+Truuvy,Pierre,2024-10-15,poule,Pierre,5-3
+Pierre,Truuvy,2024-10-15,DE-L1-8,Pierre,
+Truuvy,Pierre,2024-10-15,DE-L1-8,Pierre,
+Pierre,Truuvy,2024-10-22,poule,Pierre,5-?
+Truuvy,Pierre,2024-10-22,poule,Pierre,5-?
+Pierre,Truuvy,2024-10-22,DE-L1-8,Pierre,
+Truuvy,Pierre,2024-10-22,DE-L1-8,Pierre,
+Pierre,Truuvy,2024-11-12,poule,Truuvy,3-5
+Truuvy,Pierre,2024-11-12,poule,Truuvy,3-5
+Pierre,Truuvy,2024-11-19,poule,Pierre,5-2
+Truuvy,Pierre,2024-11-19,poule,Pierre,5-2
 Pierre,Truuvy,2025-05-06,poule,Pierre,5-3
 Truuvy,Pierre,2025-05-06,poule,Pierre,5-3
 Pierre,Truuvy,2025-05-06,DE-L9-10,Pierre,
@@ -29065,6 +29327,8 @@ Richard B,Shevy,2026-04-14,DE-L23-24,Richard B,
 Shevy,Richard B,2026-04-14,DE-L23-24,Richard B,
 Richard B,Shevy,2026-04-21,DE-L1-16,Shevy,
 Shevy,Richard B,2026-04-21,DE-L1-16,Shevy,
+Richard B,Shevy,2026-06-09,poule,Shevy,4-5
+Shevy,Richard B,2026-06-09,poule,Shevy,4-5
 Richard B,Steffi,2025-07-08,DE-L13-14,Steffi,
 Steffi,Richard B,2025-07-08,DE-L13-14,Steffi,
 Richard B,Steph,2023-02-28,poule,Richard B,5-3
@@ -29157,6 +29421,8 @@ Richard B,Steph,2026-03-03,DE-L9-16,Steph,
 Steph,Richard B,2026-03-03,DE-L9-16,Steph,
 Richard B,Steph,2026-05-05,DE-L1-16,Richard B,
 Steph,Richard B,2026-05-05,DE-L1-16,Richard B,
+Richard B,Steph,2026-06-09,poule,Steph,2-5
+Steph,Richard B,2026-06-09,poule,Steph,2-5
 Richard B,Tariq,2025-03-11,DE-L1-16,Tariq,
 Tariq,Richard B,2025-03-11,DE-L1-16,Tariq,
 Richard B,Thea,2023-12-12,poule,Thea,3-5
@@ -29265,6 +29531,14 @@ Richard B,Tom T,2025-12-02,poule,Tom T,2-5
 Tom T,Richard B,2025-12-02,poule,Tom T,2-5
 Richard B,Tom T,2025-12-09,poule,Tom T,1-5
 Tom T,Richard B,2025-12-09,poule,Tom T,1-5
+Richard B,Truuvy,2024-10-08,poule,Truuvy,3-5
+Truuvy,Richard B,2024-10-08,poule,Truuvy,3-5
+Richard B,Truuvy,2024-11-12,poule,Truuvy,1-5
+Truuvy,Richard B,2024-11-12,poule,Truuvy,1-5
+Richard B,Truuvy,2024-11-19,poule,Truuvy,2-5
+Truuvy,Richard B,2024-11-19,poule,Truuvy,2-5
+Richard B,Truuvy,2024-11-26,poule,Truuvy,4-5
+Truuvy,Richard B,2024-11-26,poule,Truuvy,4-5
 Richard B,Truuvy,2025-04-08,poule,Truuvy,2-5
 Truuvy,Richard B,2025-04-08,poule,Truuvy,2-5
 Richard B,Truuvy,2025-04-22,poule,Richard B,5-3
@@ -29367,6 +29641,8 @@ Richard B,Vadym,2025-10-28,poule,Vadym,1-5
 Vadym,Richard B,2025-10-28,poule,Vadym,1-5
 Richard B,Vadym,2026-06-02,poule,Vadym,4-5
 Vadym,Richard B,2026-06-02,poule,Vadym,4-5
+Richard B,Vadym,2026-06-09,poule,Richard B,5-4
+Vadym,Richard B,2026-06-09,poule,Richard B,5-4
 Richard B,Vaidas,2025-02-18,DE-L1-8,Vaidas,
 Vaidas,Richard B,2025-02-18,DE-L1-8,Vaidas,
 Richard B,Val,2025-01-07,DE-L17-20,Val,
@@ -29537,6 +29813,8 @@ Richard B,Vivian,2026-05-05,poule,Richard B,5-3
 Vivian,Richard B,2026-05-05,poule,Richard B,5-3
 Richard B,Vivian,2026-06-02,poule,Vivian,3-5
 Vivian,Richard B,2026-06-02,poule,Vivian,3-5
+Richard B,Vivian,2026-06-09,DE-L9-12,Vivian,
+Vivian,Richard B,2026-06-09,DE-L9-12,Vivian,
 Richard B,Vladimir,2025-01-28,DE-L13-14,Richard B,
 Vladimir,Richard B,2025-01-28,DE-L13-14,Richard B,
 Richard B,Vladimir,2026-04-21,DE-L1-32,Richard B,
@@ -29609,12 +29887,12 @@ Rob,Zoltan,2023-02-21,poule,Zoltan,4-5
 Zoltan,Rob,2023-02-21,poule,Zoltan,4-5
 Rob,Zoltan,2023-05-02,poule,Rob,5-3
 Zoltan,Rob,2023-05-02,poule,Rob,5-3
+Rocio,Steph,2023-03-14,poule,Rocio,5-3
+Steph,Rocio,2023-03-14,poule,Rocio,5-3
+Rocio,Steph,2023-03-14,DE-L9-12,Steph,
+Steph,Rocio,2023-03-14,DE-L9-12,Steph,
 Rocio,Steph,2023-04-25,poule,Steph,3-5
 Steph,Rocio,2023-04-25,poule,Steph,3-5
-Rocio,Stephen M,2023-03-14,poule,Rocio,5-3
-Stephen M,Rocio,2023-03-14,poule,Rocio,5-3
-Rocio,Stephen M,2023-03-14,DE-L9-12,Stephen M,
-Stephen M,Rocio,2023-03-14,DE-L9-12,Stephen M,
 Rocio,Tom S,2023-03-14,poule,Tom S,1-5
 Tom S,Rocio,2023-03-14,poule,Tom S,1-5
 Rocio,Tom S,2023-03-14,DE-L1-16,Tom S,
@@ -29671,6 +29949,10 @@ Roeland,Tom S,2026-06-02,DE-L1-8,Roeland,
 Tom S,Roeland,2026-06-02,DE-L1-8,Roeland,
 Roeland,Tom T,2026-06-02,poule,Roeland,5-2
 Tom T,Roeland,2026-06-02,poule,Roeland,5-2
+Roeland,Truuvy,2024-10-15,poule,Truuvy,4-5
+Truuvy,Roeland,2024-10-15,poule,Truuvy,4-5
+Roeland,Truuvy,2024-10-22,DE-L5-8,Roeland,
+Truuvy,Roeland,2024-10-22,DE-L5-8,Roeland,
 Roeland,Truuvy,2025-05-06,poule,Truuvy,4-5
 Truuvy,Roeland,2025-05-06,poule,Truuvy,4-5
 Roeland,Vadym,2024-05-28,poule,Vadym,4-5
@@ -29803,6 +30085,8 @@ Sameer,Steph,2026-01-13,DE-L1-16,Sameer,
 Steph,Sameer,2026-01-13,DE-L1-16,Sameer,
 Sameer,Tom T,2026-04-14,DE-L1-8,Sameer,
 Tom T,Sameer,2026-04-14,DE-L1-8,Sameer,
+Sameer,Truuvy,2023-07-18,poule,Sameer,5-4
+Truuvy,Sameer,2023-07-18,poule,Sameer,5-4
 Sameer,Vadym,2023-02-14,poule,Sameer,5-4
 Vadym,Sameer,2023-02-14,poule,Sameer,5-4
 Sameer,Vadym,2025-09-30,poule,Sameer,5-2
@@ -29971,8 +30255,12 @@ Sara,Steph,2023-11-21,poule,Steph,3-5
 Steph,Sara,2023-11-21,poule,Steph,3-5
 Sara,Tom S,2023-11-21,DE-L7-8,Tom S,
 Tom S,Sara,2023-11-21,DE-L7-8,Tom S,
+Shevy,Steph,2023-03-14,poule,Shevy,5-3
+Steph,Shevy,2023-03-14,poule,Shevy,5-3
 Shevy,Steph,2023-03-14,poule,Shevy,5-2
 Steph,Shevy,2023-03-14,poule,Shevy,5-2
+Shevy,Steph,2023-03-14,DE-L9-16,Steph,
+Steph,Shevy,2023-03-14,DE-L9-16,Steph,
 Shevy,Steph,2023-06-06,poule,Shevy,5-4
 Steph,Shevy,2023-06-06,poule,Shevy,5-4
 Shevy,Steph,2023-06-13,poule,Shevy,5-4
@@ -30001,10 +30289,6 @@ Shevy,Steph,2025-11-04,poule,Shevy,5-3
 Steph,Shevy,2025-11-04,poule,Shevy,5-3
 Shevy,Steph,2026-01-13,poule,Shevy,5-3
 Steph,Shevy,2026-01-13,poule,Shevy,5-3
-Shevy,Stephen M,2023-03-14,poule,Shevy,5-3
-Stephen M,Shevy,2023-03-14,poule,Shevy,5-3
-Shevy,Stephen M,2023-03-14,DE-L9-16,Stephen M,
-Stephen M,Shevy,2023-03-14,DE-L9-16,Stephen M,
 Shevy,Tom S,2023-03-14,poule,Shevy,5-2
 Tom S,Shevy,2023-03-14,poule,Shevy,5-2
 Shevy,Tom S,2023-09-05,poule,Shevy,5-1
@@ -30037,6 +30321,8 @@ Shevy,Tom S,2025-11-04,poule,Shevy,5-4
 Tom S,Shevy,2025-11-04,poule,Shevy,5-4
 Shevy,Tom S,2026-04-21,poule,Tom S,3-5
 Tom S,Shevy,2026-04-21,poule,Tom S,3-5
+Shevy,Tom S,2026-06-09,poule,Tom S,4-5
+Tom S,Shevy,2026-06-09,poule,Tom S,4-5
 Shevy,Truuvy,2025-01-07,DE-L9-16,Truuvy,
 Truuvy,Shevy,2025-01-07,DE-L9-16,Truuvy,
 Shevy,Truuvy,2025-03-18,DE-L1-8,Shevy,
@@ -30165,6 +30451,8 @@ Shevy,Vivian,2026-03-03,poule,Vivian,1-5
 Vivian,Shevy,2026-03-03,poule,Vivian,1-5
 Shevy,Vivian,2026-04-14,poule,Shevy,5-4
 Vivian,Shevy,2026-04-14,poule,Shevy,5-4
+Shevy,Vivian,2026-06-09,poule,Vivian,4-5
+Vivian,Shevy,2026-06-09,poule,Vivian,4-5
 Shevy,Vladimir,2026-04-21,poule,Shevy,5-2
 Vladimir,Shevy,2026-04-21,poule,Shevy,5-2
 Shevy,Will P,2025-03-18,DE-L3-4,Will P,
@@ -30173,6 +30461,8 @@ Shevy,Will P,2025-10-07,poule,Shevy,5-1
 Will P,Shevy,2025-10-07,poule,Shevy,5-1
 Shevy,Will P,2026-02-17,poule,Shevy,5-3
 Will P,Shevy,2026-02-17,poule,Shevy,5-3
+Shevy,Will P,2026-06-09,poule,Shevy,5-3
+Will P,Shevy,2026-06-09,poule,Shevy,5-3
 Shevy,Willie,2025-03-18,poule,Willie,4-5
 Willie,Shevy,2025-03-18,poule,Willie,4-5
 Shevy,Willie,2025-06-17,poule,Shevy,5-4
@@ -30229,6 +30519,8 @@ Steph,Tom S,2023-03-07,poule,Tom S,4-5
 Tom S,Steph,2023-03-07,poule,Tom S,4-5
 Steph,Tom S,2023-03-14,poule,Tom S,3-5
 Tom S,Steph,2023-03-14,poule,Tom S,3-5
+Steph,Tom S,2023-03-14,poule,Tom S,2-5
+Tom S,Steph,2023-03-14,poule,Tom S,2-5
 Steph,Tom S,2023-03-21,poule,Tom S,1-5
 Tom S,Steph,2023-03-21,poule,Tom S,1-5
 Steph,Tom S,2023-04-25,DE-L7-8,Steph,
@@ -30327,12 +30619,26 @@ Steph,Tom S,2026-04-28,poule,Tom S,4-5
 Tom S,Steph,2026-04-28,poule,Tom S,4-5
 Steph,Tom S,2026-05-05,poule,Steph,5-4
 Tom S,Steph,2026-05-05,poule,Steph,5-4
+Steph,Tom S,2026-06-09,poule,Tom S,2-5
+Tom S,Steph,2026-06-09,poule,Tom S,2-5
 Steph,Tom T,2026-01-06,poule,Tom T,2-5
 Tom T,Steph,2026-01-06,poule,Tom T,2-5
 Steph,Tom T,2026-03-10,poule,Tom T,3-5
 Tom T,Steph,2026-03-10,poule,Tom T,3-5
 Steph,Tom T,2026-04-14,poule,Tom T,2-5
 Tom T,Steph,2026-04-14,poule,Tom T,2-5
+Steph,Tom T,2026-06-09,poule,Tom T,3-5
+Tom T,Steph,2026-06-09,poule,Tom T,3-5
+Steph,Truuvy,2024-10-08,DE-L1-16,Truuvy,
+Truuvy,Steph,2024-10-08,DE-L1-16,Truuvy,
+Steph,Truuvy,2024-11-12,poule,Truuvy,4-5
+Truuvy,Steph,2024-11-12,poule,Truuvy,4-5
+Steph,Truuvy,2024-11-19,poule,Truuvy,2-5
+Truuvy,Steph,2024-11-19,poule,Truuvy,2-5
+Steph,Truuvy,2024-11-26,poule,Truuvy,2-5
+Truuvy,Steph,2024-11-26,poule,Truuvy,2-5
+Steph,Truuvy,2024-11-26,DE-L1-8,Steph,
+Truuvy,Steph,2024-11-26,DE-L1-8,Steph,
 Steph,Truuvy,2024-12-10,poule,Truuvy,1-5
 Truuvy,Steph,2024-12-10,poule,Truuvy,1-5
 Steph,Truuvy,2024-12-10,DE-L1-4,Steph,
@@ -30481,6 +30787,8 @@ Steph,Vadym,2026-05-05,poule,Vadym,1-5
 Vadym,Steph,2026-05-05,poule,Vadym,1-5
 Steph,Vadym,2026-05-26,poule,Steph,5-3
 Vadym,Steph,2026-05-26,poule,Steph,5-3
+Steph,Vadym,2026-06-09,poule,Steph,5-4
+Vadym,Steph,2026-06-09,poule,Steph,5-4
 Steph,Vaidas,2025-02-18,poule,Vaidas,4-5
 Vaidas,Steph,2025-02-18,poule,Vaidas,4-5
 Steph,Val,2023-01-17,poule,Steph,5-2
@@ -30617,6 +30925,8 @@ Steph,Vivian,2026-05-05,poule,Steph,5-3
 Vivian,Steph,2026-05-05,poule,Steph,5-3
 Steph,Vivian,2026-05-05,DE-L13-16,Steph,
 Vivian,Steph,2026-05-05,DE-L13-16,Steph,
+Steph,Vivian,2026-06-09,DE-L9-10,Vivian,
+Vivian,Steph,2026-06-09,DE-L9-10,Vivian,
 Steph,Vladimir,2025-01-28,poule,Steph,5-4
 Vladimir,Steph,2025-01-28,poule,Steph,5-4
 Steph,Vladimir,2025-04-01,poule,Steph,5-4
@@ -30673,8 +30983,6 @@ Steph,Zoltan,2023-05-02,poule,Steph,5-3
 Zoltan,Steph,2023-05-02,poule,Steph,5-3
 Steph,Zoltan,2023-05-02,DE-L3-4,Zoltan,
 Zoltan,Steph,2023-05-02,DE-L3-4,Zoltan,
-Stephen M,Tom S,2023-03-14,poule,Tom S,2-5
-Tom S,Stephen M,2023-03-14,poule,Tom S,2-5
 Stephen Me,Tom S,2023-03-07,poule,Tom S,0-5
 Tom S,Stephen Me,2023-03-07,poule,Tom S,0-5
 Stephen Me,Tom S,2023-03-07,DE-L1-16,Stephen Me,
@@ -30715,6 +31023,10 @@ Tom S,Tom T,2026-05-12,poule,Tom S,5-1
 Tom T,Tom S,2026-05-12,poule,Tom S,5-1
 Tom S,Tom T,2026-06-02,DE-L5-8,Tom T,
 Tom T,Tom S,2026-06-02,DE-L5-8,Tom T,
+Tom S,Truuvy,2023-07-25,poule,Truuvy,0-5
+Truuvy,Tom S,2023-07-25,poule,Truuvy,0-5
+Tom S,Truuvy,2023-07-25,DE-L1-8,Tom S,
+Truuvy,Tom S,2023-07-25,DE-L1-8,Tom S,
 Tom S,Truuvy,2024-12-17,poule,Truuvy,4-5
 Truuvy,Tom S,2024-12-17,poule,Truuvy,4-5
 Tom S,Truuvy,2025-01-21,DE-L9-16,Tom S,
@@ -30841,6 +31153,8 @@ Tom S,Vadym,2026-05-05,DE-L9-12,Vadym,
 Vadym,Tom S,2026-05-05,DE-L9-12,Vadym,
 Tom S,Vadym,2026-06-02,poule,Tom S,5-4
 Vadym,Tom S,2026-06-02,poule,Tom S,5-4
+Tom S,Vadym,2026-06-09,poule,Tom S,5-4
+Vadym,Tom S,2026-06-09,poule,Tom S,5-4
 Tom S,Vaidas,2025-02-18,poule,Vaidas,3-5
 Vaidas,Tom S,2025-02-18,poule,Vaidas,3-5
 Tom S,Val,2023-01-17,poule,Val,1-5
@@ -30945,6 +31259,8 @@ Tom S,Vivian,2026-05-12,DE-L11-12,Vivian,
 Vivian,Tom S,2026-05-12,DE-L11-12,Vivian,
 Tom S,Vivian,2026-05-19,poule,Vivian,3-5
 Vivian,Tom S,2026-05-19,poule,Vivian,3-5
+Tom S,Vivian,2026-06-09,DE-L1-16,Tom S,
+Vivian,Tom S,2026-06-09,DE-L1-16,Tom S,
 Tom S,Vladimir,2025-01-28,poule,Tom S,5-2
 Vladimir,Tom S,2025-01-28,poule,Tom S,5-2
 Tom S,Vladimir,2025-01-28,DE-L1-16,Tom S,
@@ -31073,6 +31389,8 @@ Tom T,Will P,2026-04-28,poule,Tom T,5-2
 Will P,Tom T,2026-04-28,poule,Tom T,5-2
 Tom T,Will P,2026-06-02,DE-L1-16,Tom T,
 Will P,Tom T,2026-06-02,DE-L1-16,Tom T,
+Tom T,Will P,2026-06-09,poule,Tom T,5-4
+Will P,Tom T,2026-06-09,poule,Tom T,5-4
 Tom T,Will W,2025-12-09,poule,Tom T,5-?
 Will W,Tom T,2025-12-09,poule,Tom T,5-?
 Tom T,Willie,2025-10-14,DE-L1-4,Tom T,
@@ -31091,6 +31409,28 @@ Tom T,Willie,2026-05-05,poule,Willie,2-5
 Willie,Tom T,2026-05-05,poule,Willie,2-5
 Tom T,Willie,2026-05-12,poule,Willie,2-5
 Willie,Tom T,2026-05-12,poule,Willie,2-5
+Tony,Vivian,2026-06-09,DE-L9-16,Vivian,
+Vivian,Tony,2026-06-09,DE-L9-16,Vivian,
+Tony,Will P,2026-06-09,poule,Will P,3-5
+Will P,Tony,2026-06-09,poule,Will P,3-5
+Truuvy,Vadym,2023-07-11,poule,Truuvy,5-4
+Vadym,Truuvy,2023-07-11,poule,Truuvy,5-4
+Truuvy,Vadym,2023-07-18,poule,Truuvy,5-2
+Vadym,Truuvy,2023-07-18,poule,Truuvy,5-2
+Truuvy,Vadym,2023-07-18,DE-L9-12,Truuvy,
+Vadym,Truuvy,2023-07-18,DE-L9-12,Truuvy,
+Truuvy,Vadym,2023-07-25,poule,Truuvy,5-4
+Vadym,Truuvy,2023-07-25,poule,Truuvy,5-4
+Truuvy,Vadym,2024-10-08,poule,Truuvy,5-4
+Vadym,Truuvy,2024-10-08,poule,Truuvy,5-4
+Truuvy,Vadym,2024-10-22,poule,Vadym,4-5
+Vadym,Truuvy,2024-10-22,poule,Vadym,4-5
+Truuvy,Vadym,2024-11-12,poule,Truuvy,5-2
+Vadym,Truuvy,2024-11-12,poule,Truuvy,5-2
+Truuvy,Vadym,2024-11-12,DE-L1-4,Truuvy,
+Vadym,Truuvy,2024-11-12,DE-L1-4,Truuvy,
+Truuvy,Vadym,2024-11-19,poule,Truuvy,5-4
+Vadym,Truuvy,2024-11-19,poule,Truuvy,5-4
 Truuvy,Vadym,2024-12-17,poule,Truuvy,5-2
 Vadym,Truuvy,2024-12-17,poule,Truuvy,5-2
 Truuvy,Vadym,2025-01-07,DE-L11-12,Truuvy,
@@ -31119,6 +31459,12 @@ Truuvy,Val,2025-01-21,poule,Val,3-5
 Val,Truuvy,2025-01-21,poule,Val,3-5
 Truuvy,Val,2025-02-04,DE-L3-4,Val,
 Val,Truuvy,2025-02-04,DE-L3-4,Val,
+Truuvy,Vincent,2023-07-11,poule,Truuvy,5-3
+Vincent,Truuvy,2023-07-11,poule,Truuvy,5-3
+Truuvy,Vincent,2023-07-18,poule,Vincent,3-5
+Vincent,Truuvy,2023-07-18,poule,Vincent,3-5
+Truuvy,Vincent,2023-07-25,poule,Truuvy,5-3
+Vincent,Truuvy,2023-07-25,poule,Truuvy,5-3
 Truuvy,Vincent,2025-01-14,DE-L1-16,Truuvy,
 Vincent,Truuvy,2025-01-14,DE-L1-16,Truuvy,
 Truuvy,Vincent,2025-01-21,DE-L13-14,Vincent,
@@ -31127,6 +31473,22 @@ Truuvy,Vincent,2025-02-25,poule,Vincent,4-5
 Vincent,Truuvy,2025-02-25,poule,Vincent,4-5
 Truuvy,Vincent,2025-05-06,DE-L9-16,Truuvy,
 Vincent,Truuvy,2025-05-06,DE-L9-16,Truuvy,
+Truuvy,Vivian,2024-10-08,poule,Vivian,4-5
+Vivian,Truuvy,2024-10-08,poule,Vivian,4-5
+Truuvy,Vivian,2024-10-08,DE-L1-2,Truuvy,
+Vivian,Truuvy,2024-10-08,DE-L1-2,Truuvy,
+Truuvy,Vivian,2024-10-15,poule,Truuvy,5-3
+Vivian,Truuvy,2024-10-15,poule,Truuvy,5-3
+Truuvy,Vivian,2024-10-15,DE-L5-8,Vivian,
+Vivian,Truuvy,2024-10-15,DE-L5-8,Vivian,
+Truuvy,Vivian,2024-10-22,poule,Truuvy,5-3
+Vivian,Truuvy,2024-10-22,poule,Truuvy,5-3
+Truuvy,Vivian,2024-10-22,DE-L1-16,Truuvy,
+Vivian,Truuvy,2024-10-22,DE-L1-16,Truuvy,
+Truuvy,Vivian,2024-11-12,poule,Truuvy,5-3
+Vivian,Truuvy,2024-11-12,poule,Truuvy,5-3
+Truuvy,Vivian,2024-11-26,poule,Truuvy,5-3
+Vivian,Truuvy,2024-11-26,poule,Truuvy,5-3
 Truuvy,Vivian,2024-12-10,poule,Vivian,3-5
 Vivian,Truuvy,2024-12-10,poule,Vivian,3-5
 Truuvy,Vivian,2024-12-10,DE-L3-4,Vivian,
@@ -31503,6 +31865,8 @@ Vivian,Will P,2026-04-14,poule,Vivian,5-3
 Will P,Vivian,2026-04-14,poule,Vivian,5-3
 Vivian,Will P,2026-06-02,poule,Will P,3-5
 Will P,Vivian,2026-06-02,poule,Will P,3-5
+Vivian,Will P,2026-06-09,poule,Will P,3-5
+Will P,Vivian,2026-06-09,poule,Will P,3-5
 Vivian,Will W,2025-12-09,poule,Vivian,5-3
 Will W,Vivian,2025-12-09,poule,Vivian,5-3
 Vivian,Will W,2025-12-16,poule,Vivian,5-1
