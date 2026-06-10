@@ -12,6 +12,7 @@ Requires: pip install pandas openpyxl aiohttp
 import os
 import re
 import sys
+import argparse
 import asyncio
 import tempfile
 from pathlib import Path
@@ -289,7 +290,92 @@ async def main_async():
     print(f'\nFiles saved to: downloaded_sheets/')
 
 
+def iso_to_mdyy(date_iso: str) -> str:
+    """Convert YYYY-MM-DD to the M/D/YY format used in google_sheets_links.txt."""
+    year, month, day = date_iso.split('-')
+    return f'{int(month)}/{int(day)}/{year[2:]}'
+
+
+def append_to_links_file(date_iso: str, url: str, links_file: str = 'google_sheets_links.txt') -> None:
+    """
+    Append a `M/D/YY,URL` line to the links file so track_match_history.py can
+    attach this session's source link on the site. No-ops if the sheet is already
+    listed (matched by spreadsheet ID), and repairs a missing trailing newline.
+    """
+    sheet_id = extract_spreadsheet_id(url)
+
+    content = ''
+    if os.path.exists(links_file):
+        with open(links_file, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+    if sheet_id and sheet_id in content:
+        print(f'  • Sheet already listed in {links_file}, leaving it as is')
+        return
+
+    with open(links_file, 'a', encoding='utf-8') as f:
+        if content and not content.endswith('\n'):
+            f.write('\n')
+        f.write(f'{iso_to_mdyy(date_iso)},{url}\n')
+    print(f'  ✓ Recorded link in {links_file}')
+
+
+async def download_single_async(url: str, date_iso: str) -> int:
+    """
+    Download one session's sheet pair into downloaded_sheets/<date_iso>/ and record
+    the link. Returns a process exit code (0 = success, 1 = failure).
+    """
+    sheet_id = extract_spreadsheet_id(url)
+    if not sheet_id:
+        print(f'ERROR: could not extract a spreadsheet ID from URL: {url}')
+        return 1
+
+    print(f'Downloading single session {sheet_id} for {date_iso}\n')
+
+    async with aiohttp.ClientSession() as session:
+        _, _, main_success, is_valid, message, de_success = await download_sheet_pair(
+            session, sheet_id, date_iso, 1, 1
+        )
+
+    if not main_success:
+        print(f'\n✗ Main sheet download failed: {message}')
+        return 1
+    if not de_success:
+        print('\n✗ DE sheet download failed (expected a tab named "DE")')
+        return 1
+    if not is_valid:
+        # Validation is a heuristic; warn loudly but don't block — the tracker will
+        # still process whatever was downloaded.
+        print(f'\n⚠ WARNING: downloaded sheet may not be a poule sheet: {message}')
+
+    append_to_links_file(date_iso, url)
+    print('\n✓ Done')
+    return 0
+
+
 def main():
+    parser = argparse.ArgumentParser(
+        description='Download Haverstock poule + DE sheets from Google Sheets as CSV.'
+    )
+    parser.add_argument(
+        '--url',
+        help='Single Google Sheets URL to download. Requires --date. '
+             'When omitted, every sheet in google_sheets_links.txt is downloaded.'
+    )
+    parser.add_argument(
+        '--date',
+        help='Session date as YYYY-MM-DD (the dated folder to download into). '
+             'Required with --url.'
+    )
+    args = parser.parse_args()
+
+    if args.url or args.date:
+        if not (args.url and args.date):
+            parser.error('--url and --date must be used together')
+        if not re.fullmatch(r'\d{4}-\d{2}-\d{2}', args.date):
+            parser.error('--date must be in YYYY-MM-DD format')
+        sys.exit(asyncio.run(download_single_async(args.url, args.date)))
+
     asyncio.run(main_async())
 
 
