@@ -1,0 +1,33 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Points,Unnamed: 15,Unnamed: 16,Unnamed: 17,Unnamed: 18
+1,Eric L,1,Eric L,,Eric L,V,Eric L,V,Eric L,,Greg,X,Tom T,2800,15.0,Adam S,100,28
+2,Alex A,32,_,,Max V,,Anna Z,,Greg,V,Tom T,V,Greg,2380,1.0,Eric L,85,28
+3,Tom T,17,Vadym,,Anna Z,V,Greg,V,Tom T,V,Eric L,V,Eric L,2100,22.0,Angelica,75,28
+4,Alex Y,16,Max V,V,Steph,,Alex Y,,Alex A,,Alex A,,Alex A,1876,24.0,Andy R,67,28
+5,Greg,9,Anna Z,V,Greg,V,Tom T,V,Anna Z,V,Anna Z,V,Anna Z,1708,4.0,Alex Y,61,28
+6,Fassel,24,Andy R,,Will P,,Fassel,,Alex Y,,Tom S,X,Tom S,1540,13.0,Joshua,55,28
+7,Tom S,25,Kirill IV,,Fedor,,Tom S,,Fassel,X,Alex Y,V,Alex Y,1428,20.0,Fedor,51,28
+8,Steph,8,Steph,V,Alex Y,V,Alex A,V,Tom S,V,Fassel,X,Fassel,1316,5.0,Greg,47,28
+9,Anna Z,5,Greg,,Tom T,V,Max V,,Steph,V,Steph,,Vivian,1204,12.0,Will P,43,28
+10,Vivian,28,_,,Eugene,,Steph,V,Fedor,,Vivian,V,Steph,1120,,,40,28
+11,Richard B,21,Helen,,Richard B,,Will P,,Richard B,,Fedor,V,Fedor,1036,23.0,Marg,37,28
+12,Will P,12,Will P,V,Fassel,V,Fedor,V,Vivian,V,Richard B,X,Richard B,952,,,34,28
+13,Joshua,13,Joshua,,Tom S,V,Eugene,,Max V,,Will P,V,Will P,868,9.0,Anna Z,31,28
+14,Eugene,20,Fedor,V,Vivian,,Richard B,V,Will P,V,Eugene,,Eugene,784,8.0,Steph,28,28
+15,Adam S,29,_,,Tony,,Vivian,V,Eugene,V,Max V,V,Max V,728,19.0,Benjamin,26,28
+16,Max V,4,Alex Y,,Alex A,V,Tony,,Tony,,Tony,,Tony,672,2.0,Alex A,24,28
+17,Vadym,3,Tom T,,_,,Vadym,V,Vadym,V,Vadym,V,Vadym,616,14.0,Eugene,22,28
+18,Tony,30,_,,Vadym,,Andy R,,Joshua,,Benjamin,,Benjamin,560,25.0,Kirill IV,20,28
+19,Benjamin,19,Benjamin,,Andy R,V,Helen,,Benjamin,V,Joshua,V,Joshua,504,18.0,Tony,18,28
+20,Fedor,14,Eugene,V,Kirill IV,,Joshua,V,Marg,X,Marg,X,Marg,448,16.0,Max V,16,28
+21,Helen,11,Richard B,V,_,,Benjamin,V,Andy R,,Helen,V,Helen,392,7.0,Tom S,14,28
+22,Angelica,22,Angelica,,Helen,,Angelica,,Helen,V,Angelica,X,Angelica,336,3.0,Tom T,12,28
+23,Marg,27,_,,Joshua,,Marg,V,Angelica,V,Andy R,V,Andy R,280,21.0,Helen,10,28
+24,Andy R,6,Fassel,,_,,Adam S,X,Adam S,X,Adam S,X,Adam S,252,6.0,Fassel,9,28
+25,Kirill IV,7,Tom S,,_,,_,,Kirill IV,,Kirill IV,,Kirill IV,224,11.0,Richard B,8,28
+26,_,26,_,,Benjamin,,Kirill IV,,_,,_,,_,196,,,7,28
+27,_,23,Marg,,Angelica,,_,,_,,_,,_,168,17.0,Vadym,6,28
+28,_,10,Vivian,V,_,,_,,_,,_,,_,140,10.0,Vivian,5,28
+29,_,15,Adam S,,_,,_,,_,,_,,_,112,,,4,28
+30,_,18,Tony,V,Marg,,_,,_,,_,,_,84,,,3,28
+31,_,31,_,,Adam S,,_,,_,,_,,_,56,,,2,28
+32,_,2,Alex A,,_,,_,,_,,_,,_,28,,,1,28
