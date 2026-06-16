@@ -12255,5 +12255,142 @@
         "fencer": "Kirill"
       }
     ]
+  },
+  {
+    "date": "2026-06-16",
+    "winner": "Calum",
+    "top_poule_climber": "Jack B",
+    "top_poule_gain": 67.5,
+    "fencers_in_poules": 32,
+    "fencers_in_des": 29,
+    "poule_matches": 135,
+    "de_matches": 67,
+    "total_matches": 202,
+    "score_5_0": 16,
+    "score_5_1": 12,
+    "score_5_2": 32,
+    "score_5_3": 25,
+    "score_5_4": 43,
+    "total_touches": 963,
+    "avg_touches_per_match": 7.13,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1u2HCvdSMKWbvayTv-nJSwFKDaZlqokq42X00mcyFGk8/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Calum"
+      },
+      {
+        "place": 2,
+        "fencer": "Willie"
+      },
+      {
+        "place": 3,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 4,
+        "fencer": "Darran"
+      },
+      {
+        "place": 5,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 6,
+        "fencer": "Steph"
+      },
+      {
+        "place": 7,
+        "fencer": "Max V"
+      },
+      {
+        "place": 8,
+        "fencer": "Tom T"
+      },
+      {
+        "place": 9,
+        "fencer": "Greg"
+      },
+      {
+        "place": 10,
+        "fencer": "Sammy"
+      },
+      {
+        "place": 11,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 12,
+        "fencer": "Will P"
+      },
+      {
+        "place": 13,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 14,
+        "fencer": "Thea"
+      },
+      {
+        "place": 15,
+        "fencer": "Benjamin"
+      },
+      {
+        "place": 16,
+        "fencer": "Shevy"
+      },
+      {
+        "place": 17,
+        "fencer": "Oleg"
+      },
+      {
+        "place": 18,
+        "fencer": "Maxie"
+      },
+      {
+        "place": 19,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 20,
+        "fencer": "Joshua"
+      },
+      {
+        "place": 21,
+        "fencer": "Fedor"
+      },
+      {
+        "place": 22,
+        "fencer": "Kirill"
+      },
+      {
+        "place": 23,
+        "fencer": "Feddy"
+      },
+      {
+        "place": 24,
+        "fencer": "Chrissy"
+      },
+      {
+        "place": 25,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 26,
+        "fencer": "Andy R"
+      },
+      {
+        "place": 27,
+        "fencer": "Nat"
+      },
+      {
+        "place": 28,
+        "fencer": "Adam S"
+      },
+      {
+        "place": 29,
+        "fencer": "Richard B"
+      }
+    ]
   }
 ]
