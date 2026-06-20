@@ -1020,8 +1020,14 @@ def parse_de_sheet(csv_path, date):
                     winner = None
                     is_walkover = False
 
-                    # Check if this is a walkover (one fencer has X)
-                    if result1 == 'X' or result2 == 'X':
+                    # A walkover is marked on the losing fencer's cell, either with an
+                    # "X" or the word "walkover" (case-insensitive).
+                    walkover_markers = {'X', 'WALKOVER'}
+                    result1_is_walkover = result1.upper() in walkover_markers
+                    result2_is_walkover = result2.upper() in walkover_markers
+
+                    # Check if this is a walkover (one fencer is marked as a walkover)
+                    if result1_is_walkover or result2_is_walkover:
                         is_walkover = True
                         # The fencer with V (or without X if neither has V) wins
                         if result1 == 'V':

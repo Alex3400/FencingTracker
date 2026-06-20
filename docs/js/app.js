@@ -72,7 +72,7 @@ async function loadRatings() {
     } catch (error) {
         console.error('Error loading ratings:', error);
         document.getElementById('ratings-body').innerHTML =
-            '<tr><td colspan="6" style="text-align: center; color: red;">Error loading data. Please try again later.</td></tr>';
+            '<tr><td colspan="7" style="text-align: center; color: red;">Error loading data. Please try again later.</td></tr>';
     }
 }
 
@@ -211,14 +211,9 @@ function filterByActivity(list, filterValue) {
     );
 }
 
-// Build a map of fencer -> rank from the session immediately before the one being shown,
-// filtered by the same activity filter so the rank comparison is apples-to-apples.
-// Returns null when there is no previous session to compare against.
-function getPreviousRankMap(filterValue) {
-    // Only show rank-change in "active only" mode. In semi-active/all views the fencer
-    // set shifts as people cross activity thresholds, which makes the deltas misleading.
-    if (filterValue !== 'active') return null;
-
+// Return the "After DEs" snapshot immediately before the one currently being shown,
+// or null when there is no previous session to compare against.
+function getCompareSnapshot() {
     const deSnapshots = window.deSnapshotsCache || timelineData.filter(s => s.phase === 'After DEs');
     if (!deSnapshots || deSnapshots.length === 0) return null;
 
@@ -232,6 +227,19 @@ function getPreviousRankMap(filterValue) {
 
     const snapshot = deSnapshots[compareIndex];
     if (!snapshot || !snapshot.ratings) return null;
+    return snapshot;
+}
+
+// Build a map of fencer -> rank from the session immediately before the one being shown,
+// filtered by the same activity filter so the rank comparison is apples-to-apples.
+// Returns null when there is no previous session to compare against.
+function getPreviousRankMap(filterValue) {
+    // Only show rank-change in "active only" mode. In semi-active/all views the fencer
+    // set shifts as people cross activity thresholds, which makes the deltas misleading.
+    if (filterValue !== 'active') return null;
+
+    const snapshot = getCompareSnapshot();
+    if (!snapshot) return null;
 
     let list = Object.entries(snapshot.ratings).map(([fencer, rating]) => ({
         fencer,
@@ -265,8 +273,37 @@ function rankChangeHTML(fencer, currentRank, previousRankMap) {
     return ' <span class="rank-change rank-same" title="No change from last session">–</span>';
 }
 
+// Build a map of fencer -> Elo rating from the previous session. Unlike rank, a fencer's
+// Elo is independent of who else is in the list, so this is meaningful in every filter
+// view (active and semi-active) — no filtering needed.
+function getPreviousEloMap() {
+    const snapshot = getCompareSnapshot();
+    if (!snapshot) return null;
+
+    const eloMap = new Map();
+    Object.entries(snapshot.ratings).forEach(([fencer, rating]) => eloMap.set(fencer, rating));
+    return eloMap;
+}
+
+// Build the small Elo-change indicator shown next to the rating.
+function eloChangeHTML(fencer, currentRating, previousEloMap) {
+    if (!previousEloMap) return '';
+
+    const prevRating = previousEloMap.get(fencer);
+    if (prevRating === undefined) return ''; // No prior rating to compare against.
+
+    const change = Math.round(currentRating - prevRating);
+    if (change > 0) {
+        return ` <span class="rank-change positive" title="Up ${change} Elo from last session">▲${change}</span>`;
+    } else if (change < 0) {
+        return ` <span class="rank-change negative" title="Down ${-change} Elo from last session">▼${-change}</span>`;
+    }
+    return ' <span class="rank-change rank-same" title="No Elo change from last session">–</span>';
+}
+
 function displayRatings(data, isSnapshot = false) {
     const previousRankMap = getPreviousRankMap(currentActivityFilter);
+    const previousEloMap = getPreviousEloMap();
 
     // Destroy existing DataTable first
     if ($.fn.DataTable.isDataTable('#ratings-table')) {
@@ -318,17 +355,30 @@ function displayRatings(data, isSnapshot = false) {
             }
         }
 
+        // Average placement is an all-time career stat (not per-snapshot), so always
+        // read it from fencer_stats.
+        let avgPlacement = '-';
+        const placementStats = fencerStatsData.find(f => f.Fencer === fencer.fencer);
+        if (placementStats && placementStats['Avg Placement']) {
+            const avgPlacementValue = parseFloat(placementStats['Avg Placement']);
+            if (!isNaN(avgPlacementValue)) {
+                avgPlacement = avgPlacementValue.toFixed(1);
+            }
+        }
+
         const participation = fencer.recent_participation || 0;
         const matchesDisplay = fencer.matches > 0 ? fencer.matches : '-';
 
         const changeIndicator = rankChangeHTML(fencer.fencer, rank, previousRankMap);
+        const eloChangeIndicator = eloChangeHTML(fencer.fencer, fencer.rating, previousEloMap);
 
         row.innerHTML = `
             <td class="${rankClass}" data-order="${rank}">${rank}${changeIndicator}</td>
             <td><a href="fencer.html?fencer=${encodeURIComponent(fencer.fencer)}" class="fencer-link">${fencer.fencer}</a></td>
             <td data-order="${participation}">${statusBadge}</td>
-            <td data-order="${fencer.rating}"><strong>${fencer.rating}</strong></td>
+            <td data-order="${fencer.rating}"><strong>${fencer.rating}</strong>${eloChangeIndicator}</td>
             <td>${maxElo}</td>
+            <td data-order="${avgPlacement === '-' ? 9999 : avgPlacement}">${avgPlacement}</td>
             <td>${matchesDisplay}</td>
         `;
         tbody.appendChild(row);

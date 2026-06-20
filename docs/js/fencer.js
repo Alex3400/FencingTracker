@@ -342,7 +342,7 @@ function displayPlacementStats(fencerName, statsInfo) {
     // Placement categories - ALWAYS SHOW ALL 6
     const placements = [
         { name: '1st Place', key: 'Win', color: '#FFD700', icon: '🥇', bracket: '1st' },
-        { name: '2nd Place', key: 'L2', color: '#B8B8D0', icon: '🥈', bracket: '2nd' },
+        { name: '2nd Place', key: 'L2', color: '#7C9CD8', icon: '🥈', bracket: '2nd' },
         { name: '3rd-4th', key: 'L4', color: '#CD7F32', icon: '🥉', bracket: '3rd-4th' },
         { name: '5th-8th', key: 'L8', color: '#4a90e2', icon: '🏅', bracket: '5th-8th' },
         { name: '9th-16th', key: 'L16', color: '#95a5a6', icon: '📍', bracket: '9th-16th' },
@@ -417,7 +417,7 @@ function displayPlacementStats(fencerName, statsInfo) {
                     color = '#FFD700';
                 } else if (place === 2) {
                     bracket = '2nd';
-                    color = '#B8B8D0';
+                    color = '#7C9CD8';
                 } else if (place <= 4) {
                     bracket = '3rd-4th';
                     color = '#CD7F32';
