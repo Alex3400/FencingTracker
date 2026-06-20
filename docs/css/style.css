@@ -223,6 +223,11 @@ footer p {
     margin: 0.5rem 0;
 }
 
+footer a {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
 /* Timeline page specific styles */
 .chart-controls {
     display: flex;
