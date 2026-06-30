@@ -1,0 +1,35 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Unnamed: 14,Unnamed: 15,Unnamed: 16
+1,Fessal,1.0,Fessal,,Fessal,V,Fessal,V,Fessal,,Charlie ,V,Charlie ,,,
+2,Tom T,32.0,_,,Vivian,,Willie,,Charlie ,V,Eric L,,Eric L,,18.0,Vincent 
+3,Eric L,17.0,Vivian,V,Willie,V,Oleg,,Eric L,V,Fessal,Walkover,Tom T,,3.0,Eric L
+4,Charlie ,16.0,Maiya,,Greg,,Charlie ,V,Tom T,,Tom T,V,Fessal,,12.0,Fedor
+5,Oleg,9.0,Willie,V,Oleg,V,Eric L,V,Willie,V,Willie,V,Willie,,8.0,Greg
+6,Anna A,24.0,Nat ,,Vlad,,Anna A,Walkover,Oleg,,Eugene,,Eugene,,21.0,Vlad
+7,Eugene,25.0,Andy R,,Alonzo,,Eugene,,Anna A,Walkover,Oleg,V,Oleg,,25.0,Andy R
+8,Greg,8.0,Greg,V,Charlie ,V,Tom T,V,Eugene,V,Anna A,Walkover,Anna A,,24.0,Nat 
+9,Willie,5.0,Oleg,,Eric L,V,Vivian,,Greg,V,Greg,V,Greg,,22.0,Joshua
+10,Colin R,28.0,_,,Alejo,,Greg,V,Vlad,,Alejo,,Alejo,,,
+11,Steph,21.0,Vlad,V,Steph,,Vlad,V,Alejo,V,Vlad,V,Vlad,,9.0,Willie
+12,Fedor,12.0,Fedor,,Anna A,V,Alonzo,,Colin R,,Colin R,,Colin R,,19.0,Shevy
+13,Perth,13.0,Perth,,Eugene,V,Alejo,V,Vivian,V,Vivian,V,Vivian,,7.0,Eugene
+14,Alejo,20.0,Alonzo,V,Colin R,,Steph,,Alonzo,,Tony,,Tony,,5.0,Oleg
+15,Tony,29.0,_,,Tony,,Colin R,V,Steph,,Alonzo,Walkover,Steph,,1.0,Fessal
+16,Maiya,4.0,Charlie ,,Tom T,V,Tony,,Tony,V,Steph,V,Alonzo,,11.0,Steph
+17,Vivian,3.0,Eric L,,_,,Maiya,V,Maiya,Walkover,Perth,V,Perth,,13.0,Perth
+18,Vincent ,30.0,_,,Maiya,,Andy R,,Perth,V,Vincent ,,Vincent ,,10.0,Colin R
+19,Shevy,19.0,Shevy,,Nat ,,Fedor,,Joshua,,Maiya,Walkover,Joshua,,16.0,Maiya
+20,Alonzo,14.0,Alejo,V,Andy R,V,Perth,V,Vincent ,V,Joshua,V,Maiya,,2.0,Tom T
+21,Vlad,11.0,Steph,V,_,,Shevy,Walkover,Andy R,,Fedor,,Max V,,17.0,Vivian
+22,Joshua,22.0,Joshua,,Fedor,,Joshua,V,Fedor,V,Max V,V,Fedor,,6.0,Anna A
+23,Max V,27.0,_,,Perth,,Max V,,Shevy,Walkover,Andy R,V,Andy R,,23.0,Max V
+24,Nat ,6.0,Anna A,,_,,Vincent ,V,Max V,V,Shevy,Walkover,Shevy,,4.0,Charlie 
+25,Andy R,7.0,Eugene,,_,,_,,Nat ,,Nat ,,Nat ,,15.0,Tony
+26,_,26.0,_,,Shevy,,Nat ,,_,,_,,_,,14.0,Alejo
+27,_,23.0,Max V,,Joshua,,_,,_,,_,,_,,20.0,Alonzo
+28,_,10.0,Colin R,V,_,,_,,_,,_,,_,,,
+29,_,15.0,Tony,V,_,,_,,_,,_,,_,,,
+30,_,18.0,Vincent ,,Max V,,_,,_,,_,,_,,,
+31,_,31.0,_,,Vincent ,,_,,_,,_,,_,,,
+32,_,2.0,Tom T,,_,,_,,_,,_,,_,,,
+Lock the Pool Results,,,,,,,,,,,,,,,,
+LOCKED,,,,,,,,,,,,,,,,
