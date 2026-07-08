@@ -12513,5 +12513,102 @@
         "fencer": "Nat"
       }
     ]
+  },
+  {
+    "date": "2026-07-07",
+    "winner": "Greg",
+    "top_poule_climber": "Vincent",
+    "top_poule_gain": 45.2,
+    "fencers_in_poules": 21,
+    "fencers_in_des": 19,
+    "poule_matches": 89,
+    "de_matches": 37,
+    "total_matches": 126,
+    "score_5_0": 3,
+    "score_5_1": 17,
+    "score_5_2": 16,
+    "score_5_3": 25,
+    "score_5_4": 25,
+    "total_touches": 654,
+    "avg_touches_per_match": 7.35,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1S537COsol-UIQlEb6vxbQ2IVgWlu3cmcmV3EvAuW9Tk/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Greg"
+      },
+      {
+        "place": 2,
+        "fencer": "Willie"
+      },
+      {
+        "place": 3,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 4,
+        "fencer": "Vivian"
+      },
+      {
+        "place": 5,
+        "fencer": "Fassel"
+      },
+      {
+        "place": 6,
+        "fencer": "Lukas N"
+      },
+      {
+        "place": 7,
+        "fencer": "Max V"
+      },
+      {
+        "place": 8,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 9,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 10,
+        "fencer": "Fedor"
+      },
+      {
+        "place": 11,
+        "fencer": "Calum"
+      },
+      {
+        "place": 12,
+        "fencer": "Helen"
+      },
+      {
+        "place": 13,
+        "fencer": "Kirill"
+      },
+      {
+        "place": 14,
+        "fencer": "Andy R"
+      },
+      {
+        "place": 15,
+        "fencer": "Mark M"
+      },
+      {
+        "place": 16,
+        "fencer": "Perth"
+      },
+      {
+        "place": 17,
+        "fencer": "Misung"
+      },
+      {
+        "place": 18,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 19,
+        "fencer": "Nat"
+      }
+    ]
   }
 ]
