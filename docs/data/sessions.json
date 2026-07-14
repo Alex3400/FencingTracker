@@ -12610,5 +12610,98 @@
         "fencer": "Nat"
       }
     ]
+  },
+  {
+    "date": "2026-07-14",
+    "winner": "Charlie",
+    "top_poule_climber": "Richard B",
+    "top_poule_gain": 54.2,
+    "fencers_in_poules": 22,
+    "fencers_in_des": 18,
+    "poule_matches": 78,
+    "de_matches": 35,
+    "total_matches": 113,
+    "score_5_0": 4,
+    "score_5_1": 11,
+    "score_5_2": 19,
+    "score_5_3": 28,
+    "score_5_4": 15,
+    "total_touches": 578,
+    "avg_touches_per_match": 7.41,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1bItIGCHe0jCcS2d15gxwKPaqGmjVLcvpI16jBKWe7Mg/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 2,
+        "fencer": "Greg"
+      },
+      {
+        "place": 3,
+        "fencer": "Fassel"
+      },
+      {
+        "place": 4,
+        "fencer": "Willie"
+      },
+      {
+        "place": 5,
+        "fencer": "Steph"
+      },
+      {
+        "place": 6,
+        "fencer": "Giles"
+      },
+      {
+        "place": 7,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 8,
+        "fencer": "Tom T"
+      },
+      {
+        "place": 9,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 10,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 11,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 12,
+        "fencer": "Fedor"
+      },
+      {
+        "place": 13,
+        "fencer": "Max V"
+      },
+      {
+        "place": 14,
+        "fencer": "Helen"
+      },
+      {
+        "place": 15,
+        "fencer": "Misung"
+      },
+      {
+        "place": 16,
+        "fencer": "Shevy"
+      },
+      {
+        "place": 17,
+        "fencer": "Kirill"
+      },
+      {
+        "place": 18,
+        "fencer": "Yolanda"
+      }
+    ]
   }
 ]

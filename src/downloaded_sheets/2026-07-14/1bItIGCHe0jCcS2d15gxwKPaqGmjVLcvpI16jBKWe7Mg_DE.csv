@@ -1,0 +1,35 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Unnamed: 14,Unnamed: 15,Unnamed: 16
+1,Fessal,1.0,Fessal,,Fessal,V,Fessal,V,Fessal,,Charlie ,V,Charlie ,,15.0,Fedor
+2,Willie,32.0,_,,Colin R,,Tom T,,Charlie ,V,Greg,,Greg,,3.0,Greg
+3,Greg,17.0,Kirill,,Shevy,,Giles,,Greg,V,Fessal,V,Fessal,,9.0,Shevy
+4,Charlie ,16.0,Colin R,V,Tom T,V,Charlie ,V,Willie,,Willie,,Willie,,6.0,Richard B
+5,Vincent ,9.0,Shevy,,Vincent ,,Greg,V,Tom T,Walkover,Giles,,Steph,,2.0,Willie
+6,Richard B,24.0,_,,Giles,V,Steph,,Giles,V,Steph,V,Giles,,12.0,Giles
+7,Vadym,25.0,_,,Helen,,Vadym,,Steph,V,Tom T,Walkover,Vadym,,,
+8,Tom T,8.0,Tom T,,Charlie ,V,Willie,V,Vadym,,Vadym,V,Tom T,,5.0,Vincent 
+9,Shevy,5.0,Vincent ,,Greg,V,Colin R,V,Colin R,V,Colin R,V,Colin R,,18.0,Yolanda
+10,Max V,28.0,_,,Misung,,Shevy,Walkover,Vincent ,,Richard B,,Richard B,,4.0,Charlie 
+11,Steph,21.0,_,,Steph,V,Vincent ,V,Richard B,V,Vincent ,V,Vincent ,,17.0,Kirill
+12,Giles,12.0,Giles,,Richard B,,Helen,,Fedor,,Fedor,,Fedor,,14.0,Misung
+13,Helen,13.0,Helen,,Vadym,V,Misung,,Shevy,Walkover,Helen,,Max V,,11.0,Steph
+14,Misung,20.0,_,,Max V,,Richard B,V,Helen,V,Max V,V,Helen,,10.0,Max V
+15,Fedor,29.0,_,,Fedor,,Max V,,Misung,,Shevy,Walkover,Misung,,1.0,Fessal
+16,Colin R,4.0,Charlie ,,Willie,V,Fedor,V,Max V,V,Misung,V,Shevy,,8.0,Tom T
+17,Kirill,3.0,Greg,,_,,Kirill,,Kirill,,Kirill,V,Kirill,,16.0,Colin R
+18,Yolanda,30.0,_,,Kirill,,_,,_,,Yolanda,,Yolanda,,,
+19,_,19.0,_,,_,,_,,_,,_,,_,,,
+20,_,14.0,Misung,,_,,_,,Yolanda,,_,,_,,,
+21,_,11.0,Steph,,_,,_,,_,,_,,_,,7.0,Vadym
+22,_,22.0,_,,_,,_,,_,,_,,_,,13.0,Helen
+23,_,27.0,_,,_,,_,,_,,_,,_,,,
+24,_,6.0,Richard B,,_,,Yolanda,,_,,_,,_,,,
+25,_,7.0,Vadym,,_,,_,,_,,_,,_,,,
+26,_,26.0,_,,_,,_,,_,,_,,_,,,
+27,_,23.0,_,,_,,_,,_,,_,,_,,,
+28,_,10.0,Max V,,_,,_,,_,,_,,_,,,
+29,_,15.0,Fedor,V,_,,_,,_,,_,,_,,,
+30,_,18.0,Yolanda,,_,,_,,_,,_,,_,,,
+31,_,31.0,_,,Yolanda,,_,,_,,_,,_,,,
+32,_,2.0,Willie,,_,,_,,_,,_,,_,,,
+Lock the Pool Results,,,,,,,,,,,,,,,,
+LOCKED,,,,,,,,,,,,,,,,
