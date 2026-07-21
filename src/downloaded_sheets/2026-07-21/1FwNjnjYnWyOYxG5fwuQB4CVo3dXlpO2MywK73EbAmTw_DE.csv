@@ -1,0 +1,35 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Unnamed: 14,Unnamed: 15,Unnamed: 16
+1,Eric L,1.0,Eric L,,Eric L,V,Eric L,V,Eric L,V,Eric L,V,Eric L,,5.0,Alex Y
+2,Greg,32.0,_,,Nat,,Eugene,,Alex Y,,Greg,,Greg,,14.0,Fedor
+3,Vincent,17.0,_,,Giles,,Alex Y,V,Vincent,,Alex Y,V,Alex Y,,7.0,Adam S
+4,Shevy,16.0,Nat,,Eugene,V,Shevy,,Greg,V,Vincent,,Vincent,,3.0,Vincent
+5,Alex Y,9.0,Giles,,Alex Y,V,Vincent,V,Eugene,V,Eugene,V,Eugene,,13.0,Richard B
+6,Susanne,24.0,_,,Misung ,,Tom T,,Shevy,Walkover,Tom T,Walkover,Tom T,,4.0,Shevy
+7,Adam S,25.0,_,,Richard B,,Adam S,,Tom T,V,Shevy,Walkover,Adam S,,15.0,Marg
+8,Eugene,8.0,Eugene,,Shevy,V,Greg,V,Adam S,Walkover,Adam S,V,Shevy,,2.0,Greg
+9,Giles,5.0,Alex Y,,Vincent,V,Nat,,Giles,V,Giles,V,Giles,,6.0,Susanne
+10,Kirill,28.0,_,,Fedor,,Giles,V,Richard B,,Fedor,,Fedor,,9.0,Giles
+11,Tom T,21.0,_,,Tom T,V,Misung ,,Fedor,V,Richard B,Walkover,Kirill,,1.0,Eric L
+12,Misung ,12.0,Misung ,,Susanne,,Richard B,V,Kirill,,Kirill,V,Richard B,,8.0,Eugene
+13,Richard B,13.0,Richard B,,Adam S,V,Fedor,V,Nat,V,Nat,V,Nat,,10.0,Kirill
+14,Fedor,20.0,_,,Kirill,,Susanne,,Misung ,,Susanne,,Susanne,,16.0,Nat
+15,Marg,29.0,_,,Marg,,Kirill,V,Susanne,V,Misung ,V,Misung ,,,
+16,Nat,4.0,Shevy,,Greg,V,Marg,Walkover,Marg,Walkover,Marg,Walkover,Marg,,11.0,Tom T
+17,_,3.0,Vincent,,_,,_,,_,,_,,_,,12.0,Misung 
+18,_,30.0,_,,_,,_,,_,,_,,_,,,
+19,_,19.0,_,,_,,_,,_,,_,,_,,,
+20,_,14.0,Fedor,,_,,_,,_,,_,,_,,,
+21,_,11.0,Tom T,,_,,_,,_,,_,,_,,,
+22,_,22.0,_,,_,,_,,_,,_,,_,,,
+23,_,27.0,_,,_,,_,,_,,_,,_,,,
+24,_,6.0,Susanne,,_,,_,,_,,_,,_,,,
+25,_,7.0,Adam S,,_,,_,,_,,_,,_,,,
+26,_,26.0,_,,_,,_,,_,,_,,_,,,
+27,_,23.0,_,,_,,_,,_,,_,,_,,,
+28,_,10.0,Kirill,,_,,_,,_,,_,,_,,,
+29,_,15.0,Marg,,_,,_,,_,,_,,_,,,
+30,_,18.0,_,,_,,_,,_,,_,,_,,,
+31,_,31.0,_,,_,,_,,_,,_,,_,,,
+32,_,2.0,Greg,,_,,_,,_,,_,,_,,,
+Lock the Pool Results,,,,,,,,,,,,,,,,
+LOCKED,,,,,,,,,,,,,,,,

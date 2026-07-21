@@ -12703,5 +12703,90 @@
         "fencer": "Yolanda"
       }
     ]
+  },
+  {
+    "date": "2026-07-21",
+    "winner": "Eric L",
+    "top_poule_climber": "Adam S",
+    "top_poule_gain": 44.1,
+    "fencers_in_poules": 17,
+    "fencers_in_des": 16,
+    "poule_matches": 54,
+    "de_matches": 32,
+    "total_matches": 86,
+    "score_5_0": 7,
+    "score_5_1": 9,
+    "score_5_2": 10,
+    "score_5_3": 13,
+    "score_5_4": 14,
+    "total_touches": 389,
+    "avg_touches_per_match": 7.2,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1FwNjnjYnWyOYxG5fwuQB4CVo3dXlpO2MywK73EbAmTw/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 2,
+        "fencer": "Greg"
+      },
+      {
+        "place": 3,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 4,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 5,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 6,
+        "fencer": "Tom T"
+      },
+      {
+        "place": 7,
+        "fencer": "Adam S"
+      },
+      {
+        "place": 8,
+        "fencer": "Shevy"
+      },
+      {
+        "place": 9,
+        "fencer": "Giles"
+      },
+      {
+        "place": 10,
+        "fencer": "Fedor"
+      },
+      {
+        "place": 11,
+        "fencer": "Kirill"
+      },
+      {
+        "place": 12,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 13,
+        "fencer": "Nat"
+      },
+      {
+        "place": 14,
+        "fencer": "Susanne"
+      },
+      {
+        "place": 15,
+        "fencer": "Misung"
+      },
+      {
+        "place": 16,
+        "fencer": "Marg"
+      }
+    ]
   }
 ]
