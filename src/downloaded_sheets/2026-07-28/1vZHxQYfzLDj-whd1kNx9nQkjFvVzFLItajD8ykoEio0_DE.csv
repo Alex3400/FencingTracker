@@ -1,0 +1,35 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Unnamed: 14,Unnamed: 15,Unnamed: 16
+1,Tom T,1.0,Tom T,,Tom T,,Vivian,V,Vivian,,Greg,V,Greg,,2.0,Eric L
+2,Eric L,32.0,_,,Vivian,V,Oleg,,Greg,V,Willie,,Willie,,6.0,Vincent
+3,Charlie ,17.0,Andy H,,Richard B,,Greg,V,Darran,,Vivian,V,Vivian,,5.0,Alex Y
+4,Will P,16.0,Vivian,V,Oleg,V,Will P,,Willie,V,Darran,Walkover,Darran,,15.0,Max T
+5,Alex Y,9.0,Richard B,V,Alex Y,,Darran,V,Oleg,,Will P,,Steph,,19.0,Fedor
+6,Vincent,24.0,Kirill,,Greg,V,Vincent,,Will P,V,Steph,V,Will P,,12.0,Greg
+7,Willie,25.0,_,,Eugene,,Willie,V,Vincent,,Oleg,V,Oleg,,4.0,Will P
+8,Oleg,8.0,Oleg,,Will P,V,Steph,,Steph,V,Vincent,Walkover,Vincent,,22.0,Andy R
+9,Richard B,5.0,Alex Y,,Charlie ,,Tom T,V,Tom T,V,Tom T,V,Tom T,,9.0,Richard B
+10,Giles,28.0,_,,Darran,V,Richard B,,Alex Y,,Giles,,Giles,,,
+11,Max V,21.0,Vadym,,Max V,,Alex Y,V,Charlie ,Walkover,Alex Y,V,Alex Y,,16.0,Vivian
+12,Greg,12.0,Greg,V,Vincent,V,Eugene,,Giles,V,Charlie ,Walkover,Charlie ,,8.0,Oleg
+13,Max T,13.0,Max T,,Willie,V,Charlie ,V,Richard B,V,Richard B,,Max V,,,
+14,Darran,20.0,Eugene,V,Giles,,Max V,,Eugene,Walkover,Max V,V,Richard B,,20.0,Eugene
+15,Alejo,29.0,_,,Steph,V,Giles,V,Max V,V,Eugene,V,Eugene,,10.0,Giles
+16,Vivian,4.0,Will P,,Eric L,Walkover,Eric L,Walkover,Eric L,Walkover,Eric L,Walkover,Eric L,,17.0,Andy H
+17,Andy H,3.0,Charlie ,,_,,Andy H,V,Andy H,,Vadym,V,Vadym,,11.0,Max V
+18,Steph,30.0,_,,Andy H,,Kirill,,Vadym,V,Fedor,,Fedor,,24.0,Kirill
+19,Fedor,19.0,Fedor,,Kirill,,Vadym,V,Fedor,V,Andy H,V,Andy H,,14.0,Alejo
+20,Eugene,14.0,Darran,V,_,,Max T,,Robert S,,Robert S,,Robert S,,18.0,Steph
+21,Vadym,11.0,Max V,V,_,,Fedor,V,Kirill,V,Kirill,V,Kirill,,23.0,Robert S
+22,Andy R,22.0,Andy R,,Vadym,,Andy R,,Max T,Walkover,Andy R,,Andy R,,1.0,Tom T
+23,Robert S,27.0,_,,Max T,,Robert S,V,Andy R,V,Max T,Walkover,Alejo,,21.0,Vadym
+24,Kirill,6.0,Vincent,,_,,Alejo,,Alejo,Walkover,Alejo,V,Max T,,7.0,Willie
+25,_,7.0,Willie,,_,,_,,_,,_,,_,,13.0,Darran
+26,_,26.0,_,,Fedor,,_,,_,,_,,_,,3.0,Charlie 
+27,_,23.0,Robert S,,Andy R,,_,,_,,_,,_,,,
+28,_,10.0,Giles,V,_,,_,,_,,_,,_,,,
+29,_,15.0,Alejo,,_,,_,,_,,_,,_,,,
+30,_,18.0,Steph,V,Robert S,,_,,_,,_,,_,,,
+31,_,31.0,_,,Alejo,,_,,_,,_,,_,,,
+32,_,2.0,Eric L,,_,,_,,_,,_,,_,,,
+Lock the Pool Results,,,,,,,,,,,,,,,,
+LOCKED,,,,,,,,,,,,,,,,
