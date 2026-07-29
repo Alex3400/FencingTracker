@@ -288,7 +288,13 @@ class EloRatingSystem:
         # Current ratings: {fencer_name: rating}
         self.ratings = {}
         # Match counts: {fencer_name: count}
+        # NOTE: This includes walkovers, since it drives the K-factor and must
+        # not shift historical ratings. Walkovers are tracked separately below
+        # so they can be excluded from the displayed match total.
         self.match_counts = {}
+        # Walkover counts: {fencer_name: count} — walkovers played, excluded from
+        # the fencer's displayed match total / winrate but kept in match_counts.
+        self.walkover_counts = {}
         # Rating history: {fencer_name: [(date, rating, reason), ...]}
         self.rating_history = defaultdict(list)
         # Match-based history: [(date, fencer1, old_rating1, new_rating1, change1,
@@ -318,8 +324,12 @@ class EloRatingSystem:
         return self.ratings[fencer]
 
     def get_match_count(self, fencer):
-        """Get number of matches played by a fencer."""
+        """Get number of matches played by a fencer (includes walkovers, used for K-factor)."""
         return self.match_counts.get(fencer, 0)
+
+    def get_display_match_count(self, fencer):
+        """Get number of matches played by a fencer, excluding walkovers."""
+        return self.match_counts.get(fencer, 0) - self.walkover_counts.get(fencer, 0)
 
     def update_rating(self, fencer, rating_change, date, reason):
         """Update a fencer's rating and record history."""
@@ -390,6 +400,12 @@ class EloRatingSystem:
             change2 = 0.0
             new_rating1 = old_rating1
             new_rating2 = old_rating2
+
+            # Track walkovers separately so they can be excluded from the
+            # displayed match total / winrate (match_counts still counts them
+            # for K-factor purposes).
+            self.walkover_counts[fencer1] = self.walkover_counts.get(fencer1, 0) + 1
+            self.walkover_counts[fencer2] = self.walkover_counts.get(fencer2, 0) + 1
 
             # Add walkover note to match result
             result1 = "won (walkover)" if winner == fencer1 else "lost (walkover)"
@@ -627,9 +643,13 @@ class MatchHistory:
         # Structure: {fencer_name: [(date, seed), ...]}
         self.seedings = defaultdict(list)
 
-    def add_match(self, fencer1, fencer2, date, match_type, winner, score=None):
+    def add_match(self, fencer1, fencer2, date, match_type, winner, score=None, is_walkover=False):
         """Add a match to the history. Always store in alphabetical order.
-        Skips matches involving blacklisted fencers."""
+        Skips matches involving blacklisted fencers.
+
+        Walkovers are still recorded (so they remain visible in the raw match
+        history), but callers can use the is_walkover flag to exclude them from
+        aggregate statistics (total matches, winrate, DE record)."""
         if not fencer1 or not fencer2 or fencer1 == '_' or fencer2 == '_':
             return
 
@@ -658,7 +678,8 @@ class MatchHistory:
             'date': date,
             'type': match_type,
             'winner': winner_normalized,
-            'score': adjusted_score
+            'score': adjusted_score,
+            'is_walkover': is_walkover
         })
 
     def add_placement(self, fencer, place, field_size=None, date=None):
@@ -756,6 +777,11 @@ class MatchHistory:
                 continue
 
             for match in matches:
+                # Walkovers are still recorded but don't count toward a fencer's
+                # match totals, winrate, or DE record.
+                if match.get('is_walkover'):
+                    continue
+
                 stats['total_matches'] += 1
 
                 is_poule = match['type'] == 'poule'
@@ -1240,7 +1266,7 @@ def process_all_sheets(base_dir='downloaded_sheets'):
                     is_walkover = False
 
                 # Skip if either fencer is blacklisted (add_match will handle this check)
-                history.add_match(fencer1, fencer2, date_str, match_type, winner, score)
+                history.add_match(fencer1, fencer2, date_str, match_type, winner, score, is_walkover)
 
                 # Normalize and check for blacklisted fencers
                 fencer1_norm = normalize_name(fencer1)
@@ -1633,21 +1659,25 @@ def export_head_to_head_stats(history, output_file='head_to_head_stats.csv'):
         ])
 
         for (fencer1, fencer2), matches in sorted(all_pairs.items()):
+            # Exclude walkovers from the record (totals, winrate, DE). They stay
+            # in the raw match history so they still appear in the match table.
+            scored_matches = [m for m in matches if not m.get('is_walkover')]
+
             # Calculate overall stats
-            total_matches = len(matches)
-            f1_wins = sum(1 for m in matches if m['winner'] == fencer1)
-            f2_wins = sum(1 for m in matches if m['winner'] == fencer2)
+            total_matches = len(scored_matches)
+            f1_wins = sum(1 for m in scored_matches if m['winner'] == fencer1)
+            f2_wins = sum(1 for m in scored_matches if m['winner'] == fencer2)
             f1_win_pct = round(f1_wins / total_matches, 3) if total_matches > 0 else 0
             f2_win_pct = round(f2_wins / total_matches, 3) if total_matches > 0 else 0
 
             # Calculate poule stats
-            poule_matches = [m for m in matches if m['type'] == 'poule']
+            poule_matches = [m for m in scored_matches if m['type'] == 'poule']
             poule_count = len(poule_matches)
             f1_poule_wins = sum(1 for m in poule_matches if m['winner'] == fencer1)
             f2_poule_wins = sum(1 for m in poule_matches if m['winner'] == fencer2)
 
             # Calculate DE stats
-            de_matches = [m for m in matches if 'DE' in m['type']]
+            de_matches = [m for m in scored_matches if 'DE' in m['type']]
             de_count = len(de_matches)
             f1_de_wins = sum(1 for m in de_matches if m['winner'] == fencer1)
             f2_de_wins = sum(1 for m in de_matches if m['winner'] == fencer2)
@@ -2156,7 +2186,9 @@ def export_json_for_website(elo_system, history, session_stats, all_placements, 
     current_session = elo_system.current_session_index
     ratings_data = []
     for fencer, rating in sorted(elo_system.ratings.items(), key=lambda x: x[1], reverse=True):
-        match_count = elo_system.get_match_count(fencer)
+        # Displayed match total excludes walkovers (they still appear in the
+        # raw match history, just not in the count/winrate).
+        match_count = elo_system.get_display_match_count(fencer)
 
         # Calculate active status and recent participation
         active_status, recent_participation = elo_system.get_active_status(fencer, current_session)
@@ -2237,11 +2269,15 @@ def export_json_for_website(elo_system, history, session_stats, all_placements, 
         if reverse_exists:
             continue
 
+        # Exclude walkovers from the head-to-head record (totals, winrate, DE).
+        # They remain in the raw match history so they still show up in the table.
+        scored_matches = [m for m in matches if not m.get('is_walkover')]
+
         wins = {fencer1: 0, fencer2: 0}
         poule_wins = {fencer1: 0, fencer2: 0}
         de_wins = {fencer1: 0, fencer2: 0}
 
-        for match in matches:
+        for match in scored_matches:
             winner = match['winner']
             if winner in wins:
                 wins[winner] += 1
@@ -2253,13 +2289,13 @@ def export_json_for_website(elo_system, history, session_stats, all_placements, 
         h2h_data.append({
             'fencer1': fencer1,
             'fencer2': fencer2,
-            'total_matches': len(matches),
+            'total_matches': len(scored_matches),
             'fencer1_wins': wins[fencer1],
             'fencer2_wins': wins[fencer2],
-            'poule_matches': sum(1 for m in matches if m['type'].lower() == 'poule'),
+            'poule_matches': sum(1 for m in scored_matches if m['type'].lower() == 'poule'),
             'fencer1_poule_wins': poule_wins[fencer1],
             'fencer2_poule_wins': poule_wins[fencer2],
-            'de_matches': sum(1 for m in matches if m['type'].lower() != 'poule'),
+            'de_matches': sum(1 for m in scored_matches if m['type'].lower() != 'poule'),
             'fencer1_de_wins': de_wins[fencer1],
             'fencer2_de_wins': de_wins[fencer2]
         })
@@ -2512,8 +2548,14 @@ def process_single_date(date_folder, base_dir='downloaded_sheets'):
         print(f"\nParsing DE sheet: {de_sheet.name}")
         matches, placements, seedings = parse_de_sheet(de_sheet, date)
         de_matches_data = matches
-        for fencer1, fencer2, date, match_type, winner, score in matches:
-            history.add_match(fencer1, fencer2, date, match_type, winner, score)
+        for match_data in matches:
+            # Handle both old (6 elements) and new (7 elements with walkover) format
+            if len(match_data) == 7:
+                fencer1, fencer2, date, match_type, winner, score, is_walkover = match_data
+            else:
+                fencer1, fencer2, date, match_type, winner, score = match_data
+                is_walkover = False
+            history.add_match(fencer1, fencer2, date, match_type, winner, score, is_walkover)
             fencers_in_des.add(fencer1)
             fencers_in_des.add(fencer2)
         # Calculate total fencers (those in poules, or if no poule data, those in DEs)

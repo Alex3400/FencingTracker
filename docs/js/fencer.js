@@ -711,6 +711,11 @@ function renderDaySummary(fencerName, date, matches) {
         const change = isWinner ? parseFloat(match['Winner Change']) : parseFloat(match['Loser Change']);
         const isPoule = match['Match Type'] === 'Poule';
 
+        // Walkovers (0.0 change on both sides in a DE match) still show in the
+        // match list but don't count toward the day's win-loss record.
+        const isWalkover = parseFloat(match['Winner Change']) === 0.0 &&
+            parseFloat(match['Loser Change']) === 0.0 && !isPoule;
+
         if (!isNaN(change)) {
             totalSwing += change;
             if (isPoule) {
@@ -718,6 +723,10 @@ function renderDaySummary(fencerName, date, matches) {
             } else {
                 deSwing += change;
             }
+        }
+
+        if (isWalkover) {
+            return;
         }
 
         if (isWinner) {
@@ -1031,11 +1040,10 @@ function displayMatchHistory(fencer1, fencer2) {
     const tbody = document.getElementById('h2h-match-history-body');
     tbody.innerHTML = '';
 
-    // Filter matches
     const matches = matchHistoryData.filter(match =>
         (match['Winner'] === fencer1 && match['Loser'] === fencer2) ||
         (match['Winner'] === fencer2 && match['Loser'] === fencer1)
-    );
+    ).reverse();
 
     matches.forEach(match => {
         const row = document.createElement('tr');
