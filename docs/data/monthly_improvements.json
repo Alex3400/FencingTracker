@@ -1,5 +1,183 @@
 [
   {
+    "month": "2026-08",
+    "month_name": "August 2026",
+    "session_dates": [
+      "2026-08-11"
+    ],
+    "session_count": 1,
+    "fencer_changes": [
+      {
+        "fencer": "Tom T",
+        "start_rating": 1718.1,
+        "end_rating": 1803.2,
+        "change": 85.1,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Vadym",
+        "start_rating": 1573.8,
+        "end_rating": 1649.6,
+        "change": 75.8,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Shevy",
+        "start_rating": 1572.4,
+        "end_rating": 1627.2,
+        "change": 54.8,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Kirill",
+        "start_rating": 1304.4,
+        "end_rating": 1345.8,
+        "change": 41.4,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Alonzo",
+        "start_rating": 1318.9,
+        "end_rating": 1355.8,
+        "change": 36.9,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Lukas N",
+        "start_rating": 1517.4,
+        "end_rating": 1552.7,
+        "change": 35.3,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Joshua",
+        "start_rating": 1377.4,
+        "end_rating": 1408.0,
+        "change": 30.7,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Alex Y",
+        "start_rating": 1634.6,
+        "end_rating": 1663.6,
+        "change": 29.0,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Andy R",
+        "start_rating": 1175.6,
+        "end_rating": 1202.0,
+        "change": 26.4,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Eugene",
+        "start_rating": 1468.3,
+        "end_rating": 1486.3,
+        "change": 18.0,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Vincent",
+        "start_rating": 1529.8,
+        "end_rating": 1545.5,
+        "change": 15.7,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Nat",
+        "start_rating": 1143.9,
+        "end_rating": 1156.1,
+        "change": 12.2,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Bryan",
+        "start_rating": 1576.8,
+        "end_rating": 1570.6,
+        "change": -6.2,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Marg",
+        "start_rating": 1350.9,
+        "end_rating": 1343.5,
+        "change": -7.3,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Steph",
+        "start_rating": 1611.8,
+        "end_rating": 1592.4,
+        "change": -19.4,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Caden",
+        "start_rating": 1470.3,
+        "end_rating": 1449.4,
+        "change": -21.0,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Isra",
+        "start_rating": 1358.5,
+        "end_rating": 1336.7,
+        "change": -21.7,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Anna A",
+        "start_rating": 1567.4,
+        "end_rating": 1524.5,
+        "change": -42.9,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Sammy",
+        "start_rating": 1661.9,
+        "end_rating": 1611.0,
+        "change": -50.9,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Max V",
+        "start_rating": 1505.0,
+        "end_rating": 1450.8,
+        "change": -54.2,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Fedor",
+        "start_rating": 1425.7,
+        "end_rating": 1367.5,
+        "change": -58.2,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Perth",
+        "start_rating": 1403.3,
+        "end_rating": 1344.7,
+        "change": -58.6,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Willie",
+        "start_rating": 1722.4,
+        "end_rating": 1660.3,
+        "change": -62.1,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Roeland",
+        "start_rating": 1770.1,
+        "end_rating": 1684.3,
+        "change": -85.8,
+        "sessions_attended": 1
+      }
+    ]
+  },
+  {
     "month": "2026-07",
     "month_name": "July 2026",
     "session_dates": [

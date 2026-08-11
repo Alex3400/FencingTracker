@@ -1,0 +1,35 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Unnamed: 14,Unnamed: 15,Unnamed: 16
+1,Willie,1.0,Willie,,Willie,,Alex Y,V,Alex Y,V,Alex Y,,Tom T,,2.0,Vincent
+2,Vincent,32.0,_,,Alex Y,V,Lukas N,,Baran,,Tom T,V,Alex Y,,19.0,Fedor
+3,Tom T,17.0,Fedor,,Anna A,,Sammy,,Tom T,V,Baran,V,Baran,,13.0,Alex Y
+4,Vadym,16.0,Alex Y,V,Lukas N,V,Baran,V,Bryan ,,Bryan ,,Bryan ,,26.0,Kirill
+5,Sammy,9.0,Anna A,V,Sammy,V,Tom T,V,Lukas N,V,Lukas N,V,Lukas N,,23.0,Caden
+6,Shevy,24.0,Yolie,,Max V,,Shevy,,Sammy,Walkover,Caden,,Caden,,7.0,Shevy
+7,Anna A,25.0,Nat,,Baran,V,Caden,,Shevy,Walkover,Sammy,,Shevy,,,
+8,Eugene,8.0,Lukas N,V,Vadym,,Bryan ,V,Caden,V,Shevy,V,Sammy,,15.0,Marg
+9,Lukas N,5.0,Sammy,,Tom T,V,Willie,V,Willie,,Vadym,V,Vadym,,20.0,#REF!
+10,Alonzo,28.0,_,,Harry,,Anna A,Walkover,Vadym,V,Roeland,,Roeland,,11.0,Roeland
+11,Roeland,21.0,Andy R,,Roeland,,Max V,,Roeland,V,Willie,V,Willie,,6.0,Anna A
+12,Max V,12.0,Max V,V,Shevy,V,Vadym,V,Vincent,,Vincent,Walkover,Vincent,,3.0,Tom T
+13,Baran,13.0,Baran,,Kirill,,Harry,,Anna A,V,Anna A,,Harry,,1.0,Willie
+14,Perth,20.0,_,,Caden,V,Roeland,V,Max V,Walkover,Harry,V,Anna A,,16.0,Baran
+15,Marg,29.0,_,,Bryan ,V,Kirill,,Harry,V,Max V,,Kirill,,14.0,Perth
+16,Baran,4.0,Vadym,,Vincent,,Vincent,V,Kirill,Walkover,Kirill,V,Max V,,,
+17,Bryan ,3.0,Tom T,,_,,Fedor,,Nat,,Andy R,,Eugene,,8.0,Eugene
+18,Harry,30.0,_,,Fedor,Walkover,Nat,V,Andy R,V,Eugene,V,Andy R,,9.0,Lukas N
+19,Fedor,19.0,Harry,V,Yolie,Walkover,Andy R,,Perth,,Nat,Walkover,Perth,,21.0,Andy R
+20,_,14.0,Perth,,Nat,V,_,,Eugene,V,Perth,V,Nat,,10.0,Alonzo
+21,Andy R,11.0,Roeland,V,_,,Perth,V,Fedor,,Fedor,Walkover,isra,,17.0,Bryan 
+22,isra,22.0,isra,,Andy R,,isra,Walkover,_,,isra,V,Fedor,,22.0,isra
+23,Caden,27.0,_,,_,,Eugene,V,isra,V,_,,Marg,,25.0,Nat
+24,Yolie,6.0,Shevy,,_,,Marg,Walkover,Marg,Walkover,Marg,,_,,4.0,Vadym
+25,Nat,7.0,Eugene,,_,,_,,Yolie,Walkover,Yolie,,Alonzo,,5.0,Sammy
+26,Kirill,26.0,Kirill,V,Perth,,Yolie,,_,,Alonzo,V,Yolie,,18.0,Harry
+27,_,23.0,Caden,V,isra,Walkover,_,,_,,_,,_,,12.0,Max V
+28,_,10.0,Alonzo,,_,,_,,Alonzo,,_,,_,,24.0,Yolie
+29,_,15.0,Marg,,Eugene,V,_,,_,,_,,_,,,
+30,_,18.0,Bryan ,V,Alonzo,,_,,_,,_,,_,,,
+31,_,31.0,_,,Marg,Walkover,Alonzo,,_,,_,,_,,,
+32,_,2.0,Vincent,,_,,_,,_,,_,,_,,,
+Lock the Pool Results,,,,,,,,,,,,,,,,
+UNLOCKED,,,,,,,,,,,,,,,,
