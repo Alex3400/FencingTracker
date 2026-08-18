@@ -1,0 +1,35 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Unnamed: 14,Unnamed: 15,Unnamed: 16
+1,Vincent,1.0,Vincent,,Vincent,V,Vincent,V,Vincent,V,Vincent,V,Vincent,,1.0,Vincent
+2,Anna Z,32.0,_,,Michael w,,Alex Y,,Baran,,Willie,,Willie,,22.0,Fedor
+3,Willie,17.0,Michael w,V,Alex Y,V,Bryan,,Willie,V,Baran,,Greg,,19.0,Nat
+4,Roeland,16.0,Nathan N,,steph,,Baran,V,Greg,,Greg,V,Baran,,9.0,Alex Y
+5,Bryan,9.0,Alex Y,V,Bryan,V,Willie,V,Alex Y,V,Alex Y,V,Alex Y,,7.0,Greg
+6,Will P,24.0,Kirill,,Joshua,,Will P,,Bryan,,Anna Z,,Anna Z,,6.0,Will P
+7,Greg,25.0,_,,Baran,V,Greg,V,Will P,,Bryan,V,Bryan,,12.0,Susanne
+8,steph,8.0,steph,,Roeland,,Anna Z,,Anna Z,V,Will P,Walkover,Will P,,11.0,Tom T
+9,Alex Y,5.0,Bryan,,Willie,V,Michael w,,steph,,Roeland,V,Roeland,,8.0,steph
+10,Vadym,28.0,_,,Sammy,,steph,V,Roeland,V,Max V,,Max V,,3.0,Willie
+11,Tom T,21.0,Joshua,V,Tom T,,Joshua,Walkover,Sammy,,steph,V,steph,,,
+12,Susanne,12.0,Susanne,,Will P,V,Roeland,V,Max V,V,Sammy,Walkover,Sammy,,16.0,Nathan N
+13,Baran,13.0,Baran,V,Greg,V,Sammy,V,Michael w,V,Michael w,V,Michael w,,24.0,Kirill
+14,Sammy,20.0,Thea,,Vadym,,Tom T,Walkover,Joshua,Walkover,Vadym,Walkover,Vadym,,,
+15,Max V,29.0,_,,Max V,,Vadym,,Tom T,Walkover,Joshua,V,Joshua,,2.0,Anna Z
+16,Nathan N,4.0,Roeland,,Anna Z,V,Max V,V,Vadym,V,Tom T,Walkover,Tom T,,20.0,Thea
+17,Michael w,3.0,Willie,,_,,Nathan N,,Kirill,V,Kirill,,Fedor,,4.0,Roeland
+18,Perth,30.0,_,,Nathan N,,Kirill,V,Susanne,,Fedor,V,Kirill,,18.0,Perth
+19,Nat,19.0,Nat,,Kirill,,Susanne,V,Fedor,V,Susanne,Walkover,Perth,,21.0,Joshua
+20,Thea,14.0,Sammy,V,_,,Thea,,Perth,,Perth,V,Susanne,,14.0,Sammy
+21,Joshua,11.0,Tom T,V,_,,Nat,,Nathan N,V,Nathan N,V,Nathan N,,5.0,Bryan
+22,Fedor,22.0,Fedor,,Susanne,,Fedor,V,Thea,Walkover,Ila,,Ila,,13.0,Baran
+23,Ila,27.0,_,,Thea,,Ila,,Nat,,Thea,Walkover,Nat,,17.0,Michael w
+24,Kirill,6.0,Will P,,_,,Perth,V,Ila,V,Nat,V,Thea,,10.0,Vadym
+25,_,7.0,Greg,,_,,_,,_,,_,,_,,23.0,Ila
+26,_,26.0,_,,Nat,,_,,_,,_,,_,,15.0,Max V
+27,_,23.0,Ila,,Fedor,,_,,_,,_,,_,,,
+28,_,10.0,Vadym,V,_,,_,,_,,_,,_,,,
+29,_,15.0,Max V,V,_,,_,,_,,_,,_,,,
+30,_,18.0,Perth,,Ila,,_,,_,,_,,_,,,
+31,_,31.0,_,,Perth,,_,,_,,_,,_,,,
+32,_,2.0,Anna Z,,_,,_,,_,,_,,_,,,
+Lock the Pool Results,,,,,,,,,,,,,,,,
+LOCKED,,,,,,,,,,,,,,,,

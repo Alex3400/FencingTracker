@@ -13026,5 +13026,122 @@
         "fencer": "Yolie"
       }
     ]
+  },
+  {
+    "date": "2026-08-18",
+    "winner": "Vincent",
+    "top_poule_climber": "Vincent",
+    "top_poule_gain": 62.1,
+    "fencers_in_poules": 26,
+    "fencers_in_des": 24,
+    "poule_matches": 86,
+    "de_matches": 52,
+    "total_matches": 138,
+    "score_5_0": 5,
+    "score_5_1": 9,
+    "score_5_2": 19,
+    "score_5_3": 30,
+    "score_5_4": 21,
+    "total_touches": 641,
+    "avg_touches_per_match": 7.45,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1QrNepJCpALDKYhRuu6cP_TLdxsfH_-S6IDU-UidGx5I/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 2,
+        "fencer": "Willie"
+      },
+      {
+        "place": 3,
+        "fencer": "Greg"
+      },
+      {
+        "place": 4,
+        "fencer": "Baran"
+      },
+      {
+        "place": 5,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 6,
+        "fencer": "Anna Z"
+      },
+      {
+        "place": 7,
+        "fencer": "Bryan"
+      },
+      {
+        "place": 8,
+        "fencer": "Will P"
+      },
+      {
+        "place": 9,
+        "fencer": "Roeland"
+      },
+      {
+        "place": 10,
+        "fencer": "Max V"
+      },
+      {
+        "place": 11,
+        "fencer": "Steph"
+      },
+      {
+        "place": 12,
+        "fencer": "Sammy"
+      },
+      {
+        "place": 13,
+        "fencer": "Michael W"
+      },
+      {
+        "place": 14,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 15,
+        "fencer": "Joshua"
+      },
+      {
+        "place": 16,
+        "fencer": "Tom T"
+      },
+      {
+        "place": 17,
+        "fencer": "Fedor"
+      },
+      {
+        "place": 18,
+        "fencer": "Kirill"
+      },
+      {
+        "place": 19,
+        "fencer": "Perth"
+      },
+      {
+        "place": 20,
+        "fencer": "Susanne"
+      },
+      {
+        "place": 21,
+        "fencer": "Nathan N"
+      },
+      {
+        "place": 22,
+        "fencer": "Ila"
+      },
+      {
+        "place": 23,
+        "fencer": "Nat"
+      },
+      {
+        "place": 24,
+        "fencer": "Thea"
+      }
+    ]
   }
 ]
