@@ -13143,5 +13143,102 @@
         "fencer": "Thea"
       }
     ]
+  },
+  {
+    "date": "2026-08-25",
+    "winner": "Calum",
+    "top_poule_climber": "Calum",
+    "top_poule_gain": 49.7,
+    "fencers_in_poules": 23,
+    "fencers_in_des": 19,
+    "poule_matches": 70,
+    "de_matches": 37,
+    "total_matches": 107,
+    "score_5_0": 2,
+    "score_5_1": 8,
+    "score_5_2": 16,
+    "score_5_3": 21,
+    "score_5_4": 21,
+    "total_touches": 527,
+    "avg_touches_per_match": 7.53,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1ZY93G3YToVW35GXsFABWfk7aczlTo4iauX6pmnVP-lA/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Calum"
+      },
+      {
+        "place": 2,
+        "fencer": "Baran"
+      },
+      {
+        "place": 3,
+        "fencer": "Solu"
+      },
+      {
+        "place": 4,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 5,
+        "fencer": "Greg"
+      },
+      {
+        "place": 6,
+        "fencer": "Oleg"
+      },
+      {
+        "place": 7,
+        "fencer": "Willie"
+      },
+      {
+        "place": 8,
+        "fencer": "Tom T"
+      },
+      {
+        "place": 9,
+        "fencer": "Steph"
+      },
+      {
+        "place": 10,
+        "fencer": "Max V"
+      },
+      {
+        "place": 11,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 12,
+        "fencer": "Nathan N"
+      },
+      {
+        "place": 13,
+        "fencer": "Giles"
+      },
+      {
+        "place": 14,
+        "fencer": "Kirill"
+      },
+      {
+        "place": 15,
+        "fencer": "Fedor"
+      },
+      {
+        "place": 16,
+        "fencer": "Thea"
+      },
+      {
+        "place": 17,
+        "fencer": "Nat"
+      },
+      {
+        "place": 18,
+        "fencer": "Mariette"
+      },
+      {
+        "place": 19,
+        "fencer": "Caden"
+      }
+    ]
   }
 ]

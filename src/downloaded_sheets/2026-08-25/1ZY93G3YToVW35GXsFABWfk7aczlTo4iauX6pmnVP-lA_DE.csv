@@ -1,0 +1,35 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Unnamed: 14,Unnamed: 15,Unnamed: 16
+1,Calum,1.0,Calum,,Calum,V,Calum,V,Calum,V,Calum,V,Calum,,19.0,Giles
+2,Tom T,32.0,_,,Nathan N,,Willie,,Solu,,Baran,,Baran,,2.0,Tom T
+3,Oleg,17.0,Nathan N,V,Thea,,Greg,,Baran,V,Solu,V,Solu,,15.0,Fedor
+4,Solu,16.0,Mariette,,Willie,V,Solu,V,Alejo,,Alejo,,Alejo,,18.0,Caden
+5,Greg,9.0,Thea,,Greg,V,Oleg,,Willie,,Greg,V,Greg,,14.0,Nat
+6,Eugene,24.0,_,,Steph,,Baran,V,Greg,V,Oleg,Walkover,Oleg,,3.0,Oleg
+7,Alejo,25.0,_,,Kirill,,Alejo,V,Oleg,V,Willie,V,Willie,,5.0,Greg
+8,Willie,8.0,Willie,,Solu,V,Tom T,,Tom T,Walkover,Tom T,Walkover,Tom T,,17.0,Nathan N
+9,Thea,5.0,Greg,,Oleg,V,Nathan N,V,Nathan N,Walkover,Steph,V,Steph,,8.0,Willie
+10,Max V,28.0,_,,Giles,,Thea,,Steph,V,Max V,,Max V,,12.0,Steph
+11,Baran,21.0,_,,Baran,V,Steph,V,Eugene,,Nathan N,Walkover,Eugene,,,
+12,Steph,12.0,Steph,,Eugene,,Kirill,,Max V,V,Eugene,V,Nathan N,,16.0,Mariette
+13,Kirill,13.0,Kirill,,Alejo,V,Giles,,Thea,Walkover,Kirill,,Giles,,,
+14,Nat,20.0,_,,Max V,,Eugene,V,Kirill,V,Giles,V,Kirill,,1.0,Calum
+15,Fedor,29.0,_,,Fedor,,Max V,V,Giles,V,Thea,Walkover,Fedor,,13.0,Kirill
+16,Mariette,4.0,Solu,,Tom T,V,Fedor,,Fedor,,Fedor,V,Thea,,10.0,Max V
+17,Nathan N,3.0,Oleg,,_,,Mariette,,Mariette,,Mariette,,Nat,,4.0,Solu
+18,Caden,30.0,_,,Mariette,,_,,_,,Nat,V,Mariette,,6.0,Eugene
+19,Giles,19.0,Giles,V,_,,_,,Nat,V,_,,Caden,,7.0,Alejo
+20,_,14.0,Nat,,_,,_,,Caden,,Caden,,_,,,
+21,_,11.0,Baran,,_,,Nat,,_,,_,,_,,,
+22,_,22.0,_,,_,,_,,_,,_,,_,,,
+23,_,27.0,_,,_,,_,,_,,_,,_,,9.0,Thea
+24,_,6.0,Eugene,,_,,Caden,,_,,_,,_,,11.0,Baran
+25,_,7.0,Alejo,,_,,_,,_,,_,,_,,,
+26,_,26.0,_,,Nat,,_,,_,,_,,_,,,
+27,_,23.0,_,,_,,_,,_,,_,,_,,,
+28,_,10.0,Max V,,_,,_,,_,,_,,_,,,
+29,_,15.0,Fedor,V,_,,_,,_,,_,,_,,,
+30,_,18.0,Caden,,_,,_,,_,,_,,_,,,
+31,_,31.0,_,,Caden,,_,,_,,_,,_,,,
+32,_,2.0,Tom T,,_,,_,,_,,_,,_,,,
+Lock the Pool Results,,,,,,,,,,,,,,,,
+LOCKED,,,,,,,,,,,,,,,,

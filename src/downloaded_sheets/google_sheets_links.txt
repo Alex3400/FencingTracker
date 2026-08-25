@@ -147,3 +147,4 @@
 7/28/26,https://docs.google.com/spreadsheets/d/1vZHxQYfzLDj-whd1kNx9nQkjFvVzFLItajD8ykoEio0/edit?usp=drive_link
 8/11/26,https://docs.google.com/spreadsheets/d/1oul96a6N5rrLippPuLbmZwG-oZAsn2vVFn2g2Cc2oNo/edit?usp=drivesdk
 8/18/26,https://docs.google.com/spreadsheets/d/1QrNepJCpALDKYhRuu6cP_TLdxsfH_-S6IDU-UidGx5I/edit?usp=drivesdk
+8/25/26,https://docs.google.com/spreadsheets/d/1ZY93G3YToVW35GXsFABWfk7aczlTo4iauX6pmnVP-lA/edit?usp=drivesdk
