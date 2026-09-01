@@ -1,0 +1,35 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Unnamed: 14,Unnamed: 15,Unnamed: 16
+1,Eric L,1.0,Eric L,,Eric L,V,Eric L,,Baran,,Alejo,V,Alejo,,1.0,Eric L
+2,Tom T,32.0,_,,Tony A,,Baran,V,Alejo,V,Greg,,Greg,,20.0,Giles
+3,Greg,17.0,Tony A,V,Vadym,,Alejo,V,Greg,V,Baran,V,Baran,,13.0,Richard B
+4,Willie,16.0,Max V,,Baran,V,Willie,,Sameer,,Sameer,Walkover,Sameer,,14.0,Kirill
+5,Alejo,9.0,Vadym,,Alejo,V,Greg,V,Eric L,V,Eric L,V,Eric L,,18.0,Shevy
+6,Oleg,24.0,_,,Nathan N,,Alex Y,,Willie,,Alex Y,,Alex Y,,6.0,Oleg
+7,Sammy,25.0,_,,Giles,,Roeland,,Alex Y,V,Willie,V,Willie,,4.0,Willie
+8,Baran,8.0,Baran,,Willie,V,Sameer,V,Roeland,,Roeland,,Roeland,,3.0,Greg
+9,Vadym,5.0,Alejo,,Greg,V,Tony A,,Vadym,V,Vadym,V,Vadym,,15.0,Sameer
+10,Roeland,28.0,_,,Bryan,,Vadym,V,Giles,,Bryan,,Bryan,,10.0,Roeland
+11,Alex Y,21.0,Nathan N,V,Alex Y,V,Nathan N,,Bryan,V,Giles,Walkover,Tom T,,,
+12,adam hany,12.0,adam hany,,Oleg,,Giles,V,Tom T,,Tom T,V,Giles,,16.0,Max V
+13,Richard B,13.0,Richard B,,Sammy,,Bryan,V,Tony A,V,Tony A,V,Tony A,,,
+14,Kirill,20.0,Giles,V,Roeland,V,Oleg,,Nathan N,,Sammy,Walkover,Sammy,,19.0,Bryan
+15,Sameer,29.0,_,,Sameer,V,Sammy,,Oleg,,Nathan N,,Oleg,,21.0,Nathan N
+16,Max V,4.0,Willie,,Tom T,,Tom T,V,Sammy,V,Oleg,V,Nathan N,,12.0,adam hany
+17,Tony A,3.0,Greg,,_,,Max V,,Max V,Walkover,Richard B,V,Richard B,,5.0,Alejo
+18,Shevy,30.0,_,,Max V,,_,,Richard B,V,Kirill,,Kirill,,2.0,Tom T
+19,Bryan,19.0,Bryan,V,_,,adam hany,,Kirill,V,Max V,V,Max V,,,
+20,Giles,14.0,Kirill,,_,,Richard B,V,Shevy,Walkover,Shevy,Walkover,Shevy,,11.0,Alex Y
+21,Nathan N,11.0,Alex Y,,_,,Kirill,,_,,adam hany,,adam hany,,,
+22,_,22.0,_,,adam hany,,_,,adam hany,,_,,_,,8.0,Baran
+23,_,27.0,_,,Richard B,,_,,_,,adam hany,,adam hany,,17.0,Tony A
+24,_,6.0,Oleg,,_,,Shevy,,_,,_,,_,,7.0,Sammy
+25,_,7.0,Sammy,,_,,_,,_,,_,,_,,9.0,Vadym
+26,_,26.0,_,,Kirill,,_,,_,,_,,_,,,
+27,_,23.0,_,,_,,_,,_,,_,,_,,,
+28,_,10.0,Roeland,,_,,_,,_,,_,,_,,,
+29,_,15.0,Sameer,V,_,,_,,_,,_,,_,,,
+30,_,18.0,Shevy,,_,,_,,_,,_,,_,,,
+31,_,31.0,_,,Shevy,,_,,_,,_,,_,,,
+32,_,2.0,Tom T,,_,,_,,_,,_,,_,,,
+Lock the Pool Results,,,,,,,,,,,,,,,,
+LOCKED,,,,,,,,,,,,,,,,

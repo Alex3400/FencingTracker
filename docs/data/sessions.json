@@ -13240,5 +13240,110 @@
         "fencer": "Caden"
       }
     ]
+  },
+  {
+    "date": "2026-09-01",
+    "winner": "Alejo",
+    "top_poule_climber": "Sammy",
+    "top_poule_gain": 33.3,
+    "fencers_in_poules": 25,
+    "fencers_in_des": 21,
+    "poule_matches": 78,
+    "de_matches": 42,
+    "total_matches": 120,
+    "score_5_0": 7,
+    "score_5_1": 5,
+    "score_5_2": 16,
+    "score_5_3": 20,
+    "score_5_4": 28,
+    "total_touches": 589,
+    "avg_touches_per_match": 7.55,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1LH4YhOc3IF4MEbtU7MXs6zIZN5P-gNbVmls00zxb_g8/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 2,
+        "fencer": "Greg"
+      },
+      {
+        "place": 3,
+        "fencer": "Baran"
+      },
+      {
+        "place": 4,
+        "fencer": "Sameer"
+      },
+      {
+        "place": 5,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 6,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 7,
+        "fencer": "Willie"
+      },
+      {
+        "place": 8,
+        "fencer": "Roeland"
+      },
+      {
+        "place": 9,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 10,
+        "fencer": "Bryan"
+      },
+      {
+        "place": 11,
+        "fencer": "Tom T"
+      },
+      {
+        "place": 12,
+        "fencer": "Giles"
+      },
+      {
+        "place": 13,
+        "fencer": "Tony A"
+      },
+      {
+        "place": 14,
+        "fencer": "Sammy"
+      },
+      {
+        "place": 15,
+        "fencer": "Oleg"
+      },
+      {
+        "place": 16,
+        "fencer": "Nathan N"
+      },
+      {
+        "place": 17,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 18,
+        "fencer": "Kirill"
+      },
+      {
+        "place": 19,
+        "fencer": "Max V"
+      },
+      {
+        "place": 20,
+        "fencer": "Shevy"
+      },
+      {
+        "place": 23,
+        "fencer": "Adam Hany"
+      }
+    ]
   }
 ]
