@@ -98,6 +98,10 @@ The script picks that up and treats it as a walkover:
 
 So if you advance to the final on a walkover and then win it, you'll only see Elo movement from the final itself.
 
+### Active status
+
+A fencer counts as **Active** if they've fenced in **5+ of the last 40 sessions**, OR **3+ of the last 6 sessions**.
+
 ### Inactivity decay
 
 If you stop coming for **8 consecutive sessions**, your rating starts decaying by 5% per missed session, but only if you're rated above **1600** and only down to 1600. This is mostly to keep one-off guests with a freakishly high or low rating from cluttering the top of the leaderboard. Active fencers and anyone below 1600 are untouched.

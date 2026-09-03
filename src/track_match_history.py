@@ -523,11 +523,16 @@ class EloRatingSystem:
     def get_active_status(self, fencer, current_session):
         """Calculate active status based on participation in last 40 sessions.
 
-        Active: 5+ participations out of last 40 sessions
-        Semi-active: 1-4 participations out of last 40 sessions
+        Active: 5+ participations out of last 40 sessions, OR 3+ out of last 6 sessions
+        Semi-active: 1-4 participations out of last 40 sessions (and not Active)
         Inactive: 0 participations out of last 40 sessions
 
         Returns: (status, participation_count)
+
+        participation_count is reported against the 40-session window; the
+        3-out-of-6 check is a secondary path so a fencer who just returned
+        from a break shows Active without waiting for the 40-window count
+        to catch up.
         """
         if fencer not in self.participation_history:
             return 'Inactive', 0
@@ -538,7 +543,11 @@ class EloRatingSystem:
 
         participation_count = len(sessions_in_range)
 
-        if participation_count >= 5:
+        # Get sessions in the last 6 (inclusive of current)
+        recent_count = len([s for s in self.participation_history[fencer]
+                           if s > current_session - 6 and s <= current_session])
+
+        if participation_count >= 5 or recent_count >= 3:
             status = 'Active'
         elif participation_count >= 1:
             status = 'Semi-active'
@@ -557,7 +566,7 @@ def compute_peaks_from_snapshots(elo_system):
     all-time-high rating, plus the rank they held at that moment.
 
     For the rank, we try three increasingly permissive pools:
-      1. 'active'           — Active fencers (5+ of last 40), matches the live leaderboard
+      1. 'active'           — Active fencers (5+ of last 40, or 3+ of last 6), matches the live leaderboard
       2. 'recently_active'  — anyone with 1+ participations in last 40
       3. 'none'             — neither pool contains the peak-setter; rank omitted
 
