@@ -10382,7 +10382,7 @@
       },
       {
         "place": 22,
-        "fencer": "Kirill"
+        "fencer": "Kirill Iv"
       },
       {
         "place": 23,
@@ -10568,7 +10568,7 @@
       },
       {
         "place": 19,
-        "fencer": "Kirill"
+        "fencer": "Kirill Iv"
       },
       {
         "place": 20,
@@ -10665,7 +10665,7 @@
       },
       {
         "place": 18,
-        "fencer": "Kirill"
+        "fencer": "Kirill Iv"
       },
       {
         "place": 19,
@@ -10774,7 +10774,7 @@
       },
       {
         "place": 18,
-        "fencer": "Kirill"
+        "fencer": "Kirill Iv"
       },
       {
         "place": 19,
@@ -10948,7 +10948,7 @@
       },
       {
         "place": 11,
-        "fencer": "Kirill"
+        "fencer": "Kirill Iv"
       },
       {
         "place": 12,
@@ -11081,7 +11081,7 @@
       },
       {
         "place": 20,
-        "fencer": "Kirill"
+        "fencer": "Kirill Iv"
       },
       {
         "place": 21,
@@ -11243,7 +11243,7 @@
       },
       {
         "place": 19,
-        "fencer": "Kirill"
+        "fencer": "Kirill Iv"
       },
       {
         "place": 20,
@@ -11360,7 +11360,7 @@
       },
       {
         "place": 22,
-        "fencer": "Kirill"
+        "fencer": "Kirill Iv"
       },
       {
         "place": 23,
@@ -11489,7 +11489,7 @@
       },
       {
         "place": 22,
-        "fencer": "Kirill"
+        "fencer": "Kirill Iv"
       },
       {
         "place": 23,
@@ -11602,7 +11602,7 @@
       },
       {
         "place": 20,
-        "fencer": "Kirill"
+        "fencer": "Kirill Iv"
       },
       {
         "place": 21,
@@ -11723,7 +11723,7 @@
       },
       {
         "place": 20,
-        "fencer": "Kirill"
+        "fencer": "Kirill Iv"
       },
       {
         "place": 21,
@@ -11840,7 +11840,7 @@
       },
       {
         "place": 21,
-        "fencer": "Kirill"
+        "fencer": "Kirill Iv"
       },
       {
         "place": 22,
@@ -11857,8 +11857,8 @@
     "winner": "Greg",
     "top_poule_climber": "Alix S",
     "top_poule_gain": 53.1,
-    "fencers_in_poules": 20,
-    "fencers_in_des": 19,
+    "fencers_in_poules": 21,
+    "fencers_in_des": 20,
     "poule_matches": 78,
     "de_matches": 40,
     "total_matches": 118,
@@ -11900,6 +11900,10 @@
         "fencer": "Oleg"
       },
       {
+        "place": 8,
+        "fencer": "Kirill Iv"
+      },
+      {
         "place": 9,
         "fencer": "Tom S"
       },
@@ -11909,7 +11913,7 @@
       },
       {
         "place": 11,
-        "fencer": "Kirill"
+        "fencer": "Kiril Ia"
       },
       {
         "place": 12,
@@ -11953,7 +11957,7 @@
     "date": "2026-05-26",
     "winner": "Alejo",
     "top_poule_climber": "Lukas N",
-    "top_poule_gain": 36.9,
+    "top_poule_gain": 36.0,
     "fencers_in_poules": 15,
     "fencers_in_des": 15,
     "poule_matches": 54,
@@ -12010,7 +12014,7 @@
       },
       {
         "place": 11,
-        "fencer": "Kirill"
+        "fencer": "Kirill Iv"
       },
       {
         "place": 12,
@@ -12034,7 +12038,7 @@
     "date": "2026-06-02",
     "winner": "Roeland",
     "top_poule_climber": "Eugene",
-    "top_poule_gain": 45.7,
+    "top_poule_gain": 45.8,
     "fencers_in_poules": 20,
     "fencers_in_des": 20,
     "poule_matches": 72,
@@ -12119,7 +12123,7 @@
       },
       {
         "place": 18,
-        "fencer": "Kirill"
+        "fencer": "Kirill Iv"
       },
       {
         "place": 19,
@@ -12135,7 +12139,7 @@
     "date": "2026-06-09",
     "winner": "Tom T",
     "top_poule_climber": "Adam S",
-    "top_poule_gain": 49.6,
+    "top_poule_gain": 49.7,
     "fencers_in_poules": 28,
     "fencers_in_des": 25,
     "poule_matches": 128,
@@ -12248,7 +12252,7 @@
       },
       {
         "place": 25,
-        "fencer": "Kirill"
+        "fencer": "Kirill Iv"
       }
     ]
   },
@@ -12256,7 +12260,7 @@
     "date": "2026-06-16",
     "winner": "Calum",
     "top_poule_climber": "Jack B",
-    "top_poule_gain": 67.4,
+    "top_poule_gain": 67.5,
     "fencers_in_poules": 32,
     "fencers_in_des": 29,
     "poule_matches": 135,
@@ -12357,7 +12361,7 @@
       },
       {
         "place": 22,
-        "fencer": "Kirill"
+        "fencer": "Kirill Iv"
       },
       {
         "place": 23,
@@ -12393,7 +12397,7 @@
     "date": "2026-06-30",
     "winner": "Charlie",
     "top_poule_climber": "Charlie",
-    "top_poule_gain": 46.0,
+    "top_poule_gain": 46.1,
     "fencers_in_poules": 26,
     "fencers_in_des": 25,
     "poule_matches": 125,
@@ -12513,8 +12517,8 @@
   {
     "date": "2026-07-07",
     "winner": "Greg",
-    "top_poule_climber": "Vivian",
-    "top_poule_gain": 45.5,
+    "top_poule_climber": "Vincent",
+    "top_poule_gain": 45.2,
     "fencers_in_poules": 21,
     "fencers_in_des": 19,
     "poule_matches": 89,
@@ -12579,7 +12583,7 @@
       },
       {
         "place": 13,
-        "fencer": "Kirill"
+        "fencer": "Kirill Iv"
       },
       {
         "place": 14,
@@ -12692,7 +12696,7 @@
       },
       {
         "place": 17,
-        "fencer": "Kirill"
+        "fencer": "Kirill Iv"
       },
       {
         "place": 18,
@@ -12704,7 +12708,7 @@
     "date": "2026-07-21",
     "winner": "Eric L",
     "top_poule_climber": "Adam S",
-    "top_poule_gain": 44.0,
+    "top_poule_gain": 44.1,
     "fencers_in_poules": 17,
     "fencers_in_des": 16,
     "poule_matches": 54,
@@ -12761,7 +12765,7 @@
       },
       {
         "place": 11,
-        "fencer": "Kirill"
+        "fencer": "Kirill Iv"
       },
       {
         "place": 12,
@@ -12886,7 +12890,7 @@
       },
       {
         "place": 21,
-        "fencer": "Kirill"
+        "fencer": "Kirill Iv"
       },
       {
         "place": 22,
@@ -12979,7 +12983,7 @@
       },
       {
         "place": 15,
-        "fencer": "Kirill"
+        "fencer": "Kirill Iv"
       },
       {
         "place": 16,
@@ -13112,7 +13116,7 @@
       },
       {
         "place": 18,
-        "fencer": "Kirill"
+        "fencer": "Kirill Iv"
       },
       {
         "place": 19,
@@ -13213,7 +13217,7 @@
       },
       {
         "place": 14,
-        "fencer": "Kirill"
+        "fencer": "Kirill Iv"
       },
       {
         "place": 15,
@@ -13326,7 +13330,7 @@
       },
       {
         "place": 18,
-        "fencer": "Kirill"
+        "fencer": "Kirill Iv"
       },
       {
         "place": 19,
