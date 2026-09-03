@@ -8985,12 +8985,12 @@
   {
     "fencer1": "Adam S",
     "fencer2": "Eric L",
-    "total_matches": 9,
+    "total_matches": 8,
     "fencer1_wins": 1,
-    "fencer2_wins": 8,
-    "poule_matches": 9,
+    "fencer2_wins": 7,
+    "poule_matches": 8,
     "fencer1_poule_wins": 1,
-    "fencer2_poule_wins": 8,
+    "fencer2_poule_wins": 7,
     "de_matches": 0,
     "fencer1_de_wins": 0,
     "fencer2_de_wins": 0
@@ -36935,12 +36935,12 @@
   {
     "fencer1": "Adam S",
     "fencer2": "Tom T",
-    "total_matches": 4,
+    "total_matches": 3,
     "fencer1_wins": 1,
-    "fencer2_wins": 3,
-    "poule_matches": 4,
+    "fencer2_wins": 2,
+    "poule_matches": 3,
     "fencer1_poule_wins": 1,
-    "fencer2_poule_wins": 3,
+    "fencer2_poule_wins": 2,
     "de_matches": 0,
     "fencer1_de_wins": 0,
     "fencer2_de_wins": 0
@@ -37442,15 +37442,15 @@
   {
     "fencer1": "Kirill",
     "fencer2": "Willie",
-    "total_matches": 10,
+    "total_matches": 12,
     "fencer1_wins": 1,
-    "fencer2_wins": 9,
-    "poule_matches": 9,
+    "fencer2_wins": 11,
+    "poule_matches": 10,
     "fencer1_poule_wins": 0,
-    "fencer2_poule_wins": 9,
-    "de_matches": 1,
+    "fencer2_poule_wins": 10,
+    "de_matches": 2,
     "fencer1_de_wins": 1,
-    "fencer2_de_wins": 0
+    "fencer2_de_wins": 1
   },
   {
     "fencer1": "John H",
@@ -37572,11 +37572,11 @@
   {
     "fencer1": "Greg",
     "fencer2": "Kirill",
-    "total_matches": 9,
-    "fencer1_wins": 9,
+    "total_matches": 10,
+    "fencer1_wins": 10,
     "fencer2_wins": 0,
-    "poule_matches": 8,
-    "fencer1_poule_wins": 8,
+    "poule_matches": 9,
+    "fencer1_poule_wins": 9,
     "fencer2_poule_wins": 0,
     "de_matches": 1,
     "fencer1_de_wins": 1,
@@ -37923,15 +37923,15 @@
   {
     "fencer1": "Alix S",
     "fencer2": "Kirill",
-    "total_matches": 7,
+    "total_matches": 8,
     "fencer1_wins": 2,
-    "fencer2_wins": 5,
+    "fencer2_wins": 6,
     "poule_matches": 2,
     "fencer1_poule_wins": 1,
     "fencer2_poule_wins": 1,
-    "de_matches": 5,
+    "de_matches": 6,
     "fencer1_de_wins": 1,
-    "fencer2_de_wins": 4
+    "fencer2_de_wins": 5
   },
   {
     "fencer1": "Anna A",
@@ -38495,12 +38495,12 @@
   {
     "fencer1": "Kirill",
     "fencer2": "Oleg",
-    "total_matches": 8,
+    "total_matches": 9,
     "fencer1_wins": 2,
-    "fencer2_wins": 6,
-    "poule_matches": 7,
+    "fencer2_wins": 7,
+    "poule_matches": 8,
     "fencer1_poule_wins": 2,
-    "fencer2_poule_wins": 5,
+    "fencer2_poule_wins": 6,
     "de_matches": 1,
     "fencer1_de_wins": 0,
     "fencer2_de_wins": 1
@@ -39236,14 +39236,14 @@
   {
     "fencer1": "Kirill",
     "fencer2": "Max V",
-    "total_matches": 14,
-    "fencer1_wins": 2,
+    "total_matches": 15,
+    "fencer1_wins": 3,
     "fencer2_wins": 12,
     "poule_matches": 10,
     "fencer1_poule_wins": 0,
     "fencer2_poule_wins": 10,
-    "de_matches": 4,
-    "fencer1_de_wins": 2,
+    "de_matches": 5,
+    "fencer1_de_wins": 3,
     "fencer2_de_wins": 2
   },
   {
@@ -39275,11 +39275,11 @@
   {
     "fencer1": "Eric L",
     "fencer2": "Kirill",
-    "total_matches": 7,
-    "fencer1_wins": 7,
+    "total_matches": 8,
+    "fencer1_wins": 8,
     "fencer2_wins": 0,
-    "poule_matches": 7,
-    "fencer1_poule_wins": 7,
+    "poule_matches": 8,
+    "fencer1_poule_wins": 8,
     "fencer2_poule_wins": 0,
     "de_matches": 0,
     "fencer1_de_wins": 0,
@@ -39288,14 +39288,14 @@
   {
     "fencer1": "Kirill",
     "fencer2": "Vivian",
-    "total_matches": 7,
-    "fencer1_wins": 1,
-    "fencer2_wins": 6,
-    "poule_matches": 5,
+    "total_matches": 9,
+    "fencer1_wins": 2,
+    "fencer2_wins": 7,
+    "poule_matches": 6,
     "fencer1_poule_wins": 0,
-    "fencer2_poule_wins": 5,
-    "de_matches": 2,
-    "fencer1_de_wins": 1,
+    "fencer2_poule_wins": 6,
+    "de_matches": 3,
+    "fencer1_de_wins": 2,
     "fencer2_de_wins": 1
   },
   {
@@ -40666,12 +40666,12 @@
   {
     "fencer1": "Kirill",
     "fencer2": "Marinko",
-    "total_matches": 6,
+    "total_matches": 7,
     "fencer1_wins": 3,
-    "fencer2_wins": 3,
-    "poule_matches": 1,
+    "fencer2_wins": 4,
+    "poule_matches": 2,
     "fencer1_poule_wins": 1,
-    "fencer2_poule_wins": 0,
+    "fencer2_poule_wins": 1,
     "de_matches": 5,
     "fencer1_de_wins": 2,
     "fencer2_de_wins": 3
@@ -41277,11 +41277,11 @@
   {
     "fencer1": "Fedor",
     "fencer2": "Kirill",
-    "total_matches": 6,
-    "fencer1_wins": 6,
+    "total_matches": 7,
+    "fencer1_wins": 7,
     "fencer2_wins": 0,
-    "poule_matches": 2,
-    "fencer1_poule_wins": 2,
+    "poule_matches": 3,
+    "fencer1_poule_wins": 3,
     "fencer2_poule_wins": 0,
     "de_matches": 4,
     "fencer1_de_wins": 4,
@@ -42486,15 +42486,15 @@
   {
     "fencer1": "Kirill",
     "fencer2": "Tom S",
-    "total_matches": 4,
+    "total_matches": 5,
     "fencer1_wins": 0,
-    "fencer2_wins": 4,
+    "fencer2_wins": 5,
     "poule_matches": 4,
     "fencer1_poule_wins": 0,
     "fencer2_poule_wins": 4,
-    "de_matches": 0,
+    "de_matches": 1,
     "fencer1_de_wins": 0,
-    "fencer2_de_wins": 0
+    "fencer2_de_wins": 1
   },
   {
     "fencer1": "Fedor",
@@ -42848,19 +42848,6 @@
     "fencer2_de_wins": 0
   },
   {
-    "fencer1": "Eric L",
-    "fencer2": "Kiril Ia",
-    "total_matches": 1,
-    "fencer1_wins": 1,
-    "fencer2_wins": 0,
-    "poule_matches": 1,
-    "fencer1_poule_wins": 1,
-    "fencer2_poule_wins": 0,
-    "de_matches": 0,
-    "fencer1_de_wins": 0,
-    "fencer2_de_wins": 0
-  },
-  {
     "fencer1": "Oleg",
     "fencer2": "Vadym",
     "total_matches": 4,
@@ -42874,19 +42861,6 @@
     "fencer2_de_wins": 1
   },
   {
-    "fencer1": "Greg",
-    "fencer2": "Kiril Ia",
-    "total_matches": 1,
-    "fencer1_wins": 1,
-    "fencer2_wins": 0,
-    "poule_matches": 1,
-    "fencer1_poule_wins": 1,
-    "fencer2_poule_wins": 0,
-    "de_matches": 0,
-    "fencer1_de_wins": 0,
-    "fencer2_de_wins": 0
-  },
-  {
     "fencer1": "Adam S",
     "fencer2": "Oleg",
     "total_matches": 1,
@@ -42898,19 +42872,6 @@
     "de_matches": 0,
     "fencer1_de_wins": 0,
     "fencer2_de_wins": 0
-  },
-  {
-    "fencer1": "Kiril Ia",
-    "fencer2": "Willie",
-    "total_matches": 2,
-    "fencer1_wins": 0,
-    "fencer2_wins": 2,
-    "poule_matches": 1,
-    "fencer1_poule_wins": 0,
-    "fencer2_poule_wins": 1,
-    "de_matches": 1,
-    "fencer1_de_wins": 0,
-    "fencer2_de_wins": 1
   },
   {
     "fencer1": "Gautam",
@@ -42965,84 +42926,6 @@
     "fencer2_de_wins": 0
   },
   {
-    "fencer1": "Kiril Ia",
-    "fencer2": "Vivian",
-    "total_matches": 2,
-    "fencer1_wins": 1,
-    "fencer2_wins": 1,
-    "poule_matches": 1,
-    "fencer1_poule_wins": 0,
-    "fencer2_poule_wins": 1,
-    "de_matches": 1,
-    "fencer1_de_wins": 1,
-    "fencer2_de_wins": 0
-  },
-  {
-    "fencer1": "Kiril Ia",
-    "fencer2": "Marinko",
-    "total_matches": 1,
-    "fencer1_wins": 0,
-    "fencer2_wins": 1,
-    "poule_matches": 1,
-    "fencer1_poule_wins": 0,
-    "fencer2_poule_wins": 1,
-    "de_matches": 0,
-    "fencer1_de_wins": 0,
-    "fencer2_de_wins": 0
-  },
-  {
-    "fencer1": "Fedor",
-    "fencer2": "Kiril Ia",
-    "total_matches": 1,
-    "fencer1_wins": 1,
-    "fencer2_wins": 0,
-    "poule_matches": 1,
-    "fencer1_poule_wins": 1,
-    "fencer2_poule_wins": 0,
-    "de_matches": 0,
-    "fencer1_de_wins": 0,
-    "fencer2_de_wins": 0
-  },
-  {
-    "fencer1": "Kiril Ia",
-    "fencer2": "Oleg",
-    "total_matches": 1,
-    "fencer1_wins": 0,
-    "fencer2_wins": 1,
-    "poule_matches": 1,
-    "fencer1_poule_wins": 0,
-    "fencer2_poule_wins": 1,
-    "de_matches": 0,
-    "fencer1_de_wins": 0,
-    "fencer2_de_wins": 0
-  },
-  {
-    "fencer1": "Alix S",
-    "fencer2": "Kiril Ia",
-    "total_matches": 1,
-    "fencer1_wins": 0,
-    "fencer2_wins": 1,
-    "poule_matches": 0,
-    "fencer1_poule_wins": 0,
-    "fencer2_poule_wins": 0,
-    "de_matches": 1,
-    "fencer1_de_wins": 0,
-    "fencer2_de_wins": 1
-  },
-  {
-    "fencer1": "Kiril Ia",
-    "fencer2": "Max V",
-    "total_matches": 1,
-    "fencer1_wins": 1,
-    "fencer2_wins": 0,
-    "poule_matches": 0,
-    "fencer1_poule_wins": 0,
-    "fencer2_poule_wins": 0,
-    "de_matches": 1,
-    "fencer1_de_wins": 1,
-    "fencer2_de_wins": 0
-  },
-  {
     "fencer1": "Kirill",
     "fencer2": "Tom T",
     "total_matches": 4,
@@ -43051,19 +42934,6 @@
     "poule_matches": 3,
     "fencer1_poule_wins": 0,
     "fencer2_poule_wins": 3,
-    "de_matches": 1,
-    "fencer1_de_wins": 0,
-    "fencer2_de_wins": 1
-  },
-  {
-    "fencer1": "Kiril Ia",
-    "fencer2": "Tom S",
-    "total_matches": 1,
-    "fencer1_wins": 0,
-    "fencer2_wins": 1,
-    "poule_matches": 0,
-    "fencer1_poule_wins": 0,
-    "fencer2_poule_wins": 0,
     "de_matches": 1,
     "fencer1_de_wins": 0,
     "fencer2_de_wins": 1
@@ -47697,6 +47567,19 @@
     "fencer2_de_wins": 0
   },
   {
+    "fencer1": "Adam Hany",
+    "fencer2": "Baran",
+    "total_matches": 1,
+    "fencer1_wins": 0,
+    "fencer2_wins": 1,
+    "poule_matches": 1,
+    "fencer1_poule_wins": 0,
+    "fencer2_poule_wins": 1,
+    "de_matches": 0,
+    "fencer1_de_wins": 0,
+    "fencer2_de_wins": 0
+  },
+  {
     "fencer1": "Alex Y",
     "fencer2": "Tony A",
     "total_matches": 1,
@@ -47814,6 +47697,19 @@
     "fencer2_de_wins": 0
   },
   {
+    "fencer1": "Adam Hany",
+    "fencer2": "Eric L",
+    "total_matches": 1,
+    "fencer1_wins": 0,
+    "fencer2_wins": 1,
+    "poule_matches": 1,
+    "fencer1_poule_wins": 0,
+    "fencer2_poule_wins": 1,
+    "de_matches": 0,
+    "fencer1_de_wins": 0,
+    "fencer2_de_wins": 0
+  },
+  {
     "fencer1": "Alex Y",
     "fencer2": "Sameer",
     "total_matches": 1,
@@ -47828,7 +47724,7 @@
   },
   {
     "fencer1": "Adam Hany",
-    "fencer2": "Baran",
+    "fencer2": "Tom T",
     "total_matches": 1,
     "fencer1_wins": 0,
     "fencer2_wins": 1,

@@ -11857,8 +11857,8 @@
     "winner": "Greg",
     "top_poule_climber": "Alix S",
     "top_poule_gain": 53.1,
-    "fencers_in_poules": 21,
-    "fencers_in_des": 20,
+    "fencers_in_poules": 20,
+    "fencers_in_des": 19,
     "poule_matches": 78,
     "de_matches": 40,
     "total_matches": 118,
@@ -11900,10 +11900,6 @@
         "fencer": "Oleg"
       },
       {
-        "place": 8,
-        "fencer": "Kirill"
-      },
-      {
         "place": 9,
         "fencer": "Tom S"
       },
@@ -11913,7 +11909,7 @@
       },
       {
         "place": 11,
-        "fencer": "Kiril Ia"
+        "fencer": "Kirill"
       },
       {
         "place": 12,
@@ -11957,7 +11953,7 @@
     "date": "2026-05-26",
     "winner": "Alejo",
     "top_poule_climber": "Lukas N",
-    "top_poule_gain": 36.0,
+    "top_poule_gain": 36.9,
     "fencers_in_poules": 15,
     "fencers_in_des": 15,
     "poule_matches": 54,
@@ -12038,7 +12034,7 @@
     "date": "2026-06-02",
     "winner": "Roeland",
     "top_poule_climber": "Eugene",
-    "top_poule_gain": 45.8,
+    "top_poule_gain": 45.7,
     "fencers_in_poules": 20,
     "fencers_in_des": 20,
     "poule_matches": 72,
@@ -12139,7 +12135,7 @@
     "date": "2026-06-09",
     "winner": "Tom T",
     "top_poule_climber": "Adam S",
-    "top_poule_gain": 49.7,
+    "top_poule_gain": 49.6,
     "fencers_in_poules": 28,
     "fencers_in_des": 25,
     "poule_matches": 128,
@@ -12260,7 +12256,7 @@
     "date": "2026-06-16",
     "winner": "Calum",
     "top_poule_climber": "Jack B",
-    "top_poule_gain": 67.5,
+    "top_poule_gain": 67.4,
     "fencers_in_poules": 32,
     "fencers_in_des": 29,
     "poule_matches": 135,
@@ -12397,7 +12393,7 @@
     "date": "2026-06-30",
     "winner": "Charlie",
     "top_poule_climber": "Charlie",
-    "top_poule_gain": 46.1,
+    "top_poule_gain": 46.0,
     "fencers_in_poules": 26,
     "fencers_in_des": 25,
     "poule_matches": 125,
@@ -12517,8 +12513,8 @@
   {
     "date": "2026-07-07",
     "winner": "Greg",
-    "top_poule_climber": "Vincent",
-    "top_poule_gain": 45.2,
+    "top_poule_climber": "Vivian",
+    "top_poule_gain": 45.5,
     "fencers_in_poules": 21,
     "fencers_in_des": 19,
     "poule_matches": 89,
@@ -12708,7 +12704,7 @@
     "date": "2026-07-21",
     "winner": "Eric L",
     "top_poule_climber": "Adam S",
-    "top_poule_gain": 44.1,
+    "top_poule_gain": 44.0,
     "fencers_in_poules": 17,
     "fencers_in_des": 16,
     "poule_matches": 54,
@@ -13246,7 +13242,7 @@
     "winner": "Alejo",
     "top_poule_climber": "Sammy",
     "top_poule_gain": 33.3,
-    "fencers_in_poules": 25,
+    "fencers_in_poules": 24,
     "fencers_in_des": 21,
     "poule_matches": 78,
     "de_matches": 42,
@@ -13341,7 +13337,7 @@
         "fencer": "Shevy"
       },
       {
-        "place": 23,
+        "place": 21,
         "fencer": "Adam Hany"
       }
     ]

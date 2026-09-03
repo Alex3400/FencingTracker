@@ -126,7 +126,7 @@ NAME_ALIASES = [
     ['Fassel', 'Fasel', 'Fessel', 'Fessal', 'Fasal'],
     ['Alix S', 'Alix', 'Alex'],
     ['Alonzo', 'Alonso', 'Alonzozo'],
-    ['Kirill', 'Kiriil', 'Kirill IV'],
+    ['Kirill', 'Kiriil', 'Kirill IV', 'Kiril Ia'],
     ['Lukas N', 'Lukas'],
     ['Adam S', 'Adam'],
     ['Tom S', 'Tom'],
