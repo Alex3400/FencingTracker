@@ -1,0 +1,35 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Unnamed: 14,Unnamed: 15,Unnamed: 16
+1,Tom T,1.0,Tom T,,Tom T,,Will P,V,Will P,,Darran,,Alex Y,,12.0,Will P
+2,Eric L,32.0,_,,Will P,V,Willie,,Darran,V,Alex Y,V,Darran,,3.0,Vincent
+3,Vincent,17.0,Tony A,,Willie,V,Darran,V,Alex Y,V,Will P,,Richard B,,13.0,Shevy
+4,Greg,16.0,Will P,V,Calum,,Greg,,Richard B,,Richard B,V,Will P,,2.0,Eric L
+5,Darran,9.0,Willie,,Darran,V,Vincent,,Willie,,Greg,V,Greg,,10.0,Calum
+6,Alex Y,24.0,_,,Kiril Iv,,Alex Y,V,Greg,V,Alejo,,Alejo,,7.0,Richard B
+7,Richard B,25.0,_,,Shevy,,Richard B,V,Vincent,,Willie,V,Willie,,4.0,Greg
+8,Calum,8.0,Calum,,Greg,V,Alejo,,Alejo,V,Vincent,,Vincent,,8.0,Willie
+9,Willie,5.0,Darran,,Vincent,V,Tom T,V,Tom T,V,Tom T,V,Tom T,,15.0,Caden
+10,James S,28.0,_,,Perth,,Calum,Walkover,Kiril Iv,,Eric L,,Eric L,,6.0,Alex Y
+11,Steph,21.0,Kiril Iv,V,Steph,,Kiril Iv,V,Steph,,Kiril Iv,,Steph,,1.0,Tom T
+12,MICHAEL W,12.0,MICHAEL W,,Alex Y,V,Shevy,Walkover,Eric L,V,Steph,V,Kiril Iv,,,
+13,Shevy,13.0,Shevy,V,Richard B,V,Perth,,Calum,V,Calum,Walkover,James S,,17.0,Ed B
+14,Caden,20.0,Max V,,James S,,Steph,V,Shevy,Walkover,James S,V,Calum,,,
+15,Ed B,29.0,_,,Alejo,V,James S,,Perth,,Shevy,Walkover,Perth,,21.0,Kiril Iv
+16,Will P,4.0,Greg,,Eric L,,Eric L,V,James S,V,Perth,V,Shevy,,16.0,Tony A
+17,Tony A,3.0,Vincent,,_,,Tony A,,Tony A,V,Tony A,V,Tony A,,9.0,James S
+18,Alejo,30.0,_,,Tony A,,_,,MICHAEL W,,Ed B,Walkover,Ed B,,19.0,Perth
+19,Perth,19.0,Perth,V,_,,MICHAEL W,V,Caden,,MICHAEL W,,Caden,,18.0,Alejo
+20,Max V,14.0,Caden,,_,,Max V,,Ed B,V,Caden,V,MICHAEL W,,20.0,Max V
+21,Kiril Iv,11.0,Steph,V,_,,Caden,V,_,,Max V,V,Max V,,22.0,Andy R
+22,Andy R,22.0,Andy R,,MICHAEL W,,Andy R,,Max V,,Andy R,,Andy R,,5.0,Darran
+23,_,27.0,_,,Max V,,_,,Andy R,,_,,_,,,
+24,_,6.0,Alex Y,,_,,Ed B,,_,,_,,_,,11.0,Steph
+25,_,7.0,Richard B,,_,,_,,_,,_,,_,,14.0,MICHAEL W
+26,_,26.0,_,,Caden,,_,,_,,_,,_,,,
+27,_,23.0,_,,Andy R,,_,,_,,_,,_,,,
+28,_,10.0,James S,,_,,_,,_,,_,,_,,,
+29,_,15.0,Ed B,,_,,_,,_,,_,,_,,,
+30,_,18.0,Alejo,V,_,,_,,_,,_,,_,,,
+31,_,31.0,_,,Ed B,,_,,_,,_,,_,,,
+32,_,2.0,Eric L,,_,,_,,_,,_,,_,,,
+Lock the Pool Results,,,,,,,,,,,,,,,,
+LOCKED,,,,,,,,,,,,,,,,
