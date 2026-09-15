@@ -3,27 +3,27 @@ Overall Haverstock Fencing Statistics
 ============================================================
 
 --- SUMMARY ---
-Total Sessions: 153
-Total Matches: 17504
-Total Poule Matches: 12362
-Total DE Matches: 5142
-Total Touches Scored: 92077
+Total Sessions: 154
+Total Matches: 17655
+Total Poule Matches: 12476
+Total DE Matches: 5179
+Total Touches Scored: 92933
 
 --- AVERAGES ---
-Avg Fencers per Session (Poules): 19.08
-Avg Fencers per Session (DEs): 17.49
-Avg Matches per Session: 114.41
-Avg Poule Matches per Session: 80.8
-Avg DE Matches per Session: 33.61
+Avg Fencers per Session (Poules): 19.14
+Avg Fencers per Session (DEs): 17.5
+Avg Matches per Session: 114.64
+Avg Poule Matches per Session: 81.01
+Avg DE Matches per Session: 33.63
 Avg Touches per Poule Match: 7.45
 
 --- SCORE DISTRIBUTION (POULES) ---
-5-0:               748 (6.1%)
-5-1:              1709 (13.8%)
-5-2:              2653 (21.5%)
-5-3:              3479 (28.1%)
-5-4:              3520 (28.5%)
+5-0:               756 (6.1%)
+5-1:              1729 (13.9%)
+5-2:              2680 (21.5%)
+5-3:              3503 (28.1%)
+5-4:              3555 (28.5%)
 Unknown:           253 (2.0%)
 
 --- DE PARTICIPATION ---
-Avg DE Participation Rate: 91.7%
+Avg DE Participation Rate: 91.4%

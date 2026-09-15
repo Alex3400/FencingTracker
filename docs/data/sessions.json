@@ -13454,5 +13454,102 @@
         "fencer": "Andy R"
       }
     ]
+  },
+  {
+    "date": "2026-09-15",
+    "winner": "Greg",
+    "top_poule_climber": "Calum",
+    "top_poule_gain": 45.2,
+    "fencers_in_poules": 28,
+    "fencers_in_des": 19,
+    "poule_matches": 114,
+    "de_matches": 37,
+    "total_matches": 151,
+    "score_5_0": 8,
+    "score_5_1": 20,
+    "score_5_2": 27,
+    "score_5_3": 24,
+    "score_5_4": 35,
+    "total_touches": 856,
+    "avg_touches_per_match": 7.51,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1dlHEaSTmZ86tLKtDv7JZVlWCP91RMkEpmTqYqapfS3s/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Greg"
+      },
+      {
+        "place": 2,
+        "fencer": "Willie"
+      },
+      {
+        "place": 3,
+        "fencer": "Oleg"
+      },
+      {
+        "place": 4,
+        "fencer": "Calum"
+      },
+      {
+        "place": 5,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 6,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 7,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 8,
+        "fencer": "Shevy"
+      },
+      {
+        "place": 9,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 10,
+        "fencer": "Anna Z"
+      },
+      {
+        "place": 11,
+        "fencer": "Sammy"
+      },
+      {
+        "place": 12,
+        "fencer": "Adam H"
+      },
+      {
+        "place": 13,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 14,
+        "fencer": "Caden"
+      },
+      {
+        "place": 15,
+        "fencer": "Will P"
+      },
+      {
+        "place": 16,
+        "fencer": "Darran"
+      },
+      {
+        "place": 17,
+        "fencer": "Tony A"
+      },
+      {
+        "place": 18,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 19,
+        "fencer": "Andy R"
+      }
+    ]
   }
 ]

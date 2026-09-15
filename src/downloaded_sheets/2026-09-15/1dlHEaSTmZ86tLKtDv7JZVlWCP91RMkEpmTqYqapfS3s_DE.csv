@@ -1,0 +1,35 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Unnamed: 14,Unnamed: 15,Unnamed: 16
+1,Charlie ,1.0,Charlie ,,Charlie ,V,Charlie ,,Oleg,,Willie,,Greg,,11.0,Shevy
+2,Calum,32.0,_,,Sammy,,Oleg,V,Willie,V,Greg,V,Willie,,,
+3,Greg,17.0,Tony A,,Will P,,Willie,V,Greg,V,Oleg,V,Oleg,,3.0,Greg
+4,Vincent,16.0,Sammy,V,Oleg,V,Vincent,,Calum,,Calum,Walkover,Calum,,2.0,Calum
+5,Willie,9.0,Will P,,Willie,V,Greg,V,Charlie ,V,Charlie ,V,Charlie ,,4.0,Vincent
+6,Darran,24.0,_,,Vadym,,Shevy,,Vincent,,Alex Y,Walkover,Alex Y,,,
+7,Alex Y,25.0,_,,Richard B,,Alex Y,,Shevy,,Vincent,V,Vincent,,1.0,Charlie 
+8,Oleg,8.0,Oleg,,Vincent,V,Calum,V,Alex Y,V,Shevy,Walkover,Shevy,,6.0,Darran
+9,Will P,5.0,Willie,,Greg,V,Sammy,V,Sammy,,Vadym,V,Vadym,,15.0,Colin R
+10,Anna Z,28.0,_,,Adam H,,Will P,,Vadym,V,Anna Z,,Anna Z,,7.0,Alex Y
+11,Shevy,21.0,_,,Shevy,V,Vadym,V,Adam H,Walkover,Sammy,V,Sammy,,16.0,Sammy
+12,Vadym,12.0,Vadym,,Darran,Walkover,Richard B,,Anna Z,V,Adam H,Walkover,Adam H,,9.0,Will P
+13,Richard B,13.0,Richard B,,Alex Y,V,Adam H,V,Will P,,Richard B,V,Richard B,,18.0,Caden
+14,Adam H,20.0,_,,Anna Z,,Darran,Walkover,Richard B,V,Caden,Walkover,Caden,,,
+15,Colin R,29.0,_,,Caden,,Anna Z,V,Darran,Walkover,Will P,V,Will P,,10.0,Anna Z
+16,Sammy,4.0,Vincent,,Calum,V,Caden,,Caden,V,Darran,Walkover,Darran,,12.0,Vadym
+17,Tony A,3.0,Greg,,_,,Tony A,,Tony A,,Tony A,V,Tony A,,17.0,Tony A
+18,Caden,30.0,_,,Tony A,,_,,_,,Colin R,,Colin R,,,
+19,Andy R,19.0,Andy R,,_,,_,,Andy R,,_,,Andy R,,5.0,Willie
+20,_,14.0,Adam H,V,_,,_,,Colin R,V,Andy R,,_,,,
+21,_,11.0,Shevy,,_,,Andy R,,_,,_,,_,,,
+22,_,22.0,_,,_,,_,,_,,_,,_,,8.0,Oleg
+23,_,27.0,_,,_,,_,,_,,_,,_,,,
+24,_,6.0,Darran,,_,,Colin R,,_,,_,,_,,,
+25,_,7.0,Alex Y,,_,,_,,_,,_,,_,,14.0,Adam H
+26,_,26.0,_,,Andy R,,_,,_,,_,,_,,13.0,Richard B
+27,_,23.0,_,,_,,_,,_,,_,,_,,19.0,Andy R
+28,_,10.0,Anna Z,,_,,_,,_,,_,,_,,,
+29,_,15.0,Colin R,,_,,_,,_,,_,,_,,,
+30,_,18.0,Caden,V,_,,_,,_,,_,,_,,,
+31,_,31.0,_,,Colin R,,_,,_,,_,,_,,,
+32,_,2.0,Calum,,_,,_,,_,,_,,_,,,
+Lock the Pool Results,,,,,,,,,,,,,,,,
+LOCKED,,,,,,,,,,,,,,,,
