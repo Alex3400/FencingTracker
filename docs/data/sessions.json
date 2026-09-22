@@ -13551,5 +13551,90 @@
         "fencer": "Andy R"
       }
     ]
+  },
+  {
+    "date": "2026-09-22",
+    "winner": "Willie",
+    "top_poule_climber": "Joshua",
+    "top_poule_gain": 21.2,
+    "fencers_in_poules": 21,
+    "fencers_in_des": 16,
+    "poule_matches": 70,
+    "de_matches": 32,
+    "total_matches": 102,
+    "score_5_0": 1,
+    "score_5_1": 12,
+    "score_5_2": 17,
+    "score_5_3": 19,
+    "score_5_4": 21,
+    "total_touches": 537,
+    "avg_touches_per_match": 7.67,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1de5b4-IzsaIMYjtrErZFaAS_kE0IkoG3u3AQFRVbgkQ/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Willie"
+      },
+      {
+        "place": 2,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 3,
+        "fencer": "Greg"
+      },
+      {
+        "place": 4,
+        "fencer": "David R"
+      },
+      {
+        "place": 5,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 6,
+        "fencer": "Anna Z"
+      },
+      {
+        "place": 7,
+        "fencer": "Will P"
+      },
+      {
+        "place": 8,
+        "fencer": "Andy R"
+      },
+      {
+        "place": 9,
+        "fencer": "Sammy"
+      },
+      {
+        "place": 10,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 11,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 12,
+        "fencer": "Tony"
+      },
+      {
+        "place": 13,
+        "fencer": "Max V"
+      },
+      {
+        "place": 14,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 15,
+        "fencer": "Etienne"
+      },
+      {
+        "place": 16,
+        "fencer": "Adam H"
+      }
+    ]
   }
 ]

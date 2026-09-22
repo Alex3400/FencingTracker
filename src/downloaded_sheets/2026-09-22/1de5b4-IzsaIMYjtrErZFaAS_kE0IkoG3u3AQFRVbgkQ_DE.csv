@@ -1,0 +1,35 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Unnamed: 14,Unnamed: 15,Unnamed: 16
+1,Greg,1.0,Greg,,Greg,V,Greg,V,Greg,,Vincent,,Willie,,,
+2,Willie,32.0,_,,Sammy,,Will P,,Vincent,V,Willie,V,Vincent,,3.0,Alex Y
+3,Alex Y,17.0,_,,Will P,V,Anna Z,,David R,,Greg,V,Greg,,4.0,Vincent
+4,Vincent,16.0,Sammy,,Alejo,,Vincent,V,Willie,V,David R,Walkover,David R,,1.0,Greg
+5,Anna Z,9.0,Will P,,Anna Z,V,Andy R,,Will P,,Anna Z,,Vadym,,2.0,Willie
+6,David R,24.0,_,,Eugene,,David R,V,Anna Z,V,Vadym,V,Anna Z,,5.0,Anna Z
+7,Vadym,25.0,_,,Adam H,Walkover,Vadym,,Andy R,,Will P,V,Will P,,14.0,Andy R
+8,Alejo,8.0,Alejo,,Vincent,V,Willie,V,Vadym,V,Andy R,,Andy R,,,
+9,Will P,5.0,Anna Z,,Alex Y,,Sammy,V,Sammy,V,Sammy,V,Sammy,,12.0,Eugene
+10,Etienne,28.0,_,,Andy R,V,Alejo,,Eugene,,Alex Y,,Alex Y,,8.0,Alejo
+11,Max V,21.0,_,,Max V,,Eugene,V,Alex Y,V,Eugene,V,Eugene,,9.0,Will P
+12,Eugene,12.0,Eugene,,David R,V,Adam H,Walkover,Tony,,Tony,,Tony,,6.0,David R
+13,Adam H,13.0,Adam H,,Vadym,V,Alex Y,V,Alejo,V,Alejo,,Max V,,,
+14,Andy R,20.0,_,,Etienne,,Max V,,Adam H,Walkover,Max V,V,Alejo,,,
+15,Tony,29.0,_,,Tony,,Etienne,,Max V,V,Adam H,Walkover,Etienne,,13.0,Adam H
+16,Sammy,4.0,Vincent,,Willie,V,Tony,V,Etienne,,Etienne,V,Adam H,,11.0,Max V
+17,_,3.0,Alex Y,,_,,_,,_,,_,,_,,,
+18,_,30.0,_,,_,,_,,_,,_,,_,,7.0,Vadym
+19,_,19.0,_,,_,,_,,_,,_,,_,,16.0,Sammy
+20,_,14.0,Andy R,,_,,_,,_,,_,,_,,15.0,Tony
+21,_,11.0,Max V,,_,,_,,_,,_,,_,,10.0,Etienne
+22,_,22.0,_,,_,,_,,_,,_,,_,,,
+23,_,27.0,_,,_,,_,,_,,_,,_,,,
+24,_,6.0,David R,,_,,_,,_,,_,,_,,,
+25,_,7.0,Vadym,,_,,_,,_,,_,,_,,,
+26,_,26.0,_,,_,,_,,_,,_,,_,,,
+27,_,23.0,_,,_,,_,,_,,_,,_,,,
+28,_,10.0,Etienne,,_,,_,,_,,_,,_,,,
+29,_,15.0,Tony,,_,,_,,_,,_,,_,,,
+30,_,18.0,_,,_,,_,,_,,_,,_,,,
+31,_,31.0,_,,_,,_,,_,,_,,_,,,
+32,_,2.0,Willie,,_,,_,,_,,_,,_,,,
+Lock the Pool Results,,,,,,,,,,,,,,,,
+LOCKED,,,,,,,,,,,,,,,,
