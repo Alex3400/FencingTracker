@@ -1,0 +1,35 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Unnamed: 14,Unnamed: 15,Unnamed: 16
+1,Calum,1.0,Calum,,Calum,V,Calum,,Shevy,,Sammy,V,Sammy,,1.0,Calum
+2,Willie,32.0,_,,Oleg,,Shevy,V,Sammy,V,Greg,,Greg,,3.0,Greg
+3,Greg,17.0,Andy R,,Andy H,,Anna Z,,Greg,V,Shevy,Walkover,Willie,,6.0,Alex Y
+4,Sammy,16.0,Oleg,V,Shevy,V,Sammy,V,Willie,,Willie,V,Shevy,,13.0,Caden
+5,Anna Z,9.0,Andy H,,Anna Z,V,Greg,V,Calum,,Anna Z,,Alejo,,15.0,Kirill Iv
+6,Alex Y,24.0,_,,Eugene,,Alejo,,Anna Z,V,Alejo,V,Anna Z,,7.0,Vincent
+7,Vincent,25.0,_,,Caden,,Max V,,Alejo,V,Calum,Walkover,Max V,,2.0,Willie
+8,Shevy,8.0,Shevy,,Sammy,V,Willie,V,Max V,,Max V,V,Calum,,18.0,Perth
+9,Andy H,5.0,Anna Z,,Greg,V,Oleg,V,Oleg,V,Oleg,V,Oleg,,9.0,Andy H
+10,Max V,28.0,_,,Adam H,,Andy H,,Caden,,Vincent,,Vincent,,8.0,Shevy
+11,Alejo,21.0,_,,Alejo,V,Eugene,,Alex Y,Walkover,Caden,V,Caden,,17.0,Andy R
+12,Eugene,12.0,Eugene,,Alex Y,,Caden,V,Vincent,V,Alex Y,Walkover,Alex Y,,5.0,Anna Z
+13,Caden,13.0,Caden,V,Vincent,,Adam H,,Andy H,,Eugene,V,Eugene,,,
+14,Adam H,20.0,Alix S,,Max V,V,Alex Y,V,Eugene,V,Perth,,Perth,,16.0,Oleg
+15,Kirill Iv,29.0,_,,Perth,,Vincent,V,Adam H,Walkover,Andy H,V,Andy H,,14.0,Adam H
+16,Oleg,4.0,Sammy,,Willie,V,Perth,,Perth,V,Adam H,Walkover,Adam H,,,
+17,Andy R,3.0,Greg,,_,,Andy R,,Andy R,V,Andy R,V,Andy R,,12.0,Eugene
+18,Perth,30.0,_,,Andy R,,_,,Alix S,,Kirill Iv,,Kirill Iv,,,
+19,Kofi,19.0,Kofi,,_,,_,,Kofi,Walkover,Alix S,V,Alix S,,,
+20,Alix S,14.0,Adam H,V,_,,Alix S,,Kirill Iv,V,Kofi,Walkover,Kofi,,10.0,Max V
+21,_,11.0,Alejo,,_,,Kofi,,_,,_,,_,,20.0,Alix S
+22,_,22.0,_,,_,,_,,_,,_,,_,,,
+23,_,27.0,_,,Alix S,,_,,_,,_,,_,,19.0,Kofi
+24,_,6.0,Alex Y,,_,,Kirill Iv,,_,,_,,_,,11.0,Alejo
+25,_,7.0,Vincent,,_,,_,,_,,_,,_,,,
+26,_,26.0,_,,Kofi,,_,,_,,_,,_,,4.0,Sammy
+27,_,23.0,_,,_,,_,,_,,_,,_,,,
+28,_,10.0,Max V,,_,,_,,_,,_,,_,,,
+29,_,15.0,Kirill Iv,,_,,_,,_,,_,,_,,,
+30,_,18.0,Perth,V,_,,_,,_,,_,,_,,,
+31,_,31.0,_,,Kirill Iv,,_,,_,,_,,_,,,
+32,_,2.0,Willie,,_,,_,,_,,_,,_,,,
+Lock the Pool Results,,,,,,,,,,,,,,,,
+LOCKED,,,,,,,,,,,,,,,,

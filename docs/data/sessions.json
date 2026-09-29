@@ -13636,5 +13636,106 @@
         "fencer": "Adam H"
       }
     ]
+  },
+  {
+    "date": "2026-09-29",
+    "winner": "Sammy",
+    "top_poule_climber": "Max V",
+    "top_poule_gain": 40.2,
+    "fencers_in_poules": 26,
+    "fencers_in_des": 20,
+    "poule_matches": 89,
+    "de_matches": 40,
+    "total_matches": 129,
+    "score_5_0": 7,
+    "score_5_1": 9,
+    "score_5_2": 18,
+    "score_5_3": 26,
+    "score_5_4": 27,
+    "total_touches": 666,
+    "avg_touches_per_match": 7.48,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1dYJwij6GHomtIqRx5LvTp0234SBwCqngGZ-v7sEAxxk/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Sammy"
+      },
+      {
+        "place": 2,
+        "fencer": "Greg"
+      },
+      {
+        "place": 3,
+        "fencer": "Willie"
+      },
+      {
+        "place": 4,
+        "fencer": "Shevy"
+      },
+      {
+        "place": 5,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 6,
+        "fencer": "Anna Z"
+      },
+      {
+        "place": 7,
+        "fencer": "Max V"
+      },
+      {
+        "place": 8,
+        "fencer": "Calum"
+      },
+      {
+        "place": 9,
+        "fencer": "Oleg"
+      },
+      {
+        "place": 10,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 11,
+        "fencer": "Caden"
+      },
+      {
+        "place": 12,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 13,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 14,
+        "fencer": "Perth"
+      },
+      {
+        "place": 15,
+        "fencer": "Andy H"
+      },
+      {
+        "place": 16,
+        "fencer": "Adam H"
+      },
+      {
+        "place": 17,
+        "fencer": "Andy R"
+      },
+      {
+        "place": 18,
+        "fencer": "Kirill Iv"
+      },
+      {
+        "place": 19,
+        "fencer": "Alix S"
+      },
+      {
+        "place": 20,
+        "fencer": "Kofi"
+      }
+    ]
   }
 ]
