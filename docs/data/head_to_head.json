@@ -38365,11 +38365,11 @@
   {
     "fencer1": "David Roig",
     "fencer2": "Eric L",
-    "total_matches": 2,
-    "fencer1_wins": 1,
+    "total_matches": 3,
+    "fencer1_wins": 2,
     "fencer2_wins": 1,
-    "poule_matches": 1,
-    "fencer1_poule_wins": 1,
+    "poule_matches": 2,
+    "fencer1_poule_wins": 2,
     "fencer2_poule_wins": 0,
     "de_matches": 1,
     "fencer1_de_wins": 0,
@@ -38417,11 +38417,11 @@
   {
     "fencer1": "David Roig",
     "fencer2": "Sammy",
-    "total_matches": 1,
-    "fencer1_wins": 1,
+    "total_matches": 2,
+    "fencer1_wins": 2,
     "fencer2_wins": 0,
-    "poule_matches": 1,
-    "fencer1_poule_wins": 1,
+    "poule_matches": 2,
+    "fencer1_poule_wins": 2,
     "fencer2_poule_wins": 0,
     "de_matches": 0,
     "fencer1_de_wins": 0,
@@ -38586,15 +38586,15 @@
   {
     "fencer1": "David Roig",
     "fencer2": "Willie",
-    "total_matches": 1,
+    "total_matches": 3,
     "fencer1_wins": 1,
-    "fencer2_wins": 0,
-    "poule_matches": 1,
+    "fencer2_wins": 2,
+    "poule_matches": 2,
     "fencer1_poule_wins": 1,
-    "fencer2_poule_wins": 0,
-    "de_matches": 0,
+    "fencer2_poule_wins": 1,
+    "de_matches": 1,
     "fencer1_de_wins": 0,
-    "fencer2_de_wins": 0
+    "fencer2_de_wins": 1
   },
   {
     "fencer1": "Alex Y",
@@ -48985,7 +48985,7 @@
   },
   {
     "fencer1": "Alejo",
-    "fencer2": "David R",
+    "fencer2": "David Roig",
     "total_matches": 1,
     "fencer1_wins": 0,
     "fencer2_wins": 1,
@@ -49036,34 +49036,8 @@
     "fencer2_de_wins": 0
   },
   {
-    "fencer1": "David R",
+    "fencer1": "David Roig",
     "fencer2": "Jonathan",
-    "total_matches": 1,
-    "fencer1_wins": 1,
-    "fencer2_wins": 0,
-    "poule_matches": 1,
-    "fencer1_poule_wins": 1,
-    "fencer2_poule_wins": 0,
-    "de_matches": 0,
-    "fencer1_de_wins": 0,
-    "fencer2_de_wins": 0
-  },
-  {
-    "fencer1": "David R",
-    "fencer2": "Eric L",
-    "total_matches": 1,
-    "fencer1_wins": 1,
-    "fencer2_wins": 0,
-    "poule_matches": 1,
-    "fencer1_poule_wins": 1,
-    "fencer2_poule_wins": 0,
-    "de_matches": 0,
-    "fencer1_de_wins": 0,
-    "fencer2_de_wins": 0
-  },
-  {
-    "fencer1": "David R",
-    "fencer2": "Sammy",
     "total_matches": 1,
     "fencer1_wins": 1,
     "fencer2_wins": 0,
@@ -49127,21 +49101,8 @@
     "fencer2_de_wins": 0
   },
   {
-    "fencer1": "David R",
-    "fencer2": "Willie",
-    "total_matches": 2,
-    "fencer1_wins": 0,
-    "fencer2_wins": 2,
-    "poule_matches": 1,
-    "fencer1_poule_wins": 0,
-    "fencer2_poule_wins": 1,
-    "de_matches": 1,
-    "fencer1_de_wins": 0,
-    "fencer2_de_wins": 1
-  },
-  {
     "fencer1": "Anna Z",
-    "fencer2": "David R",
+    "fencer2": "David Roig",
     "total_matches": 1,
     "fencer1_wins": 1,
     "fencer2_wins": 0,
@@ -49153,7 +49114,7 @@
     "fencer2_de_wins": 0
   },
   {
-    "fencer1": "David R",
+    "fencer1": "David Roig",
     "fencer2": "Tony",
     "total_matches": 1,
     "fencer1_wins": 1,
@@ -49205,7 +49166,7 @@
     "fencer2_de_wins": 0
   },
   {
-    "fencer1": "David R",
+    "fencer1": "David Roig",
     "fencer2": "Max V",
     "total_matches": 1,
     "fencer1_wins": 1,
@@ -49219,7 +49180,7 @@
   },
   {
     "fencer1": "Andy R",
-    "fencer2": "David R",
+    "fencer2": "David Roig",
     "total_matches": 1,
     "fencer1_wins": 0,
     "fencer2_wins": 1,
@@ -49270,7 +49231,7 @@
     "fencer2_de_wins": 0
   },
   {
-    "fencer1": "David R",
+    "fencer1": "David Roig",
     "fencer2": "Greg",
     "total_matches": 0,
     "fencer1_wins": 0,
