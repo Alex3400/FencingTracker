@@ -1,0 +1,35 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Unnamed: 14,Unnamed: 15,Unnamed: 16
+1,Fessal,1.0,Fessal,,Fessal,V,Fessal,V,Fessal,V,Fessal,,Willie,,8.0,Caden
+2,Willie,32.0,_,,Kofi,,Caden,,Aisling,Walkover,Willie,V,Fessal,,4.0,Vincent
+3,Alejo,17.0,Adam H,,Eugene,,Will P,,Alejo,,Aisling,Walkover,Alejo,,5.0,Will P
+4,Vincent,16.0,Kofi,V,Caden,V,Aisling,V,Willie,V,Alejo,V,Aisling,,6.0,Shevy
+5,Will P,9.0,Eugene,,Will P,V,Alejo,V,Caden,,Will P,,,,18.0,Perth
+6,Shevy,24.0,_,,James S,,Shevy,,Will P,V,Anna Z,,,,2.0,Willie
+7,Anna Z,25.0,_,,Aisling,V,Anna Z,,Shevy,Walkover,Caden,V,Caden,,,
+8,Caden,8.0,Caden,,Vincent,,Willie,V,Anna Z,V,Shevy,Walkover,Shevy,,1.0,Fessal
+9,Eugene,5.0,Will P,,Alejo,V,Kofi,V,Kofi,V,Kofi,V,Kofi,,14.0,Ed B
+10,Tom S,28.0,_,,Ed B,,Eugene,,Vincent,,Max V,,Max V,,12.0,James S
+11,Steph,21.0,_,,Steph,,James S,Walkover,Steph,,Vincent,,Steph,,20.0,Jordan 
+12,James S,12.0,James S,,Shevy,V,Vincent,V,Max V,V,Steph,V,Vincent,,9.0,Eugene
+13,Aisling,13.0,Aisling,V,Anna Z,V,Ed B,,Eugene,,James S,V,James S,,10.0,Tom S
+14,Ed B,20.0,Jordan ,,Tom S,,Steph,V,James S,V,Ed B,Walkover,Ed B,,17.0,Adam H
+15,Max V,29.0,_,,Max V,,Tom S,Walkover,Ed B,V,James S,V,James S,,,
+16,Kofi,4.0,Vincent,,Willie,V,Max V,V,Tom S,Walkover,Tom S,Walkover,Tom S,,,
+17,Adam H,3.0,Alejo,,_,,Adam H,,Adam H,Walkover,Jordan ,V,Jordan ,,7.0,Anna Z
+18,Perth,30.0,_,,Adam H,,_,,Jordan ,V,Perth,,Perth,,15.0,Max V
+19,Adrian Lca,19.0,Adrian Lca,,_,,_,,Adrian Lca,,Adam H,Walkover,Adrian Lca,,13.0,Aisling
+20,Jordan ,14.0,Ed B,V,_,,Jordan ,,Perth,V,Adrian Lca,V,Adam H,,,
+21,_,11.0,Steph,,_,,Adrian Lca,,_,,_,,_,,,
+22,_,22.0,_,,_,,_,,_,,_,,_,,11.0,Steph
+23,_,27.0,_,,Jordan ,,_,,_,,_,,_,,19.0,Adrian Lca
+24,_,6.0,Shevy,,_,,Perth,,_,,_,,_,,3.0,Alejo
+25,_,7.0,Anna Z,,_,,_,,_,,_,,_,,16.0,Kofi
+26,_,26.0,_,,Adrian Lca,,_,,_,,_,,_,,,
+27,_,23.0,_,,_,,_,,_,,_,,_,,,
+28,_,10.0,Tom S,,_,,_,,_,,_,,_,,,
+29,_,15.0,Max V,V,_,,_,,_,,_,,_,,,
+30,_,18.0,Perth,,_,,_,,_,,_,,_,,,
+31,_,31.0,_,,Perth,,_,,_,,_,,_,,,
+32,_,2.0,Willie,,_,,_,,_,,_,,_,,,
+Lock the Pool Results,,,,,,,,,,,,,,,,
+UNLOCKED,,,,,,,,,,,,,,,,

@@ -1,5 +1,176 @@
 [
   {
+    "month": "2026-10",
+    "month_name": "October 2026",
+    "session_dates": [
+      "2026-10-06"
+    ],
+    "session_count": 1,
+    "fencer_changes": [
+      {
+        "fencer": "Kofi",
+        "start_rating": 1447.7,
+        "end_rating": 1595.3,
+        "change": 147.6,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Aisling",
+        "start_rating": 1459.6,
+        "end_rating": 1576.7,
+        "change": 117.1,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Willie",
+        "start_rating": 1746.4,
+        "end_rating": 1820.5,
+        "change": 74.2,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Will P",
+        "start_rating": 1536.5,
+        "end_rating": 1570.2,
+        "change": 33.7,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Shevy",
+        "start_rating": 1591.6,
+        "end_rating": 1624.3,
+        "change": 32.7,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Alejo",
+        "start_rating": 1661.1,
+        "end_rating": 1690.6,
+        "change": 29.5,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Frederick",
+        "start_rating": 1404.3,
+        "end_rating": 1428.1,
+        "change": 23.7,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Jonathan",
+        "start_rating": 1488.3,
+        "end_rating": 1509.5,
+        "change": 21.2,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Caden",
+        "start_rating": 1450.6,
+        "end_rating": 1470.3,
+        "change": 19.8,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Perth",
+        "start_rating": 1346.4,
+        "end_rating": 1355.1,
+        "change": 8.7,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Max V",
+        "start_rating": 1515.9,
+        "end_rating": 1519.9,
+        "change": 3.9,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Anna Z",
+        "start_rating": 1613.0,
+        "end_rating": 1608.1,
+        "change": -4.9,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Adam H",
+        "start_rating": 1464.3,
+        "end_rating": 1456.5,
+        "change": -7.8,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "James S",
+        "start_rating": 1581.6,
+        "end_rating": 1567.4,
+        "change": -14.1,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Alex A",
+        "start_rating": 1620.7,
+        "end_rating": 1601.0,
+        "change": -19.7,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Steph",
+        "start_rating": 1577.4,
+        "end_rating": 1556.8,
+        "change": -20.6,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Marg",
+        "start_rating": 1343.1,
+        "end_rating": 1321.7,
+        "change": -21.4,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Fassel",
+        "start_rating": 1746.6,
+        "end_rating": 1723.1,
+        "change": -23.5,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Aleksandra",
+        "start_rating": 1492.7,
+        "end_rating": 1458.0,
+        "change": -34.7,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Ed B",
+        "start_rating": 1553.3,
+        "end_rating": 1516.5,
+        "change": -36.9,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Tom S",
+        "start_rating": 1607.8,
+        "end_rating": 1569.2,
+        "change": -38.7,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Eugene",
+        "start_rating": 1474.1,
+        "end_rating": 1412.1,
+        "change": -62.0,
+        "sessions_attended": 1
+      },
+      {
+        "fencer": "Vincent",
+        "start_rating": 1612.1,
+        "end_rating": 1534.5,
+        "change": -77.5,
+        "sessions_attended": 1
+      }
+    ]
+  },
+  {
     "month": "2026-09",
     "month_name": "September 2026",
     "session_dates": [

@@ -153,3 +153,4 @@
 9/15/26,https://docs.google.com/spreadsheets/d/1dlHEaSTmZ86tLKtDv7JZVlWCP91RMkEpmTqYqapfS3s/edit?usp=drivesdk
 9/22/26,https://docs.google.com/spreadsheets/d/1de5b4-IzsaIMYjtrErZFaAS_kE0IkoG3u3AQFRVbgkQ/edit?usp=drivesdk
 9/29/26,https://docs.google.com/spreadsheets/d/1dYJwij6GHomtIqRx5LvTp0234SBwCqngGZ-v7sEAxxk/edit?usp=drivesdk
+10/6/26,https://docs.google.com/spreadsheets/d/1tTWnA72BHIrWas4FvM8wWnhkxuDwaCuAUJ5lwZhJs7Q/edit?usp=drivesdk

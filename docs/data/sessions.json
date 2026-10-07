@@ -13737,5 +13737,94 @@
         "fencer": "Kofi"
       }
     ]
+  },
+  {
+    "date": "2026-10-06",
+    "winner": "Willie",
+    "top_poule_climber": "Shevy",
+    "top_poule_gain": 37.3,
+    "fencers_in_poules": 25,
+    "fencers_in_des": 20,
+    "poule_matches": 108,
+    "de_matches": 39,
+    "total_matches": 147,
+    "score_5_0": 6,
+    "score_5_1": 16,
+    "score_5_2": 29,
+    "score_5_3": 26,
+    "score_5_4": 30,
+    "total_touches": 807,
+    "avg_touches_per_match": 7.47,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1tTWnA72BHIrWas4FvM8wWnhkxuDwaCuAUJ5lwZhJs7Q/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Willie"
+      },
+      {
+        "place": 2,
+        "fencer": "Fassel"
+      },
+      {
+        "place": 3,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 4,
+        "fencer": "Aisling"
+      },
+      {
+        "place": 7,
+        "fencer": "Caden"
+      },
+      {
+        "place": 8,
+        "fencer": "Shevy"
+      },
+      {
+        "place": 9,
+        "fencer": "Kofi"
+      },
+      {
+        "place": 10,
+        "fencer": "Max V"
+      },
+      {
+        "place": 11,
+        "fencer": "Steph"
+      },
+      {
+        "place": 12,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 14,
+        "fencer": "Ed B"
+      },
+      {
+        "place": 15,
+        "fencer": "James S"
+      },
+      {
+        "place": 16,
+        "fencer": "Tom S"
+      },
+      {
+        "place": 17,
+        "fencer": "Jordan"
+      },
+      {
+        "place": 18,
+        "fencer": "Perth"
+      },
+      {
+        "place": 19,
+        "fencer": "Adrian Lca"
+      },
+      {
+        "place": 20,
+        "fencer": "Adam H"
+      }
+    ]
   }
 ]
