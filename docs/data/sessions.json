@@ -13826,5 +13826,102 @@
         "fencer": "Adam H"
       }
     ]
+  },
+  {
+    "date": "2026-10-13",
+    "winner": "Fassel",
+    "top_poule_climber": "Jonathan",
+    "top_poule_gain": 42.9,
+    "fencers_in_poules": 25,
+    "fencers_in_des": 19,
+    "poule_matches": 99,
+    "de_matches": 37,
+    "total_matches": 136,
+    "score_5_0": 7,
+    "score_5_1": 16,
+    "score_5_2": 19,
+    "score_5_3": 24,
+    "score_5_4": 32,
+    "total_touches": 744,
+    "avg_touches_per_match": 7.52,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1pjBKl-sZl5AwGJcrXkqV9f0mZiIH8m1v8t3uKhJuMgo/edit?gid=1514673438#gid=1514673438",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Fassel"
+      },
+      {
+        "place": 2,
+        "fencer": "Willie"
+      },
+      {
+        "place": 3,
+        "fencer": "Roeland"
+      },
+      {
+        "place": 4,
+        "fencer": "Calum"
+      },
+      {
+        "place": 5,
+        "fencer": "Anna Z"
+      },
+      {
+        "place": 6,
+        "fencer": "Darran"
+      },
+      {
+        "place": 7,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 8,
+        "fencer": "Max V"
+      },
+      {
+        "place": 9,
+        "fencer": "Sammy"
+      },
+      {
+        "place": 10,
+        "fencer": "Steph"
+      },
+      {
+        "place": 11,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 12,
+        "fencer": "Ed B"
+      },
+      {
+        "place": 13,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 14,
+        "fencer": "Perth"
+      },
+      {
+        "place": 15,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 16,
+        "fencer": "Shevy"
+      },
+      {
+        "place": 17,
+        "fencer": "Kiril Iv"
+      },
+      {
+        "place": 18,
+        "fencer": "Andy R"
+      },
+      {
+        "place": 19,
+        "fencer": "Alix S"
+      }
+    ]
   }
 ]

@@ -1,0 +1,35 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Unnamed: 14,Unnamed: 15,Unnamed: 16
+1,Fessal,1.0,Fessal,,Fessal,V,Fessal,V,Fessal,V,Fessal,V,Fessal,,7.0,Richard B
+2,Calum,32.0,_,,Ed B,,Max V,,Roeland,,Willie,,Willie,,,
+3,Willie,17.0,Andy R,,Max V,V,Roeland,V,Willie,V,Roeland,V,Roeland,,19.0,Kiril Iv
+4,Anna Z,16.0,Ed B,V,Perth,,Anna Z,,Calum,,Calum,,Calum,,2.0,Calum
+5,Roeland,9.0,Max V,,Roeland,V,Willie,V,Max V,,Anna Z,V,Anna Z,,3.0,Willie
+6,Alejo,24.0,_,,Sammy,,Alejo,,Anna Z,V,Darran,,Darran,,,
+7,Richard B,25.0,_,,Shevy,Walkover,Darran,,Alejo,,Max V,,Alejo,,10.0,Darran
+8,Perth,8.0,Perth,,Anna Z,V,Calum,V,Darran,V,Alejo,V,Max V,,4.0,Anna Z
+9,Max V,5.0,Roeland,,Willie,V,Ed B,V,Ed B,,Sammy,V,Sammy,,,
+10,Darran,28.0,_,,Vadym,,Perth,,Sammy,V,Steph,,Steph,,13.0,Shevy
+11,Steph,21.0,_,,Steph,,Sammy,V,Steph,V,Ed B,Walkover,Richard B,,5.0,Roeland
+12,Sammy,12.0,Sammy,,Alejo,V,Shevy,Walkover,Richard B,,Richard B,V,Ed B,,18.0,Alix S
+13,Shevy,13.0,Shevy,,Richard B,,Vadym,,Perth,V,Perth,,Vadym,,15.0,Eugene
+14,Vadym,20.0,_,,Darran,V,Steph,V,Shevy,Walkover,Vadym,V,Perth,,6.0,Alejo
+15,Eugene,29.0,_,,Eugene,,Richard B,V,Vadym,V,Shevy,Walkover,Eugene,,9.0,Max V
+16,Ed B,4.0,Anna Z,,Calum,V,Eugene,,Eugene,,Eugene,V,Shevy,,1.0,Fessal
+17,Andy R,3.0,Willie,,_,,Andy R,,Andy R,,Andy R,,Kiril Iv,,,
+18,Alix S,30.0,_,,Andy R,,_,,_,,Kiril Iv,V,Andy R,,11.0,Steph
+19,Kiril Iv,19.0,Kiril Iv,,_,,_,,Kiril Iv,V,_,,Alix S,,14.0,Vadym
+20,_,14.0,Vadym,V,_,,_,,Alix S,,Alix S,,_,,,
+21,_,11.0,Steph,,_,,Kiril Iv,,_,,_,,_,,8.0,Perth
+22,_,22.0,_,,_,,_,,_,,_,,_,,,
+23,_,27.0,_,,_,,_,,_,,_,,_,,17.0,Andy R
+24,_,6.0,Alejo,,_,,Alix S,,_,,_,,_,,16.0,Ed B
+25,_,7.0,Richard B,,_,,_,,_,,_,,_,,12.0,Sammy
+26,_,26.0,_,,Kiril Iv,,_,,_,,_,,_,,,
+27,_,23.0,_,,_,,_,,_,,_,,_,,,
+28,_,10.0,Darran,,_,,_,,_,,_,,_,,,
+29,_,15.0,Eugene,V,_,,_,,_,,_,,_,,,
+30,_,18.0,Alix S,,_,,_,,_,,_,,_,,,
+31,_,31.0,_,,Alix S,,_,,_,,_,,_,,,
+32,_,2.0,Calum,,_,,_,,_,,_,,_,,,
+Lock the Pool Results,,,,,,,,,,,,,,,,
+LOCKED,,,,,,,,,,,,,,,,
