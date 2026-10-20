@@ -1,0 +1,35 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Unnamed: 14,Unnamed: 15,Unnamed: 16
+1,Charlie ,1.0,Charlie ,,Charlie ,V,Charlie ,V,Charlie ,,Tom T,,Alejo,,2.0,Eric L
+2,Eric L,32.0,_,,Sammy,,Vadym,,Tom T,V,Alejo,V,Tom T,,6.0,Will P
+3,Anna Z,17.0,Sammy,V,Ed B,,Shevy,Walkover,Will P,,Charlie ,Walkover,Will P,,15.0,Oleg
+4,Tom T,16.0,Richard B,,Vadym,V,Tom T,V,Alejo,V,Will P,V,Charlie ,,11.0,Fedor
+5,Shevy,9.0,Ed B,V,Shevy,V,Alex Y,,Vadym,V,Vadym,,Alex Y,,24.0,Jordan
+6,Will P,24.0,Jordan,,Harry,,Will P,V,Shevy,Walkover,Alex Y,V,Vadym,,20.0,Caden
+7,Fessal,25.0,Andy R,,Anna A,,Alejo,V,Alex Y,V,Shevy,Walkover,Eric L,,5.0,Shevy
+8,Vadym,8.0,Vadym,V,Tom T,V,Eric L,,Eric L,,Eric L,V,Shevy,,19.0,Frederick 
+9,Ed B,5.0,Shevy,,Anna Z,,Sammy,V,Sammy,V,Sammy,V,Sammy,,22.0,Kirill Iv
+10,Giles,28.0,_,,Alex Y,V,Ed B,Walkover,Harry,,Anna Z,,Anna Z,,14.0,Alex Y
+11,Fedor,21.0,Eugene,,Fedor,,Harry,V,Anna Z,V,Harry,V,Harry,,16.0,Richard B
+12,Harry,12.0,Harry,V,Will P,V,Anna A,,Oleg,,Oleg,,Oleg,,10.0,Giles
+13,Anna A,13.0,Anna A,V,Fessal,,Anna Z,V,Ed B,Walkover,Anna A,V,Anna A,,9.0,Ed B
+14,Alex Y,20.0,Caden,,Alejo,V,Fedor,,Anna A,V,Fedor,,Fedor,,26.0,Alix S
+15,Oleg,29.0,_,,Oleg,,Fessal,,Fedor,V,Ed B,Walkover,Fessal,,,
+16,Richard B,4.0,Tom T,,Eric L,V,Oleg,V,Fessal,Walkover,Fessal,V,Ed B,,21.0,Eugene
+17,Sammy,3.0,Anna Z,,_,,Richard B,,Andy R,,Eugene,,Steph,,,
+18,Steph,30.0,_,,Richard B,,Andy R,V,Eugene,V,Steph,V,Eugene,,1.0,Charlie 
+19,Frederick ,19.0,Frederick ,,Jordan,,Eugene,V,Frederick ,,Andy R,V,Andy R,,13.0,Anna A
+20,Caden,14.0,Alex Y,V,Andy R,V,Caden,,Steph,V,Frederick ,Walkover,Frederick ,,3.0,Anna Z
+21,Eugene,11.0,Fedor,V,_,,Frederick ,V,Richard B,V,Richard B,V,Richard B,,18.0,Steph
+22,Kirill Iv,22.0,Kirill Iv,,Eugene,,Kirill Iv,,Caden,Walkover,Kirill Iv,,Kirill Iv,,7.0,Fessal
+23,Alejo,27.0,_,,Caden,,Giles,,Kirill Iv,V,Caden,Walkover,Giles,,25.0,Andy R
+24,Jordan,6.0,Will P,,_,,Steph,V,Giles,,Giles,V,Caden,,8.0,Vadym
+25,Andy R,7.0,Fessal,V,_,,_,,Jordan,,Jordan,,Alix S,,4.0,Tom T
+26,Alix S,26.0,Alix S,,Frederick ,,Jordan,,_,,Alix S,V,Jordan,,12.0,Harry
+27,_,23.0,Alejo,V,Kirill Iv,,_,,_,,_,,_,,17.0,Sammy
+28,_,10.0,Giles,,_,,_,,Alix S,,_,,_,,23.0,Alejo
+29,_,15.0,Oleg,V,Alix S,,_,,_,,_,,Steph,,,
+30,_,18.0,Steph,,Giles,V,_,,_,,Steph,,_,,,
+31,_,31.0,_,,Steph,Walkover,Alix S,V,_,V,_,V,,,,
+32,_,2.0,Eric L,,_,V,Steph,Walkover,Steph,,,Walkover,_,,,
+Lock the Pool Results,,,,,,,,,,,,,,,,
+LOCKED,,,,,,,,,,,,,,,,
