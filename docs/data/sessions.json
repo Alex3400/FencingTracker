@@ -14048,5 +14048,94 @@
         "fencer": "Steph"
       }
     ]
+  },
+  {
+    "date": "2026-10-27",
+    "winner": "Greg",
+    "top_poule_climber": "Solu",
+    "top_poule_gain": 55.1,
+    "fencers_in_poules": 21,
+    "fencers_in_des": 17,
+    "poule_matches": 90,
+    "de_matches": 33,
+    "total_matches": 123,
+    "score_5_0": 6,
+    "score_5_1": 20,
+    "score_5_2": 22,
+    "score_5_3": 23,
+    "score_5_4": 19,
+    "total_touches": 659,
+    "avg_touches_per_match": 7.32,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/10pu-ZUKQP731JdopbOYMbQE72PW8hADUMN4QmM4UnTE/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Greg"
+      },
+      {
+        "place": 2,
+        "fencer": "Solu"
+      },
+      {
+        "place": 3,
+        "fencer": "Roeland"
+      },
+      {
+        "place": 4,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 5,
+        "fencer": "Willie"
+      },
+      {
+        "place": 6,
+        "fencer": "Lorenzo"
+      },
+      {
+        "place": 7,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 8,
+        "fencer": "Fassel"
+      },
+      {
+        "place": 9,
+        "fencer": "Steph"
+      },
+      {
+        "place": 10,
+        "fencer": "Perth"
+      },
+      {
+        "place": 11,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 12,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 13,
+        "fencer": "Max V"
+      },
+      {
+        "place": 14,
+        "fencer": "Kirill Iv"
+      },
+      {
+        "place": 15,
+        "fencer": "Caden"
+      },
+      {
+        "place": 16,
+        "fencer": "Andy R"
+      },
+      {
+        "place": 17,
+        "fencer": "Daniel S"
+      }
+    ]
   }
 ]

@@ -1,0 +1,35 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Unnamed: 14,Unnamed: 15,Unnamed: 16
+1,Fessal,1.0,Fessal,,Fessal,V,Fessal,,Roeland,,Solu,,Greg,,,
+2,Greg,32.0,_,,Andy R,,Roeland,V,Solu,V,Greg,V,Solu,,2.0,Greg
+3,Willie,17.0,Andy R,V,Richard B,,Lorenzo,,Alex Y,,Roeland,V,Roeland,,4.0,Solu
+4,Solu,16.0,Daniel S,,Roeland,V,Solu,V,Greg,V,Alex Y,Walkover,Alex Y,,16.0,Daniel S
+5,Lorenzo,9.0,Richard B,,Lorenzo,V,Willie,,Fessal,,Lorenzo,,Willie,,,
+6,Colin R,24.0,_,,Steph,,Alex Y,V,Lorenzo,V,Willie,V,Lorenzo,,1.0,Fessal
+7,Alejo,25.0,_,,Kirill Iv,,Alejo,,Willie,V,Fessal,,Alejo,,5.0,Lorenzo
+8,Roeland,8.0,Roeland,,Solu,V,Greg,V,Alejo,,Alejo,V,Fessal,,14.0,Caden
+9,Richard B,5.0,Lorenzo,,Willie,V,Andy R,,Richard B,,Steph,V,Steph,,13.0,Kirill Iv
+10,Max V,28.0,_,,Caden,,Richard B,V,Steph,V,Perth,,Perth,,11.0,Alex Y
+11,Alex Y,21.0,_,,Alex Y,V,Steph,V,Colin R,,Richard B,,Colin R,,3.0,Willie
+12,Steph,12.0,Steph,,Colin R,,Kirill Iv,,Perth,V,Colin R,V,Richard B,,,
+13,Kirill Iv,13.0,Kirill Iv,,Alejo,V,Caden,,Andy R,,Kirill Iv,,Max V,,17.0,Andy R
+14,Caden,20.0,_,,Max V,,Colin R,V,Kirill Iv,V,Max V,V,Kirill Iv,,7.0,Alejo
+15,Perth,29.0,_,,Perth,,Max V,,Caden,,Andy R,,Caden,,15.0,Perth
+16,Daniel S,4.0,Solu,,Greg,V,Perth,V,Max V,V,Caden,V,Andy R,,8.0,Roeland
+17,Andy R,3.0,Willie,,_,,Daniel S,,Daniel S,,Daniel S,,Daniel S,,,
+18,_,30.0,_,,Daniel S,,_,,_,,_,,_,,12.0,Steph
+19,_,19.0,_,,_,,_,,_,,_,,_,,10.0,Max V
+20,_,14.0,Caden,,_,,_,,_,,_,,_,,6.0,Colin R
+21,_,11.0,Alex Y,,_,,_,,_,,_,,_,,9.0,Richard B
+22,_,22.0,_,,_,,_,,_,,_,,_,,,
+23,_,27.0,_,,_,,_,,_,,_,,_,,,
+24,_,6.0,Colin R,,_,,_,,_,,_,,_,,,
+25,_,7.0,Alejo,,_,,_,,_,,_,,_,,,
+26,_,26.0,_,,_,,_,,_,,_,,_,,,
+27,_,23.0,_,,_,,_,,_,,_,,_,,,
+28,_,10.0,Max V,,_,,_,,_,,_,,_,,,
+29,_,15.0,Perth,,_,,_,,_,,_,,_,,,
+30,_,18.0,_,,_,,_,,_,,_,,_,,,
+31,_,31.0,_,,_,,_,,_,,_,,_,,,
+32,_,2.0,Greg,,_,,_,,_,,_,,_,,,
+Lock the Pool Results,,,,,,,,,,,,,,,,
+LOCKED,,,,,,,,,,,,,,,,
