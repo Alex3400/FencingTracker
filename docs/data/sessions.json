@@ -14137,5 +14137,110 @@
         "fencer": "Daniel S"
       }
     ]
+  },
+  {
+    "date": "2026-11-03",
+    "winner": "Greg",
+    "top_poule_climber": "Caden",
+    "top_poule_gain": 47.0,
+    "fencers_in_poules": 25,
+    "fencers_in_des": 21,
+    "poule_matches": 87,
+    "de_matches": 42,
+    "total_matches": 129,
+    "score_5_0": 5,
+    "score_5_1": 19,
+    "score_5_2": 19,
+    "score_5_3": 14,
+    "score_5_4": 29,
+    "total_touches": 645,
+    "avg_touches_per_match": 7.41,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/13obtWM7pEnsR6GSpEKhcCg50OD_TKP8jGNKGujN9mY4/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Greg"
+      },
+      {
+        "place": 2,
+        "fencer": "Willie"
+      },
+      {
+        "place": 3,
+        "fencer": "Fassel"
+      },
+      {
+        "place": 4,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 5,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 6,
+        "fencer": "Tom S"
+      },
+      {
+        "place": 7,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 8,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 9,
+        "fencer": "Sammy"
+      },
+      {
+        "place": 10,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 11,
+        "fencer": "Harry"
+      },
+      {
+        "place": 12,
+        "fencer": "Caden"
+      },
+      {
+        "place": 13,
+        "fencer": "Lorenzo"
+      },
+      {
+        "place": 14,
+        "fencer": "Wes"
+      },
+      {
+        "place": 15,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 16,
+        "fencer": "Adam H"
+      },
+      {
+        "place": 17,
+        "fencer": "Perth"
+      },
+      {
+        "place": 18,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 19,
+        "fencer": "Steph"
+      },
+      {
+        "place": 20,
+        "fencer": "Fedor"
+      },
+      {
+        "place": 21,
+        "fencer": "Jordan"
+      }
+    ]
   }
 ]
