@@ -14242,5 +14242,106 @@
         "fencer": "Jordan"
       }
     ]
+  },
+  {
+    "date": "2026-11-10",
+    "winner": "Solu",
+    "top_poule_climber": "Jonathan",
+    "top_poule_gain": 46.3,
+    "fencers_in_poules": 27,
+    "fencers_in_des": 20,
+    "poule_matches": 87,
+    "de_matches": 40,
+    "total_matches": 127,
+    "score_5_0": 6,
+    "score_5_1": 17,
+    "score_5_2": 19,
+    "score_5_3": 27,
+    "score_5_4": 15,
+    "total_touches": 616,
+    "avg_touches_per_match": 7.08,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1cE3gXY3jxdvnNQ8IH_qsEt0A1NGlEmVTlBrNmr70oI0/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Solu"
+      },
+      {
+        "place": 2,
+        "fencer": "Greg"
+      },
+      {
+        "place": 3,
+        "fencer": "Baran"
+      },
+      {
+        "place": 4,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 5,
+        "fencer": "Calum"
+      },
+      {
+        "place": 6,
+        "fencer": "Max V"
+      },
+      {
+        "place": 7,
+        "fencer": "Willie"
+      },
+      {
+        "place": 8,
+        "fencer": "Anna Z"
+      },
+      {
+        "place": 9,
+        "fencer": "Charlie"
+      },
+      {
+        "place": 10,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 11,
+        "fencer": "Kofi"
+      },
+      {
+        "place": 12,
+        "fencer": "Anna A"
+      },
+      {
+        "place": 13,
+        "fencer": "Kirill Iv"
+      },
+      {
+        "place": 14,
+        "fencer": "Vincent"
+      },
+      {
+        "place": 15,
+        "fencer": "Caden"
+      },
+      {
+        "place": 16,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 18,
+        "fencer": "Robert"
+      },
+      {
+        "place": 19,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 20,
+        "fencer": "Jordan"
+      },
+      {
+        "place": 23,
+        "fencer": "Ed B"
+      }
+    ]
   }
 ]

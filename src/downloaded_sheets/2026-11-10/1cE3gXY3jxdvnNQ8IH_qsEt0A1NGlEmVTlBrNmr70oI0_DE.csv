@@ -1,0 +1,35 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Unnamed: 14,Unnamed: 15,Unnamed: 16
+1,Willie,1.0,Willie,,Willie,V,Willie,,Solu,V,Solu,V,Solu,,11.0,Alex Y
+2,Vadym,32.0,_,,Kirill Iv,,Solu,V,Baran,,Greg,,Greg,,3.0,Greg
+3,Greg,17.0,Kirill Iv,V,Solu,V,Baran,V,Greg,V,Baran,V,Baran,,10.0,Richard B
+4,Calum,16.0,Robert,,Charlie ,,Calum,,Vadym,,Vadym,,Vadym,,1.0,Willie
+5,Baran,9.0,Solu,,Baran,V,Greg,V,Willie,,Calum,V,Calum,,,
+6,Anna Z,24.0,_,,Alex Y,,Anna Z,,Calum,V,Max V,,Max V,,19.0,Jordan
+7,Max V,25.0,_,,Kofi,,Max V,,Anna Z,,Willie,V,Willie,,13.0,Ed B
+8,Charlie ,8.0,Charlie ,,Calum,V,Vadym,V,Max V,V,Anna Z,,Anna Z,,5.0,Baran
+9,Solu,5.0,Baran,,Greg,V,Kirill Iv,,Charlie ,V,Charlie ,V,Charlie ,,,
+10,Vincent,28.0,_,,Caden,,Charlie ,V,Kofi,,Richard B,,Richard B,,14.0,Anna A
+11,Richard B,21.0,_,,Richard B,,Alex Y,,Richard B,V,Kofi,V,Kofi,,4.0,Calum
+12,Alex Y,12.0,Alex Y,,Anna Z,V,Kofi,V,Anna A,,Anna A,,Anna A,,,
+13,Kofi,13.0,Kofi,V,Max V,V,Caden,,Kirill Iv,V,Kirill Iv,V,Kirill Iv,,18.0,Eugene
+14,Ed B,20.0,Jordan,,Vincent,,Richard B,V,Alex Y,Walkover,Vincent,,Vincent,,,
+15,Anna A,29.0,_,,Anna A,,Vincent,,Caden,,Alex Y,Walkover,Caden,,16.0,Kirill Iv
+16,Robert,4.0,Calum,,Vadym,V,Anna A,V,Vincent,V,Caden,V,Alex Y,,8.0,Charlie 
+17,Kirill Iv,3.0,Greg,,_,,Robert,,Robert,V,Robert,,Ed B,,7.0,Max V
+18,Eugene,30.0,_,,Robert,,_,,Jordan,,Ed B,V,Robert,,17.0,Caden
+19,Caden,19.0,Caden,V,_,,_,,Ed B,V,Jordan,,Eugene,,9.0,Vincent
+20,Jordan,14.0,Ed B,,_,,Jordan,,Eugene,,Eugene,V,Jordan,,6.0,Anna Z
+21,_,11.0,Richard B,,_,,Ed B,Walkover,_,,_,,Ed B,,,
+22,_,22.0,_,,_,,_,V,_,,Ed B,,_,,,
+23,_,27.0,_,,Jordan,,_,,Ed B,Walkover,_,V,Ed B,,,
+24,_,6.0,Anna Z,,_,,Eugene,,_,V,Ed B,Walkover,_,,12.0,Kofi
+25,_,7.0,Max V,,_,,_,,_,,_,,_,,2.0,Vadym
+26,_,26.0,_,,Ed B,,_,,_,,_,,_,,,
+27,_,23.0,_,,_,,_,,_,,_,,_,,15.0,Robert
+28,_,10.0,Vincent,,_,,_,,_,,_,,_,,,
+29,_,15.0,Anna A,V,_,,_,,_,,_,,_,,,
+30,_,18.0,Eugene,,_,,_,,_,,_,,_,,,
+31,_,31.0,_,,Eugene,,_,,_,,_,,_,,,
+32,_,2.0,Vadym,,_,,_,,_,,_,,_,,,
+Lock the Pool Results,,,,,,,,,,,,,,,,
+LOCKED,,,,,,,,,,,,,,,,
