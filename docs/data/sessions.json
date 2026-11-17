@@ -14343,5 +14343,122 @@
         "fencer": "Ed B"
       }
     ]
+  },
+  {
+    "date": "2026-11-17",
+    "winner": "Rudi",
+    "top_poule_climber": "Rudi",
+    "top_poule_gain": 63.4,
+    "fencers_in_poules": 28,
+    "fencers_in_des": 24,
+    "poule_matches": 98,
+    "de_matches": 52,
+    "total_matches": 150,
+    "score_5_0": 10,
+    "score_5_1": 21,
+    "score_5_2": 15,
+    "score_5_3": 20,
+    "score_5_4": 32,
+    "total_touches": 729,
+    "avg_touches_per_match": 7.44,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1-YJIGZwNc857JyXHqhUIDiRnEVvf1i0U5NVtXtEjfFg/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Rudi"
+      },
+      {
+        "place": 2,
+        "fencer": "Greg"
+      },
+      {
+        "place": 3,
+        "fencer": "Solu"
+      },
+      {
+        "place": 4,
+        "fencer": "Baran"
+      },
+      {
+        "place": 5,
+        "fencer": "Eric L"
+      },
+      {
+        "place": 6,
+        "fencer": "Darran"
+      },
+      {
+        "place": 7,
+        "fencer": "Anna Z"
+      },
+      {
+        "place": 8,
+        "fencer": "Oleg"
+      },
+      {
+        "place": 9,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 10,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 11,
+        "fencer": "Anna A"
+      },
+      {
+        "place": 12,
+        "fencer": "Max V"
+      },
+      {
+        "place": 13,
+        "fencer": "Willie"
+      },
+      {
+        "place": 14,
+        "fencer": "Fedor"
+      },
+      {
+        "place": 15,
+        "fencer": "Caden"
+      },
+      {
+        "place": 16,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 17,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 18,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 19,
+        "fencer": "Perth"
+      },
+      {
+        "place": 20,
+        "fencer": "Jordan"
+      },
+      {
+        "place": 21,
+        "fencer": "Kirill Iv"
+      },
+      {
+        "place": 22,
+        "fencer": "Andy R"
+      },
+      {
+        "place": 23,
+        "fencer": "Giles"
+      },
+      {
+        "place": 24,
+        "fencer": "Adam H"
+      }
+    ]
   }
 ]

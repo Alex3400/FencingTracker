@@ -1,0 +1,35 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Unnamed: 14,Unnamed: 15,Unnamed: 16
+1,Greg,1.0,Greg,,Greg,V,Greg,V,Greg,V,Greg,,Rudi,,3.0,Eric L
+2,Rudi,32.0,_,,Alex Y,,Anna Z,,Baran,,Rudi,V,Greg,,10.0,Oleg
+3,Eric L,17.0,Alex Y,V,Fedor,,Darran,,Solu,,Baran,,Solu,,17.0,Alex Y
+4,Baran,16.0,Colin R,,Anna Z,V,Baran,V,Rudi,V,Solu,V,Baran,,20.0,Adam H
+5,Richard B,9.0,Fedor,V,Richard B,,Eric L,,Anna Z,,Darran,,Eric L,,9.0,Fedor
+6,Solu,24.0,Kirill Iv,,Darran,V,Solu,V,Darran,V,Eric L,V,Darran,,14.0,Caden
+7,Willie,25.0,_,,Anna A,,Oleg,,Eric L,V,Anna Z,V,Anna Z,,7.0,Willie
+8,Anna Z,8.0,Anna Z,,Baran,V,Rudi,V,Oleg,,Oleg,,Oleg,,1.0,Greg
+9,Fedor,5.0,Richard B,,Eric L,V,Alex Y,V,Alex Y,V,Alex Y,,Alejo,,19.0,Andy R
+10,Oleg,28.0,_,,Caden,,Fedor,,Anna A,,Alejo,V,Alex Y,,5.0,Richard B
+11,Alejo,21.0,Perth,,Alejo,,Richard B,,Alejo,V,Anna A,V,Anna A,,,
+12,Darran,12.0,Darran,V,Solu,V,Anna A,V,Max V,,Max V,,Max V,,21.0,Perth
+13,Anna A,13.0,Anna A,V,Willie,,Caden,,Fedor,V,Fedor,,Willie,,15.0,Giles
+14,Caden,20.0,Adam H,,Oleg,V,Alejo,V,Richard B,,Willie,V,Fedor,,13.0,Anna A
+15,Giles,29.0,_,,Max V,,Willie,,Caden,,Richard B,Walkover,Caden,,24.0,Kirill Iv
+16,Colin R,4.0,Baran,,Rudi,V,Max V,V,Willie,V,Caden,V,Richard B,,8.0,Anna Z
+17,Alex Y,3.0,Eric L,,_,,Colin R,V,Colin R,V,Colin R,,Eugene,,,
+18,Max V,30.0,_,,Colin R,,Kirill Iv,,Perth,,Eugene,V,Colin R,,22.0,Eugene
+19,Andy R,19.0,Andy R,,Kirill Iv,,Perth,V,Eugene,V,Perth,V,Perth,,6.0,Solu
+20,Adam H,14.0,Caden,V,_,,Adam H,Walkover,Jordan,,Jordan,,Jordan,,11.0,Alejo
+21,Perth,11.0,Alejo,V,_,,Andy R,,Kirill Iv,V,Kirill Iv,V,Kirill Iv,,23.0,Jordan
+22,Eugene,22.0,Eugene,,Perth,,Eugene,V,Adam H,Walkover,Andy R,,Andy R,,16.0,Colin R
+23,Jordan,27.0,_,,Adam H,,Jordan,V,Andy R,V,Adam H,Walkover,Giles,,18.0,Max V
+24,Kirill Iv,6.0,Solu,,_,,Giles,Walkover,Giles,Walkover,Giles,V,Adam H,,12.0,Darran
+25,_,7.0,Willie,,_,,_,,_,,_,,_,,2.0,Rudi
+26,_,26.0,_,,Andy R,,_,,_,,_,,_,,4.0,Baran
+27,_,23.0,Jordan,,Eugene,,_,,_,,_,,_,,,
+28,_,10.0,Oleg,V,_,,_,,_,,_,,_,,,
+29,_,15.0,Giles,,_,,_,,_,,_,,_,,,
+30,_,18.0,Max V,V,Jordan,,_,,_,,_,,_,,,
+31,_,31.0,_,,Giles,,_,,_,,_,,_,,,
+32,_,2.0,Rudi,,_,,_,,_,,_,,_,,,
+Lock the Pool Results,,,,,,,,,,,,,,,,
+LOCKED,,,,,,,,,,,,,,,,
