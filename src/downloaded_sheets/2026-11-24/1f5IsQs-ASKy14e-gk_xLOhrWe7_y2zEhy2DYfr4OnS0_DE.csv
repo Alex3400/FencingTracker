@@ -1,0 +1,35 @@
+Place,Name,Unnamed: 2,L32,Unnamed: 4,L16,Unnamed: 6,L8,Unnamed: 8,Semi-final,Unnamed: 10,Final,Unnamed: 12,Winner,Unnamed: 14,Unnamed: 15,Unnamed: 16
+1,Willie,1.0,Willie,,Willie,V,Willie,V,Willie,,Anna Z,,Sammy,,22.0,Caden
+2,Nikolas,32.0,_,,Max V,,Darran,,Anna Z,V,Sammy,V,Anna Z,,10.0,Richard B
+3,Greg,17.0,Max V,V,Darran,V,Anna Z,V,Greg,,Willie,,Greg,,,
+4,Roeland,16.0,Harry,,Tom S,,Vlad K,,Sammy,V,Greg,V,Willie,,14.0,Alex Y
+5,Alejo,9.0,Darran,,Alejo,,Greg,V,Darran,Walkover,Vlad K,Walkover,Vadym,,1.0,Willie
+6,Vadym,24.0,_,,Anna Z,V,Vadym,,Vlad K,V,Vadym,V,Vlad K,,4.0,Roeland
+7,Sammy,25.0,_,,Vlad K,V,Sammy,V,Vadym,V,Darran,V,Darran,,13.0,Vlad K
+8,Tom S,8.0,Tom S,,Roeland,,Nikolas,Walkover,Nikolas,Walkover,Nikolas,Walkover,Nikolas,,2.0,Nikolas
+9,Darran,5.0,Alejo,,Greg,V,Max V,V,Max V,,Alejo,,Alex Y,,3.0,Greg
+10,Richard B,28.0,_,,Alex Y,,Tom S,,Alejo,V,Alex Y,V,Alejo,,23.0,Adam h
+11,Kamal,21.0,Anna Z,V,Kamal,,Alejo,V,Alex Y,V,Max V,V,Max V,,,
+12,Colin R,12.0,Colin R,,Vadym,V,Roeland,,Eugene,,Eugene,,Eugene,,15.0,Eugene
+13,Vlad K,13.0,Vlad K,V,Sammy,V,Alex Y,V,Tom S,Walkover,Roeland,V,Roeland,,21.0,Anna Z
+14,Alex Y,20.0,Kirill Iv,,Adam h,,Kamal,,Roeland,V,Kamal,Walkover,Kamal,,,
+15,Eugene,29.0,_,,Eugene,,Adam h,,Kamal,V,Tom S,Walkover,Adam h,,17.0,Max V
+16,Harry,4.0,Roeland,,Nikolas,V,Eugene,V,Adam h,Walkover,Adam h,V,Tom S,,8.0,Tom S
+17,Max V,3.0,Greg,,_,,Harry,,Harry,V,Harry,V,Harry,,9.0,Darran
+18,James S,30.0,_,,Harry,,_,,Colin R,,Richard B,,Richard B,,11.0,Kamal
+19,Giles,19.0,Giles,,_,,Colin R,V,Caden,,Colin R,V,Colin R,,,
+20,Kirill Iv,14.0,Alex Y,V,_,,Kirill Iv,,Richard B,V,Caden,,Caden,,20.0,Kirill Iv
+21,Anna Z,11.0,Kamal,V,_,,Giles,,_,,Kirill Iv,V,Kirill Iv,,19.0,Giles
+22,Caden,22.0,Caden,,Colin R,,Caden,V,Kirill Iv,,Giles,Walkover,Giles,,16.0,Harry
+23,Adam h,27.0,_,,Kirill Iv,,Richard B,V,Giles,V,_,,James S,,6.0,Vadym
+24,_,6.0,Vadym,,_,,James S,,James S,,James S,,_,,7.0,Sammy
+25,_,7.0,Sammy,,_,,_,,_,,_,,_,,5.0,Alejo
+26,_,26.0,_,,Giles,,_,,_,,_,,_,,,
+27,_,23.0,Adam h,V,Caden,,_,,_,,_,,_,,18.0,James S
+28,_,10.0,Richard B,,_,,_,,_,,_,,_,,,
+29,_,15.0,Eugene,V,_,,_,,_,,_,,_,,12.0,Colin R
+30,_,18.0,James S,,Richard B,V,_,,_,,_,,_,,,
+31,_,31.0,_,,James S,,_,,_,,_,,_,,,
+32,_,2.0,Nikolas,,_,,_,,_,,_,,_,,,
+Lock the Pool Results,,,,,,,,,,,,,,,,
+LOCKED,,,,,,,,,,,,,,,,

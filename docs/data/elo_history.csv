@@ -18585,3 +18585,145 @@ Date,Match Type,Result,Winner,Winner Old Rating,Winner New Rating,Winner Change,
 2026-11-17,L19-20,(W) Perth - Jordan,Perth,1381.1,1393.3,12.2,Jordan,1186.2,1172.5,-13.7,0.754
 2026-11-17,L21-22,(W) Kirill Iv - Andy R,Kirill Iv,1317.9,1337.3,19.4,Andy R,1240.5,1221.0,-19.4,0.61
 2026-11-17,L23-24,(W) Giles - Adam H,Giles,1385.6,1385.6,0.0,Adam H,1446.7,1446.7,0.0,0.413
+2026-11-24,Poule,(W) Kamal 5-3 Anna Z,Kamal,1561.6,1570.9,9.3,Anna Z,1611.3,1602.0,-9.3,0.429
+2026-11-24,Poule,(W) Jack B 5-3 Darran,Jack B,1577.7,1590.9,13.2,Darran,1702.9,1691.1,-11.8,0.327
+2026-11-24,Poule,(W) Darran 5-2 Kamal,Darran,1691.1,1696.4,5.3,Kamal,1570.9,1565.5,-5.3,0.666
+2026-11-24,Poule,(W) Jonathan 5-4 Tom S,Jonathan,1600.6,1606.4,5.8,Tom S,1608.1,1602.4,-5.8,0.489
+2026-11-24,Poule,(W) Greg 5-0 Anna Z,Greg,1872.9,1877.3,4.3,Anna Z,1602.0,1597.7,-4.3,0.826
+2026-11-24,Poule,(W) Jack B 5-1 Vadym,Jack B,1590.9,1603.2,12.3,Vadym,1620.2,1607.9,-12.3,0.458
+2026-11-24,Poule,(W) Willie 5-2 Adam H,Willie,1674.7,1677.0,2.3,Adam H,1446.7,1444.4,-2.3,0.788
+2026-11-24,Poule,(W) Roeland 5-1 Willie,Roeland,1707.5,1717.6,10.2,Willie,1677.0,1666.8,-10.2,0.544
+2026-11-24,Poule,(W) Caden 5-4 Vlad K,Caden,1389.8,1399.1,9.3,Vlad K,1500,1488.0,-12.0,0.347
+2026-11-24,Poule,(W) Eugene 5-3 Max V,Eugene,1410.3,1421.9,11.6,Max V,1528.5,1516.9,-11.6,0.336
+2026-11-24,Poule,(W) Anna Z 5-3 Aleksandra,Anna Z,1597.7,1597.9,0.3,Aleksandra,1367.6,1367.3,-0.3,0.79
+2026-11-24,Poule,(W) Sammy 5-3 Vlad K,Sammy,1771.0,1770.1,-0.9,Vlad K,1488.0,1489.2,1.2,0.836
+2026-11-24,Poule,(W) Darran 5-2 Roeland,Darran,1696.4,1706.7,10.3,Roeland,1717.6,1707.4,-10.3,0.47
+2026-11-24,Poule,(W) Tom S 5-4 Alex Y,Tom S,1602.4,1609.4,7.0,Alex Y,1645.2,1638.2,-7.0,0.439
+2026-11-24,Poule,(W) Kirill Iv 5-4 Aleksandra,Kirill Iv,1337.3,1343.9,6.6,Aleksandra,1367.3,1360.0,-7.4,0.457
+2026-11-24,Poule,(W) Jack B 5-3 Jonathan,Jack B,1603.2,1610.9,7.6,Jonathan,1606.4,1598.8,-7.6,0.495
+2026-11-24,Poule,(W) Frederick 5-3 Aleksandra,Frederick,1409.6,1416.0,6.4,Aleksandra,1360.0,1353.5,-6.4,0.571
+2026-11-24,Poule,(W) Vadym 5-4 Kirill Iv,Vadym,1607.9,1605.4,-2.5,Kirill Iv,1343.9,1346.4,2.5,0.821
+2026-11-24,Poule,(W) Max V 5-4 Adam H,Max V,1516.9,1519.8,2.9,Adam H,1444.4,1441.5,-2.9,0.603
+2026-11-24,Poule,(W) Alex Y 5-2 Frederick,Alex Y,1638.2,1640.6,2.4,Frederick,1416.0,1413.2,-2.7,0.782
+2026-11-24,Poule,(W) Alejo 5-2 Kamal,Alejo,1735.0,1738.8,3.8,Kamal,1565.5,1561.7,-3.8,0.726
+2026-11-24,Poule,(W) Jack B 5-3 Alex Y,Jack B,1610.9,1619.4,8.6,Alex Y,1640.6,1632.1,-8.6,0.457
+2026-11-24,Poule,(W) Tom S 5-1 Frederick,Tom S,1609.4,1614.3,4.9,Frederick,1413.2,1407.8,-5.4,0.756
+2026-11-24,Poule,(W) Kamal 5-2 Roeland,Kamal,1561.7,1576.1,14.5,Roeland,1707.4,1692.9,-14.5,0.302
+2026-11-24,Poule,(W) Vlad K 5-2 James S,Vlad K,1489.2,1504.9,15.7,James S,1567.4,1555.1,-12.3,0.389
+2026-11-24,Poule,(W) Willie 5-2 Jonathan,Willie,1666.8,1673.9,7.1,Jonathan,1598.8,1591.7,-7.1,0.597
+2026-11-24,Poule,(W) Jack B 5-3 Willie,Jack B,1619.4,1628.9,9.4,Willie,1673.9,1664.4,-9.4,0.422
+2026-11-24,Poule,(W) Darran 5-2 Frederick,Darran,1706.7,1707.5,0.8,Frederick,1407.8,1406.9,-0.9,0.848
+2026-11-24,Poule,(W) James S 5-2 Max V,James S,1555.1,1563.4,8.2,Max V,1519.8,1511.6,-8.2,0.551
+2026-11-24,Poule,(W) Adam H 5-2 Richard B,Adam H,1441.5,1451.0,9.5,Richard B,1442.1,1432.5,-9.5,0.499
+2026-11-24,Poule,(W) Max V 5-3 Jonathan,Max V,1511.6,1521.9,10.3,Jonathan,1591.7,1581.4,-10.3,0.387
+2026-11-24,Poule,(W) Jonathan 5-1 Frederick,Jonathan,1581.4,1586.8,5.5,Frederick,1406.9,1400.8,-6.1,0.732
+2026-11-24,Poule,(W) Nikolas 5-2 Roeland,Nikolas,1500,1520.2,20.2,Roeland,1692.9,1677.1,-15.8,0.248
+2026-11-24,Poule,(W) Richard B 5-3 Eugene,Richard B,1432.5,1439.6,7.1,Eugene,1421.9,1414.7,-7.1,0.515
+2026-11-24,Poule,(W) Alejo 5-3 Vlad K,Alejo,1738.8,1739.0,0.2,Vlad K,1504.9,1504.7,-0.2,0.794
+2026-11-24,Poule,(W) Tom S 5-4 Richard B,Tom S,1614.3,1614.0,-0.3,Richard B,1439.6,1439.9,0.3,0.732
+2026-11-24,Poule,(W) Harry 5-4 James S,Harry,1575.2,1580.9,5.7,James S,1563.4,1558.3,-5.1,0.517
+2026-11-24,Poule,(W) Nikolas 5-1 Alex Y,Nikolas,1520.2,1539.6,19.4,Alex Y,1632.1,1616.9,-15.1,0.344
+2026-11-24,Poule,(W) Jonathan 5-2 Alex Y,Jonathan,1586.8,1597.4,10.6,Alex Y,1616.9,1606.3,-10.6,0.457
+2026-11-24,Poule,(W) Colin R 5-3 Jonathan,Colin R,1448.4,1460.9,12.6,Jonathan,1597.4,1584.9,-12.6,0.298
+2026-11-24,Poule,(W) Greg 5-1 Max V,Greg,1877.3,1878.9,1.6,Max V,1521.9,1520.3,-1.6,0.885
+2026-11-24,Poule,(W) Frederick 5-3 Eugene,Frederick,1400.8,1408.8,8.0,Eugene,1414.7,1406.7,-8.0,0.48
+2026-11-24,Poule,(W) Willie 5-2 Anna Z,Willie,1664.4,1671.6,7.1,Anna Z,1597.9,1590.8,-7.1,0.595
+2026-11-24,Poule,(W) Vadym 5-1 Joshua,Vadym,1605.4,1611.1,5.7,Joshua,1439.0,1433.3,-5.7,0.723
+2026-11-24,Poule,(W) Vlad K 5-2 Richard B,Vlad K,1504.7,1513.9,9.2,Richard B,1439.9,1432.8,-7.2,0.592
+2026-11-24,Poule,(W) Roeland 5-1 Jonathan,Roeland,1677.1,1685.1,8.0,Jonathan,1584.9,1576.9,-8.0,0.63
+2026-11-24,Poule,(W) Willie 5-1 Harry,Willie,1671.6,1679.6,8.1,Harry,1580.9,1571.9,-9.0,0.628
+2026-11-24,Poule,(W) Jack B 5-2 Roeland,Jack B,1628.9,1640.4,11.5,Roeland,1685.1,1673.6,-11.5,0.42
+2026-11-24,Poule,(W) Giles 5-2 Adam H,Giles,1385.6,1397.4,11.8,Adam H,1451.0,1439.2,-11.8,0.407
+2026-11-24,Poule,(W) Vlad K 5-2 Joshua,Vlad K,1513.9,1522.4,8.5,Joshua,1433.3,1426.7,-6.7,0.614
+2026-11-24,Poule,(W) Vadym 5-0 Eugene,Vadym,1611.1,1617.0,5.9,Eugene,1406.7,1400.9,-5.9,0.764
+2026-11-24,Poule,(W) Nikolas 5-3 Caden,Nikolas,1539.6,1543.1,3.5,Caden,1399.1,1396.4,-2.7,0.692
+2026-11-24,Poule,(W) James S 5-3 Aleksandra,James S,1558.3,1559.2,0.9,Aleksandra,1353.5,1352.6,-1.0,0.765
+2026-11-24,Poule,(W) Darran 5-3 Max V,Darran,1707.5,1708.8,1.3,Max V,1520.3,1519.0,-1.3,0.746
+2026-11-24,Poule,(W) Jonathan 5-2 Giles,Jonathan,1576.9,1580.4,3.6,Giles,1397.4,1393.9,-3.6,0.737
+2026-11-24,Poule,(W) Anna Z 5-4 Alejo,Anna Z,1590.8,1601.3,10.5,Alejo,1739.0,1728.5,-10.5,0.299
+2026-11-24,Poule,(W) Richard B 5-3 Kirill Iv,Richard B,1432.8,1437.2,4.5,Kirill Iv,1346.4,1341.9,-4.5,0.622
+2026-11-24,Poule,(W) Giles 5-0 Kamal,Giles,1393.9,1412.4,18.5,Kamal,1576.1,1557.6,-18.5,0.259
+2026-11-24,Poule,(W) Max V 5-4 Alex Y,Max V,1519.0,1527.6,8.6,Alex Y,1606.3,1597.8,-8.6,0.377
+2026-11-24,Poule,(W) Alex Y 5-0 Eugene,Alex Y,1597.8,1603.9,6.1,Eugene,1400.9,1394.8,-6.1,0.756
+2026-11-24,Poule,(W) Roeland 5-0 Harry,Roeland,1673.6,1682.6,8.9,Harry,1571.9,1561.9,-10.0,0.642
+2026-11-24,Poule,(W) Roeland 5-0 Anna Z,Roeland,1682.6,1692.2,9.6,Anna Z,1601.3,1591.7,-9.6,0.615
+2026-11-24,Poule,(W) Alejo 5-3 Greg,Alejo,1728.5,1741.1,12.6,Greg,1878.9,1866.3,-12.6,0.296
+2026-11-24,Poule,(W) Sammy 5-4 Harry,Sammy,1770.1,1768.9,-1.2,Harry,1561.9,1563.2,1.4,0.768
+2026-11-24,Poule,(W) Eugene 5-1 James S,Eugene,1394.8,1411.5,16.8,James S,1559.2,1542.4,-16.8,0.28
+2026-11-24,Poule,(W) Sammy 5-4 Roeland,Sammy,1768.9,1771.7,2.8,Roeland,1692.2,1689.4,-2.8,0.609
+2026-11-24,Poule,(W) Joshua 5-1 Richard B,Joshua,1426.7,1438.3,11.6,Richard B,1437.2,1425.6,-11.6,0.485
+2026-11-24,Poule,(W) Willie 5-3 Alejo,Willie,1679.6,1689.3,9.7,Alejo,1741.1,1731.4,-9.7,0.413
+2026-11-24,Poule,(W) Kamal 5-3 Tom S,Kamal,1557.6,1567.1,9.5,Tom S,1614.0,1604.5,-9.5,0.42
+2026-11-24,Poule,(W) Sammy 5-2 James S,Sammy,1771.7,1773.9,2.3,James S,1542.4,1540.2,-2.3,0.789
+2026-11-24,Poule,(W) Richard B 5-2 Anna Z,Richard B,1425.6,1440.6,15.1,Anna Z,1591.7,1576.6,-15.1,0.278
+2026-11-24,Poule,(W) Willie 5-1 Giles,Willie,1689.3,1692.3,3.0,Giles,1412.4,1409.4,-3.0,0.831
+2026-11-24,Poule,(W) Nikolas 5-1 Greg,Nikolas,1543.1,1569.2,26.1,Greg,1866.3,1845.9,-20.4,0.135
+2026-11-24,Poule,(W) Harry 5-3 Anna Z,Harry,1563.2,1572.2,8.9,Anna Z,1576.6,1568.7,-8.0,0.481
+2026-11-24,Poule,(W) Willie 5-1 Caden,Willie,1692.3,1694.9,2.6,Caden,1396.4,1393.8,-2.6,0.846
+2026-11-24,Poule,(W) Willie 5-2 Max V,Willie,1694.9,1698.8,3.9,Max V,1527.6,1523.7,-3.9,0.724
+2026-11-24,Poule,(W) Greg 5-4 Giles,Greg,1845.9,1840.8,-5.1,Giles,1409.4,1414.6,5.1,0.925
+2026-11-24,Poule,(W) Nikolas 5-4 Vlad K,Nikolas,1569.2,1574.1,4.9,Vlad K,1522.4,1517.5,-4.9,0.567
+2026-11-24,Poule,(W) Roeland 5-4 Tom S,Roeland,1689.4,1691.9,2.5,Tom S,1604.5,1602.0,-2.5,0.62
+2026-11-24,Poule,(W) Willie 5-4 Joshua,Willie,1698.8,1696.4,-2.4,Joshua,1438.3,1440.7,2.4,0.818
+2026-11-24,Poule,(W) Alex Y 5-2 Adam H,Alex Y,1603.9,1607.8,4.0,Adam H,1439.2,1435.2,-4.0,0.721
+2026-11-24,Poule,(W) Greg 5-4 Tom S,Greg,1840.8,1838.8,-2.0,Tom S,1602.0,1603.9,2.0,0.798
+2026-11-24,Poule,(W) Joshua 5-3 Aleksandra,Joshua,1440.7,1445.1,4.4,Aleksandra,1352.6,1347.6,-4.9,0.624
+2026-11-24,Poule,(W) Tom S 5-1 Adam H,Tom S,1603.9,1609.5,5.6,Adam H,1435.2,1429.6,-5.6,0.725
+2026-11-24,Poule,(W) Greg 5-3 Harry,Greg,1838.8,1838.3,-0.6,Harry,1572.2,1572.8,0.6,0.823
+2026-11-24,Poule,(W) Kamal 5-3 Colin R,Kamal,1567.1,1570.9,3.8,Colin R,1460.9,1457.1,-3.8,0.648
+2026-11-24,Poule,(W) Colin R 5-4 Alejo,Colin R,1457.1,1470.9,13.7,Alejo,1731.4,1717.6,-13.7,0.171
+2026-11-24,Poule,(W) Vlad K 5-1 Harry,Vlad K,1517.5,1534.4,16.9,Harry,1572.8,1558.0,-14.8,0.421
+2026-11-24,Poule,(W) Vadym 5-2 Giles,Vadym,1617.0,1619.9,2.9,Giles,1414.6,1411.6,-2.9,0.762
+2026-11-24,Poule,(W) Richard B 5-2 Alejo,Richard B,1440.6,1458.4,17.8,Alejo,1717.6,1699.9,-17.8,0.169
+2026-11-24,Poule,(W) Alejo 5-3 Roeland,Alejo,1699.9,1707.1,7.2,Roeland,1691.9,1684.7,-7.2,0.511
+2026-11-24,Poule,(W) Colin R 5-2 Kirill Iv,Colin R,1470.9,1475.9,5.1,Kirill Iv,1341.9,1336.9,-5.1,0.677
+2026-11-24,Poule,(W) Nikolas 5-2 Frederick,Nikolas,1574.1,1579.1,5.1,Frederick,1408.8,1404.8,-4.0,0.721
+2026-11-24,Poule,(W) Eugene 5-1 Jonathan,Eugene,1411.5,1428.4,16.9,Jonathan,1580.4,1563.5,-16.9,0.274
+2026-11-24,L1-32,(W) Max V - Harry,Max V,1523.7,1552.5,28.9,Harry,1558.0,1525.7,-32.3,0.451
+2026-11-24,L1-32,(W) Anna Z - Colin R,Anna Z,1568.7,1588.1,19.4,Colin R,1475.9,1456.5,-19.4,0.63
+2026-11-24,L1-32,(W) Vlad K - Kirill Iv,Vlad K,1534.4,1550.8,16.3,Kirill Iv,1336.9,1324.1,-12.8,0.757
+2026-11-24,L1-32,(W) Alex Y - Giles,Alex Y,1607.8,1620.7,12.8,Giles,1411.6,1398.8,-12.8,0.756
+2026-11-24,L1-32,(W) Kamal - Caden,Kamal,1570.9,1584.8,13.9,Caden,1393.8,1379.9,-13.9,0.735
+2026-11-24,L1-32,(W) Adam H - Richard B,Adam H,1429.6,1458.0,28.4,Richard B,1458.4,1430.0,-28.4,0.459
+2026-11-24,L1-32,(W) Eugene - James S,Eugene,1428.4,1462.9,34.4,James S,1540.2,1505.7,-34.4,0.345
+2026-11-24,L1-16,(W) Willie - Max V,Willie,1696.4,1713.2,16.8,Max V,1552.5,1535.7,-16.8,0.696
+2026-11-24,L1-16,(W) Darran - Tom S,Darran,1708.8,1728.8,20.0,Tom S,1609.5,1589.6,-20.0,0.639
+2026-11-24,L1-16,(W) Anna Z - Alejo,Anna Z,1588.1,1624.9,36.8,Alejo,1707.1,1670.3,-36.8,0.335
+2026-11-24,L1-16,(W) Vlad K - Roeland,Vlad K,1550.8,1599.2,48.4,Roeland,1684.7,1646.9,-37.8,0.316
+2026-11-24,L1-16,(W) Greg - Alex Y,Greg,1838.3,1850.6,12.3,Alex Y,1620.7,1608.4,-12.3,0.778
+2026-11-24,L1-16,(W) Vadym - Kamal,Vadym,1619.9,1644.8,24.9,Kamal,1584.8,1560.0,-24.9,0.55
+2026-11-24,L1-16,(W) Sammy - Adam H,Sammy,1773.9,1781.7,7.7,Adam H,1458.0,1450.3,-7.7,0.86
+2026-11-24,L1-16,(W) Nikolas - Eugene,Nikolas,1579.1,1603.1,24.0,Eugene,1462.9,1444.1,-18.7,0.661
+2026-11-24,L1-8,(W) Willie - Darran,Willie,1713.2,1745.0,31.8,Darran,1728.8,1697.0,-31.8,0.478
+2026-11-24,L1-8,(W) Anna Z - Vlad K,Anna Z,1624.9,1653.0,28.2,Vlad K,1599.2,1563.1,-36.1,0.537
+2026-11-24,L1-8,(W) Greg - Vadym,Greg,1850.6,1864.8,14.3,Vadym,1644.8,1630.5,-14.3,0.766
+2026-11-24,L1-8,(W) Sammy - Nikolas,Sammy,1781.7,1781.7,0.0,Nikolas,1603.1,1603.1,0.0,0.736
+2026-11-24,L9-16,(W) Max V - Tom S,Max V,1535.7,1566.0,30.3,Tom S,1589.6,1559.3,-30.3,0.423
+2026-11-24,L9-16,(W) Alejo - Roeland,Alejo,1670.3,1694.8,24.5,Roeland,1646.9,1622.4,-24.5,0.534
+2026-11-24,L9-16,(W) Alex Y - Kamal,Alex Y,1608.4,1631.0,22.6,Kamal,1560.0,1537.3,-22.6,0.569
+2026-11-24,L9-16,(W) Eugene - Adam H,Eugene,1444.1,1470.9,26.7,Adam H,1450.3,1423.6,-26.7,0.491
+2026-11-24,L17-24,(W) Colin R - Kirill Iv,Colin R,1456.5,1472.4,15.8,Kirill Iv,1324.1,1308.3,-15.8,0.682
+2026-11-24,L17-24,(W) Caden - Giles,Caden,1379.9,1406.1,26.2,Giles,1398.8,1372.5,-26.2,0.473
+2026-11-24,L17-24,(W) Richard B - James S,Richard B,1430.0,1460.2,30.2,James S,1505.7,1475.5,-30.2,0.393
+2026-11-24,L1-4,(W) Anna Z - Willie,Anna Z,1653.0,1696.5,43.5,Willie,1745.0,1701.5,-43.5,0.371
+2026-11-24,L1-4,(W) Sammy - Greg,Sammy,1781.7,1824.3,42.7,Greg,1864.8,1822.1,-42.7,0.383
+2026-11-24,L5-8,(W) Vlad K - Darran,Vlad K,1563.1,1563.1,0.0,Darran,1697.0,1697.0,0.0,0.316
+2026-11-24,L5-8,(W) Vadym - Nikolas,Vadym,1630.5,1630.5,0.0,Nikolas,1603.1,1603.1,0.0,0.539
+2026-11-24,L9-12,(W) Alejo - Max V,Alejo,1694.8,1711.3,16.5,Max V,1566.0,1549.5,-16.5,0.677
+2026-11-24,L9-12,(W) Alex Y - Eugene,Alex Y,1631.0,1645.6,14.6,Eugene,1470.9,1456.3,-14.6,0.715
+2026-11-24,L13-16,(W) Roeland - Tom S,Roeland,1622.4,1622.4,0.0,Tom S,1559.3,1559.3,0.0,0.59
+2026-11-24,L13-16,(W) Kamal - Adam H,Kamal,1537.3,1537.3,0.0,Adam H,1423.6,1423.6,0.0,0.658
+2026-11-24,L17-20,(W) Harry - Colin R,Harry,1525.7,1549.3,23.6,Colin R,1472.4,1451.3,-21.1,0.576
+2026-11-24,L17-20,(W) Richard B - Caden,Richard B,1460.2,1481.2,21.0,Caden,1406.1,1385.1,-21.0,0.577
+2026-11-24,L21-24,(W) Giles - James S,Giles,1372.5,1404.6,32.1,James S,1475.5,1443.4,-32.1,0.356
+2026-11-24,L1-2,(W) Sammy - Anna Z,Sammy,1824.3,1849.4,25.1,Anna Z,1696.5,1671.5,-25.1,0.676
+2026-11-24,L3-4,(W) Greg - Willie,Greg,1822.1,1844.2,22.1,Willie,1701.5,1679.4,-22.1,0.667
+2026-11-24,L5-6,(W) Vadym - Vlad K,Vadym,1630.5,1630.5,0.0,Vlad K,1563.1,1563.1,0.0,0.596
+2026-11-24,L7-8,(W) Darran - Nikolas,Darran,1697.0,1697.0,0.0,Nikolas,1603.1,1603.1,0.0,0.632
+2026-11-24,L9-10,(W) Alex Y - Alejo,Alex Y,1645.6,1675.1,29.5,Alejo,1711.3,1681.8,-29.5,0.406
+2026-11-24,L11-12,(W) Max V - Eugene,Max V,1549.5,1567.9,18.4,Eugene,1456.3,1437.9,-18.4,0.631
+2026-11-24,L13-14,(W) Roeland - Kamal,Roeland,1622.4,1622.4,0.0,Kamal,1537.3,1537.3,0.0,0.62
+2026-11-24,L15-16,(W) Adam H - Tom S,Adam H,1423.6,1423.6,0.0,Tom S,1559.3,1559.3,0.0,0.314
+2026-11-24,L17-18,(W) Harry - Richard B,Harry,1549.3,1571.8,22.5,Richard B,1481.2,1461.2,-20.1,0.597
+2026-11-24,L19-20,(W) Colin R - Caden,Colin R,1451.3,1471.5,20.2,Caden,1385.1,1364.9,-20.2,0.594
+2026-11-24,L21-22,(W) Kirill Iv - Giles,Kirill Iv,1308.3,1308.3,0.0,Giles,1404.6,1404.6,0.0,0.365

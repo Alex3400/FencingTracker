@@ -14460,5 +14460,118 @@
         "fencer": "Adam H"
       }
     ]
+  },
+  {
+    "date": "2026-11-24",
+    "winner": "Sammy",
+    "top_poule_climber": "Jack B",
+    "top_poule_gain": 62.7,
+    "fencers_in_poules": 28,
+    "fencers_in_des": 23,
+    "poule_matches": 96,
+    "de_matches": 48,
+    "total_matches": 144,
+    "score_5_0": 6,
+    "score_5_1": 17,
+    "score_5_2": 27,
+    "score_5_3": 26,
+    "score_5_4": 18,
+    "total_touches": 691,
+    "avg_touches_per_match": 7.2,
+    "google_sheet_link": "https://docs.google.com/spreadsheets/d/1f5IsQs-ASKy14e-gk_xLOhrWe7_y2zEhy2DYfr4OnS0/edit?usp=drivesdk",
+    "final_results": [
+      {
+        "place": 1,
+        "fencer": "Sammy"
+      },
+      {
+        "place": 2,
+        "fencer": "Anna Z"
+      },
+      {
+        "place": 3,
+        "fencer": "Greg"
+      },
+      {
+        "place": 4,
+        "fencer": "Willie"
+      },
+      {
+        "place": 5,
+        "fencer": "Vadym"
+      },
+      {
+        "place": 6,
+        "fencer": "Vlad K"
+      },
+      {
+        "place": 7,
+        "fencer": "Darran"
+      },
+      {
+        "place": 8,
+        "fencer": "Nikolas"
+      },
+      {
+        "place": 9,
+        "fencer": "Alex Y"
+      },
+      {
+        "place": 10,
+        "fencer": "Alejo"
+      },
+      {
+        "place": 11,
+        "fencer": "Max V"
+      },
+      {
+        "place": 12,
+        "fencer": "Eugene"
+      },
+      {
+        "place": 13,
+        "fencer": "Roeland"
+      },
+      {
+        "place": 14,
+        "fencer": "Kamal"
+      },
+      {
+        "place": 15,
+        "fencer": "Adam H"
+      },
+      {
+        "place": 16,
+        "fencer": "Tom S"
+      },
+      {
+        "place": 17,
+        "fencer": "Harry"
+      },
+      {
+        "place": 18,
+        "fencer": "Richard B"
+      },
+      {
+        "place": 19,
+        "fencer": "Colin R"
+      },
+      {
+        "place": 20,
+        "fencer": "Caden"
+      },
+      {
+        "place": 21,
+        "fencer": "Kirill Iv"
+      },
+      {
+        "place": 22,
+        "fencer": "Giles"
+      },
+      {
+        "place": 23,
+        "fencer": "James S"
+      }
+    ]
   }
 ]

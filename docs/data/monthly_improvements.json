@@ -5,9 +5,10 @@
     "session_dates": [
       "2026-11-03",
       "2026-11-10",
-      "2026-11-17"
+      "2026-11-17",
+      "2026-11-24"
     ],
-    "session_count": 3,
+    "session_count": 4,
     "fencer_changes": [
       {
         "fencer": "Rudi",
@@ -24,11 +25,32 @@
         "sessions_attended": 2
       },
       {
+        "fencer": "Jack B",
+        "start_rating": 1526.5,
+        "end_rating": 1640.4,
+        "change": 113.9,
+        "sessions_attended": 4
+      },
+      {
+        "fencer": "Sammy",
+        "start_rating": 1763.3,
+        "end_rating": 1849.4,
+        "change": 86.1,
+        "sessions_attended": 2
+      },
+      {
         "fencer": "Calum",
         "start_rating": 1661.0,
         "end_rating": 1727.9,
         "change": 66.8,
         "sessions_attended": 1
+      },
+      {
+        "fencer": "Max V",
+        "start_rating": 1509.0,
+        "end_rating": 1567.9,
+        "change": 58.8,
+        "sessions_attended": 3
       },
       {
         "fencer": "Baran",
@@ -38,25 +60,11 @@
         "sessions_attended": 2
       },
       {
-        "fencer": "Jack B",
-        "start_rating": 1526.5,
-        "end_rating": 1577.7,
-        "change": 51.2,
-        "sessions_attended": 3
-      },
-      {
-        "fencer": "Jonathan",
-        "start_rating": 1552.4,
-        "end_rating": 1600.6,
-        "change": 48.2,
-        "sessions_attended": 1
-      },
-      {
-        "fencer": "Tom S",
-        "start_rating": 1569.2,
-        "end_rating": 1608.1,
+        "fencer": "Eugene",
+        "start_rating": 1399.0,
+        "end_rating": 1437.9,
         "change": 39.0,
-        "sessions_attended": 1
+        "sessions_attended": 4
       },
       {
         "fencer": "Kofi",
@@ -73,11 +81,11 @@
         "sessions_attended": 2
       },
       {
-        "fencer": "Kirill Iv",
-        "start_rating": 1311.8,
-        "end_rating": 1337.3,
-        "change": 25.5,
-        "sessions_attended": 2
+        "fencer": "Anna Z",
+        "start_rating": 1646.8,
+        "end_rating": 1671.5,
+        "change": 24.7,
+        "sessions_attended": 3
       },
       {
         "fencer": "Anna A",
@@ -94,18 +102,18 @@
         "sessions_attended": 2
       },
       {
-        "fencer": "Max V",
-        "start_rating": 1509.0,
-        "end_rating": 1528.5,
-        "change": 19.5,
-        "sessions_attended": 2
-      },
-      {
         "fencer": "Fassel",
         "start_rating": 1672.7,
         "end_rating": 1691.4,
         "change": 18.7,
         "sessions_attended": 1
+      },
+      {
+        "fencer": "Vadym",
+        "start_rating": 1614.3,
+        "end_rating": 1630.5,
+        "change": 16.2,
+        "sessions_attended": 3
       },
       {
         "fencer": "Shevy",
@@ -115,25 +123,25 @@
         "sessions_attended": 2
       },
       {
-        "fencer": "Eugene",
-        "start_rating": 1399.0,
-        "end_rating": 1410.3,
-        "change": 11.3,
+        "fencer": "Richard B",
+        "start_rating": 1447.8,
+        "end_rating": 1461.2,
+        "change": 13.3,
         "sessions_attended": 3
       },
       {
-        "fencer": "Sammy",
-        "start_rating": 1763.3,
-        "end_rating": 1771.0,
-        "change": 7.7,
-        "sessions_attended": 1
+        "fencer": "Jonathan",
+        "start_rating": 1552.4,
+        "end_rating": 1563.5,
+        "change": 11.1,
+        "sessions_attended": 2
       },
       {
-        "fencer": "Vadym",
-        "start_rating": 1614.3,
-        "end_rating": 1620.2,
-        "change": 5.9,
-        "sessions_attended": 2
+        "fencer": "Joshua",
+        "start_rating": 1439.1,
+        "end_rating": 1445.1,
+        "change": 6.1,
+        "sessions_attended": 3
       },
       {
         "fencer": "Ed B",
@@ -143,27 +151,6 @@
         "sessions_attended": 1
       },
       {
-        "fencer": "Harry",
-        "start_rating": 1573.2,
-        "end_rating": 1575.2,
-        "change": 2.0,
-        "sessions_attended": 1
-      },
-      {
-        "fencer": "Alejo",
-        "start_rating": 1734.0,
-        "end_rating": 1735.0,
-        "change": 0.9,
-        "sessions_attended": 2
-      },
-      {
-        "fencer": "Joshua",
-        "start_rating": 1439.1,
-        "end_rating": 1439.0,
-        "change": -0.1,
-        "sessions_attended": 2
-      },
-      {
         "fencer": "Lorenzo",
         "start_rating": 1566.1,
         "end_rating": 1565.2,
@@ -171,25 +158,18 @@
         "sessions_attended": 1
       },
       {
-        "fencer": "Caden",
-        "start_rating": 1393.8,
-        "end_rating": 1389.8,
-        "change": -4.0,
-        "sessions_attended": 3
-      },
-      {
-        "fencer": "Richard B",
-        "start_rating": 1447.8,
-        "end_rating": 1442.1,
-        "change": -5.8,
+        "fencer": "Harry",
+        "start_rating": 1573.2,
+        "end_rating": 1571.8,
+        "change": -1.4,
         "sessions_attended": 2
       },
       {
-        "fencer": "Darran",
-        "start_rating": 1710.8,
-        "end_rating": 1702.9,
-        "change": -7.9,
-        "sessions_attended": 1
+        "fencer": "Kirill Iv",
+        "start_rating": 1311.8,
+        "end_rating": 1308.3,
+        "change": -3.5,
+        "sessions_attended": 3
       },
       {
         "fencer": "Harrison",
@@ -199,25 +179,18 @@
         "sessions_attended": 1
       },
       {
-        "fencer": "Adam H",
-        "start_rating": 1456.5,
-        "end_rating": 1446.7,
-        "change": -9.8,
-        "sessions_attended": 3
+        "fencer": "Tom S",
+        "start_rating": 1569.2,
+        "end_rating": 1559.3,
+        "change": -9.9,
+        "sessions_attended": 2
       },
       {
-        "fencer": "Frederick",
-        "start_rating": 1419.6,
-        "end_rating": 1409.6,
-        "change": -10.0,
-        "sessions_attended": 1
-      },
-      {
-        "fencer": "Greg",
-        "start_rating": 1883.5,
-        "end_rating": 1872.9,
-        "change": -10.6,
-        "sessions_attended": 3
+        "fencer": "Giles",
+        "start_rating": 1415.6,
+        "end_rating": 1404.6,
+        "change": -11.0,
+        "sessions_attended": 2
       },
       {
         "fencer": "Perth",
@@ -227,6 +200,27 @@
         "sessions_attended": 2
       },
       {
+        "fencer": "Darran",
+        "start_rating": 1710.8,
+        "end_rating": 1697.0,
+        "change": -13.8,
+        "sessions_attended": 2
+      },
+      {
+        "fencer": "Frederick",
+        "start_rating": 1419.6,
+        "end_rating": 1404.8,
+        "change": -14.7,
+        "sessions_attended": 2
+      },
+      {
+        "fencer": "Colin R",
+        "start_rating": 1487.5,
+        "end_rating": 1471.5,
+        "change": -16.1,
+        "sessions_attended": 3
+      },
+      {
         "fencer": "Charlie",
         "start_rating": 1822.7,
         "end_rating": 1798.7,
@@ -234,11 +228,11 @@
         "sessions_attended": 1
       },
       {
-        "fencer": "Aleksandra",
-        "start_rating": 1392.9,
-        "end_rating": 1367.6,
-        "change": -25.3,
-        "sessions_attended": 3
+        "fencer": "Kamal",
+        "start_rating": 1561.6,
+        "end_rating": 1537.3,
+        "change": -24.2,
+        "sessions_attended": 1
       },
       {
         "fencer": "Oleg",
@@ -248,25 +242,32 @@
         "sessions_attended": 1
       },
       {
-        "fencer": "Giles",
-        "start_rating": 1415.6,
-        "end_rating": 1385.6,
+        "fencer": "Caden",
+        "start_rating": 1393.8,
+        "end_rating": 1364.9,
+        "change": -28.9,
+        "sessions_attended": 4
+      },
+      {
+        "fencer": "Alex Y",
+        "start_rating": 1705.0,
+        "end_rating": 1675.1,
         "change": -29.9,
-        "sessions_attended": 1
+        "sessions_attended": 4
       },
       {
-        "fencer": "Anna Z",
-        "start_rating": 1646.8,
-        "end_rating": 1611.3,
-        "change": -35.5,
-        "sessions_attended": 2
+        "fencer": "Adam H",
+        "start_rating": 1456.5,
+        "end_rating": 1423.6,
+        "change": -32.9,
+        "sessions_attended": 4
       },
       {
-        "fencer": "Colin R",
-        "start_rating": 1487.5,
-        "end_rating": 1448.4,
-        "change": -39.1,
-        "sessions_attended": 2
+        "fencer": "Greg",
+        "start_rating": 1883.5,
+        "end_rating": 1844.2,
+        "change": -39.3,
+        "sessions_attended": 4
       },
       {
         "fencer": "Andy R",
@@ -276,10 +277,17 @@
         "sessions_attended": 1
       },
       {
-        "fencer": "Alex Y",
-        "start_rating": 1705.0,
-        "end_rating": 1645.2,
-        "change": -59.8,
+        "fencer": "Aleksandra",
+        "start_rating": 1392.9,
+        "end_rating": 1347.6,
+        "change": -45.3,
+        "sessions_attended": 4
+      },
+      {
+        "fencer": "Alejo",
+        "start_rating": 1734.0,
+        "end_rating": 1681.8,
+        "change": -52.3,
         "sessions_attended": 3
       },
       {
@@ -297,6 +305,13 @@
         "sessions_attended": 2
       },
       {
+        "fencer": "Roeland",
+        "start_rating": 1707.5,
+        "end_rating": 1622.4,
+        "change": -85.1,
+        "sessions_attended": 1
+      },
+      {
         "fencer": "Jordan",
         "start_rating": 1286.3,
         "end_rating": 1172.5,
@@ -306,9 +321,16 @@
       {
         "fencer": "Willie",
         "start_rating": 1796.0,
-        "end_rating": 1674.7,
-        "change": -121.4,
-        "sessions_attended": 3
+        "end_rating": 1679.4,
+        "change": -116.6,
+        "sessions_attended": 4
+      },
+      {
+        "fencer": "James S",
+        "start_rating": 1567.4,
+        "end_rating": 1443.4,
+        "change": -124.0,
+        "sessions_attended": 1
       }
     ]
   },
